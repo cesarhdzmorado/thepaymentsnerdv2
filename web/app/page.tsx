@@ -2,12 +2,6 @@
 
 import fs from 'fs';
 import path from 'path';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: '/thepaymentsnerd',
-  description: 'The signal, not the noise. Daily fintech intelligence.',
-};
 
 // --- Helper: Icon Components ---
 const NewsIcon = () => (
@@ -20,10 +14,9 @@ const CalendarIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-slate-500"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
 );
 
-
-// --- Data Fetching Logic (unchanged) ---
+// --- Data Fetching Logic ---
 interface NewsItem { title: string; body: string; source: string; }
-interface Curiosity { text: string; source:string; }
+interface Curiosity { text: string; source: string; }
 interface NewsletterData { news: NewsItem[]; curiosity: Curiosity; }
 
 async function getNewsletterData(): Promise<NewsletterData | null> {
@@ -41,25 +34,17 @@ async function getNewsletterData(): Promise<NewsletterData | null> {
 // --- Main Page Component ---
 export default async function HomePage() {
   const data = await getNewsletterData();
-  
   const formattedDate = new Date().toLocaleDateString('en-US', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
   });
 
   if (!data) {
     return (
-      <main className="bg-slate-900 text-white min-h-screen flex items-center justify-center">
+      <main className="text-white min-h-screen flex items-center justify-center">
         <div className="container mx-auto px-4 py-8 text-center">
           <h1 className="text-4xl font-bold mb-4">/thepaymentsnerd</h1>
-          <p className="text-lg text-red-500">
-            The newsletter data file (`web/public/newsletter.json`) was not found.
-          </p>
-          <p className="mt-2 text-slate-400">
-            Please run the AI script first to generate the daily news.
-          </p>
+          <p className="text-lg text-red-500">The newsletter data file was not found.</p>
+          <p className="mt-2 text-slate-400">Please run the AI script to generate the daily news.</p>
         </div>
       </main>
     )
@@ -68,6 +53,7 @@ export default async function HomePage() {
   const { news, curiosity } = data;
 
   return (
+    // This main container has NO theme classes. It inherits them from the layout.
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         <div className="container mx-auto px-4 py-16 md:py-24 max-w-3xl">
@@ -79,7 +65,6 @@ export default async function HomePage() {
             <p className="mt-4 text-lg md:text-xl text-slate-400 max-w-xl mx-auto italic">
               The signal, not the noise. Daily fintech intelligence.
             </p>
-
             <div className="mt-8 flex justify-center items-center gap-x-2">
               <CalendarIcon />
               <p className="text-sm text-slate-500 font-medium uppercase tracking-wider">
@@ -133,4 +118,4 @@ export default async function HomePage() {
       </footer>
     </div>
   );
-} // <-- THIS IS THE MISSING BRACE THAT FIXES THE FILE
+}

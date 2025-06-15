@@ -3,8 +3,7 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    // This wildcard pattern is essential for scanning all your pages
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}', // This scans all pages for classes
   ],
   theme: {
     extend: {},

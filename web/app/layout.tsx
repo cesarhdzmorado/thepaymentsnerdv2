@@ -1,7 +1,7 @@
 // web/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css"; // Imports the Tailwind foundation
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // THE FIX: We apply the theme classes to the <html> tag itself.
-    // This is the highest level possible and will not be overridden.
-    <html lang="en" className="bg-slate-900 text-slate-300">
-      <body className={inter.className}>
+    <html lang="en">
+      {/* 
+        This is the FIX. We apply the global dark theme to the body tag.
+        Every page will inherit this, guaranteeing a consistent look.
+      */}
+      <body className={`${inter.className} bg-slate-900 text-slate-300`}>
         {children}
       </body>
     </html>
