@@ -7,3 +7,13 @@ newsletters:
     topic: "Breaking News in Payments"
   - url: "https://www.omnichannelpayments.news/"
     topic: "Omnichannel Payments Trends"
+  - url: "https://www.pymnts.com/feed/",
+    topic: "General Payments News"
+  - url: "https://www.finextra.com/rss/headlines.aspx"
+    topic: "Genral Payments News"
+  - url: "https://www.finextra.com/rss/channel.aspx?channel=payments"
+    topic: "Genral Payments News"
+  - url: "https://www.coindesk.com/arc/outboundfeeds/rss/"
+    topic: "General Crypto News"
+  - url: "https://fintechnews.sg/feed/"
+    topic: "General Fintech News APAC"

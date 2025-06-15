@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Fintech Mergers Skyrocket in 2024: A Year of Major Deals",
-      "body": "2024 has been a blockbuster year for fintech with mergers and acquisitions soaring to $149.8 billion. Notable transactions include Mastercard's massive $2.7 billion acquisition of Recorded Future, and Roper's strategic $1.6 billion deal. This surge represents a significant growth from the $102.7 billion recorded in 2023.",
+      "title": "Gilgamesh Ventures Injects $20M into Fintech's Future",
+      "body": "Gilgamesh Ventures, a keen player in the fintech VC space, has filled its coffers with $20 million for Fund II, targeting promising startups like Baselayer and Nexu. It's a clear signal that niche fintech investment is not just surviving but thriving.",
       "source": "Axios"
     },
     {
-      "title": "Stripe Makes a Billion Dollar Bet on Stablecoins",
-      "body": "Stripe is diving deeper into the cryptocurrency pool with its recent acquisition of stablecoin startup Bridge for a cool $1.1 billion. This move marks a significant pivot towards blockchain technology, positioning Stripe at the forefront of fintech innovation.",
+      "title": "VC Fintech Funding Hits a Speed Bump, Dips Below 2019 Levels",
+      "body": "The fintech funding frenzy took a breather in 2024, with investments falling 11.6% from the previous year. This pullback to pre-pandemic levels suggests a recalibration of investor enthusiasm in the fintech sector.",
       "source": "Axios"
     },
     {
-      "title": "Circle and Chime's IPOs Kick Off the Year with a Bang",
-      "body": "The fintech sector witnessed a robust start to the year with impressive IPOs from Circle and Chime. This early momentum suggests a bullish outlook for the industry, with both companies experiencing significant market enthusiasm post-IPO.",
+      "title": "Affirm Secures a Whopping $750M from Liberty Mutual",
+      "body": "In a major boost to its expansion plans, Affirm has bagged a $750 million loan commitment from Liberty Mutual. This partnership not only fuels Affirm's growth but also marks a significant vote of confidence in its business model, with Liberty Mutual planning a hefty $5 billion investment streak through 2027.",
+      "source": "Axios"
+    },
+    {
+      "title": "Circle and Chime Ride the IPO Wave to Market Triumph",
+      "body": "The fintech sector showed its strength at the stock market with Circle and Chime experiencing impressive IPO pops. This robust market reaction hints at a fertile ground for future fintech IPOs, potentially kicking off a race among upcoming public listings.",
       "source": "Fintech Business Weekly"
     },
     {
-      "title": "Unit's Battle with Customer Churn: A Fintech Warning",
-      "body": "Unit, a once-celebrated fintech player, is facing severe customer retention issues. This deep dive explores the implications of churn for Unit and what it signals for the broader banking and financial services sectors.",
-      "source": "Fintech Business Weekly"
-    },
-    {
-      "title": "AI Revolutionizes Fraud Prevention in Fintech",
-      "body": "In 2024, fintech companies have embraced AI like never before, deploying advanced tools to enhance operations and beef up fraud prevention. This tech evolution is set to transform the financial landscape, making services safer and more efficient.",
-      "source": "Plaid"
+      "title": "Blockchain Bonanza: Industry to Net $20B in Next Five Years",
+      "body": "The blockchain arena is set to explode, with projections pointing to a $20 billion profit surge over the next half-decade. This growth is not just a win for blockchain companies but marks a transformative shift in the broader financial landscape.",
+      "source": "Leftronic"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The term 'fintech' was first used in the early 1990s, but the sector's roots can be traced back to the introduction of credit cards in the 1950s!",
-    "source": "Historical Tech Journals"
+    "text": "Did you know that despite the cooling off in fintech investments, specific sectors like blockchain are predicted to see exponential growth, suggesting a selective yet significant confidence in tech-driven financial solutions?",
+    "source": "Based on provided research"
   }
 }
