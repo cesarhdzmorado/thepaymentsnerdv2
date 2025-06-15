@@ -16,7 +16,6 @@ const NewsIcon = () => (
 const FactIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block mr-3 text-green-400"><path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M12 21a9 9 0 0 0 0-18H6.5a1 1 0 0 0 0 2H12a7 7 0 0 1 0 14h-3a1 1 0 0 0 0 2h3Z"/></svg>
 );
-// NEW: A calendar icon for the date
 const CalendarIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-slate-500"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
 );
@@ -24,7 +23,7 @@ const CalendarIcon = () => (
 
 // --- Data Fetching Logic (unchanged) ---
 interface NewsItem { title: string; body: string; source: string; }
-interface Curiosity { text: string; source: string; }
+interface Curiosity { text: string; source:string; }
 interface NewsletterData { news: NewsItem[]; curiosity: Curiosity; }
 
 async function getNewsletterData(): Promise<NewsletterData | null> {
@@ -43,7 +42,6 @@ async function getNewsletterData(): Promise<NewsletterData | null> {
 export default async function HomePage() {
   const data = await getNewsletterData();
   
-  // NEW: Get and format today's date
   const formattedDate = new Date().toLocaleDateString('en-US', {
     weekday: 'long',
     year: 'numeric',
@@ -52,7 +50,6 @@ export default async function HomePage() {
   });
 
   if (!data) {
-    // ... (error message code is unchanged)
     return (
       <main className="bg-slate-900 text-white min-h-screen flex items-center justify-center">
         <div className="container mx-auto px-4 py-8 text-center">
@@ -71,7 +68,7 @@ export default async function HomePage() {
   const { news, curiosity } = data;
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-900 text-slate-300">
+    <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         <div className="container mx-auto px-4 py-16 md:py-24 max-w-3xl">
           
@@ -83,7 +80,6 @@ export default async function HomePage() {
               The signal, not the noise. Daily fintech intelligence.
             </p>
 
-            {/* NEW: Today's date display */}
             <div className="mt-8 flex justify-center items-center gap-x-2">
               <CalendarIcon />
               <p className="text-sm text-slate-500 font-medium uppercase tracking-wider">
@@ -92,7 +88,6 @@ export default async function HomePage() {
             </div>
           </header>
 
-          {/* ... (The rest of the news and fact sections are unchanged) ... */}
           <section className="mb-20">
             <h2 className="text-3xl font-bold text-white flex items-center border-b border-slate-700 pb-4 mb-8">
               <NewsIcon />
@@ -126,10 +121,9 @@ export default async function HomePage() {
         </div>
       </main>
 
-      {/* ... (Footer is unchanged) ... */}
       <footer className="w-full mt-24 py-8 border-t border-slate-800">
         <div className="container mx-auto px-4 text-center text-slate-500 text-sm">
-                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
             <a href="/privacy-policy" className="hover:text-slate-300 hover:underline">Privacy Policy</a>
             <a href="/legal-terms" className="hover:text-slate-300 hover:underline">Legal Terms</a>
             <a href="/cookies-policy" className="hover:text-slate-300 hover:underline">Cookies Policy</a>
@@ -139,4 +133,4 @@ export default async function HomePage() {
       </footer>
     </div>
   );
-}
+} // <-- THIS IS THE MISSING BRACE THAT FIXES THE FILE
