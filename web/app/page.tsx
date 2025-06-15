@@ -129,10 +129,10 @@ export default async function HomePage() {
       {/* ... (Footer is unchanged) ... */}
       <footer className="w-full mt-24 py-8 border-t border-slate-800">
         <div className="container mx-auto px-4 text-center text-slate-500 text-sm">
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
-            <a href="#" className="hover:text-slate-300 hover:underline">Privacy Policy</a>
-            <a href="#" className="hover:text-slate-300 hover:underline">Legal Terms</a>
-            <a href="#" className="hover:text-slate-300 hover:underline">Cookies Policy</a>
+                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
+            <a href="/privacy-policy" className="hover:text-slate-300 hover:underline">Privacy Policy</a>
+            <a href="/legal-terms" className="hover:text-slate-300 hover:underline">Legal Terms</a>
+            <a href="/cookies-policy" className="hover:text-slate-300 hover:underline">Cookies Policy</a>
             <a href="https://github.com/cesarhdzmorado/thepaymentsnerdv2" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 hover:underline">Repository</a>
           </div>
           <p>© {new Date().getFullYear()} thepaymentsnerd. All rights reserved.</p>
