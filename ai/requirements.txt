@@ -1,0 +1,7 @@
+crewai
+crewai-tools
+python-dotenv
+langchain-openai
+pyyaml
+beautifulsoup4
+lxml

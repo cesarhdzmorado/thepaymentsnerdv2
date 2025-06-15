@@ -1,0 +1,33 @@
+{
+  "news": [
+    {
+      "title": "Fintech Mergers Skyrocket in 2024: A Year of Major Deals",
+      "body": "2024 has been a blockbuster year for fintech with mergers and acquisitions soaring to $149.8 billion. Notable transactions include Mastercard's massive $2.7 billion acquisition of Recorded Future, and Roper's strategic $1.6 billion deal. This surge represents a significant growth from the $102.7 billion recorded in 2023.",
+      "source": "Axios"
+    },
+    {
+      "title": "Stripe Makes a Billion Dollar Bet on Stablecoins",
+      "body": "Stripe is diving deeper into the cryptocurrency pool with its recent acquisition of stablecoin startup Bridge for a cool $1.1 billion. This move marks a significant pivot towards blockchain technology, positioning Stripe at the forefront of fintech innovation.",
+      "source": "Axios"
+    },
+    {
+      "title": "Circle and Chime's IPOs Kick Off the Year with a Bang",
+      "body": "The fintech sector witnessed a robust start to the year with impressive IPOs from Circle and Chime. This early momentum suggests a bullish outlook for the industry, with both companies experiencing significant market enthusiasm post-IPO.",
+      "source": "Fintech Business Weekly"
+    },
+    {
+      "title": "Unit's Battle with Customer Churn: A Fintech Warning",
+      "body": "Unit, a once-celebrated fintech player, is facing severe customer retention issues. This deep dive explores the implications of churn for Unit and what it signals for the broader banking and financial services sectors.",
+      "source": "Fintech Business Weekly"
+    },
+    {
+      "title": "AI Revolutionizes Fraud Prevention in Fintech",
+      "body": "In 2024, fintech companies have embraced AI like never before, deploying advanced tools to enhance operations and beef up fraud prevention. This tech evolution is set to transform the financial landscape, making services safer and more efficient.",
+      "source": "Plaid"
+    }
+  ],
+  "curiosity": {
+    "text": "Did you know? The term 'fintech' was first used in the early 1990s, but the sector's roots can be traced back to the introduction of credit cards in the 1950s!",
+    "source": "Historical Tech Journals"
+  }
+}

@@ -1,0 +1,9 @@
+newsletters:
+  - url: "https://www.axios.com/pro/fintech-deals"
+    topic: "Fintech Deals and Investments"
+  - url: "https://fintechbusinessweekly.substack.com/"
+    topic: "Weekly Fintech Analysis"
+  - url: "https://workweek.com/brand/breaking-payments/"
+    topic: "Breaking News in Payments"
+  - url: "https://www.omnichannelpayments.news/"
+    topic: "Omnichannel Payments Trends"
