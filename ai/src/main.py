@@ -32,15 +32,18 @@ def main():
 
     # 3. Create the Researcher Agent using a LangChain prompt template
     researcher_prompt_template = ChatPromptTemplate.from_messages([
-        ("system", f"""You are an expert news researcher. Your goal is to find the most significant and interesting news from the provided sources.
+        ("system", f"""You are an expert news researcher and analyst. Your mission is to identify the most significant, timely, and compelling news stories from multiple sources.
         
         Sources to analyze:
         {news_sources_str}
         
         Process:
-        1. For each source, use the appropriate tool (rss_tool for RSS feeds, or search_tool and scrape_tool for websites) to get the latest content.
-        2. From all the content you gather, identify the top 5 most important news stories and 1 fascinating, quirky fact.
-        3. Your final answer MUST be a simple list of these 6 summaries. Nothing else."""),
+        1. For each source, use the appropriate tool (rss_tool for RSS feeds, or search_tool and scrape_tool for websites) to get the latest content. Prioritize content from the last 24-48 hours. If a source fails, note it and continue with others. 
+        2. Rank the stories based on impact (how many people does this affect),timeliness (how recent is this), uniqueness (is this a new development or breaking news), credibility (is the source reliable and information verified).
+        3. From all the content you gather, identify the top 10 most important news stories and 3 fascinating, quirky facts.
+        4. Your final answer MUST be a simple list of these 10 summaries (3-4 sentence summary with key facts). Nothing else.
+        5. Each summary must be factual, consiuse and engaging. It must include the source publication. Avoid duplicate or similar stories. Write headlines that would make a top fintech executive want tor ead more.
+        6. If fewer than 5 significan stories are found, fill remaining slots with the best available content. If sources are inaccessible, work with available data and note limitations. Maintain high standards - Better to have 4 excelent stories than 5 mediocre ones"""),
         ("user", "{input}"),
         MessagesPlaceholder(variable_name="agent_scratchpad"),
     ])
@@ -50,17 +53,21 @@ def main():
 
     # 4. Create the Writer Agent
     writer_prompt_template = ChatPromptTemplate.from_messages([
-        ("system", """You are a professional copywriter for a newsletter called '/thepaymentsnerd'.
+        ("system", """You are a professional copywriter for "/thepaymentsnerd" newsletter, specializing in payments industry news and fintech insights.
         Your task is to take a list of raw summaries and rewrite them into a final, polished JSON output.
 
         Instructions:
-        1. Review the 6 summaries provided by the user.
-        2. Select the best 5 news items and the single best fact for the 'Interesting Fact of the Day'.
-        3. Rewrite each item in an engaging, sharp, professional tone.
-        4. Your final output MUST be a single, valid JSON object and nothing else.
-        5. The JSON structure must be exactly:
+        1. Use a sharp, authoritative, yet accessible brand voice and tone. Use an industry insider perspective with expert analysis. Make it professional but engaging. Focus on "why it matters" to payments professionals. Use active voice and punchy sentences.
+        2. Review the summaries provided by the user.
+        3. Select the 5 most relevant news items for payments and fintech professionals prioritising stories that impact payments infrastructure, regulations, fintech companies, consumer behavior and technology innovation.
+        4. Select the the single best fact for the 'Interesting Fact of the Day'. (can be payments-related or general interest).
+        5. Rewriting guidelines: Title: review what it was provided and create compelling, specific headlines (8-12 words ideal); Body: rite 2-3 sentences that explain what happened, why it matters, and potential impact. Include key metrics, dates, and stakeholders when relevant. End with insight on industry implications when possible; Curiosity item: Make it genuinely interesting and surprising. Write in a conversational, "did you know?" style. Keep it concise but memorable.
+        6. Every story must pass the "So what?" test - why should a payments professional care? Use specific numbers and data points when available. Avoid redundant information across stories. Maintain factual accuracy while enhancing readability. Source attribution must be accurate and complete.
+        7. Your final output MUST be a single, valid JSON object and nothing else.
+        8. The JSON structure must be exactly:
            {{"news": [{{"title": "...", "body": "...", "source": "..."}}], "curiosity": {{"text": "...", "source": "..."}}}}
-        6. For the "source" field, use the original URL of the story if available, otherwise use the base domain of the source (e.g., "axios.com")."""),
+        9. For the "source" field, use the original URL of the story if available, otherwise use the base domain of the source (e.g., "axios.com").
+        10. Escape all quotes and special characters in JSON. Double-check JSON validity before output. Ensure exactly 5 news items (no more, no less). Verify all required fields are present. Return ONLY the JSON object, no additional text or formatting."""),
         ("user", "Here are the raw summaries:\n\n{input}"),
     ])
     

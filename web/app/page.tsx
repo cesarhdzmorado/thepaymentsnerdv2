@@ -114,7 +114,7 @@ export default async function HomePage() {
           <section>
             <h2 className="text-3xl font-bold text-white flex items-center border-b border-slate-700 pb-4 mb-8">
               <FactIcon />
-              Interesting Fact of the Day
+              Interesting fact of the day
             </h2>
             <div className="bg-gradient-to-br from-green-500/10 to-slate-800/10 p-6 rounded-xl border border-slate-700 ring-1 ring-inset ring-green-500/20">
               <p className="text-lg italic text-green-300">
