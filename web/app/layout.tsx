@@ -1,29 +1,40 @@
 // web/app/layout.tsx
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Inter, Lexend } from 'next/font/google' // Import the fonts
+import './globals.css'
 
-const inter = Inter({ subsets: ["latin"] });
+// Set up the fonts with their corresponding CSS variables
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+const lexend = Lexend({
+  subsets: ['latin'],
+  variable: '--font-lexend',
+  weight: ['400', '600', '700', '800'],
+})
 
 export const metadata: Metadata = {
-  title: "/thepaymentsnerd",
-  description: "The signal, not the noise. Daily fintech intelligence.",
-};
+  title: '/thepaymentsnerd',
+  description: 'The signal, not the noise. Daily fintech intelligence.',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       {/* 
-        This is the FIX. We apply the global dark theme to the body tag.
-        Every page will inherit this, guaranteeing a consistent look.
+        THIS IS THE MOST IMPORTANT PART:
+        1. We pass the font variables to the entire HTML document.
+        2. We apply the dark background 'bg-slate-900' to the body.
+        3. We set the default text color to 'text-slate-300'.
       */}
-      <body className={`${inter.className} bg-slate-900 text-slate-300`}>
+      <body className={`${inter.variable} ${lexend.variable} font-sans bg-slate-900 text-slate-300`}>
         {children}
       </body>
     </html>
-  );
+  )
 }

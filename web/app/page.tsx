@@ -1,9 +1,8 @@
 // web/app/page.tsx
+import fs from 'fs'
+import path from 'path'
 
-import fs from 'fs';
-import path from 'path';
-
-// --- Helper: Icon Components ---
+// Your Icon Components
 const NewsIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block mr-3 text-blue-400"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Z"/><path d="M15 2v20"/><path d="M8 7h5"/><path d="M8 12h5"/><path d="M8 17h5"/></svg>
 );
@@ -14,7 +13,7 @@ const CalendarIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-slate-500"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
 );
 
-// --- Data Fetching Logic ---
+// Data Fetching Logic
 interface NewsItem { title: string; body: string; source: string; }
 interface Curiosity { text: string; source: string; }
 interface NewsletterData { news: NewsItem[]; curiosity: Curiosity; }
@@ -25,13 +24,10 @@ async function getNewsletterData(): Promise<NewsletterData | null> {
   try {
     const jsonData = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(jsonData);
-  } catch (error) {
-    console.error("Could not read or parse newsletter data:", error);
-    return null;
-  }
+  } catch (error) { return null; }
 }
 
-// --- Main Page Component ---
+// Main Page Component
 export default async function HomePage() {
   const data = await getNewsletterData();
   const formattedDate = new Date().toLocaleDateString('en-US', {
@@ -40,11 +36,10 @@ export default async function HomePage() {
 
   if (!data) {
     return (
-      <main className="text-white min-h-screen flex items-center justify-center">
+      <main className="min-h-screen flex items-center justify-center">
         <div className="container mx-auto px-4 py-8 text-center">
-          <h1 className="text-4xl font-bold mb-4">/thepaymentsnerd</h1>
+          <h1 className="font-heading text-4xl font-bold mb-4">/thepaymentsnerd</h1>
           <p className="text-lg text-red-500">The newsletter data file was not found.</p>
-          <p className="mt-2 text-slate-400">Please run the AI script to generate the daily news.</p>
         </div>
       </main>
     )
@@ -53,28 +48,27 @@ export default async function HomePage() {
   const { news, curiosity } = data;
 
   return (
-    // This main container has NO theme classes. It inherits them from the layout.
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         <div className="container mx-auto px-4 py-16 md:py-24 max-w-3xl">
           
           <header className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
+            <h1 className="font-heading text-5xl md:text-6xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
               /thepaymentsnerd
             </h1>
-            <p className="mt-4 text-lg md:text-xl text-slate-400 max-w-xl mx-auto italic">
+            <p className="font-sans mt-4 text-lg md:text-xl text-slate-400 max-w-xl mx-auto italic">
               The signal, not the noise. Daily fintech intelligence.
             </p>
             <div className="mt-8 flex justify-center items-center gap-x-2">
               <CalendarIcon />
-              <p className="text-sm text-slate-500 font-medium uppercase tracking-wider">
+              <p className="font-sans text-sm text-slate-500 font-medium uppercase tracking-wider">
                 {formattedDate}
               </p>
             </div>
           </header>
 
           <section className="mb-20">
-            <h2 className="text-3xl font-bold text-white flex items-center border-b border-slate-700 pb-4 mb-8">
+            <h2 className="font-heading text-3xl font-bold text-white flex items-center border-b border-slate-700 pb-4 mb-8">
               <NewsIcon />
               5 things you need to know today
             </h2>
@@ -84,20 +78,20 @@ export default async function HomePage() {
                   key={index} 
                   className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition-colors duration-300"
                 >
-                  <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-slate-400 leading-relaxed">{item.body}</p>
+                  <h3 className="font-heading text-xl font-bold text-white mb-2">{item.title}</h3>
+                  <p className="font-sans text-slate-400 leading-relaxed">{item.body}</p>
                 </article>
               ))}
             </div>
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-white flex items-center border-b border-slate-700 pb-4 mb-8">
+            <h2 className="font-heading text-3xl font-bold text-white flex items-center border-b border-slate-700 pb-4 mb-8">
               <FactIcon />
               Interesting fact of the day
             </h2>
             <div className="bg-gradient-to-br from-green-500/10 to-slate-800/10 p-6 rounded-xl border border-slate-700 ring-1 ring-inset ring-green-500/20">
-              <p className="text-lg italic text-green-300">
+              <p className="font-sans text-lg italic text-green-300">
                 “{curiosity.text}”
               </p>
             </div>
@@ -112,6 +106,7 @@ export default async function HomePage() {
             <a href="/privacy-policy" className="hover:text-slate-300 hover:underline">Privacy Policy</a>
             <a href="/legal-terms" className="hover:text-slate-300 hover:underline">Legal Terms</a>
             <a href="/cookies-policy" className="hover:text-slate-300 hover:underline">Cookies Policy</a>
+            <a href="https://github.com/cesarhdzmorado/thepaymentsnerdv2" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 hover:underline">Repository</a>
           </div>
           <p>© {new Date().getFullYear()} thepaymentsnerd. All rights reserved.</p>
         </div>
