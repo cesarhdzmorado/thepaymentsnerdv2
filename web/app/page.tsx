@@ -133,7 +133,6 @@ export default async function HomePage() {
             <a href="/privacy-policy" className="hover:text-slate-300 hover:underline">Privacy Policy</a>
             <a href="/legal-terms" className="hover:text-slate-300 hover:underline">Legal Terms</a>
             <a href="/cookies-policy" className="hover:text-slate-300 hover:underline">Cookies Policy</a>
-            <a href="https://github.com/cesarhdzmorado/thepaymentsnerdv2" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 hover:underline">Repository</a>
           </div>
           <p>© {new Date().getFullYear()} thepaymentsnerd. All rights reserved.</p>
         </div>
