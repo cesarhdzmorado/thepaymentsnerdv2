@@ -1,0 +1,64 @@
+# .github/workflows/generate_news.yml
+name: Generate Daily Newsletter
+
+on:
+  # This allows you to run the workflow manually from the Actions tab on GitHub
+  workflow_dispatch:
+  
+  # This sets the schedule
+  schedule:
+    # Runs at 8:00 AM UK time (which is UTC in winter, and UTC+1 in summer).
+    # We will use 7:00 AM UTC to be safe for most of the year.
+    # cron format: minute hour day(month) month day(week)
+    - cron: '0 7 * * *'
+
+jobs:
+  build-and-run:
+    # Use the latest version of Ubuntu
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out your repository's code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the Python version
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      # Step 3: Create and activate the virtual environment
+      # We use the same .venv that we used for local testing
+      - name: Create and activate virtual environment
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+      
+      # Step 4: Install the Python dependencies into the .venv
+      - name: Install Python dependencies
+        run: |
+          source .venv/bin/activate
+          pip install --upgrade pip
+          pip install -r ai/requirements.txt
+
+      # Step 5: Run the AI script
+      - name: Run AI Agent script
+        # We pass the API keys as environment variables using GitHub Secrets
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+        run: |
+          source .venv/bin/activate
+          python -m ai.src.main
+
+      # Step 6: Commit and push the new newsletter.json file
+      - name: Commit and push generated newsletter
+        run: |
+          git config --global user.name "The Payments Nerd Bot"
+          git config --global user.email "bot@thepaymentsnerd.com"
+          # The 'git add -f' forces adding the file even if it's in .gitignore
+          git add -f web/public/newsletter.json
+          # This command checks if there are any changes to commit. If not, it does nothing.
+          git diff --staged --quiet || git commit -m "feat: ✨ Generate daily newsletter"
+          git push
