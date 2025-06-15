@@ -14,31 +14,38 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Step 1: Set up Python. This action also handles adding python to the path.
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
 
-      # MODIFIED: Combined activation, install, and run into a single step
-      - name: Install dependencies and run AI script
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          # SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }} # Uncomment if you add it back
+      # Step 2: Cache dependencies for faster installs
+      # This step creates a "cache" of your installed libraries.
+      # If requirements.txt hasn't changed, it restores them instantly.
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('ai/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # Step 3: Install dependencies
+      # We no longer need to create a .venv ourselves. The actions handle the pathing.
+      - name: Install Python dependencies
         run: |
-          # Step 1: Create the virtual environment
-          python -m venv .venv
-          
-          # Step 2: Activate it for this script block
-          source .venv/bin/activate
-          
-          # Step 3: Upgrade pip and install requirements (now using the venv's pip)
           pip install --upgrade pip
           pip install -r ai/requirements.txt
-          
-          # Step 4: Run the main script (now using the venv's python)
-          python -m ai.src.main
+      
+      # Step 4: Run the AI script
+      - name: Run AI Agent script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }} # Kept for future use
+        run: python -m ai.src.main
 
-      # This commit step remains the same
+      # Step 5: Commit and push the new newsletter.json file
       - name: Commit and push generated newsletter
         run: |
           git config --global user.name "The Payments Nerd Bot"
