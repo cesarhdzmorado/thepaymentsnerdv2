@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Shopify, Coinbase, and Stripe Forge Path for Crypto Payments",
-      "body": "In a groundbreaking collaboration, Shopify has partnered with Coinbase and Stripe to facilitate USDC stablecoin payments. This initiative paves the way for broader cryptocurrency adoption in everyday commerce, offering merchants a new avenue for transaction processing.",
-      "source": "coinbase.com"
+      "title": "Shopify, Coinbase, Stripe Unite for USDC Stablecoin Payments",
+      "body": "Shopify has joined forces with Coinbase and Stripe to enable USDC stablecoin payments, paving the way for broader cryptocurrency use in commerce. This partnership not only enhances payment flexibility for merchants but also signals a significant shift towards the normalization of digital currencies in everyday transactions.",
+      "source": "Finextra"
     },
     {
-      "title": "New York Enforces Cash Payment Acceptance",
-      "body": "A newly passed bill in New York mandates that food stores and retail establishments cannot refuse cash payments. This law aims to support inclusivity, catering to the needs of unbanked individuals and those who prefer traditional cash transactions.",
-      "source": "ny.gov"
+      "title": "New York Law Requires Retailers to Accept Cash Payments",
+      "body": "A new legislative mandate in New York now requires all food stores and retail establishments to accept cash, addressing financial inclusivity for the unbanked and those without digital payment access. This move highlights the ongoing tension between advancing digital payment solutions and maintaining accessibility for all consumers.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Cryptocurrency's Potential Systemic Risk",
-      "body": "The outgoing chair of the Financial Stability Board has raised concerns that cryptocurrencies could soon represent a systemic risk to the global financial system. This warning underscores the urgent need for comprehensive regulatory frameworks.",
-      "source": "fsb.org"
+      "title": "APAC Fintech and Healthtech Battle Rising Fraud Trends",
+      "body": "A recent report from Sumsub shows a 116% spike in fraud within the APAC fintech sector, driven by advanced scams like deepfakes. This alarming increase underscores the critical need for robust security solutions in fintech and healthtech, sectors increasingly vulnerable to sophisticated cyber threats.",
+      "source": "Fintech News Singapore"
     },
     {
-      "title": "Surge in Fintech Fraud in Asia Pacific",
-      "body": "The fintech industry in the Asia Pacific region has experienced a dramatic 116% increase in fraud cases, particularly those involving deepfakes and synthetic IDs. This trend highlights significant challenges in maintaining digital security and robust verification processes.",
-      "source": "apac.org"
+      "title": "Coinbase and American Express Introduce Bitcoin Rewards Card",
+      "body": "Coinbase and American Express have launched a new credit card that offers up to 4% bitcoin back on purchases, merging traditional financial perks with cryptocurrency rewards. This innovative product could potentially transform reward systems and bolster mainstream crypto engagement.",
+      "source": "Finextra"
     },
     {
-      "title": "Circle Eyes Future Stablecoin Collaborations",
-      "body": "Circle CEO Jeremy Allaire has highlighted the burgeoning potential for stablecoins in the financial landscape. With optimism for future partnerships, Circle is poised to integrate more deeply into global financial systems and corporate transactions.",
-      "source": "circle.com"
+      "title": "GrailPay Raises $6.7 Million to Enhance ACH Transaction Safety",
+      "body": "GrailPay has secured $6.7 million in funding to improve its ACH transaction platform, focusing on safety and speed. This investment reflects the growing demand for secure and efficient payment solutions, crucial for maintaining trust and functionality in digital banking.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Bank Aston has been granted the first banking license in Guernsey in nearly three decades, marking a significant milestone in the local financial sector since 1996.",
-    "source": "bankaston.com"
+    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was made of cardboard!",
+    "source": "history.com"
   }
 }
