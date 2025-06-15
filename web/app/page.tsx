@@ -4,20 +4,21 @@ import fs from 'fs';
 import path from 'path';
 import type { Metadata } from 'next';
 
-// Updated metadata for the new design
 export const metadata: Metadata = {
   title: '/thepaymentsnerd',
-  description: 'Stay ahead in all things payments. 2 minutes a day. Curated by AI nerds.',
+  description: 'The signal, not the noise. Daily fintech intelligence.',
 };
 
 // --- Helper: Icon Components ---
-// We define these simple components here for clarity.
 const NewsIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block mr-3 text-blue-400"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Z"/><path d="M15 2v20"/><path d="M8 7h5"/><path d="M8 12h5"/><path d="M8 17h5"/></svg>
 );
-
 const FactIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block mr-3 text-green-400"><path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M12 21a9 9 0 0 0 0-18H6.5a1 1 0 0 0 0 2H12a7 7 0 0 1 0 14h-3a1 1 0 0 0 0 2h3Z"/></svg>
+);
+// NEW: A calendar icon for the date
+const CalendarIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-slate-500"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
 );
 
 
@@ -41,8 +42,17 @@ async function getNewsletterData(): Promise<NewsletterData | null> {
 // --- Main Page Component ---
 export default async function HomePage() {
   const data = await getNewsletterData();
+  
+  // NEW: Get and format today's date
+  const formattedDate = new Date().toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
   if (!data) {
+    // ... (error message code is unchanged)
     return (
       <main className="bg-slate-900 text-white min-h-screen flex items-center justify-center">
         <div className="container mx-auto px-4 py-8 text-center">
@@ -70,10 +80,19 @@ export default async function HomePage() {
               /thepaymentsnerd
             </h1>
             <p className="mt-4 text-lg md:text-xl text-slate-400 max-w-xl mx-auto italic">
-              The 5 most important payment stories. Daily.
+              The signal, not the noise. Daily fintech intelligence.
             </p>
+
+            {/* NEW: Today's date display */}
+            <div className="mt-8 flex justify-center items-center gap-x-2">
+              <CalendarIcon />
+              <p className="text-sm text-slate-500 font-medium uppercase tracking-wider">
+                {formattedDate}
+              </p>
+            </div>
           </header>
 
+          {/* ... (The rest of the news and fact sections are unchanged) ... */}
           <section className="mb-20">
             <h2 className="text-3xl font-bold text-white flex items-center border-b border-slate-700 pb-4 mb-8">
               <NewsIcon />
@@ -107,6 +126,7 @@ export default async function HomePage() {
         </div>
       </main>
 
+      {/* ... (Footer is unchanged) ... */}
       <footer className="w-full mt-24 py-8 border-t border-slate-800">
         <div className="container mx-auto px-4 text-center text-slate-500 text-sm">
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
