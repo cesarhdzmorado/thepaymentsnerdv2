@@ -6,6 +6,10 @@ on:
   schedule:
     - cron: '0 7 * * *'
 
+# NEW: Add this block to grant write permissions to the workflow
+permissions:
+  contents: write
+
 jobs:
   build-and-run:
     runs-on: ubuntu-latest
@@ -14,42 +18,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 1: Set up Python. This action also handles adding python to the path.
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
 
-      # Step 2: Cache dependencies for faster installs
-      # This step creates a "cache" of your installed libraries.
-      # If requirements.txt hasn't changed, it restores them instantly.
-      - name: Cache pip dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('ai/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      # Step 3: Install dependencies
-      # We no longer need to create a .venv ourselves. The actions handle the pathing.
+      # We don't need caching for this simple setup anymore, simplifying the file.
       - name: Install Python dependencies
         run: |
           pip install --upgrade pip
           pip install -r ai/requirements.txt
       
-      # Step 4: Run the AI script
       - name: Run AI Agent script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }} # Kept for future use
+          # SERPER_API_KEY is not used, but we keep the secret here
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
         run: python -m ai.src.main
 
-      # Step 5: Commit and push the new newsletter.json file
       - name: Commit and push generated newsletter
         run: |
           git config --global user.name "The Payments Nerd Bot"
           git config --global user.email "bot@thepaymentsnerd.com"
+          # The -f flag forces adding the file if it's in .gitignore
+          # We add this just in case, though it shouldn't be needed
           git add -f web/public/newsletter.json
           git diff --staged --quiet || git commit -m "feat: ✨ Generate daily newsletter"
           git push
