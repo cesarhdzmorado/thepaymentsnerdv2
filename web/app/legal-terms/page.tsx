@@ -13,8 +13,8 @@ export default function LegalTermsPage() {
             <p className="lead">Last updated: June 15, 2024</p>
 
             <h2>1. Agreement to Terms</h2>
-            {/* CORRECTED: Fixed "don't" and the quotes around "Terms" */}
-            <p>By accessing and using /thepaymentsnerd (the "Site"), you agree to be bound by these Terms of Service (“Terms”). If you do not agree to these Terms, please don’t use the Site.</p>
+            {/* CORRECTED: Fixed "don't" and the quotes around "Site" and "Terms". */}
+            <p>By accessing and using /thepaymentsnerd (the “Site”), you agree to be bound by these Terms of Service, hereinafter referred to as “Terms”. If you do not agree to these Terms, please don’t use the Site.</p>
 
             <h2>2. Use of the Site</h2>
             <p>The Site provides curated news summaries and facts for informational purposes only. The content provided is not financial, investment, or legal advice. You agree to use the Site for your personal, non-commercial use only.</p>
@@ -24,7 +24,7 @@ export default function LegalTermsPage() {
             <p>The branding, design, and original text of the Site are the property of the Site’s owner. The content summarized is derived from third-party sources, and ownership of the original news content remains with those sources.</p>
 
             <h2>4. Disclaimer of Warranties</h2>
-            {/* CORRECTED: Fixed the quotes around "AS IS" and "AS AVAILABLE" */}
+            {/* CORRECTED: Fixed the quotes around "AS IS" and "AS AVAILABLE". */}
             <p>The Site is provided on an “AS IS” and “AS AVAILABLE” basis. We make no warranties, express or implied, regarding the accuracy, reliability, or completeness of the content. Your use of the Site is at your sole risk.</p>
 
             <h2>5. Limitation of Liability</h2>
