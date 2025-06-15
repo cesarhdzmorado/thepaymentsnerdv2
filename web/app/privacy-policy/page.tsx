@@ -24,7 +24,8 @@ export default function PrivacyPolicyPage() {
             Our web host, Vercel, may collect standard, non-personally identifiable information for analytics and security purposes. This may include:
           </p>
           <ul>
-            <li>Your device's IP address</li>
+            {/* CORRECTED: "device's" */}
+            <li>Your device’s IP address</li>
             <li>Browser type and version</li>
             <li>The pages you visit on our site</li>
             <li>The time and date of your visit</li>
@@ -40,7 +41,8 @@ export default function PrivacyPolicyPage() {
           
           <h2>Third-Party Links</h2>
           <p>
-            Our website may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+            {/* CORRECTED: "third party's" */}
+            Our website may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third party’s site. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
           </p>
           
           <h2>Changes to This Privacy Policy</h2>
