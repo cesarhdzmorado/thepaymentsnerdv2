@@ -90,7 +90,7 @@ export default async function HomePage() {
             {/* CHANGED: Section title */}
             <h2 className="text-3xl font-bold border-b-2 border-green-600 pb-2 mb-6">Interesting Fact of the Day</h2>
               <div className="bg-green-50 border-l-4 border-green-500 text-green-800 p-6 rounded-r-lg shadow-md">
-                <p className="text-lg italic">"{curiosity.text}"</p>
+                <p className="text-lg italic">“{curiosity.text}”</p>
                 {/* REMOVED: The source link */}
               </div>
           </section>
