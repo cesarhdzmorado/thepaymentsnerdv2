@@ -1,33 +1,43 @@
 # ai/src/tools.py
 
-# In this known-good version, 'tool' is correctly imported from 'crewai_tools'
-from crewai_tools import SerperDevTool, WebsiteSearchTool, tool
+# This is the correct import for the stable LangChain environment we built.
+from langchain_core.tools import tool
+import requests
+from bs4 import BeautifulSoup
+from duckduckgo_search import DDGS
 import feedparser
 
-# --- Existing Tools ---
-search_tool = SerperDevTool()
-scrape_tool = WebsiteSearchTool()
+@tool
+def search_tool(query: str) -> str:
+    """Performs a web search to find relevant URLs."""
+    try:
+        with DDGS() as ddgs:
+            results = [r for r in ddgs.text(query, max_results=5)]
+            return str(results) if results else "No results found."
+    except Exception as e:
+        return f"Error searching: {e}"
 
-# --- Custom Tool Definition ---
-@tool("RSS Feed Reader")
+@tool
+def scrape_tool(url: str) -> str:
+    """Scrapes the text content of a single webpage."""
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        response = requests.get(url, headers=headers, timeout=10)
+        soup = BeautifulSoup(response.text, 'lxml')
+        for tag in soup(['script', 'style', 'nav', 'footer', 'header']):
+            tag.decompose()
+        return soup.get_text(strip=True)[:4000]
+    except Exception as e:
+        return f"Error scraping: {e}"
+
+@tool
 def rss_tool(rss_feed_url: str) -> str:
-    """A tool to fetch and parse articles from an RSS feed URL."""
+    """Fetches articles from an RSS feed."""
     try:
         feed = feedparser.parse(rss_feed_url)
-        if feed.bozo:
-            return f"Error: Failed to parse RSS feed."
-
         entries = feed.entries[:5]
-        if not entries:
-            return "No articles found in this RSS feed."
-
-        formatted_entries = []
-        for entry in entries:
-            title = entry.get("title", "No Title")
-            summary = entry.get("summary", "No Summary Available.")
-            formatted_entries.append(f"- Title: {title}\n  Summary: {summary}\n")
-        
-        return "\n".join(formatted_entries)
-
+        if not entries: return "No articles found."
+        summaries = [f"Title: {e.get('title', 'N/A')}\nSummary: {BeautifulSoup(e.get('summary', ''), 'lxml').get_text(strip=True)}" for e in entries]
+        return "\n\n".join(summaries)
     except Exception as e:
-        return f"An error occurred: {e}"
+        return f"Error reading RSS feed: {e}"

@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Gilgamesh Ventures Injects $20M into Fintech's Future",
-      "body": "Gilgamesh Ventures, a keen player in the fintech VC space, has filled its coffers with $20 million for Fund II, targeting promising startups like Baselayer and Nexu. It's a clear signal that niche fintech investment is not just surviving but thriving.",
-      "source": "Axios"
+      "title": "Shopify Teams Up with Coinbase and Stripe",
+      "body": "Shopify is advancing cryptocurrency integration in e-commerce by partnering with Coinbase and Stripe to allow merchants to accept payments in USDC stablecoin. This collaboration signifies a major step towards embracing digital currencies in everyday commerce.",
+      "source": "coinbase.com"
     },
     {
-      "title": "VC Fintech Funding Hits a Speed Bump, Dips Below 2019 Levels",
-      "body": "The fintech funding frenzy took a breather in 2024, with investments falling 11.6% from the previous year. This pullback to pre-pandemic levels suggests a recalibration of investor enthusiasm in the fintech sector.",
-      "source": "Axios"
+      "title": "Bank Aston Secures Historic License",
+      "body": "Bank Aston has been granted a license by the Guernsey Financial Services Commission, becoming the first bank to achieve this in nearly three decades. This milestone is set to rejuvenate the local banking landscape in Guernsey.",
+      "source": "gfsc.gg"
     },
     {
-      "title": "Affirm Secures a Whopping $750M from Liberty Mutual",
-      "body": "In a major boost to its expansion plans, Affirm has bagged a $750 million loan commitment from Liberty Mutual. This partnership not only fuels Affirm's growth but also marks a significant vote of confidence in its business model, with Liberty Mutual planning a hefty $5 billion investment streak through 2027.",
-      "source": "Axios"
+      "title": "GrailPay Raises $6.7 Million for ACH Enhancements",
+      "body": "GrailPay has successfully secured $6.7 million in funding to bolster its ACH transaction platform. The investment will be used to enhance safety and speed in bank payments through advanced risk and data management technologies.",
+      "source": "grailpay.com"
     },
     {
-      "title": "Circle and Chime Ride the IPO Wave to Market Triumph",
-      "body": "The fintech sector showed its strength at the stock market with Circle and Chime experiencing impressive IPO pops. This robust market reaction hints at a fertile ground for future fintech IPOs, potentially kicking off a race among upcoming public listings.",
-      "source": "Fintech Business Weekly"
+      "title": "Klarna Integrates AI Gifting with Nift",
+      "body": "In a bid to enhance customer loyalty, Klarna has partnered with Nift, leveraging its AI technology to offer personalized gifting solutions to shoppers. This strategic alliance aims to enrich the shopping experience and increase customer engagement.",
+      "source": "klarna.com"
     },
     {
-      "title": "Blockchain Bonanza: Industry to Net $20B in Next Five Years",
-      "body": "The blockchain arena is set to explode, with projections pointing to a $20 billion profit surge over the next half-decade. This growth is not just a win for blockchain companies but marks a transformative shift in the broader financial landscape.",
-      "source": "Leftronic"
+      "title": "Coinbase and American Express Launch Bitcoin Rewards Card",
+      "body": "In a groundbreaking move, Coinbase and American Express have introduced a new credit card that offers up to four percent bitcoin back on purchases. This initiative marries traditional financial services with the burgeoning field of cryptocurrency, making digital currency rewards a part of everyday shopping.",
+      "source": "americanexpress.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that despite the cooling off in fintech investments, specific sectors like blockchain are predicted to see exponential growth, suggesting a selective yet significant confidence in tech-driven financial solutions?",
-    "source": "Based on provided research"
+    "text": "The fintech sector in the Asia Pacific region has experienced a staggering 116% rise in fraud cases involving deepfakes and synthetic identities, underscoring significant digital security challenges.",
+    "source": "APAC Fintech Report"
   }
 }

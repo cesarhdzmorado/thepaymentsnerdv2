@@ -1,65 +1,102 @@
 # ai/src/main.py
 
-# This is a system-level hack to ensure we use a modern version of sqlite3.
-# It must be at the very top of the entry-point file.
+# This is the system-level hack for sqlite3
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import yaml
-from crewai import Crew, Process
+import json
+from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
+from langchain.agents import create_openai_functions_agent, AgentExecutor
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
-# We import our custom modules after the system hack.
-from .agents import NewsletterAgents
-from .tasks import NewsletterTasks
+# Import our custom tools
+from .tools import search_tool, scrape_tool, rss_tool
 
+def main():
+    """The main function that runs the agent-based workflow."""
+    load_dotenv()
 
-class NewsletterCrew:
-    def __init__(self, output_path):
-        self.output_path = output_path
-        # Load the list of news sources from our YAML config file.
-        with open('ai/config.yml', 'r') as file:
-            self.config = yaml.safe_load(file)
-        self.agents = NewsletterAgents()
-        self.tasks = NewsletterTasks()
+    # 1. Load Configuration from the YAML file
+    with open('ai/config.yml', 'r') as file:
+        config = yaml.safe_load(file)
+    
+    # Create a string of news sources for the prompt
+    news_sources_str = "\n".join([f"- {s['url']} ({s['topic']})" for s in config['newsletters']])
+    
+    # 2. Initialize the Language Model and the tools list
+    llm = ChatOpenAI(model="gpt-4-turbo", temperature=0)
+    tools = [search_tool, scrape_tool, rss_tool]
 
-    def run(self):
-        # Create all the agents
-        researchers = [self.agents.make_researcher(f"researcher_{i}", source['topic']) for i, source in enumerate(self.config['newsletters'])]
-        curiosity_agent = self.agents.make_curiosity_researcher()
-        writer_agent = self.agents.make_writer()
-
-        # Create all the tasks
-        research_tasks = [self.tasks.research_task(researchers[i], source['url'], source['topic']) for i, source in enumerate(self.config['newsletters'])]
-        curiosity_task = self.tasks.curiosity_task(agent=curiosity_agent)
+    # 3. Create the Researcher Agent using a LangChain prompt template
+    researcher_prompt_template = ChatPromptTemplate.from_messages([
+        ("system", f"""You are an expert news researcher. Your goal is to find the most significant and interesting news from the provided sources.
         
-        # The compile task is the final one, taking context from all previous tasks.
-        compile_task = self.tasks.compile_newsletter_task(
-            agent=writer_agent,
-            contexts=research_tasks + [curiosity_task],
-            output_path=self.output_path
-        )
-
-        # Form the crew with a sequential process
-        crew = Crew(
-            agents=researchers + [curiosity_agent, writer_agent],
-            tasks=research_tasks + [curiosity_task, compile_task],
-            process=Process.sequential,
-            verbose=True  # <-- THE FIX: Changed from '2' to 'True' for compatibility with new CrewAI versions.
-        )
+        Sources to analyze:
+        {news_sources_str}
         
-        # Kick off the crew's work
-        result = crew.kickoff()
-        
-        print("\n\n########################")
-        print("## Crew work complete! ##")
-        print("########################\n")
-        print("Final Result:")
-        print(result)
+        Process:
+        1. For each source, use the appropriate tool (rss_tool for RSS feeds, or search_tool and scrape_tool for websites) to get the latest content.
+        2. From all the content you gather, identify the top 5 most important news stories and 1 fascinating, quirky fact.
+        3. Your final answer MUST be a simple list of these 6 summaries. Nothing else."""),
+        ("user", "{input}"),
+        MessagesPlaceholder(variable_name="agent_scratchpad"),
+    ])
+    
+    researcher_agent = create_openai_functions_agent(llm, tools, researcher_prompt_template)
+    researcher_executor = AgentExecutor(agent=researcher_agent, tools=tools, verbose=True)
 
-# This is the entry point of the script
+    # 4. Create the Writer Agent
+    writer_prompt_template = ChatPromptTemplate.from_messages([
+        ("system", """You are a professional copywriter for a newsletter called '/thepaymentsnerd'.
+        Your task is to take a list of raw summaries and rewrite them into a final, polished JSON output.
+
+        Instructions:
+        1. Review the 6 summaries provided by the user.
+        2. Select the best 5 news items and the single best fact for the 'Interesting Fact of the Day'.
+        3. Rewrite each item in an engaging, sharp, professional tone.
+        4. Your final output MUST be a single, valid JSON object and nothing else.
+        5. The JSON structure must be exactly:
+           {{"news": [{{"title": "...", "body": "...", "source": "..."}}], "curiosity": {{"text": "...", "source": "..."}}}}
+        6. For the "source" field, use the original URL of the story if available, otherwise use the base domain of the source (e.g., "axios.com")."""),
+        ("user", "Here are the raw summaries:\n\n{input}"),
+    ])
+    
+    # MODIFIED: Create a simple 'chain' for the writer, as it doesn't need tools.
+    # This avoids the "empty functions" error.
+    writer_chain = writer_prompt_template | llm
+
+    # 5. Run the agents in a chain
+    print("--- Starting Researcher Agent ---")
+    research_result = researcher_executor.invoke({"input": "Please research the latest news from my list of sources."})
+    
+    print("\n--- Starting Writer Agent ---")
+    # MODIFIED: Invoke the new writer_chain
+    final_result_chain = writer_chain.invoke({"input": research_result['output']})
+
+    # 6. Save the final output to a file
+    try:
+        # MODIFIED: The output from a simple chain is in the 'content' attribute.
+        # We also clean up potential markdown formatting from the AI's response.
+        output_text = final_result_chain.content.strip().replace("```json", "").replace("```", "").strip()
+        output_json = json.loads(output_text)
+        
+        output_path = "web/public/newsletter.json"
+        with open(output_path, 'w') as f:
+            json.dump(output_json, f, indent=2)
+            
+        print(f"\n--- Newsletter successfully saved to {output_path} ---")
+        print("Final JSON output:")
+        print(json.dumps(output_json, indent=2))
+        
+    except (json.JSONDecodeError, AttributeError, KeyError) as e:
+        print(f"\n--- FAILED to parse or save the final JSON. ---")
+        print(f"Error: {e}")
+        print("Raw AI Output:")
+        # Print the raw content for debugging
+        print(final_result_chain.content if hasattr(final_result_chain, 'content') else final_result_chain)
+
 if __name__ == "__main__":
-    # Define the path where the final JSON newsletter will be saved.
-    output_file_path = "web/public/newsletter.json"
-    newsletter_crew = NewsletterCrew(output_path=output_file_path)
-    newsletter_crew.run()
+    main()

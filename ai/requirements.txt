@@ -1,10 +1,10 @@
-crewai==0.35.8
+langchain==0.1.20
+langchain-openai==0.1.7
 python-dotenv==1.0.1
-langchain-openai==0.1.8
 pyyaml==6.0.1
 beautifulsoup4==4.12.3
 lxml==5.2.2
 feedparser==6.0.11
-duckduckgo-search==6.1.8
 requests==2.32.3
-langchain==0.1.20
+pysqlite3-binary==0.5.4
+duckduckgo-search==6.1.8
