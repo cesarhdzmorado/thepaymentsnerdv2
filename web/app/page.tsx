@@ -102,7 +102,7 @@ export default async function HomePage() {
 
         <section id="curiosity" className="mt-12 bg-blue-100 text-blue-900 p-6 rounded-lg border border-blue-200">
           <h3 className="text-xl font-bold mb-2">Did You Know?</h3>
-          <p className="italic">"{newsletter.content.curiosity.text}"</p>
+          <p className="italic">{`"${newsletter.content.curiosity.text}"`}</p>
           <p className="text-sm text-right mt-2 font-medium">
             Source: <span className="text-blue-700">{newsletter.content.curiosity.source}</span>
           </p>
