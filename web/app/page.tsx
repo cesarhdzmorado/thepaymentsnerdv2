@@ -65,7 +65,7 @@ export default async function HomePage() {
   if (!newsletter) {
     return (
       <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-slate-50 text-slate-800">
-        <h1 className="text-4xl font-bold mb-4">The Payments Nerd</h1>
+        <h1 className="text-4xl font-bold mb-4">/thepaymentsnerd</h1>
         <p className="text-lg text-slate-600">No newsletter available. Please check back later.</p>
       </main>
     );
@@ -83,7 +83,7 @@ export default async function HomePage() {
       <main className="max-w-3xl mx-auto p-4 sm:p-8">
         <header className="text-center border-b-2 border-slate-200 pb-8 mb-8">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
-            The Payments Nerd
+            /thepaymentsnerd
           </h1>
           <p className="mt-4 text-lg text-slate-500">{formattedDate}</p>
         </header>
