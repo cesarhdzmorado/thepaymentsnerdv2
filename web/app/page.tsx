@@ -1,103 +1,117 @@
-import Image from "next/image";
+// web/app/page.tsx
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+import { supabase } from '@/lib/supabaseClient'; // Using the '@/' alias we set up!
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+// --- Define TypeScript types for our data ---
+// This gives us autocompletion and type safety.
+interface NewsItem {
+  title: string;
+  body: string;
+  source: string;
+}
+
+interface Curiosity {
+  text: string;
+  source: string;
+}
+
+interface NewsletterContent {
+  news: NewsItem[];
+  curiosity: Curiosity;
+}
+
+interface Newsletter {
+  publication_date: string;
+  content: NewsletterContent;
+}
+
+// --- Data Fetching Function ---
+// This is a Server Component, so we can make it async and fetch data directly.
+async function getLatestNewsletter(): Promise<Newsletter | null> {
+  // Fetch from the 'newsletters' table, order by date descending, and get the first one.
+  const { data, error } = await supabase
+    .from('newsletters')
+    .select('publication_date, content')
+    .order('publication_date', { ascending: false })
+    .limit(1)
+    .single(); // .single() returns one object instead of an array of one
+
+  if (error || !data) {
+    console.error("Error fetching newsletter:", error?.message);
+    return null; // Return null if there's an error or no data
+  }
+
+  return data as Newsletter;
+}
+
+// --- The Main Page Component ---
+export default async function HomePage() {
+  // Set revalidate to force Next.js to check for new data periodically (e.g., every 5 minutes).
+  // This is called Incremental Static Regeneration (ISR).
+  // Your site is static and fast, but updates automatically in the background.
+  // When you redeploy on Vercel, it also forces a revalidation.
+  // For frequent updates, you can lower this number. For daily, 3600 (1 hour) is fine.
+  // To test changes immediately in development, just refresh the page.
+  // NOTE: Next.js may cache aggressively in `dev` mode. Do a hard refresh (Cmd+Shift+R or Ctrl+Shift+R)
+  // if you don't see changes after uploading new data and refreshing.
+  
+  // As of Next.js 14, to opt into dynamic rendering for a page, you can export `revalidate`
+  // or use `unstable_noStore` from 'next/cache' within your fetching function.
+  // For simplicity, we rely on the default behavior and manual redeployment for now.
+  
+  const newsletter = await getLatestNewsletter();
+
+  // If no newsletter is found, show a fallback message.
+  if (!newsletter) {
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-slate-50 text-slate-800">
+        <h1 className="text-4xl font-bold mb-4">The Payments Nerd</h1>
+        <p className="text-lg text-slate-600">No newsletter available. Please check back later.</p>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    );
+  }
+
+  // Format the date for display
+  const formattedDate = new Date(newsletter.publication_date + 'T00:00:00').toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  return (
+    <div className="bg-slate-50 font-sans text-slate-800">
+      <main className="max-w-3xl mx-auto p-4 sm:p-8">
+        <header className="text-center border-b-2 border-slate-200 pb-8 mb-8">
+          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
+            The Payments Nerd
+          </h1>
+          <p className="mt-4 text-lg text-slate-500">{formattedDate}</p>
+        </header>
+
+        <section id="news-items" className="space-y-8">
+          {newsletter.content.news.map((item, index) => (
+            <article key={index} className="bg-white p-6 rounded-lg shadow-md border border-slate-200">
+              <h2 className="text-2xl font-bold text-slate-900 mb-3">{item.title}</h2>
+              <p className="text-base leading-relaxed mb-4">{item.body}</p>
+              <p className="text-sm font-medium text-slate-500">
+                Source: <a href={`https://www.${item.source}`} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{item.source}</a>
+              </p>
+            </article>
+          ))}
+        </section>
+
+        <section id="curiosity" className="mt-12 bg-blue-100 text-blue-900 p-6 rounded-lg border border-blue-200">
+          <h3 className="text-xl font-bold mb-2">Did You Know?</h3>
+          <p className="italic">"{newsletter.content.curiosity.text}"</p>
+          <p className="text-sm text-right mt-2 font-medium">
+            Source: <span className="text-blue-700">{newsletter.content.curiosity.source}</span>
+          </p>
+        </section>
+
+        <footer className="mt-12 pt-8 border-t-2 border-slate-200 text-center text-slate-500">
+          <p>© {new Date().getFullYear()} The Payments Nerd. All rights reserved.</p>
+        </footer>
+      </main>
     </div>
   );
 }
