@@ -1,115 +1,102 @@
-// web/app/page.tsx
-import fs from 'fs'
-import path from 'path'
+import Image from "next/image";
 
-// Your Icon Components
-const NewsIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block mr-3 text-blue-400"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Z"/><path d="M15 2v20"/><path d="M8 7h5"/><path d="M8 12h5"/><path d="M8 17h5"/></svg>
-);
-const FactIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block mr-3 text-green-400"><path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M12 21a9 9 0 0 0 0-18H6.5a1 1 0 0 0 0 2H12a7 7 0 0 1 0 14h-3a1 1 0 0 0 0 2h3Z"/></svg>
-);
-const CalendarIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-slate-500"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
-);
-
-// Data Fetching Logic
-interface NewsItem { title: string; body: string; source: string; }
-interface Curiosity { text: string; source: string; }
-interface NewsletterData { news: NewsItem[]; curiosity: Curiosity; }
-
-async function getNewsletterData(): Promise<NewsletterData | null> {
-  const filePath = path.join(process.cwd(), 'public', 'newsletter.json');
-  if (!fs.existsSync(filePath)) { return null; }
-  try {
-    const jsonData = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(jsonData);
-  } catch (error) { return null; }
-}
-
-// Main Page Component
-export default async function HomePage() {
-  const data = await getNewsletterData();
-  const formattedDate = new Date().toLocaleDateString('en-US', {
-    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
-  });
-
-  if (!data) {
-    return (
-      <main className="min-h-screen flex items-center justify-center">
-        <div className="container mx-auto px-4 py-8 text-center">
-          <h1 className="font-heading text-4xl font-bold mb-4">/thepaymentsnerd</h1>
-          <p className="text-lg text-red-500">The newsletter data file was not found.</p>
-        </div>
-      </main>
-    )
-  }
-
-  const { news, curiosity } = data;
-
+export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-grow">
-        <div className="container mx-auto px-4 py-16 md:py-24 max-w-3xl">
-          
-          <header className="text-center mb-16">
-            <h1 className="font-heading text-5xl md:text-6xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
-              /thepaymentsnerd
-            </h1>
-            <p className="font-sans mt-4 text-lg md:text-xl text-slate-400 max-w-xl mx-auto italic">
-              The signal, not the noise. Daily fintech intelligence.
-            </p>
-            <div className="mt-8 flex justify-center items-center gap-x-2">
-              <CalendarIcon />
-              <p className="font-sans text-sm text-slate-500 font-medium uppercase tracking-wider">
-                {formattedDate}
-              </p>
-            </div>
-          </header>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <Image
+          className="dark:invert"
+          src="/next.svg"
+          alt="Next.js logo"
+          width={180}
+          height={38}
+          priority
+        />
+        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <li className="mb-2 tracking-[-.01em]">
+            Get started by editing{" "}
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
+              app/page.tsx
+            </code>
+            .
+          </li>
+          <li className="tracking-[-.01em]">
+            Save and see your changes instantly.
+          </li>
+        </ol>
 
-          <section className="mb-20">
-            <h2 className="font-heading text-3xl font-bold text-white flex items-center border-b border-slate-700 pb-4 mb-8">
-              <NewsIcon />
-              5 things you need to know today
-            </h2>
-            <div className="space-y-6">
-              {news.map((item, index) => (
-                <article 
-                  key={index} 
-                  className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition-colors duration-300"
-                >
-                  <h3 className="font-heading text-xl font-bold text-white mb-2">{item.title}</h3>
-                  <p className="font-sans text-slate-400 leading-relaxed">{item.body}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-3xl font-bold text-white flex items-center border-b border-slate-700 pb-4 mb-8">
-              <FactIcon />
-              Interesting fact of the day
-            </h2>
-            <div className="bg-gradient-to-br from-green-500/10 to-slate-800/10 p-6 rounded-xl border border-slate-700 ring-1 ring-inset ring-green-500/20">
-              <p className="font-sans text-lg italic text-green-300">
-                “{curiosity.text}”
-              </p>
-            </div>
-          </section>
-
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <a
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              className="dark:invert"
+              src="/vercel.svg"
+              alt="Vercel logomark"
+              width={20}
+              height={20}
+            />
+            Deploy now
+          </a>
+          <a
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read our docs
+          </a>
         </div>
       </main>
-
-      <footer className="w-full mt-24 py-8 border-t border-slate-800">
-        <div className="container mx-auto px-4 text-center text-slate-500 text-sm">
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
-            <a href="/privacy-policy" className="hover:text-slate-300 hover:underline">Privacy Policy</a>
-            <a href="/legal-terms" className="hover:text-slate-300 hover:underline">Legal Terms</a>
-            <a href="/cookies-policy" className="hover:text-slate-300 hover:underline">Cookies Policy</a>
-            <a href="https://github.com/cesarhdzmorado/thepaymentsnerdv2" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 hover:underline">Repository</a>
-          </div>
-          <p>© {new Date().getFullYear()} thepaymentsnerd. All rights reserved.</p>
-        </div>
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="File icon"
+            width={16}
+            height={16}
+          />
+          Learn
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/window.svg"
+            alt="Window icon"
+            width={16}
+            height={16}
+          />
+          Examples
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/globe.svg"
+            alt="Globe icon"
+            width={16}
+            height={16}
+          />
+          Go to nextjs.org →
+        </a>
       </footer>
     </div>
   );
