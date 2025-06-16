@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Shopify, Coinbase, Stripe Unite for USDC Stablecoin Payments",
-      "body": "Shopify has joined forces with Coinbase and Stripe to enable USDC stablecoin payments, paving the way for broader cryptocurrency use in commerce. This partnership not only enhances payment flexibility for merchants but also signals a significant shift towards the normalization of digital currencies in everyday transactions.",
-      "source": "Finextra"
-    },
-    {
-      "title": "New York Law Requires Retailers to Accept Cash Payments",
-      "body": "A new legislative mandate in New York now requires all food stores and retail establishments to accept cash, addressing financial inclusivity for the unbanked and those without digital payment access. This move highlights the ongoing tension between advancing digital payment solutions and maintaining accessibility for all consumers.",
+      "title": "Coinbase and Gemini on Brink of EU Crypto License Approval",
+      "body": "Coinbase and Gemini are close to securing crypto licenses in the European Union, a pivotal move as EU regulators scrutinize the licensing process. This advancement could bolster the regulatory framework and market stability for cryptocurrencies across Europe, potentially leading to increased investor confidence and market participation.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "APAC Fintech and Healthtech Battle Rising Fraud Trends",
-      "body": "A recent report from Sumsub shows a 116% spike in fraud within the APAC fintech sector, driven by advanced scams like deepfakes. This alarming increase underscores the critical need for robust security solutions in fintech and healthtech, sectors increasingly vulnerable to sophisticated cyber threats.",
-      "source": "Fintech News Singapore"
+      "title": "Shopify, Coinbase, Stripe Partner for USDC Stablecoin Payments",
+      "body": "Shopify, in collaboration with Coinbase and Stripe, is set to enable payments in USDC stablecoin, aiming to provide a more stable transaction environment in the volatile crypto market. This partnership could drive broader adoption of stablecoins in e-commerce, reshaping payment methods and enhancing transaction security for merchants and consumers alike.",
+      "source": "Finextra"
     },
     {
-      "title": "Coinbase and American Express Introduce Bitcoin Rewards Card",
-      "body": "Coinbase and American Express have launched a new credit card that offers up to 4% bitcoin back on purchases, merging traditional financial perks with cryptocurrency rewards. This innovative product could potentially transform reward systems and bolster mainstream crypto engagement.",
+      "title": "Vietnam Passes Law to Recognize Digital Assets by 2026",
+      "body": "Vietnam's National Assembly has approved a legal framework for digital assets, aiming for a regulated market by 2026. This legislative move is part of Vietnam's digital transformation strategy, providing clarity and security for investors and paving the way for a robust digital asset market.",
+      "source": "Fintech Singapore"
+    },
+    {
+      "title": "Sezzle Files Antitrust Lawsuit Against Shopify",
+      "body": "Sezzle has initiated an antitrust lawsuit against Shopify, alleging anti-competitive practices in the e-commerce and Buy Now, Pay Later sectors. This legal challenge could reshape competitive dynamics and has significant implications for market practices and consumer choices in online shopping.",
       "source": "Finextra"
     },
     {
       "title": "GrailPay Raises $6.7 Million to Enhance ACH Transaction Safety",
-      "body": "GrailPay has secured $6.7 million in funding to improve its ACH transaction platform, focusing on safety and speed. This investment reflects the growing demand for secure and efficient payment solutions, crucial for maintaining trust and functionality in digital banking.",
+      "body": "GrailPay has secured $6.7 million in funding to improve its ACH transaction platform, focusing on enhancing safety and speed. This investment is crucial for advancing ACH transaction security, potentially benefiting a wide range of businesses and consumers by reducing fraud and processing times.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was made of cardboard!",
-    "source": "history.com"
+    "text": "Did you know that the first cryptocurrency, Bitcoin, was introduced in 2009 by an individual or group using the pseudonym Satoshi Nakamoto?",
+    "source": "bitcoin.org"
   }
 }
