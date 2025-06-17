@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Pinterest and Instacart Partner for Shoppable Ads",
-      "body": "Pinterest and Instacart are revolutionizing online shopping by integrating shoppable ads, allowing users to purchase items with delivery in as little as 30 minutes. This partnership melds social media discovery with instant gratification, potentially reshaping consumer shopping habits and expectations.",
+      "title": "Federal Regulators Tackle Rising Check Fraud with New Measures",
+      "body": "In response to the growing check fraud crisis, U.S. regulators, including the Federal Reserve and FDIC, are poised to implement new federal actions. This initiative aims to bolster security within the financial payments system, safeguarding both consumers and businesses. Such regulatory changes are crucial for maintaining trust and stability in financial transactions.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Shopify Teams Up with Coinbase, Stripe for Crypto Payments",
-      "body": "Shopify, in collaboration with Coinbase and Stripe, now supports USDC stablecoin payments, marking a significant shift towards cryptocurrency in e-commerce. This move could dramatically alter payment processes on Shopify, offering merchants and consumers more flexibility and potentially lower transaction fees.",
+      "title": "Revolut Set to Unveil AI-Powered Financial Assistant for Smarter Decisions",
+      "body": "Revolut is gearing up to launch an AI-driven financial assistant, designed to empower consumers with smarter financial choices. This move exemplifies fintech's drive towards more personalized and automated financial services, potentially reshaping consumer financial management.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Alipay Merges QR Payments with Augmented Reality Glasses",
+      "body": "Alipay, in collaboration with Rockid, is integrating QR code payments into augmented reality glasses, enabling users to pay by simply gazing at product labels. This breakthrough in payment technology merges convenience with innovation, setting a new standard for the retail and payments industry.",
       "source": "Finextra"
     },
     {
-      "title": "Mastercard Launches Cloud Edge to Boost Asia Pacific Connectivity",
-      "body": "Mastercard has unveiled Mastercard Cloud Edge, developed with Amazon Web Services, to expedite Asia Pacific banks and fintechs' network connectivity by up to 4x. This strategic move aims to enhance the deployment of innovative payment solutions across the region, fostering a more agile financial ecosystem.",
+      "title": "OSTTRA, Baton, and Partior Revolutionize FX Settlement with Tokenised Funds",
+      "body": "OSTTRA, Baton Systems, and Partior are pioneering a 24/7 FX settlement service using tokenised bank funds, offering unprecedented flexibility and efficiency for financial institutions. This development could significantly alter the landscape of cross-border transactions, leveraging blockchain's potential to streamline financial services.",
       "source": "Fintech Singapore"
     },
     {
-      "title": "Paddle.com Settles FTC Charges for $5 Million",
-      "body": "Paddle.com has settled FTC allegations for $5 million over processing payments for deceptive tech-support schemes. This settlement includes a permanent ban on processing payments for tech-support telemarketers, highlighting the importance of vigilant regulatory compliance in payment processing.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Pix Enhances Platform with Recurring Payments in Brazil",
-      "body": "Brazil's instant payments system, Pix, now supports recurring payments, enhancing user convenience for regular transactions like bill payments and subscriptions. This update could significantly impact consumer payment habits and financial planning in Brazil.",
-      "source": "Finextra"
+      "title": "Visa Launches Flex Credential in Vietnam, Enhancing Payment Flexibility",
+      "body": "Visa has introduced the Flex Credential feature in Vietnam, allowing users to toggle between debit, credit, and other payment modes with a single card. This innovation, initiated by Asia Commercial Joint Stock Bank, marks a significant evolution in payment solutions, catering to the dynamic needs of Southeast Asian consumers.",
+      "source": "Fintech Singapore"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?...",
-    "source": "history.com"
+    "text": "Did you know that the first QR code system was invented by Masahiro Hara from the Japanese company Denso Wave in 1994? It was originally designed to track vehicles during manufacturing.",
+    "source": "QRCode.com"
   }
 }
