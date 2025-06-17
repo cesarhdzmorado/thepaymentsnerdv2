@@ -164,7 +164,7 @@ export default async function HomePage() {
             
             <blockquote className="space-y-4">
               <p className="text-xl sm:text-2xl leading-relaxed text-slate-800 font-medium italic">
-                "{newsletter.content.curiosity.text}"
+              {`"${newsletter.content.curiosity.text}"`}
               </p>
               <cite className="inline-block text-base font-semibold text-amber-800 not-italic">
                 — {newsletter.content.curiosity.source}
