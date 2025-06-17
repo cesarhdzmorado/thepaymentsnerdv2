@@ -26,6 +26,14 @@ async function syncNewsletter() {
     const fileContent = await fs.readFile(jsonFilePath, 'utf-8');
     const data = JSON.parse(fileContent);
 
+    // --- START OF DEBUGGING CODE ---
+    console.log("--- DEBUG: Printing the exact content the script is reading ---");
+    console.log(JSON.stringify(data, null, 2)); // This pretty-prints the JSON
+    process.exit(); // This stops the script immediately. It will not contact Supabase.
+    // --- END OF DEBUGGING CODE ---
+
+    // NEW: Validate the date...
+
     // 2. NEW: Validate the actual data structure
     if (!data.news || !data.curiosity) {
       throw new Error('JSON file is invalid. It must contain "news" (an array) and "curiosity" (an object).');
@@ -36,7 +44,7 @@ async function syncNewsletter() {
     const newsletterRecord = {
       // We will use today's date for the publication_date.
       // Supabase format is 'YYYY-MM-DD'.
-      publication_date: new Date().toISOString().split('T')[0],
+      publication_date: '2025-06-18',
 
       // We store the ENTIRE JSON object directly in the 'content' column.
       // This is the power of JSONB fields.
