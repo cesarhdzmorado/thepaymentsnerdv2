@@ -25,13 +25,7 @@ async function syncNewsletter() {
     console.log(`Reading file from: ${jsonFilePath}`);
     const fileContent = await fs.readFile(jsonFilePath, 'utf-8');
     const data = JSON.parse(fileContent);
-
-    // --- START OF DEBUGGING CODE ---
-    console.log("--- DEBUG: Printing the exact content the script is reading ---");
-    console.log(JSON.stringify(data, null, 2)); // This pretty-prints the JSON
-    process.exit(); // This stops the script immediately. It will not contact Supabase.
-    // --- END OF DEBUGGING CODE ---
-
+    
     // NEW: Validate the date...
 
     // 2. NEW: Validate the actual data structure
