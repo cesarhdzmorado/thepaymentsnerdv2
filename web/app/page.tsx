@@ -86,7 +86,7 @@ export default async function HomePage() {
           </div>
 
           <p className="text-xl text-slate-600 font-medium mb-6 max-w-2xl mx-auto">
-            Your daily briefing on the world of payments.
+            Your daily briefing on the world of payments
           </p>
 
           <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-slate-200/50">
