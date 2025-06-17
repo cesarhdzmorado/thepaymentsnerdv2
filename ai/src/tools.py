@@ -12,7 +12,7 @@ def search_tool(query: str) -> str:
     """Performs a web search to find relevant URLs."""
     try:
         with DDGS() as ddgs:
-            results = [r for r in ddgs.text(query, max_results=5)]
+            results = [r for r in ddgs.text(query, max_results=10)]
             return str(results) if results else "No results found."
     except Exception as e:
         return f"Error searching: {e}"
