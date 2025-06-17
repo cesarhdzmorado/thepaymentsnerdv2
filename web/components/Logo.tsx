@@ -1,11 +1,10 @@
-// components/Logo.tsx
-import { Newspaper } from 'lucide-react';
+// web/components/Logo.tsx
+// This component is now just the text of your brand name.
 
-// This component is now JUST the icon.
 export function Logo() {
   return (
-    <div className="bg-slate-900 p-2 rounded-lg">
-      <Newspaper className="h-8 w-8 text-white" />
-    </div>
+    <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
+      /thepaymentsnerd
+    </h1>
   );
 }

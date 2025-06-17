@@ -3,7 +3,6 @@
 import { supabase } from '@/lib/supabaseClient';
 import { Logo } from '@/components/Logo';
 import { Footer } from '@/components/Footer';
-// We need to import the new icons we'll be using
 import { ArrowRight, BookOpen, Lightbulb, Calendar, ExternalLink } from 'lucide-react';
 
 // --- TypeScript types (no change here) ---
@@ -42,7 +41,7 @@ async function getLatestNewsletter(): Promise<Newsletter | null> {
 }
 
 
-// --- The Main Page Component (FULLY UPGRADED!) ---
+// --- The Main Page Component (FULLY UPGRADED AND CORRECTED) ---
 export default async function HomePage() {
   const newsletter = await getLatestNewsletter();
 
@@ -79,18 +78,14 @@ export default async function HomePage() {
 
       <main className="relative max-w-4xl mx-auto p-4 sm:p-8 lg:p-12">
         
-        {/* --- Enhanced Header --- */}
+        {/* --- SIMPLIFIED AND CORRECTED HEADER --- */}
         <header className="text-center pb-12 mb-16 relative">
           {/* Animated background blob for a modern feel */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl -z-10"></div>
           
-          <div className="flex justify-center mb-6">
+          <div className="mb-4">
             <Logo />
           </div>
-
-          <h1 className="text-5xl sm:text-6xl font-black tracking-tighter bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 bg-clip-text text-transparent mb-4">
-            /thepaymentsnerd
-          </h1>
 
           <p className="text-xl text-slate-600 font-medium mb-6 max-w-2xl mx-auto">
             Your daily briefing on the world of payments.
@@ -164,7 +159,7 @@ export default async function HomePage() {
             
             <blockquote className="space-y-4">
               <p className="text-xl sm:text-2xl leading-relaxed text-slate-800 font-medium italic">
-              {`"${newsletter.content.curiosity.text}"`}
+                {`"${newsletter.content.curiosity.text}"`}
               </p>
               <cite className="inline-block text-base font-semibold text-amber-800 not-italic">
                 — {newsletter.content.curiosity.source}
