@@ -1,5 +1,12 @@
+/* web/app/globals.css - CORRECTED VERSION */
+
+/* This import directive MUST come first. */
 @import "tailwindcss";
 
+/*
+  The following :root and @theme blocks are part of your project's
+  original setup. We will keep them.
+*/
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,8 +26,23 @@
   }
 }
 
+/* 
+  We will override the default body styles slightly to work with 
+  the new design, but we keep the variables.
+*/
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* The font will be controlled by Next/Font in layout.tsx, so we can remove the explicit font-family here if we want, but it's a good fallback. */
+}
+
+/* --- ADD THIS NEW CODE AT THE BOTTOM --- */
+/*
+  This custom utility class creates the subtle grid background pattern.
+  It uses Tailwind's theme() function to access your color palette.
+*/
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, theme('colors.slate.200 / 0.5') 1px, transparent 1px),
+    linear-gradient(to bottom, theme('colors.slate.200 / 0.5') 1px, transparent 1px);
+  background-size: 2rem 2rem;
 }
