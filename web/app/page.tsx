@@ -1,11 +1,11 @@
-// web/app/page.tsx
+// web/app/page.tsx - REVERTED to pre-sticky-header version
 
 import { supabase } from '@/lib/supabaseClient';
 import { Logo } from '@/components/Logo';
 import { Footer } from '@/components/Footer';
 import { ArrowRight, BookOpen, Lightbulb, Calendar, ExternalLink } from 'lucide-react';
 
-// --- TypeScript types (no change here) ---
+// --- TypeScript types ---
 interface NewsItem {
   title: string;
   body: string;
@@ -24,7 +24,7 @@ interface Newsletter {
   content: NewsletterContent;
 }
 
-// --- Data Fetching Function (no change here) ---
+// --- Data Fetching Function ---
 async function getLatestNewsletter(): Promise<Newsletter | null> {
   const { data, error } = await supabase
     .from('newsletters')
@@ -41,11 +41,11 @@ async function getLatestNewsletter(): Promise<Newsletter | null> {
 }
 
 
-// --- The Main Page Component (FULLY UPGRADED AND CORRECTED) ---
+// --- The Main Page Component ---
 export default async function HomePage() {
   const newsletter = await getLatestNewsletter();
 
-  // --- Enhanced "No Newsletter" Fallback Page ---
+  // --- "No Newsletter" Fallback Page ---
   if (!newsletter) {
     return (
       <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
@@ -73,14 +73,12 @@ export default async function HomePage() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800 antialiased">
-      {/* Subtle background pattern from globals.css */}
       <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
 
       <main className="relative max-w-4xl mx-auto p-4 sm:p-8 lg:p-12">
         
-        {/* --- SIMPLIFIED AND CORRECTED HEADER --- */}
+        {/* --- Main Page Header --- */}
         <header className="text-center pb-12 mb-16 relative">
-          {/* Animated background blob for a modern feel */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl -z-10"></div>
           
           <div className="mb-4">
@@ -146,7 +144,6 @@ export default async function HomePage() {
         {/* --- Enhanced Curiosity Section --- */}
         <section id="curiosity" className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-amber-400/10 via-orange-400/10 to-yellow-400/10 rounded-3xl blur-2xl transform scale-105"></div>
-          
           <div className="relative bg-white/80 backdrop-blur-sm border border-slate-200/60 rounded-3xl p-8 sm:p-12 text-center shadow-xl">
             <div className="flex justify-center items-center gap-4 mb-6">
               <div className="p-3 bg-gradient-to-br from-amber-500 to-orange-600 text-white rounded-full shadow-lg">
