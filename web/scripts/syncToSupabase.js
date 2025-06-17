@@ -1,67 +1,57 @@
-// web/scripts/syncToSupabase.js
+// web/scripts/syncToSupabase.js - Timezone-Aware Version
 
 const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs/promises');
 const path = require('path');
+const { formatInTimeZone } = require('date-fns-tz'); // <-- Import the new function
 require('dotenv').config({ path: path.resolve(__dirname, '../.env.local') });
 
 // --- Configuration ---
 const jsonFilePath = path.resolve(__dirname, '../public/newsletter.json');
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+// IMPORTANT: Set your primary timezone here.
+// Find your timezone from this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+// Example: 'America/New_York', 'Europe/London', 'America/Mexico_City'
+const TIMEZONE = 'Europe/London';
 // ---------------------
 
 if (!supabaseUrl || !supabaseServiceKey) {
   throw new Error("Supabase URL or Service Role Key is missing. Check your .env.local file.");
 }
-
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
 async function syncNewsletter() {
   console.log('🚀 Starting newsletter sync...');
 
   try {
-    // 1. Read the JSON file
-    console.log(`Reading file from: ${jsonFilePath}`);
     const fileContent = await fs.readFile(jsonFilePath, 'utf-8');
     const data = JSON.parse(fileContent);
-    
-    // NEW: Validate the date...
 
-    // 2. NEW: Validate the actual data structure
     if (!data.news || !data.curiosity) {
-      throw new Error('JSON file is invalid. It must contain "news" (an array) and "curiosity" (an object).');
+      throw new Error('JSON file is invalid. It must contain "news" and "curiosity".');
     }
-    console.log(`✅ Read ${data.news.length} news items.`);
+    
+    // Generate the current date in the specified timezone
+    const publicationDate = formatInTimeZone(new Date(), TIMEZONE, 'yyyy-MM-dd');
+    console.log(`✅ Read ${data.news.length} news items. Using publication date: ${publicationDate}`);
 
-    // 3. Prepare the record for Supabase
     const newsletterRecord = {
-      // We will use today's date for the publication_date.
-      // Supabase format is 'YYYY-MM-DD'.
-      publication_date: '2025-06-18',
-
-      // We store the ENTIRE JSON object directly in the 'content' column.
-      // This is the power of JSONB fields.
-      content: data,
+      publication_date: publicationDate,
+      content: { news: data.news, curiosity: data.curiosity },
     };
 
-    // 4. Upsert the data to the 'newsletters' table
-    // We use 'onConflict' on the 'publication_date' to ensure only one
-    // newsletter is stored per day.
     console.log(`Syncing newsletter for date: ${newsletterRecord.publication_date}`);
     const { error } = await supabase
       .from('newsletters')
       .upsert(newsletterRecord, { onConflict: 'publication_date' });
 
-    if (error) {
-      throw error;
-    }
+    if (error) { throw error; }
 
     console.log('🎉 Successfully synced newsletter to Supabase!');
-
   } catch (error) {
-    console.error('❌ An error occurred during the sync process:');
-    console.error(error.message);
+    console.error('❌ An error occurred during the sync process:', error.message);
     process.exit(1);
   }
 }
