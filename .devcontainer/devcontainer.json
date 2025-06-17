@@ -1,0 +1,4 @@
+// .devcontainer/devcontainer.json
+{
+  "postCreateCommand": "sudo timedatectl set-timezone 'Europe/London'"
+}
