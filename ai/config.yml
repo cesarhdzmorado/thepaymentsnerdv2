@@ -12,5 +12,5 @@ newsletters:
   - url: "https://americanbanker.com/"
     topic: "US Payments and Banking News"
   - url: "https://ffnews.com"
-  - url: https://www.ft.com/myft/following/4bc212f8-bfee-4452-80e4-5e6ed76b337e.rss
+  - url: "https://www.ft.com/myft/following/4bc212f8-bfee-4452-80e4-5e6ed76b337e.rss"
     topic: "FT Rss feed"
