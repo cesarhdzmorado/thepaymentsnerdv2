@@ -21,8 +21,8 @@ export function LegalPageLayout({ title, children }: LegalPageLayoutProps) {
           </div>
         </header>
         
-        <article className="prose prose-lg max-w-none prose-slate">
-          <h1>{title}</h1>
+        <article className="text-slate-700">
+          <h1 className="text-3xl font-extrabold text-slate-900 mb-6">{title}</h1>
           {children}
         </article>
 
