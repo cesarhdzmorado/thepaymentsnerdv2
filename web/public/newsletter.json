@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Federal Regulators Tackle Rising Check Fraud with New Measures",
-      "body": "In response to the growing check fraud crisis, U.S. regulators, including the Federal Reserve and FDIC, are poised to implement new federal actions. This initiative aims to bolster security within the financial payments system, safeguarding both consumers and businesses. Such regulatory changes are crucial for maintaining trust and stability in financial transactions.",
-      "source": "PYMNTS.com"
+      "title": "JPMorgan Chase Debuts JPMD, a Digital Deposit Token",
+      "body": "JPMorgan Chase is launching a 'deposit token' called JPMD, designed to digitally represent commercial bank money for institutional clients. This move, as reported by CNBC and PYMNTS.com, positions JPMD as a robust alternative to stablecoins, tightly integrated with traditional banking systems. It's set to reshape digital currency use in institutional banking, offering a secure and regulated option.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Revolut Set to Unveil AI-Powered Financial Assistant for Smarter Decisions",
-      "body": "Revolut is gearing up to launch an AI-driven financial assistant, designed to empower consumers with smarter financial choices. This move exemplifies fintech's drive towards more personalized and automated financial services, potentially reshaping consumer financial management.",
-      "source": "PYMNTS.com"
+      "title": "GENIUS Act Moves Forward, Setting Stage for US Crypto Regulation",
+      "body": "The U.S. Senate's approval of the GENIUS Act marks a pivotal step towards establishing a regulated framework for cryptocurrencies in the U.S. This legislation, highlighted by PYMNTS.com, aligns with efforts to foster a stable and innovative cryptocurrency environment, potentially transforming the regulatory landscape for digital assets.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Alipay Merges QR Payments with Augmented Reality Glasses",
-      "body": "Alipay, in collaboration with Rockid, is integrating QR code payments into augmented reality glasses, enabling users to pay by simply gazing at product labels. This breakthrough in payment technology merges convenience with innovation, setting a new standard for the retail and payments industry.",
-      "source": "Finextra"
+      "title": "Thailand Grants 5-Year Tax Holiday for Crypto Investors",
+      "body": "Thailand's Cabinet has endorsed a five-year tax exemption on capital gains from cryptocurrency trading on licensed platforms. Reported by Fintech Singapore, this policy could significantly stimulate the digital economy and attract more investors to Thailand's cryptocurrency market, enhancing the country's position as a digital asset hub in Asia.",
+      "source": "fintechsingapore.com"
     },
     {
-      "title": "OSTTRA, Baton, and Partior Revolutionize FX Settlement with Tokenised Funds",
-      "body": "OSTTRA, Baton Systems, and Partior are pioneering a 24/7 FX settlement service using tokenised bank funds, offering unprecedented flexibility and efficiency for financial institutions. This development could significantly alter the landscape of cross-border transactions, leveraging blockchain's potential to streamline financial services.",
-      "source": "Fintech Singapore"
+      "title": "Visa Launches Flex Credential in Vietnam for Enhanced Payment Flexibility",
+      "body": "Visa has introduced the Flex Credential in Vietnam, allowing users to toggle between payment types using a single card. This innovation, first adopted by Asia Commercial Joint Stock Bank and reported by Fintech Singapore, promises to revolutionize payment convenience in Southeast Asia, catering to a diverse consumer base.",
+      "source": "fintechsingapore.com"
     },
     {
-      "title": "Visa Launches Flex Credential in Vietnam, Enhancing Payment Flexibility",
-      "body": "Visa has introduced the Flex Credential feature in Vietnam, allowing users to toggle between debit, credit, and other payment modes with a single card. This innovation, initiated by Asia Commercial Joint Stock Bank, marks a significant evolution in payment solutions, catering to the dynamic needs of Southeast Asian consumers.",
-      "source": "Fintech Singapore"
+      "title": "OSTTRA, Baton, and Partior Pioneer 24/7 FX Settlement with Tokenized Funds",
+      "body": "OSTTRA, Baton Systems, and Partior are revolutionizing the FX market by enabling 24/7 settlement using tokenized bank funds. This development, as reported by Fintech Singapore, allows financial institutions to conduct trades anytime with enhanced efficiency, potentially reshaping global foreign exchange operations.",
+      "source": "fintechsingapore.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first QR code system was invented by Masahiro Hara from the Japanese company Denso Wave in 1994? It was originally designed to track vehicles during manufacturing.",
-    "source": "QRCode.com"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
