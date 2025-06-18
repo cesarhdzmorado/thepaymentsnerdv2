@@ -4,7 +4,7 @@ name: Generate Daily Newsletter
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '0 5 * * *'
 
 # NEW: Add this block to grant write permissions to the workflow
 permissions:
