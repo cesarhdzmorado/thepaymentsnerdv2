@@ -1,6 +1,4 @@
 newsletters:
-  - url: "https://www.ft.com/myft/following/4bc212f8-bfee-4452-80e4-5e6ed76b337e.rss"
-    topic: "FT Rss feed"
   - url: "https://www.pymnts.com/feed/"
     topic: "General Payments News"
   - url: "https://www.finextra.com/rss/headlines.aspx"
@@ -9,3 +7,5 @@ newsletters:
     topic: "General Payments News"
   - url: "https://www.coindesk.com/arc/outboundfeeds/rss/"
     topic: "General Crypto News"
+  - url: "https://www.ft.com/myft/following/4bc212f8-bfee-4452-80e4-5e6ed76b337e.rss"
+    topic: "FT Rss feed"
