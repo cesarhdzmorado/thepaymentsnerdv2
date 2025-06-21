@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "X to Introduce Payment Cards with Trading Features ",
-      "body": "X, previously known as Twitter, is set to revolutionize its platform by introducing payment cards that integrate trading and investment functionalities. Announced by CEO Linda Yaccarino at the Cannes Lions festival, this initiative aims to position X as a pivotal financial hub. This strategic move could significantly alter how users interact with financial services, merging social media with personal finance management.",
-      "source": "pymnts.com"
-    },
-    {
-      "title": "Coinbase Launches Stablecoin Payments for eCommerce",
-      "body": "Coinbase has unveiled a new stablecoin payment solution for eCommerce platforms, with Shopify already on board. This service is designed to streamline the use of digital currencies in online shopping, potentially driving broader adoption of stablecoins in retail. For payments professionals, this could mean a shift towards more blockchain-based transactions in mainstream commerce.",
-      "source": "pymnts.com"
-    },
-    {
-      "title": "Syria Rejoins Global Finance via SWIFT Network",
-      "body": "After a decade since the civil war began, Syria has reconnected with the global financial system by completing an international bank transfer using SWIFT. This marks a crucial step in reintegrating Syria's economy with worldwide markets, potentially opening new channels for international trade and finance.",
-      "source": "pymnts.com"
-    },
-    {
-      "title": "UK Expands Open Banking with Smart Data Group Initiative",
-      "body": "The UK government has launched the Smart Data Group to extend open banking principles to other sectors, aiming to unlock an estimated \u00a328 billion in economic value. This expansion could enhance data sharing, improve service efficiency, and spur innovation across diverse industries, impacting how businesses handle consumer data and privacy.",
+      "title": "X Expands into Financial Services with Trading and Payment Cards",
+      "body": "X, previously known as Twitter, is venturing into financial services, introducing trading services and exploring the launch of its own payment cards. This strategic pivot, highlighted by CEO Linda Yaccarino and reported by Finextra, signifies a major shift in the convergence of social media and financial technology, potentially reshaping user engagement and revenue streams.",
       "source": "finextra.com"
     },
     {
-      "title": "Visa Enhances Stablecoin Strategy in CEMEA Region",
-      "body": "Visa is intensifying its focus on stablecoins in the CEMEA region to facilitate USD transactions via blockchain. This strategic pivot not only underscores the increasing relevance of digital currencies in financial systems but also highlights potential shifts in how cross-border transactions are managed.",
+      "title": "UK Government to Boost Economy with Extended Open Banking",
+      "body": "The UK's Smart Data Group is set to expand the principles of open banking to other sectors, aiming to unlock a staggering \u00a328 billion in economic value. This initiative, reported by Finextra, could revolutionize data sharing, spur competition, and foster innovation across diverse industries, setting a global benchmark for data-driven economic growth.",
       "source": "finextra.com"
+    },
+    {
+      "title": "Coinbase Launches Stablecoin Payment Service for Global Merchants",
+      "body": "Coinbase has introduced a new stablecoin-based payment service, enabling merchants worldwide to accept payments in USDC. Reported by Finextra, this move positions Coinbase at the forefront of the stablecoin market, offering a secure and simplified transaction solution that could influence global e-commerce and digital payments.",
+      "source": "finextra.com"
+    },
+    {
+      "title": "Visa Urges Financial Institutions to Adopt Stablecoin Strategies",
+      "body": "Visa is pushing for a comprehensive stablecoin strategy among financial institutions, especially in the CEMEA region. This initiative, as reported by Finextra, aims to enhance settlement capabilities and integrate blockchain technology, potentially transforming the landscape of digital transactions and settlements.",
+      "source": "finextra.com"
+    },
+    {
+      "title": "Applebee\u2019s and IHOP to Enhance Operations with AI Technology",
+      "body": "Applebee\u2019s and IHOP, under Dine Brands, are set to deploy AI technology across 3,500 locations to improve customer service and operational efficiency. This large-scale AI integration, reported by PYMNTS.com, could set a new standard in the restaurant industry, enhancing customer experiences and streamlining management practices.",
+      "source": "pymnts.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard? It revolutionized how consumers made purchases, paving the way for the complex digital payment systems we use today.",
-    "source": "history.com"
+    "text": "Did you know that the UK's initiative to expand open banking could unlock \u00a328 billion in economic value?",
+    "source": "finextra.com"
   }
 }
