@@ -1,25 +1,29 @@
-# .github/workflows/generate_news.yml
+# .github/workflows/generate_news.yml - FINAL UNIFIED PIPELINE
 
 name: Daily Newsletter Pipeline
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Allows you to run this manually from the Actions tab
   schedule:
+    # Runs at 05:00 UTC every day. You can adjust this time.
     - cron: '0 5 * * *'
 
+# Grant write permissions for the commit/push step
 permissions:
   contents: write
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+
     steps:
       # =======================================================
-      # STEP 1: GENERATE NEWSLETTER (Your existing logic)
+      # STEP 1: GENERATE NEWSLETTER
       # =======================================================
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          # This token is necessary to allow the action to push to the repository
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
@@ -40,32 +44,40 @@ jobs:
         run: python -m ai.src.main
 
       # =======================================================
-      # STEP 2: COMMIT AND PUSH (Your existing logic, improved)
-      # This step triggers Vercel, but Vercel will now wait for this
-      # entire workflow to complete if configured correctly, or will
-      # build with data that is about to be synced.
+      # STEP 2: COMMIT AND PUSH THE NEW FILE
       # =======================================================
       - name: Commit and Push new newsletter
-        if: ${{ success() && steps.generate_step.outcome == 'success' }}
+        id: commit_step # Give this step an ID to reference its output
         run: |
+          # Configure Git with a bot user identity
           git config --global user.name "The Payments Nerd Bot"
           git config --global user.email "bot@thepaymentsnerd.com"
+          
+          # Pull latest changes to avoid conflicts before pushing
           git pull origin main
+          
+          # Add the potentially modified file to the staging area
           git add web/public/newsletter.json
+          
+          # Check if there are any actual changes to commit
           if git diff --staged --quiet; then
-            echo "No changes to newsletter.json. Halting."
-            exit 0
+            echo "No changes to newsletter.json. Halting workflow."
+            # Set an output variable so subsequent steps know not to run
+            echo "changes_committed=false" >> $GITHUB_OUTPUT
           else
-            echo "Committing and pushing new newsletter..."
+            echo "Newsletter has been modified, committing and pushing..."
             git commit -m "feat: ✨ Generate daily newsletter for $(date +%F)"
             git push
+            # Set the output variable to true
+            echo "changes_committed=true" >> $GITHUB_OUTPUT
           fi
 
       # =======================================================
-      # STEP 3: SYNC TO SUPABASE (Logic from your sync-to-supabase.yml)
-      # This block now runs sequentially AFTER the push.
+      # STEP 3: SYNC TO SUPABASE
       # =======================================================
       - name: Set up Node.js for Supabase Sync
+        # This step will only run if the previous step actually made a commit
+        if: steps.commit_step.outputs.changes_committed == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -73,12 +85,23 @@ jobs:
           cache-dependency-path: web/package-lock.json
 
       - name: Install Node dependencies
+        if: steps.commit_step.outputs.changes_committed == 'true'
         run: npm install
         working-directory: ./web
 
       - name: Sync data to Supabase
+        if: steps.commit_step.outputs.changes_committed == 'true'
+        id: sync_step # Give this step an ID to check its outcome
         run: node scripts/syncToSupabase.js
         working-directory: ./web
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      # =======================================================
+      # STEP 4: DEPLOY TO VERCEL VIA DEPLOY HOOK
+      # =======================================================
+      - name: Trigger Vercel Deployment
+        # This only runs if a commit was made AND the sync step was successful
+        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success'
+        run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
