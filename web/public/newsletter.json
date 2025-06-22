@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Aaaaaaaaaaaapplebee's and IHOP Embrace AI to Revolutionize Dining Experience",
-      "body": "Applebee's and IHOP, under Dine Brands, are rolling out AI technology across 3,500 locations to enhance customer service and optimize operations. This strategic move aims to personalize interactions and streamline processes, setting a new standard in the restaurant industry's adoption of technology to meet consumer demands.",
-      "source": "PYMNTS.com"
+      "title": "Applebee\u2019s and IHOP Embrace AI for Enhanced Customer Service",
+      "body": "Applebee\u2019s and IHOP, under Dine Brands, are rolling out AI tools across 3,500 locations to boost customer service and operational efficiency. This strategic integration aims to transform the dining experience and optimize kitchen operations, setting a new standard for technology adoption in the restaurant industry.",
+      "source": "pymnts.com"
     },
     {
-      "title": "X Ventures into Financial Services with Trading and Payment Cards",
-      "body": "X, previouslesdsdfsdfsfqsdfy known as Twitter, is expanding its horizon by entering the financial services sector with plans to offer trading services and possibly its own branded payment cards. This pivot could transform X into a key player in financial technology, integrating social media with personal finance.",
-      "source": "Finextra"
+      "title": "UK Government Expands Open Banking with Smart Data Group",
+      "body": "The UK has launched the Smart Data Group to extend open banking principles to other sectors, potentially unlocking \u00a328 billion in economic value. This initiative will broaden data sharing and consumer benefits, revolutionizing how industries leverage financial technology for growth.",
+      "source": "finextra.com"
     },
     {
-      "title": "UK Government Expands Open Banking to Boost Economy by \u00a328 Billion",
-      "body": "The UK's Smart Data Group is set to extend open banking principles to other sectors, potentially unlocking an economic value of \u00a328 billion. This initiative will promote broader data sharing and innovation, significantly impacting the financial services landscape.",
-      "source": "Finextra"
+      "title": "Visa Boosts Stablecoin Use for Cross-border Payments",
+      "body": "Visa is expanding its stablecoin strategy in the CEMEA region to facilitate USD transactions via blockchain. This move is pivotal for Visa as it integrates digital currencies into its global payment network, potentially reshaping international transaction dynamics.",
+      "source": "finextra.com"
     },
     {
-      "title": "Coinbase Launches Stablecoin Payment Service for Global Merchants",
-      "body": "Coinbase has introduced a new stablecoin payment service, allowing merchants worldwide to accept payments in USDC. This development aims to streamline e-commerce transactions and broaden the adoption of digital currencies, marking a significant advancement in fintech.",
-      "source": "Finextra"
+      "title": "Coinbase Introduces Global Stablecoin Payment Service",
+      "body": "Coinbase has launched a stablecoin payment service to enable easier USDC acceptance by online merchants worldwide. This service is designed to simplify transactions and enhance the adoption of stablecoins in e-commerce, marking a significant shift in digital payment methods.",
+      "source": "finextra.com"
     },
     {
-      "title": "Visa Advocates for Financial Institutions to Develop Stablecoin Strategies",
-      "body": "Visa is enhancing its blockchain settlement capabilities in the CEMEA region, stressing the necessity for financial institutions to adopt stablecoin strategies. This move underscores the escalating role of digital currencies in global finance and Visa's commitment to leading this transformation.",
-      "source": "Finextra"
+      "title": "SoftBank to Build $1 Trillion AI and Robotics Hub in Arizona",
+      "body": "SoftBank's CEO, Masayoshi Son, plans to establish a $1 trillion AI and robotics complex in Arizona, aiming to partner with major tech firms like TSMC. This project could dramatically alter the tech landscape and stimulate economic growth in the region.",
+      "source": "financialtimes.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the UK's initiative to expand open banking could unlock an economic value of \u00a328 billion? This expansion not only fosters innovation but also enhances data sharing across multiple industries.",
-    "source": "Finextra"
+    "text": "Did you know that the UK's expansion of open banking could unlock \u00a328 billion in economic value?",
+    "source": "finextra.com"
   }
 }
