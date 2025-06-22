@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "X to Introduce Payment Cards with Trading Features ",
-      "body": "X, previously known as Twitter, is set to revolutionize its platform by introducing payment cards that integrate trading and investment functionalities. Announced by CEO Linda Yaccarino at the Cannes Lions festival, this initiative aims to position X as a pivotal financial hub. This strategic move could significantly alter how users interact with financial services, merging social media with personal finance management.",
-      "source": "pymnts.com"
+      "title": "Applebee\u2019s and IHOP to Revolutionize Dining with AI Technology",
+      "body": "Applebee\u2019s and IHOP, under Dine Brands, are rolling out AI technology across 3,500 locations to boost customer service and optimize operations. This move could set a new benchmark in the restaurant industry for digital engagement and operational efficiency, potentially influencing how restaurants nationwide adopt technology.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "UK Expands Open Banking to Unlock \u00a328 Billion Economic Value",
-      "body": "The UK government's Smart Data Group is set to extend open banking principles to other sectors, aiming to unlock a staggering \u00a328 billion in economic value. This initiative will broaden data sharing and consumer benefits, potentially reshaping multiple industries by leveraging financial data in new, innovative ways.",
+      "title": "X, Formerly Twitter, Ventures into Fintech with Trading Services",
+      "body": "X, previously known as Twitter, is expanding into trading and financial services, including potential offerings of debit and credit cards. This strategic pivot could transform X into a key player in the fintech space, challenging traditional financial institutions and tech companies alike.",
       "source": "Finextra"
     },
     {
-      "title": "Coinbase Launches Stablecoin Payment Service for Merchants",
-      "body": "Coinbase is introducing a service that allows merchants worldwide to accept payments in USDC stablecoin, enhancing the security and simplicity of digital transactions. This move could significantly influence the cryptocurrency payment landscape, offering a more stable and reliable method for transactions.",
+      "title": "UK Government Expands Open Banking to Boost Economy by \u00a328 Billion",
+      "body": "The UK's Smart Data Group is set to extend open banking principles to other sectors, potentially unlocking \u00a328 billion in economic value. This initiative marks a significant advancement in data-driven financial services, promoting innovation and consumer benefits across various industries.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Advocates for Financial Institutions to Develop Stablecoin Strategies",
-      "body": "Visa is urging all financial institutions to adopt stablecoin strategies, emphasizing the importance of digital currencies in global finance. This strategic pivot aims to enhance USD transactions in the CEMEA region through blockchain technology, potentially transforming how financial transactions are conducted worldwide.",
+      "title": "Coinbase Launches Stablecoin Payment Service for Global Merchants",
+      "body": "Coinbase has introduced a new service enabling merchants worldwide to accept payments in USDC, a popular stablecoin. This development not only simplifies digital transactions but also strengthens Coinbase\u2019s foothold in the evolving cryptocurrency payment landscape.",
       "source": "Finextra"
     },
     {
-      "title": "SoftBank Plans $1 Trillion AI and Robotics Hub in Arizona",
-      "body": "SoftBank's CEO, Masayoshi Son, proposes a $1 trillion AI and robotics complex in Arizona, aiming to establish a central hub for technological advancements. This project could dramatically alter the AI and robotics landscape, positioning Arizona as a key player in global tech innovation.",
-      "source": "Financial Times"
+      "title": "Visa Advocates for Financial Institutions to Adopt Stablecoin Strategies",
+      "body": "Visa is enhancing its blockchain-based settlement capabilities for USD transactions in the CEMEA region, emphasizing the critical role of stablecoins in the financial sector. This move suggests a near-future where all financial institutions might need robust stablecoin strategies to stay competitive.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the UK's initiative to expand open banking could unlock an economic value of \u00a328 billion across various industries?",
-    "source": "Finextra"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
