@@ -1,47 +1,65 @@
 # .github/workflows/generate_news.yml
-name: Generate Daily Newsletter
+
+name: Generate and Publish Daily Newsletter
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual triggering
   schedule:
+    # Runs at 05:00 UTC every day
     - cron: '0 5 * * *'
 
-# NEW: Add this block to grant write permissions to the workflow
+# Grant write permissions to the workflow to allow it to push commits
 permissions:
   contents: write
 
 jobs:
-  build-and-run:
+  build-run-and-publish: # Renamed job for clarity
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
+        # We need to provide a token to allow the action to push
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
 
-      # We don't need caching for this simple setup anymore, simplifying the file.
       - name: Install Python dependencies
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -r ai/requirements.txt
       
-      - name: Run AI Agent script
+      - name: Run AI Agent to generate newsletter
+        id: generate_step # Give the step an ID to check its outcome
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          # SERPER_API_KEY is not used, but we keep the secret here
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
         run: python -m ai.src.main
 
-      - name: Commit and push generated newsletter
+      - name: Commit and Push new newsletter
+        # This step will only run if the generation step was successful
+        if: ${{ success() && steps.generate_step.outcome == 'success' }}
         run: |
+          # Configure Git with a bot user
           git config --global user.name "The Payments Nerd Bot"
           git config --global user.email "bot@thepaymentsnerd.com"
-          # The -f flag forces adding the file if it's in .gitignore
-          # We add this just in case, though it shouldn't be needed
-          git add -f web/public/newsletter.json
-          git diff --staged --quiet || git commit -m "feat: ✨ Generate daily newsletter"
-          git push
+
+          # IMPORTANT: Pull the latest changes from the remote repository first
+          # This prevents "divergent branches" push errors
+          git pull origin main
+
+          # Add the generated file. -f is not needed if the file isn't in .gitignore
+          git add web/public/newsletter.json
+          
+          # Check if there are any changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to newsletter.json, working tree clean."
+          else
+            echo "Newsletter has been modified, committing and pushing..."
+            git commit -m "feat: ✨ Generate daily newsletter for $(date +%F)"
+            git push
+          fi
