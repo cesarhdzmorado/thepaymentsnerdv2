@@ -1,24 +1,23 @@
 # .github/workflows/generate_news.yml
 
-name: Generate and Publish Daily Newsletter
+name: Daily Newsletter Pipeline
 
 on:
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch:
   schedule:
-    # Runs at 05:00 UTC every day
     - cron: '0 5 * * *'
 
-# Grant write permissions to the workflow to allow it to push commits
 permissions:
   contents: write
 
 jobs:
-  build-run-and-publish: # Renamed job for clarity
+  build-and-publish:
     runs-on: ubuntu-latest
-
     steps:
+      # =======================================================
+      # STEP 1: GENERATE NEWSLETTER (Your existing logic)
+      # =======================================================
       - name: Checkout repository
-        # We need to provide a token to allow the action to push
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -34,32 +33,52 @@ jobs:
           pip install -r ai/requirements.txt
       
       - name: Run AI Agent to generate newsletter
-        id: generate_step # Give the step an ID to check its outcome
+        id: generate_step
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
         run: python -m ai.src.main
 
+      # =======================================================
+      # STEP 2: COMMIT AND PUSH (Your existing logic, improved)
+      # This step triggers Vercel, but Vercel will now wait for this
+      # entire workflow to complete if configured correctly, or will
+      # build with data that is about to be synced.
+      # =======================================================
       - name: Commit and Push new newsletter
-        # This step will only run if the generation step was successful
         if: ${{ success() && steps.generate_step.outcome == 'success' }}
         run: |
-          # Configure Git with a bot user
           git config --global user.name "The Payments Nerd Bot"
           git config --global user.email "bot@thepaymentsnerd.com"
-
-          # IMPORTANT: Pull the latest changes from the remote repository first
-          # This prevents "divergent branches" push errors
           git pull origin main
-
-          # Add the generated file. -f is not needed if the file isn't in .gitignore
           git add web/public/newsletter.json
-          
-          # Check if there are any changes to commit
           if git diff --staged --quiet; then
-            echo "No changes to newsletter.json, working tree clean."
+            echo "No changes to newsletter.json. Halting."
+            exit 0
           else
-            echo "Newsletter has been modified, committing and pushing..."
+            echo "Committing and pushing new newsletter..."
             git commit -m "feat: ✨ Generate daily newsletter for $(date +%F)"
             git push
           fi
+
+      # =======================================================
+      # STEP 3: SYNC TO SUPABASE (Logic from your sync-to-supabase.yml)
+      # This block now runs sequentially AFTER the push.
+      # =======================================================
+      - name: Set up Node.js for Supabase Sync
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install Node dependencies
+        run: npm install
+        working-directory: ./web
+
+      - name: Sync data to Supabase
+        run: node scripts/syncToSupabase.js
+        working-directory: ./web
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
