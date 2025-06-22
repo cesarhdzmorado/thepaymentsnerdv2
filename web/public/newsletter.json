@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "X Expands into Financial Services with Trading and Payment Cards",
-      "body": "X, previously known as Twitter, is venturing into financial services, introducing trading services and exploring the launch of its own payment cards. This strategic pivot, highlighted by CEO Linda Yaccarino and reported by Finextra, signifies a major shift in the convergence of social media and financial technology, potentially reshaping user engagement and revenue streams.",
-      "source": "finextra.com"
+      "title": "Applebee's and IHOP Embrace AI for Enhanced Operations",
+      "body": "Applebee's and IHOP, under Dine Brands, are rolling out AI technology across 3,500 global stores to boost customer service and operational efficiency. This tech upgrade is set to revolutionize how the hospitality industry interacts with customers and manages backend processes, potentially setting a new standard for service delivery.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "UK Government to Boost Economy with Extended Open Banking",
-      "body": "The UK's Smart Data Group is set to expand the principles of open banking to other sectors, aiming to unlock a staggering \u00a328 billion in economic value. This initiative, reported by Finextra, could revolutionize data sharing, spur competition, and foster innovation across diverse industries, setting a global benchmark for data-driven economic growth.",
-      "source": "finextra.com"
+      "title": "UK Expands Open Banking to Unlock \u00a328 Billion Economic Value",
+      "body": "The UK government's Smart Data Group is set to extend open banking principles to other sectors, aiming to unlock a staggering \u00a328 billion in economic value. This initiative will broaden data sharing and consumer benefits, potentially reshaping multiple industries by leveraging financial data in new, innovative ways.",
+      "source": "Finextra"
     },
     {
-      "title": "Coinbase Launches Stablecoin Payment Service for Global Merchants",
-      "body": "Coinbase has introduced a new stablecoin-based payment service, enabling merchants worldwide to accept payments in USDC. Reported by Finextra, this move positions Coinbase at the forefront of the stablecoin market, offering a secure and simplified transaction solution that could influence global e-commerce and digital payments.",
-      "source": "finextra.com"
+      "title": "Coinbase Launches Stablecoin Payment Service for Merchants",
+      "body": "Coinbase is introducing a service that allows merchants worldwide to accept payments in USDC stablecoin, enhancing the security and simplicity of digital transactions. This move could significantly influence the cryptocurrency payment landscape, offering a more stable and reliable method for transactions.",
+      "source": "Finextra"
     },
     {
-      "title": "Visa Urges Financial Institutions to Adopt Stablecoin Strategies",
-      "body": "Visa is pushing for a comprehensive stablecoin strategy among financial institutions, especially in the CEMEA region. This initiative, as reported by Finextra, aims to enhance settlement capabilities and integrate blockchain technology, potentially transforming the landscape of digital transactions and settlements.",
-      "source": "finextra.com"
+      "title": "Visa Advocates for Financial Institutions to Develop Stablecoin Strategies",
+      "body": "Visa is urging all financial institutions to adopt stablecoin strategies, emphasizing the importance of digital currencies in global finance. This strategic pivot aims to enhance USD transactions in the CEMEA region through blockchain technology, potentially transforming how financial transactions are conducted worldwide.",
+      "source": "Finextra"
     },
     {
-      "title": "Applebee\u2019s and IHOP to Enhance Operations with AI Technology",
-      "body": "Applebee\u2019s and IHOP, under Dine Brands, are set to deploy AI technology across 3,500 locations to improve customer service and operational efficiency. This large-scale AI integration, reported by PYMNTS.com, could set a new standard in the restaurant industry, enhancing customer experiences and streamlining management practices.",
-      "source": "pymnts.com"
+      "title": "SoftBank Plans $1 Trillion AI and Robotics Hub in Arizona",
+      "body": "SoftBank's CEO, Masayoshi Son, proposes a $1 trillion AI and robotics complex in Arizona, aiming to establish a central hub for technological advancements. This project could dramatically alter the AI and robotics landscape, positioning Arizona as a key player in global tech innovation.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the UK's initiative to expand open banking could unlock \u00a328 billion in economic value?",
-    "source": "finextra.com"
+    "text": "Did you know that the UK's initiative to expand open banking could unlock an economic value of \u00a328 billion across various industries?",
+    "source": "Finextra"
   }
 }
