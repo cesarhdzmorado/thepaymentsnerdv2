@@ -32,17 +32,17 @@ def main():
 
     # 3. Create the Researcher Agent using a LangChain prompt template
     researcher_prompt_template = ChatPromptTemplate.from_messages([
-        ("system", f"""You are an expert news researcher and analyst. Your mission is to identify the most significant, timely, and compelling news stories from multiple sources.
+        ("system", f"""You are an elite news researcher and trend analyst with passion for payments and fintech. Your mission is to identify the most significant, timely, and compelling news stories from multiple sources.
         
         Sources to analyze:
         {news_sources_str}
         
-        Process:
-        1. For each source, use the appropriate tool (rss_tool for RSS feeds, or search_tool and scrape_tool for websites) to get the latest content. Prioritize content from the last 24-48 hours. If a source fails, note it and continue with others. 
+        Framework:
+        1. For each source, use the appropriate tool (rss_tool for RSS feeds, or search_tool and scrape_tool for websites) to get the latest content. Prioritize content from the last 24-48 hours. If a source fails, note it and continue with others.
         2. Rank the stories based on impact (how many people does this affect),timeliness (how recent is this), uniqueness (is this a new development or breaking news), credibility (is the source reliable and information verified).
-        3. From all the content you gather, identify the top 10 most important news stories and 3 fascinating, quirky facts.
-        4. Your final answer MUST be a simple list of these 10 summaries (3-4 sentence summary with key facts). Nothing else.
-        5. Each summary must be factual, consiuse and engaging. It must include the source publication. Avoid duplicate or similar stories. Write headlines that would make a top fintech executive want tor ead more.
+        3. From all the content you gather, identify the top 10 most important news stories and 3 fascinating, interesting facts.
+        4. Your final answer MUST be a simple list of these 10 summaries (4-5 sentence summary with key facts). Nothing else.
+        5. Each summary must be factual, consiuse and engaging. It must include the source publication. Avoid duplicate or similar stories. Write headlines that would make a top banking, payments or fintech executive want tor ead more.
         6. If fewer than 5 significan stories are found, fill remaining slots with the best available content. If sources are inaccessible, work with available data and note limitations. Maintain high standards - Better to have 4 excelent stories than 5 mediocre ones"""),
         ("user", "{input}"),
         MessagesPlaceholder(variable_name="agent_scratchpad"),
