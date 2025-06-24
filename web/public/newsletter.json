@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Applebee\u2019s and IHOP Embrace AI for Enhanced Customer Service",
-      "body": "Applebee\u2019s and IHOP, under Dine Brands, are rolling out AI tools across 3,500 locations to boost customer service and operational efficiency. This strategic integration aims to transform the dining experience and optimize kitchen operations, setting a new standard for technology adoption in the restaurant industry.",
-      "source": "pymnts.com"
+      "title": "Visa Explores Stablecoins for Emerging Markets and Cross-Border Payments",
+      "body": "Visa is tapping into the potential of stablecoins to revolutionize financial access in emerging markets and streamline cross-border transactions. By leveraging stablecoins, Visa aims to provide an alternative access to U.S. dollars, addressing a significant gap in global finance. This strategic move could reshape how money moves globally, offering a more stable and efficient financial flow.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "UK Government Expands Open Banking with Smart Data Group",
-      "body": "The UK has launched the Smart Data Group to extend open banking principles to other sectors, potentially unlocking \u00a328 billion in economic value. This initiative will broaden data sharing and consumer benefits, revolutionizing how industries leverage financial technology for growth.",
-      "source": "finextra.com"
+      "title": "European Payments Giants Merge to Enhance Transaction Efficiency",
+      "body": "The European Payments Alliance and the European Payments Initiative are joining forces to unify payment processes across Europe. This merger aims to simplify and accelerate transactions for consumers continent-wide, potentially setting a new standard for payment efficiency in Europe. Such integration could significantly impact the European financial landscape by fostering greater economic cohesion.",
+      "source": "Finextra"
     },
     {
-      "title": "Visa Boosts Stablecoin Use for Cross-border Payments",
-      "body": "Visa is expanding its stablecoin strategy in the CEMEA region to facilitate USD transactions via blockchain. This move is pivotal for Visa as it integrates digital currencies into its global payment network, potentially reshaping international transaction dynamics.",
-      "source": "finextra.com"
+      "title": "Fiserv Introduces Stablecoin, Targeting Financial Institutions",
+      "body": "Fiserv has launched a stablecoin specifically designed for banks, marking a pivotal step towards integrating cryptocurrency technologies within traditional financial systems. This move not only enhances Fiserv's offerings but also sets the stage for broader adoption of digital assets in mainstream banking, potentially transforming the financial industry landscape.",
+      "source": "Finextra"
     },
     {
-      "title": "Coinbase Introduces Global Stablecoin Payment Service",
-      "body": "Coinbase has launched a stablecoin payment service to enable easier USDC acceptance by online merchants worldwide. This service is designed to simplify transactions and enhance the adoption of stablecoins in e-commerce, marking a significant shift in digital payment methods.",
-      "source": "finextra.com"
+      "title": "Shift4 Bolsters Australasian Presence with $180 Million Smartpay Acquisition",
+      "body": "Shift4 has acquired Smartpay for $180 million, significantly expanding its market reach in Australasia. This strategic acquisition enhances Shift4's global footprint and service capabilities, positioning the company to capitalize on growing payment processing demands in the region. This move underscores Shift4's commitment to global expansion and competitive positioning in the payments industry.",
+      "source": "Finextra"
     },
     {
-      "title": "SoftBank to Build $1 Trillion AI and Robotics Hub in Arizona",
-      "body": "SoftBank's CEO, Masayoshi Son, plans to establish a $1 trillion AI and robotics complex in Arizona, aiming to partner with major tech firms like TSMC. This project could dramatically alter the tech landscape and stimulate economic growth in the region.",
-      "source": "financialtimes.com"
+      "title": "UK Government's Smart Data Group to Boost Open Banking",
+      "body": "The UK government has established the Smart Data Group to extend open banking principles to additional sectors, aiming to unlock around \u00a328 billion in economic value. By promoting secure data sharing, this initiative could revolutionize multiple industries, enhancing efficiency and fostering innovation across the UK's economic landscape.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the UK's expansion of open banking could unlock \u00a328 billion in economic value?",
-    "source": "finextra.com"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
+    "source": "history.com"
   }
 }
