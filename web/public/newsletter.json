@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "FedEx Leverages Digital Tools to Tackle Tariff Challenges",
-      "body": "FedEx has adeptly utilized its data and digital platforms to navigate the complexities of tariffs and changing trade policies, particularly benefiting in the fourth quarter ending May 31. This strategic use of technology underscores the growing importance of digital solutions in managing global trade dynamics, offering valuable insights for businesses facing similar challenges.",
+      "title": "Fannie Mae, Freddie Mac to Count Crypto in Mortgage Risk Assessments",
+      "body": "In a groundbreaking move, Fannie Mae and Freddie Mac will now include cryptocurrency assets in their risk evaluations for mortgage loans. Directed by FHFA's William J. Pulte, this policy could broaden mortgage access for crypto investors, potentially transforming the U.S. housing market landscape.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "BIS Questions Stablecoins' Role as Reliable Currency",
-      "body": "The Bank for International Settlements (BIS) has cast doubt on the viability of stablecoins as a dependable form of money, suggesting they may only serve a minor role in the financial system. This critique could shape future regulatory frameworks and development strategies for digital assets, impacting how payments professionals approach stablecoin integration.",
+      "title": "South Korean Banks Forge Ahead with Won-Backed Stablecoin",
+      "body": "Leading South Korean banks are forming a consortium to launch a stablecoin backed by the South Korean Won. This initiative underscores the growing integration of digital currencies within Asia's mainstream banking systems, setting a precedent for future digital currency acceptance.",
       "source": "Finextra"
     },
     {
-      "title": "Fiserv Launches Stablecoin for Banking Sector",
-      "body": "Fiserv has announced a new digital asset platform featuring a stablecoin designed specifically for banks. This initiative marks a significant move towards merging traditional financial operations with cryptocurrency solutions, potentially revolutionizing the role of digital assets in mainstream banking.",
+      "title": "Envestnet Divests Yodlee to Focus on Core Business Strategies",
+      "body": "Envestnet is selling its data analytics arm, Yodlee, to STG, signaling a strategic refocus on its primary financial services. This sale could significantly influence the financial data analytics sector and the future of open banking.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Mastercard to Open A2A Payments Testing Sandbox in the UK",
+      "body": "Mastercard is set to launch an Account-to-Account (A2A) instant payments sandbox for UK banks. This platform will facilitate the development of innovative payment solutions, potentially speeding up the adoption of instant payments throughout the UK.",
       "source": "Finextra"
     },
     {
-      "title": "European Payments Initiatives Enhance Cross-Continent Transactions",
-      "body": "The European Payments Alliance and European Payments Initiative are collaborating to streamline payment transactions across Europe. This partnership aims to boost consumer convenience and fortify Europe's payments infrastructure against global competitors, highlighting a strategic push towards a unified financial ecosystem.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Singapore Ramps Up Crypto Regulations, Shaping Global Market",
-      "body": "Singapore's financial authority has tightened regulations on cryptocurrency exchanges, mandating unlicensed platforms to halt operations by month's end. This regulatory shift is poised to redirect crypto businesses towards more lenient regions, potentially altering the global cryptocurrency market dynamics.",
+      "title": "German Financial Regulator BaFin Ramps Up Oversight Post-Wirecard",
+      "body": "Germany's BaFin is taking a tougher regulatory stance following the Wirecard scandal. This shift towards more aggressive oversight aims to prevent future financial frauds, impacting regulatory frameworks and trust in the European financial markets.",
       "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first item ever purchased online was a Sting CD in 1994? This marked the beginning of e-commerce as we know it today.",
-    "source": "history.com"
+    "text": "Did you know that the first cryptocurrency, Bitcoin, was introduced in 2009 as a decentralized digital currency by an anonymous entity using the pseudonym Satoshi Nakamoto?",
+    "source": "bitcoin.org"
   }
 }
