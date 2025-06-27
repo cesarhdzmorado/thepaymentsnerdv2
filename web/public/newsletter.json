@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Fannie Mae, Freddie Mac to Count Crypto in Mortgage Risk Assessments",
-      "body": "In a groundbreaking move, Fannie Mae and Freddie Mac will now include cryptocurrency assets in their risk evaluations for mortgage loans. Directed by FHFA's William J. Pulte, this policy could broaden mortgage access for crypto investors, potentially transforming the U.S. housing market landscape.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "South Korean Banks Forge Ahead with Won-Backed Stablecoin",
-      "body": "Leading South Korean banks are forming a consortium to launch a stablecoin backed by the South Korean Won. This initiative underscores the growing integration of digital currencies within Asia's mainstream banking systems, setting a precedent for future digital currency acceptance.",
+      "title": "Revolut Acquires Banco Cetelem, Expands into Argentina",
+      "body": "Revolut is set to acquire Banco Cetelem from BNP Paribas, marking a significant expansion into the South American market. This strategic move leverages an established financial infrastructure to broaden Revolut's global footprint, signaling aggressive growth and diversification across new geographies. This expansion could reshape the competitive landscape in South American fintech.",
       "source": "Finextra"
     },
     {
-      "title": "Envestnet Divests Yodlee to Focus on Core Business Strategies",
-      "body": "Envestnet is selling its data analytics arm, Yodlee, to STG, signaling a strategic refocus on its primary financial services. This sale could significantly influence the financial data analytics sector and the future of open banking.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Mastercard to Open A2A Payments Testing Sandbox in the UK",
-      "body": "Mastercard is set to launch an Account-to-Account (A2A) instant payments sandbox for UK banks. This platform will facilitate the development of innovative payment solutions, potentially speeding up the adoption of instant payments throughout the UK.",
+      "title": "BBVA Launches Fully Digital Bank in Germany",
+      "body": "BBVA has initiated a fully digital retail bank in Germany, targeting the tech-savvy consumer base with a branchless banking model. This move is part of BBVA's strategy to enhance its digital presence in Europe, positioning it to compete robustly with other digital banks and fintech startups. The digital bank could set new standards in customer experience and service innovation in the European market.",
       "source": "Finextra"
     },
     {
-      "title": "German Financial Regulator BaFin Ramps Up Oversight Post-Wirecard",
-      "body": "Germany's BaFin is taking a tougher regulatory stance following the Wirecard scandal. This shift towards more aggressive oversight aims to prevent future financial frauds, impacting regulatory frameworks and trust in the European financial markets.",
-      "source": "Financial Times"
+      "title": "Chase Bank Debuts 0% Interest Credit Card in the UK",
+      "body": "Chase Bank has launched its first credit card in the UK, featuring an introductory 0% interest rate on purchases for up to 15 months. This strategic entry is aimed at capturing market share in the UK's competitive credit card sector, appealing to consumers seeking cost-effective credit solutions. The move could significantly influence consumer credit behavior and spending patterns in the region.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Pine Labs Plans IPO, Targets Over $300 Million",
+      "body": "India-based Pine Labs is planning an IPO to raise more than $300 million, capitalizing on the booming fintech market in India. This move aims to fund further expansion and technology enhancements, reflecting growing investor interest in digital payments. The successful IPO could further stimulate the fintech ecosystem and innovation in India.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Barclaycard Bans Crypto Purchases on Credit Cards",
+      "body": "Barclaycard will now prohibit the use of its credit cards for purchasing cryptocurrencies, citing concerns about volatility and regulatory uncertainties. This policy change is expected to impact UK cryptocurrency investors and reflects the cautious stance of traditional financial institutions towards the crypto market. The decision could influence other banks' policies on cryptocurrency transactions.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first cryptocurrency, Bitcoin, was introduced in 2009 as a decentralized digital currency by an anonymous entity using the pseudonym Satoshi Nakamoto?",
-    "source": "bitcoin.org"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized how consumers made payments and transformed the financial landscape.",
+    "source": "history.com"
   }
 }
