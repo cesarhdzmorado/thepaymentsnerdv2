@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Revolut Acquires Banco Cetelem, Expands into Argentina",
-      "body": "Revolut is set to acquire Banco Cetelem from BNP Paribas, marking a significant expansion into the South American market. This strategic move leverages an established financial infrastructure to broaden Revolut's global footprint, signaling aggressive growth and diversification across new geographies. This expansion could reshape the competitive landscape in South American fintech.",
+      "title": "UK Tribunal Strikes Down Visa and Mastercard Fees",
+      "body": "The UK's Competition Appeal Tribunal has ruled that Visa and Mastercard's multilateral interchange fees breach European competition law. This pivotal decision could reshape credit card operations in the UK and potentially set a precedent for similar rulings globally, impacting the payment landscape significantly.",
       "source": "Finextra"
     },
     {
-      "title": "BBVA Launches Fully Digital Bank in Germany",
-      "body": "BBVA has initiated a fully digital retail bank in Germany, targeting the tech-savvy consumer base with a branchless banking model. This move is part of BBVA's strategy to enhance its digital presence in Europe, positioning it to compete robustly with other digital banks and fintech startups. The digital bank could set new standards in customer experience and service innovation in the European market.",
+      "title": "Belgium Investigates Worldline for Money Laundering",
+      "body": "Belgian authorities have launched a money laundering investigation into Worldline's local operations. This probe underscores a tightening of regulatory scrutiny in the European payments sector, potentially affecting compliance standards and operational protocols for payment processors.",
       "source": "Finextra"
     },
     {
-      "title": "Chase Bank Debuts 0% Interest Credit Card in the UK",
-      "body": "Chase Bank has launched its first credit card in the UK, featuring an introductory 0% interest rate on purchases for up to 15 months. This strategic entry is aimed at capturing market share in the UK's competitive credit card sector, appealing to consumers seeking cost-effective credit solutions. The move could significantly influence consumer credit behavior and spending patterns in the region.",
+      "title": "Starling Bank Sets Sights on US Market Through Acquisition",
+      "body": "Starling Bank is considering acquiring a US bank to facilitate its entry into the American financial market. This strategic move highlights the trend of fintech firms leveraging acquisitions to expand globally, potentially altering competitive dynamics in the US banking sector.",
       "source": "Finextra"
     },
     {
-      "title": "Pine Labs Plans IPO, Targets Over $300 Million",
-      "body": "India-based Pine Labs is planning an IPO to raise more than $300 million, capitalizing on the booming fintech market in India. This move aims to fund further expansion and technology enhancements, reflecting growing investor interest in digital payments. The successful IPO could further stimulate the fintech ecosystem and innovation in India.",
-      "source": "Finextra"
+      "title": "Alibaba Introduces BNPL for US B2B Customers",
+      "body": "Alibaba.com has added a BNPL option for its U.S. B2B users, partnering with Balance. This enhancement boosts payment flexibility and could accelerate the adoption of BNPL solutions in B2B transactions, particularly in international trade, marking a significant shift in payment methods.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Barclaycard Bans Crypto Purchases on Credit Cards",
-      "body": "Barclaycard will now prohibit the use of its credit cards for purchasing cryptocurrencies, citing concerns about volatility and regulatory uncertainties. This policy change is expected to impact UK cryptocurrency investors and reflects the cautious stance of traditional financial institutions towards the crypto market. The decision could influence other banks' policies on cryptocurrency transactions.",
+      "title": "BBVA Debuts Digital Bank in Germany, Targets Tech-Savvy Users",
+      "body": "BBVA has launched a fully digital bank in Germany, advancing its strategy to tap into the European tech-savvy market. This move is part of a broader trend where traditional banks are pivoting to digital-only offerings to meet the evolving preferences of modern consumers.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized how consumers made payments and transformed the financial landscape.",
+    "text": "Did you know that the largest denomination of currency ever issued was the Hungarian peng\u0151 in 1946? It was worth 100 quintillion peng\u0151!",
     "source": "history.com"
   }
 }
