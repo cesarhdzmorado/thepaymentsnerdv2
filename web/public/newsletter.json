@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "UK Tribunal Strikes Down Visa and Mastercard Fees",
-      "body": "The UK's Competition Appeal Tribunal has ruled that Visa and Mastercard's multilateral interchange fees breach European competition law. This pivotal decision could reshape credit card operations in the UK and potentially set a precedent for similar rulings globally, impacting the payment landscape significantly.",
+      "title": "UK Tribunal Finds Visa and Mastercard Fees Unlawful",
+      "body": "The UK's Competition Appeal Tribunal has ruled that Visa and Mastercard's interchange fees breach European competition law, potentially reshaping transaction fee structures and impacting revenue streams for these credit giants. This decision could set a precedent, intensifying regulatory scrutiny across European payment networks.",
       "source": "Finextra"
     },
     {
       "title": "Belgium Investigates Worldline for Money Laundering",
-      "body": "Belgian authorities have launched a money laundering investigation into Worldline's local operations. This probe underscores a tightening of regulatory scrutiny in the European payments sector, potentially affecting compliance standards and operational protocols for payment processors.",
+      "body": "Belgian authorities are probing the local unit of payment processor Worldline for alleged money laundering. This investigation could lead to tighter regulatory controls and operational standards in the European payments sector, affecting compliance practices industry-wide.",
       "source": "Finextra"
     },
     {
-      "title": "Starling Bank Sets Sights on US Market Through Acquisition",
-      "body": "Starling Bank is considering acquiring a US bank to facilitate its entry into the American financial market. This strategic move highlights the trend of fintech firms leveraging acquisitions to expand globally, potentially altering competitive dynamics in the US banking sector.",
+      "title": "Lesaka Technologies Set to Acquire Bank Zero for $62 Million",
+      "body": "In a move to dominate the South African fintech market, Lesaka Technologies plans to acquire Bank Zero Mutual Bank. This $62 million deal could revolutionize digital banking in the region, providing a blueprint for fintech expansion in emerging markets.",
       "source": "Finextra"
     },
     {
-      "title": "Alibaba Introduces BNPL for US B2B Customers",
-      "body": "Alibaba.com has added a BNPL option for its U.S. B2B users, partnering with Balance. This enhancement boosts payment flexibility and could accelerate the adoption of BNPL solutions in B2B transactions, particularly in international trade, marking a significant shift in payment methods.",
+      "title": "Starling Bank Plans to Enter U.S. Market Through Acquisition",
+      "body": "Starling Bank is eyeing an expansion into the U.S. by acquiring a local bank, signaling a strategic move to tap into the American financial market. This could escalate competition in the U.S. banking sector, showcasing the aggressive growth strategies of European fintechs.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Alibaba Introduces BNPL for U.S. B2B Customers",
+      "body": "Alibaba.com has launched a buy now, pay later option for its U.S. business users, in collaboration with Balance. This new payment flexibility could transform purchasing dynamics in the B2B sector, highlighting the growing influence of BNPL schemes in commercial transactions.",
       "source": "PYMNTS.com"
-    },
-    {
-      "title": "BBVA Debuts Digital Bank in Germany, Targets Tech-Savvy Users",
-      "body": "BBVA has launched a fully digital bank in Germany, advancing its strategy to tap into the European tech-savvy market. This move is part of a broader trend where traditional banks are pivoting to digital-only offerings to meet the evolving preferences of modern consumers.",
-      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the largest denomination of currency ever issued was the Hungarian peng\u0151 in 1946? It was worth 100 quintillion peng\u0151!",
-    "source": "history.com"
+    "text": "Did you know that the largest U.S. banks have recently passed the Federal Reserve's stress tests, showcasing their resilience and robustness in less severe economic scenarios?",
+    "source": "Financial Times"
   }
 }
