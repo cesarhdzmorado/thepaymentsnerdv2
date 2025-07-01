@@ -1,28 +1,28 @@
 {
   "news": [
     {
-      "title": "UK Tribunal Strikes Down Visa and Mastercard Fees",
-      "body": "The UK's Competition Appeal Tribunal has ruled that Visa and Mastercard's multilateral interchange fees breach European competition law. This pivotal decision could reshape transaction fee structures, potentially reducing costs for retailers and intensifying competition in the European payments landscape. It highlights the rigorous regulatory environment facing major payment networks.",
+      "title": "Pan-African Card Scheme Launches to Boost Financial Independence",
+      "body": "A new Pan-African card scheme has been introduced, designed to reduce reliance on non-African financial systems and promote intra-African trade. This initiative is pivotal for enhancing economic stability across the continent, offering a localized solution that could reshape financial transactions and empower African economies.",
       "source": "Finextra"
     },
     {
-      "title": "Belgian Authorities Investigate Worldline for Money Laundering",
-      "body": "Belgium's prosecutors are probing the local unit of payment processor Worldline for alleged money laundering. This investigation underscores the heightened regulatory scrutiny on financial practices within Europe's major payment processing firms, which could impact Worldline's operational integrity and market reputation.",
+      "title": "UK Tribunal Rules Against Visa and Mastercard's Interchange Fees",
+      "body": "The UK's Competition Appeal Tribunal has declared that the interchange fees set by Visa and Mastercard are in violation of European competition law. This landmark ruling could disrupt the traditional fee structures and enforce a reevaluation of card payment regulations in the UK, potentially lowering costs for retailers.",
       "source": "Finextra"
     },
     {
-      "title": "Starling Bank Plans U.S. Market Entry via Acquisition",
-      "body": "Starling Bank, a UK-based digital bank, is eyeing an expansion into the U.S. market through the acquisition of a local bank. This strategic move reflects the bank's ambition to penetrate the lucrative U.S. banking sector and is indicative of the broader trend of digital banks leveraging acquisitions for international growth.",
-      "source": "Finextra"
+      "title": "Circle Proposes National Trust Bank to Enhance USDC Stability",
+      "body": "Circle Internet Group is seeking a national trust charter to establish the First National Digital Currency Bank, N.A., aimed at managing USDC stablecoin reserves. This move is crucial for ensuring compliance and enhancing the security framework around digital currencies, reflecting growing regulatory awareness in the fintech sector.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Lesaka Technologies Acquires Bank Zero for $62 Million",
-      "body": "In a significant move within the fintech sector, South Africa's Lesaka Technologies is set to acquire Bank Zero Mutual Bank for approximately $62 million. This acquisition signals a robust expansion in South Africa's digital banking landscape and underscores the ongoing consolidation trend in the global fintech industry.",
-      "source": "Finextra"
+      "title": "Meta's Strategic AI Expansion with New Superintelligence Labs",
+      "body": "Meta is advancing its AI frontier by establishing Meta Superintelligence Labs, led by tech luminaries Alexandr Wang and Nat Friedman. This strategic enhancement underscores Meta's commitment to leading in AI innovation, potentially setting new industry standards and fueling future technological advancements.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Anchorage Digital Ends Support for USDC Stablecoin",
-      "body": "Cryptocurrency custodian Anchorage Digital has announced it will cease support for the USDC stablecoin, based on its new 'Stablecoin Safety Matrix.' This decision has stirred controversy with USDC issuer Circle and could significantly affect the stablecoin's market position and user trust.",
+      "title": "Tapi Acquires Mastercard\u2019s Arcus Operations to Bolster LATAM Presence",
+      "body": "Tapi's acquisition of Mastercard\u2019s Arcus operations in Mexico, including key utility payment and cash handling services, marks a significant expansion in Latin America's payments landscape. This move strategically positions Tapi to tap into the growing market and enhance service offerings in the region.",
       "source": "PYMNTS.com"
     }
   ],
