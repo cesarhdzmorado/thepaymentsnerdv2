@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Pan-African Card Scheme Launches to Boost Financial Independence",
-      "body": "A new Pan-African card scheme has been introduced, designed to reduce reliance on non-African financial systems and promote intra-African trade. This initiative is pivotal for enhancing economic stability across the continent, offering a localized solution that could reshape financial transactions and empower African economies.",
-      "source": "Finextra"
+      "title": "Bitget and Mastercard Launch Zero-Fee Crypto Card",
+      "body": "Bitget, in partnership with Mastercard and Immersve, has unveiled a zero-fee crypto card, enabling cryptocurrency spending at over 150 million merchants globally. This strategic move, reported by Finextra, bridges the gap between traditional financial services and the burgeoning crypto market, potentially revolutionizing how digital currencies are utilized in everyday transactions.",
+      "source": "finextra.com"
     },
     {
-      "title": "UK Tribunal Rules Against Visa and Mastercard's Interchange Fees",
-      "body": "The UK's Competition Appeal Tribunal has declared that the interchange fees set by Visa and Mastercard are in violation of European competition law. This landmark ruling could disrupt the traditional fee structures and enforce a reevaluation of card payment regulations in the UK, potentially lowering costs for retailers.",
-      "source": "Finextra"
+      "title": "Circle Moves to Become National Trust Bank",
+      "body": "Circle, a leader in stablecoin solutions, is seeking national trust bank status post-IPO, according to Finextra. This transition could significantly boost stablecoin adoption and trust among conventional investors, marking a pivotal shift towards regulated financial frameworks in the digital currency space.",
+      "source": "finextra.com"
     },
     {
-      "title": "Circle Proposes National Trust Bank to Enhance USDC Stability",
-      "body": "Circle Internet Group is seeking a national trust charter to establish the First National Digital Currency Bank, N.A., aimed at managing USDC stablecoin reserves. This move is crucial for ensuring compliance and enhancing the security framework around digital currencies, reflecting growing regulatory awareness in the fintech sector.",
-      "source": "PYMNTS.com"
+      "title": "ECB Integrates Distributed Ledger for Enhanced Transaction Security",
+      "body": "The European Central Bank is integrating distributed ledger technology with its Target settlement services, aiming to modernize Europe's financial infrastructure. This initiative, as reported by Finextra, promises more efficient and secure transactions, setting a new standard in financial operations.",
+      "source": "finextra.com"
     },
     {
-      "title": "Meta's Strategic AI Expansion with New Superintelligence Labs",
-      "body": "Meta is advancing its AI frontier by establishing Meta Superintelligence Labs, led by tech luminaries Alexandr Wang and Nat Friedman. This strategic enhancement underscores Meta's commitment to leading in AI innovation, potentially setting new industry standards and fueling future technological advancements.",
-      "source": "PYMNTS.com"
+      "title": "First Pan-African Card Scheme Set to Boost Continental Integration",
+      "body": "A landmark initiative has been launched to create the first Pan-African card scheme, reported by Finextra. This scheme aims to increase financial sovereignty and streamline transactions across Africa, potentially transforming economic interactions and integration on the continent.",
+      "source": "finextra.com"
     },
     {
-      "title": "Tapi Acquires Mastercard\u2019s Arcus Operations to Bolster LATAM Presence",
-      "body": "Tapi's acquisition of Mastercard\u2019s Arcus operations in Mexico, including key utility payment and cash handling services, marks a significant expansion in Latin America's payments landscape. This move strategically positions Tapi to tap into the growing market and enhance service offerings in the region.",
-      "source": "PYMNTS.com"
+      "title": "Deutsche Bank Braces for Basel IV Capital Requirements",
+      "body": "Deutsche Bank is preparing for a substantial increase in risk-weighted assets by 2033 due to Basel IV regulations, as per the Financial Times. This adjustment will significantly impact the bank's capital strategy and underscores the challenges global banks face with evolving regulatory landscapes.",
+      "source": "ft.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
     "source": "history.com"
   }
 }
