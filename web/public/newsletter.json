@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Bitget and Mastercard Launch Zero-Fee Crypto Card",
-      "body": "Bitget, in partnership with Mastercard and Immersve, has unveiled a zero-fee crypto card, enabling cryptocurrency spending at over 150 million merchants globally. This strategic move, reported by Finextra, bridges the gap between traditional financial services and the burgeoning crypto market, potentially revolutionizing how digital currencies are utilized in everyday transactions.",
-      "source": "finextra.com"
+      "title": "Campfire Secures $35M for AI-Driven ERP System Expansion",
+      "body": "Campfire has successfully raised $35 million in Series A funding to enhance its AI-driven ERP system, designed to support startups from inception to IPO. The investment will fuel product development, integrate generative AI technologies, and expand market reach, potentially revolutionizing startup operations and scalability.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Circle Moves to Become National Trust Bank",
-      "body": "Circle, a leader in stablecoin solutions, is seeking national trust bank status post-IPO, according to Finextra. This transition could significantly boost stablecoin adoption and trust among conventional investors, marking a pivotal shift towards regulated financial frameworks in the digital currency space.",
-      "source": "finextra.com"
+      "title": "Moove Eyes $1.2 Billion Funding for US Expansion and Autonomous Fleet",
+      "body": "African ride-hailing startup Moove is nearing a massive $1.2 billion funding round to break into the U.S. market and roll out an autonomous vehicle fleet with Waymo. This strategic move could significantly alter the dynamics of the ride-hailing industry and accelerate the adoption of autonomous vehicles in urban mobility.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "ECB Integrates Distributed Ledger for Enhanced Transaction Security",
-      "body": "The European Central Bank is integrating distributed ledger technology with its Target settlement services, aiming to modernize Europe's financial infrastructure. This initiative, as reported by Finextra, promises more efficient and secure transactions, setting a new standard in financial operations.",
-      "source": "finextra.com"
+      "title": "BNY Mellon Innovates with AI 'Digital Employees' Email Integration",
+      "body": "BNY Mellon is setting a new standard in operational efficiency by integrating AI 'digital employees' with their own logins and email accounts. This pioneering initiative could redefine digital workflows and enhance productivity across the financial services industry.",
+      "source": "Finextra"
     },
     {
-      "title": "First Pan-African Card Scheme Set to Boost Continental Integration",
-      "body": "A landmark initiative has been launched to create the first Pan-African card scheme, reported by Finextra. This scheme aims to increase financial sovereignty and streamline transactions across Africa, potentially transforming economic interactions and integration on the continent.",
-      "source": "finextra.com"
+      "title": "Paxos Introduces USDG Stablecoin Across the European Union",
+      "body": "Paxos has launched its Global Dollar (USDG) stablecoin in the EU, aiming to offer a stable, reliable digital currency that enhances transactional efficiency and security. This move could significantly impact digital currency use and financial transactions across Europe.",
+      "source": "Finextra"
     },
     {
-      "title": "Deutsche Bank Braces for Basel IV Capital Requirements",
-      "body": "Deutsche Bank is preparing for a substantial increase in risk-weighted assets by 2033 due to Basel IV regulations, as per the Financial Times. This adjustment will significantly impact the bank's capital strategy and underscores the challenges global banks face with evolving regulatory landscapes.",
-      "source": "ft.com"
+      "title": "Wise Seeks US National Trust Bank Charter to Boost Financial Services",
+      "body": "Wise is applying for a US National Trust Bank Charter, seeking direct regulation by the US Office of the Comptroller of the Currency. This strategic step is aimed at expanding its financial services and enhancing regulatory compliance, potentially transforming its operational landscape in the U.S. market.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
     "source": "history.com"
   }
 }
