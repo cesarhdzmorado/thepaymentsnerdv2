@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Campfire Secures $35M for AI-Driven ERP System Expansion",
-      "body": "Campfire has successfully raised $35 million in Series A funding to enhance its AI-driven ERP system, designed to support startups from inception to IPO. The investment will fuel product development, integrate generative AI technologies, and expand market reach, potentially revolutionizing startup operations and scalability.",
+      "title": "Nvidia Tops Apple as Most Valuable Company, Emphasizing AI Boom",
+      "body": "Nvidia briefly eclipsed Apple with a market cap of $3.92 trillion, marking a significant milestone in the valuation of AI-centric firms. This shift highlights the increasing investor confidence in artificial intelligence as a transformative technology sector. Nvidia's peak valuation is a clear indicator of the potential long-term impact of AI on global markets.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Moove Eyes $1.2 Billion Funding for US Expansion and Autonomous Fleet",
-      "body": "African ride-hailing startup Moove is nearing a massive $1.2 billion funding round to break into the U.S. market and roll out an autonomous vehicle fleet with Waymo. This strategic move could significantly alter the dynamics of the ride-hailing industry and accelerate the adoption of autonomous vehicles in urban mobility.",
+      "title": "Qonto Eyes Full Banking License to Broaden Services in Europe",
+      "body": "French neobank Qonto is stepping up its game by applying for a full banking license, aiming to offer loans, savings, and investment services to SMBs and freelancers. This move could significantly alter the financial services landscape for small businesses across Europe, enhancing Qonto's competitive edge in the fintech sector.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "BNY Mellon Innovates with AI 'Digital Employees' Email Integration",
-      "body": "BNY Mellon is setting a new standard in operational efficiency by integrating AI 'digital employees' with their own logins and email accounts. This pioneering initiative could redefine digital workflows and enhance productivity across the financial services industry.",
+      "title": "Ramp Unveils Advanced Corporate Cards with Enhanced Fraud Detection",
+      "body": "Ramp has launched new corporate cards that integrate seamlessly with major accounting platforms, featuring customizable spending controls and advanced fraud detection. This innovation is set to revolutionize expense management, offering businesses a more efficient and secure way to handle corporate finances.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "UK Fosters Fintech Growth with Simplified Regulatory Processes",
+      "body": "The UK's Regulatory Innovation Office is working to streamline regulations for fintech companies, collaborating with the Digital Regulation Cooperation Forum. This initiative is designed to spur innovation and growth within the UK's robust fintech ecosystem, potentially setting a benchmark for regulatory frameworks globally.",
       "source": "Finextra"
     },
     {
-      "title": "Paxos Introduces USDG Stablecoin Across the European Union",
-      "body": "Paxos has launched its Global Dollar (USDG) stablecoin in the EU, aiming to offer a stable, reliable digital currency that enhances transactional efficiency and security. This move could significantly impact digital currency use and financial transactions across Europe.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Wise Seeks US National Trust Bank Charter to Boost Financial Services",
-      "body": "Wise is applying for a US National Trust Bank Charter, seeking direct regulation by the US Office of the Comptroller of the Currency. This strategic step is aimed at expanding its financial services and enhancing regulatory compliance, potentially transforming its operational landscape in the U.S. market.",
+      "title": "US Banks Push for Faster Adoption of Electronic Payments",
+      "body": "Leading US banks are advocating for the Department of the Treasury to accelerate the shift from paper cheques to electronic payments. This transition aims to modernize the US payment system, enhancing efficiency and security in transactions nationwide, reflecting a significant move towards digital financial solutions.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "text": "Did you know that the first electronic payment was made over 140 years ago? Western Union introduced electronic fund transfers in 1871.",
     "source": "history.com"
   }
 }
