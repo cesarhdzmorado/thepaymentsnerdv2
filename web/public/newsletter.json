@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Nvidia Tops Apple as Most Valuable Company, Emphasizing AI Boom",
-      "body": "Nvidia briefly eclipsed Apple with a market cap of $3.92 trillion, marking a significant milestone in the valuation of AI-centric firms. This shift highlights the increasing investor confidence in artificial intelligence as a transformative technology sector. Nvidia's peak valuation is a clear indicator of the potential long-term impact of AI on global markets.",
+      "title": "EU Forges Ahead with AI Act Implementation, Ignoring Tech Giants",
+      "body": "The European Commission is set to implement the EU\u2019s Artificial Intelligence Act without delay, despite pushback from major tech companies. This move highlights the EU's determination to lead in AI regulation, setting a precedent that could influence global standards and impact how fintech companies deploy AI technologies.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Qonto Eyes Full Banking License to Broaden Services in Europe",
-      "body": "French neobank Qonto is stepping up its game by applying for a full banking license, aiming to offer loans, savings, and investment services to SMBs and freelancers. This move could significantly alter the financial services landscape for small businesses across Europe, enhancing Qonto's competitive edge in the fintech sector.",
+      "title": "AllScale Raises $1.5 Million to Develop Stablecoin Solutions for SMBs",
+      "body": "AllScale has secured $1.5 million in funding to create stablecoin solutions focused on invoicing, social commerce, and payroll for small businesses. This development is pivotal as it could streamline payments and financial operations for SMBs, integrating digital currencies into mainstream business practices.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Ramp Unveils Advanced Corporate Cards with Enhanced Fraud Detection",
-      "body": "Ramp has launched new corporate cards that integrate seamlessly with major accounting platforms, featuring customizable spending controls and advanced fraud detection. This innovation is set to revolutionize expense management, offering businesses a more efficient and secure way to handle corporate finances.",
+      "title": "Mercado Bitcoin Partners with Ripple to Tokenize $200M in Assets",
+      "body": "Mercado Bitcoin, in collaboration with Ripple, is set to tokenize over $200 million in real-world assets using the XRP Ledger. This significant move in Latin America could pave the way for widespread adoption of asset tokenization, potentially transforming the regional financial landscape.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "UK Fosters Fintech Growth with Simplified Regulatory Processes",
-      "body": "The UK's Regulatory Innovation Office is working to streamline regulations for fintech companies, collaborating with the Digital Regulation Cooperation Forum. This initiative is designed to spur innovation and growth within the UK's robust fintech ecosystem, potentially setting a benchmark for regulatory frameworks globally.",
+      "title": "UK Aims to Cut Red Tape for Fintechs with Regulatory Streamlining",
+      "body": "The UK's Regulatory Innovation Office is collaborating with the Digital Regulation Cooperation Forum to simplify regulations for fintech firms. This initiative is crucial as it aims to foster innovation by making it easier for fintechs to navigate the regulatory environment, potentially accelerating the sector's growth.",
       "source": "Finextra"
     },
     {
-      "title": "US Banks Push for Faster Adoption of Electronic Payments",
-      "body": "Leading US banks are advocating for the Department of the Treasury to accelerate the shift from paper cheques to electronic payments. This transition aims to modernize the US payment system, enhancing efficiency and security in transactions nationwide, reflecting a significant move towards digital financial solutions.",
+      "title": "Global CBDC Projects Gain Momentum in Ghana and Thailand",
+      "body": "Central Bank Digital Currency (CBDC) initiatives are advancing in Ghana and Thailand, signaling a growing global interest in government-backed digital currencies. These pilot projects could influence international monetary policies and enhance the efficiency of cross-border transactions.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first electronic payment was made over 140 years ago? Western Union introduced electronic fund transfers in 1871.",
-    "source": "history.com"
+    "text": "Did you know that adopting a common framework for asset tokenization could save businesses over $50 billion by 2030 by reducing cross-border currency costs?",
+    "source": "Finextra"
   }
 }
