@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "EU Forges Ahead with AI Act Implementation, Ignoring Tech Giants",
-      "body": "The European Commission is set to implement the EU\u2019s Artificial Intelligence Act without delay, despite pushback from major tech companies. This move highlights the EU's determination to lead in AI regulation, setting a precedent that could influence global standards and impact how fintech companies deploy AI technologies.",
+      "title": "TikTok Introduces 'M2' App in U.S. Ahead of Sale",
+      "body": "TikTok is set to launch a new app version, 'M2', in the U.S. on September 5, aimed at addressing regulatory concerns and facilitating a smoother transition to new ownership. This strategic move could significantly alter user experience and data management, impacting how digital platforms engage with regulatory frameworks.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "AllScale Raises $1.5 Million to Develop Stablecoin Solutions for SMBs",
-      "body": "AllScale has secured $1.5 million in funding to create stablecoin solutions focused on invoicing, social commerce, and payroll for small businesses. This development is pivotal as it could streamline payments and financial operations for SMBs, integrating digital currencies into mainstream business practices.",
+      "title": "Revolut Nears Banking Milestone with UK Credit License",
+      "body": "Revolut is on the brink of obtaining a crucial credit license from UK regulators, a significant step that would enable it to offer credit cards to its 11 million British customers. This development highlights the regulatory challenges fintechs face and underscores the importance of compliance in expanding financial services.",
+      "source": "Financial Times"
+    },
+    {
+      "title": "Instacart Partners with Branch for Immediate Wage Access",
+      "body": "Instacart has launched a rewards debit card in collaboration with Branch, providing its shoppers with instant access to earned wages as of July 1. This enhancement in financial flexibility for gig workers could boost job satisfaction and loyalty, setting a new standard in gig economy benefits.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Mercado Bitcoin Partners with Ripple to Tokenize $200M in Assets",
-      "body": "Mercado Bitcoin, in collaboration with Ripple, is set to tokenize over $200 million in real-world assets using the XRP Ledger. This significant move in Latin America could pave the way for widespread adoption of asset tokenization, potentially transforming the regional financial landscape.",
-      "source": "PYMNTS.com"
+      "title": "Tokenisation of U.S. Treasury Funds Draws Market Interest",
+      "body": "The tokenisation of U.S. Treasury funds is attracting attention from stablecoin issuers and traders, driven by high yields and the potential use of these tokens as collateral in derivatives transactions. This shift could redefine traditional asset management and integration into the digital economy.",
+      "source": "Financial Times"
     },
     {
-      "title": "UK Aims to Cut Red Tape for Fintechs with Regulatory Streamlining",
-      "body": "The UK's Regulatory Innovation Office is collaborating with the Digital Regulation Cooperation Forum to simplify regulations for fintech firms. This initiative is crucial as it aims to foster innovation by making it easier for fintechs to navigate the regulatory environment, potentially accelerating the sector's growth.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Global CBDC Projects Gain Momentum in Ghana and Thailand",
-      "body": "Central Bank Digital Currency (CBDC) initiatives are advancing in Ghana and Thailand, signaling a growing global interest in government-backed digital currencies. These pilot projects could influence international monetary policies and enhance the efficiency of cross-border transactions.",
+      "title": "ISDA and Ant International Report Advocates for Asset Tokenisation",
+      "body": "A recent report by ISDA and Ant International highlights that tokenising bank liabilities and adopting shared ledgers could cut cross-border currency costs by 12.5%, potentially saving businesses over $50 billion by 2030. This underscores the transformative economic potential of blockchain in financial services.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that adopting a common framework for asset tokenization could save businesses over $50 billion by 2030 by reducing cross-border currency costs?",
-    "source": "Finextra"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
