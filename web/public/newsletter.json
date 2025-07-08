@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "TikTok Introduces 'M2' App in U.S. Ahead of Sale",
-      "body": "TikTok is set to launch a new app version, 'M2', in the U.S. on September 5, aimed at addressing regulatory concerns and facilitating a smoother transition to new ownership. This strategic move could significantly alter user experience and data management, impacting how digital platforms engage with regulatory frameworks.",
+      "title": "EU Investigates Robinhood's Tokenized Equities Offering",
+      "body": "The European Union, led by Lithuania's central bank, is scrutinizing Robinhood for its tokenized equities linked to high-profile companies like OpenAI and SpaceX. This investigation underscores the regulatory complexities emerging in the cryptocurrency and tokenization arena, highlighting the need for clear guidelines as new financial products evolve.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Revolut Nears Banking Milestone with UK Credit License",
-      "body": "Revolut is on the brink of obtaining a crucial credit license from UK regulators, a significant step that would enable it to offer credit cards to its 11 million British customers. This development highlights the regulatory challenges fintechs face and underscores the importance of compliance in expanding financial services.",
-      "source": "Financial Times"
-    },
-    {
-      "title": "Instacart Partners with Branch for Immediate Wage Access",
-      "body": "Instacart has launched a rewards debit card in collaboration with Branch, providing its shoppers with instant access to earned wages as of July 1. This enhancement in financial flexibility for gig workers could boost job satisfaction and loyalty, setting a new standard in gig economy benefits.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Tokenisation of U.S. Treasury Funds Draws Market Interest",
-      "body": "The tokenisation of U.S. Treasury funds is attracting attention from stablecoin issuers and traders, driven by high yields and the potential use of these tokens as collateral in derivatives transactions. This shift could redefine traditional asset management and integration into the digital economy.",
-      "source": "Financial Times"
-    },
-    {
-      "title": "ISDA and Ant International Report Advocates for Asset Tokenisation",
-      "body": "A recent report by ISDA and Ant International highlights that tokenising bank liabilities and adopting shared ledgers could cut cross-border currency costs by 12.5%, potentially saving businesses over $50 billion by 2030. This underscores the transformative economic potential of blockchain in financial services.",
+      "title": "Mastercard and Pay4You Launch Spend Management Tool in Europe",
+      "body": "Mastercard has teamed up with Pay4You to roll out a new spend management solution for European businesses, aiming to simplify payment processes and enhance financial oversight. This partnership could significantly influence how companies manage their finances, offering streamlined operations and potentially reshaping payment practices across the continent.",
       "source": "Finextra"
+    },
+    {
+      "title": "Belgian Banks Commit to European Payments Initiative",
+      "body": "In a major move towards payment unification in Europe, five leading Belgian banks have joined the European Payments Initiative. They plan to introduce the Wero digital wallet and instant account-to-account payment services by next year, marking a significant step towards seamless financial transactions across Europe.",
+      "source": "Finextra"
+    },
+    {
+      "title": "AI Set to Transform the Fintech Landscape",
+      "body": "The fintech industry is on the brink of a major transformation driven by advancements in artificial intelligence. This shift promises to revolutionize the delivery and consumption of financial services, potentially leading to more personalized and efficient customer experiences.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Digital Wallets Drive Global Expansion for SMBs",
+      "body": "The rise of digital wallets is breaking down international trade barriers for small and medium-sized businesses, facilitating easier and more efficient cross-border transactions. This evolution is empowering SMBs to expand their global footprint and compete more effectively on the international stage.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "text": "Did you know that the first digital wallet was introduced by Coca Cola in 1997, which allowed customers to purchase drinks by sending text messages?",
     "source": "history.com"
   }
 }
