@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "EU Investigates Robinhood's Tokenized Equities Offering",
-      "body": "The European Union, led by Lithuania's central bank, is scrutinizing Robinhood for its tokenized equities linked to high-profile companies like OpenAI and SpaceX. This investigation underscores the regulatory complexities emerging in the cryptocurrency and tokenization arena, highlighting the need for clear guidelines as new financial products evolve.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Mastercard and Pay4You Launch Spend Management Tool in Europe",
-      "body": "Mastercard has teamed up with Pay4You to roll out a new spend management solution for European businesses, aiming to simplify payment processes and enhance financial oversight. This partnership could significantly influence how companies manage their finances, offering streamlined operations and potentially reshaping payment practices across the continent.",
+      "title": "Revolut Partners with Alipay to Enter Chinese Remittance Market",
+      "body": "Revolut is making a bold move into the $48 billion Chinese remittance market through a partnership with Ant International, leveraging Alipay for transactions. This strategic expansion not only taps into one of the world's largest economies but also sets a new precedent for international money transfers, potentially reshaping financial interactions between the East and West.",
       "source": "Finextra"
     },
     {
-      "title": "Belgian Banks Commit to European Payments Initiative",
-      "body": "In a major move towards payment unification in Europe, five leading Belgian banks have joined the European Payments Initiative. They plan to introduce the Wero digital wallet and instant account-to-account payment services by next year, marking a significant step towards seamless financial transactions across Europe.",
+      "title": "Monzo Hit with \u00a321 Million Fine for Anti-Money Laundering Lapses",
+      "body": "The UK's Financial Conduct Authority has fined Monzo \u00a321 million for failing to maintain adequate anti-financial crime controls from October 2018 to August 2020. This significant penalty underscores the stringent regulatory environment facing fintechs and serves as a stark reminder of the importance of robust compliance systems.",
       "source": "Finextra"
     },
     {
-      "title": "AI Set to Transform the Fintech Landscape",
-      "body": "The fintech industry is on the brink of a major transformation driven by advancements in artificial intelligence. This shift promises to revolutionize the delivery and consumption of financial services, potentially leading to more personalized and efficient customer experiences.",
+      "title": "Belgian Banks Embrace European Payments Initiative with Wero Wallet",
+      "body": "In a major shift in European financial services, five leading Belgian banks have committed to the European Payments Initiative, planning to roll out the Wero digital wallet and instant A2A payment application by next year. This move could significantly alter the payments landscape in Europe, enhancing transaction efficiency and consumer convenience.",
       "source": "Finextra"
     },
     {
-      "title": "Digital Wallets Drive Global Expansion for SMBs",
-      "body": "The rise of digital wallets is breaking down international trade barriers for small and medium-sized businesses, facilitating easier and more efficient cross-border transactions. This evolution is empowering SMBs to expand their global footprint and compete more effectively on the international stage.",
-      "source": "PYMNTS.com"
+      "title": "Chinese Tech Giants Explore Renminbi Stablecoins Amidst Global Dollar Dominance",
+      "body": "Chinese technology companies are exploring the creation of a renminbi stablecoin, aiming to challenge the global financial system's reliance on the dollar. This development could have far-reaching implications for international trade and digital currency dynamics, potentially altering global economic balances.",
+      "source": "Financial Times"
+    },
+    {
+      "title": "Mastercard and Pay4You Unveil New Spend Management Solution in Europe",
+      "body": "Mastercard has teamed up with Pay4You to launch a cutting-edge spend management tool for European businesses, aiming to streamline financial operations and enhance cost efficiency. This partnership marks a significant advancement in financial technology solutions, offering businesses better control over their financial strategies.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital wallet was introduced by Coca Cola in 1997, which allowed customers to purchase drinks by sending text messages?",
-    "source": "history.com"
+    "text": "Did you know that the world's first digital camera was invented by a Kodak engineer in 1975? It weighed 8 pounds and only captured black and white images at 0.01 megapixels.",
+    "source": "Kodak.com"
   }
 }
