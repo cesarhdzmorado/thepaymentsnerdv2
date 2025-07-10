@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Revolut Partners with Alipay to Enter Chinese Remittance Market",
-      "body": "Revolut is making a bold move into the $48 billion Chinese remittance market through a partnership with Ant International, leveraging Alipay for transactions. This strategic expansion not only taps into one of the world's largest economies but also sets a new precedent for international money transfers, potentially reshaping financial interactions between the East and West.",
+      "title": "Revolut Eyes Global Domination with $1 Billion Funding Round",
+      "body": "Revolut is gearing up to raise a whopping $1 billion, valuing the company at $65 billion, to fuel its global expansion ambitions. This move is a game-changer, positioning Revolut to scale operations and solidify its standing in the fiercely competitive FinTech arena. The expansion could reshape market dynamics and enhance consumer access to innovative financial services.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Wise Pays $4.2 Million to Settle Regulatory Allegations",
+      "body": "Wise US has settled with six state regulators for $4.2 million over lapses in its anti-money laundering and counter-terrorism financing protocols. This settlement underscores the critical importance of stringent compliance frameworks in the financial sector, reflecting on the broader implications for FinTechs navigating complex regulatory landscapes.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Circle and OKX Streamline Crypto to USD Conversions",
+      "body": "Circle's new partnership with OKX promises to simplify the conversion between USD and USDC for 60 million users, marking a significant leap in making cryptocurrencies more accessible for everyday transactions. This collaboration could significantly influence the liquidity and usability of digital currencies in the global market.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Vocalink Fined \u00a311.9 Million by Bank of England",
+      "body": "Vocalink faces a hefty \u00a311.9 million fine from the Bank of England for failing to meet risk management standards. This penalty highlights the critical need for robust compliance systems within the payments industry, serving as a stark reminder of the regulatory obligations companies must adhere to.",
       "source": "Finextra"
     },
     {
-      "title": "Monzo Hit with \u00a321 Million Fine for Anti-Money Laundering Lapses",
-      "body": "The UK's Financial Conduct Authority has fined Monzo \u00a321 million for failing to maintain adequate anti-financial crime controls from October 2018 to August 2020. This significant penalty underscores the stringent regulatory environment facing fintechs and serves as a stark reminder of the importance of robust compliance systems.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Belgian Banks Embrace European Payments Initiative with Wero Wallet",
-      "body": "In a major shift in European financial services, five leading Belgian banks have committed to the European Payments Initiative, planning to roll out the Wero digital wallet and instant A2A payment application by next year. This move could significantly alter the payments landscape in Europe, enhancing transaction efficiency and consumer convenience.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Chinese Tech Giants Explore Renminbi Stablecoins Amidst Global Dollar Dominance",
-      "body": "Chinese technology companies are exploring the creation of a renminbi stablecoin, aiming to challenge the global financial system's reliance on the dollar. This development could have far-reaching implications for international trade and digital currency dynamics, potentially altering global economic balances.",
-      "source": "Financial Times"
-    },
-    {
-      "title": "Mastercard and Pay4You Unveil New Spend Management Solution in Europe",
-      "body": "Mastercard has teamed up with Pay4You to launch a cutting-edge spend management tool for European businesses, aiming to streamline financial operations and enhance cost efficiency. This partnership marks a significant advancement in financial technology solutions, offering businesses better control over their financial strategies.",
+      "title": "Revolut Targets $48 Billion Chinese Remittance Market",
+      "body": "Revolut is making strategic moves into the $48 billion Chinese remittance market through a partnership with Ant International. This initiative not only taps into a lucrative market but also underscores the growing strategic importance of international remittances in the FinTech sector.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the world's first digital camera was invented by a Kodak engineer in 1975? It weighed 8 pounds and only captured black and white images at 0.01 megapixels.",
-    "source": "Kodak.com"
+    "text": "Did you know Nvidia has become the first company to reach a market value of $4 trillion, largely thanks to its pioneering work in AI chip manufacturing?",
+    "source": "Financial Times"
   }
 }
