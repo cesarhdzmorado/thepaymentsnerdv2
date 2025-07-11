@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Revolut Eyes Global Domination with $1 Billion Funding Round",
-      "body": "Revolut is gearing up to raise a whopping $1 billion, valuing the company at $65 billion, to fuel its global expansion ambitions. This move is a game-changer, positioning Revolut to scale operations and solidify its standing in the fiercely competitive FinTech arena. The expansion could reshape market dynamics and enhance consumer access to innovative financial services.",
+      "title": "Federal Reserve Eases 'Well-Managed' Rating Criteria for Banks",
+      "body": "The Federal Reserve Board is proposing a revision to its supervisory framework that could allow banks with a 'Deficient-1' rating to be classified as 'well managed.' This change could reduce regulatory pressures, potentially altering operational strategies and market perceptions of banks. It's a significant shift that could reshape compliance benchmarks and competitive dynamics in the banking sector.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Wise Pays $4.2 Million to Settle Regulatory Allegations",
-      "body": "Wise US has settled with six state regulators for $4.2 million over lapses in its anti-money laundering and counter-terrorism financing protocols. This settlement underscores the critical importance of stringent compliance frameworks in the financial sector, reflecting on the broader implications for FinTechs navigating complex regulatory landscapes.",
+      "title": "Jonathan Gould Confirmed as U.S. Comptroller of the Currency",
+      "body": "The U.S. Senate has confirmed Jonathan Gould as the Comptroller of the Currency for a five-year term. Gould's leadership will be pivotal in overseeing national banks and federal savings associations. His confirmation could signal shifts in regulatory policies affecting the banking industry's operational landscape.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Circle and OKX Streamline Crypto to USD Conversions",
-      "body": "Circle's new partnership with OKX promises to simplify the conversion between USD and USDC for 60 million users, marking a significant leap in making cryptocurrencies more accessible for everyday transactions. This collaboration could significantly influence the liquidity and usability of digital currencies in the global market.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Vocalink Fined \u00a311.9 Million by Bank of England",
-      "body": "Vocalink faces a hefty \u00a311.9 million fine from the Bank of England for failing to meet risk management standards. This penalty highlights the critical need for robust compliance systems within the payments industry, serving as a stark reminder of the regulatory obligations companies must adhere to.",
+      "title": "UK's FCA Shuts Down Over 1600 Websites to Combat Financial Crime",
+      "body": "In a robust move against financial crime, the UK's Financial Conduct Authority has closed more than 1600 websites promoting unauthorized financial services. This crackdown is part of a broader effort to safeguard the integrity of the financial system, emphasizing the importance of regulatory compliance and the potential repercussions for the fintech ecosystem.",
       "source": "Finextra"
     },
     {
-      "title": "Revolut Targets $48 Billion Chinese Remittance Market",
-      "body": "Revolut is making strategic moves into the $48 billion Chinese remittance market through a partnership with Ant International. This initiative not only taps into a lucrative market but also underscores the growing strategic importance of international remittances in the FinTech sector.",
+      "title": "Deutsche Bank Integrates Swift Instant Cash Reporting",
+      "body": "Deutsche Bank has adopted Swift\u2019s Instant Cash Reporting tool, enhancing financial transparency and operational efficiency with real-time account information. This technological advancement is crucial for financial institutions aiming to improve data accuracy and decision-making processes in today's fast-paced market environments.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Australia Initiates Trials for Tokenised Asset Settlement and CBDC",
+      "body": "Australia is set to commence trials of tokenised asset settlement and a central bank digital currency (CBDC) through Project Acacia. This initiative, involving the Reserve Bank of Australia, marks a significant step towards integrating digital currencies into the financial mainstream, potentially revolutionizing payment systems and asset management.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know Nvidia has become the first company to reach a market value of $4 trillion, largely thanks to its pioneering work in AI chip manufacturing?",
-    "source": "Financial Times"
+    "text": "Did you know that the first digital currency transaction was for a pizza? In 2010, a programmer bought two pizzas for 10,000 bitcoins, a sum that would be worth millions today!",
+    "source": "history.com"
   }
 }
