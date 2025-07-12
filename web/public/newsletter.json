@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Federal Reserve Eases 'Well-Managed' Rating Criteria for Banks",
-      "body": "The Federal Reserve Board is proposing a revision to its supervisory framework that could allow banks with a 'Deficient-1' rating to be classified as 'well managed.' This change could reduce regulatory pressures, potentially altering operational strategies and market perceptions of banks. It's a significant shift that could reshape compliance benchmarks and competitive dynamics in the banking sector.",
+      "title": "Bitcoin Soars to Record $118,872 Amid Crypto Legislation Hopes",
+      "body": "Bitcoin's price skyrocketed to a new all-time high of $118,872.85, fueled by anticipation of favorable crypto legislation and increased corporate investment. This milestone underscores the growing acceptance of cryptocurrencies as mainstream financial assets, potentially reshaping investment strategies.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Jonathan Gould Confirmed as U.S. Comptroller of the Currency",
-      "body": "The U.S. Senate has confirmed Jonathan Gould as the Comptroller of the Currency for a five-year term. Gould's leadership will be pivotal in overseeing national banks and federal savings associations. His confirmation could signal shifts in regulatory policies affecting the banking industry's operational landscape.",
+      "title": "Visa, Mastercard Spearhead Federal Payments Modernization Initiative",
+      "body": "In response to a White House executive order, Visa, Mastercard, and several FinTech companies are collaborating to overhaul federal payments, transitioning from paper checks to digital solutions. This move aims to boost transaction efficiency and security, setting a precedent for future government payment systems.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "UK's FCA Shuts Down Over 1600 Websites to Combat Financial Crime",
-      "body": "In a robust move against financial crime, the UK's Financial Conduct Authority has closed more than 1600 websites promoting unauthorized financial services. This crackdown is part of a broader effort to safeguard the integrity of the financial system, emphasizing the importance of regulatory compliance and the potential repercussions for the fintech ecosystem.",
+      "title": "CFPB Settles with FirstCash for $9M Over Military Lending Violations",
+      "body": "The Consumer Financial Protection Bureau (CFPB) has reached a $9 million settlement with FirstCash for breaches of the Military Lending Act. This settlement, including a $5 million redress and a $4 million fine, highlights the intensified regulatory scrutiny on lending practices, especially concerning military personnel.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Wise Hit with $4.2M Fine for Lax Anti-Money Laundering Controls",
+      "body": "Wise has been fined $4.2 million by U.S. state regulators for failing to uphold anti-money laundering standards. This penalty emphasizes the critical need for stringent compliance systems within the financial sector, impacting trust and operational integrity.",
       "source": "Finextra"
     },
     {
-      "title": "Deutsche Bank Integrates Swift Instant Cash Reporting",
-      "body": "Deutsche Bank has adopted Swift\u2019s Instant Cash Reporting tool, enhancing financial transparency and operational efficiency with real-time account information. This technological advancement is crucial for financial institutions aiming to improve data accuracy and decision-making processes in today's fast-paced market environments.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Australia Initiates Trials for Tokenised Asset Settlement and CBDC",
-      "body": "Australia is set to commence trials of tokenised asset settlement and a central bank digital currency (CBDC) through Project Acacia. This initiative, involving the Reserve Bank of Australia, marks a significant step towards integrating digital currencies into the financial mainstream, potentially revolutionizing payment systems and asset management.",
+      "title": "Australia Advances Digital Currency with Tokenised Asset Trials",
+      "body": "Australia's Project Acacia, in partnership with the Reserve Bank of Australia, is initiating trials for tokenised asset settlements and a central bank digital currency (CBDC). This pioneering effort marks a significant step towards the integration of digital currencies into the global financial ecosystem.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital currency transaction was for a pizza? In 2010, a programmer bought two pizzas for 10,000 bitcoins, a sum that would be worth millions today!",
-    "source": "history.com"
+    "text": "Bitcoin's new all-time high of nearly $119,000 marks a significant milestone in cryptocurrency valuation.",
+    "source": "PYMNTS.com"
   }
 }
