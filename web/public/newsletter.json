@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Bitcoin Soars to Record $118,872 Amid Crypto Legislation Hopes",
-      "body": "Bitcoin's price skyrocketed to a new all-time high of $118,872.85, fueled by anticipation of favorable crypto legislation and increased corporate investment. This milestone underscores the growing acceptance of cryptocurrencies as mainstream financial assets, potentially reshaping investment strategies.",
+      "title": "Bitcoin Soars to Record High Amid Crypto Legislation Optimism",
+      "body": "Bitcoin has surged to a new all-time high of $118,872.85, fueled by anticipation of favorable crypto legislation and increased corporate adoption. This 10% weekly gain underscores growing investor confidence and could signal a broader acceptance of cryptocurrencies in mainstream finance.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Visa, Mastercard Spearhead Federal Payments Modernization Initiative",
-      "body": "In response to a White House executive order, Visa, Mastercard, and several FinTech companies are collaborating to overhaul federal payments, transitioning from paper checks to digital solutions. This move aims to boost transaction efficiency and security, setting a precedent for future government payment systems.",
+      "title": "Visa, Mastercard Spearhead Shift to Digital Federal Payments",
+      "body": "In response to a White House executive order, major payment networks and fintech firms are pushing to replace paper checks with digital disbursements for federal payments. This initiative aims to boost transaction efficiency and security, marking a significant modernization of government financial processes.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "CFPB Settles with FirstCash for $9M Over Military Lending Violations",
-      "body": "The Consumer Financial Protection Bureau (CFPB) has reached a $9 million settlement with FirstCash for breaches of the Military Lending Act. This settlement, including a $5 million redress and a $4 million fine, highlights the intensified regulatory scrutiny on lending practices, especially concerning military personnel.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Wise Hit with $4.2M Fine for Lax Anti-Money Laundering Controls",
-      "body": "Wise has been fined $4.2 million by U.S. state regulators for failing to uphold anti-money laundering standards. This penalty emphasizes the critical need for stringent compliance systems within the financial sector, impacting trust and operational integrity.",
+      "title": "Australia Embarks on Groundbreaking CBDC and Token Trials",
+      "body": "Australia is initiating trials for tokenised asset settlements and a central bank digital currency (CBDC) through Project Acacia. With 14 participants, this project seeks to explore how digital currencies can enhance transaction efficiency and security, potentially reshaping financial landscapes.",
       "source": "Finextra"
     },
     {
-      "title": "Australia Advances Digital Currency with Tokenised Asset Trials",
-      "body": "Australia's Project Acacia, in partnership with the Reserve Bank of Australia, is initiating trials for tokenised asset settlements and a central bank digital currency (CBDC). This pioneering effort marks a significant step towards the integration of digital currencies into the global financial ecosystem.",
+      "title": "Wise Fined $4.2 Million for Anti-Money Laundering Shortfalls",
+      "body": "Wise has been hit with a $4.2 million fine by US state regulators for deficiencies in its anti-money laundering controls. This penalty highlights the intensifying regulatory expectations on fintechs to maintain robust compliance systems, impacting operational and reputational risks.",
       "source": "Finextra"
+    },
+    {
+      "title": "Crypto Firms Seek Banking Integration in US Amid Regulatory Optimism",
+      "body": "Crypto companies are aggressively pursuing integration into the US banking system, spurred by anticipated regulatory easing under the Trump administration. This move aims to enhance the legitimacy and influence of cryptocurrencies within conventional banking, signaling a potential shift in financial industry dynamics.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Bitcoin's new all-time high of nearly $119,000 marks a significant milestone in cryptocurrency valuation.",
-    "source": "PYMNTS.com"
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth over a billion dollars today?",
+    "source": "bitcoin.org"
   }
 }
