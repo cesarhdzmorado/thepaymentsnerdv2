@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Bitcoin Soars to Record High Amid Crypto Legislation Optimism",
-      "body": "Bitcoin has surged to a new all-time high of $118,872.85, fueled by anticipation of favorable crypto legislation and increased corporate adoption. This 10% weekly gain underscores growing investor confidence and could signal a broader acceptance of cryptocurrencies in mainstream finance.",
+      "title": "JPMorgan to Impose Fees on FinTechs for Bank Data Access",
+      "body": "JPMorgan Chase is set to charge FinTech companies for consumer banking data access, potentially adding hundreds of millions in fees annually. This strategic shift could drastically alter cost structures and competitive dynamics within the FinTech sector, compelling companies to rethink their data strategies.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Visa, Mastercard Spearhead Shift to Digital Federal Payments",
-      "body": "In response to a White House executive order, major payment networks and fintech firms are pushing to replace paper checks with digital disbursements for federal payments. This initiative aims to boost transaction efficiency and security, marking a significant modernization of government financial processes.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Australia Embarks on Groundbreaking CBDC and Token Trials",
-      "body": "Australia is initiating trials for tokenised asset settlements and a central bank digital currency (CBDC) through Project Acacia. With 14 participants, this project seeks to explore how digital currencies can enhance transaction efficiency and security, potentially reshaping financial landscapes.",
+      "title": "Binance Launches Sharia-Compliant Crypto Token",
+      "body": "Binance has introduced a Sharia-compliant crypto token, targeting a new demographic by adhering to Islamic financial principles. This move not only broadens Binance's market reach but also sets a precedent for compliance-driven product innovations in the cryptocurrency space.",
       "source": "Finextra"
     },
     {
-      "title": "Wise Fined $4.2 Million for Anti-Money Laundering Shortfalls",
-      "body": "Wise has been hit with a $4.2 million fine by US state regulators for deficiencies in its anti-money laundering controls. This penalty highlights the intensifying regulatory expectations on fintechs to maintain robust compliance systems, impacting operational and reputational risks.",
+      "title": "Wise Hit with $4.2 Million Fine for AML Failures",
+      "body": "Wise has been fined $4.2 million by U.S. regulators for lapses in its anti-money laundering controls. This enforcement action underscores the heightened regulatory focus on compliance within the FinTech industry, signaling a warning to other players about the financial and reputational risks of non-compliance.",
       "source": "Finextra"
     },
     {
-      "title": "Crypto Firms Seek Banking Integration in US Amid Regulatory Optimism",
-      "body": "Crypto companies are aggressively pursuing integration into the US banking system, spurred by anticipated regulatory easing under the Trump administration. This move aims to enhance the legitimacy and influence of cryptocurrencies within conventional banking, signaling a potential shift in financial industry dynamics.",
-      "source": "Financial Times"
+      "title": "Australia Tests Tokenised Assets and CBDC with Project Acacia",
+      "body": "The Reserve Bank of Australia is initiating trials with 14 participants to explore tokenised asset settlements and a potential CBDC. Dubbed Project Acacia, this initiative could significantly influence the integration of digital currencies in Australia's financial systems.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Ant International Seeks Stablecoin Licenses Globally",
+      "body": "Ant International is gearing up to apply for stablecoin licenses across various countries, aiming to deepen its foothold in the digital currency market. This strategic move could reshape the global stablecoin regulatory landscape and market dynamics.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth over a billion dollars today?",
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth hundreds of millions of dollars today?",
     "source": "bitcoin.org"
   }
 }
