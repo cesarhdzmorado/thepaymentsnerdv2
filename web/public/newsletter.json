@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "JPMorgan to Impose Fees on FinTechs for Bank Data Access",
-      "body": "JPMorgan Chase is set to charge FinTech companies for consumer banking data access, potentially adding hundreds of millions in fees annually. This strategic shift could drastically alter cost structures and competitive dynamics within the FinTech sector, compelling companies to rethink their data strategies.",
+      "title": "Federal Reserve Adopts ISO 20022 for Fedwire, Boosts Global Transaction Efficiency",
+      "body": "On July 14, the Federal Reserve Financial Services successfully implemented the ISO 20022 message format for the Fedwire Funds Service. This upgrade enhances transaction efficiency and aligns with global financial communication standards, promising faster and more transparent transactions. This move is pivotal for financial institutions adapting to global standards.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Binance Launches Sharia-Compliant Crypto Token",
-      "body": "Binance has introduced a Sharia-compliant crypto token, targeting a new demographic by adhering to Islamic financial principles. This move not only broadens Binance's market reach but also sets a precedent for compliance-driven product innovations in the cryptocurrency space.",
+      "title": "JP Morgan Introduces Fees for Fintechs Accessing Customer Data",
+      "body": "JP Morgan plans to charge fintech companies for access to customer data, a strategic move that underscores the increasing value of data in finance. This decision could significantly alter the relationship between traditional banks and fintech firms, impacting data privacy and monetization strategies.",
       "source": "Finextra"
     },
     {
-      "title": "Wise Hit with $4.2 Million Fine for AML Failures",
-      "body": "Wise has been fined $4.2 million by U.S. regulators for lapses in its anti-money laundering controls. This enforcement action underscores the heightened regulatory focus on compliance within the FinTech industry, signaling a warning to other players about the financial and reputational risks of non-compliance.",
+      "title": "Lloyds and Aberdeen Use Tokenised Assets in FX Trades, a UK First",
+      "body": "Lloyds Banking Group and Aberdeen Investments have pioneered the use of tokenised real-world assets as collateral for FX trades. This groundbreaking use of blockchain technology in mainstream banking could set a precedent for digital assets in financial transactions, enhancing security and liquidity.",
       "source": "Finextra"
     },
     {
-      "title": "Australia Tests Tokenised Assets and CBDC with Project Acacia",
-      "body": "The Reserve Bank of Australia is initiating trials with 14 participants to explore tokenised asset settlements and a potential CBDC. Dubbed Project Acacia, this initiative could significantly influence the integration of digital currencies in Australia's financial systems.",
+      "title": "Antitrust Lawsuit Against Apple, Visa, and Mastercard Dismissed",
+      "body": "A U.S. judge has dismissed an antitrust lawsuit against Apple, Visa, and Mastercard, which was centered on alleged suppression of payment card competition. This ruling allows these major players to continue their operations without legal distractions, maintaining their market strategies.",
       "source": "Finextra"
     },
     {
-      "title": "Ant International Seeks Stablecoin Licenses Globally",
-      "body": "Ant International is gearing up to apply for stablecoin licenses across various countries, aiming to deepen its foothold in the digital currency market. This strategic move could reshape the global stablecoin regulatory landscape and market dynamics.",
+      "title": "Lloyds Bank Poised to Acquire Digital Wallet Curve, Expanding Digital Services",
+      "body": "Lloyds Bank is in advanced talks to acquire digital wallet provider Curve, signaling a strategic shift towards integrating more digital and mobile-first financial services. This acquisition could significantly enhance Lloyds' consumer offerings and competitive edge in the digital banking space.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth hundreds of millions of dollars today?",
-    "source": "bitcoin.org"
+    "text": "Did you know that the ISO 20022 standard, now adopted by the Fedwire Funds Service, is set to become the global standard for financial communications, affecting all major currencies by 2025?",
+    "source": "PYMNTS.com"
   }
 }
