@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Federal Reserve Adopts ISO 20022 for Fedwire, Boosts Global Transaction Efficiency",
-      "body": "On July 14, the Federal Reserve Financial Services successfully implemented the ISO 20022 message format for the Fedwire Funds Service. This upgrade enhances transaction efficiency and aligns with global financial communication standards, promising faster and more transparent transactions. This move is pivotal for financial institutions adapting to global standards.",
+      "title": "House Republicans Halt Crypto Week Bills Over CBDC Ban Demand",
+      "body": "In a significant legislative standoff, House Republicans have stalled the 'Crypto Week' bills by demanding amendments to a stablecoin bill, effectively blocking three key cryptocurrency-related bills. This move underscores the deep political divisions and regulatory challenges surrounding cryptocurrency in the U.S., potentially impacting future crypto market stability and innovation.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "JP Morgan Introduces Fees for Fintechs Accessing Customer Data",
-      "body": "JP Morgan plans to charge fintech companies for access to customer data, a strategic move that underscores the increasing value of data in finance. This decision could significantly alter the relationship between traditional banks and fintech firms, impacting data privacy and monetization strategies.",
+      "title": "AWS and Vonage Launch AI Voice Agents for Enhanced Customer Support",
+      "body": "Amazon Web Services and Vonage are setting a new standard in customer service with their launch of AI voice agents that mimic human interactions. By integrating AWS's Amazon Nova Sonic model with Vonage's Voice API, this partnership is poised to revolutionize customer experience, offering significant implications for service efficiency and consumer satisfaction across industries.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "European Commission Flags Meta's 'Consent or Pay' Model as Noncompliant",
+      "body": "Meta faces regulatory pushback in the EU as the European Commission deems its 'consent or pay' model noncompliant with the Digital Markets Act. This development highlights the ongoing tension between tech giants' monetization strategies and stringent EU digital regulations, potentially reshaping how digital services are offered across Europe.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "UniCredit Partners with Wise for Cost-Effective Cross-Border Payments",
+      "body": "UniCredit is tapping into fintech innovation by partnering with Wise to launch a new international payment service for retail customers. This collaboration aims to simplify and reduce the costs of cross-border transactions, reflecting a broader trend of traditional banks leveraging fintech solutions to enhance competitive edge and customer service.",
       "source": "Finextra"
     },
     {
-      "title": "Lloyds and Aberdeen Use Tokenised Assets in FX Trades, a UK First",
-      "body": "Lloyds Banking Group and Aberdeen Investments have pioneered the use of tokenised real-world assets as collateral for FX trades. This groundbreaking use of blockchain technology in mainstream banking could set a precedent for digital assets in financial transactions, enhancing security and liquidity.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Antitrust Lawsuit Against Apple, Visa, and Mastercard Dismissed",
-      "body": "A U.S. judge has dismissed an antitrust lawsuit against Apple, Visa, and Mastercard, which was centered on alleged suppression of payment card competition. This ruling allows these major players to continue their operations without legal distractions, maintaining their market strategies.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Lloyds Bank Poised to Acquire Digital Wallet Curve, Expanding Digital Services",
-      "body": "Lloyds Bank is in advanced talks to acquire digital wallet provider Curve, signaling a strategic shift towards integrating more digital and mobile-first financial services. This acquisition could significantly enhance Lloyds' consumer offerings and competitive edge in the digital banking space.",
+      "title": "UK Government Aims to Establish the Nation as Global Fintech Leader",
+      "body": "The UK government has unveiled a strategic initiative to support fintech firms in starting, scaling, and listing within the country. This ambitious plan is part of a broader effort to cement the UK's position as the 'fintech capital of the world,' potentially driving significant investment and innovation in the sector.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the ISO 20022 standard, now adopted by the Fedwire Funds Service, is set to become the global standard for financial communications, affecting all major currencies by 2025?",
+    "text": "Did you know that AWS and Vonage's collaboration on AI voice agents aims to enable 'more humanlike voice conversations,' potentially transforming how customer service is conducted?",
     "source": "PYMNTS.com"
   }
 }
