@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Brazil Launches Campaign to Defend Pix Amid US Scrutiny",
-      "body": "Brazil has launched a robust social media campaign to defend its instant payment system, Pix, against U.S. scrutiny over potential unfair trading practices. This development underscores the geopolitical tensions surrounding digital payment systems and their regulatory landscapes, highlighting the need for international cooperation and understanding in fintech regulations.",
-      "source": "pymnts.com"
+      "title": "Capital One Acquires Discover Financial, Bolsters U.S. Banking Landscape",
+      "body": "Capital One has completed its acquisition of Discover Financial, a strategic move that promises to enhance digital experiences and establish a stronger national banking presence. Announced in May, this merger is set to reshape the competitive dynamics within the U.S. banking sector, as evidenced by Capital One's reported spending growth in recent quarterly results.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "UK's SFO Utilizes New Powers to Seize Bitcoin",
-      "body": "The UK's Serious Fraud Office has exercised new powers to freeze over \u00a310,000 in Bitcoin linked to the Arena TV collapse. This action marks a significant milestone in the use of cryptocurrency seizure by law enforcement, reflecting the growing intersection of digital assets and regulatory frameworks.",
-      "source": "finextra.com"
+      "title": "PNC Bank Partners with Coinbase to Offer Crypto Services",
+      "body": "In a landmark move for traditional banking, PNC Bank has teamed up with Coinbase to provide cryptocurrency services to its clients. This partnership marks a significant step towards integrating crypto solutions in mainstream financial institutions, potentially driving wider adoption of cryptocurrencies among traditional bank customers.",
+      "source": "Finextra"
     },
     {
-      "title": "Block Joins S&P 500, Signaling Fintech's Growing Influence",
-      "body": "Block, formerly known as Square, has been added to the S&P 500 index, a move that not only underscores its growth but also highlights the increasing relevance of fintech firms in major financial indices. This inclusion is set to boost investor interest and reshape market perceptions of the fintech industry.",
-      "source": "finextra.com"
+      "title": "Stripe Expands Digital Payments Empire with Orum Acquisition",
+      "body": "Stripe has strategically acquired Orum, a payments API provider, to enhance its complex payment operations management. This acquisition not only broadens Stripe's service offerings but also reinforces its leadership in the digital payments industry, setting new standards for payment orchestration.",
+      "source": "Finextra"
     },
     {
-      "title": "ECB Accelerates Development of Digital Euro",
-      "body": "The European Central Bank is stepping up its efforts to develop a digital euro, driven by geopolitical pressures and the imperative to modernize Europe's financial infrastructure. This initiative aims to bolster the EU's financial sovereignty and adapt to the evolving digital economy, setting a precedent for central bank digital currencies.",
-      "source": "finextra.com"
+      "title": "Equifax and Mastercard Use Open Banking to Boost Credit Access in Australia",
+      "body": "Equifax and Mastercard are pioneering the use of open banking data to improve credit access for Australians with limited credit history. By utilizing alternative data, this initiative aims to create more inclusive financial profiles, potentially transforming credit qualification processes for individuals and businesses.",
+      "source": "Finextra"
     },
     {
-      "title": "Visa and Mastercard Face UK Class Action Over Interchange Fees",
-      "body": "Visa and Mastercard are the targets of a new class action lawsuit in the UK, which could cost them billions due to allegedly unlawful interchange fees. This legal battle could lead to significant financial repercussions and reshape the structure of card fees in the UK, impacting both consumers and businesses.",
-      "source": "finextra.com"
+      "title": "Bank of England Reevaluates Digital Pound Project Amid Global CBDC Skepticism",
+      "body": "The Bank of England is reconsidering its digital pound initiative, reflecting growing global skepticism about the benefits of central bank digital currencies (CBDCs). This potential pivot could influence future policies and the global stance on the adoption of national digital currencies.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the inclusion of fintech companies like Block in major financial indices like the S&P 500 marks a significant shift in the financial sector's structure and focus?",
-    "source": "finextra.com"
+    "text": "Did you know? AI startups in the U.S. attracted a whopping $104.3 billion in investments in the first half of the year, outpacing funds recovered through exits.",
+    "source": "PYMNTS.com"
   }
 }
