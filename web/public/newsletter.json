@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Capital One Acquires Discover Financial, Bolsters U.S. Banking Landscape",
-      "body": "Capital One has completed its acquisition of Discover Financial, a strategic move that promises to enhance digital experiences and establish a stronger national banking presence. Announced in May, this merger is set to reshape the competitive dynamics within the U.S. banking sector, as evidenced by Capital One's reported spending growth in recent quarterly results.",
+      "title": "JPMorgan Casts Doubt on Stablecoin Market's Rapid Growth",
+      "body": "JPMorgan Chase strategists are challenging the bullish forecasts for stablecoins, which some believe could soar to $2 trillion. Their analysis suggests a more tempered growth in the financial sector, contrasting with optimistic views from Congressional hearings and Treasury Secretary Scott Bessent. This cautious stance could influence investment and regulatory approaches in the burgeoning stablecoin arena.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "PNC Bank Partners with Coinbase to Offer Crypto Services",
-      "body": "In a landmark move for traditional banking, PNC Bank has teamed up with Coinbase to provide cryptocurrency services to its clients. This partnership marks a significant step towards integrating crypto solutions in mainstream financial institutions, potentially driving wider adoption of cryptocurrencies among traditional bank customers.",
+      "title": "Mondu Debuts Instant B2B Payment Solution in Europe",
+      "body": "Mondu has introduced 'Pay Now', an instant account-to-account payment solution tailored for B2B eCommerce in Europe. This innovation promises direct bank payments for buyers and streamlined operations for merchants, including enhanced risk and fraud management. This could significantly improve efficiency and security in B2B transactions, potentially reshaping the European payments landscape.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "UK Regulator Targets Apple Over Digital Wallet Restrictions",
+      "body": "The UK's Competition and Markets Authority is taking on Apple for its restrictive policies on third-party digital wallets on iPhones. This move could force Apple to open up its platform to competitors, potentially sparking a wave of fintech innovation and enhancing consumer choice in digital payments.",
       "source": "Finextra"
     },
     {
-      "title": "Stripe Expands Digital Payments Empire with Orum Acquisition",
-      "body": "Stripe has strategically acquired Orum, a payments API provider, to enhance its complex payment operations management. This acquisition not only broadens Stripe's service offerings but also reinforces its leadership in the digital payments industry, setting new standards for payment orchestration.",
+      "title": "Fiserv Boosts North American Presence with TD Merchant Business Buy",
+      "body": "Fiserv has strategically acquired TD Bank's merchant processing business in Canada, marking a significant expansion in North America. This acquisition could reshape the competitive landscape of the payments industry, offering Fiserv a stronger foothold and broader capabilities across the region.",
       "source": "Finextra"
     },
     {
-      "title": "Equifax and Mastercard Use Open Banking to Boost Credit Access in Australia",
-      "body": "Equifax and Mastercard are pioneering the use of open banking data to improve credit access for Australians with limited credit history. By utilizing alternative data, this initiative aims to create more inclusive financial profiles, potentially transforming credit qualification processes for individuals and businesses.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Bank of England Reevaluates Digital Pound Project Amid Global CBDC Skepticism",
-      "body": "The Bank of England is reconsidering its digital pound initiative, reflecting growing global skepticism about the benefits of central bank digital currencies (CBDCs). This potential pivot could influence future policies and the global stance on the adoption of national digital currencies.",
-      "source": "Finextra"
+      "title": "Tether Eyes U.S. Market Reentry, Focuses on Payments Sector",
+      "body": "Tether CEO Paolo Ardoino has announced plans for a U.S. comeback, focusing on payments and interbank settlements. This strategic shift could have a profound impact on the U.S. cryptocurrency landscape, particularly enhancing the role of stablecoins in mainstream financial transactions.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know? AI startups in the U.S. attracted a whopping $104.3 billion in investments in the first half of the year, outpacing funds recovered through exits.",
-    "source": "PYMNTS.com"
+    "text": "Did you know that the first digital payment system was launched by IBM in 1992? It was called 'IBM Money', a precursor to today's digital wallets!",
+    "source": "ibm.com"
   }
 }
