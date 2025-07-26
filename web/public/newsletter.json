@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Pinnacle and Synovus Merge to Dominate Southeast Banking Market",
-      "body": "Pinnacle Financial Partners and Synovus Financial are merging in an $8.6 billion all-stock deal, aiming to strengthen their foothold in the Southeast's booming markets. This merger is a strategic play in the wave of regional banking consolidation, enhancing their competitive edge and financial robustness.",
+      "title": "TikTok Scam Drains $17 Million from NY ATMs in 72 Hours",
+      "body": "A TikTok-driven scam resulted in a staggering $17 million withdrawn from ATMs across New York in just three days, spotlighting the rising misuse of social media in financial frauds. This incident underscores the urgent need for enhanced security measures in digital banking and payments systems.",
+      "source": "Finextra"
+    },
+    {
+      "title": "SS&C Bolsters Global Funds Network with $1 Billion Calastone Acquisition",
+      "body": "SS&C Technologies has strategically acquired Calastone for $1 billion, significantly expanding its capabilities in automated fund transactions. This move not only broadens SS&C's technological footprint but also strengthens its position in the global funds servicing market.",
+      "source": "Finextra"
+    },
+    {
+      "title": "JPMorgan Proposes Tokenization to Boost Money Market Funds",
+      "body": "JPMorgan Chase strategists are advocating for the tokenization of money market fund shares to counter the competitive threat from stablecoins. This innovative shift could potentially transform the utility of money market funds, integrating them more seamlessly into the digital and blockchain economies.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "PayPal Boosts Dublin Operations with AI and Data Science",
-      "body": "PayPal is expanding its Dublin workforce by adding 100 new AI and fraud data science roles, emphasizing the critical role of advanced technologies in securing and streamlining fintech operations. This move highlights PayPal's commitment to leading in financial security and operational efficiency.",
+      "title": "PayPal to Open AI and Data Science Hub in Dublin, Creating 100 Jobs",
+      "body": "PayPal is set to launch a new AI and fraud data science center in Dublin, which will generate 100 new jobs. This initiative highlights PayPal's commitment to harnessing AI for improving financial security and operational efficiencies, marking a significant investment in tech-driven financial solutions.",
       "source": "Finextra"
     },
     {
-      "title": "Mastercard Innovates with AI-Driven Card Design Tool",
-      "body": "Mastercard has launched a new AI platform that revolutionizes the payment card design process, making it simpler and more customizable for issuers. This tool not only enhances design flexibility but also merges technological innovation with creative processes, setting a new standard in financial product customization.",
+      "title": "Australia's Digital Wallet Transactions Hit A$160 Billion",
+      "body": "In a significant shift towards digital financial solutions, Australian consumers have ramped up their use of digital wallets, with transactions totaling A$160 billion. This trend is reshaping consumer banking, emphasizing the growing preference for digital over traditional banking methods.",
       "source": "Finextra"
-    },
-    {
-      "title": "Samsung Wallet Integrates Splitit for Flexible Payment Options",
-      "body": "In a significant move for mobile payment solutions, Samsung Wallet now supports instalment payments via Splitit, using existing credit lines. This partnership enhances consumer payment flexibility and accessibility, marking a pivotal development in the evolution of mobile wallets.",
-      "source": "Finextra"
-    },
-    {
-      "title": "EU Urged to Tighten Stablecoin Regulations Amidst Growing Risks",
-      "body": "The European Union faces calls to establish a robust regulatory framework for stablecoins, addressing the complexities of tokens issued both inside and outside the bloc. This regulatory push is crucial for managing the risks associated with the expanding digital currency market and ensuring financial stability.",
-      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "text": "Did you know? The first ATM was installed in London in 1967, revolutionizing the way people accessed their money.",
     "source": "history.com"
   }
 }
