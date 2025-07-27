@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "TikTok Scam Drains $17 Million from NY ATMs in 72 Hours",
-      "body": "A TikTok-driven scam resulted in a staggering $17 million withdrawn from ATMs across New York in just three days, spotlighting the rising misuse of social media in financial frauds. This incident underscores the urgent need for enhanced security measures in digital banking and payments systems.",
+      "title": "TikTok Scam Triggers $17 Million ATM Heist in New York",
+      "body": "A TikTok-driven scam led to a massive $17 million ATM heist over three days in New York, spotlighting the rising impact of social media on financial fraud. This incident underscores the critical need for bolstered security in digital banking environments.",
       "source": "Finextra"
     },
     {
       "title": "SS&C Bolsters Global Funds Network with $1 Billion Calastone Acquisition",
-      "body": "SS&C Technologies has strategically acquired Calastone for $1 billion, significantly expanding its capabilities in automated fund transactions. This move not only broadens SS&C's technological footprint but also strengthens its position in the global funds servicing market.",
+      "body": "SS&C Technologies has strategically acquired Calastone for $1 billion, significantly enhancing its global funds processing capabilities. This move positions SS&C to better serve the evolving needs of the international fund services market.",
       "source": "Finextra"
     },
     {
-      "title": "JPMorgan Proposes Tokenization to Boost Money Market Funds",
-      "body": "JPMorgan Chase strategists are advocating for the tokenization of money market fund shares to counter the competitive threat from stablecoins. This innovative shift could potentially transform the utility of money market funds, integrating them more seamlessly into the digital and blockchain economies.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "PayPal to Open AI and Data Science Hub in Dublin, Creating 100 Jobs",
-      "body": "PayPal is set to launch a new AI and fraud data science center in Dublin, which will generate 100 new jobs. This initiative highlights PayPal's commitment to harnessing AI for improving financial security and operational efficiencies, marking a significant investment in tech-driven financial solutions.",
+      "title": "PayPal to Boost AI and Fraud Detection with New Dublin Center",
+      "body": "PayPal is set to open a new AI and fraud data science center in Dublin, creating 100 jobs. This expansion highlights the increasing reliance on AI and data analytics to enhance financial security and operational efficiency in the payments industry.",
       "source": "Finextra"
     },
     {
-      "title": "Australia's Digital Wallet Transactions Hit A$160 Billion",
-      "body": "In a significant shift towards digital financial solutions, Australian consumers have ramped up their use of digital wallets, with transactions totaling A$160 billion. This trend is reshaping consumer banking, emphasizing the growing preference for digital over traditional banking methods.",
+      "title": "Samsung Wallet Adds In-Store Instalment Payment Options",
+      "body": "In a partnership with Splitit, Samsung Wallet now allows users to split in-store payments into instalments. This feature enhances consumer spending flexibility and demonstrates the growing integration of mobile technology in personal finance management.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Mastercard Introduces AI-Powered Card Design Platform",
+      "body": "Mastercard has launched an AI-based platform for designing payment cards, streamlining the process and enhancing design efficiency. This innovation is part of Mastercard's ongoing strategy to incorporate more AI tools into its offerings, improving both user experience and operational agility.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first ATM was installed in London in 1967, revolutionizing the way people accessed their money.",
+    "text": "Did you know that the first ATM was installed in London in 1967, revolutionizing the way consumers interacted with their bank accounts?",
     "source": "history.com"
   }
 }
