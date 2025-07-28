@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "TikTok Scam Triggers $17 Million ATM Heist in New York",
-      "body": "A TikTok-driven scam led to a massive $17 million ATM heist over three days in New York, spotlighting the rising impact of social media on financial fraud. This incident underscores the critical need for bolstered security in digital banking environments.",
+      "title": "TikTok Scam Drains $17 Million from ATMs in NY",
+      "body": "A TikTok-driven scam resulted in a staggering $17 million withdrawn from ATMs across New York in just three days. This incident underscores the increasing use of social media to facilitate large-scale financial frauds, posing new challenges to security frameworks and necessitating robust countermeasures in the financial industry.",
       "source": "Finextra"
     },
     {
-      "title": "SS&C Bolsters Global Funds Network with $1 Billion Calastone Acquisition",
-      "body": "SS&C Technologies has strategically acquired Calastone for $1 billion, significantly enhancing its global funds processing capabilities. This move positions SS&C to better serve the evolving needs of the international fund services market.",
+      "title": "JPMorgan to Bill Fintechs for Customer Data Access",
+      "body": "JPMorgan Chase is set to charge fintech companies for accessing customer financial data, a move that could shake the foundations of many fintech business models. This strategy could significantly alter the landscape of financial services, impacting everything from consumer budgeting tools to financial planning services.",
+      "source": "Financial Times"
+    },
+    {
+      "title": "Mastercard Debuts AI Tool for Card Design",
+      "body": "Mastercard has launched an AI-based platform that revolutionizes the payment card design process, enabling issuers to quickly adapt to market trends and consumer preferences. This innovation not only speeds up card issuance but also enhances the customization capabilities, potentially boosting user engagement and satisfaction.",
       "source": "Finextra"
     },
     {
-      "title": "PayPal to Boost AI and Fraud Detection with New Dublin Center",
-      "body": "PayPal is set to open a new AI and fraud data science center in Dublin, creating 100 jobs. This expansion highlights the increasing reliance on AI and data analytics to enhance financial security and operational efficiency in the payments industry.",
+      "title": "PayPal Boosts Dublin Ops with AI and Data Science",
+      "body": "PayPal is expanding its Dublin operations, adding 100 new jobs focused on AI and fraud prevention. This strategic move not only strengthens PayPal's position in securing digital transactions but also contributes significantly to the local economy and tech sector.",
       "source": "Finextra"
     },
     {
-      "title": "Samsung Wallet Adds In-Store Instalment Payment Options",
-      "body": "In a partnership with Splitit, Samsung Wallet now allows users to split in-store payments into instalments. This feature enhances consumer spending flexibility and demonstrates the growing integration of mobile technology in personal finance management.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Mastercard Introduces AI-Powered Card Design Platform",
-      "body": "Mastercard has launched an AI-based platform for designing payment cards, streamlining the process and enhancing design efficiency. This innovation is part of Mastercard's ongoing strategy to incorporate more AI tools into its offerings, improving both user experience and operational agility.",
+      "title": "SS&C Acquires Calastone in $1 Billion Fintech Deal",
+      "body": "SS&C Technologies has acquired Calastone, a leading investment funds network, for $1 billion. This acquisition is poised to enhance SS&C's global offerings and market presence, marking a significant move in the consolidation of financial technology services.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first ATM was installed in London in 1967, revolutionizing the way consumers interacted with their bank accounts?",
-    "source": "history.com"
+    "text": "Did you know that digital wallet transactions in Australia have reached a staggering 99.3% of all financial transactions? This highlights the rapid consumer shift towards digital banking solutions.",
+    "source": "Finextra"
   }
 }
