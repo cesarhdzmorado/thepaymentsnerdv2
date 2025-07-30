@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Western Union Adopts Stablecoins and AI to Combat Revenue Decline",
-      "body": "Western Union is integrating stablecoins and AI to boost efficiency amid a 4% revenue drop in Q2, largely due to North American market slowdowns and reduced operations in Iraq. This strategic pivot to cutting-edge technologies could significantly enhance transactional processes and financial stability, setting a precedent in the remittance industry.",
+      "title": "Visa Targets AI and Stablecoins in Strategic Payments Shift",
+      "body": "During their Q3 2025 earnings call, Visa's CEO announced a major strategic shift towards integrating artificial intelligence and stablecoins into their payment systems. This move is designed to keep Visa at the forefront of the digital payments sector, adapting to changing economic dynamics and ensuring continued market leadership.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "FIS and Circle Forge Partnership to Amplify USDC Stablecoin Transactions",
-      "body": "FIS has teamed up with Circle to promote the use of the USDC stablecoin across U.S. financial institutions. By integrating FIS\u2019s Money Movement Hub with Circle\u2019s stablecoin capabilities, this partnership is poised to facilitate seamless domestic and international transactions in USDC, potentially reshaping how financial entities handle digital currencies.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "PayPal Introduces 'Pay with Crypto' to Enhance Merchant Adoption",
-      "body": "PayPal's new 'Pay with Crypto' feature allows businesses to accept payments in over 100 cryptocurrencies, aiming to bridge the gap between digital currency and everyday transactions. This could drive broader merchant adoption of cryptocurrencies, influencing consumer payment preferences and the digital payments landscape.",
+      "title": "JPMorgan Chase to Issue Apple Credit Card, Replacing Goldman Sachs",
+      "body": "JPMorgan Chase is set to take over as the issuer of the Apple credit card, a move that could significantly enhance the card's features and expand its customer base by combining JPMorgan's financial muscle with Apple's technological expertise. This partnership is poised to reshape the landscape of tech-enhanced financial products.",
       "source": "Finextra"
     },
     {
-      "title": "CaixBank Launches Instant Cross-Border Payments in Southern Europe",
-      "body": "In a significant move, CaixBank, in collaboration with the European Payments Alliance, has initiated instant mobile transfers across Spain, Portugal, Italy, and Andorra. This development enhances the efficiency of cross-border payments within Europe, potentially setting new standards for payment speed and convenience in the region.",
+      "title": "PayPal Expands Payment Options with 'Pay with Crypto' Feature",
+      "body": "PayPal has introduced a new feature allowing businesses to accept payments in over 100 cryptocurrencies, signaling a strategic pivot to accommodate the rising demand for crypto transactions in mainstream commerce. This could significantly boost PayPal's position in the digital payments market.",
       "source": "Finextra"
     },
     {
-      "title": "JPMorgan Chase Sees Surge in API Traffic Predominantly from FinTechs",
-      "body": "JPMorgan Chase reports that the majority of API traffic to its systems stems from FinTech companies, with only 13% from customer transactions. This underscores the pivotal role FinTechs play in shaping financial services, highlighting their influence on banking technology and customer interaction.",
-      "source": "PYMNTS.com"
+      "title": "Revolut Opens Financial Services to Teens, Promoting Early Financial Autonomy",
+      "body": "Revolut is now offering retail accounts to 16-17 year-olds, allowing them to manage finances independently. This initiative not only empowers teens but also sets a new benchmark for financial autonomy in the fintech sector, potentially boosting user engagement and loyalty among this younger demographic.",
+      "source": "Finextra"
+    },
+    {
+      "title": "FIS and Circle Partner to Enable USDC Transactions for Financial Institutions",
+      "body": "FIS has partnered with stablecoin issuer Circle to facilitate USDC transactions for financial institutions. This collaboration represents a significant move towards integrating digital currencies within traditional banking systems, offering enhanced transactional capabilities and operational efficiencies.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first mobile payment method was introduced by Coca-Cola in 1997, where customers could pay for their soda by sending a text message?",
-    "source": "mobilepaymentstoday.com"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
