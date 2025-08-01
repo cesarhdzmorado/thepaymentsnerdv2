@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Canada's Real-Time Rail Payments System Set for Testing",
-      "body": "Canada's Real-Time Rail (RTR) payments system is gearing up for a testing phase this autumn, heralding a transformative leap in payment processing speeds and efficiency. This system promises to revolutionize Canada's financial landscape by enabling instant transactions, potentially setting a new standard for payment infrastructures globally.",
+      "title": "Visa Expands Blockchain Integration with New Stablecoins",
+      "body": "Visa is taking a significant leap in the crypto space by adding three more stablecoins to its settlement options and incorporating two new blockchain platforms. Announced recently, this move not only broadens Visa's cryptocurrency strategy but also cements its role in shaping the future of digital transactions in the global payments landscape.",
       "source": "Finextra"
     },
     {
-      "title": "JPMorgan to Integrate Crypto Wallets with Bank Accounts",
-      "body": "JPMorgan Chase is pioneering integration by allowing customers to link their bank accounts with Coinbase wallets, a move poised to significantly enhance cryptocurrency accessibility for mainstream banking users. This strategic initiative could drive widespread crypto adoption, reflecting a major shift in traditional banking's approach to digital currencies.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Klarna Secures UK Electronic Money Institution License",
-      "body": "Klarna has been granted an Electronic Money Institution license by the UK's Financial Conduct Authority, enabling it to broaden its innovative payment solutions in the UK market. This license is a pivotal milestone for Klarna, reinforcing its position as a disruptor in the retail banking sector.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Robinhood Diversifies, Eyes Growth in Fintech with New Strategy",
-      "body": "Robinhood's latest earnings highlight a strategic pivot from its commission-free trading roots to a more diversified financial platform, marked by a 45% revenue jump to nearly $1 billion. This shift, fueled by increased crypto transactions and strategic acquisitions, positions Robinhood for significant expansion in the fintech arena.",
+      "title": "Fed Greenlights Third-Party Tax Info Collection by Banks",
+      "body": "In a pivotal update on July 31, 2023, the Federal Reserve has permitted banks and credit unions to collect tax information numbers via third parties. This optional method is set to streamline data collection, potentially transforming compliance practices and customer interactions in the financial sector.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "RBC Advances AI in Banking with Enhanced Credit and Loyalty Programs",
-      "body": "The Royal Bank of Canada is setting industry benchmarks by integrating AI to refine credit decisions and personalize loyalty programs. This move not only boosts customer service but also underscores RBC's leadership in adopting AI technologies within the banking sector.",
+      "title": "Brazil's QI Tech Bolsters Acquisition Power with $63M Funding",
+      "body": "QI Tech, a key player in Brazil's fintech scene, has just secured a hefty $63 million in Series B funding, led by General Atlantic. This financial boost is earmarked for strategic acquisitions that could significantly influence the financial services landscape across Latin America.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Coinbase Advocates B2B Stablecoins for Cross-Border Payments",
+      "body": "During its Q2 2025 earnings call, Coinbase emphasized the potential of B2B stablecoins in revolutionizing cross-border payments. This strategic focus by a leading crypto exchange highlights the growing importance of stablecoins in overcoming international payment barriers.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Canada's Real-Time Rail Payments System Set for Autumn Testing",
+      "body": "Canada's Real-Time Rail (RTR) payments system is nearing completion, with testing slated for autumn 2023. This development marks a significant milestone in enhancing the speed and efficiency of Canada's payment infrastructure, promising a transformative impact on domestic financial transactions.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital payment system was introduced by Western Union in 1871 as a telegraph money transfer service?",
-    "source": "westernunion.com"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
