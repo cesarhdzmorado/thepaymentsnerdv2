@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Visa Expands Blockchain Integration with New Stablecoins",
-      "body": "Visa is taking a significant leap in the crypto space by adding three more stablecoins to its settlement options and incorporating two new blockchain platforms. Announced recently, this move not only broadens Visa's cryptocurrency strategy but also cements its role in shaping the future of digital transactions in the global payments landscape.",
+      "title": "Hong Kong Sets 2026 for Issuing First Stablecoin Licenses",
+      "body": "Hong Kong's financial regulator has slated early 2026 for issuing its first stablecoin licenses, despite immediate legislation enactment. This move is pivotal for cryptocurrency regulation in Asia, aiming to bolster financial stability and security. It's a significant step for fintech firms looking to operate in a regulated environment in Hong Kong.",
       "source": "Finextra"
     },
     {
-      "title": "Fed Greenlights Third-Party Tax Info Collection by Banks",
-      "body": "In a pivotal update on July 31, 2023, the Federal Reserve has permitted banks and credit unions to collect tax information numbers via third parties. This optional method is set to streamline data collection, potentially transforming compliance practices and customer interactions in the financial sector.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Brazil's QI Tech Bolsters Acquisition Power with $63M Funding",
-      "body": "QI Tech, a key player in Brazil's fintech scene, has just secured a hefty $63 million in Series B funding, led by General Atlantic. This financial boost is earmarked for strategic acquisitions that could significantly influence the financial services landscape across Latin America.",
+      "title": "Visa Expands Crypto Strategy with More Stablecoin Support",
+      "body": "Visa is enhancing its cryptocurrency capabilities by supporting three additional stablecoins and integrating two new blockchain networks. This expansion not only solidifies Visa's role in the digital currency space but also underscores its commitment to bridging traditional and digital finance. Payments professionals should watch how this influences global crypto transactions.",
       "source": "Finextra"
     },
     {
-      "title": "Coinbase Advocates B2B Stablecoins for Cross-Border Payments",
-      "body": "During its Q2 2025 earnings call, Coinbase emphasized the potential of B2B stablecoins in revolutionizing cross-border payments. This strategic focus by a leading crypto exchange highlights the growing importance of stablecoins in overcoming international payment barriers.",
+      "title": "EazyPay and Mastercard Revolutionize B2B Payments in Bahrain",
+      "body": "EazyPay, by integrating Mastercard's Receivables Manager in Bahrain, is setting a new standard for B2B digital payments in the region. This collaboration promotes efficiency and security, potentially reshaping the digital transaction landscape in the Middle East. It's a crucial development for businesses seeking streamlined payment solutions.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Canada's Real-Time Rail Payments System Set for Autumn Testing",
-      "body": "Canada's Real-Time Rail (RTR) payments system is nearing completion, with testing slated for autumn 2023. This development marks a significant milestone in enhancing the speed and efficiency of Canada's payment infrastructure, promising a transformative impact on domestic financial transactions.",
+      "title": "Bank of America Bullish on Asset Tokenization",
+      "body": "Bank of America has observed a surge in interest for tokenizing real-world assets, such as stocks and real estate. This trend could democratize access to investment in high-value assets, making it a significant shift in how investors engage with the market. It highlights a growing intersection between traditional finance and blockchain technology.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Payroc Acquires BlueSnap to Enhance Payment Solutions",
+      "body": "Payroc's acquisition of BlueSnap aims to bolster its payment orchestration and AR automation capabilities. This strategic move could significantly enhance Payroc's service offerings, making it a key player in North American payment technology. It's a critical development for industry professionals tracking competitive dynamics in payment solutions.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
-    "source": "history.com"
+    "text": "Did you know that the first item ever purchased with Bitcoin was a pizza? In 2010, two pizzas were bought for 10,000 bitcoins, worth about $90 at the time!",
+    "source": "bitcoin.org"
   }
 }
