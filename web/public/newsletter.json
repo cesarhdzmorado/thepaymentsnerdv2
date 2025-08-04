@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Barclays Withdraws from Net Zero Banking Alliance",
-      "body": "Barclays has exited the Net Zero Banking Alliance, following a similar move by HSBC. This departure underscores a growing skepticism among major banks about the alliance's effectiveness in aiding their environmental strategies. This could herald a broader reassessment of climate commitments within the banking industry, potentially affecting sustainability-focused investment and policy.",
-      "source": "Finextra"
+      "title": "Goldman Sachs May Lose Apple Card Deal to JPMorgan",
+      "body": "Apple is reportedly considering switching its credit card partnership from Goldman Sachs to JPMorgan, putting CoreCard's role at risk. CoreCard, known for its unique features in the Apple Card, faces an uncertain future if this shift occurs. This potential change underscores the dynamic nature of partnerships in the fintech sector and could reshape user experience and market competition.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Hong Kong Postpones First Stablecoin Licenses to 2026",
-      "body": "Hong Kong has delayed issuing its first stablecoin licenses until 2026, despite having legislation in place. This postponement could dampen the region's aspirations as a leading fintech hub and influence the pace and nature of stablecoin regulation worldwide, impacting global fintech markets and regulatory frameworks.",
-      "source": "Finextra"
+      "title": "Klarna Eyes IPO in Autumn, Aiming to Boost Fintech Sector",
+      "body": "Klarna is setting the stage for an IPO this autumn after previous delays due to market instability. This move could invigorate the fintech landscape, attracting fresh investor interest and potentially setting a precedent for other tech and payment companies considering public offerings.",
+      "source": "finextra.com"
     },
     {
-      "title": "Visa Expands Crypto Strategy with More Stablecoins",
-      "body": "Visa has expanded its cryptocurrency capabilities by supporting three additional stablecoins and incorporating two new blockchain networks. This strategic move not only strengthens Visa's position in the digital payments arena but also sets a new standard for how global transactions might be managed, influencing competitors and market trends.",
-      "source": "Finextra"
+      "title": "Visa Expands Crypto Strategy with More Stablecoin Support",
+      "body": "Visa is enhancing its cryptocurrency capabilities by adding settlement support for additional stablecoins. This strategic expansion not only solidifies Visa's position in the digital currency space but also signals growing acceptance of cryptocurrencies in mainstream finance.",
+      "source": "finextra.com"
     },
     {
-      "title": "Bank of America Bullish on Asset Tokenization",
-      "body": "Bank of America has observed a surge in interest for the tokenization of tangible assets like stocks and real estate. This trend underscores the merging paths of traditional finance and blockchain technology, opening up novel avenues for investments and enhancing liquidity in the market.",
-      "source": "PYMNTS.com"
+      "title": "Hong Kong Delays Issuance of First Stablecoin Licenses to 2026",
+      "body": "Hong Kong's decision to postpone the issuance of its first stablecoin licenses until 2026 could significantly impact the regional cryptocurrency market and regulatory landscape. This delay reflects the complexities and challenges in establishing a robust regulatory framework for emerging digital currencies.",
+      "source": "finextra.com"
     },
     {
-      "title": "Payroc Acquires BlueSnap, Boosting Payment Solutions",
-      "body": "Payroc has acquired BlueSnap, enhancing its capabilities in payment orchestration and AR automation. This acquisition not only broadens Payroc's service offerings but also extends its market reach, intensifying competition in the North American payment solutions sector.",
-      "source": "Finextra"
+      "title": "Payroc Set to Acquire BlueSnap, Signaling Payment Industry Consolidation",
+      "body": "Payroc's agreement to acquire BlueSnap marks a notable consolidation in the payment processing industry. This acquisition could enhance Payroc's service offerings and competitive edge, reshaping the landscape for payment orchestration platforms.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first item ever purchased with Bitcoin was a pizza? In 2010, two pizzas were bought for 10,000 bitcoins, worth about $90 at the time!",
-    "source": "bitcoin.org"
+    "text": "Did you know that the recent U.S. tariffs led to a whopping $228 million in Bitcoin liquidations across exchanges? This underscores the high sensitivity of digital currencies to regulatory changes.",
+    "source": "pymnts.com"
   }
 }
