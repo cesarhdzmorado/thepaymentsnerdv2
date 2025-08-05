@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Goldman Sachs May Lose Apple Card Deal to JPMorgan",
-      "body": "Apple is reportedly considering switching its credit card partnership from Goldman Sachs to JPMorgan, putting CoreCard's role at risk. CoreCard, known for its unique features in the Apple Card, faces an uncertain future if this shift occurs. This potential change underscores the dynamic nature of partnerships in the fintech sector and could reshape user experience and market competition.",
-      "source": "pymnts.com"
-    },
-    {
-      "title": "Klarna Eyes IPO in Autumn, Aiming to Boost Fintech Sector",
-      "body": "Klarna is setting the stage for an IPO this autumn after previous delays due to market instability. This move could invigorate the fintech landscape, attracting fresh investor interest and potentially setting a precedent for other tech and payment companies considering public offerings.",
-      "source": "finextra.com"
+      "title": "Amazon Dives Into Used Car Sales, Challenging eBay Motors",
+      "body": "Amazon has launched its foray into the used vehicle market with Amazon Autos, starting with Hyundai dealers in Los Angeles. This strategic move not only diversifies Amazon's portfolio but also heats up competition with established platforms like eBay Motors. With plans to expand to more cities and brands, Amazon is set to significantly shake up the automotive sales landscape.",
+      "source": "PYMNTS.com"
     },
     {
       "title": "Visa Expands Crypto Strategy with More Stablecoin Support",
-      "body": "Visa is enhancing its cryptocurrency capabilities by adding settlement support for additional stablecoins. This strategic expansion not only solidifies Visa's position in the digital currency space but also signals growing acceptance of cryptocurrencies in mainstream finance.",
-      "source": "finextra.com"
+      "body": "Visa is broadening its cryptocurrency strategy by adding settlement support for three new stablecoins and incorporating two additional blockchain networks. This expansion underscores Visa's commitment to integrating digital currencies into its global payment network, positioning it as a leader in the fusion of traditional and digital finance.",
+      "source": "Finextra"
     },
     {
-      "title": "Hong Kong Delays Issuance of First Stablecoin Licenses to 2026",
-      "body": "Hong Kong's decision to postpone the issuance of its first stablecoin licenses until 2026 could significantly impact the regional cryptocurrency market and regulatory landscape. This delay reflects the complexities and challenges in establishing a robust regulatory framework for emerging digital currencies.",
-      "source": "finextra.com"
+      "title": "Hong Kong Delays Issuance of First Stablecoin Licences to 2026",
+      "body": "Hong Kong's financial regulator has announced a cautious timeline for issuing its first stablecoin licences, targeting early 2026. This delay reflects the region's measured approach to cryptocurrency regulation and highlights the complexities involved in integrating stablecoins into the financial system.",
+      "source": "Finextra"
     },
     {
-      "title": "Payroc Set to Acquire BlueSnap, Signaling Payment Industry Consolidation",
-      "body": "Payroc's agreement to acquire BlueSnap marks a notable consolidation in the payment processing industry. This acquisition could enhance Payroc's service offerings and competitive edge, reshaping the landscape for payment orchestration platforms.",
-      "source": "finextra.com"
+      "title": "Latvian Startup Handwave Secures $4.2M for Palm Payment Tech",
+      "body": "Handwave, a pioneering Latvian fintech startup, has raised $4.2 million to develop a palm-based payment and identity platform. This technology promises to revolutionize transaction and identity verification processes, potentially setting a new standard for security and convenience in the fintech sector.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Klarna Eyes Market Comeback with Planned IPO This Autumn",
+      "body": "Swedish fintech leader Klarna is gearing up to revive its IPO plans this autumn, after a previous delay due to market instability. This move could significantly influence the fintech industry, offering insights into investor confidence and the valuation landscape in the post-pandemic economy.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the recent U.S. tariffs led to a whopping $228 million in Bitcoin liquidations across exchanges? This underscores the high sensitivity of digital currencies to regulatory changes.",
-    "source": "pymnts.com"
+    "text": "The integration of AI into financial regulatory operations by entities like the SEC signifies a transformative shift in how financial markets are monitored and regulated.",
+    "source": "Finextra"
   }
 }
