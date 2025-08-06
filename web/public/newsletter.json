@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Amazon Dives Into Used Car Sales, Challenging eBay Motors",
-      "body": "Amazon has launched its foray into the used vehicle market with Amazon Autos, starting with Hyundai dealers in Los Angeles. This strategic move not only diversifies Amazon's portfolio but also heats up competition with established platforms like eBay Motors. With plans to expand to more cities and brands, Amazon is set to significantly shake up the automotive sales landscape.",
+      "title": "U.S. Household Debt Soars to a Staggering $18.39 Trillion",
+      "body": "In Q2 2025, U.S. household debt escalated by $185 billion, hitting a record $18.39 trillion, primarily fueled by mortgage and auto loans. This surge, with mortgages alone increasing by $131 billion, underscores potential economic vulnerabilities and could impact consumer spending and financial stability.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Visa Expands Crypto Strategy with More Stablecoin Support",
-      "body": "Visa is broadening its cryptocurrency strategy by adding settlement support for three new stablecoins and incorporating two additional blockchain networks. This expansion underscores Visa's commitment to integrating digital currencies into its global payment network, positioning it as a leader in the fusion of traditional and digital finance.",
+      "title": "PayPal Bolsters Consumer Operations with High-Profile Hire",
+      "body": "PayPal has strategically enhanced its team by appointing Ben Volk, former Google Pay executive, as SVP & GM of PayPal Consumer. This move is set to strengthen PayPal's consumer services, potentially reshaping its market strategy and enhancing user engagement.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Wells Fargo and Google Cloud Partner for AI-Driven Banking Efficiency",
+      "body": "Wells Fargo is set to revolutionize its customer service and operational efficiency by integrating AI technology in collaboration with Google Cloud. This partnership could significantly transform banking operations, setting a new standard in the industry.",
       "source": "Finextra"
     },
     {
-      "title": "Hong Kong Delays Issuance of First Stablecoin Licences to 2026",
-      "body": "Hong Kong's financial regulator has announced a cautious timeline for issuing its first stablecoin licences, targeting early 2026. This delay reflects the region's measured approach to cryptocurrency regulation and highlights the complexities involved in integrating stablecoins into the financial system.",
+      "title": "Hong Kong Sets 2026 Date for Issuing First Stablecoin Licences",
+      "body": "Hong Kong's financial authorities plan to issue the region's first stablecoin licences in early 2026, following recent legislation. This strategic move highlights the complexities and regulatory challenges of incorporating stablecoins into the mainstream financial system.",
       "source": "Finextra"
     },
     {
-      "title": "Latvian Startup Handwave Secures $4.2M for Palm Payment Tech",
-      "body": "Handwave, a pioneering Latvian fintech startup, has raised $4.2 million to develop a palm-based payment and identity platform. This technology promises to revolutionize transaction and identity verification processes, potentially setting a new standard for security and convenience in the fintech sector.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Klarna Eyes Market Comeback with Planned IPO This Autumn",
-      "body": "Swedish fintech leader Klarna is gearing up to revive its IPO plans this autumn, after a previous delay due to market instability. This move could significantly influence the fintech industry, offering insights into investor confidence and the valuation landscape in the post-pandemic economy.",
-      "source": "Finextra"
+      "title": "OpenAI's Market Valuation Could Hit $500 Billion",
+      "body": "OpenAI is potentially gearing up for a secondary share sale that could value the company at $500 billion, marking it as the world's most valuable private tech group. This valuation underscores the explosive growth and investor interest in AI technologies.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "The integration of AI into financial regulatory operations by entities like the SEC signifies a transformative shift in how financial markets are monitored and regulated.",
+    "text": "Did you know that the first stablecoin legislation was enacted in Hong Kong, setting a precedent for regulatory frameworks around digital currencies?",
     "source": "Finextra"
   }
 }
