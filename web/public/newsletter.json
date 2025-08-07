@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "U.S. Household Debt Soars to a Staggering $18.39 Trillion",
-      "body": "In Q2 2025, U.S. household debt escalated by $185 billion, hitting a record $18.39 trillion, primarily fueled by mortgage and auto loans. This surge, with mortgages alone increasing by $131 billion, underscores potential economic vulnerabilities and could impact consumer spending and financial stability.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "PayPal Bolsters Consumer Operations with High-Profile Hire",
-      "body": "PayPal has strategically enhanced its team by appointing Ben Volk, former Google Pay executive, as SVP & GM of PayPal Consumer. This move is set to strengthen PayPal's consumer services, potentially reshaping its market strategy and enhancing user engagement.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Wells Fargo and Google Cloud Partner for AI-Driven Banking Efficiency",
-      "body": "Wells Fargo is set to revolutionize its customer service and operational efficiency by integrating AI technology in collaboration with Google Cloud. This partnership could significantly transform banking operations, setting a new standard in the industry.",
+      "title": "Visa Launches Cybersecurity Advisory to Bolster Network Security",
+      "body": "Visa has introduced a new cybersecurity advisory practice, led by expert Jeremiah Dewey, aimed at enhancing security across its vast network. This initiative provides Visa's clients with cutting-edge tools and strategies to tackle cyber threats, crucial as digital payment transactions continue to rise. This proactive approach not only fortifies Visa's security but also reassures stakeholders about the integrity of their transactions.",
       "source": "Finextra"
     },
     {
-      "title": "Hong Kong Sets 2026 Date for Issuing First Stablecoin Licences",
-      "body": "Hong Kong's financial authorities plan to issue the region's first stablecoin licences in early 2026, following recent legislation. This strategic move highlights the complexities and regulatory challenges of incorporating stablecoins into the mainstream financial system.",
-      "source": "Finextra"
+      "title": "Marqeta Sees Robust Growth in BNPL and Embedded Finance",
+      "body": "Marqeta's latest financial results reveal a 29% increase in total processing volumes, now at $91 billion, fueled by growth in the Buy Now, Pay Later sector and embedded finance solutions. This surge reflects shifting consumer finance preferences and positions Marqeta at the forefront of payment innovation, potentially reshaping how consumers and businesses interact financially.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "OpenAI's Market Valuation Could Hit $500 Billion",
-      "body": "OpenAI is potentially gearing up for a secondary share sale that could value the company at $500 billion, marking it as the world's most valuable private tech group. This valuation underscores the explosive growth and investor interest in AI technologies.",
+      "title": "UK's FCA Regulatory Changes Spark Optimism in Crypto Sector",
+      "body": "The UK Financial Conduct Authority's recent regulatory adjustments have been met with enthusiasm from the cryptocurrency community, drawing comparisons to the 'Big Bang' reforms of the 1980s. These changes are poised to drive innovation and attract investments, significantly impacting the fintech landscape and offering new opportunities for growth in the sector.",
       "source": "Financial Times"
+    },
+    {
+      "title": "Alaan Secures $48 Million for AI-Driven Spend Management",
+      "body": "UAE-based fintech Alaan has raised $48 million in Series A funding to enhance its AI-powered corporate spend management platform. This investment highlights the increasing reliance on AI to improve financial efficiencies and transparency, marking a significant step forward in the integration of AI technologies within financial operations.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Visa Report Highlights Affluent Travelers' Impact on Global Tourism",
+      "body": "According to a recent Visa report, affluent travelers now account for 25% of global tourism spending, showcasing their significant economic influence despite broader economic challenges. This trend not only underscores the resilience of this demographic but also signals potential areas for targeted marketing and service enhancements in the travel and payments industries.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first stablecoin legislation was enacted in Hong Kong, setting a precedent for regulatory frameworks around digital currencies?",
-    "source": "Finextra"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was initially made of cardboard?",
+    "source": "history.com"
   }
 }
