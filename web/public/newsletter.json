@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Visa Launches Cybersecurity Advisory to Bolster Network Security",
-      "body": "Visa has introduced a new cybersecurity advisory practice, led by expert Jeremiah Dewey, aimed at enhancing security across its vast network. This initiative provides Visa's clients with cutting-edge tools and strategies to tackle cyber threats, crucial as digital payment transactions continue to rise. This proactive approach not only fortifies Visa's security but also reassures stakeholders about the integrity of their transactions.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Marqeta Sees Robust Growth in BNPL and Embedded Finance",
-      "body": "Marqeta's latest financial results reveal a 29% increase in total processing volumes, now at $91 billion, fueled by growth in the Buy Now, Pay Later sector and embedded finance solutions. This surge reflects shifting consumer finance preferences and positions Marqeta at the forefront of payment innovation, potentially reshaping how consumers and businesses interact financially.",
+      "title": "Apple Faces Racketeering Charges Over Apple Pay Tech Theft",
+      "body": "Fintiv has launched a federal lawsuit against Apple, accusing the tech behemoth of racketeering and stealing trade secrets for Apple Pay. Filed in the Northern District of Georgia, this case could shake the foundations of Apple's payment systems and redefine corporate partnerships in tech. The outcome could set a precedent impacting how tech giants engage with smaller innovators.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "UK's FCA Regulatory Changes Spark Optimism in Crypto Sector",
-      "body": "The UK Financial Conduct Authority's recent regulatory adjustments have been met with enthusiasm from the cryptocurrency community, drawing comparisons to the 'Big Bang' reforms of the 1980s. These changes are poised to drive innovation and attract investments, significantly impacting the fintech landscape and offering new opportunities for growth in the sector.",
-      "source": "Financial Times"
-    },
-    {
-      "title": "Alaan Secures $48 Million for AI-Driven Spend Management",
-      "body": "UAE-based fintech Alaan has raised $48 million in Series A funding to enhance its AI-powered corporate spend management platform. This investment highlights the increasing reliance on AI to improve financial efficiencies and transparency, marking a significant step forward in the integration of AI technologies within financial operations.",
+      "title": "Paxos Agrees to $48.5 Million Settlement Over AML Lapses",
+      "body": "Paxos has settled with New York regulators for $48.5 million due to anti-money laundering shortcomings with Binance. This settlement not only underscores the stringent regulatory landscape for crypto firms but also highlights the critical need for robust AML protocols in maintaining industry integrity and trust.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Report Highlights Affluent Travelers' Impact on Global Tourism",
-      "body": "According to a recent Visa report, affluent travelers now account for 25% of global tourism spending, showcasing their significant economic influence despite broader economic challenges. This trend not only underscores the resilience of this demographic but also signals potential areas for targeted marketing and service enhancements in the travel and payments industries.",
-      "source": "PYMNTS.com"
+      "title": "Ripple Bolsters Stablecoin Play with $200 Million Rail Acquisition",
+      "body": "Ripple's strategic acquisition of Toronto-based Rail for $200 million marks a significant expansion into the stablecoin market. This move could enhance Ripple's competitive edge in the crypto payments sector, potentially increasing its market share and influence.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Visa Initiates Cybersecurity Advisory to Fortify Digital Transactions",
+      "body": "Visa has launched a cybersecurity advisory practice, led by Jeremiah Dewey, to strengthen security across its global network. This initiative reflects the escalating importance of cybersecurity in financial services, aiming to safeguard digital transactions against the rising tide of cyber threats.",
+      "source": "Finextra"
+    },
+    {
+      "title": "UK's FCA Tightens Regulations for E-money Firms to Protect Consumers",
+      "body": "The UK Financial Conduct Authority has implemented new rules to protect consumer funds in case of payment firm insolvency. This regulatory enhancement is crucial for boosting consumer confidence and ensuring the stability of electronic money institutions amid growing digital transactions.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was initially made of cardboard?",
-    "source": "history.com"
+    "text": "Did you know that the first mobile payment systems date back to 1997, where Coca-Cola introduced vending machines that accepted payments via SMS?",
+    "source": "mobilepaymentstoday.com"
   }
 }
