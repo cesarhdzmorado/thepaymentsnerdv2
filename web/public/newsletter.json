@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Mollie Poised to Acquire GoCardless, Expanding European Reach",
-      "body": "Dutch fintech giant Mollie is set to acquire UK-based GoCardless, a strategic move that could reshape the European payments landscape. Expected to close next month, this acquisition underscores the trend of consolidation in the fintech sector and aims to boost Mollie's capabilities in direct debit payments. This could lead to enhanced service offerings and a stronger market position.",
-      "source": "pymnts.com"
+      "title": "UK Fintech Investment Remains Strong with $7.2 Billion in H1 2025",
+      "body": "The UK fintech sector attracted $7.2 billion in investments during the first half of 2025, slightly down from the previous year but still demonstrating strong investor confidence. This robust investment underscores the UK's position as a leading hub for fintech innovation and signals ongoing growth potential in the sector.",
+      "source": "Finextra"
     },
     {
-      "title": "Trump's Executive Order Welcomes Crypto into 401(k) Plans",
-      "body": "In a landmark decision, President Donald Trump has authorized the inclusion of cryptocurrencies in 401(k) retirement plans. This executive order could dramatically alter the retirement planning landscape and potentially drive widespread adoption of cryptocurrencies as a mainstream investment asset.",
-      "source": "finextra.com"
+      "title": "Google Finance Enhances User Experience with AI Integration",
+      "body": "Google has upgraded its finance service by integrating advanced AI, aiming to improve data analysis and user interaction. This move not only enhances the functionality of Google Finance but also sets a benchmark for the application of AI in financial services, potentially transforming how users interact with financial data.",
+      "source": "Finextra"
     },
     {
-      "title": "AI-driven Casap Raises $25M to Revolutionize Payment Disputes",
-      "body": "Casap, an AI-powered platform designed to automate payment disputes and combat first-party fraud, has secured $25 million in Series A funding. This investment highlights the critical role of AI in enhancing the security and efficiency of financial transactions, signaling a shift towards more automated and intelligent payment systems.",
-      "source": "finextra.com"
+      "title": "Binance and BBVA Team Up for Secure Crypto Custody Solutions",
+      "body": "In a landmark partnership, BBVA will collaborate with Binance to provide off-exchange crypto custody services. This initiative is set to enhance the security of digital assets, offering a more reliable storage solution and potentially increasing trust and adoption of cryptocurrency investments.",
+      "source": "Finextra"
     },
     {
-      "title": "Visa Initiates Cybersecurity Advisory to Fortify Global Defenses",
-      "body": "Visa has launched a new cybersecurity advisory practice, led by Jeremiah Dewey, to strengthen global cyber defense capabilities within the financial sector. This initiative reflects the growing emphasis on cybersecurity in finance, aiming to safeguard payment ecosystems against increasing cyber threats.",
-      "source": "finextra.com"
+      "title": "Visa Initiates Cybersecurity Advisory to Fortify Digital Transactions",
+      "body": "Visa has launched a new cybersecurity advisory practice, aimed at strengthening security across its vast network. This strategic move highlights the growing importance of cybersecurity in safeguarding digital transactions and maintaining trust in the financial ecosystem.",
+      "source": "Finextra"
     },
     {
-      "title": "Ripple Expands into Stablecoin Arena with $200M Rail Acquisition",
-      "body": "Ripple has acquired Toronto-based stablecoin firm Rail for $200 million, marking a significant expansion into the stablecoin market. This move is set to enhance Ripple's payment solutions and could position the company as a key player in the evolving digital currency landscape.",
-      "source": "finextra.com"
+      "title": "FTC Highlights Rising Consumer Losses to Impersonation Scams",
+      "body": "The FTC reports a surge in consumer losses due to impersonation scams, with fraudsters increasingly leveraging digital channels like email and text. This trend emphasizes the critical need for enhanced security measures and consumer education to combat these evolving digital threats.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the inclusion of cryptocurrencies in 401(k) plans marks a significant shift in the acceptance of digital assets in mainstream financial planning?",
-    "source": "finextra.com"
+    "text": "Did you know that the inclusion of cryptocurrencies in 401(k) plans marks a significant shift towards the normalization of digital assets in long-term personal financial planning?",
+    "source": "Finextra"
   }
 }
