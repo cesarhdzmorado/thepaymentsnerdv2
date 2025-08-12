@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "UK Fintech Investment Remains Strong with $7.2 Billion in H1 2025",
-      "body": "The UK fintech sector attracted $7.2 billion in investments during the first half of 2025, slightly down from the previous year but still demonstrating strong investor confidence. This robust investment underscores the UK's position as a leading hub for fintech innovation and signals ongoing growth potential in the sector.",
+      "title": "UAE Set to Launch Digital Dirham, Boosting Its Fintech Profile",
+      "body": "The UAE is on the brink of launching its Digital Dirham, a central bank digital currency designed to enhance its digital economy. This move not only aligns with the global shift towards digital currencies but also cements the UAE's position as a fintech innovator in the Middle East. The Digital Dirham could reshape financial transactions regionally and inspire similar initiatives.",
       "source": "Finextra"
     },
     {
-      "title": "Google Finance Enhances User Experience with AI Integration",
-      "body": "Google has upgraded its finance service by integrating advanced AI, aiming to improve data analysis and user interaction. This move not only enhances the functionality of Google Finance but also sets a benchmark for the application of AI in financial services, potentially transforming how users interact with financial data.",
+      "title": "Stripe and Ebanx Partner to Integrate Pix Payments in Brazil",
+      "body": "In a significant development for Brazilian e-commerce, Stripe has teamed up with Ebanx to integrate Pix, Brazil's instant payment system. This partnership will allow global businesses to conduct smoother and faster transactions in Brazil, enhancing the e-commerce landscape and potentially increasing market penetration for Stripe and Ebanx in Latin America.",
       "source": "Finextra"
     },
     {
-      "title": "Binance and BBVA Team Up for Secure Crypto Custody Solutions",
-      "body": "In a landmark partnership, BBVA will collaborate with Binance to provide off-exchange crypto custody services. This initiative is set to enhance the security of digital assets, offering a more reliable storage solution and potentially increasing trust and adoption of cryptocurrency investments.",
+      "title": "Zodia Markets Secures $18.25M for Institutional Stablecoin Trading",
+      "body": "Zodia Markets has raised $18.25 million in Series A funding to enhance its digital asset platform focused on stablecoins. This investment reflects a growing confidence in stablecoins as a viable tool for real-time trading and financial transactions, potentially transforming the landscape for institutional investors in digital currencies.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Initiates Cybersecurity Advisory to Fortify Digital Transactions",
-      "body": "Visa has launched a new cybersecurity advisory practice, aimed at strengthening security across its vast network. This strategic move highlights the growing importance of cybersecurity in safeguarding digital transactions and maintaining trust in the financial ecosystem.",
+      "title": "Paxos Aims for US National Trust Bank Charter to Bolster Regulation",
+      "body": "Paxos is seeking a US national trust bank charter, aiming to enhance its regulatory standing in the digital asset market. This strategic move could lead to wider acceptance of digital assets in mainstream financial services, setting a precedent for regulatory frameworks and stability in the digital currency space.",
       "source": "Finextra"
     },
     {
-      "title": "FTC Highlights Rising Consumer Losses to Impersonation Scams",
-      "body": "The FTC reports a surge in consumer losses due to impersonation scams, with fraudsters increasingly leveraging digital channels like email and text. This trend emphasizes the critical need for enhanced security measures and consumer education to combat these evolving digital threats.",
+      "title": "Riva Money Raises $3M to Expand Blockchain Money Transfers Globally",
+      "body": "Riva Money has secured $3 million in pre-seed funding to broaden its blockchain-based global money transfer services. This expansion could revolutionize international money transfers, offering faster, more secure transactions across continents, and positioning Riva as a key player in the global fintech ecosystem.",
       "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the inclusion of cryptocurrencies in 401(k) plans marks a significant shift towards the normalization of digital assets in long-term personal financial planning?",
+    "text": "Did you know that Brazil's Pix payment system processes transactions in under 10 seconds? This makes it one of the fastest payment systems worldwide.",
     "source": "Finextra"
   }
 }
