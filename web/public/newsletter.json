@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "UAE Set to Launch Digital Dirham, Boosting Its Fintech Profile",
-      "body": "The UAE is on the brink of launching its Digital Dirham, a central bank digital currency designed to enhance its digital economy. This move not only aligns with the global shift towards digital currencies but also cements the UAE's position as a fintech innovator in the Middle East. The Digital Dirham could reshape financial transactions regionally and inspire similar initiatives.",
+      "title": "Visa Invests in HoneyCoin, Eyes Stablecoin Payment Integration",
+      "body": "Visa has strategically invested in HoneyCoin, a platform that facilitates stablecoin transactions, as part of a $4.5 million funding round. This move underscores Visa's commitment to incorporating stablecoins into everyday financial transactions, potentially revolutionizing digital currency use in commerce.",
       "source": "Finextra"
     },
     {
-      "title": "Stripe and Ebanx Partner to Integrate Pix Payments in Brazil",
-      "body": "In a significant development for Brazilian e-commerce, Stripe has teamed up with Ebanx to integrate Pix, Brazil's instant payment system. This partnership will allow global businesses to conduct smoother and faster transactions in Brazil, enhancing the e-commerce landscape and potentially increasing market penetration for Stripe and Ebanx in Latin America.",
+      "title": "Wall Street Embraces Blockchain for US Treasury Financing",
+      "body": "In a groundbreaking move, major financial players including Bank of America have completed the first full on-chain financing of US Treasuries using the Canton Network blockchain. This marks a significant step in blending traditional financial practices with modern blockchain technology, setting a precedent for future transactions.",
       "source": "Finextra"
     },
     {
-      "title": "Zodia Markets Secures $18.25M for Institutional Stablecoin Trading",
-      "body": "Zodia Markets has raised $18.25 million in Series A funding to enhance its digital asset platform focused on stablecoins. This investment reflects a growing confidence in stablecoins as a viable tool for real-time trading and financial transactions, potentially transforming the landscape for institutional investors in digital currencies.",
+      "title": "Santander Aims to Transform into AI-Native Bank with OpenAI",
+      "body": "Santander is partnering with OpenAI to deploy ChatGPT Enterprise across its operations, targeting a transformation into an AI-native bank. By equipping 15,000 staff with advanced AI tools, Santander is positioning itself at the forefront of technology-driven customer service and operational efficiency in banking.",
       "source": "Finextra"
     },
     {
-      "title": "Paxos Aims for US National Trust Bank Charter to Bolster Regulation",
-      "body": "Paxos is seeking a US national trust bank charter, aiming to enhance its regulatory standing in the digital asset market. This strategic move could lead to wider acceptance of digital assets in mainstream financial services, setting a precedent for regulatory frameworks and stability in the digital currency space.",
+      "title": "Transak Secures $16 Million to Expand Stablecoin Payment Infrastructure",
+      "body": "Transak has raised $16 million to enhance its stablecoin payments infrastructure, aiming to bridge the gap between traditional finance and the crypto economy. This funding will boost Transak's capabilities to meet the surging demand for stablecoin transactions, highlighting the growing integration of crypto in mainstream finance.",
       "source": "Finextra"
     },
     {
-      "title": "Riva Money Raises $3M to Expand Blockchain Money Transfers Globally",
-      "body": "Riva Money has secured $3 million in pre-seed funding to broaden its blockchain-based global money transfer services. This expansion could revolutionize international money transfers, offering faster, more secure transactions across continents, and positioning Riva as a key player in the global fintech ecosystem.",
-      "source": "PYMNTS.com"
+      "title": "Google and Wise Collaborate to Streamline International Remittances",
+      "body": "Google has teamed up with Wise to pilot a new remittance solution integrated into Google's online platforms. This collaboration aims to simplify and enhance the efficiency of international money transfers, leveraging Google's tech prowess and Wise's currency exchange expertise.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that Brazil's Pix payment system processes transactions in under 10 seconds? This makes it one of the fastest payment systems worldwide.",
-    "source": "Finextra"
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth millions today?",
+    "source": "bitcoin.org"
   }
 }
