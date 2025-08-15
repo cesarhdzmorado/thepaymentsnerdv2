@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Wirex and Visa Launch Real-Time EURC Stablecoin Settlements",
-      "body": "Wirex, in partnership with Visa, has initiated real-time settlements using the EURC stablecoin, a move that could revolutionize cross-border payments. This integration, part of Visa's stablecoin settlement pilot, not only enhances payment efficiency but also positions stablecoins closer to mainstream financial adoption. This strategic development is pivotal for financial institutions eyeing blockchain's potential in real-world transactions.",
+      "title": "Moneris Sale Could Reshape Canadian Payments Landscape",
+      "body": "The Royal Bank of Canada and the Bank of Montreal are exploring the sale of Moneris, a key player in Canada's payment processing sector, valued at around $2 billion. Moneris processes one-third of all business transactions in Canada, making this potential sale a pivotal moment for the Canadian payments industry.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Zelle Faces Lawsuit Over Fraud Protection Inadequacies",
-      "body": "The New York Attorney General has taken legal action against Zelle's operator, Early Warning Services, for inadequate fraud protection measures. This lawsuit underscores the increasing legal and regulatory scrutiny facing peer-to-peer payment platforms, potentially influencing how these platforms enhance their security protocols moving forward.",
+      "title": "Mastercard and Zand Boost UAE's Cross-Border Payments",
+      "body": "Mastercard and UAE-based fintech Zand have teamed up to launch a new cross-border payments solution, aiming to enhance transaction speed and efficiency in the Middle East. This strategic partnership addresses the increasing demand for robust financial connectivity and could set a benchmark in the region's payment solutions.",
       "source": "Finextra"
     },
     {
-      "title": "Payoneer Adopts Citi\u2019s Blockchain for Enhanced Internal Transfers",
-      "body": "Payoneer is leveraging Citi\u2019s blockchain technology to enable real-time, 24/7 intra-company transfers, marking a significant shift towards using blockchain for internal financial operations. This integration not only streamlines operations but also sets a precedent for other global firms considering blockchain to boost operational efficiency.",
+      "title": "Payoneer Integrates Citi Blockchain for Enhanced Transfers",
+      "body": "Payoneer is leveraging Citi\u2019s blockchain technology to offer real-time, 24/7 intracompany money transfers, marking a significant step forward in the use of blockchain for secure and efficient corporate financial transactions. This move could influence how companies globally manage their internal funds.",
       "source": "Finextra"
     },
     {
-      "title": "$16 Million Boost for Transak's Stablecoin Payment Infrastructure",
-      "body": "Transak has secured $16 million in funding to expand its stablecoin payment solutions, reflecting heightened investor interest in cryptocurrency's potential in mainstream payments. This investment will likely enhance the scalability and accessibility of stablecoin transactions, crucial for the broader adoption of digital currencies in everyday commerce.",
+      "title": "PayPal and Circle Back Crypto Firm Mesh with $130M",
+      "body": "In a notable endorsement of cryptocurrency's potential in mainstream finance, PayPal Ventures and Circle Ventures have invested in Mesh, a crypto payments network, bringing its total funding to over $130 million. This investment reflects a growing confidence in crypto as a viable payment solution.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Invests in HoneyCoin, Advancing Stablecoin Payment Integration",
-      "body": "Visa's $4.9 million investment in HoneyCoin, a stablecoin-compliant payment platform, is a strategic move to integrate stablecoin technology within its vast payment network. This investment highlights the ongoing shift in the financial industry towards embracing digital currencies, potentially reshaping how businesses and consumers transact globally.",
+      "title": "New York AG Takes Legal Action Against Zelle's Parent Company",
+      "body": "The New York Attorney General has sued the operator of Zelle, highlighting significant fraud losses and raising questions about consumer protection on digital payment platforms. This lawsuit could lead to tighter regulations and operational changes within peer-to-peer payment services.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital currency transaction was for a pizza? In 2010, a programmer bought two pizzas for 10,000 bitcoins, a deal worth over $300 million at today's rates!",
-    "source": "bitcoin.org"
+    "text": "Did you know that Moneris processes one out of every three business transactions in Canada? This makes it a cornerstone of the Canadian economy.",
+    "source": "PYMNTS.com"
   }
 }
