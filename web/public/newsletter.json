@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Moneris Sale Could Reshape Canadian Payments Landscape",
-      "body": "The Royal Bank of Canada and the Bank of Montreal are exploring the sale of Moneris, a key player in Canada's payment processing sector, valued at around $2 billion. Moneris processes one-third of all business transactions in Canada, making this potential sale a pivotal moment for the Canadian payments industry.",
+      "title": "RBC and BMO Consider $2 Billion Sale of Moneris Payments",
+      "body": "Royal Bank of Canada and Bank of Montreal are exploring the sale of their joint venture, Moneris, potentially valued at $2 billion. This strategic shift could reshape the payments landscape in North America, signaling a major realignment in how traditional banks view their stakes in payment processing.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Citi Dives Into Stablecoin Arena Following New US Legislation",
+      "body": "Citigroup is set to offer stablecoin payments and custody services, spurred by recent US legislation. This move underscores a pivotal shift for traditional banks into the realm of cryptocurrency, reflecting the increasing fusion of crypto solutions with mainstream financial services.",
+      "source": "Finextra"
+    },
+    {
+      "title": "PayPal and Coinbase Back Crypto Payments Firm Mesh",
+      "body": "PayPal Ventures and Coinbase Ventures have invested in Mesh, a crypto payments network, boosting its funding to over $130 million. This investment highlights the confidence major fintech players have in the future of blockchain-based payment systems.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Routable Integrates FedNow for Enhanced Instant Payments",
+      "body": "Routable has incorporated the FedNow Service into its payment platform, enabling instant transactions to 85% of US bank accounts. This integration marks a significant advancement in payment efficiencies, catering to the growing demand for immediate financial transactions in business operations.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Mastercard and Zand Boost UAE's Cross-Border Payments",
-      "body": "Mastercard and UAE-based fintech Zand have teamed up to launch a new cross-border payments solution, aiming to enhance transaction speed and efficiency in the Middle East. This strategic partnership addresses the increasing demand for robust financial connectivity and could set a benchmark in the region's payment solutions.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Payoneer Integrates Citi Blockchain for Enhanced Transfers",
-      "body": "Payoneer is leveraging Citi\u2019s blockchain technology to offer real-time, 24/7 intracompany money transfers, marking a significant step forward in the use of blockchain for secure and efficient corporate financial transactions. This move could influence how companies globally manage their internal funds.",
-      "source": "Finextra"
-    },
-    {
-      "title": "PayPal and Circle Back Crypto Firm Mesh with $130M",
-      "body": "In a notable endorsement of cryptocurrency's potential in mainstream finance, PayPal Ventures and Circle Ventures have invested in Mesh, a crypto payments network, bringing its total funding to over $130 million. This investment reflects a growing confidence in crypto as a viable payment solution.",
-      "source": "Finextra"
-    },
-    {
-      "title": "New York AG Takes Legal Action Against Zelle's Parent Company",
-      "body": "The New York Attorney General has sued the operator of Zelle, highlighting significant fraud losses and raising questions about consumer protection on digital payment platforms. This lawsuit could lead to tighter regulations and operational changes within peer-to-peer payment services.",
+      "title": "Klarna Reports Q2 Losses Amid Aggressive US Market Push",
+      "body": "Swedish fintech giant Klarna faced a net loss in Q2 during its push into the US market and ahead of its New York listing. Despite the setback, this move highlights Klarna's strategic ambitions to dominate the global fintech scene, underscoring its long-term vision.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that Moneris processes one out of every three business transactions in Canada? This makes it a cornerstone of the Canadian economy.",
-    "source": "PYMNTS.com"
+    "text": "Did you know that the first mobile payment systems were introduced in 1997, allowing users to pay for vending machine snacks via SMS?",
+    "source": "mobilepaymentstoday.com"
   }
 }
