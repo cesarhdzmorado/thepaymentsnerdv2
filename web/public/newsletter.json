@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "RBC and BMO Consider Selling Moneris for $2 Billion",
-      "body": "Royal Bank of Canada and Bank of Montreal are exploring the sale of their payments processing joint venture, Moneris, potentially fetching up to $2 billion. This strategic move could dramatically alter the payments ecosystem in Canada, affecting a wide range of businesses and consumers. The sale highlights the evolving dynamics within the Canadian financial services sector.",
+      "title": "Visa Boosts E-commerce in Asia with Click to Pay Expansion",
+      "body": "Visa is expanding its Click to Pay service across Asia Pacific, partnering with major processors like C2P and Adyen to simplify online checkouts. This move taps into the region's explosive e-commerce growth, eliminating the need for manual card entry and potentially boosting consumer spending and merchant sales.",
       "source": "Finextra"
     },
     {
-      "title": "Citi Ventures into Stablecoin Payments Amid New Legislation",
-      "body": "Citigroup is making a significant move into the crypto space by exploring custody and payment services for stablecoins, following recent legislative changes by Congress. This initiative could lead to wider acceptance of digital currencies in traditional banking, potentially setting a precedent for other major banks.",
+      "title": "RBC and BMO Eye $2 Billion Sale of Payments Processor Moneris",
+      "body": "The Royal Bank of Canada and the Bank of Montreal are considering selling their joint venture, Moneris, for up to $2 billion. As one of Canada's largest payment processors, this sale could significantly alter the North American payments landscape, highlighting the high stakes and competitive nature of this industry.",
       "source": "Finextra"
     },
     {
-      "title": "PayPal and Coinbase Back Crypto Firm Mesh with $130M",
-      "body": "In a notable endorsement of cryptocurrency solutions, PayPal Ventures and Coinbase Ventures have invested in Mesh, a crypto payments network, bringing its total funding to over $130 million. This investment signals growing confidence in the viability of crypto payments from leading financial entities.",
+      "title": "Citi Ventures into Stablecoin Amid Favorable US Legislation",
+      "body": "Citigroup is exploring stablecoin payments and custody services following new supportive U.S. legislation. This strategic pivot could position Citi as a frontrunner in integrating cryptocurrencies within traditional financial frameworks, potentially setting a precedent for other major banks.",
       "source": "Finextra"
     },
     {
-      "title": "Routable Integrates FedNow for Enhanced Instant Payments",
-      "body": "Routable has incorporated the FedNow Service into its accounts payable automation platform, significantly boosting its instant payment capabilities. This integration is particularly beneficial for transactions involving smaller or regional banks, covering 85% of U.S. bank accounts and marking a pivotal advancement in payment technologies.",
-      "source": "PYMNTS.com"
+      "title": "Klarna's Strategic Losses Pre-IPO Signal Aggressive U.S. Push",
+      "body": "Despite facing losses in Q2, Klarna is advancing its U.S. expansion, eyeing a New York Stock Exchange debut. This aggressive strategy underscores Klarna's commitment to capturing a larger slice of the buy now, pay later market, a move that could reshape competitive dynamics in global fintech.",
+      "source": "Finextra"
     },
     {
-      "title": "ChatGPT App Revenue Hits $1.35 Billion, Up Sixfold",
-      "body": "The ChatGPT mobile app has generated over $1.35 billion in revenue in the first seven months of 2025, marking a sixfold increase from the previous year. This surge underscores the expanding role and economic impact of AI-driven applications in the tech landscape, reflecting a significant shift in consumer engagement and monetization strategies.",
-      "source": "PYMNTS.com"
+      "title": "PayPal and Coinbase Back Crypto Payments Firm Mesh with $130M",
+      "body": "PayPal Ventures and Coinbase Ventures have invested in Mesh, a crypto payments network, bringing its total funding to over $130 million. This investment underscores the growing confidence in cryptocurrency as a viable payment solution and Mesh's potential role in shaping this emerging market.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "AI technology could soon save more energy than it consumes, particularly through innovations in 'smart' appliances and sensors aimed at reducing waste.",
-    "source": "Financial Times"
+    "text": "Did you know that despite economic uncertainties, U.S. credit card delinquencies are still below pre-COVID levels, currently at 2.66%?",
+    "source": "PYMNTS.com"
   }
 }
