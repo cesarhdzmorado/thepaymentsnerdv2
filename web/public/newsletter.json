@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Visa Boosts E-commerce in Asia with Click to Pay Expansion",
-      "body": "Visa is expanding its Click to Pay service across Asia Pacific, partnering with major processors like C2P and Adyen to simplify online checkouts. This move taps into the region's explosive e-commerce growth, eliminating the need for manual card entry and potentially boosting consumer spending and merchant sales.",
+      "title": "Salesforce Bolsters Automation with Regrello Acquisition",
+      "body": "Salesforce is set to acquire Regrello, enhancing its agentic process automation capabilities. By integrating Regrello's technology, which transforms business data into automated workflows, Salesforce aims to streamline operations and boost efficiency for its users. This strategic move is pivotal for Salesforce customers seeking more robust automation solutions.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Circle Steps Up Blockchain Game with Malachite Acquisition",
+      "body": "Circle Internet Group has acquired Malachite from Informal Systems, bolstering its blockchain capabilities to support the new Arc network, tailored for stablecoin finance. This acquisition underscores Circle's commitment to expanding its blockchain infrastructure, positioning it as a leader in the stablecoin arena.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Thailand Tests Crypto-to-Baht Conversion for Tourists",
+      "body": "Thailand is piloting a program allowing tourists to convert cryptocurrencies to baht, aiming to attract crypto-savvy travelers and simplify financial transactions. This initiative could significantly enhance the tourist experience and boost the local economy by integrating modern payment technologies.",
       "source": "Finextra"
     },
     {
-      "title": "RBC and BMO Eye $2 Billion Sale of Payments Processor Moneris",
-      "body": "The Royal Bank of Canada and the Bank of Montreal are considering selling their joint venture, Moneris, for up to $2 billion. As one of Canada's largest payment processors, this sale could significantly alter the North American payments landscape, highlighting the high stakes and competitive nature of this industry.",
+      "title": "Visa Expands Click to Pay in Asia Pacific, Enhancing Checkout",
+      "body": "Visa is expanding its Click to Pay service across the Asia Pacific, partnering with major payment processors to streamline online checkouts. This expansion is crucial for providing a faster, more secure payment experience, meeting the rising consumer demand for efficient digital payment solutions in diverse markets.",
       "source": "Finextra"
     },
     {
-      "title": "Citi Ventures into Stablecoin Amid Favorable US Legislation",
-      "body": "Citigroup is exploring stablecoin payments and custody services following new supportive U.S. legislation. This strategic pivot could position Citi as a frontrunner in integrating cryptocurrencies within traditional financial frameworks, potentially setting a precedent for other major banks.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Klarna's Strategic Losses Pre-IPO Signal Aggressive U.S. Push",
-      "body": "Despite facing losses in Q2, Klarna is advancing its U.S. expansion, eyeing a New York Stock Exchange debut. This aggressive strategy underscores Klarna's commitment to capturing a larger slice of the buy now, pay later market, a move that could reshape competitive dynamics in global fintech.",
-      "source": "Finextra"
-    },
-    {
-      "title": "PayPal and Coinbase Back Crypto Payments Firm Mesh with $130M",
-      "body": "PayPal Ventures and Coinbase Ventures have invested in Mesh, a crypto payments network, bringing its total funding to over $130 million. This investment underscores the growing confidence in cryptocurrency as a viable payment solution and Mesh's potential role in shaping this emerging market.",
+      "title": "Citi Ventures into Stablecoin Payment Services",
+      "body": "Citigroup is exploring the potential to offer custody and payment services for stablecoins, following new U.S. legislation. This move could mark a significant shift in traditional banking, integrating cryptocurrency solutions to meet evolving financial needs and regulatory landscapes.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that despite economic uncertainties, U.S. credit card delinquencies are still below pre-COVID levels, currently at 2.66%?",
-    "source": "PYMNTS.com"
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010? The cost at the time was 10,000 Bitcoins!",
+    "source": "bitcoin.org"
   }
 }
