@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Salesforce Bolsters Automation with Regrello Acquisition",
-      "body": "Salesforce is set to acquire Regrello, enhancing its agentic process automation capabilities. By integrating Regrello's technology, which transforms business data into automated workflows, Salesforce aims to streamline operations and boost efficiency for its users. This strategic move is pivotal for Salesforce customers seeking more robust automation solutions.",
+      "title": "Wyoming Pioneers with Launch of First State-Issued Stablecoin",
+      "body": "Wyoming has launched the Frontier Stable Token (FRNT), a groundbreaking state-issued stablecoin. This initiative not only enhances transaction efficiency and reduces costs but also positions Wyoming as a leader in governmental adoption of digital currency. The FRNT is fully backed by U.S. dollars and short-duration Treasurys, ensuring robust security and reliability for users.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Circle Steps Up Blockchain Game with Malachite Acquisition",
-      "body": "Circle Internet Group has acquired Malachite from Informal Systems, bolstering its blockchain capabilities to support the new Arc network, tailored for stablecoin finance. This acquisition underscores Circle's commitment to expanding its blockchain infrastructure, positioning it as a leader in the stablecoin arena.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Thailand Tests Crypto-to-Baht Conversion for Tourists",
-      "body": "Thailand is piloting a program allowing tourists to convert cryptocurrencies to baht, aiming to attract crypto-savvy travelers and simplify financial transactions. This initiative could significantly enhance the tourist experience and boost the local economy by integrating modern payment technologies.",
+      "title": "Klarna Strikes $26 Billion Deal to Sell U.S. BNPL Loans",
+      "body": "In a significant move, Klarna has agreed to sell up to $26 billion of its U.S. buy now, pay later (BNPL) loans to Nelnet. This deal underscores the massive scale of Klarna's operations and the increasing relevance of BNPL services in the consumer finance sector, potentially reshaping lending practices and consumer spending habits.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Expands Click to Pay in Asia Pacific, Enhancing Checkout",
-      "body": "Visa is expanding its Click to Pay service across the Asia Pacific, partnering with major payment processors to streamline online checkouts. This expansion is crucial for providing a faster, more secure payment experience, meeting the rising consumer demand for efficient digital payment solutions in diverse markets.",
+      "title": "Visa Expands Click to Pay in Asia Pacific, Enhancing E-commerce",
+      "body": "Visa is set to expand its Click to Pay service across the Asia Pacific, partnering with major processors like C2P and Adyen. This expansion aims to streamline online transactions and improve the shopping experience, reflecting Visa's commitment to advancing global digital payment solutions.",
       "source": "Finextra"
     },
     {
-      "title": "Citi Ventures into Stablecoin Payment Services",
-      "body": "Citigroup is exploring the potential to offer custody and payment services for stablecoins, following new U.S. legislation. This move could mark a significant shift in traditional banking, integrating cryptocurrency solutions to meet evolving financial needs and regulatory landscapes.",
+      "title": "RBC and BMO Explore $2 Billion Sale of Moneris Payments Business",
+      "body": "The Royal Bank of Canada and Bank of Montreal are considering selling their Moneris payments processing venture for up to $2 billion. This potential sale highlights the high stakes and dynamic shifts within the payments industry, emphasizing the substantial value of established payment processors.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Blockchain Lender Figure Eyes Public Market with IPO Filing",
+      "body": "Figure Technology, a leader in blockchain-based lending, has filed for an IPO, signaling the increasing fusion of blockchain technology with traditional financial services. This move could pave the way for more blockchain innovations in the financial sector, offering new opportunities for growth and investment.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010? The cost at the time was 10,000 Bitcoins!",
-    "source": "bitcoin.org"
+    "text": "Did you know that eCommerce now represents over 16% of total retail sales? This shift highlights the growing consumer preference for online shopping, driven by convenience and competitive pricing.",
+    "source": "PYMNTS.com"
   }
 }
