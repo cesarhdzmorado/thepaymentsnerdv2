@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Wyoming Pioneers with Launch of First State-Issued Stablecoin",
-      "body": "Wyoming has launched the Frontier Stable Token (FRNT), a groundbreaking state-issued stablecoin. This initiative not only enhances transaction efficiency and reduces costs but also positions Wyoming as a leader in governmental adoption of digital currency. The FRNT is fully backed by U.S. dollars and short-duration Treasurys, ensuring robust security and reliability for users.",
+      "title": "Visa Ends Open Banking Unit in US, Shifts Focus to Europe and Latin America",
+      "body": "Visa has shuttered its open banking operations in the U.S. due to regulatory challenges and banks' new fees on data access. This strategic pivot to focus on more regulatory-friendly markets like Europe and Latin America could reshape how U.S. financial institutions and fintechs approach open banking solutions.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Klarna Strikes $26 Billion Deal to Sell U.S. BNPL Loans",
-      "body": "In a significant move, Klarna has agreed to sell up to $26 billion of its U.S. buy now, pay later (BNPL) loans to Nelnet. This deal underscores the massive scale of Klarna's operations and the increasing relevance of BNPL services in the consumer finance sector, potentially reshaping lending practices and consumer spending habits.",
+      "title": "Australia Demands Binance Audit Amid AML Compliance Concerns",
+      "body": "In a significant regulatory move, Australia's Austrac has ordered an external audit of Binance's local operations over anti-money laundering compliance issues. This action reflects the global trend of increasing scrutiny on cryptocurrency exchanges, potentially affecting their operational freedom.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Expands Click to Pay in Asia Pacific, Enhancing E-commerce",
-      "body": "Visa is set to expand its Click to Pay service across the Asia Pacific, partnering with major processors like C2P and Adyen. This expansion aims to streamline online transactions and improve the shopping experience, reflecting Visa's commitment to advancing global digital payment solutions.",
+      "title": "Square Launches $10K Grants for Small Businesses to Foster Growth",
+      "body": "Square has introduced the Cornerstone Grant Program, offering $10,000 and mentorship to selected small businesses. This initiative underscores Square's commitment to supporting small business resilience during economic fluctuations, potentially boosting local economies.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Meta Partners with Google Cloud in $10 Billion AI Expansion Deal",
+      "body": "Meta has inked a massive $10 billion agreement with Google Cloud to enhance its AI capabilities. This partnership is set to significantly boost Meta's tech infrastructure, accelerating AI integration in its services and potentially setting new industry standards in technological innovation.",
       "source": "Finextra"
     },
     {
-      "title": "RBC and BMO Explore $2 Billion Sale of Moneris Payments Business",
-      "body": "The Royal Bank of Canada and Bank of Montreal are considering selling their Moneris payments processing venture for up to $2 billion. This potential sale highlights the high stakes and dynamic shifts within the payments industry, emphasizing the substantial value of established payment processors.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Blockchain Lender Figure Eyes Public Market with IPO Filing",
-      "body": "Figure Technology, a leader in blockchain-based lending, has filed for an IPO, signaling the increasing fusion of blockchain technology with traditional financial services. This move could pave the way for more blockchain innovations in the financial sector, offering new opportunities for growth and investment.",
+      "title": "Thailand Pilots Crypto-to-Baht Conversion to Attract Tourists",
+      "body": "Thailand is testing a new scheme allowing tourists to convert cryptocurrencies to baht for local payments. This innovative approach aims to capitalize on the popularity of digital currencies among travelers, potentially boosting the country's tourism industry.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that eCommerce now represents over 16% of total retail sales? This shift highlights the growing consumer preference for online shopping, driven by convenience and competitive pricing.",
+    "text": "NASA and Google are collaborating on an AI-powered medical assistant for astronauts, aiming to revolutionize healthcare in space.",
     "source": "PYMNTS.com"
   }
 }
