@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Visa Ends Open Banking Unit in US, Shifts Focus to Europe and Latin America",
-      "body": "Visa has shuttered its open banking operations in the U.S. due to regulatory challenges and banks' new fees on data access. This strategic pivot to focus on more regulatory-friendly markets like Europe and Latin America could reshape how U.S. financial institutions and fintechs approach open banking solutions.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Australia Demands Binance Audit Amid AML Compliance Concerns",
-      "body": "In a significant regulatory move, Australia's Austrac has ordered an external audit of Binance's local operations over anti-money laundering compliance issues. This action reflects the global trend of increasing scrutiny on cryptocurrency exchanges, potentially affecting their operational freedom.",
+      "title": "EU Explores Public Blockchain for Digital Euro, Eyes Global Impact",
+      "body": "The European Union is considering the adoption of public blockchains for the digital euro, aiming to enhance cross-border payments and challenge the dominance of dollar-backed stablecoins. This strategic move, spurred by the US's Genius Act, could reshape the landscape of central bank digital currencies globally, setting a precedent for future financial systems.",
       "source": "Finextra"
     },
     {
-      "title": "Square Launches $10K Grants for Small Businesses to Foster Growth",
-      "body": "Square has introduced the Cornerstone Grant Program, offering $10,000 and mentorship to selected small businesses. This initiative underscores Square's commitment to supporting small business resilience during economic fluctuations, potentially boosting local economies.",
+      "title": "Coinbase CEO Sets AI Learning Ultimatum for Employees",
+      "body": "Coinbase CEO Brian Armstrong has issued a directive for all employees to upskill in AI technologies within a week, signaling a major strategic pivot towards AI integration. This move reflects a broader industry trend and positions Coinbase at the forefront of leveraging AI to enhance operational efficiencies and competitive edge in the fintech sector.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Meta Partners with Google Cloud in $10 Billion AI Expansion Deal",
-      "body": "Meta has inked a massive $10 billion agreement with Google Cloud to enhance its AI capabilities. This partnership is set to significantly boost Meta's tech infrastructure, accelerating AI integration in its services and potentially setting new industry standards in technological innovation.",
+      "title": "Visa Shuts Down US Open Banking Unit Amid Regulatory Hurdles",
+      "body": "Visa has terminated its open banking operations in the US due to escalating regulatory uncertainties and financial institutions' plans to monetize customer data access. This development highlights the stark regulatory challenges in the US open banking landscape, contrasting with more progressive environments in Europe.",
       "source": "Finextra"
     },
     {
-      "title": "Thailand Pilots Crypto-to-Baht Conversion to Attract Tourists",
-      "body": "Thailand is testing a new scheme allowing tourists to convert cryptocurrencies to baht for local payments. This innovative approach aims to capitalize on the popularity of digital currencies among travelers, potentially boosting the country's tourism industry.",
+      "title": "Australia Intensifies Crypto Scrutiny, Demands Binance Audit",
+      "body": "In a significant regulatory move, Australia's Austrac has mandated Binance Australia to engage an external auditor to review its anti-money laundering practices. This action underscores the heightened global regulatory focus on ensuring cryptocurrency exchanges adhere to stringent financial compliance standards.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Wyoming Launches US Dollar-Pegged Stablecoin, Innovates Local Transactions",
+      "body": "Wyoming has introduced its own US dollar-pegged stablecoin, marking a pioneering state-led initiative in the US to facilitate digital transactions. This could set a trend for other states, exploring localized stablecoins as viable alternatives for financial interactions and potentially reshaping regional economic dynamics.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "NASA and Google are collaborating on an AI-powered medical assistant for astronauts, aiming to revolutionize healthcare in space.",
-    "source": "PYMNTS.com"
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas, costing 10,000 bitcoins, which would be worth hundreds of millions of dollars today?",
+    "source": "bitcoin.org"
   }
 }
