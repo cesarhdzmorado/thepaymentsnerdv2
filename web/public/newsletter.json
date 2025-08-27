@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "EU Eyes Public Blockchain for Digital Euro Launch",
-      "body": "The European Union is considering the use of public blockchains for the digital euro to compete with the US's Genius Act and mitigate the dominance of dollar-backed stablecoins in cross-border payments. This strategic move could reshape the digital currency landscape across Europe, offering a more decentralized and accessible financial framework.",
-      "source": "Finextra"
+      "title": "nCino Integrates AI to Revolutionize Cloud Banking",
+      "body": "nCino is set to integrate advanced AI into its Banking Advisor product, a move revealed during their recent earnings call. This enhancement promises to significantly transform financial services by improving decision-making and customer interactions. As AI continues to penetrate the financial sector, nCino's update could set a new standard for cloud-based banking solutions.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Visa Closes US Open Banking Operations Amid Regulatory Hurdles",
-      "body": "Visa has shuttered its open banking unit in the US, citing regulatory uncertainties and banks' plans to charge for data access. This development signals significant challenges in the open banking ecosystem, potentially stalling innovation and affecting how financial data is shared and utilized in the US market.",
-      "source": "Finextra"
+      "title": "EU Debates Using Public Blockchain for Digital Euro",
+      "body": "The European Union is considering the adoption of public blockchains for its forthcoming digital euro. This strategic move aims to bolster cross-border payments and challenge the dominance of the U.S. dollar. If implemented, this could drastically alter the landscape of international finance and digital currencies.",
+      "source": "finextra.com"
     },
     {
-      "title": "Wyoming Introduces Pioneering State-Backed Stablecoin",
-      "body": "Wyoming has launched its own US dollar-pegged stablecoin, marking a significant step as the first state-backed digital currency in the US. This move could set a trend for other states, influencing national digital currency strategies and enhancing real-world payment systems.",
-      "source": "Finextra"
+      "title": "Visa Closes U.S. Open Banking Division Amid Regulatory Challenges",
+      "body": "Visa has shuttered its open banking unit in the U.S., citing regulatory uncertainties and new fees for customer data access. This decision reflects the volatile nature of open banking frameworks and could influence how financial data is shared and utilized across the industry.",
+      "source": "finextra.com"
     },
     {
-      "title": "MetaMask Expands with Launch of Native Stablecoin",
-      "body": "MetaMask, a leading self-custodial crypto wallet, has introduced its own stablecoin managed by Stripe-owned Bridge. This expansion enhances MetaMask's utility, potentially increasing its adoption and influence in the cryptocurrency wallet market.",
-      "source": "Finextra"
+      "title": "Klarna Resumes IPO Journey Amidst Fintech Market Fluctuations",
+      "body": "Klarna is set to revive its IPO plans next month, navigating through recent market instabilities. This move signals a robust comeback in the fintech sector and could potentially set a precedent for other tech firms considering public trading in uncertain times.",
+      "source": "finextra.com"
     },
     {
-      "title": "OCBC Bank Innovates with Blockchain in $1 Billion Paper Program",
-      "body": "OCBC Bank has initiated a $1 billion digital US commercial paper program using blockchain technology, aiming to boost transaction efficiency and security. This pioneering move could influence how commercial papers are managed globally, setting a new standard for financial transactions in the banking sector.",
-      "source": "Finextra"
+      "title": "Dutch Central Bank Imposes \u20ac2.6M Fine on bunq for AML Lapses",
+      "body": "bunq has been fined \u20ac2.6 million by the Dutch central bank due to inadequate anti-money laundering controls. This penalty underscores the stringent regulatory environment surrounding financial operations and the critical need for robust compliance systems in fintech.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first ATM was installed in London in 1967, revolutionizing how consumers interact with their bank accounts?",
-    "source": "history.com"
+    "text": "Did you know that the first digital currency transaction was for a pizza? In 2010, a programmer bought two pizzas for 10,000 bitcoins, a deal worth over $300 million at today's rates!",
+    "source": "bitcoin.org"
   }
 }
