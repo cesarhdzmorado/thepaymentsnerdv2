@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "nCino Integrates AI to Revolutionize Cloud Banking",
-      "body": "nCino is set to integrate advanced AI into its Banking Advisor product, a move revealed during their recent earnings call. This enhancement promises to significantly transform financial services by improving decision-making and customer interactions. As AI continues to penetrate the financial sector, nCino's update could set a new standard for cloud-based banking solutions.",
-      "source": "pymnts.com"
+      "title": "Baltimore Hit by $803K Fraud in Vendor Payments",
+      "body": "Baltimore's municipal payment systems were compromised, losing over $803,000 to fraudulent electronic fund transfers. Although $721,000 was recovered, the incident exposes significant security gaps in public sector payments, underscoring the urgent need for enhanced protective measures.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "EU Debates Using Public Blockchain for Digital Euro",
-      "body": "The European Union is considering the adoption of public blockchains for its forthcoming digital euro. This strategic move aims to bolster cross-border payments and challenge the dominance of the U.S. dollar. If implemented, this could drastically alter the landscape of international finance and digital currencies.",
-      "source": "finextra.com"
+      "title": "Finastra and Circle Enhance Cross-Border Payments with Stablecoin",
+      "body": "Finastra has teamed up with Circle to integrate USDC stablecoin settlements into cross-border payment systems for banks. This strategic move leverages blockchain's efficiency to potentially revolutionize international trade and remittances, offering faster, cost-effective solutions.",
+      "source": "Finextra"
     },
     {
-      "title": "Visa Closes U.S. Open Banking Division Amid Regulatory Challenges",
-      "body": "Visa has shuttered its open banking unit in the U.S., citing regulatory uncertainties and new fees for customer data access. This decision reflects the volatile nature of open banking frameworks and could influence how financial data is shared and utilized across the industry.",
-      "source": "finextra.com"
+      "title": "EU Debates Public Blockchain for Digital Euro Rollout",
+      "body": "The EU is considering the adoption of public blockchains for the digital euro, aiming to modernize its financial infrastructure in response to global digital currency trends. This pivotal move could significantly influence the digital currency landscape and mainstream blockchain integration.",
+      "source": "Finextra"
     },
     {
-      "title": "Klarna Resumes IPO Journey Amidst Fintech Market Fluctuations",
-      "body": "Klarna is set to revive its IPO plans next month, navigating through recent market instabilities. This move signals a robust comeback in the fintech sector and could potentially set a precedent for other tech firms considering public trading in uncertain times.",
-      "source": "finextra.com"
+      "title": "Chase Alerts Customers to U.S. Treasury's Digital Shift",
+      "body": "Chase is preparing its customers for the U.S. Treasury's upcoming deadline to phase out paper checks by September 30, advocating for a switch to direct deposits. This transition supports a broader push towards digital payments, enhancing transaction security and operational efficiency.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Dutch Central Bank Imposes \u20ac2.6M Fine on bunq for AML Lapses",
-      "body": "bunq has been fined \u20ac2.6 million by the Dutch central bank due to inadequate anti-money laundering controls. This penalty underscores the stringent regulatory environment surrounding financial operations and the critical need for robust compliance systems in fintech.",
-      "source": "finextra.com"
+      "title": "Ant International and Standard Chartered Pioneer Bank-to-Wallet Payments",
+      "body": "Ant International and Standard Chartered are testing a new bank-to-wallet payment system that could transform digital finance by enhancing the direct transfer of funds to digital wallets using ISO 20022 standards. This innovation promises greater convenience and security for users.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital currency transaction was for a pizza? In 2010, a programmer bought two pizzas for 10,000 bitcoins, a deal worth over $300 million at today's rates!",
+    "text": "Did you know that the first digital currency transaction was for a pizza? In 2010, 10,000 bitcoins were used to purchase two pizzas, marking a monumental moment in digital currency history.",
     "source": "bitcoin.org"
   }
 }
