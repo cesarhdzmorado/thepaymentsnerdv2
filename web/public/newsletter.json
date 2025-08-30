@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "TransUnion Reports Major Data Breach Impacting 4.4 Million",
-      "body": "TransUnion, a key player in credit reporting, has revealed a data breach affecting over 4.4 million consumers. This breach, exposing sensitive personal data, underscores the persistent security challenges in the financial sector. It raises alarms about potential identity theft and fraud, pressing the need for enhanced data protection measures.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Google Cloud Enters Blockchain Arena, Challenges Stripe and Circle",
-      "body": "Google Cloud is stepping into the blockchain space with its new Universal Ledger Layer-1, aiming to provide a neutral infrastructure for financial services. This move sets Google Cloud up as a formidable competitor to fintech giants like Stripe and Circle, potentially reshaping financial technology dynamics.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Finastra and Circle Forge Alliance for Stablecoin Payments",
-      "body": "Finastra has teamed up with Circle to incorporate stablecoin settlements in cross-border payments for banks. This partnership promises to boost transaction efficiency and cut costs, leveraging the stability of stablecoins. It marks a significant step towards modernizing international payment systems.",
-      "source": "Finextra"
-    },
-    {
-      "title": "CFTC Sets New Rules for Non-US Crypto Exchanges",
-      "body": "The CFTC has rolled out a new registration framework for non-US crypto exchanges. This regulatory move allows these platforms to access the U.S. market, potentially broadening the integration of global crypto assets into the American financial ecosystem.",
+      "title": "European Commission Levies Modest Fine on Google's AdTech",
+      "body": "The European Commission has decided to impose a 'modest' fine on Google's AdTech operations, steering clear of demanding a divestiture. This decision, while less severe than the previous 4.3 billion euros fine for other violations, underscores the ongoing regulatory focus on major tech entities in Europe, affecting market dynamics and compliance standards.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Affirm Sees Explosive Growth with 97% Increase in Card Users",
-      "body": "Affirm has reported a dramatic 97% increase in active card users, with gross merchandise volumes surging to $10.4 billion. This growth highlights the rising popularity of BNPL schemes, signaling a shift in consumer payment preferences and a booming sector.",
-      "source": "PYMNTS.com"
+      "title": "CaixaBank Introduces Installment Payments for Apple Pay in Spain",
+      "body": "CaixaBank Payments & Consumer is revolutionizing the Spanish payment scene by enabling installment payments via Apple Pay. Managing over 34 million cards, this strategic move not only enhances consumer financing options but also sets a new standard for payment flexibility in the region, potentially influencing consumer spending behaviors.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Finastra and Circle Partner to Enhance Cross-Border Payments",
+      "body": "In a significant move for global finance, Finastra has teamed up with Circle to enable stablecoin settlements in cross-border payments. This partnership aims to boost the operational efficiency of banks and financial institutions, marking a pivotal step towards integrating digital currencies into mainstream financial services.",
+      "source": "Finextra"
+    },
+    {
+      "title": "India Expands Credit Access Using Domestic Digital Payments Network",
+      "body": "India is capitalizing on its homegrown digital payments infrastructure to broaden access to credit, particularly through efficient short-term loan offerings by banks. This strategic use of digital platforms is poised to significantly enhance financial inclusion across the nation, setting a benchmark for digital finance.",
+      "source": "Financial Times"
+    },
+    {
+      "title": "Stablecoin Platform Rain Secures $58 Million in Series B Funding",
+      "body": "Rain, a burgeoning stablecoin platform, has raised $58 million in a Series B round led by Sapphire Ventures. This investment highlights the increasing confidence in stablecoin technologies, which are crucial for the evolution of digital transactions and the broader financial landscape.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex credit systems we use today.",
-    "source": "history.com"
+    "text": "Did you know that the first Apple Pay transaction was made by Eddy Cue, Apple's senior vice president, at a Whole Foods in Cupertino on October 20, 2014?",
+    "source": "apple.com"
   }
 }
