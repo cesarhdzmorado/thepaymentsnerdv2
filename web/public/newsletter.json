@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "European Commission Levies Modest Fine on Google's AdTech",
-      "body": "The European Commission has decided to impose a 'modest' fine on Google's AdTech operations, steering clear of demanding a divestiture. This decision, while less severe than the previous 4.3 billion euros fine for other violations, underscores the ongoing regulatory focus on major tech entities in Europe, affecting market dynamics and compliance standards.",
+      "title": "Caixabank Rolls Out Apple Pay Installments in Spain",
+      "body": "Caixabank has introduced installment payments through Apple Pay, a strategic enhancement that taps into its 34 million cardholders and 16 million customers. This development not only boosts consumer financing options but also sets a new benchmark in Europe's digital payments sphere, potentially inspiring similar moves across the industry.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Finastra and Circle Forge Deal for Stablecoin Cross-Border Payments",
+      "body": "In a groundbreaking move, Finastra has teamed up with Circle to integrate stablecoin settlements into cross-border payments. This collaboration leverages blockchain technology to potentially slash costs and streamline efficiencies in international transactions, marking a significant evolution in financial trade.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Rain Secures $58 Million for Stablecoin Expansion",
+      "body": "Rain, a burgeoning stablecoin platform, has clinched $58 million in Series B funding led by Sapphire Ventures. This investment highlights the escalating confidence in stablecoin technologies, poised to reshape digital finance strategies worldwide.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Swedbank to Acquire Barclays' Stake in Entercard, Boosting Nordic Presence",
+      "body": "Swedbank is set to purchase Barclays' stake in Entercard for $275 million, a strategic acquisition that bolsters its card services and consolidates its market dominance in the Nordic region. This move could significantly alter the competitive landscape in Nordic banking.",
+      "source": "Finextra"
+    },
+    {
+      "title": "European Commission Imposes Modest Fine on Google's AdTech",
+      "body": "The European Commission has decided on a relatively modest fine for Google's AdTech business, opting not to require a business sell-off. This decision could signal a more nuanced approach to antitrust issues within the tech sector, potentially influencing future regulatory actions across Europe.",
       "source": "PYMNTS.com"
-    },
-    {
-      "title": "CaixaBank Introduces Installment Payments for Apple Pay in Spain",
-      "body": "CaixaBank Payments & Consumer is revolutionizing the Spanish payment scene by enabling installment payments via Apple Pay. Managing over 34 million cards, this strategic move not only enhances consumer financing options but also sets a new standard for payment flexibility in the region, potentially influencing consumer spending behaviors.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Finastra and Circle Partner to Enhance Cross-Border Payments",
-      "body": "In a significant move for global finance, Finastra has teamed up with Circle to enable stablecoin settlements in cross-border payments. This partnership aims to boost the operational efficiency of banks and financial institutions, marking a pivotal step towards integrating digital currencies into mainstream financial services.",
-      "source": "Finextra"
-    },
-    {
-      "title": "India Expands Credit Access Using Domestic Digital Payments Network",
-      "body": "India is capitalizing on its homegrown digital payments infrastructure to broaden access to credit, particularly through efficient short-term loan offerings by banks. This strategic use of digital platforms is poised to significantly enhance financial inclusion across the nation, setting a benchmark for digital finance.",
-      "source": "Financial Times"
-    },
-    {
-      "title": "Stablecoin Platform Rain Secures $58 Million in Series B Funding",
-      "body": "Rain, a burgeoning stablecoin platform, has raised $58 million in a Series B round led by Sapphire Ventures. This investment highlights the increasing confidence in stablecoin technologies, which are crucial for the evolution of digital transactions and the broader financial landscape.",
-      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Apple Pay transaction was made by Eddy Cue, Apple's senior vice president, at a Whole Foods in Cupertino on October 20, 2014?",
-    "source": "apple.com"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
