@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Caixabank Rolls Out Apple Pay Installments in Spain",
-      "body": "Caixabank has introduced installment payments through Apple Pay, a strategic enhancement that taps into its 34 million cardholders and 16 million customers. This development not only boosts consumer financing options but also sets a new benchmark in Europe's digital payments sphere, potentially inspiring similar moves across the industry.",
+      "title": "UK Open Banking Hits Milestone with 15 Million Users",
+      "body": "In July, open banking in the UK reached a significant milestone, serving over 15 million users, nearly one-third of the adult population. This surge underscores a robust shift towards financial transparency and personalized banking solutions, setting a benchmark for global banking innovation.",
       "source": "Finextra"
     },
     {
-      "title": "Finastra and Circle Forge Deal for Stablecoin Cross-Border Payments",
-      "body": "In a groundbreaking move, Finastra has teamed up with Circle to integrate stablecoin settlements into cross-border payments. This collaboration leverages blockchain technology to potentially slash costs and streamline efficiencies in international transactions, marking a significant evolution in financial trade.",
+      "title": "US Department of Commerce Embraces Blockchain for Data",
+      "body": "The US Department of Commerce is pioneering the use of blockchain by partnering with Chainlink and Pyth to publish macroeconomic data, including GDP figures. This initiative not only enhances data transparency but also sets a precedent for governmental adoption of decentralized technologies.",
       "source": "Finextra"
     },
     {
-      "title": "Rain Secures $58 Million for Stablecoin Expansion",
-      "body": "Rain, a burgeoning stablecoin platform, has clinched $58 million in Series B funding led by Sapphire Ventures. This investment highlights the escalating confidence in stablecoin technologies, poised to reshape digital finance strategies worldwide.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Swedbank to Acquire Barclays' Stake in Entercard, Boosting Nordic Presence",
-      "body": "Swedbank is set to purchase Barclays' stake in Entercard for $275 million, a strategic acquisition that bolsters its card services and consolidates its market dominance in the Nordic region. This move could significantly alter the competitive landscape in Nordic banking.",
-      "source": "Finextra"
-    },
-    {
-      "title": "European Commission Imposes Modest Fine on Google's AdTech",
-      "body": "The European Commission has decided on a relatively modest fine for Google's AdTech business, opting not to require a business sell-off. This decision could signal a more nuanced approach to antitrust issues within the tech sector, potentially influencing future regulatory actions across Europe.",
+      "title": "India Expands UPI Use to Boost Small Business Credit",
+      "body": "The National Payments Corporation of India (NPCI) is leveraging its Unified Payments Interface (UPI) to facilitate short-term loans for small businesses, aiming to enhance financial inclusion. This move capitalizes on India's advanced digital payments infrastructure to support economic growth.",
       "source": "PYMNTS.com"
+    },
+    {
+      "title": "CaixaBank Launches Installment Payments via Apple Pay in Spain",
+      "body": "CaixaBank Payments & Consumer now supports installment payments through Apple Pay, catering to the rising demand for flexible payment options in Spain. This strategic move is poised to strengthen CaixaBank's dominance in the Iberian payment market.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Rain's $58 Million Funding Boosts Stablecoin Market Confidence",
+      "body": "Stablecoin platform Rain has secured $58 million in Series B funding, led by Sapphire Ventures. This substantial investment highlights growing confidence in stablecoin technologies as a means to ensure more stable digital transactions.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "text": "Did you know? The first item ever purchased online was a Sting CD in 1994.",
     "source": "history.com"
   }
 }
