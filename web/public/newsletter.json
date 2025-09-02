@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "UK Open Banking Hits Milestone with 15 Million Users",
-      "body": "In July, open banking in the UK reached a significant milestone, serving over 15 million users, nearly one-third of the adult population. This surge underscores a robust shift towards financial transparency and personalized banking solutions, setting a benchmark for global banking innovation.",
-      "source": "Finextra"
-    },
-    {
-      "title": "US Department of Commerce Embraces Blockchain for Data",
-      "body": "The US Department of Commerce is pioneering the use of blockchain by partnering with Chainlink and Pyth to publish macroeconomic data, including GDP figures. This initiative not only enhances data transparency but also sets a precedent for governmental adoption of decentralized technologies.",
-      "source": "Finextra"
-    },
-    {
-      "title": "India Expands UPI Use to Boost Small Business Credit",
-      "body": "The National Payments Corporation of India (NPCI) is leveraging its Unified Payments Interface (UPI) to facilitate short-term loans for small businesses, aiming to enhance financial inclusion. This move capitalizes on India's advanced digital payments infrastructure to support economic growth.",
+      "title": "Revolut Eyes $75 Billion Valuation in Secondary Share Sale",
+      "body": "Revolut is orchestrating a secondary share sale that could elevate its valuation to a staggering $75 billion. This strategic move, allowing employees to liquidate up to 20% of their holdings, not only highlights Revolut's exponential growth but also solidifies its status as the UK's top fintech unicorn. This sale is pivotal as it prepares the company for further expansion and invites new investors.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "CaixaBank Launches Installment Payments via Apple Pay in Spain",
-      "body": "CaixaBank Payments & Consumer now supports installment payments through Apple Pay, catering to the rising demand for flexible payment options in Spain. This strategic move is poised to strengthen CaixaBank's dominance in the Iberian payment market.",
+      "title": "Bank of England Partners with Accenture to Upgrade Payment Systems",
+      "body": "In a significant overhaul, the Bank of England, alongside Accenture, has modernized a key component of the UK's payment infrastructure. This enhancement is part of a broader initiative to boost the efficiency and reliability of financial transactions across the nation. For payments professionals, this means faster and more secure transactions, setting a new standard in the industry.",
       "source": "Finextra"
     },
     {
-      "title": "Rain's $58 Million Funding Boosts Stablecoin Market Confidence",
-      "body": "Stablecoin platform Rain has secured $58 million in Series B funding, led by Sapphire Ventures. This substantial investment highlights growing confidence in stablecoin technologies as a means to ensure more stable digital transactions.",
+      "title": "UK's Open Banking User Base Hits 15 Million Milestone",
+      "body": "Open banking in the UK has reached a new zenith with 15 million users, covering nearly one-third of the adult population. This surge underscores the transformative impact of open banking on financial services, fostering innovation and enhancing consumer choice. The widespread adoption could reshape competitive dynamics and consumer interactions in the financial sector.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Strategy Targets Historic Crypto Listing on S&P 500",
+      "body": "Strategy is poised to become the first crypto-centric company listed on the S&P 500, following a robust financial year with $10 billion in net income. This potential listing not only marks a significant milestone for cryptocurrency's acceptance in mainstream finance but also signals new investment opportunities and market dynamics for financial professionals.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Wise Contemplates Strategic UK Banking License Acquisition",
+      "body": "Wise is considering a major strategic move by applying for a UK banking license, aiming to expand its global money movement network. This step could significantly enhance Wise's service offerings and competitive position, indicating a shift towards more integrated financial services within the payments industry.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first item ever purchased online was a Sting CD in 1994.",
-    "source": "history.com"
+    "text": "Did you know that the first ATM was installed in London in 1967? This revolutionized how consumers accessed their bank accounts, paving the way for the modern payments landscape.",
+    "source": "historical-uk-banking-facts.com"
   }
 }
