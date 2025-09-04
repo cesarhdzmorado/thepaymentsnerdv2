@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Stripe Protests JPMorgan's New Data Fees to CFPB",
-      "body": "Stripe has raised concerns with the Consumer Financial Protection Bureau regarding JPMorgan's imposition of data access fees. This dispute underscores a broader clash between fintech innovators and traditional banks over the principles of data accessibility and monetization, potentially influencing future regulatory frameworks.",
-      "source": "PYMNTS.com"
+      "title": "FINRA Probes Former Synapse Executives Amid Fintech Scrutiny",
+      "body": "The Financial Industry Regulatory Authority (FINRA) is investigating two former executives of Synapse Financial Technologies for alleged misconduct. This probe into the defunct banking-as-a-service provider underscores the heightened regulatory focus on the fintech sector, potentially influencing compliance standards across the industry.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Kapital Hits $1.3 Billion Valuation, Becomes AI Unicorn",
-      "body": "Kapital, a Mexico City-based fintech, has achieved a $1.3 billion valuation, marking it as Latin America's first AI unicorn. This milestone, reached after a $100 million Series C funding, highlights the burgeoning role of AI in reshaping the fintech landscape across emerging markets.",
-      "source": "PYMNTS.com"
+      "title": "Klarna Boosts US Presence with Expanded Debit Card Offerings",
+      "body": "Klarna is strategically expanding its debit card services in the U.S., tapping into the growing consumer shift from credit to debit, which has seen a 67% increase in preference. This move is poised to strengthen Klarna's market position and adapt to evolving payment preferences.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Bank of England and Accenture Overhaul UK Payments System",
-      "body": "The Bank of England has partnered with Accenture to modernize a key component of the UK's payments infrastructure. This upgrade is part of a larger initiative to boost transaction efficiency and security, setting a precedent for future enhancements in global financial systems.",
-      "source": "Finextra"
+      "title": "SEC and CFTC Join Forces to Enhance Crypto Trading Platforms",
+      "body": "In a groundbreaking regulatory collaboration, the SEC and CFTC are aligning to allow registered exchanges to offer spot crypto trading. This initiative aims to diversify trading options and improve transparency, marking a significant development in the regulatory landscape for cryptocurrency.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Zopa Acquires Rvvup, Boosts Payment Automation",
-      "body": "Zopa, a leading UK digital bank, has acquired Rvvup, an AI-driven payment automation firm. This strategic move aims to enhance Zopa's technological prowess and broaden its offerings in the competitive digital banking arena, signaling a shift towards more integrated financial services.",
-      "source": "Finextra"
+      "title": "PayPal Ventures Leads Investment in AI Firm Kite",
+      "body": "PayPal Ventures has spearheaded an $18 million investment in Kite, an AI firm focused on autonomous payments. This move highlights PayPal's commitment to integrating advanced AI technologies within the payments industry, setting the stage for future innovations in autonomous financial transactions.",
+      "source": "finextra.com"
     },
     {
-      "title": "US Banks May Hide Troubled Loans Under New Regulations",
-      "body": "New US regulations may permit banks to obscure details of troubled loans, a significant shift following intense lobbying. This change could obscure the real financial health of institutions, impacting transparency and trust among investors and the public.",
-      "source": "Financial Times"
+      "title": "UK Sees Major Shift Towards Digital Payments and Mobile Wallets",
+      "body": "A recent study by Link shows that less than half of UK adults now use physical wallets, signaling a significant move towards digital payment methods. This trend is reshaping consumer behaviors and could drive further innovations in mobile payment solutions.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first ATM was installed in London in 1967, revolutionizing how consumers accessed their bank accounts?",
-    "source": "history.com"
+    "text": "Did you know that fewer than half of UK adults now carry a physical wallet? The shift towards digital payments is transforming everyday transactions.",
+    "source": "finextra.com"
   }
 }
