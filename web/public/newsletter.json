@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "FINRA Probes Former Synapse Executives Amid Fintech Scrutiny",
-      "body": "The Financial Industry Regulatory Authority (FINRA) is investigating two former executives of Synapse Financial Technologies for alleged misconduct. This probe into the defunct banking-as-a-service provider underscores the heightened regulatory focus on the fintech sector, potentially influencing compliance standards across the industry.",
-      "source": "pymnts.com"
+      "title": "Stripe and Paradigm Unveil Blockchain Venture for Payments",
+      "body": "Stripe and Paradigm have launched Tempo, a new blockchain company aimed at revolutionizing real-world payments with stablecoins. Led by Paradigm Co-Founder Matt Huang, Tempo seeks to boost transaction efficiency through blockchain technology, potentially reshaping the digital payments ecosystem.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Klarna Boosts US Presence with Expanded Debit Card Offerings",
-      "body": "Klarna is strategically expanding its debit card services in the U.S., tapping into the growing consumer shift from credit to debit, which has seen a 67% increase in preference. This move is poised to strengthen Klarna's market position and adapt to evolving payment preferences.",
-      "source": "pymnts.com"
+      "title": "Bank of England and BIS Innovate with ISO 20022 Analytical Tool",
+      "body": "The Bank of England and the BIS Innovation Hub have developed a cutting-edge tool to analyze data from the ISO 20022 payments messaging protocol. This tool is designed to enhance global financial transaction insights, offering significant implications for payment systems worldwide.",
+      "source": "Finextra"
     },
     {
-      "title": "SEC and CFTC Join Forces to Enhance Crypto Trading Platforms",
-      "body": "In a groundbreaking regulatory collaboration, the SEC and CFTC are aligning to allow registered exchanges to offer spot crypto trading. This initiative aims to diversify trading options and improve transparency, marking a significant development in the regulatory landscape for cryptocurrency.",
-      "source": "pymnts.com"
+      "title": "Ant International Launches AI-Driven Payments Technology",
+      "body": "Ant International's Antom unit has introduced a groundbreaking AI payments technology that supports diverse payment methods. This innovation aims to simplify payment processes and improve user experiences, marking a significant step forward in digital payment solutions.",
+      "source": "Finextra"
     },
     {
-      "title": "PayPal Ventures Leads Investment in AI Firm Kite",
-      "body": "PayPal Ventures has spearheaded an $18 million investment in Kite, an AI firm focused on autonomous payments. This move highlights PayPal's commitment to integrating advanced AI technologies within the payments industry, setting the stage for future innovations in autonomous financial transactions.",
-      "source": "finextra.com"
+      "title": "Utila's Market Value Soars with Rising Stablecoin Demand",
+      "body": "Utila has seen its valuation triple following a $22 million Series A extension, driven by burgeoning demand for stablecoin infrastructure. This positions Utila as a pivotal player in the digital currency landscape, highlighting the growing importance of stablecoin ecosystems.",
+      "source": "Finextra"
     },
     {
-      "title": "UK Sees Major Shift Towards Digital Payments and Mobile Wallets",
-      "body": "A recent study by Link shows that less than half of UK adults now use physical wallets, signaling a significant move towards digital payment methods. This trend is reshaping consumer behaviors and could drive further innovations in mobile payment solutions.",
-      "source": "finextra.com"
+      "title": "Airwallex Acquires OpenPay to Rival Stripe Billing",
+      "body": "In a strategic move to bolster its business payments services, Airwallex has acquired OpenPay. This acquisition is aimed at competing directly with Stripe Billing, signaling intensifying competition in the online billing and payments sector.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that fewer than half of UK adults now carry a physical wallet? The shift towards digital payments is transforming everyday transactions.",
-    "source": "finextra.com"
+    "text": "Did you know that the ISO 20022 standard, now being analyzed by the Bank of England and BIS, is set to become the global standard for high-value payment systems by 2025?",
+    "source": "Finextra"
   }
 }
