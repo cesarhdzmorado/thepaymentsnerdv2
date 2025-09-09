@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Stripe Launches Tempo Blockchain for Enhanced Stablecoin Payments",
-      "body": "Stripe, in partnership with Paradigm, has introduced the Tempo blockchain, a new platform designed to streamline stablecoin transactions. This move could revolutionize the efficiency and scalability of crypto payments, positioning Stripe as a key player in the integration of cryptocurrency within financial services. The initiative underscores Stripe's commitment to leveraging blockchain technology to expand its market influence.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Bank of England and BIS Innovate with New ISO 20022 Data Tool",
-      "body": "The Bank of England, together with the BIS Innovation Hub, has developed a cutting-edge tool to analyze ISO 20022 standard data, enhancing transaction data usability and regulatory compliance. This tool is set to transform financial decision-making processes, offering profound implications for global financial stability and operational efficiency in the banking sector.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Robinhood Joins S&P 500, Signaling Major Market Milestone",
-      "body": "Robinhood Markets has secured a spot in the S&P 500, replacing Caesars Entertainment, effective September 22. This inclusion not only highlights Robinhood's growth but also boosts its market credibility and investor appeal. For payments professionals, this development signals a shift in the investment landscape, emphasizing fintech's rising influence in mainstream financial indices.",
+      "title": "Amazon Pours $25 Million into Latin American Delivery Giant Rappi",
+      "body": "Amazon's strategic $25 million investment in Rappi, a key player in Latin America's last-mile delivery sector, could see Amazon acquiring up to 12% of the company. This move is pivotal as it deepens Amazon's logistics footprint in a rapidly growing market, potentially reshaping regional e-commerce dynamics.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Ant International Unveils Advanced Agentic AI Payment Technology",
-      "body": "Ant International's Antom unit has launched a groundbreaking agentic AI technology that enhances payment flexibility across traditional and alternative methods. This innovation could significantly alter the payment processing landscape, offering new efficiencies and setting a new standard for transaction management in the fintech sector.",
+      "title": "Irish Banks Counter Revolut with New P2P Payment App, Zip Pay",
+      "body": "Ireland's leading retail banks are launching Zip Pay, a mobile payment service, in a bold move to reclaim market share from fintech disruptors like Revolut. This collaboration among traditional banks underscores their strategic pivot towards digital innovation in the competitive payment landscape.",
       "source": "Finextra"
     },
     {
-      "title": "Utila's Valuation Skyrockets Amid Surging Stablecoin Infrastructure Demand",
-      "body": "Utila has dramatically increased its valuation, securing a $22 million Series A extension as demand for stablecoin infrastructure surges. This growth not only highlights the burgeoning interest in stablecoins but also positions Utila as a pivotal player in the digital assets operations space, with significant implications for market dynamics and investment strategies.",
+      "title": "Stripe and Paradigm Roll Out Tempo Blockchain for Stablecoin Transactions",
+      "body": "Stripe, in partnership with Paradigm, has unveiled Tempo, a new blockchain initiative focused on stablecoin payments. This development highlights the increasing reliance on blockchain technology to secure and streamline payment processes, marking a significant advancement in fintech solutions.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Bank of England and BIS Craft New Tool for Enhanced ISO 20022 Data Analysis",
+      "body": "The Bank of England and the BIS Innovation Hub have developed a prototype tool to better analyze payments data via the ISO 20022 protocol. This tool promises to boost the intelligence and efficiency of global financial transactions, setting a new standard in financial data utilization.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Ant International's Antom Unit Innovates with Agentic AI Payments Technology",
+      "body": "Ant International's Antom unit has launched a cutting-edge AI payments technology that supports diverse payment methods. This innovation is set to revolutionize the payment industry by integrating AI more deeply into financial transactions, enhancing both speed and security.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the ISO 20022 standard, now being leveraged by major financial institutions, was originally developed to unify global financial communications, enhancing both transparency and efficiency?",
-    "source": "Finextra"
+    "text": "Did you know that the first Bitcoin ATM was installed in Vancouver, Canada, in 2013? It marked the beginning of a new era in cryptocurrency accessibility.",
+    "source": "history.com"
   }
 }
