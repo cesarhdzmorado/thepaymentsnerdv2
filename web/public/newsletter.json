@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Amazon Pours $25 Million into Latin American Delivery Giant Rappi",
-      "body": "Amazon's strategic $25 million investment in Rappi, a key player in Latin America's last-mile delivery sector, could see Amazon acquiring up to 12% of the company. This move is pivotal as it deepens Amazon's logistics footprint in a rapidly growing market, potentially reshaping regional e-commerce dynamics.",
+      "title": "Marqeta Confirms Mike Milotich as Permanent CEO",
+      "body": "Marqeta, a leader in card issuing for embedded finance, has named Mike Milotich as its permanent CEO. Milotich, previously the interim CEO and CFO, will steer Marqeta through its next phase of innovation and market expansion. His leadership is pivotal as Marqeta aims to solidify its position in the rapidly evolving fintech landscape.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Irish Banks Counter Revolut with New P2P Payment App, Zip Pay",
-      "body": "Ireland's leading retail banks are launching Zip Pay, a mobile payment service, in a bold move to reclaim market share from fintech disruptors like Revolut. This collaboration among traditional banks underscores their strategic pivot towards digital innovation in the competitive payment landscape.",
+      "title": "Rainforest Secures $29 Million for Embedded Payment Solutions",
+      "body": "Embedded payment platform Rainforest has raised $29 million in Series B funding, led by Matrix Partners and Infinity Ventures. This capital injection highlights the burgeoning interest in fintech solutions that integrate financial transactions seamlessly into software platforms, signaling a robust growth trajectory for embedded finance.",
       "source": "Finextra"
     },
     {
-      "title": "Stripe and Paradigm Roll Out Tempo Blockchain for Stablecoin Transactions",
-      "body": "Stripe, in partnership with Paradigm, has unveiled Tempo, a new blockchain initiative focused on stablecoin payments. This development highlights the increasing reliance on blockchain technology to secure and streamline payment processes, marking a significant advancement in fintech solutions.",
+      "title": "Mastercard Introduces On-Demand Decisioning Tool for Banks",
+      "body": "Mastercard has launched a new On-Demand Decisioning tool to provide financial institutions with real-time control over authorization decisions. This innovation is set to transform transaction management globally, offering banks unprecedented flexibility and responsiveness in financial services technology.",
       "source": "Finextra"
     },
     {
-      "title": "Bank of England and BIS Craft New Tool for Enhanced ISO 20022 Data Analysis",
-      "body": "The Bank of England and the BIS Innovation Hub have developed a prototype tool to better analyze payments data via the ISO 20022 protocol. This tool promises to boost the intelligence and efficiency of global financial transactions, setting a new standard in financial data utilization.",
+      "title": "Stripe Launches Tempo Blockchain for Enhanced Stablecoin Payments",
+      "body": "Stripe, in partnership with Paradigm, has unveiled Tempo, a new blockchain initiative designed to streamline stablecoin transactions. This move could revolutionize digital payments, positioning Stripe at the forefront of blockchain adoption and setting new benchmarks for stablecoin usage in the financial sector.",
       "source": "Finextra"
     },
     {
-      "title": "Ant International's Antom Unit Innovates with Agentic AI Payments Technology",
-      "body": "Ant International's Antom unit has launched a cutting-edge AI payments technology that supports diverse payment methods. This innovation is set to revolutionize the payment industry by integrating AI more deeply into financial transactions, enhancing both speed and security.",
+      "title": "BBVA Partners with Ripple for Advanced Digital Asset Management",
+      "body": "BBVA has teamed up with Ripple to enhance its digital asset management using Ripple's cutting-edge custody technology. This partnership marks a significant advancement in integrating blockchain technology within traditional banking, potentially reshaping how financial institutions manage digital assets.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin ATM was installed in Vancouver, Canada, in 2013? It marked the beginning of a new era in cryptocurrency accessibility.",
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
     "source": "history.com"
   }
 }
