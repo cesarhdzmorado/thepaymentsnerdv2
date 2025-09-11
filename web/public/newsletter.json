@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Marqeta Confirms Mike Milotich as Permanent CEO",
-      "body": "Marqeta, a leader in card issuing for embedded finance, has named Mike Milotich as its permanent CEO. Milotich, previously the interim CEO and CFO, will steer Marqeta through its next phase of innovation and market expansion. His leadership is pivotal as Marqeta aims to solidify its position in the rapidly evolving fintech landscape.",
+      "title": "SEC Chairman Pushes for Clear Crypto Regulations",
+      "body": "SEC Chairman Paul Atkins emphasized the need for clear regulatory guidelines for cryptocurrencies at the OECD Roundtable in Paris, signaling a shift from sporadic enforcement to structured oversight. This move could significantly impact how crypto businesses operate and attract more stable investments into the sector.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Rainforest Secures $29 Million for Embedded Payment Solutions",
-      "body": "Embedded payment platform Rainforest has raised $29 million in Series B funding, led by Matrix Partners and Infinity Ventures. This capital injection highlights the burgeoning interest in fintech solutions that integrate financial transactions seamlessly into software platforms, signaling a robust growth trajectory for embedded finance.",
+      "title": "Klarna's IPO Success Reinforces BNPL Market Strength",
+      "body": "Klarna's IPO saw a 15% increase in share value on its debut, underscoring strong investor confidence in the Buy Now, Pay Later sector. This successful launch not only marks a rebound for Klarna but also solidifies BNPL's viability as a mainstream financial service.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Mastercard Launches Agent Pay, Revolutionizing Agentic Payments",
+      "body": "Mastercard has introduced a new payment technology, Agent Pay, with Citi and US Bank as early adopters. This innovation is poised to transform payment methodologies globally, enhancing transaction efficiency and security.",
       "source": "Finextra"
     },
     {
-      "title": "Mastercard Introduces On-Demand Decisioning Tool for Banks",
-      "body": "Mastercard has launched a new On-Demand Decisioning tool to provide financial institutions with real-time control over authorization decisions. This innovation is set to transform transaction management globally, offering banks unprecedented flexibility and responsiveness in financial services technology.",
+      "title": "UK's FCA to Remove Contactless Payment Caps",
+      "body": "The UK's Financial Conduct Authority is proposing to eliminate limits on contactless payments, a move that could expand transaction sizes and speed, reflecting higher consumer trust and advancements in payment security technologies.",
       "source": "Finextra"
     },
     {
-      "title": "Stripe Launches Tempo Blockchain for Enhanced Stablecoin Payments",
-      "body": "Stripe, in partnership with Paradigm, has unveiled Tempo, a new blockchain initiative designed to streamline stablecoin transactions. This move could revolutionize digital payments, positioning Stripe at the forefront of blockchain adoption and setting new benchmarks for stablecoin usage in the financial sector.",
-      "source": "Finextra"
-    },
-    {
-      "title": "BBVA Partners with Ripple for Advanced Digital Asset Management",
-      "body": "BBVA has teamed up with Ripple to enhance its digital asset management using Ripple's cutting-edge custody technology. This partnership marks a significant advancement in integrating blockchain technology within traditional banking, potentially reshaping how financial institutions manage digital assets.",
+      "title": "Revolut's New Pay by Bank Feature to Sidestep Card Networks",
+      "body": "Revolut has launched a Pay by Bank feature, enabling direct bank account withdrawals and bypassing traditional card networks. This could lead to lower transaction costs and faster processing times, reshaping the payments landscape for merchants and consumers.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
+    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was made of cardboard!",
     "source": "history.com"
   }
 }
