@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Early Warning Services and The Clearing House Eye Stablecoin Integration",
-      "body": "Early Warning Services and The Clearing House are exploring stablecoin projects aimed at integrating digital currencies with retail banking. This move could significantly enhance transaction efficiency and security, marking a pivotal shift towards digital currency adoption among mainstream financial institutions.",
+      "title": "Mexico's Antitrust Authority Holds Fire on Amazon and Mercado Libre",
+      "body": "Mexico's antitrust watchdog, Cofece, has decided not to impose corrective measures on Amazon and Mercado Libre, despite finding that they create competitive barriers. This decision comes after an investigation into their combined 85% market share in the eCommerce sector. The move raises concerns about the effectiveness of regulatory oversight in major digital markets, potentially affecting market dynamics and competition.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Bank of England Invites Industry Leaders to Shape Payment Systems",
-      "body": "The Bank of England is establishing a new Retail Payments Infrastructure Board, seeking input from leaders across banks, fintechs, and merchants. This initiative aims to bolster the UK's payment systems, ensuring they remain robust and efficient to support the financial sector.",
+      "title": "Tether to Introduce New US-Regulated Stablecoin",
+      "body": "Tether is gearing up to launch a new dollar-backed stablecoin, USAT, compliant with the U.S. GENIUS Act. This move is set to reshape the stablecoin landscape by offering a regulated, secure financial instrument for businesses and institutions, enhancing trust and stability in digital transactions.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "FTC Probes Amazon and Google's Ad Transparency",
+      "body": "The FTC is investigating Amazon and Google for potential opacity in their advertising practices. This scrutiny could lead to major changes in how these tech giants disclose ad terms and pricing, impacting their revenue streams and setting a precedent for transparency in digital advertising.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Bank of England to Enhance UK Payment Systems with New Board",
+      "body": "The Bank of England is establishing a new Retail Payments Infrastructure Board, seeking senior industry figures to drive innovation. This initiative aims to improve the efficiency and security of the UK's payment systems, potentially revolutionizing payment solutions across sectors.",
       "source": "Finextra"
     },
     {
-      "title": "Alipay Integrates AI for Seamless Coffee Orders with Luckin",
-      "body": "Alipay has partnered with Luckin Coffee to deploy its AI agent technology, enabling customers to order and pay via a conversational AI interface. This integration not only streamlines transactions but also enhances the customer experience, showcasing the potential of AI in daily commerce.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Paytently and Mastercard Launch Open Banking Payment Service",
-      "body": "In a significant move for open banking, Paytently has teamed up with Mastercard to introduce an account-to-account payment service. This collaboration aims to streamline payment processing, cut costs, and boost security, driving forward the adoption of open banking technologies.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Citi and US Bank Pioneer Mastercard's New Agent Pay Technology",
-      "body": "Citi and US Bank are the first to provide their customers access to Mastercard's innovative Agent Pay technology. This service promises to transform payment processing by offering more personalized and efficient transaction experiences, with plans for a global rollout.",
+      "title": "Alipay and Luckin Coffee Pioneer AI in Consumer Payments",
+      "body": "Alipay has partnered with Luckin, a Singaporean mobile coffee ordering app, to integrate its AI agent technology. This collaboration represents a significant advancement in using AI to simplify consumer transactions, enhancing the payment experience and setting a trend in retail technology.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
-    "source": "history.com"
+    "text": "Did you know that the U.S. GENIUS Act, passed in July 2025, is the first federal law to establish a regulatory framework for stablecoins? This groundbreaking legislation is set to catalyze innovation in banking and retail sectors.",
+    "source": "Finextra"
   }
 }
