@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Mexico's Antitrust Authority Holds Fire on Amazon and Mercado Libre",
-      "body": "Mexico's antitrust watchdog, Cofece, has decided not to impose corrective measures on Amazon and Mercado Libre, despite finding that they create competitive barriers. This decision comes after an investigation into their combined 85% market share in the eCommerce sector. The move raises concerns about the effectiveness of regulatory oversight in major digital markets, potentially affecting market dynamics and competition.",
+      "title": "Mexico's Antitrust Authority Won't Penalize Amazon and Mercado Libre",
+      "body": "Mexico's Cofece has decided not to enforce corrective measures against Amazon and Mercado Libre, despite acknowledging their creation of competitive barriers in the eCommerce market. This decision, affecting two companies with an 85% market share, underscores the challenges of applying traditional antitrust laws in the digital economy.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Tether to Introduce New US-Regulated Stablecoin",
-      "body": "Tether is gearing up to launch a new dollar-backed stablecoin, USAT, compliant with the U.S. GENIUS Act. This move is set to reshape the stablecoin landscape by offering a regulated, secure financial instrument for businesses and institutions, enhancing trust and stability in digital transactions.",
+      "title": "Apple's iPhone Air Launch in China Delayed by Regulatory Issues",
+      "body": "Apple has postponed the launch of its iPhone Air in China due to pending regulatory approvals for its eSIM technology. This delay highlights the complexities of navigating regulatory landscapes in crucial markets, potentially affecting Apple's market timing and competitive edge in the region.",
       "source": "PYMNTS.com"
     },
     {
       "title": "FTC Probes Amazon and Google's Ad Transparency",
-      "body": "The FTC is investigating Amazon and Google for potential opacity in their advertising practices. This scrutiny could lead to major changes in how these tech giants disclose ad terms and pricing, impacting their revenue streams and setting a precedent for transparency in digital advertising.",
+      "body": "The FTC is investigating Amazon and Google for potential opacity in their advertising practices. This scrutiny could lead to major shifts in how these tech behemoths disclose ad terms and pricing, directly impacting their advertising revenue streams.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Bank of England to Enhance UK Payment Systems with New Board",
-      "body": "The Bank of England is establishing a new Retail Payments Infrastructure Board, seeking senior industry figures to drive innovation. This initiative aims to improve the efficiency and security of the UK's payment systems, potentially revolutionizing payment solutions across sectors.",
+      "title": "GENIUS Act Establishes Federal Stablecoin Regulations",
+      "body": "The U.S. has enacted the GENIUS Act, creating a federal regulatory framework for stablecoins. This landmark legislation is set to foster greater innovation and adoption in the stablecoin sector, influencing both the banking and retail industries.",
       "source": "Finextra"
     },
     {
-      "title": "Alipay and Luckin Coffee Pioneer AI in Consumer Payments",
-      "body": "Alipay has partnered with Luckin, a Singaporean mobile coffee ordering app, to integrate its AI agent technology. This collaboration represents a significant advancement in using AI to simplify consumer transactions, enhancing the payment experience and setting a trend in retail technology.",
+      "title": "Bank of England Forms New Retail Payments Board with Industry Leaders",
+      "body": "The Bank of England is enhancing its payment systems by forming a new Retail Payments Infrastructure Board with leaders from banks, fintechs, and merchants. This move aims to leverage fintech innovations to advance the UK's financial landscape, reflecting the sector's evolving dynamics.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the U.S. GENIUS Act, passed in July 2025, is the first federal law to establish a regulatory framework for stablecoins? This groundbreaking legislation is set to catalyze innovation in banking and retail sectors.",
-    "source": "Finextra"
+    "text": "Did you know that the first item ever purchased on Amazon was a book titled 'Fluid Concepts and Creative Analogies' by Douglas Hofstadter?",
+    "source": "amazon.com"
   }
 }
