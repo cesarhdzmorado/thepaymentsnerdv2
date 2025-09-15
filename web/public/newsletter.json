@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Mexico's Antitrust Authority Won't Penalize Amazon and Mercado Libre",
-      "body": "Mexico's Cofece has decided not to enforce corrective measures against Amazon and Mercado Libre, despite acknowledging their creation of competitive barriers in the eCommerce market. This decision, affecting two companies with an 85% market share, underscores the challenges of applying traditional antitrust laws in the digital economy.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Apple's iPhone Air Launch in China Delayed by Regulatory Issues",
-      "body": "Apple has postponed the launch of its iPhone Air in China due to pending regulatory approvals for its eSIM technology. This delay highlights the complexities of navigating regulatory landscapes in crucial markets, potentially affecting Apple's market timing and competitive edge in the region.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "FTC Probes Amazon and Google's Ad Transparency",
-      "body": "The FTC is investigating Amazon and Google for potential opacity in their advertising practices. This scrutiny could lead to major shifts in how these tech behemoths disclose ad terms and pricing, directly impacting their advertising revenue streams.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "GENIUS Act Establishes Federal Stablecoin Regulations",
-      "body": "The U.S. has enacted the GENIUS Act, creating a federal regulatory framework for stablecoins. This landmark legislation is set to foster greater innovation and adoption in the stablecoin sector, influencing both the banking and retail industries.",
+      "title": "China and Indonesia Launch Cross-Border QR Payment Pilot",
+      "body": "UnionPay International has initiated a cross-border QR payment linkage pilot between China and Indonesia, aiming to streamline transactions and boost financial connectivity. This move leverages QR technology to offer users in both countries a seamless payment experience, potentially setting a precedent for future international payment solutions.",
       "source": "Finextra"
     },
     {
-      "title": "Bank of England Forms New Retail Payments Board with Industry Leaders",
-      "body": "The Bank of England is enhancing its payment systems by forming a new Retail Payments Infrastructure Board with leaders from banks, fintechs, and merchants. This move aims to leverage fintech innovations to advance the UK's financial landscape, reflecting the sector's evolving dynamics.",
+      "title": "Zelle's Parent Company Explores Launching Its Own Stablecoin",
+      "body": "Early Warning Services, the entity behind Zelle, is investigating the potential issuance of a stablecoin. This development could revolutionize digital payments by introducing a bank-backed, stable digital currency, enhancing transaction speed and security.",
+      "source": "Finextra"
+    },
+    {
+      "title": "UK Fintech SumUp Eyes Public Listing at $15 Billion Valuation",
+      "body": "SumUp, a leading UK fintech firm, is considering a public listing that could value it at up to $15 billion. This strategic move aims to fund acquisitions and expand market presence, indicating significant growth and innovation in the fintech landscape.",
+      "source": "Financial Times"
+    },
+    {
+      "title": "Crypto Community Reacts to UK's New Stablecoin Regulations",
+      "body": "The Bank of England's proposal to impose strict regulations on stablecoin ownership has met with strong opposition from the crypto sector. These regulations could make the UK's stablecoin market one of the most tightly regulated globally, affecting crypto businesses' operations.",
+      "source": "Financial Times"
+    },
+    {
+      "title": "Alipay and Luckin Coffee Enhance Retail Experience with AI",
+      "body": "Luckin Coffee has integrated Alipay's agentic AI technology to facilitate conversational interface ordering in Singapore. This collaboration underscores the growing role of AI in enhancing customer service and operational efficiency in the retail industry.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first item ever purchased on Amazon was a book titled 'Fluid Concepts and Creative Analogies' by Douglas Hofstadter?",
-    "source": "amazon.com"
+    "text": "Did you know that the first QR code system was invented in 1994 by Masahiro Hara from the Japanese company Denso Wave?",
+    "source": "denso-wave.com"
   }
 }
