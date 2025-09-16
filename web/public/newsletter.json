@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "China and Indonesia Launch Cross-Border QR Payment Pilot",
-      "body": "UnionPay International has initiated a cross-border QR payment linkage pilot between China and Indonesia, aiming to streamline transactions and boost financial connectivity. This move leverages QR technology to offer users in both countries a seamless payment experience, potentially setting a precedent for future international payment solutions.",
-      "source": "Finextra"
+      "title": "MoonPay Acquires Meso, Bolsters Crypto Finance Capabilities",
+      "body": "MoonPay, a key player in crypto payments, has acquired Meso, a startup founded by former PayPal executives. This move, reported by Finextra, aims to bridge traditional and digital finance, enhancing MoonPay's strategic position in the fintech ecosystem. The acquisition's undisclosed financial details underscore the competitive and secretive nature of fintech mergers.",
+      "source": "finextra.com"
     },
     {
-      "title": "Zelle's Parent Company Explores Launching Its Own Stablecoin",
-      "body": "Early Warning Services, the entity behind Zelle, is investigating the potential issuance of a stablecoin. This development could revolutionize digital payments by introducing a bank-backed, stable digital currency, enhancing transaction speed and security.",
-      "source": "Finextra"
+      "title": "PayPal Enhances P2P Transactions with Personalized Crypto Links",
+      "body": "PayPal has introduced a feature allowing money and cryptocurrency transfers via personalized links, as per Finextra. This innovation simplifies peer-to-peer payments, enabling transactions through various digital communication methods. It's a significant leap towards enhancing user convenience and adapting to the evolving demands of digital finance.",
+      "source": "finextra.com"
     },
     {
-      "title": "UK Fintech SumUp Eyes Public Listing at $15 Billion Valuation",
-      "body": "SumUp, a leading UK fintech firm, is considering a public listing that could value it at up to $15 billion. This strategic move aims to fund acquisitions and expand market presence, indicating significant growth and innovation in the fintech landscape.",
-      "source": "Financial Times"
+      "title": "Saudi Fintech Hala Raises $157 Million, Eyes Expansion",
+      "body": "Hala, a Saudi fintech startup, has secured $157 million in Series B funding, signaling strong investor confidence and potential for regional growth, according to Finextra. This investment boosts Hala's capabilities to scale its services for SMEs, positioning it as a significant player in the Middle Eastern fintech scene.",
+      "source": "finextra.com"
     },
     {
-      "title": "Crypto Community Reacts to UK's New Stablecoin Regulations",
-      "body": "The Bank of England's proposal to impose strict regulations on stablecoin ownership has met with strong opposition from the crypto sector. These regulations could make the UK's stablecoin market one of the most tightly regulated globally, affecting crypto businesses' operations.",
-      "source": "Financial Times"
+      "title": "SumUp Eyes \u00a315 Billion IPO, Targets Expansion",
+      "body": "UK-based SumUp is consulting with investment bankers for a potential IPO next year, potentially valuing the company at \u00a315 billion, reports Finextra. This move highlights SumUp's strong market presence and its strategic intentions to capitalize on the booming digital payments sector.",
+      "source": "finextra.com"
     },
     {
-      "title": "Alipay and Luckin Coffee Enhance Retail Experience with AI",
-      "body": "Luckin Coffee has integrated Alipay's agentic AI technology to facilitate conversational interface ordering in Singapore. This collaboration underscores the growing role of AI in enhancing customer service and operational efficiency in the retail industry.",
-      "source": "Finextra"
+      "title": "Swift and Banks Achieve Breakthrough in AI Fraud Detection",
+      "body": "Swift has doubled its real-time fraud detection rates using AI in a trial with 13 major banks, processing ten million transactions, according to Finextra. This advancement not only enhances security in financial transactions but also sets a new standard in the use of AI for fraud prevention in the banking industry.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first QR code system was invented in 1994 by Masahiro Hara from the Japanese company Denso Wave?",
-    "source": "denso-wave.com"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
