@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "MoonPay Acquires Meso, Bolsters Crypto Finance Capabilities",
-      "body": "MoonPay, a key player in crypto payments, has acquired Meso, a startup founded by former PayPal executives. This move, reported by Finextra, aims to bridge traditional and digital finance, enhancing MoonPay's strategic position in the fintech ecosystem. The acquisition's undisclosed financial details underscore the competitive and secretive nature of fintech mergers.",
-      "source": "finextra.com"
+      "title": "Swiss Banks Forge Ahead with Blockchain for Franc Transactions",
+      "body": "Swiss financial giants like PostFinance, Sygnum, and UBS are advancing their blockchain initiatives with a successful proof of concept for a Swiss franc deposit token. This move could revolutionize financial transactions by integrating digital currency innovations, backed by the stability of a national currency. The Swiss Bankers Association's endorsement could signal a broader adoption of blockchain in mainstream banking.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "PayPal Enhances P2P Transactions with Personalized Crypto Links",
-      "body": "PayPal has introduced a feature allowing money and cryptocurrency transfers via personalized links, as per Finextra. This innovation simplifies peer-to-peer payments, enabling transactions through various digital communication methods. It's a significant leap towards enhancing user convenience and adapting to the evolving demands of digital finance.",
-      "source": "finextra.com"
+      "title": "Google Launches Agent Payments Protocol to Boost AI in Commerce",
+      "body": "Google has unveiled an open protocol that allows AI agents to handle transactions, potentially transforming the commerce landscape. The Agent Payments Protocol could lead to more personalized and efficient shopping experiences, aligning AI capabilities with user and merchant needs. This innovation sets the stage for AI to become a central player in future transactional processes.",
+      "source": "Finextra"
     },
     {
-      "title": "Saudi Fintech Hala Raises $157 Million, Eyes Expansion",
-      "body": "Hala, a Saudi fintech startup, has secured $157 million in Series B funding, signaling strong investor confidence and potential for regional growth, according to Finextra. This investment boosts Hala's capabilities to scale its services for SMEs, positioning it as a significant player in the Middle Eastern fintech scene.",
-      "source": "finextra.com"
+      "title": "Klarna Integrates BNPL Options with Apple Pay for Instore Purchases",
+      "body": "Klarna is set to enhance the shopping experience by offering Buy Now, Pay Later services through Apple Pay at physical retail locations in the UK and US. This partnership not only broadens payment flexibility for consumers but also positions Klarna as a key player in the competitive BNPL market, potentially increasing its user base and transaction volume.",
+      "source": "Finextra"
     },
     {
-      "title": "SumUp Eyes \u00a315 Billion IPO, Targets Expansion",
-      "body": "UK-based SumUp is consulting with investment bankers for a potential IPO next year, potentially valuing the company at \u00a315 billion, reports Finextra. This move highlights SumUp's strong market presence and its strategic intentions to capitalize on the booming digital payments sector.",
-      "source": "finextra.com"
+      "title": "Plaid Strikes Deal with JPMorgan for Enhanced Data Access",
+      "body": "In a landmark agreement, Plaid will pay JPMorgan Chase for access to customer data, marking a significant shift in how financial data is shared between banks and fintech companies. This deal could set a precedent for future data-sharing agreements, emphasizing the importance of collaboration in the fintech ecosystem while addressing privacy and cost concerns.",
+      "source": "Finextra"
     },
     {
-      "title": "Swift and Banks Achieve Breakthrough in AI Fraud Detection",
-      "body": "Swift has doubled its real-time fraud detection rates using AI in a trial with 13 major banks, processing ten million transactions, according to Finextra. This advancement not only enhances security in financial transactions but also sets a new standard in the use of AI for fraud prevention in the banking industry.",
-      "source": "finextra.com"
+      "title": "WorkFusion Secures $45M to Combat Financial Crime with AI",
+      "body": "WorkFusion has raised $45 million to expand its AI-driven solutions for financial crime compliance. This funding highlights the critical role of AI in enhancing regulatory compliance and anti-money laundering efforts, signaling a shift towards more sophisticated, tech-driven approaches in the financial sector's battle against crime.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
-    "source": "history.com"
+    "text": "Did you know that only 0.02% of all transactions on Zelle result in fraud or scam reports? This impressive statistic highlights the platform's robust security measures.",
+    "source": "Finextra"
   }
 }
