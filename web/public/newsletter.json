@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Google and PayPal Announce Major Commerce Collaboration",
-      "body": "Google and PayPal are joining forces in a multi-year collaboration aimed at enhancing agentic shopping and streamlining commerce payments. This partnership is poised to transform online shopping experiences, potentially setting new standards for consumer convenience and security in digital transactions.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Nvidia Pours \u00a32 Billion into UK's AI and Fintech Sectors",
-      "body": "Nvidia's \u00a32 billion investment in the UK is set to boost AI innovation, specifically targeting fintech firms and startups. This strategic move not only underscores Nvidia's commitment to AI but also promises to catalyze technological advancements within the UK's financial services sector.",
-      "source": "Finextra"
-    },
-    {
-      "title": "UK Financial Regulators Accelerate Crypto-Related Approvals",
-      "body": "In response to growing criticism and the rapid expansion of the cryptocurrency sector, UK financial watchdogs are speeding up crypto-related approvals. This shift towards a more crypto-friendly regulatory stance is crucial for fintech companies looking to innovate and expand in the digital currency space.",
-      "source": "Financial Times"
-    },
-    {
-      "title": "BitGo Eyes Public Market with $4.2 Billion Revenue Forecast in IPO",
-      "body": "BitGo has filed for an IPO, projecting a staggering $4.2 billion in revenue for the first half of 2025 and managing $90 billion in crypto assets. This move highlights the growing economic significance and potential of cryptocurrency service providers in the global financial landscape.",
-      "source": "CoinDesk"
-    },
-    {
-      "title": "Amazon Reseller Pattern Hits $2.5 Billion Valuation Post-IPO",
-      "body": "Pattern, an Amazon reseller, has successfully raised $300 million through its IPO, closing with an 11% increase in share value and a $2.5 billion valuation. This development emphasizes the increasing importance and economic impact of Amazon resellers within the e-commerce ecosystem.",
+      "title": "Walmart Marketplace Struggles with Scammers and Counterfeits",
+      "body": "Walmart's third-party marketplace is grappling with a surge of scammers and counterfeit goods, as revealed by a CNBC investigation. This issue, involving at least 43 vendors with stolen identities, underscores critical vulnerabilities in Walmart's vendor verification process, potentially eroding consumer trust and impacting marketplace integrity.",
       "source": "PYMNTS.com"
+    },
+    {
+      "title": "BitGo Eyes Public Listing Amidst Crypto Market Volatility",
+      "body": "Cryptocurrency custody giant BitGo is gearing up for an IPO, despite the crypto market's fluctuations. With a reported net income of $12.6 million and revenue of $4.19 billion in the first half of the year, BitGo's move could signal robust confidence in the resilience and growth potential of the crypto custody sector.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Amazon to Face FTC Jury Over Prime Cancellation Policies",
+      "body": "Amazon is set for a jury trial concerning its Prime subscription cancellation practices, a case spotlighted by the FTC for potentially deceptive tactics. This trial could lead to significant changes in how subscription services manage cancellations, setting a precedent that could affect consumer rights and business models industry-wide.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Google and PayPal Team Up to Revolutionize Commerce Payments",
+      "body": "In a landmark deal, Google and PayPal have announced a multi-year collaboration to enhance agentic shopping and streamline commerce payments. This partnership is poised to leverage their combined tech and financial prowess, potentially setting new benchmarks for seamless payment experiences in the digital commerce space.",
+      "source": "Finextra"
+    },
+    {
+      "title": "UK Regulators Fast-Track Crypto Firm Approvals to Boost Fintech",
+      "body": "The UK's financial regulators are expediting the approval process for cryptocurrency firms, aiming to position the UK as a leading fintech and crypto hub. This strategic move is designed to attract more crypto businesses by offering a balanced regulatory framework, fostering growth and innovation in the burgeoning sector.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first item ever ordered on Amazon was a book titled 'Fluid Concepts & Creative Analogies' by Douglas Hofstadter?",
-    "source": "amazon.com"
+    "text": "Did you know that the first item ever purchased online was a Sting CD in 1994? This marked the beginning of e-commerce as we know it today.",
+    "source": "history.com"
   }
 }
