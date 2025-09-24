@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Mastercard Empowers Fintech Startups with New Start Path Cohort",
-      "body": "Mastercard has launched its latest Start Path Emerging Fintech program, selecting 11 innovative startups globally. This initiative underscores Mastercard's commitment to driving fintech innovation, particularly in burgeoning sectors like circular commerce. The move not only fosters innovation but also potentially reshapes payment landscapes by integrating cutting-edge technologies.",
+      "title": "Tether Eyes Massive $15-$20 Billion Funding to Boost Stablecoin Market",
+      "body": "Tether is in discussions to secure a monumental $15 to $20 billion investment, aiming for a valuation of $500 billion. This move, offering a 3% stake to investors through a private placement, could significantly reshape the stablecoin landscape, enhancing liquidity and stability in the digital currency market.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "PayPal Ventures Backs Stable to Boost Cross-Border Payments",
-      "body": "PayPal Ventures has strategically invested in blockchain network Stable to integrate its stablecoin, PYUSD, enhancing global financial transactions. This collaboration leverages Stable's blockchain technology to streamline and secure cross-border payments, marking a significant advancement in the use of stablecoins for international commerce.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "US and UK Governments Forge Crypto Taskforce",
-      "body": "The US and UK have established a transatlantic taskforce to regulate and explore digital assets, aligning strategies on cryptocurrency and capital markets. This initiative reflects a significant governmental push into digital finance, aiming to harmonize regulations and foster secure growth in the evolving crypto landscape.",
+      "title": "Morgan Stanley Brings Crypto Trading to Retail via E*Trade",
+      "body": "Morgan Stanley is set to launch cryptocurrency trading for retail customers on its E*Trade platform, leveraging its recent investment in crypto infrastructure provider zerohash. This strategic expansion into crypto trading by a major financial player underscores the increasing integration of cryptocurrencies in mainstream finance.",
       "source": "Finextra"
     },
     {
-      "title": "WhatsApp Business App Integrates QR Code Payments",
-      "body": "Meta has enhanced the WhatsApp Business App with a new QR code-based payment feature, simplifying transactions for both businesses and consumers. This update is part of Meta's broader strategy to embed financial services into its platforms, potentially increasing user engagement and transactional efficiency.",
+      "title": "Revolut Announces \u00a33 Billion Investment for UK Expansion",
+      "body": "Revolut is investing \u00a33 billion in the UK, marking the opening of its new global headquarters in Canary Wharf. This investment is expected to generate 1000 high-skilled jobs over the next five years, reinforcing Revolut's commitment to its global expansion and innovation in financial services.",
       "source": "Finextra"
     },
     {
-      "title": "Cardless Raises $60 Million to Revolutionize Credit Card Experience",
-      "body": "Cardless has secured $60 million in Series C funding to expand its innovative credit card solutions. Led by Spark Capital, this investment aims to enhance the financial transaction experience, highlighting a shift towards more integrated and user-friendly credit card technologies in the fintech sector.",
+      "title": "Global Banks Invest $136 Million in Blockchain Network Fnality",
+      "body": "Fnality, a blockchain-based payment system, has raised $136 million from a consortium of global banks. This significant investment reflects the banking sector's trust in blockchain to revolutionize payment systems, potentially reducing transaction times and costs.",
+      "source": "Finextra"
+    },
+    {
+      "title": "PayPal Ventures Backs Stable Layer 1 Blockchain for Enhanced Transaction Capabilities",
+      "body": "PayPal Ventures has invested in Stable, a layer 1 blockchain network optimized for stablecoin transactions. This investment signifies PayPal's strategic move to bolster its blockchain capabilities, aiming to offer more robust and efficient payment solutions in the digital economy.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
-    "source": "history.com"
+    "text": "Did you know that the first cryptocurrency, Bitcoin, was introduced in 2009 by an individual or group of people using the pseudonym Satoshi Nakamoto?",
+    "source": "bitcoin.org"
   }
 }
