@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Ethos Technologies Set to Go Public, Files for IPO",
-      "body": "Ethos Technologies, a key player in the InsurTech sector, has officially filed for an IPO, aiming to list on the Nasdaq under the ticker 'LIFE'. This move underscores the robust growth and investor enthusiasm in the InsurTech space, potentially setting a precedent for similar companies considering public offerings.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Digital Yuan Centre Opens in Shanghai to Boost Global Use",
-      "body": "The People's Bank of China has launched a digital yuan international operations centre in Shanghai, marking a significant push towards the internationalization of its digital currency, e-CNY. This strategic expansion could reshape global digital currency dynamics and influence international trade and finance.",
+      "title": "UK Banks Initiate Pilot for Tokenised Sterling Deposits",
+      "body": "In a groundbreaking move, UK's major banks have launched a pilot to execute the country's first live transactions using tokenised sterling deposits. By leveraging blockchain technology, this initiative aims to revolutionize the security and efficiency of transactions, setting a precedent for future digital finance innovations.",
       "source": "Finextra"
     },
     {
-      "title": "PayPal Invests $100 Million to Expand in Middle East, Africa",
-      "body": "PayPal is strategically investing $100 million to broaden its footprint in the Middle East and Africa, regions experiencing a surge in digital payments. This expansion is poised to tap into new markets, potentially boosting PayPal's user base and transaction volume significantly.",
+      "title": "Deutsche Bank Completes First Blockchain Euro Transaction",
+      "body": "Deutsche Bank has marked a milestone by completing its first euro-denominated cross-border payment using Partior\u2019s blockchain platform. This achievement not only showcases blockchain's potential in mainstream finance but also sets the stage for future global financial transactions to be more seamless and secure.",
       "source": "Finextra"
     },
     {
-      "title": "Klarna's Market Struggles: Shares Fall Below IPO Price",
-      "body": "In a significant market downturn, Klarna's shares have dipped below their IPO price, trading at just $38.31. This reflects broader challenges faced by fintech companies in volatile markets and could signal caution for investors in the tech sector.",
-      "source": "PYMNTS.com"
+      "title": "Digital Yuan Expansion: China Opens International Centre",
+      "body": "The People's Bank of China is intensifying its efforts in digital currency by opening a new international operations centre for the digital yuan in Shanghai. This expansion is a clear signal of China's commitment to leading the charge in central bank digital currencies, potentially reshaping global digital payment landscapes.",
+      "source": "Finextra"
     },
     {
-      "title": "Ebury Eyes IPO in London, Targets $2 Billion Valuation",
-      "body": "Ebury, supported by Santander, is gearing up for an IPO in London, seeking a $2 billion valuation. This move highlights the growing investor interest in fintech solutions that streamline international trade and payments, potentially offering new investment opportunities in the sector.",
+      "title": "$100 Million PayPal Expansion in Middle East and Africa",
+      "body": "PayPal is investing $100 million to expand its services in the Middle East and Africa. This strategic move aims to capitalize on the burgeoning digital payments market in these regions, indicating significant growth potential for financial technologies in emerging markets.",
+      "source": "Finextra"
+    },
+    {
+      "title": "EBA Clearing Enhances Payment Security with VoP Service",
+      "body": "EBA Clearing's Verification of Payee (VoP) service is set to scale up after successful testing. This service, designed to detect fraud patterns, promises to bolster security in payment transactions, a critical advancement as digital payments continue to rise globally.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the People's Bank of China's new digital yuan centre in Shanghai is part of a strategic initiative to enhance the global reach and technological advancement of China's digital currency?",
-    "source": "Finextra"
+    "text": "Did you know that the first recorded use of paper money dates back to 7th century China during the Tang dynasty?",
+    "source": "history.com"
   }
 }
