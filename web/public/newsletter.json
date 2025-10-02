@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Nubank Eyes U.S. Expansion with National Bank Charter Application",
-      "body": "Nubank, a powerhouse in Latin America's digital banking sector, has applied for a U.S. national bank charter, marking its ambitious entry into the American market. This strategic move could disrupt the U.S. digital banking landscape, offering fresh competition and potentially reshaping consumer choices.",
+      "title": "Mercado Libre's Stock Tumbles Amid Amazon's Brazil Push",
+      "body": "Mercado Libre's stock has experienced its most significant two-day drop since November, driven by Amazon intensifying competition in Brazil. This development underscores the volatile nature of the eCommerce and payments landscape in Latin America, potentially reshaping market dynamics and strategies for local and international players.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Equisoft Boosts Payment Flexibility with One Inc Integration",
-      "body": "Equisoft has enhanced its payment capabilities by integrating One Inc's PremiumPay platform into its life insurance solutions. This upgrade, now supporting modern payment methods like Apple Pay and Google Pay, benefits over 300 financial institutions worldwide, signaling a significant shift towards more versatile and user-friendly payment options in the insurance sector.",
+      "title": "DailyPay Welcomes New CEO, Eyes Broader Financial Horizons",
+      "body": "DailyPay has named Nelson Chai as its new CEO, signaling a strategic expansion beyond its traditional on-demand pay services. This move could significantly influence the payroll processing industry, offering new financial products and services that could alter how companies manage and distribute wages.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Brex to Introduce Stablecoin Payments on Corporate Cards",
-      "body": "Brex is set to revolutionize corporate transactions by introducing stablecoin payments to its global corporate card. This feature will allow cardholders to conduct transactions in stablecoins, which are then automatically converted to U.S. dollars, enhancing transaction efficiency and flexibility for businesses.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Quantum Computing Poses New Threats to Payment Security",
-      "body": "The Emerging Payments Association of Asia (EPAA) has released a report highlighting the urgent need for the payments industry to prepare for the security challenges posed by quantum computing. This development is crucial as it underscores the potential vulnerabilities in payment security and fraud prevention that could arise with the advent of quantum technology.",
+      "title": "Mastercard Debuts Ad Platform Leveraging Transaction Data",
+      "body": "Mastercard has launched a new digital media network that utilizes transaction data for personalized advertising. This innovation not only enhances targeted marketing efforts but also sets a new standard for data utilization in financial services, potentially increasing engagement and customer loyalty.",
       "source": "Finextra"
     },
     {
-      "title": "UK Sees Surge in Mobile Wallet Usage, Cash Declines",
-      "body": "A significant behavioral shift in the UK's payment landscape shows that over half of Britons now use mobile wallets for online and contactless payments. This trend not only highlights a move away from cash but also emphasizes the growing consumer reliance on digital wallet technologies, reshaping how transactions are conducted daily.",
+      "title": "Chainlink and UBS Pioneer Blockchain Interoperability with Swift",
+      "body": "In a groundbreaking development, UBS and Chainlink have introduced technology that integrates Swift messaging with blockchain for on-chain token transfers. This enhancement could revolutionize financial communications, bridging the gap between traditional banking and blockchain technology, and opening new avenues for secure and efficient global transactions.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Mobile Wallet Usage Surges in the UK, Signaling Cash Decline",
+      "body": "Over half of the UK population now utilizes mobile wallets, marking a pivotal shift towards digital payment methods and the continued decline of cash usage. This trend is crucial for payment professionals to monitor as it signals changing consumer preferences and the need for businesses to adapt to digital-first payment solutions.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that stablecoin transactions are now being integrated into mainstream corporate financial systems? This marks a pivotal shift towards more digital and crypto-based transactions in the corporate world.",
+    "text": "Did you know that Mastercard's new advertising platform uses actual transaction data to tailor ads? This approach not only personalizes marketing but could redefine customer engagement in financial services.",
     "source": "Finextra"
   }
 }
