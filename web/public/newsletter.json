@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Mercado Libre's Stock Tumbles Amid Amazon's Brazil Push",
-      "body": "Mercado Libre's stock has experienced its most significant two-day drop since November, driven by Amazon intensifying competition in Brazil. This development underscores the volatile nature of the eCommerce and payments landscape in Latin America, potentially reshaping market dynamics and strategies for local and international players.",
+      "title": "Uber Boosts AI with Segments.ai Acquisition for Advanced Data Labeling",
+      "body": "Uber has strategically acquired Segments.ai, a leader in multi-sensor data labeling for AI applications, to enhance its capabilities in autonomous driving technologies. This acquisition underscores Uber's commitment to advancing its AI-driven technological infrastructure, positioning it at the forefront of innovation in autonomous mobility.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "DailyPay Welcomes New CEO, Eyes Broader Financial Horizons",
-      "body": "DailyPay has named Nelson Chai as its new CEO, signaling a strategic expansion beyond its traditional on-demand pay services. This move could significantly influence the payroll processing industry, offering new financial products and services that could alter how companies manage and distribute wages.",
+      "title": "Oracle Faces Security Breach, Cybercriminals Demand $50M Ransom",
+      "body": "Oracle is grappling with a major security breach as cybercriminals have infiltrated its E-Business Suite, demanding ransoms up to $50 million. This incident highlights the escalating security challenges that major tech companies face, emphasizing the need for robust cybersecurity measures in protecting sensitive corporate data.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Mastercard Debuts Ad Platform Leveraging Transaction Data",
-      "body": "Mastercard has launched a new digital media network that utilizes transaction data for personalized advertising. This innovation not only enhances targeted marketing efforts but also sets a new standard for data utilization in financial services, potentially increasing engagement and customer loyalty.",
+      "title": "ECB Partners with AI Firm Feedzai for Digital Euro Fraud Prevention",
+      "body": "The European Central Bank has chosen Feedzai, a leading AI startup, to implement fraud detection for the digital euro. This collaboration is pivotal in ensuring the security and reliability of Europe's forthcoming digital currency, marking a significant step in the ECB's digital transformation journey.",
       "source": "Finextra"
     },
     {
-      "title": "Chainlink and UBS Pioneer Blockchain Interoperability with Swift",
-      "body": "In a groundbreaking development, UBS and Chainlink have introduced technology that integrates Swift messaging with blockchain for on-chain token transfers. This enhancement could revolutionize financial communications, bridging the gap between traditional banking and blockchain technology, and opening new avenues for secure and efficient global transactions.",
+      "title": "Mastercard Unveils New Ad Platform Leveraging Consumer Transaction Data",
+      "body": "Mastercard has launched a digital media network that utilizes transaction data to provide personalized advertising solutions. This move not only aims to boost marketing effectiveness but also reflects the growing trend of leveraging financial data to enhance consumer engagement strategies in the digital age.",
       "source": "Finextra"
     },
     {
-      "title": "Mobile Wallet Usage Surges in the UK, Signaling Cash Decline",
-      "body": "Over half of the UK population now utilizes mobile wallets, marking a pivotal shift towards digital payment methods and the continued decline of cash usage. This trend is crucial for payment professionals to monitor as it signals changing consumer preferences and the need for businesses to adapt to digital-first payment solutions.",
+      "title": "Remitee Raises $20M to Expand Embedded Cross-Border Payment Solutions",
+      "body": "Remitee has secured $20 million in funding to enhance its embedded remittance services for banks, fintechs, and retailers. This investment will significantly improve the efficiency and accessibility of global financial transactions, reinforcing the importance of seamless integration in financial services.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that Mastercard's new advertising platform uses actual transaction data to tailor ads? This approach not only personalizes marketing but could redefine customer engagement in financial services.",
-    "source": "Finextra"
+    "text": "Did you know that the global infrastructure spending on generative AI technologies is projected to reach a staggering $2.8 trillion by 2029?",
+    "source": "PYMNTS.com"
   }
 }
