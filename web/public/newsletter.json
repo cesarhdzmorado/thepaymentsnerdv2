@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Uber Boosts AI with Segments.ai Acquisition for Advanced Data Labeling",
-      "body": "Uber has strategically acquired Segments.ai, a leader in multi-sensor data labeling for AI applications, to enhance its capabilities in autonomous driving technologies. This acquisition underscores Uber's commitment to advancing its AI-driven technological infrastructure, positioning it at the forefront of innovation in autonomous mobility.",
-      "source": "PYMNTS.com"
+      "title": "Hackers Threaten Major Leak from Salesforce Cloud Databases",
+      "body": "Hackers have infiltrated Salesforce, claiming to have stolen 1 billion records and are now demanding a ransom to prevent data leaks. This breach highlights critical vulnerabilities in cloud security and could have severe implications for data privacy and corporate security strategies.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Oracle Faces Security Breach, Cybercriminals Demand $50M Ransom",
-      "body": "Oracle is grappling with a major security breach as cybercriminals have infiltrated its E-Business Suite, demanding ransoms up to $50 million. This incident highlights the escalating security challenges that major tech companies face, emphasizing the need for robust cybersecurity measures in protecting sensitive corporate data.",
-      "source": "PYMNTS.com"
+      "title": "Samsung and Coinbase Partner to Boost Crypto on Galaxy Phones",
+      "body": "Samsung has teamed up with Coinbase, offering 75 million Galaxy users in the US a free three-month Coinbase One membership. This partnership is poised to significantly enhance cryptocurrency accessibility and could drive wider adoption among mobile users.",
+      "source": "finextra.com"
     },
     {
-      "title": "ECB Partners with AI Firm Feedzai for Digital Euro Fraud Prevention",
-      "body": "The European Central Bank has chosen Feedzai, a leading AI startup, to implement fraud detection for the digital euro. This collaboration is pivotal in ensuring the security and reliability of Europe's forthcoming digital currency, marking a significant step in the ECB's digital transformation journey.",
-      "source": "Finextra"
+      "title": "European Central Bank Pushes Digital Euro with New Tech Partnerships",
+      "body": "The ECB is advancing its digital euro project by partnering with Italian tech firms Almaviva and Fabrick to develop necessary apps and infrastructure. This move aims to bolster the EU's monetary sovereignty and could reshape the financial landscape in Europe.",
+      "source": "finextra.com"
     },
     {
-      "title": "Mastercard Unveils New Ad Platform Leveraging Consumer Transaction Data",
-      "body": "Mastercard has launched a digital media network that utilizes transaction data to provide personalized advertising solutions. This move not only aims to boost marketing effectiveness but also reflects the growing trend of leveraging financial data to enhance consumer engagement strategies in the digital age.",
-      "source": "Finextra"
+      "title": "Venture Capital Flocks to AI, Leaving Other Sectors in the Dust",
+      "body": "AI startups have secured a staggering $193 billion in venture capital funding in 2025, underscoring a major shift towards AI-driven technologies. This trend not only highlights the sector's growing importance but also raises concerns about underinvestment in other critical areas.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Remitee Raises $20M to Expand Embedded Cross-Border Payment Solutions",
-      "body": "Remitee has secured $20 million in funding to enhance its embedded remittance services for banks, fintechs, and retailers. This investment will significantly improve the efficiency and accessibility of global financial transactions, reinforcing the importance of seamless integration in financial services.",
-      "source": "Finextra"
+      "title": "Robinhood CEO Foresees Total Financial Market Tokenization",
+      "body": "Vlad Tenev, CEO of Robinhood, predicts the complete tokenization of financial markets, driven by advancements in blockchain and digital assets. This vision suggests a transformative future for financial systems, potentially revolutionizing how investments are managed and traded.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the global infrastructure spending on generative AI technologies is projected to reach a staggering $2.8 trillion by 2029?",
-    "source": "PYMNTS.com"
+    "text": "Did you know that AI startups received more venture capital in 2025 than the GDP of some small countries?",
+    "source": "pymnts.com"
   }
 }
