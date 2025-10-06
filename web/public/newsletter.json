@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Samsung and Coinbase Partner to Boost Crypto Access for Galaxy Users",
-      "body": "Samsung has teamed up with Coinbase, offering 75 million Galaxy phone users in the US three months of free Coinbase One membership. This strategic partnership not only enhances cryptocurrency management for users but also sets the stage for broader crypto adoption across mainstream mobile platforms.",
-      "source": "Finextra"
-    },
-    {
-      "title": "European Central Bank Teams Up with Italian Tech for Digital Euro",
-      "body": "The ECB is advancing its digital euro project by partnering with Almaviva and Fabrick to develop necessary apps and infrastructure. This initiative is pivotal in promoting financial inclusion, enhancing EU's monetary sovereignty, and reducing dependency on traditional cash systems.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Salesforce Hit by Major Cybersecurity Breach, Billions of Records at Risk",
-      "body": "Hackers have reportedly stolen 1 billion records from Salesforce's cloud databases, posing a significant threat to data security. This incident underscores the critical need for enhanced security measures in cloud storage to protect corporate data against increasingly sophisticated cyber threats.",
+      "title": "Monzo Eyes U.S. Expansion with Renewed Banking License Bid",
+      "body": "British fintech Monzo is gearing up to reapply for a U.S. banking license, aiming to boost its presence and compete with domestic banks and fintech rivals. This strategic move could reshape competitive dynamics in the U.S. financial landscape, offering consumers more diverse banking options.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "EU Launches New AI Strategy to Counter US and China Tech Dominance",
-      "body": "The European Union is rolling out a new AI strategy to decrease its tech dependency on the US and China, aiming to fortify its digital sovereignty. This move is crucial for ensuring the EU remains competitive in the global tech arena and mitigates risks related to geopolitical tech weaponization.",
-      "source": "Financial Times"
+      "title": "Walmart's OnePay Integrates Crypto Trading and Custody",
+      "body": "In a significant fintech move, Walmart-backed OnePay is partnering with Zerohash to offer cryptocurrency services. This could pave the way for broader crypto adoption across major retail and financial platforms, influencing market trends and consumer behavior.",
+      "source": "Finextra"
     },
     {
-      "title": "Remitee Raises $20M to Expand Embedded Cross-Border Payment Services",
-      "body": "Remitee has secured $20 million to enhance its embedded remittance services, enabling seamless integration of instant cross-border payments for banks, fintechs, and retailers. This expansion is set to revolutionize global payment efficiencies, making financial transactions more accessible and streamlined.",
+      "title": "Samsung and Coinbase Partner to Boost Crypto Accessibility",
+      "body": "Samsung is enhancing crypto accessibility for 75 million Galaxy users in the U.S. by offering free Coinbase One memberships. This partnership is likely to accelerate crypto adoption among mobile users, setting a new standard for mobile-integrated financial services.",
+      "source": "Finextra"
+    },
+    {
+      "title": "European Central Bank Advances Digital Euro Project",
+      "body": "The ECB is developing an app and infrastructure for the digital euro with tech firms Almaviva and Fabrick. This initiative aims to bolster the EU's monetary sovereignty and technological resilience, potentially transforming the region's financial ecosystem.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Remitee Secures $20M to Enhance Global Remittance Services",
+      "body": "Remitee has raised $20 million to expand its embedded remittance services, enabling seamless cross-border transactions for banks, fintechs, and retailers. This development underscores the growing demand for integrated, efficient financial services in the global market.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital camera was invented in 1975 and weighed 8 pounds? It only captured black and white images at a resolution of 0.01 megapixels!",
-    "source": "Kodak"
+    "text": "Did you know that despite U.S. sanctions, a Kremlin-backed cryptocurrency facilitated transactions worth $6 billion? This highlights the challenges in regulating decentralized financial systems.",
+    "source": "Financial Times"
   }
 }
