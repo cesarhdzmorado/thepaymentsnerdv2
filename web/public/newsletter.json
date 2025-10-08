@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Supreme Court Rejects Google's Stay in Epic Games Antitrust Case",
-      "body": "The U.S. Supreme Court has denied Google's request to pause a lower court's ruling in the antitrust lawsuit filed by Epic Games, affecting its Play app store operations. This decision, made on October 6, underscores the increasing scrutiny on tech giants under U.S. antitrust laws, potentially setting a precedent for future regulatory actions.",
+      "title": "JPMorgan Forecasts $1.4 Trillion Boost in Dollar Demand from Stablecoins",
+      "body": "JPMorgan Chase predicts a surge in U.S. dollar demand, potentially increasing by $1.4 trillion by 2027, driven by the growing adoption of stablecoins. This trend could reinforce the dollar's global financial dominance, indicating significant implications for digital currency markets and international trade.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Esma Set to Centralize Crypto and Stock Exchange Oversight in Europe",
-      "body": "The European Commission is transferring oversight of cryptocurrency firms and stock exchanges to the European Securities and Markets Authority (Esma). This strategic move aims to unify financial regulation across Europe, enhancing the stability and integrity of the financial markets in the region.",
+      "title": "India to Enhance UPI Payments with Biometric Authentication",
+      "body": "India is set to revolutionize its Unified Payments Interface (UPI) by integrating biometric features like facial recognition and fingerprints. This move aims to bolster security and user convenience, potentially transforming digital transaction landscapes and boosting fintech innovation in one of the world's largest markets.",
       "source": "Finextra"
     },
     {
-      "title": "Walmart's OnePay Integrates Crypto Trading, Expanding Digital Currency Access",
-      "body": "Walmart's fintech arm, OnePay, is partnering with Zerohash to offer cryptocurrency trading and custody services. This integration could democratize access to digital currencies for Walmart's vast customer base, marking a significant shift in the retail giant's approach to financial services.",
+      "title": "Coinbase Seeks National Trust Charter to Broaden Financial Services",
+      "body": "Coinbase has applied for a national trust company charter from the OCC, aiming to expand its financial services and enhance regulatory compliance. This strategic move could significantly impact the cryptocurrency landscape, offering more robust financial solutions to users across the U.S.",
       "source": "Finextra"
     },
     {
-      "title": "Samsung and Coinbase Partner to Boost Crypto Adoption Among Users",
-      "body": "Samsung is collaborating with Coinbase to provide 75 million Galaxy phone users in the U.S. with three months free access to Coinbase One membership. This partnership is poised to significantly increase cryptocurrency engagement and streamline its use in everyday mobile interactions.",
+      "title": "Big Issue Vendors Pilot Open Banking Payments via QR Codes",
+      "body": "The Big Issue is piloting a new payment method that allows vendors to accept payments through QR codes linked to open banking solutions. This initiative could revolutionize payment methods for street vendors, enhancing transaction security and accessibility.",
       "source": "Finextra"
     },
     {
-      "title": "Young Consumers to Propel Buy Now, Pay Later Growth This Holiday Season",
-      "body": "As the holiday season approaches, younger shoppers are increasingly adopting Buy Now, Pay Later (BNPL) services, signaling a shift in consumer finance preferences. This trend not only reflects the growing acceptance of BNPL solutions but also highlights the potential for market expansion in coming years.",
-      "source": "PYMNTS.com"
+      "title": "UK Banks Set to Pay \u00a311 Billion for Car Finance Mis-Selling",
+      "body": "UK banks are preparing to disburse around \u00a311 billion in compensation for mis-selling car finance, as mandated by the Financial Conduct Authority. This significant financial impact highlights the importance of ethical sales practices and could lead to more stringent regulatory measures in the finance sector.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that OpenAI's recent computing partnerships are valued at over $1 trillion, involving major tech players like Nvidia, AMD, and Oracle? This massive collaboration is set to accelerate AI development, potentially transforming numerous industries.",
-    "source": "Financial Times"
+    "text": "Did you know that the first digital currency transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth millions today?",
+    "source": "history.com"
   }
 }
