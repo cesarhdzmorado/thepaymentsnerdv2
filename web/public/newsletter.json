@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "JPMorgan Forecasts $1.4 Trillion Boost in Dollar Demand from Stablecoins",
-      "body": "JPMorgan Chase predicts a surge in U.S. dollar demand, potentially increasing by $1.4 trillion by 2027, driven by the growing adoption of stablecoins. This trend could reinforce the dollar's global financial dominance, indicating significant implications for digital currency markets and international trade.",
+      "title": "JPMorgan's $2 Billion AI Investment Matches Annual Savings",
+      "body": "JPMorgan Chase's annual $2 billion investment in artificial intelligence is not just a tech splurge; it's a strategic move that saves the bank an equivalent amount each year. This investment highlights the critical role AI plays in enhancing operational efficiencies and cost management in the banking sector.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Revolut Eyes Major Expansion in India with 20 Million Customer Target",
+      "body": "Revolut is set to launch its payments platform in India, aiming to secure 20 million customers by 2030. This ambitious move underscores Revolut's strategy to tap into one of the world's largest emerging markets, potentially reshaping the competitive landscape of digital payments in the region.",
+      "source": "Finextra"
+    },
+    {
+      "title": "U.S. Bank to Manage Anchorage Digital's Stablecoin Reserves",
+      "body": "U.S. Bank has been chosen to custody the reserves for Anchorage Digital Bank's payment stablecoins, marking a significant step in the fusion of traditional banking with digital currencies. This partnership could enhance the credibility and stability of digital assets in mainstream finance.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "India to Enhance UPI Payments with Biometric Authentication",
-      "body": "India is set to revolutionize its Unified Payments Interface (UPI) by integrating biometric features like facial recognition and fingerprints. This move aims to bolster security and user convenience, potentially transforming digital transaction landscapes and boosting fintech innovation in one of the world's largest markets.",
+      "title": "India Enhances UPI Security with Biometric Authentication",
+      "body": "India is introducing facial recognition and fingerprint authentication for its Unified Payments Interface (UPI), aiming to boost security and user verification. This enhancement is crucial for maintaining trust in UPI, which is pivotal in India's digital economy.",
       "source": "Finextra"
     },
     {
-      "title": "Coinbase Seeks National Trust Charter to Broaden Financial Services",
-      "body": "Coinbase has applied for a national trust company charter from the OCC, aiming to expand its financial services and enhance regulatory compliance. This strategic move could significantly impact the cryptocurrency landscape, offering more robust financial solutions to users across the U.S.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Big Issue Vendors Pilot Open Banking Payments via QR Codes",
-      "body": "The Big Issue is piloting a new payment method that allows vendors to accept payments through QR codes linked to open banking solutions. This initiative could revolutionize payment methods for street vendors, enhancing transaction security and accessibility.",
-      "source": "Finextra"
-    },
-    {
-      "title": "UK Banks Set to Pay \u00a311 Billion for Car Finance Mis-Selling",
-      "body": "UK banks are preparing to disburse around \u00a311 billion in compensation for mis-selling car finance, as mandated by the Financial Conduct Authority. This significant financial impact highlights the importance of ethical sales practices and could lead to more stringent regulatory measures in the finance sector.",
-      "source": "Financial Times"
+      "title": "Google and U.S. Chamber of Commerce Fund AI Training for Small Businesses",
+      "body": "Google.org, in partnership with the U.S. Chamber of Commerce, is investing $5 million in an AI training program for small businesses. This initiative, aiming to equip 40,000 small businesses with AI skills, is set to democratize technology access and foster innovation at the grassroots level.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital currency transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth millions today?",
-    "source": "history.com"
+    "text": "Did you know that JPMorgan's annual $2 billion investment in AI technology saves the bank an equivalent amount in costs? This highlights the transformative impact of AI on banking efficiencies.",
+    "source": "Finextra"
   }
 }
