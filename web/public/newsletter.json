@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "JPMorgan's $2 Billion AI Investment Matches Annual Savings",
-      "body": "JPMorgan Chase's annual $2 billion investment in artificial intelligence is not just a tech splurge; it's a strategic move that saves the bank an equivalent amount each year. This investment highlights the critical role AI plays in enhancing operational efficiencies and cost management in the banking sector.",
-      "source": "Finextra"
+      "title": "Nuvei and Volkswagen Brazil Partner for In-Vehicle Payments",
+      "body": "Volkswagen Brazil is teaming up with Nuvei to embed a payment system within select vehicle models, enabling subscription-based services via an in-car app. This collaboration underscores the fusion of fintech with automotive technology, potentially transforming car ownership into a connected, service-oriented experience.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Revolut Eyes Major Expansion in India with 20 Million Customer Target",
-      "body": "Revolut is set to launch its payments platform in India, aiming to secure 20 million customers by 2030. This ambitious move underscores Revolut's strategy to tap into one of the world's largest emerging markets, potentially reshaping the competitive landscape of digital payments in the region.",
-      "source": "Finextra"
+      "title": "AI Revolutionizes Risk Management in Business Operations",
+      "body": "The adoption of AI is reshaping risk management, transitioning from periodic reviews to real-time systems. This evolution is crucial for businesses to keep pace with the rapid flow of digital transactions, offering a more dynamic approach to managing operational risks.",
+      "source": "pymnts.com"
     },
     {
-      "title": "U.S. Bank to Manage Anchorage Digital's Stablecoin Reserves",
-      "body": "U.S. Bank has been chosen to custody the reserves for Anchorage Digital Bank's payment stablecoins, marking a significant step in the fusion of traditional banking with digital currencies. This partnership could enhance the credibility and stability of digital assets in mainstream finance.",
-      "source": "PYMNTS.com"
+      "title": "Klarna Enhances Payment Solutions Through Google AI Partnership",
+      "body": "Klarna is harnessing Google's AI technologies to boost its payment processing and customer experience personalization. This strategic move highlights the growing integration of AI in fintech, enhancing efficiency and consumer engagement in financial services.",
+      "source": "finextra.com"
     },
     {
-      "title": "India Enhances UPI Security with Biometric Authentication",
-      "body": "India is introducing facial recognition and fingerprint authentication for its Unified Payments Interface (UPI), aiming to boost security and user verification. This enhancement is crucial for maintaining trust in UPI, which is pivotal in India's digital economy.",
-      "source": "Finextra"
+      "title": "Cross-border Payments Specialist Routefusion Secures $26.5M Funding",
+      "body": "Routefusion has raised $26.5 million in Series A funding to expand its cross-border payment solutions. This investment reflects the increasing demand for efficient, integrated international payment systems, crucial for global commerce and financial services.",
+      "source": "finextra.com"
     },
     {
-      "title": "Google and U.S. Chamber of Commerce Fund AI Training for Small Businesses",
-      "body": "Google.org, in partnership with the U.S. Chamber of Commerce, is investing $5 million in an AI training program for small businesses. This initiative, aiming to equip 40,000 small businesses with AI skills, is set to democratize technology access and foster innovation at the grassroots level.",
-      "source": "PYMNTS.com"
+      "title": "G20's Setback in Cross-border Payments Efficiency Initiative",
+      "body": "The G20's ambitious plan to streamline cross-border payments is likely to miss its 2027 target. This delay highlights the complexities of overhauling global payment systems, impacting firms that depend on efficient international transactions.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that JPMorgan's annual $2 billion investment in AI technology saves the bank an equivalent amount in costs? This highlights the transformative impact of AI on banking efficiencies.",
-    "source": "Finextra"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
