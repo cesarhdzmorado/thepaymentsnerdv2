@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Ethena Stablecoin Loses Dollar Peg, Shakes Crypto Confidence",
-      "body": "Ethena's stablecoin, USDe, momentarily dropped to 65 cents against the dollar on Binance, underscoring the inherent volatility and regulatory hurdles in the crypto sector. This instability in a supposed 'stable' asset could push for tighter regulations and impact investor trust.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "U.S. Car Makers Hit Hard by White House Tariffs",
-      "body": "The American automotive industry is reeling under the weight of new tariffs, with giants like Ford and GM facing a $7 billion financial strain. This could lead to increased vehicle prices and disruptions in the global supply chain, affecting market dynamics and consumer choices.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Major Banks Explore Blockchain for Digital Currency",
-      "body": "Top banks such as Barclays and Goldman Sachs are delving into blockchain to develop a digital currency. This move could lead to a significant transformation in how financial transactions are conducted globally, offering a more stable and efficient digital payment system.",
+      "title": "Mastercard Launches Platform to Boost Transaction Approvals",
+      "body": "Mastercard has introduced the Payment Optimization Platform (POP) to enhance transaction approval rates for merchants using data-driven insights. This platform is set to reduce digital payment friction, benefiting both merchants and consumers by ensuring smoother transactions. This innovation is crucial for improving the efficiency and reliability of digital payments.",
       "source": "Finextra"
     },
     {
-      "title": "Mastercard and Coinbase Vie for $2.5 Billion BVNK Acquisition",
-      "body": "In a high-stakes move, Mastercard and Coinbase are each aiming to acquire BVNK, a key player in stablecoin infrastructure, for around $2.5 billion. This deal highlights the escalating commitment of traditional financial players in the cryptocurrency space, potentially reshaping financial services.",
+      "title": "Brazil's PicPay Targets $500M in U.S. IPO",
+      "body": "Brazilian fintech leader PicPay is eyeing a U.S. IPO to raise up to $500 million, marking a significant move by Latin American fintechs to access North American capital markets. This strategic expansion could reshape investment patterns and influence fintech growth across regions.",
       "source": "Finextra"
     },
     {
-      "title": "Cross-border Payments Innovator Routefusion Secures $26.5M",
-      "body": "Routefusion, a fintech focused on streamlining cross-border payments, has raised $26.5 million in Series A funding. This capital boost will enhance their platform's capabilities, making international transactions more accessible and efficient for businesses worldwide.",
+      "title": "Global Banks Consider Blockchain for Digital Currency",
+      "body": "Top banks like Barclays and Goldman Sachs are exploring a blockchain-based digital currency, backed by reserves to ensure stability. This initiative could revolutionize payment systems by introducing a more stable and efficient digital currency, enhancing global financial transactions.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Mastercard and Coinbase Compete to Acquire BVNK",
+      "body": "In a high-stakes move, Mastercard and Coinbase are vying to acquire crypto platform BVNK, with the deal potentially reaching $2.5 billion. This acquisition underscores the intense competition and high value within the cryptocurrency services sector, signaling robust growth and investment interest.",
+      "source": "Finextra"
+    },
+    {
+      "title": "FCA Initiates Open Finance Accelerator in the UK",
+      "body": "The UK's Financial Conduct Authority has launched an open finance accelerator to foster the adoption of open banking and enhance financial transparency and consumer choice. This initiative is pivotal for advancing regulatory frameworks and could set a precedent for global financial practices.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first paper money was created in China 1,400 years ago, transforming the way economies functioned.",
-    "source": "history.com"
+    "text": "Did you know? Mastercard's Payment Optimization Platform leverages advanced data analytics to significantly improve transaction approval rates.",
+    "source": "Finextra"
   }
 }
