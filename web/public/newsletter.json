@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Mastercard Launches Platform to Boost Transaction Approvals",
-      "body": "Mastercard has introduced the Payment Optimization Platform (POP) to enhance transaction approval rates for merchants using data-driven insights. This platform is set to reduce digital payment friction, benefiting both merchants and consumers by ensuring smoother transactions. This innovation is crucial for improving the efficiency and reliability of digital payments.",
+      "title": "Stripe Launches Stablecoin Payments for Subscription Models",
+      "body": "Stripe is pioneering the integration of stablecoin payments into subscription services, initially focusing on AI companies in the U.S. By supporting USDC on Base and Polygon networks, Stripe not only enhances transaction efficiency but also sets a potential trend for cryptocurrency in mainstream financial services. This move could significantly influence how payment processors adopt crypto solutions.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Visa Debuts Trusted Agent Protocol to Boost AI Commerce Security",
+      "body": "Visa has introduced a new Trusted Agent Protocol, designed to enable AI agents to securely conduct transactions. This initiative aims to bolster the security and efficiency of AI-driven commerce, positioning Visa as a leader in innovative digital payment frameworks. The protocol could transform the landscape of automated transactions, enhancing both user and merchant experiences.",
       "source": "Finextra"
     },
     {
-      "title": "Brazil's PicPay Targets $500M in U.S. IPO",
-      "body": "Brazilian fintech leader PicPay is eyeing a U.S. IPO to raise up to $500 million, marking a significant move by Latin American fintechs to access North American capital markets. This strategic expansion could reshape investment patterns and influence fintech growth across regions.",
+      "title": "Mastercard Unveils Platform to Improve Merchant Transaction Approvals",
+      "body": "Mastercard's new Payment Optimisation Platform aims to enhance transaction approval rates for merchants by using data-driven insights to reduce false declines. This development is crucial for improving the efficiency of digital payments and could lead to significant gains in transaction reliability and merchant satisfaction.",
       "source": "Finextra"
     },
     {
-      "title": "Global Banks Consider Blockchain for Digital Currency",
-      "body": "Top banks like Barclays and Goldman Sachs are exploring a blockchain-based digital currency, backed by reserves to ensure stability. This initiative could revolutionize payment systems by introducing a more stable and efficient digital currency, enhancing global financial transactions.",
+      "title": "Lunar Gains First Scandinavian Crypto License Under MiCA",
+      "body": "Lunar has secured the pioneering crypto license in Scandinavia under the EU's MiCA regulation, setting a significant precedent for regulated cryptocurrency services in the region. This achievement not only enhances Lunar's market position but also serves as a regulatory model for other financial institutions integrating crypto solutions.",
       "source": "Finextra"
     },
     {
-      "title": "Mastercard and Coinbase Compete to Acquire BVNK",
-      "body": "In a high-stakes move, Mastercard and Coinbase are vying to acquire crypto platform BVNK, with the deal potentially reaching $2.5 billion. This acquisition underscores the intense competition and high value within the cryptocurrency services sector, signaling robust growth and investment interest.",
-      "source": "Finextra"
-    },
-    {
-      "title": "FCA Initiates Open Finance Accelerator in the UK",
-      "body": "The UK's Financial Conduct Authority has launched an open finance accelerator to foster the adoption of open banking and enhance financial transparency and consumer choice. This initiative is pivotal for advancing regulatory frameworks and could set a precedent for global financial practices.",
+      "title": "Wise Expands Services in the Middle East with UAE License",
+      "body": "Wise has obtained a retail payments license from the Central Bank of the UAE, allowing it to offer its renowned money transfer services in the Middle East. This strategic expansion into a dynamic new market underscores Wise's commitment to broadening its global footprint and enhancing accessibility to efficient payment solutions.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? Mastercard's Payment Optimization Platform leverages advanced data analytics to significantly improve transaction approval rates.",
-    "source": "Finextra"
+    "text": "Did you know that the International Monetary Fund has highlighted a staggering $4.5 trillion exposure of banks to hedge funds and private credit? This underscores the need for tighter financial regulations.",
+    "source": "Financial Times"
   }
 }
