@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Stripe Launches Stablecoin Payments for Subscription Models",
-      "body": "Stripe is pioneering the integration of stablecoin payments into subscription services, initially focusing on AI companies in the U.S. By supporting USDC on Base and Polygon networks, Stripe not only enhances transaction efficiency but also sets a potential trend for cryptocurrency in mainstream financial services. This move could significantly influence how payment processors adopt crypto solutions.",
+      "title": "U.S. Bank Dives into Digital Assets with New Organization",
+      "body": "U.S. Bank is launching a Digital Assets and Money Movement organization to explore opportunities in stablecoin issuance, cryptocurrency custody, and asset tokenization. This move underscores the bank's commitment to integrating digital assets into its core services, reflecting a significant shift in how traditional banks view the future of finance.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Visa Debuts Trusted Agent Protocol to Boost AI Commerce Security",
-      "body": "Visa has introduced a new Trusted Agent Protocol, designed to enable AI agents to securely conduct transactions. This initiative aims to bolster the security and efficiency of AI-driven commerce, positioning Visa as a leader in innovative digital payment frameworks. The protocol could transform the landscape of automated transactions, enhancing both user and merchant experiences.",
+      "title": "Visa Introduces AI-Enabled Trusted Agent Protocol",
+      "body": "Visa has rolled out the Trusted Agent Protocol, a framework that allows AI agents to securely conduct transactions for users and merchants. This innovation is set to transform the commerce landscape by integrating cutting-edge AI technology, potentially setting new standards for transaction security and efficiency in the digital age.",
       "source": "Finextra"
     },
     {
-      "title": "Mastercard Unveils Platform to Improve Merchant Transaction Approvals",
-      "body": "Mastercard's new Payment Optimisation Platform aims to enhance transaction approval rates for merchants by using data-driven insights to reduce false declines. This development is crucial for improving the efficiency of digital payments and could lead to significant gains in transaction reliability and merchant satisfaction.",
+      "title": "Mastercard's New Platform Aims to Elevate Payment Approvals",
+      "body": "Mastercard has unveiled its Payment Optimisation Platform, designed to enhance transaction approval rates through advanced data analytics. This platform could significantly boost merchant revenues by reducing transaction declines, marking a pivotal improvement in payment processing technology.",
       "source": "Finextra"
     },
     {
-      "title": "Lunar Gains First Scandinavian Crypto License Under MiCA",
-      "body": "Lunar has secured the pioneering crypto license in Scandinavia under the EU's MiCA regulation, setting a significant precedent for regulated cryptocurrency services in the region. This achievement not only enhances Lunar's market position but also serves as a regulatory model for other financial institutions integrating crypto solutions.",
+      "title": "Major Banks Investigate Blockchain for Digital Currency",
+      "body": "Barclays and Goldman Sachs are among the leading banks exploring a blockchain-based digital currency. This initiative could redefine global financial transactions, highlighting the sector's increasing reliance on blockchain to innovate and secure financial interactions.",
       "source": "Finextra"
     },
     {
-      "title": "Wise Expands Services in the Middle East with UAE License",
-      "body": "Wise has obtained a retail payments license from the Central Bank of the UAE, allowing it to offer its renowned money transfer services in the Middle East. This strategic expansion into a dynamic new market underscores Wise's commitment to broadening its global footprint and enhancing accessibility to efficient payment solutions.",
+      "title": "Coinbase Expands Global Footprint with Investment in India's CoinDCX",
+      "body": "Coinbase has invested in Mumbai-based crypto exchange CoinDCX, now valued at $2.45 billion. This strategic move not only expands Coinbase's influence in India and the Middle East but also signals growing global interest in cryptocurrency markets among major players.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the International Monetary Fund has highlighted a staggering $4.5 trillion exposure of banks to hedge funds and private credit? This underscores the need for tighter financial regulations.",
-    "source": "Financial Times"
+    "text": "Did you know that the first digital currency transaction was for a pizza? In 2010, a programmer bought two pizzas for 10,000 bitcoins, worth about $30 at the time!",
+    "source": "bitcoin.org"
   }
 }
