@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Ripple Dives into Corporate Treasury with $1 Billion GTreasury Acquisition",
-      "body": "Ripple's strategic acquisition of GTreasury for $1 billion marks a significant expansion into corporate treasury services. This move could revolutionize how companies manage liquidity and financial operations worldwide, positioning Ripple at the forefront of financial technology innovation.",
+      "title": "PayPal's Partner Paxos Accidentally Mints $300 Trillion in Stablecoins",
+      "body": "In a shocking error, Paxos, PayPal's blockchain partner, accidentally minted $300 trillion in stablecoins during a routine transfer. This incident exposes critical vulnerabilities in digital asset management and could have severe implications for the cryptocurrency market and PayPal's operations. It underscores the urgent need for robust safeguards in fintech operations.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Launches Trusted Agent Protocol to Boost AI in Transactions",
-      "body": "Visa has introduced the Trusted Agent Protocol, a groundbreaking framework to securely integrate AI in commerce. This initiative could transform transaction security and efficiency, offering a more personalized shopping experience and setting a new standard in the payments industry.",
+      "title": "Ripple Dives into Corporate Treasury with $1 Billion GTreasury Buy",
+      "body": "Ripple is making a significant pivot into corporate treasury management by acquiring GTreasury for $1 billion. This move will integrate blockchain technology into corporate financial operations, potentially transforming how businesses manage liquidity and operational finance. Ripple's strategy could redefine transaction efficiency and security in corporate finance.",
       "source": "Finextra"
     },
     {
-      "title": "HSBC and Juspay Unveil New Global Merchant Acquiring Platform",
-      "body": "HSBC's collaboration with Juspay to develop a full-stack acquiring platform aims to streamline global digital transactions. This partnership reflects a strategic push towards enhancing digital integration and operational efficiency in financial services, crucial for businesses scaling on a global level.",
+      "title": "Visa Launches Trusted Agent Protocol to Secure AI Commerce",
+      "body": "Visa has introduced the Trusted Agent Protocol, a new framework to securely enable AI agents to conduct transactions on behalf of users and merchants. This innovation is set to revolutionize automated and AI-driven commerce, offering a standardized method for managing AI-mediated financial transactions and enhancing transaction security.",
       "source": "Finextra"
     },
     {
-      "title": "JPMorgan Sets Sights on Banking Expansion in Europe, Latin America",
-      "body": "JPMorgan Chase, under CEO Jamie Dimon's guidance, is eyeing expansion in the European and Latin American markets. This move could involve key acquisitions or partnerships, significantly impacting the global banking landscape and JPMorgan's market dominance.",
-      "source": "PYMNTS.com"
+      "title": "HSBC and Juspay Create New Platform for Global E-Commerce",
+      "body": "HSBC has partnered with Juspay to launch a full-stack acquiring platform tailored for digital-first, global merchants. This collaboration aims to streamline payment processes and bolster transaction security, potentially transforming the operational landscape for international e-commerce businesses and enhancing global trade efficiency.",
+      "source": "Finextra"
     },
     {
-      "title": "Upgrade's Valuation Skyrockets to $7.3 Billion, Eyes IPO",
-      "body": "Upgrade has raised $165 million in a recent funding round, pushing its valuation to $7.3 billion. This capital boost is a precursor to a potential IPO in the next two years, highlighting strong investor confidence and signaling robust growth prospects in the fintech sector.",
-      "source": "PYMNTS.com"
+      "title": "US Seizes $15 Billion in Bitcoin from Forced-Labour Scam",
+      "body": "The US government has seized approximately $15 billion worth of bitcoin linked to a Cambodian 'forced-labour' cryptocurrency scam. This major intervention highlights the increasing role of global law enforcement in regulating digital assets and underscores the challenges of managing cybercrime in the burgeoning cryptocurrency space.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
-    "source": "history.com"
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010? The cost at the time was 10,000 Bitcoins!",
+    "source": "bitcoin.org"
   }
 }
