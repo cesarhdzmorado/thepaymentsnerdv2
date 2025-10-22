@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "NYSE Trading Volumes Skyrocket Due to AI Integration",
-      "body": "The New York Stock Exchange is experiencing a massive surge in trading volumes, now processing approximately 1.2 trillion order messages daily, a near tripling from four years ago. This growth is primarily driven by the integration of advanced AI technologies, reshaping trading strategies and decision-making processes. This trend underscores the critical role AI is playing in financial markets, potentially setting new standards for trading speed and efficiency.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Global Payments Clinches $22.7 Billion Worldpay Deal",
-      "body": "The UK's Competition and Markets Authority has greenlit Global Payments' acquisition of Worldpay for a whopping $22.7 billion. This approval paves the way for a significant consolidation in the global payments landscape, likely to enhance service offerings worldwide. This deal is a game-changer, potentially reshaping competitive dynamics and customer experiences in the payments industry.",
+      "title": "Fed Considers 'Skinny' Master Accounts to Boost Fintech Access",
+      "body": "The Federal Reserve is exploring the introduction of 'skinny' master accounts to give fintechs and non-bank financial providers direct access to Fed payment services. Governor Christopher Waller emphasized this move as a step towards fostering innovation and inclusivity in the financial sector, potentially reducing fintechs' dependence on third-party banks.",
       "source": "Finextra"
     },
     {
-      "title": "Revolut Secures Banking License in Mexico, Eyes Latin American Market",
-      "body": "Revolut has expanded its global footprint by securing a banking license in Mexico, marking a strategic entry into the Latin American financial sector. This move is set to revolutionize digital banking services in the region, offering millions enhanced financial solutions. For payments professionals, this signifies a major fintech player's commitment to diversifying and capturing emerging market opportunities.",
+      "title": "TrueLayer Expands European Presence with Zimpler Acquisition",
+      "body": "TrueLayer is set to acquire Nordic open banking firm Zimpler, marking a significant expansion in its European operations. This strategic acquisition aims to enhance TrueLayer's capabilities within the competitive open banking ecosystem, positioning it as a key player across Europe.",
       "source": "Finextra"
     },
     {
-      "title": "AWS Outage Highlights Banking Sector's Cloud Dependency",
-      "body": "A recent AWS outage temporarily crippled online services for major UK banks such as Lloyds Bank and Halifax, spotlighting the banking industry's increasing reliance on cloud solutions. This incident serves as a critical reminder of the vulnerabilities in current banking infrastructure and the need for robust contingency strategies to mitigate such risks.",
+      "title": "UK Pension Funds Invest in National Fintech Sector",
+      "body": "A consortium of 20 UK-based pension funds and asset managers plans to invest in the country's fintech sector. This collective investment is designed to stimulate growth and innovation, underscoring the strategic importance of fintech to the UK's national economy.",
       "source": "Finextra"
     },
     {
-      "title": "Canada Launches Financial Crime Agency to Tackle Online Fraud",
-      "body": "Canada is establishing a dedicated financial crime agency to combat the surge in online scams, enhancing national anti-fraud strategies. This initiative will also increase the onus on banks to actively participate in fraud prevention, signaling a significant shift in regulatory expectations and responsibilities for financial institutions.",
+      "title": "Mexican Fintech Plata Hits $3 Billion Valuation After Funding",
+      "body": "Plata, a fintech startup in Mexico, has reached a $3 billion valuation following a $250 million fundraising round. This milestone highlights the rapid growth and potential of fintech innovations in emerging markets, signaling strong investor confidence.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Coinbase Strengthens Crypto Investment Services with Echo Buyout",
+      "body": "Coinbase has acquired Echo, a crypto investment platform, for $375 million. This acquisition is part of Coinbase's strategy to enhance its investment offerings and solidify its position in the volatile cryptocurrency market.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The integration of AI in trading has propelled the NYSE's daily order message processing to about 1.2 trillion, showcasing AI's transformative impact on financial markets.",
-    "source": "PYMNTS.com"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the modern credit economy.",
+    "source": "history.com"
   }
 }
