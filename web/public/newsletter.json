@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Fed Considers 'Skinny' Master Accounts to Boost Fintech Access",
-      "body": "The Federal Reserve is exploring the introduction of 'skinny' master accounts to give fintechs and non-bank financial providers direct access to Fed payment services. Governor Christopher Waller emphasized this move as a step towards fostering innovation and inclusivity in the financial sector, potentially reducing fintechs' dependence on third-party banks.",
+      "title": "LendingClub's LevelUp Checking Boosts Loan Originations by 37%",
+      "body": "LendingClub's Q3 results reveal a 37% surge in loan originations, totaling $2.6 billion, driven by the success of its LevelUp checking product. This innovative banking solution has not only attracted a significant number of new account openings but also underscores the impact of consumer-centric products on financial growth.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "AI Integration to Reshape Entry-Level Finance Jobs",
+      "body": "The finance sector is set to transform as AI integration shifts entry-level roles from basic spreadsheet tasks to more complex analytical duties. This evolution fosters a new, essential skill set among newcomers, indicating a significant shift in the foundational roles within finance.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Allica Bank Enters Embedded Finance, Acquires Kriya",
+      "body": "Allica Bank's strategic acquisition of Kriya marks its foray into the embedded finance market, aiming to offer SMBs enhanced financial solutions like flexible working capital and PayLater options. This move highlights the trend of traditional banks leveraging fintech innovations to broaden their service offerings.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "New York Sets New Cybersecurity Standards for Financial Firms",
+      "body": "The NYDFS has issued new cybersecurity guidelines for financial services firms to better manage third-party risks. This proactive measure aims to fortify the financial sector's defenses against increasing digital threats, emphasizing the critical need for robust cybersecurity frameworks.",
       "source": "Finextra"
     },
     {
-      "title": "TrueLayer Expands European Presence with Zimpler Acquisition",
-      "body": "TrueLayer is set to acquire Nordic open banking firm Zimpler, marking a significant expansion in its European operations. This strategic acquisition aims to enhance TrueLayer's capabilities within the competitive open banking ecosystem, positioning it as a key player across Europe.",
-      "source": "Finextra"
-    },
-    {
-      "title": "UK Pension Funds Invest in National Fintech Sector",
-      "body": "A consortium of 20 UK-based pension funds and asset managers plans to invest in the country's fintech sector. This collective investment is designed to stimulate growth and innovation, underscoring the strategic importance of fintech to the UK's national economy.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Mexican Fintech Plata Hits $3 Billion Valuation After Funding",
-      "body": "Plata, a fintech startup in Mexico, has reached a $3 billion valuation following a $250 million fundraising round. This milestone highlights the rapid growth and potential of fintech innovations in emerging markets, signaling strong investor confidence.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Coinbase Strengthens Crypto Investment Services with Echo Buyout",
-      "body": "Coinbase has acquired Echo, a crypto investment platform, for $375 million. This acquisition is part of Coinbase's strategy to enhance its investment offerings and solidify its position in the volatile cryptocurrency market.",
+      "title": "Fed Proposes 'Skinny' Masters Accounts to Boost Fintech Access",
+      "body": "Federal Reserve Governor Christopher Waller has proposed the creation of 'skinny' master accounts to give fintechs and non-bank entities access to basic Fed payment services. This initiative is designed to spur innovation and inclusivity in the financial services sector, potentially transforming how fintechs operate within the regulatory framework.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the modern credit economy.",
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It started as a cardboard card and was initially accepted at just 14 restaurants in New York.",
     "source": "history.com"
   }
 }
