@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "LendingClub's LevelUp Checking Boosts Loan Originations by 37%",
-      "body": "LendingClub's Q3 results reveal a 37% surge in loan originations, totaling $2.6 billion, driven by the success of its LevelUp checking product. This innovative banking solution has not only attracted a significant number of new account openings but also underscores the impact of consumer-centric products on financial growth.",
+      "title": "California Enacts Groundbreaking AI and Social Media Laws",
+      "body": "California has set a new benchmark with its comprehensive AI and social media regulations, the first of their kind in the U.S. These laws mandate stricter chatbot oversight and robust age verification to enhance digital safety, particularly for minors. This pioneering move could serve as a model for other states, potentially reshaping the national landscape of digital regulation.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "AI Integration to Reshape Entry-Level Finance Jobs",
-      "body": "The finance sector is set to transform as AI integration shifts entry-level roles from basic spreadsheet tasks to more complex analytical duties. This evolution fosters a new, essential skill set among newcomers, indicating a significant shift in the foundational roles within finance.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Allica Bank Enters Embedded Finance, Acquires Kriya",
-      "body": "Allica Bank's strategic acquisition of Kriya marks its foray into the embedded finance market, aiming to offer SMBs enhanced financial solutions like flexible working capital and PayLater options. This move highlights the trend of traditional banks leveraging fintech innovations to broaden their service offerings.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "New York Sets New Cybersecurity Standards for Financial Firms",
-      "body": "The NYDFS has issued new cybersecurity guidelines for financial services firms to better manage third-party risks. This proactive measure aims to fortify the financial sector's defenses against increasing digital threats, emphasizing the critical need for robust cybersecurity frameworks.",
+      "title": "TrueLayer Boosts European Presence with Zimpler Acquisition",
+      "body": "TrueLayer is expanding its footprint in Europe by acquiring Nordic open banking firm Zimpler. This acquisition not only strengthens TrueLayer's market position but also enhances its capabilities in the competitive European payments landscape, signaling a strategic push to dominate the open banking sector.",
       "source": "Finextra"
     },
     {
-      "title": "Fed Proposes 'Skinny' Masters Accounts to Boost Fintech Access",
-      "body": "Federal Reserve Governor Christopher Waller has proposed the creation of 'skinny' master accounts to give fintechs and non-bank entities access to basic Fed payment services. This initiative is designed to spur innovation and inclusivity in the financial services sector, potentially transforming how fintechs operate within the regulatory framework.",
+      "title": "Pave Secures $39 Million to Pioneer Programmable Banking",
+      "body": "Pave Bank has raised $39 million to create the first programmable bank, a novel concept aimed at revolutionizing banking for digital assets and AI applications. This funding could significantly alter the fintech ecosystem, offering new, flexible financial tools for tech-savvy consumers and businesses.",
       "source": "Finextra"
+    },
+    {
+      "title": "Canadian Regulator Fines Cryptomus $177 Million for Compliance Failures",
+      "body": "Cryptomus has been hit with a hefty C$177 million fine by Canada's Fintrac for not adhering to anti-money laundering and counter-terrorist financing laws. This marks one of the largest penalties in the crypto sector and underscores the increasing regulatory scrutiny on cryptocurrency platforms globally.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Crusoe Energy Systems Triples Valuation to $10 Billion with New Funding",
+      "body": "Crusoe Energy Systems has secured $1.4 billion in funding, tripling its valuation to $10 billion. This investment will expand its AI-focused data centers, highlighting the surging investor interest in infrastructure that supports advanced AI technologies. This move is pivotal for the AI industry, providing critical resources for future developments.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It started as a cardboard card and was initially accepted at just 14 restaurants in New York.",
-    "source": "history.com"
+    "text": "Did you know that the first programmable bank is being developed to cater specifically to digital assets and the AI era? This could revolutionize how we interact with financial services.",
+    "source": "Finextra"
   }
 }
