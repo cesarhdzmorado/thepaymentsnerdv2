@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "California Enacts Groundbreaking AI and Social Media Laws",
-      "body": "California has set a new benchmark with its comprehensive AI and social media regulations, the first of their kind in the U.S. These laws mandate stricter chatbot oversight and robust age verification to enhance digital safety, particularly for minors. This pioneering move could serve as a model for other states, potentially reshaping the national landscape of digital regulation.",
-      "source": "PYMNTS.com"
+      "title": "Juspay Integrates Mastercard's Click to Pay in Brazil",
+      "body": "Juspay has revolutionized the checkout process for Brazilian merchants by integrating Mastercard's Click to Pay, featuring tokenized card credentials and biometric authentication. This move not only enhances security but also boosts conversion rates by streamlining transactions.",
+      "source": "pymnts.com"
     },
     {
-      "title": "TrueLayer Boosts European Presence with Zimpler Acquisition",
-      "body": "TrueLayer is expanding its footprint in Europe by acquiring Nordic open banking firm Zimpler. This acquisition not only strengthens TrueLayer's market position but also enhances its capabilities in the competitive European payments landscape, signaling a strategic push to dominate the open banking sector.",
-      "source": "Finextra"
+      "title": "AI Escalates Threat in Cybersecurity with Enhanced Phishing Scams",
+      "body": "Cybercriminals are leveraging generative AI to create more sophisticated phishing attacks, as noted in the FBI's 2024 Internet Crime Report. This evolution in scam tactics poses new challenges for cybersecurity defenses, making it crucial for the industry to adapt.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Pave Secures $39 Million to Pioneer Programmable Banking",
-      "body": "Pave Bank has raised $39 million to create the first programmable bank, a novel concept aimed at revolutionizing banking for digital assets and AI applications. This funding could significantly alter the fintech ecosystem, offering new, flexible financial tools for tech-savvy consumers and businesses.",
-      "source": "Finextra"
+      "title": "Crypto.com Pursues National Trust Bank Charter for Better Custody",
+      "body": "Crypto.com has applied for a national trust bank charter from the OCC, aiming to enhance its regulatory compliance and custody services. This strategic move could significantly bolster customer protection and trust in the platform's cryptocurrency transactions.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Canadian Regulator Fines Cryptomus $177 Million for Compliance Failures",
-      "body": "Cryptomus has been hit with a hefty C$177 million fine by Canada's Fintrac for not adhering to anti-money laundering and counter-terrorist financing laws. This marks one of the largest penalties in the crypto sector and underscores the increasing regulatory scrutiny on cryptocurrency platforms globally.",
-      "source": "Finextra"
+      "title": "UK Government's New Scale-Up Unit to Boost Fintech Growth",
+      "body": "The UK government has launched a dedicated scale-up unit to support the rapid growth of fintechs, banks, and insurers. This initiative is set to foster innovation and accelerate the development of the financial services sector, promising a more dynamic market environment.",
+      "source": "finextra.com"
     },
     {
-      "title": "Crusoe Energy Systems Triples Valuation to $10 Billion with New Funding",
-      "body": "Crusoe Energy Systems has secured $1.4 billion in funding, tripling its valuation to $10 billion. This investment will expand its AI-focused data centers, highlighting the surging investor interest in infrastructure that supports advanced AI technologies. This move is pivotal for the AI industry, providing critical resources for future developments.",
-      "source": "Financial Times"
+      "title": "Federal Reserve Considers 'Skinny' Master Accounts for Fintechs",
+      "body": "The Federal Reserve is exploring the introduction of 'skinny' master accounts to give fintechs and non-bank entities access to basic payment services. This could democratize the financial landscape, offering new opportunities for innovation in payments.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first programmable bank is being developed to cater specifically to digital assets and the AI era? This could revolutionize how we interact with financial services.",
-    "source": "Finextra"
+    "text": "Did you know that AI-driven social engineering attacks are becoming so advanced that they're increasingly difficult to detect and more expensive to manage?",
+    "source": "pymnts.com"
   }
 }
