@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Juspay Integrates Mastercard's Click to Pay in Brazil",
-      "body": "Juspay has revolutionized the checkout process for Brazilian merchants by integrating Mastercard's Click to Pay, featuring tokenized card credentials and biometric authentication. This move not only enhances security but also boosts conversion rates by streamlining transactions.",
-      "source": "pymnts.com"
+      "title": "Crypto.com Pursues National Trust Bank Charter for Enhanced Custody",
+      "body": "Crypto.com is stepping up its regulatory game by applying for a national trust bank charter with the OCC. This strategic move aims to bolster its custody services, ensuring better compliance and customer protection. It's a significant step for Crypto.com in solidifying its standing in the financial ecosystem.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "AI Escalates Threat in Cybersecurity with Enhanced Phishing Scams",
-      "body": "Cybercriminals are leveraging generative AI to create more sophisticated phishing attacks, as noted in the FBI's 2024 Internet Crime Report. This evolution in scam tactics poses new challenges for cybersecurity defenses, making it crucial for the industry to adapt.",
-      "source": "pymnts.com"
+      "title": "AI-Driven Social Engineering Attacks Escalate Fraud Risks",
+      "body": "Cybercriminals are leveraging generative AI to intensify phishing and other scams, making fraud detection tougher and financial losses steeper. According to the FBI's 2024 Internet Crime Report, these AI-enhanced tactics are costing billions annually, signaling a critical need for advanced fraud prevention strategies in the payments industry.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Crypto.com Pursues National Trust Bank Charter for Better Custody",
-      "body": "Crypto.com has applied for a national trust bank charter from the OCC, aiming to enhance its regulatory compliance and custody services. This strategic move could significantly bolster customer protection and trust in the platform's cryptocurrency transactions.",
-      "source": "pymnts.com"
+      "title": "Open Banking Debate Intensifies with 14,000 Comments on Rule Changes",
+      "body": "The CFPB's review of open banking rules under Section 1033 has drawn nearly 14,000 comments, reflecting deep divides over privacy and data access. This discussion is pivotal as it shapes the future of financial services innovation and competition, highlighting the critical balance between openness and consumer protection.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "UK Government's New Scale-Up Unit to Boost Fintech Growth",
-      "body": "The UK government has launched a dedicated scale-up unit to support the rapid growth of fintechs, banks, and insurers. This initiative is set to foster innovation and accelerate the development of the financial services sector, promising a more dynamic market environment.",
-      "source": "finextra.com"
+      "title": "UK Government Initiates Scale-Up Unit to Boost Fintech Growth",
+      "body": "In a major boost for fintechs, the UK government has launched a scale-up unit to support the rapid growth of financial technology firms along with banks and insurers. This initiative aims to foster innovation and streamline regulatory pathways, potentially accelerating the evolution of financial services.",
+      "source": "Finextra"
     },
     {
-      "title": "Federal Reserve Considers 'Skinny' Master Accounts for Fintechs",
-      "body": "The Federal Reserve is exploring the introduction of 'skinny' master accounts to give fintechs and non-bank entities access to basic payment services. This could democratize the financial landscape, offering new opportunities for innovation in payments.",
-      "source": "finextra.com"
+      "title": "TrueLayer Expands with Acquisition of Open Banking Rival Zimpler",
+      "body": "TrueLayer is set to enhance its position in the European market by acquiring Nordic open banking firm Zimpler. This move not only broadens TrueLayer's capabilities but also intensifies competition in the open banking ecosystem, promising greater innovation and service improvements.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that AI-driven social engineering attacks are becoming so advanced that they're increasingly difficult to detect and more expensive to manage?",
-    "source": "pymnts.com"
+    "text": "Did you know that the FBI's 2024 Internet Crime Report reveals that AI-enhanced scams are costing billions annually? This underscores the escalating challenge of cyber fraud in the digital age.",
+    "source": "PYMNTS.com"
   }
 }
