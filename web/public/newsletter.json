@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Zelle Integrates Stablecoins for Faster International Payments",
-      "body": "Zelle is set to transform the landscape of international remittances by incorporating stablecoins into its payment system. This move leverages blockchain's reliability to offer quicker, cost-effective cross-border transactions, challenging traditional banking methods and potentially reshaping the global remittance market.",
+      "title": "Citi and Coinbase Partner to Launch Digital Asset Payments for Institutions",
+      "body": "Citi has teamed up with Coinbase to roll out digital asset payment services for its institutional clients, marking a significant step in merging traditional financial services with the digital asset space. This partnership, announced recently, underscores the growing institutional acceptance of cryptocurrencies and could pave the way for broader adoption in the financial sector.",
       "source": "Finextra"
     },
     {
-      "title": "JPMorgan Embraces Crypto with New Collateral Options",
-      "body": "In a landmark shift, JPMorgan Chase will soon allow institutional clients to use bitcoin and ether as loan collateral. This initiative, slated for year-end implementation, underscores a significant pivot towards cryptocurrency acceptance in mainstream finance, potentially catalyzing further institutional investments.",
+      "title": "Zelle Expands Internationally Using Stablecoins for Payments",
+      "body": "Zelle is set to revolutionize cross-border transactions by incorporating stablecoins, announced recently. This strategic shift not only broadens Zelle's international reach but also capitalizes on blockchain's efficiency and stability, potentially setting a new standard for global payment solutions in the banking industry.",
       "source": "Finextra"
     },
     {
-      "title": "UK Government Boosts Fintech with Dedicated Scale-Up Unit",
-      "body": "The UK government is enhancing its support for the fintech sector by creating a new 'scale-up unit' aimed at accelerating the growth of innovative financial firms. This strategic move positions the UK to maintain its status as a global fintech hub, providing crucial resources to emerging companies.",
+      "title": "NYSE Launches Trading of Spot Crypto ETFs for Major Cryptocurrencies",
+      "body": "The NYSE has initiated trading of spot crypto ETFs for Solana, Hedera, and Litecoin, as of this month. This development is a significant nod towards the mainstreaming of cryptocurrencies, offering investors regulated and potentially safer avenues to invest in digital assets, which could influence global financial markets.",
+      "source": "CoinDesk"
+    },
+    {
+      "title": "Klarna Transforms into Full-Scale Bank, Launches Global Membership Program",
+      "body": "Klarna is expanding beyond its BNPL roots to become a full-scale bank, introducing a global membership program with diverse perks. This strategic pivot, announced recently, aims to boost customer loyalty and engagement, positioning Klarna as a more versatile player in the competitive financial services market.",
       "source": "Finextra"
     },
     {
-      "title": "Federal Reserve to Offer 'Skinny' Masters Accounts to Fintechs",
-      "body": "The Federal Reserve is considering 'skinny' master accounts to give fintechs and non-bank payment providers access to essential Fed payment services. This development could democratize the financial infrastructure, fostering innovation and enhancing competition within the payments industry.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Coinbase Rolls Out Bitcoin Rewards Credit Card to U.S. Consumers",
-      "body": "Coinbase is launching a bitcoin rewards credit card for hundreds of thousands on its waitlist, integrating crypto rewards into daily transactions. This move is poised to boost cryptocurrency's mainstream adoption, making digital currency rewards a part of everyday shopping experiences.",
-      "source": "Finextra"
+      "title": "Digital Asset Investments Surge with $921 Million Inflows Anticipating Rate Cuts",
+      "body": "Last week, digital asset investment products witnessed a massive $921 million inflow, primarily from the U.S. and Germany, driven by expectations of further rate cuts. This surge reflects robust investor confidence and could signal a shift in investment strategies amidst evolving economic conditions.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first Bitcoin transaction was for two pizzas in 2010, costing 10,000 bitcoins, which would be worth millions today!",
+    "text": "Did you know? The first Bitcoin transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth millions today!",
     "source": "bitcoin.org"
   }
 }
