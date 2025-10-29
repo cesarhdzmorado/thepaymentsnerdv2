@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Citi and Coinbase Partner to Launch Digital Asset Payments for Institutions",
-      "body": "Citi has teamed up with Coinbase to roll out digital asset payment services for its institutional clients, marking a significant step in merging traditional financial services with the digital asset space. This partnership, announced recently, underscores the growing institutional acceptance of cryptocurrencies and could pave the way for broader adoption in the financial sector.",
-      "source": "Finextra"
+      "title": "Visa Accelerates as a Digital Payments Powerhouse",
+      "body": "Visa's fiscal Q4 results showcased an 8% rise in U.S. payments volume, driven by increased debit and credit spending and a surge in tokenized credentials and stablecoin activities. This growth not only highlights Visa's adaptation to digital finance but also cements its position as a key player in the evolving payments landscape, potentially reshaping market dynamics.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Zelle Expands Internationally Using Stablecoins for Payments",
-      "body": "Zelle is set to revolutionize cross-border transactions by incorporating stablecoins, announced recently. This strategic shift not only broadens Zelle's international reach but also capitalizes on blockchain's efficiency and stability, potentially setting a new standard for global payment solutions in the banking industry.",
-      "source": "Finextra"
+      "title": "Western Union Dives into Digital Currency with New Stablecoin",
+      "body": "Western Union is set to launch its own stablecoin, marking a significant shift towards digital currency for the traditional money transfer giant. This strategic move into blockchain technology could disrupt the financial services sector, offering new digital payment solutions that could challenge existing market norms.",
+      "source": "finextra.com"
     },
     {
-      "title": "NYSE Launches Trading of Spot Crypto ETFs for Major Cryptocurrencies",
-      "body": "The NYSE has initiated trading of spot crypto ETFs for Solana, Hedera, and Litecoin, as of this month. This development is a significant nod towards the mainstreaming of cryptocurrencies, offering investors regulated and potentially safer avenues to invest in digital assets, which could influence global financial markets.",
-      "source": "CoinDesk"
+      "title": "PayPal Partners with OpenAI to Integrate Payment Wallet into ChatGPT",
+      "body": "PayPal's recent collaboration with OpenAI to integrate its payment wallet into ChatGPT has led to a more than 10% spike in its shares. This partnership underscores the growing fusion of AI with financial services, potentially revolutionizing consumer financial interactions and setting a new trend in the industry.",
+      "source": "finextra.com"
     },
     {
-      "title": "Klarna Transforms into Full-Scale Bank, Launches Global Membership Program",
-      "body": "Klarna is expanding beyond its BNPL roots to become a full-scale bank, introducing a global membership program with diverse perks. This strategic pivot, announced recently, aims to boost customer loyalty and engagement, positioning Klarna as a more versatile player in the competitive financial services market.",
-      "source": "Finextra"
+      "title": "Fed Explores Direct Payment System Access for FinTechs",
+      "body": "The Federal Reserve is considering granting 'skinny' master accounts to select FinTech companies, allowing them direct access to its core payment systems. This move could democratize the financial landscape, enabling FinTechs to compete more effectively with traditional banks and potentially accelerating innovation in financial services.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Digital Asset Investments Surge with $921 Million Inflows Anticipating Rate Cuts",
-      "body": "Last week, digital asset investment products witnessed a massive $921 million inflow, primarily from the U.S. and Germany, driven by expectations of further rate cuts. This surge reflects robust investor confidence and could signal a shift in investment strategies amidst evolving economic conditions.",
-      "source": "PYMNTS.com"
+      "title": "Klarna Shifts from BNPL to Comprehensive Banking Services",
+      "body": "Klarna is expanding beyond its BNPL roots with a new global membership program that includes cashback and travel perks. This evolution into a full-scale banking entity could diversify its revenue streams and enhance customer loyalty, positioning Klarna as a more formidable player in the competitive financial services sector.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first Bitcoin transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth millions today!",
-    "source": "bitcoin.org"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was initially made of cardboard?",
+    "source": "history.com"
   }
 }
