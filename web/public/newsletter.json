@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "FedNow Service Revolutionizes Bank Transactions for Competitive Edge",
-      "body": "Banks are rapidly integrating the FedNow Service to stay competitive against nonbank financial entities. This platform provides faster, always-on transaction capabilities, crucial in today's fast-paced financial environment. Nick Stanescu, chief FedNow executive, reports a significant uptake, highlighting the increasing demand for quick and reliable financial services.",
+      "title": "Robinhood's Prediction Markets See Explosive Growth",
+      "body": "Robinhood's prediction markets are now its fastest-growing segment, doubling in volume each quarter since launch, as revealed in their Q3 earnings call. This surge not only diversifies investment portfolios but also signals the emergence of prediction markets as a significant asset class, reshaping investment strategies and market dynamics.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Walmart and Lendistry Team Up to Boost Credit Access for Sellers",
-      "body": "Walmart has joined forces with Lendistry to streamline credit access for small to midsize marketplace sellers, aiming to ease the financing process for business growth and inventory management. This collaboration is set to empower smaller merchants on Walmart's vast e-commerce platform, enhancing their growth potential.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Stripe Tests NEC Face Recognition for Enhanced Payment Security",
-      "body": "Stripe is pioneering the use of NEC's face recognition technology at its point-of-sale terminals, aiming to bolster security and streamline transaction processes. This move could potentially set a new industry standard for biometric verification, reflecting Stripe's commitment to cutting-edge payment security solutions.",
+      "title": "US Bank Debuts Credit Card with Built-in Payment Plan",
+      "body": "US Bank has introduced a groundbreaking credit card that splits purchases into a three-month payment plan, offering a fresh twist on the buy now, pay later model. This innovation could boost credit card usage and deepen customer loyalty by providing more flexible payment solutions.",
       "source": "Finextra"
     },
     {
-      "title": "Blockchain Set to Dominate Future Financial Transactions, Says CEO",
-      "body": "Bill Winters, CEO of Standard Chartered, projects that blockchain technology will soon underpin nearly all financial transactions globally. This prediction emphasizes blockchain's potential to revolutionize transaction efficiency and transparency, signaling a transformative shift in financial operations.",
+      "title": "Stripe Tests Face Recognition for In-Person Payments",
+      "body": "In a pioneering move, Stripe, in partnership with NEC, is testing face recognition technology for in-person payments. This technology could set new industry standards by enhancing security and streamlining transactions, potentially revolutionizing how consumers interact with payment systems.",
       "source": "Finextra"
     },
     {
-      "title": "Deutsche Bank Adapts to AI Lending Boom with New Hedging Strategies",
-      "body": "Deutsche Bank is exploring hedging strategies, including shorting AI stocks and using derivatives, to manage risks associated with the surge in AI-driven lending. This strategic shift underscores the need for traditional financial institutions to adapt to rapid technological changes impacting the industry.",
-      "source": "Financial Times"
+      "title": "CTS Eventim Integrates Wero Wallet, Boosting Digital Payments",
+      "body": "Germany's CTS Eventim has adopted the Wero wallet, supported by the European Payments Initiative, marking a significant advancement in digital payment solutions across Europe's e-commerce platforms. This integration is poised to enhance transaction efficiency and user experience in the digital ticketing sector.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Blockchain Predicted to Underpin Most Financial Transactions",
+      "body": "Bill Winters, CEO of Standard Chartered, forecasts that blockchain technology will soon support nearly all financial transactions. This bold prediction highlights blockchain's increasing relevance in global finance, suggesting a major shift towards more secure and efficient transaction methods.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first ATM was installed in London in 1967, revolutionizing the way consumers interacted with their bank accounts?",
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
     "source": "history.com"
   }
 }
