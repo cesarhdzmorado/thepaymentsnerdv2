@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Robinhood's Prediction Markets See Explosive Growth",
-      "body": "Robinhood's prediction markets are now its fastest-growing segment, doubling in volume each quarter since launch, as revealed in their Q3 earnings call. This surge not only diversifies investment portfolios but also signals the emergence of prediction markets as a significant asset class, reshaping investment strategies and market dynamics.",
-      "source": "PYMNTS.com"
+      "title": "EU Probes Deutsche B\u00f6rse and Nasdaq for Antitrust Violations",
+      "body": "The European Commission has launched an antitrust investigation into Deutsche B\u00f6rse and Nasdaq, focusing on their practices in the listing, trading, and clearing of financial derivatives. This probe could reshape the competitive landscape of European financial markets, impacting investors and companies that depend on these platforms for trading.",
+      "source": "finextra.com"
     },
     {
-      "title": "US Bank Debuts Credit Card with Built-in Payment Plan",
-      "body": "US Bank has introduced a groundbreaking credit card that splits purchases into a three-month payment plan, offering a fresh twist on the buy now, pay later model. This innovation could boost credit card usage and deepen customer loyalty by providing more flexible payment solutions.",
-      "source": "Finextra"
+      "title": "Ripple's Valuation Soars to $40 Billion After New Funding",
+      "body": "Ripple has raised $500 million in a recent funding round, catapulting its valuation to $40 billion. This significant investment underscores growing confidence in Ripple's technology, which could redefine global financial transactions and payment infrastructures.",
+      "source": "finextra.com"
     },
     {
-      "title": "Stripe Tests Face Recognition for In-Person Payments",
-      "body": "In a pioneering move, Stripe, in partnership with NEC, is testing face recognition technology for in-person payments. This technology could set new industry standards by enhancing security and streamlining transactions, potentially revolutionizing how consumers interact with payment systems.",
-      "source": "Finextra"
+      "title": "US Bank Introduces Split Card for Flexible Installment Payments",
+      "body": "US Bank has launched the Split Card, a novel credit solution that divides purchases into three-month installment plans automatically. This initiative reflects the changing dynamics of consumer credit, offering more flexibility and potentially reshaping payment habits.",
+      "source": "finextra.com"
     },
     {
-      "title": "CTS Eventim Integrates Wero Wallet, Boosting Digital Payments",
-      "body": "Germany's CTS Eventim has adopted the Wero wallet, supported by the European Payments Initiative, marking a significant advancement in digital payment solutions across Europe's e-commerce platforms. This integration is poised to enhance transaction efficiency and user experience in the digital ticketing sector.",
-      "source": "Finextra"
+      "title": "Stripe Tests Face Recognition for Enhanced Payment Security",
+      "body": "Stripe is collaborating with NEC to integrate face recognition technology into its payment terminals. This innovation could lead to a more secure and frictionless payment experience in retail, setting new benchmarks for transaction security and customer convenience.",
+      "source": "finextra.com"
     },
     {
-      "title": "Blockchain Predicted to Underpin Most Financial Transactions",
-      "body": "Bill Winters, CEO of Standard Chartered, forecasts that blockchain technology will soon support nearly all financial transactions. This bold prediction highlights blockchain's increasing relevance in global finance, suggesting a major shift towards more secure and efficient transaction methods.",
-      "source": "Finextra"
+      "title": "Affirm Sees 135% Jump in Card Volumes with Amazon Partnership",
+      "body": "Affirm's card volumes have surged by 135% following the extension of its partnership with Amazon until 2031. This growth highlights the significant impact of strategic alliances in fintech, enhancing Affirm's market position and setting a precedent in the industry.",
+      "source": "pymnts.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was made of cardboard!",
     "source": "history.com"
   }
 }
