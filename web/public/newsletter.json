@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "EU Probes Deutsche B\u00f6rse and Nasdaq for Antitrust Violations",
-      "body": "The European Commission has launched an antitrust investigation into Deutsche B\u00f6rse and Nasdaq, focusing on their practices in the listing, trading, and clearing of financial derivatives. This probe could reshape the competitive landscape of European financial markets, impacting investors and companies that depend on these platforms for trading.",
-      "source": "finextra.com"
+      "title": "Amazon Launches Bazaar App in 14 New Markets to Boost Value Shopping",
+      "body": "Amazon is expanding its budget-friendly shopping solutions with the launch of Amazon Bazaar in 14 new markets. Announced on November 7, this move aims to make affordable shopping more accessible, potentially altering consumer spending habits and increasing market competition.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Ripple's Valuation Soars to $40 Billion After New Funding",
-      "body": "Ripple has raised $500 million in a recent funding round, catapulting its valuation to $40 billion. This significant investment underscores growing confidence in Ripple's technology, which could redefine global financial transactions and payment infrastructures.",
-      "source": "finextra.com"
+      "title": "Fiserv Faces Senate Probe After $30 Billion Market Value Drop",
+      "body": "U.S. senators are investigating Fiserv following a sharp decline in its market value and a cut in financial forecasts. This scrutiny could lead to increased regulatory oversight in financial forecasting practices, impacting the fintech sector's operational transparency.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "US Bank Introduces Split Card for Flexible Installment Payments",
-      "body": "US Bank has launched the Split Card, a novel credit solution that divides purchases into three-month installment plans automatically. This initiative reflects the changing dynamics of consumer credit, offering more flexibility and potentially reshaping payment habits.",
-      "source": "finextra.com"
+      "title": "Bancomat Debuts EUR-BANK Stablecoin to Unify European Payments",
+      "body": "Bancomat has introduced a new stablecoin, EUR-BANK, aimed at reducing payment fragmentation across Europe. Launched at the Salone dei Pagamenti in Milan, this could significantly streamline transactions and enhance payment system interoperability in the region.",
+      "source": "Finextra"
     },
     {
-      "title": "Stripe Tests Face Recognition for Enhanced Payment Security",
-      "body": "Stripe is collaborating with NEC to integrate face recognition technology into its payment terminals. This innovation could lead to a more secure and frictionless payment experience in retail, setting new benchmarks for transaction security and customer convenience.",
-      "source": "finextra.com"
+      "title": "Canada's 2025 Budget to Revolutionize Payments with Real-Time Rail",
+      "body": "Canada's 2025 budget outlines plans for a Real-Time Rail payment system and new stablecoin regulations under Prime Minister Mark Carney's leadership. These initiatives are set to boost the country's financial services sector by enhancing speed, security, and innovation.",
+      "source": "Finextra"
     },
     {
-      "title": "Affirm Sees 135% Jump in Card Volumes with Amazon Partnership",
-      "body": "Affirm's card volumes have surged by 135% following the extension of its partnership with Amazon until 2031. This growth highlights the significant impact of strategic alliances in fintech, enhancing Affirm's market position and setting a precedent in the industry.",
-      "source": "pymnts.com"
+      "title": "Ripple's Market Valuation Soars to $40 Billion After New Funding",
+      "body": "Ripple has reached a $40 billion valuation following a $500 million funding round, highlighting growing investor confidence in its digital asset infrastructure. This capital boost is poised to accelerate Ripple's technology development and market expansion.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was made of cardboard!",
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
     "source": "history.com"
   }
 }
