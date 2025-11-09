@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Amazon Launches Bazaar App in 14 New Markets to Boost Value Shopping",
-      "body": "Amazon is expanding its budget-friendly shopping solutions with the launch of Amazon Bazaar in 14 new markets. Announced on November 7, this move aims to make affordable shopping more accessible, potentially altering consumer spending habits and increasing market competition.",
+      "title": "Amazon Bazaar Expands to 14 New Markets with Standalone App",
+      "body": "Amazon has launched its Amazon Bazaar app in 14 additional markets, enhancing its focus on affordability and convenience. This strategic expansion aims to solidify Amazon's foothold in the competitive retail sector by catering to cost-conscious consumers. The move could reshape market dynamics and consumer shopping behaviors in these regions.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Fiserv Faces Senate Probe After $30 Billion Market Value Drop",
-      "body": "U.S. senators are investigating Fiserv following a sharp decline in its market value and a cut in financial forecasts. This scrutiny could lead to increased regulatory oversight in financial forecasting practices, impacting the fintech sector's operational transparency.",
+      "title": "Senators Probe Fiserv After $30 Billion Market Value Plunge",
+      "body": "Following a drastic guidance cut, U.S. senators are investigating Fiserv's financial forecasting practices, particularly the involvement of its former CEO, Frank Bisignano. This scrutiny could lead to stricter regulations on corporate financial disclosures, impacting how companies manage and report financial performance.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Bancomat Debuts EUR-BANK Stablecoin to Unify European Payments",
-      "body": "Bancomat has introduced a new stablecoin, EUR-BANK, aimed at reducing payment fragmentation across Europe. Launched at the Salone dei Pagamenti in Milan, this could significantly streamline transactions and enhance payment system interoperability in the region.",
+      "title": "Bancomat Launches EUR-BANK Stablecoin to Streamline European Payments",
+      "body": "Bancomat has introduced a new stablecoin, EUR-BANK, at the Salone dei Pagamenti in Milan, aiming to reduce payment fragmentation across Europe. This digital currency could enhance the efficiency of cross-border transactions and stabilize payment systems within the EU, marking a significant shift in European financial transactions.",
       "source": "Finextra"
     },
     {
-      "title": "Canada's 2025 Budget to Revolutionize Payments with Real-Time Rail",
-      "body": "Canada's 2025 budget outlines plans for a Real-Time Rail payment system and new stablecoin regulations under Prime Minister Mark Carney's leadership. These initiatives are set to boost the country's financial services sector by enhancing speed, security, and innovation.",
+      "title": "Canada's 2025 Budget Targets Enhanced Digital Payments and Cybersecurity",
+      "body": "Canada's 2025 budget, under Prime Minister Mark Carney, introduces strict new regulations for stablecoins and a Real-Time Rail payment system. These initiatives are set to revolutionize the Canadian digital payments landscape, boosting security and competitiveness in the financial sector.",
       "source": "Finextra"
     },
     {
-      "title": "Ripple's Market Valuation Soars to $40 Billion After New Funding",
-      "body": "Ripple has reached a $40 billion valuation following a $500 million funding round, highlighting growing investor confidence in its digital asset infrastructure. This capital boost is poised to accelerate Ripple's technology development and market expansion.",
+      "title": "Ripple's Market Valuation Soars to $40 Billion Post-Funding",
+      "body": "Ripple has reached a $40 billion valuation after securing $500 million in its latest funding round. This valuation highlights growing investor confidence in Ripple's infrastructure capabilities, potentially transforming its role in the global payments ecosystem.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
-    "source": "history.com"
+    "text": "Did you know that the first item ever ordered on Amazon was a book titled 'Fluid Concepts and Creative Analogies' by Douglas Hofstadter?",
+    "source": "amazon.com"
   }
 }
