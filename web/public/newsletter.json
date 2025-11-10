@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Amazon Bazaar Expands to 14 New Markets with Standalone App",
-      "body": "Amazon has launched its Amazon Bazaar app in 14 additional markets, enhancing its focus on affordability and convenience. This strategic expansion aims to solidify Amazon's foothold in the competitive retail sector by catering to cost-conscious consumers. The move could reshape market dynamics and consumer shopping behaviors in these regions.",
+      "title": "Bancomat Launches EUR-BANK Stablecoin to Unify European Payments",
+      "body": "Bancomat has unveiled its EUR-BANK stablecoin, aiming to tackle payment fragmentation across Europe. Launched at Milan's Salone dei Pagamenti, this stablecoin could revolutionize the financial landscape by enhancing transaction efficiency and reducing cross-border payment barriers. This strategic move is pivotal for payments professionals eyeing a more integrated European market.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Canada's 2025 Budget Introduces Real-Time Rail and Stablecoin Rules",
+      "body": "Canada's 2025 budget, spearheaded by Prime Minister Mark Carney, is set to introduce a Real-Time Rail system and new stablecoin regulations. These reforms are designed to stimulate digital payment innovation, strengthen cybercrime defenses, and intensify competition in the financial sector. This development is crucial for professionals tracking advancements in national payment infrastructures.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Ripple's Market Valuation Soars to $40 Billion After Funding Boost",
+      "body": "Ripple's valuation has skyrocketed to $40 billion following a $500 million funding round. This valuation underscores Ripple's expanding influence in the cryptocurrency and digital payment arenas, marking it as a significant player to watch for future developments and market dynamics in digital finance.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Capital One's $425 Million Settlement Faces Federal Rejection",
+      "body": "A federal judge has turned down Capital One's proposed $425 million settlement with depositors over interest rates, highlighting ongoing legal challenges in financial services. This decision stresses the importance of understanding depositor rights and the potential implications for financial institutions' operational risks.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Senators Probe Fiserv After $30 Billion Market Value Plunge",
-      "body": "Following a drastic guidance cut, U.S. senators are investigating Fiserv's financial forecasting practices, particularly the involvement of its former CEO, Frank Bisignano. This scrutiny could lead to stricter regulations on corporate financial disclosures, impacting how companies manage and report financial performance.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Bancomat Launches EUR-BANK Stablecoin to Streamline European Payments",
-      "body": "Bancomat has introduced a new stablecoin, EUR-BANK, at the Salone dei Pagamenti in Milan, aiming to reduce payment fragmentation across Europe. This digital currency could enhance the efficiency of cross-border transactions and stabilize payment systems within the EU, marking a significant shift in European financial transactions.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Canada's 2025 Budget Targets Enhanced Digital Payments and Cybersecurity",
-      "body": "Canada's 2025 budget, under Prime Minister Mark Carney, introduces strict new regulations for stablecoins and a Real-Time Rail payment system. These initiatives are set to revolutionize the Canadian digital payments landscape, boosting security and competitiveness in the financial sector.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Ripple's Market Valuation Soars to $40 Billion Post-Funding",
-      "body": "Ripple has reached a $40 billion valuation after securing $500 million in its latest funding round. This valuation highlights growing investor confidence in Ripple's infrastructure capabilities, potentially transforming its role in the global payments ecosystem.",
-      "source": "Finextra"
+      "title": "Voice Phishing: The New Frontier in AI-Driven Fraud",
+      "body": "Voice phishing is emerging as a significant threat in the realm of AI-driven fraud, with scammers using human-sounding AI to deceive victims. This development is a critical alert for payments security professionals to innovate defenses against increasingly sophisticated fraud techniques.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first item ever ordered on Amazon was a book titled 'Fluid Concepts and Creative Analogies' by Douglas Hofstadter?",
-    "source": "amazon.com"
+    "text": "Did you know that implementing AI technologies can boost revenue generation in the real economy? This highlights AI's potential to drive significant economic growth and efficiency across various sectors.",
+    "source": "Financial Times"
   }
 }
