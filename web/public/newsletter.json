@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Bancomat Launches EUR-BANK Stablecoin to Unify European Payments",
-      "body": "Bancomat has unveiled its EUR-BANK stablecoin, aiming to tackle payment fragmentation across Europe. Launched at Milan's Salone dei Pagamenti, this stablecoin could revolutionize the financial landscape by enhancing transaction efficiency and reducing cross-border payment barriers. This strategic move is pivotal for payments professionals eyeing a more integrated European market.",
+      "title": "Square Introduces Bitcoin Payments for 4 Million Merchants",
+      "body": "Square has enabled bitcoin payment options for over four million merchants, marking a significant shift towards cryptocurrency in mainstream retail. This integration could revolutionize point-of-sale transactions, boosting bitcoin's utility and acceptance in everyday commerce.",
       "source": "Finextra"
     },
     {
-      "title": "Canada's 2025 Budget Introduces Real-Time Rail and Stablecoin Rules",
-      "body": "Canada's 2025 budget, spearheaded by Prime Minister Mark Carney, is set to introduce a Real-Time Rail system and new stablecoin regulations. These reforms are designed to stimulate digital payment innovation, strengthen cybercrime defenses, and intensify competition in the financial sector. This development is crucial for professionals tracking advancements in national payment infrastructures.",
+      "title": "Visa and Mastercard Reach Settlement Over Interchange Fees",
+      "body": "Visa and Mastercard have settled a longstanding dispute with U.S. retailers over interchange fees, agreeing to lower charges and allowing merchants more freedom in card acceptance. This could reshape payment dynamics and reduce operational costs for U.S. merchants.",
       "source": "Finextra"
     },
     {
-      "title": "Ripple's Market Valuation Soars to $40 Billion After Funding Boost",
-      "body": "Ripple's valuation has skyrocketed to $40 billion following a $500 million funding round. This valuation underscores Ripple's expanding influence in the cryptocurrency and digital payment arenas, marking it as a significant player to watch for future developments and market dynamics in digital finance.",
+      "title": "Bank of England to Regulate Systemic Stablecoins",
+      "body": "The Bank of England is setting regulatory frameworks for systemic stablecoins denominated in sterling, including caps on holdings. This move aims to safely integrate stablecoins into the financial system, balancing innovation with risk management.",
       "source": "Finextra"
     },
     {
-      "title": "Capital One's $425 Million Settlement Faces Federal Rejection",
-      "body": "A federal judge has turned down Capital One's proposed $425 million settlement with depositors over interest rates, highlighting ongoing legal challenges in financial services. This decision stresses the importance of understanding depositor rights and the potential implications for financial institutions' operational risks.",
+      "title": "Paystand Acquires Bitwage, Boosting Cross-Border Payments",
+      "body": "Paystand has acquired Bitwage, enhancing its blockchain-enabled B2B payment solutions for cross-border stablecoin transactions. This acquisition underscores the increasing relevance of blockchain and stablecoins in global business operations.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Citi Enhances Token Services with Euro Integration",
+      "body": "Citi has expanded its Token Services to include euro transactions, establishing a new hub in Dublin. This enhancement supports seamless, real-time payments between the U.S. dollar and euro, streamlining cross-border transactions and bolstering financial operations.",
       "source": "PYMNTS.com"
-    },
-    {
-      "title": "Voice Phishing: The New Frontier in AI-Driven Fraud",
-      "body": "Voice phishing is emerging as a significant threat in the realm of AI-driven fraud, with scammers using human-sounding AI to deceive victims. This development is a critical alert for payments security professionals to innovate defenses against increasingly sophisticated fraud techniques.",
-      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that implementing AI technologies can boost revenue generation in the real economy? This highlights AI's potential to drive significant economic growth and efficiency across various sectors.",
-    "source": "Financial Times"
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010, costing 10,000 bitcoins, which would be worth millions today?",
+    "source": "bitcoin.org"
   }
 }
