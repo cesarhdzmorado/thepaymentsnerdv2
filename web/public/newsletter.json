@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Samsung and Barclays Team Up to Launch U.S. Credit Card",
-      "body": "Samsung Electronics is entering the U.S. credit card market through a strategic partnership with Barclays, directly challenging Apple's dominance in digital wallets. This move not only intensifies the competition among tech giants but also reshapes consumer finance dynamics, potentially altering consumer choices and loyalty in digital payment solutions.",
+      "title": "JPMorgan and DBS Bank Boost Cross-Border Payments with Blockchain",
+      "body": "JPMorgan's Kinexys and Singapore's DBS Bank are setting a new standard in banking with their collaboration on tokenized deposits interoperability across blockchain networks. This move not only enhances the security and efficiency of cross-border transactions but also underscores the transformative potential of blockchain in reshaping financial landscapes.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Visa Develops Trusted Agent Protocol to Combat AI Fraud",
+      "body": "Visa is stepping up its game in the AI commerce arena with a new 'trusted agent protocol' designed to protect merchants from fraudulent AI bots. This protocol is crucial for ensuring that the burgeoning use of AI in transactions remains secure and trustworthy, safeguarding the integrity of digital commerce.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Ant International Innovates with Iris-Enabled Payment Glasses",
+      "body": "Ant International is pushing the boundaries of wearable tech with its latest addition of iris authentication to its smart payment glasses. This feature enhances security and convenience, marking a significant step forward in the integration of biometric technology in financial transactions.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Visa Tests Stablecoin Payouts for Gig Economy Flexibility",
+      "body": "Visa is piloting the use of USD-backed stablecoins for payouts to creators and gig workers, aiming to revolutionize payment methods in the gig economy. This initiative leverages blockchain's efficiency and stability, offering a glimpse into the future of decentralized financial transactions for flexible work.",
+      "source": "Finextra"
+    },
+    {
+      "title": "CFPB to Revamp Small Business Lending Data Rule",
+      "body": "The Consumer Financial Protection Bureau is proposing changes to its small-business lending data rule to enhance data quality and ease compliance burdens. This move is pivotal in fostering a more supportive regulatory environment for small businesses, crucial for their growth and sustainability.",
       "source": "PYMNTS.com"
-    },
-    {
-      "title": "Square Expands Crypto Reach, Enables Bitcoin Payments for Merchants",
-      "body": "Square has introduced a feature that allows over four million merchants to accept bitcoin payments, significantly advancing cryptocurrency's integration into mainstream retail. This development not only broadens the utility of bitcoin but also signals a major shift in merchant services, potentially influencing consumer payment preferences and the broader adoption of digital currencies.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Visa and Mastercard Reach Settlement Over Interchange Fees",
-      "body": "Visa and Mastercard have settled a major dispute with U.S. retailers over interchange fees, agreeing to lower charges and enhance merchant freedom in card acceptance. This resolution could lead to more competitive fee structures and greater flexibility for retailers, impacting how payments are processed and potentially lowering costs for consumers.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Bank of England Sets Regulatory Framework for Systemic Stablecoins",
-      "body": "The Bank of England has proposed new regulations for systemic stablecoins, including holding caps for individuals and businesses. This move is pivotal in shaping the future of digital currencies in the UK, ensuring stability and security in the burgeoning sector, and could set a precedent for other central banks.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Revolut Eliminates Fees for Fiat to Stablecoin Conversions",
-      "body": "Revolut is revolutionizing its cryptocurrency services by offering fee-free conversions from fiat to stablecoins, making digital currencies more accessible to its users. This enhancement not only simplifies transactions but also positions Revolut as a leader in financial innovation, potentially attracting a larger user base and encouraging the adoption of stablecoins.",
-      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "The settlement between Visa and Mastercard with U.S. retailers could lead to more competitive fee structures and enhance merchant autonomy in choosing payment methods.",
-    "source": "Finextra"
+    "text": "Did you know that the first blockchain-based transaction was for two pizzas in 2010? The cost was 10,000 bitcoins!",
+    "source": "bitcoin.org"
   }
 }
