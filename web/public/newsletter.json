@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "JPMorgan and DBS Bank Boost Cross-Border Payments with Blockchain",
-      "body": "JPMorgan's Kinexys and Singapore's DBS Bank are setting a new standard in banking with their collaboration on tokenized deposits interoperability across blockchain networks. This move not only enhances the security and efficiency of cross-border transactions but also underscores the transformative potential of blockchain in reshaping financial landscapes.",
-      "source": "Finextra"
+      "title": "Apple Slashes App Store Fees to Boost Mini Apps Development",
+      "body": "Apple's new Mini Apps Partner Program cuts App Store fees from 30% to 15% for mini apps, as reported by PYMNTS.com. This initiative encourages developers to create apps within apps, potentially revolutionizing app development and monetization. It's a game-changer for mobile software, impacting how developers build apps and generate revenue.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Visa Develops Trusted Agent Protocol to Combat AI Fraud",
-      "body": "Visa is stepping up its game in the AI commerce arena with a new 'trusted agent protocol' designed to protect merchants from fraudulent AI bots. This protocol is crucial for ensuring that the burgeoning use of AI in transactions remains secure and trustworthy, safeguarding the integrity of digital commerce.",
-      "source": "Finextra"
+      "title": "Central Banks Pioneer Tokenized FX Settlements",
+      "body": "The Bank of England, Monetary Authority of Singapore, and Bank of Thailand are innovating with synchronized settlement mechanisms for tokenized FX transactions, according to Finextra. This could drastically improve the efficiency and security of international payments, setting new standards for global financial operations.",
+      "source": "finextra.com"
     },
     {
-      "title": "Ant International Innovates with Iris-Enabled Payment Glasses",
-      "body": "Ant International is pushing the boundaries of wearable tech with its latest addition of iris authentication to its smart payment glasses. This feature enhances security and convenience, marking a significant step forward in the integration of biometric technology in financial transactions.",
-      "source": "Finextra"
+      "title": "Mastercard and Thunes Partner for Instant Crypto Payouts",
+      "body": "Mastercard Move has teamed up with Thunes to enable near-instant payouts to stablecoin wallets, enhancing the bridge between traditional financial networks and cryptocurrencies, as Finextra reports. This partnership marks a significant advancement in payment technologies, offering faster, more secure transactions.",
+      "source": "finextra.com"
     },
     {
-      "title": "Visa Tests Stablecoin Payouts for Gig Economy Flexibility",
-      "body": "Visa is piloting the use of USD-backed stablecoins for payouts to creators and gig workers, aiming to revolutionize payment methods in the gig economy. This initiative leverages blockchain's efficiency and stability, offering a glimpse into the future of decentralized financial transactions for flexible work.",
-      "source": "Finextra"
+      "title": "EU Delays AI Act to Keep Pace with Tech Evolution",
+      "body": "The European Union is adjusting the rollout of its Artificial Intelligence Act to better match the rapid advancements in AI, PYMNTS.com reports. This regulatory recalibration aims to provide clarity and flexibility, reflecting the challenges of governing fast-evolving tech landscapes.",
+      "source": "pymnts.com"
     },
     {
-      "title": "CFPB to Revamp Small Business Lending Data Rule",
-      "body": "The Consumer Financial Protection Bureau is proposing changes to its small-business lending data rule to enhance data quality and ease compliance burdens. This move is pivotal in fostering a more supportive regulatory environment for small businesses, crucial for their growth and sustainability.",
-      "source": "PYMNTS.com"
+      "title": "JPMorgan and DBS Enhance Banking with Blockchain Interoperability",
+      "body": "JPMorgan and DBS are developing a framework for interoperable tokenized deposit transfers across blockchain networks, as highlighted by Finextra. This collaboration could lead to more seamless and secure banking transactions, showcasing the increasing integration of blockchain in mainstream financial services.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first blockchain-based transaction was for two pizzas in 2010? The cost was 10,000 bitcoins!",
-    "source": "bitcoin.org"
+    "text": "Did you know that the first mobile payment method was introduced by Coca-Cola in 1997, where customers could pay for their drinks by sending a text message?",
+    "source": "mobilepaymentstoday.com"
   }
 }
