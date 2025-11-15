@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Apple Slashes App Store Fees to Boost Mini Apps Development",
-      "body": "Apple's new Mini Apps Partner Program cuts App Store fees from 30% to 15% for mini apps, as reported by PYMNTS.com. This initiative encourages developers to create apps within apps, potentially revolutionizing app development and monetization. It's a game-changer for mobile software, impacting how developers build apps and generate revenue.",
-      "source": "pymnts.com"
+      "title": "Bitcoin Plummets Below $95,000 Amid Tech Stock Volatility",
+      "body": "In a dramatic week, Bitcoin's value dipped below $95,000, a near 9% fall, driven by a tech stock sell-off and rising interest rates. This volatility underscores the fragile interplay between cryptocurrency markets and broader economic factors, presenting both risks and opportunities for investors.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Central Banks Pioneer Tokenized FX Settlements",
-      "body": "The Bank of England, Monetary Authority of Singapore, and Bank of Thailand are innovating with synchronized settlement mechanisms for tokenized FX transactions, according to Finextra. This could drastically improve the efficiency and security of international payments, setting new standards for global financial operations.",
-      "source": "finextra.com"
+      "title": "Anthropic's AI Model Hacked, Triggering Cyber-Espionage Concerns",
+      "body": "Anthropic's AI model, Claude, was compromised in mid-September, affecting about 30 entities across various sectors. This breach not only exposes new AI vulnerabilities but also escalates the urgency for enhanced cybersecurity measures in the financial and tech industries.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Mastercard and Thunes Partner for Instant Crypto Payouts",
-      "body": "Mastercard Move has teamed up with Thunes to enable near-instant payouts to stablecoin wallets, enhancing the bridge between traditional financial networks and cryptocurrencies, as Finextra reports. This partnership marks a significant advancement in payment technologies, offering faster, more secure transactions.",
-      "source": "finextra.com"
+      "title": "Pix's 5th Anniversary Marks Major Milestone in Brazil's Payment Landscape",
+      "body": "Celebrating its fifth year, Brazil's Pix has revolutionized real-time payments, supporting everything from bill payments to business transactions. This shift towards instant payments is crucial for financial institutions aiming to stay relevant in a rapidly evolving global payments environment.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "EU Delays AI Act to Keep Pace with Tech Evolution",
-      "body": "The European Union is adjusting the rollout of its Artificial Intelligence Act to better match the rapid advancements in AI, PYMNTS.com reports. This regulatory recalibration aims to provide clarity and flexibility, reflecting the challenges of governing fast-evolving tech landscapes.",
-      "source": "pymnts.com"
+      "title": "Mastercard and Thunes Partner for Instant Stablecoin Wallet Payouts",
+      "body": "Mastercard's collaboration with Thunes to enable instant payouts to stablecoin wallets via its Move service marks a significant advancement in blending traditional financial services with blockchain technology. This partnership could reshape the landscape of digital transactions, offering unprecedented speed and flexibility.",
+      "source": "Finextra"
     },
     {
-      "title": "JPMorgan and DBS Enhance Banking with Blockchain Interoperability",
-      "body": "JPMorgan and DBS are developing a framework for interoperable tokenized deposit transfers across blockchain networks, as highlighted by Finextra. This collaboration could lead to more seamless and secure banking transactions, showcasing the increasing integration of blockchain in mainstream financial services.",
-      "source": "finextra.com"
+      "title": "Central Banks Explore Synchronized FX Settlements for Enhanced Security",
+      "body": "The central banks of England, Thailand, and Singapore are investigating synchronized settlements for tokenized FX transactions. This exploration could revolutionize cross-border payments, making them more secure and efficient, and is a critical development for financial institutions worldwide.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first mobile payment method was introduced by Coca-Cola in 1997, where customers could pay for their drinks by sending a text message?",
-    "source": "mobilepaymentstoday.com"
+    "text": "Did you know? Brazil's Pix system processes millions of transactions daily, significantly reducing the reliance on traditional banking methods.",
+    "source": "PYMNTS.com"
   }
 }
