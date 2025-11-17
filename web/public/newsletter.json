@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Central Banks Test Blockchain for FX Settlement Efficiency",
-      "body": "The Bank of England, Monetary Authority of Singapore, and Bank of Thailand are exploring blockchain for synchronized FX settlements. This could drastically improve the efficiency and security of international trade and finance by leveraging tokenized transactions. Such advancements could set a new standard for global financial operations.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Mastercard and Thunes Enhance Stablecoin Wallet Payouts",
-      "body": "Mastercard has teamed up with Thunes to enable near-instant stablecoin wallet payouts, utilizing Thunes\u2019 Direct Global Network. This collaboration marks a significant step in blending traditional financial services with cryptocurrency, potentially reshaping payment landscapes with quicker, more adaptable solutions.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Bitcoin Tumbles Below $95K, Investors Eye AI",
-      "body": "Bitcoin's value dropped sharply to $94,491.22, a near 9% fall over the week, amid a tech sell-off driven by rising interest rates and a pivot towards AI investments. This significant fluctuation underscores the volatile nature of cryptocurrencies and their sensitivity to broader market shifts.",
+      "title": "Apple Announces Largest iPhone Overhaul with iPhone 18 Pro",
+      "body": "Apple is set to introduce its most significant iPhone redesign yet, featuring a trio of high-end models including the iPhone 18 Pro. This revamp, which also alters their traditional release schedule, is poised to redefine consumer expectations and shake up market dynamics. This strategic move could influence smartphone technology trends and consumer purchasing behaviors globally.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Brazil's Pix Celebrates Five Years, Revolutionizing Payments",
-      "body": "Brazil commemorates the fifth anniversary of Pix, its real-time payment system that has transformed financial transactions across various sectors. The success of Pix highlights the growing global shift towards instant payment solutions, offering enhanced efficiency and accessibility for users.",
-      "source": "PYMNTS.com"
+      "title": "Mastercard Partners with Thunes for Stablecoin Wallet Payouts",
+      "body": "Mastercard has enhanced its Move platform by partnering with Thunes to enable near-instant payouts to stablecoin wallets. This collaboration bridges traditional financial networks with blockchain technology, potentially transforming the speed and accessibility of global financial transactions. It's a significant step towards the integration of cryptocurrencies in mainstream finance.",
+      "source": "Finextra"
     },
     {
-      "title": "Tether Eyes \u20ac1 Billion AI Robotics Investment",
-      "body": "Tether is considering a \u20ac1 billion investment in Neura, a German AI robotics firm, signaling a strategic move to diversify its portfolio into the AI sector. This potential investment reflects the increasing intersection of fintech and advanced technologies, potentially setting new industry trends.",
-      "source": "Financial Times"
+      "title": "Central Banks to Enhance FX Settlements with Blockchain",
+      "body": "The Bank of England, Monetary Authority of Singapore, and Bank of Thailand are exploring synchronized blockchain mechanisms for settling tokenized foreign exchange transactions. This initiative could revolutionize cross-border transactions, offering enhanced efficiency and security, and could set a new standard in global financial operations.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Bank of America Launches Digital Retirement Planning Tools",
+      "body": "Bank of America has introduced new digital tools for managing 401(k) plans and retirement planning, aiming to boost financial wellness among employees. This move could reshape how financial services entities approach retirement education and planning, potentially setting a trend in the industry.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Apple Prepares for Leadership Shift as CEO Tim Cook Plans Exit",
+      "body": "Apple is gearing up for a major leadership transition with CEO Tim Cook anticipated to step down next year. Cook's departure marks the end of an era for Apple, potentially impacting its strategic direction and stability. This change will be closely watched by investors and competitors alike.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that Brazil's Pix system processed over 1 billion transactions within its first year?",
+    "text": "Did you know that the concept of 'death cross' in financial markets signals a potential bearish trend, where the short-term moving average crosses below the long-term average?",
     "source": "PYMNTS.com"
   }
 }
