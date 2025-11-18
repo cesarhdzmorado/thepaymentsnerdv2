@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Apple Announces Largest iPhone Overhaul with iPhone 18 Pro",
-      "body": "Apple is set to introduce its most significant iPhone redesign yet, featuring a trio of high-end models including the iPhone 18 Pro. This revamp, which also alters their traditional release schedule, is poised to redefine consumer expectations and shake up market dynamics. This strategic move could influence smartphone technology trends and consumer purchasing behaviors globally.",
+      "title": "DoorDash Hit by Data Breach Affecting Millions",
+      "body": "DoorDash has confirmed a significant data breach impacting consumers, gig workers, and merchants due to a social engineering scam. Compromised data includes names, phone numbers, and email addresses. This breach underscores the critical need for enhanced security measures in the gig economy's infrastructure.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Mastercard Partners with Thunes for Stablecoin Wallet Payouts",
-      "body": "Mastercard has enhanced its Move platform by partnering with Thunes to enable near-instant payouts to stablecoin wallets. This collaboration bridges traditional financial networks with blockchain technology, potentially transforming the speed and accessibility of global financial transactions. It's a significant step towards the integration of cryptocurrencies in mainstream finance.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Central Banks to Enhance FX Settlements with Blockchain",
-      "body": "The Bank of England, Monetary Authority of Singapore, and Bank of Thailand are exploring synchronized blockchain mechanisms for settling tokenized foreign exchange transactions. This initiative could revolutionize cross-border transactions, offering enhanced efficiency and security, and could set a new standard in global financial operations.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Bank of America Launches Digital Retirement Planning Tools",
-      "body": "Bank of America has introduced new digital tools for managing 401(k) plans and retirement planning, aiming to boost financial wellness among employees. This move could reshape how financial services entities approach retirement education and planning, potentially setting a trend in the industry.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Apple Prepares for Leadership Shift as CEO Tim Cook Plans Exit",
-      "body": "Apple is gearing up for a major leadership transition with CEO Tim Cook anticipated to step down next year. Cook's departure marks the end of an era for Apple, potentially impacting its strategic direction and stability. This change will be closely watched by investors and competitors alike.",
+      "title": "Equifax Acquires Vault Verify to Boost Data Services",
+      "body": "Equifax is set to improve its verification services by acquiring Vault Verify, which specializes in employment and income verification. This strategic move is expected to enhance the accuracy and efficiency of data services, crucial for financial institutions relying on precise employment data.",
       "source": "PYMNTS.com"
+    },
+    {
+      "title": "JPMorgan Ends Mobility Payments Venture Due to Low Profits",
+      "body": "JPMorgan has decided to shut down its mobility payments business, originally acquired from Volkswagen in 2021, due to lack of profitability. This move highlights the challenges faced by financial institutions in maintaining profitable operations in specialized payment markets.",
+      "source": "Finextra"
+    },
+    {
+      "title": "UK Sees 12% Rise in APP Fraud Losses, Totaling \u00a3257.5 Million",
+      "body": "The UK has experienced a 12% increase in authorized push payment (APP) fraud losses, reaching \u00a3257.5 million in the first half of the year. This alarming rise emphasizes the need for advanced fraud detection and prevention strategies in digital payments.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Cairo Amman Bank Introduces Iris Recognition for Secure Payments",
+      "body": "Cairo Amman Bank has implemented iris recognition technology to securely disburse payments to unbanked and migrant workers. This innovative approach not only enhances security but also promotes financial inclusion among vulnerable populations.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the concept of 'death cross' in financial markets signals a potential bearish trend, where the short-term moving average crosses below the long-term average?",
+    "text": "Did you know? Levi Strauss's AI superagent operates within Microsoft Teams, showcasing an innovative integration of collaboration tools for operational efficiency.",
     "source": "PYMNTS.com"
   }
 }
