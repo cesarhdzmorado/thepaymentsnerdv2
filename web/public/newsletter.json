@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "DoorDash Hit by Data Breach Affecting Millions",
-      "body": "DoorDash has confirmed a significant data breach impacting consumers, gig workers, and merchants due to a social engineering scam. Compromised data includes names, phone numbers, and email addresses. This breach underscores the critical need for enhanced security measures in the gig economy's infrastructure.",
+      "title": "Kraken Secures $800 Million to Bridge Crypto and Traditional Finance",
+      "body": "Kraken has raised a whopping $800 million, pushing its valuation to $20 billion. This funding will be used to meld traditional financial products with blockchain technology, aiming to boost efficiency and accessibility. This move not only validates the increasing integration of cryptocurrencies into mainstream finance but also positions Kraken as a forward-thinking leader in digital finance transformation.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Equifax Acquires Vault Verify to Boost Data Services",
-      "body": "Equifax is set to improve its verification services by acquiring Vault Verify, which specializes in employment and income verification. This strategic move is expected to enhance the accuracy and efficiency of data services, crucial for financial institutions relying on precise employment data.",
+      "title": "FIS Expands Auto Finance Capabilities in U.S. Market",
+      "body": "FIS is revolutionizing auto finance management by enhancing its Asset Finance platform with new U.S. consumer auto finance capabilities. This strategic expansion is set to streamline services and bolster FIS's global market presence, offering more robust financial solutions across various needs.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "JPMorgan Ends Mobility Payments Venture Due to Low Profits",
-      "body": "JPMorgan has decided to shut down its mobility payments business, originally acquired from Volkswagen in 2021, due to lack of profitability. This move highlights the challenges faced by financial institutions in maintaining profitable operations in specialized payment markets.",
-      "source": "Finextra"
+      "title": "FDIC Sues Capital One Over Bank Failure Contributions",
+      "body": "The FDIC has launched a lawsuit against Capital One to address disputes over the bank's financial contributions following the collapses of Silicon Valley Bank and Signature Bank in 2023. This legal battle could establish new precedents for financial institution accountability in future banking crises.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "UK Sees 12% Rise in APP Fraud Losses, Totaling \u00a3257.5 Million",
-      "body": "The UK has experienced a 12% increase in authorized push payment (APP) fraud losses, reaching \u00a3257.5 million in the first half of the year. This alarming rise emphasizes the need for advanced fraud detection and prevention strategies in digital payments.",
-      "source": "Finextra"
+      "title": "Global Crypto Regulations Face Critical Reassessment",
+      "body": "The Basel Committee chair has urged a reevaluation of the global regulatory framework for cryptocurrencies, especially stablecoins. This reassessment could lead to significant shifts in the global cryptocurrency market, impacting how cryptocurrencies are managed and regulated worldwide.",
+      "source": "Financial Times"
     },
     {
-      "title": "Cairo Amman Bank Introduces Iris Recognition for Secure Payments",
-      "body": "Cairo Amman Bank has implemented iris recognition technology to securely disburse payments to unbanked and migrant workers. This innovative approach not only enhances security but also promotes financial inclusion among vulnerable populations.",
-      "source": "Finextra"
+      "title": "Neobanks Transition to Comprehensive Financial Service Providers",
+      "body": "Recent earnings reports indicate that neobanks are evolving from basic transactional platforms to full-service financial entities, offering deposits and lending services. This shift could redefine the digital banking landscape, providing more integrated financial solutions to consumers.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know? Levi Strauss's AI superagent operates within Microsoft Teams, showcasing an innovative integration of collaboration tools for operational efficiency.",
-    "source": "PYMNTS.com"
+    "text": "Did you know that the first cryptocurrency, Bitcoin, was introduced in 2009 as a decentralized alternative to traditional currencies?",
+    "source": "bitcoin.org"
   }
 }
