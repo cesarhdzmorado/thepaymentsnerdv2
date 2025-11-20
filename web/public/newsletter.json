@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Kraken Secures $800 Million to Bridge Crypto and Traditional Finance",
-      "body": "Kraken has raised a whopping $800 million, pushing its valuation to $20 billion. This funding will be used to meld traditional financial products with blockchain technology, aiming to boost efficiency and accessibility. This move not only validates the increasing integration of cryptocurrencies into mainstream finance but also positions Kraken as a forward-thinking leader in digital finance transformation.",
+      "title": "Cash App Tests New Lending Insights and Pay-Over-Time Features",
+      "body": "Cash App is revolutionizing personal finance management by piloting new features that provide users with insights into lending decisions and the option to convert purchases into installment loans. This move aims to boost transparency and flexibility, potentially reshaping consumer lending habits and expectations.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "FIS Expands Auto Finance Capabilities in U.S. Market",
-      "body": "FIS is revolutionizing auto finance management by enhancing its Asset Finance platform with new U.S. consumer auto finance capabilities. This strategic expansion is set to streamline services and bolster FIS's global market presence, offering more robust financial solutions across various needs.",
-      "source": "PYMNTS.com"
+      "title": "Visa Launches First Recurring A2A Transaction in the UK",
+      "body": "Visa has successfully executed its first commercial variable recurring payment via its account-to-account service in the UK. This breakthrough could redefine transaction standards, offering a glimpse into the future of flexible and automated payment solutions.",
+      "source": "Finextra"
     },
     {
-      "title": "FDIC Sues Capital One Over Bank Failure Contributions",
-      "body": "The FDIC has launched a lawsuit against Capital One to address disputes over the bank's financial contributions following the collapses of Silicon Valley Bank and Signature Bank in 2023. This legal battle could establish new precedents for financial institution accountability in future banking crises.",
-      "source": "PYMNTS.com"
+      "title": "Lloyds Bank Acquires Fintech Innovator Curve, Stirs Market Buzz",
+      "body": "Lloyds Banking Group's acquisition of Curve, a prominent fintech firm, is stirring the financial sector, raising questions about the impacts on competition and innovation. This strategic move could signal a shift in how traditional banks integrate technology to stay competitive.",
+      "source": "Finextra"
     },
     {
-      "title": "Global Crypto Regulations Face Critical Reassessment",
-      "body": "The Basel Committee chair has urged a reevaluation of the global regulatory framework for cryptocurrencies, especially stablecoins. This reassessment could lead to significant shifts in the global cryptocurrency market, impacting how cryptocurrencies are managed and regulated worldwide.",
-      "source": "Financial Times"
+      "title": "Klarna Nears Historic Billion-Dollar Revenue Quarter",
+      "body": "Klarna is poised to record its first billion-dollar revenue quarter, driven by its expanding presence in the US and AI-enhanced operations. This milestone underscores Klarna's escalating influence in the payment solutions sector and its ability to adapt and thrive amidst fierce competition.",
+      "source": "Finextra"
     },
     {
-      "title": "Neobanks Transition to Comprehensive Financial Service Providers",
-      "body": "Recent earnings reports indicate that neobanks are evolving from basic transactional platforms to full-service financial entities, offering deposits and lending services. This shift could redefine the digital banking landscape, providing more integrated financial solutions to consumers.",
-      "source": "PYMNTS.com"
+      "title": "French Crypto Startup Deblock Raises \u20ac30M, Eyes Expansion",
+      "body": "Deblock, a French crypto-banking startup, has secured \u20ac30 million in Series A funding, led by Speedinvest. This investment highlights the burgeoning confidence in crypto-banking solutions in Europe and Deblock's potential role in shaping the regional crypto landscape.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first cryptocurrency, Bitcoin, was introduced in 2009 as a decentralized alternative to traditional currencies?",
-    "source": "bitcoin.org"
+    "text": "Did you know that the first item ever purchased online was a Sting CD in 1994? This marked the beginning of e-commerce as we know it today.",
+    "source": "history.com"
   }
 }
