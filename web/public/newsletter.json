@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Cash App Tests New Lending Insights and Pay-Over-Time Features",
-      "body": "Cash App is revolutionizing personal finance management by piloting new features that provide users with insights into lending decisions and the option to convert purchases into installment loans. This move aims to boost transparency and flexibility, potentially reshaping consumer lending habits and expectations.",
+      "title": "New Hampshire Set to Issue First Bitcoin-Backed Municipal Bond",
+      "body": "New Hampshire is on the brink of launching a groundbreaking municipal bond backed by Bitcoin. This initiative, approved by the state's Business Finance Authority, could revolutionize municipal financing by integrating digital assets. It's a significant step that might inspire other states to explore similar financial innovations.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Visa Launches First Recurring A2A Transaction in the UK",
-      "body": "Visa has successfully executed its first commercial variable recurring payment via its account-to-account service in the UK. This breakthrough could redefine transaction standards, offering a glimpse into the future of flexible and automated payment solutions.",
+      "title": "European Central Bank Enhances Global Payments with UPI and Nexus Integration",
+      "body": "The European Central Bank is spearheading a project to link its Target Instant Payment Settlement system with India's UPI and other Asian real-time payment systems. This move aims to streamline global payments, ensuring faster, more secure cross-border transactions. It's a pivotal development for financial institutions eyeing a more interconnected payment environment.",
       "source": "Finextra"
     },
     {
-      "title": "Lloyds Bank Acquires Fintech Innovator Curve, Stirs Market Buzz",
-      "body": "Lloyds Banking Group's acquisition of Curve, a prominent fintech firm, is stirring the financial sector, raising questions about the impacts on competition and innovation. This strategic move could signal a shift in how traditional banks integrate technology to stay competitive.",
+      "title": "EMVCo to Set Global Standards for AI-Driven Agentic Payments",
+      "body": "EMVCo is exploring global specifications for agentic payments, where transactions are executed by AI agents. This initiative could lead to more seamless, integrated payment processes, significantly impacting how digital and automated services handle transactions.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Ecommpay Broadens Merchant Options with Apple Pay QR Integration",
+      "body": "Ecommpay has integrated a feature enabling merchants to accept Apple Pay via QR codes, enhancing payment versatility across devices. This development not only broadens the accessibility of Apple Pay but also caters to a wider range of merchant scenarios, potentially boosting mobile payment adoption.",
       "source": "Finextra"
     },
     {
-      "title": "Klarna Nears Historic Billion-Dollar Revenue Quarter",
-      "body": "Klarna is poised to record its first billion-dollar revenue quarter, driven by its expanding presence in the US and AI-enhanced operations. This milestone underscores Klarna's escalating influence in the payment solutions sector and its ability to adapt and thrive amidst fierce competition.",
-      "source": "Finextra"
-    },
-    {
-      "title": "French Crypto Startup Deblock Raises \u20ac30M, Eyes Expansion",
-      "body": "Deblock, a French crypto-banking startup, has secured \u20ac30 million in Series A funding, led by Speedinvest. This investment highlights the burgeoning confidence in crypto-banking solutions in Europe and Deblock's potential role in shaping the regional crypto landscape.",
+      "title": "SBS Integrates Wero Digital Wallet to Boost Open Banking Platform",
+      "body": "SBS has upgraded its open banking platform by integrating the Wero digital wallet, aligning with the European Payments Initiative. This enhancement is set to streamline digital transactions and improve user experiences, marking a significant step in evolving the open banking ecosystem.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first item ever purchased online was a Sting CD in 1994? This marked the beginning of e-commerce as we know it today.",
-    "source": "history.com"
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth millions today?",
+    "source": "bitcoin.org"
   }
 }
