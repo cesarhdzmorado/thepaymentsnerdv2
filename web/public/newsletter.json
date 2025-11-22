@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "New Hampshire Set to Issue First Bitcoin-Backed Municipal Bond",
-      "body": "New Hampshire is on the brink of launching a groundbreaking municipal bond backed by Bitcoin. This initiative, approved by the state's Business Finance Authority, could revolutionize municipal financing by integrating digital assets. It's a significant step that might inspire other states to explore similar financial innovations.",
+      "title": "Salesforce Halts Gainsight Integration Amid Data Breach Concerns",
+      "body": "Salesforce has suspended connections to Gainsight applications after detecting unusual activity that could have compromised customer data. This incident, reported on November 21, highlights the risks associated with third-party app integrations in safeguarding sensitive corporate information. Salesforce's ongoing investigation aims to determine the breach's scope and its implications for users.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "European Central Bank Enhances Global Payments with UPI and Nexus Integration",
-      "body": "The European Central Bank is spearheading a project to link its Target Instant Payment Settlement system with India's UPI and other Asian real-time payment systems. This move aims to streamline global payments, ensuring faster, more secure cross-border transactions. It's a pivotal development for financial institutions eyeing a more interconnected payment environment.",
-      "source": "Finextra"
-    },
-    {
-      "title": "EMVCo to Set Global Standards for AI-Driven Agentic Payments",
-      "body": "EMVCo is exploring global specifications for agentic payments, where transactions are executed by AI agents. This initiative could lead to more seamless, integrated payment processes, significantly impacting how digital and automated services handle transactions.",
+      "title": "U.S. House Bill Advocates Bitcoin for Federal Tax Payments",
+      "body": "A groundbreaking bill introduced on November 20 in the U.S. House could allow Americans to use Bitcoin for federal tax payments. The 'Bitcoin for America Act' by Rep. Warren Davidson also proposes creating a Strategic Bitcoin Reserve, marking a significant pivot towards embracing cryptocurrency in federal financial practices.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Ecommpay Broadens Merchant Options with Apple Pay QR Integration",
-      "body": "Ecommpay has integrated a feature enabling merchants to accept Apple Pay via QR codes, enhancing payment versatility across devices. This development not only broadens the accessibility of Apple Pay but also caters to a wider range of merchant scenarios, potentially boosting mobile payment adoption.",
+      "title": "ECB Aims to Bridge European and Asian Payment Systems",
+      "body": "The European Central Bank is set to enhance global financial connectivity by linking its Target Instant Payment Settlement system with India's Unified Payment Interface and other Asian real-time payment systems. This initiative, crucial for facilitating smoother cross-border transactions, underscores the increasing importance of interoperability in international finance.",
       "source": "Finextra"
     },
     {
-      "title": "SBS Integrates Wero Digital Wallet to Boost Open Banking Platform",
-      "body": "SBS has upgraded its open banking platform by integrating the Wero digital wallet, aligning with the European Payments Initiative. This enhancement is set to streamline digital transactions and improve user experiences, marking a significant step in evolving the open banking ecosystem.",
-      "source": "Finextra"
+      "title": "Palo Alto Networks Buys Chronosphere to Boost Cloud Resilience",
+      "body": "In response to a major Cloudflare outage, Palo Alto Networks has acquired Chronosphere for $3.35 billion. Announced on November 19, this acquisition aims to strengthen digital infrastructure by enhancing system observability and management, addressing the critical need for robustness in cloud services.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "CFPB Pressured to Prioritize Consumer Rights in Open Banking",
+      "body": "Amidst the ongoing rewrite of Rule 1033 governing open banking, lawmakers are urging the Consumer Financial Protection Bureau to balance innovation with consumer choice and data privacy. This legislative focus is pivotal in shaping a framework that protects consumer interests while fostering technological advancements in financial services.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010, costing 10,000 Bitcoins, which would be worth millions today?",
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010? The cost at the time was 10,000 Bitcoins!",
     "source": "bitcoin.org"
   }
 }
