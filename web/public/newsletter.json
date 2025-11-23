@@ -1,29 +1,29 @@
 {
   "news": [
     {
-      "title": "Salesforce Halts Gainsight Integration Amid Data Breach Concerns",
-      "body": "Salesforce has suspended connections to Gainsight applications after detecting unusual activity that could have compromised customer data. This incident, reported on November 21, highlights the risks associated with third-party app integrations in safeguarding sensitive corporate information. Salesforce's ongoing investigation aims to determine the breach's scope and its implications for users.",
+      "title": "Salesforce Halts Gainsight App Connections Amid Security Breach",
+      "body": "Salesforce has temporarily disabled connections to Gainsight-published applications due to a potential data breach. This precautionary measure, taken to protect customer data, underscores the critical vulnerabilities associated with third-party app integrations. The incident serves as a stark reminder of the importance of robust security protocols in safeguarding sensitive information.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "U.S. House Bill Advocates Bitcoin for Federal Tax Payments",
-      "body": "A groundbreaking bill introduced on November 20 in the U.S. House could allow Americans to use Bitcoin for federal tax payments. The 'Bitcoin for America Act' by Rep. Warren Davidson also proposes creating a Strategic Bitcoin Reserve, marking a significant pivot towards embracing cryptocurrency in federal financial practices.",
+      "title": "U.S. House Bill Could Enable Bitcoin for Federal Tax Payments",
+      "body": "The Bitcoin for America Act, recently introduced in the U.S. House, proposes a groundbreaking shift allowing Americans to use Bitcoin to pay federal taxes. This legislative move could significantly bolster Bitcoin's legitimacy and integration into the financial mainstream, potentially transforming the landscape of digital currency usage in governmental transactions.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "ECB Aims to Bridge European and Asian Payment Systems",
-      "body": "The European Central Bank is set to enhance global financial connectivity by linking its Target Instant Payment Settlement system with India's Unified Payment Interface and other Asian real-time payment systems. This initiative, crucial for facilitating smoother cross-border transactions, underscores the increasing importance of interoperability in international finance.",
+      "title": "European Central Bank to Enhance Global Payments with UPI Link",
+      "body": "The European Central Bank is set to connect its Target Instant Payment Settlement system with India's Unified Payment Interface and Nexus global payments. This initiative aims to streamline cross-border transactions, marking a significant step towards seamless global financial integration and enhancing transaction efficiency across continents.",
       "source": "Finextra"
     },
     {
-      "title": "Palo Alto Networks Buys Chronosphere to Boost Cloud Resilience",
-      "body": "In response to a major Cloudflare outage, Palo Alto Networks has acquired Chronosphere for $3.35 billion. Announced on November 19, this acquisition aims to strengthen digital infrastructure by enhancing system observability and management, addressing the critical need for robustness in cloud services.",
-      "source": "PYMNTS.com"
+      "title": "EMVCo Advances AI in Payments with Agentic Payment Specifications",
+      "body": "EMVCo is developing global specifications to support AI-driven agentic payments, addressing the surge in AI integration within the payments industry. This move aims to ensure that future transactions remain secure and compatible with evolving technology, highlighting the ongoing adaptation of payment systems to meet advanced technological demands.",
+      "source": "Finextra"
     },
     {
-      "title": "CFPB Pressured to Prioritize Consumer Rights in Open Banking",
-      "body": "Amidst the ongoing rewrite of Rule 1033 governing open banking, lawmakers are urging the Consumer Financial Protection Bureau to balance innovation with consumer choice and data privacy. This legislative focus is pivotal in shaping a framework that protects consumer interests while fostering technological advancements in financial services.",
-      "source": "PYMNTS.com"
+      "title": "Block Tests New Financial Health Feature in Cash App",
+      "body": "Block is piloting a new feature in Cash App that offers users real-time insights into their financial health, based on their app interactions. This innovation represents a shift towards more transparent and immediate financial management tools, potentially revolutionizing user engagement and financial literacy through advanced technology.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
