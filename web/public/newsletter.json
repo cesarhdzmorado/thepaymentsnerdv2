@@ -1,28 +1,28 @@
 {
   "news": [
     {
-      "title": "Salesforce Halts Gainsight App Connections Amid Security Breach",
-      "body": "Salesforce has temporarily disabled connections to Gainsight-published applications due to a potential data breach. This precautionary measure, taken to protect customer data, underscores the critical vulnerabilities associated with third-party app integrations. The incident serves as a stark reminder of the importance of robust security protocols in safeguarding sensitive information.",
+      "title": "CFPB to Transform Financial Supervision by 2026",
+      "body": "The Consumer Financial Protection Bureau (CFPB) is gearing up to revolutionize its supervision strategy by 2026 with the 'Humility in Supervisions Pledge.' This shift will significantly alter regulatory focus and enforcement, impacting financial institutions and consumer protection practices across the U.S. This strategic pivot is crucial for compliance and operational strategies within financial entities.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "U.S. House Bill Could Enable Bitcoin for Federal Tax Payments",
-      "body": "The Bitcoin for America Act, recently introduced in the U.S. House, proposes a groundbreaking shift allowing Americans to use Bitcoin to pay federal taxes. This legislative move could significantly bolster Bitcoin's legitimacy and integration into the financial mainstream, potentially transforming the landscape of digital currency usage in governmental transactions.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "European Central Bank to Enhance Global Payments with UPI Link",
-      "body": "The European Central Bank is set to connect its Target Instant Payment Settlement system with India's Unified Payment Interface and Nexus global payments. This initiative aims to streamline cross-border transactions, marking a significant step towards seamless global financial integration and enhancing transaction efficiency across continents.",
+      "title": "KuCoin Integrates with Brazil's PIX for Faster Crypto Transactions",
+      "body": "KuCoin has made a strategic move by integrating with Brazil's instant payment system, PIX, enhancing transaction speed and accessibility for cryptocurrency users in Brazil. This integration not only boosts cryptocurrency usability but also sets a precedent for crypto-payment integrations in South America, potentially influencing regional financial dynamics.",
       "source": "Finextra"
     },
     {
-      "title": "EMVCo Advances AI in Payments with Agentic Payment Specifications",
-      "body": "EMVCo is developing global specifications to support AI-driven agentic payments, addressing the surge in AI integration within the payments industry. This move aims to ensure that future transactions remain secure and compatible with evolving technology, highlighting the ongoing adaptation of payment systems to meet advanced technological demands.",
+      "title": "EMVCo Investigates AI-driven Agentic Payments",
+      "body": "EMVCo is exploring adaptations in its specifications to support agentic payments, where transactions are initiated by AI agents. This innovation could dramatically change payment systems, enhancing automation and efficiency in financial transactions, and is a critical development for stakeholders in the global payments landscape.",
       "source": "Finextra"
     },
     {
-      "title": "Block Tests New Financial Health Feature in Cash App",
-      "body": "Block is piloting a new feature in Cash App that offers users real-time insights into their financial health, based on their app interactions. This innovation represents a shift towards more transparent and immediate financial management tools, potentially revolutionizing user engagement and financial literacy through advanced technology.",
+      "title": "UK FCA's New Plan Could Save Firms \u00a3100 Million Annually",
+      "body": "The UK Financial Conduct Authority (FCA) is set to streamline transaction reporting requirements, potentially saving firms over \u00a3100 million annually. This move will reduce the administrative burden on financial institutions while ensuring compliance and transparency, marking a significant shift in regulatory practices.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Bitcoin's Sharp Decline Signals Market Volatility",
+      "body": "Bitcoin has seen a drastic decline, marking its worst performance since the 2022 crypto winter, with around $2 billion in liquidations. This downturn highlights the volatility and financial instability in the cryptocurrency market, posing significant risks and opportunities for investors and financial strategists.",
       "source": "Finextra"
     }
   ],
