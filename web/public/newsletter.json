@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "CFPB to Transform Financial Supervision by 2026",
-      "body": "The Consumer Financial Protection Bureau (CFPB) is gearing up to revolutionize its supervision strategy by 2026 with the 'Humility in Supervisions Pledge.' This shift will significantly alter regulatory focus and enforcement, impacting financial institutions and consumer protection practices across the U.S. This strategic pivot is crucial for compliance and operational strategies within financial entities.",
+      "title": "Mastercard Initiates Global Coalition to Boost Financial Health",
+      "body": "Mastercard has launched a Global Financial Health Coalition, aiming to leverage digital tools to improve financial resilience for consumers and small businesses globally. This initiative, involving stakeholders from financial institutions to tech companies, is pivotal for advancing financial inclusion and health, potentially setting new standards in consumer financial services.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "KuCoin Integrates with Brazil's PIX for Faster Crypto Transactions",
-      "body": "KuCoin has made a strategic move by integrating with Brazil's instant payment system, PIX, enhancing transaction speed and accessibility for cryptocurrency users in Brazil. This integration not only boosts cryptocurrency usability but also sets a precedent for crypto-payment integrations in South America, potentially influencing regional financial dynamics.",
+      "title": "Green Dot Restructures, Splits into Separate Bank and Fintech Units",
+      "body": "In a strategic overhaul, Green Dot Corporation is dividing its operations, selling its banking and embedded finance units to different entities. This move could significantly alter its business model and impact how fintech services are delivered, marking a critical shift in the structure of fintech companies.",
       "source": "Finextra"
     },
     {
-      "title": "EMVCo Investigates AI-driven Agentic Payments",
-      "body": "EMVCo is exploring adaptations in its specifications to support agentic payments, where transactions are initiated by AI agents. This innovation could dramatically change payment systems, enhancing automation and efficiency in financial transactions, and is a critical development for stakeholders in the global payments landscape.",
+      "title": "Curve-Lloyds \u00a3125M Deal Faces Legal Challenges from Shareholders",
+      "body": "The \u00a3125 million acquisition of fintech firm Curve by Lloyds Bank is under legal scrutiny from Curve's largest shareholder. This dispute could delay or change the deal terms, highlighting the complexities of mergers and acquisitions in the fintech landscape and the importance of stakeholder alignment in high-stakes deals.",
       "source": "Finextra"
     },
     {
-      "title": "UK FCA's New Plan Could Save Firms \u00a3100 Million Annually",
-      "body": "The UK Financial Conduct Authority (FCA) is set to streamline transaction reporting requirements, potentially saving firms over \u00a3100 million annually. This move will reduce the administrative burden on financial institutions while ensuring compliance and transparency, marking a significant shift in regulatory practices.",
+      "title": "AI Startup Model ML Raises $75 Million for Financial Services Automation",
+      "body": "Model ML, an AI startup, has secured $75 million in Series A funding to enhance workflow automation in financial services. This investment reflects the growing role of AI in boosting efficiency across financial sectors, signaling a shift towards more technologically advanced financial operations.",
       "source": "Finextra"
     },
     {
-      "title": "Bitcoin's Sharp Decline Signals Market Volatility",
-      "body": "Bitcoin has seen a drastic decline, marking its worst performance since the 2022 crypto winter, with around $2 billion in liquidations. This downturn highlights the volatility and financial instability in the cryptocurrency market, posing significant risks and opportunities for investors and financial strategists.",
+      "title": "KuCoin Integrates with Brazil's Pix Payments, Bridging Crypto and Traditional Finance",
+      "body": "KuCoin, a leading cryptocurrency platform, has integrated with Brazil's instant payment system, Pix. This integration marks a significant step in merging traditional and digital finance in Latin America, potentially influencing future payment infrastructures and strategies in emerging markets.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010? The cost at the time was 10,000 Bitcoins!",
-    "source": "bitcoin.org"
+    "text": "Digital banking is experiencing rapid growth, with Monzo recently reaching 14 million customers, a clear indicator of consumer trust and preference for digital solutions in finance.",
+    "source": "Finextra"
   }
 }
