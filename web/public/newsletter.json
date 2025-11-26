@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Mastercard Initiates Global Coalition to Boost Financial Health",
-      "body": "Mastercard has launched a Global Financial Health Coalition, aiming to leverage digital tools to improve financial resilience for consumers and small businesses globally. This initiative, involving stakeholders from financial institutions to tech companies, is pivotal for advancing financial inclusion and health, potentially setting new standards in consumer financial services.",
+      "title": "Visa Partners with Aquanow for Stablecoin Settlements in CEMEA",
+      "body": "Visa has joined forces with Aquanow to facilitate stablecoin settlements across the CEMEA region, integrating Visa's technology with Aquanow's digital asset infrastructure. This collaboration is poised to revolutionize payment systems in emerging markets by incorporating stablecoins into mainstream financial transactions, potentially enhancing transaction speed and security.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Green Dot Restructures, Splits into Separate Bank and Fintech Units",
-      "body": "In a strategic overhaul, Green Dot Corporation is dividing its operations, selling its banking and embedded finance units to different entities. This move could significantly alter its business model and impact how fintech services are delivered, marking a critical shift in the structure of fintech companies.",
+      "title": "Bank of America Flags Credit Risks in Prediction Markets",
+      "body": "Bank of America strategists have identified emerging credit risks linked to consumer participation in prediction markets and sports gambling. As engagement increases, potential financial stress could escalate, leading to higher debt levels and increased loan defaults. This insight is crucial for lenders navigating the digital economy's evolving risk landscape.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Klarna Launches Dollar-Backed Stablecoin, Enters Crypto Arena",
+      "body": "Klarna has unveiled a new dollar-backed stablecoin on a blockchain developed by Stripe and Paradigm, marking its entry into the cryptocurrency sector. This strategic move could significantly influence Klarna's integration of crypto solutions within its existing fintech services, setting a precedent for traditional financial entities.",
       "source": "Finextra"
     },
     {
-      "title": "Curve-Lloyds \u00a3125M Deal Faces Legal Challenges from Shareholders",
-      "body": "The \u00a3125 million acquisition of fintech firm Curve by Lloyds Bank is under legal scrutiny from Curve's largest shareholder. This dispute could delay or change the deal terms, highlighting the complexities of mergers and acquisitions in the fintech landscape and the importance of stakeholder alignment in high-stakes deals.",
+      "title": "RTGS.global Boosts Cross-Border Payments with 23 New Currencies",
+      "body": "RTGS.global has expanded its cross-border payments network by adding 23 new currencies, enabling instant settlements between financial institutions. This development could reshape global payment infrastructures, making international transactions more efficient and less costly.",
       "source": "Finextra"
     },
     {
-      "title": "AI Startup Model ML Raises $75 Million for Financial Services Automation",
-      "body": "Model ML, an AI startup, has secured $75 million in Series A funding to enhance workflow automation in financial services. This investment reflects the growing role of AI in boosting efficiency across financial sectors, signaling a shift towards more technologically advanced financial operations.",
-      "source": "Finextra"
-    },
-    {
-      "title": "KuCoin Integrates with Brazil's Pix Payments, Bridging Crypto and Traditional Finance",
-      "body": "KuCoin, a leading cryptocurrency platform, has integrated with Brazil's instant payment system, Pix. This integration marks a significant step in merging traditional and digital finance in Latin America, potentially influencing future payment infrastructures and strategies in emerging markets.",
+      "title": "Curve Shareholder Disputes Lloyds Bank's Acquisition",
+      "body": "A major shareholder of Curve is challenging Lloyds Bank's \u00a3125 million acquisition of the fintech firm in a legal dispute. This conflict highlights the complexities and high stakes in fintech mergers and acquisitions, emphasizing the competitive nature of the financial technology sector.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Digital banking is experiencing rapid growth, with Monzo recently reaching 14 million customers, a clear indicator of consumer trust and preference for digital solutions in finance.",
-    "source": "Finextra"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
