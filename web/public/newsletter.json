@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "U.S. Bank Pilots Stablecoin on Stellar Blockchain",
-      "body": "U.S. Bank is testing the waters of blockchain with a new stablecoin issuance on the Stellar network, in partnership with the Stellar Development Foundation and PwC. This move could revolutionize payment rails by leveraging blockchain's efficiency and security, marking a significant shift in how traditional banks view digital currency technology.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Visa Boosts Stablecoin Transactions in CEMEA via Aquanow",
-      "body": "Visa is extending its stablecoin settlement system in the CEMEA region through a collaboration with Aquanow. This strategic expansion is part of Visa's ongoing effort to integrate digital currencies into its global payment network, potentially setting new standards for transaction speed and cost-efficiency in emerging markets.",
+      "title": "European Council Revamps PSD2 to Combat Fraud, Boost Security",
+      "body": "The European Council and Parliament have agreed to amend the Payment Services Directive (PSD2), aiming to combat fraud and enhance transparency in online payments. This regulatory overhaul is crucial for strengthening consumer protection and adapting to the digital financial landscape, ensuring a more secure environment for users across Europe.",
       "source": "Finextra"
     },
     {
-      "title": "Kraken Debuts Multi-Asset Debit Card in Europe",
-      "body": "Kraken has launched a new multi-asset debit card, the Krak, across the UK and EU, supporting both fiat and cryptocurrency transactions. This rollout not only enhances user flexibility but also signals growing mainstream acceptance of cryptocurrencies as viable payment options.",
+      "title": "US Bank Pilots Stablecoin Initiatives on Stellar Network",
+      "body": "US Bank is testing the waters with custom stablecoins on the Stellar blockchain network. This move signifies a pivotal shift as traditional financial institutions lean into blockchain to offer more stable and versatile digital currency solutions, potentially reshaping payment methodologies.",
       "source": "Finextra"
     },
     {
-      "title": "Australian Banks Cut Financial Crime with Real-Time Data Sharing",
-      "body": "Australian banks have significantly reduced financial crimes by implementing a real-time intelligence sharing network. This collaborative security measure has proven effective in combating scams and money laundering, showcasing the power of collective action in safeguarding financial transactions.",
+      "title": "Visa Expands Stablecoin Settlements in CEMEA with Aquanow",
+      "body": "Visa has teamed up with Aquanow to extend its stablecoin settlement capabilities across CEMEA. This partnership is set to enhance digital transaction efficiency and increase stablecoin acceptance, marking a significant step in the integration of digital currencies into mainstream financial systems.",
       "source": "Finextra"
     },
     {
-      "title": "Global Call for Crypto Exchanges to Adopt Traditional Market Rules",
-      "body": "The World Federation of Exchanges is urging crypto platforms to align with traditional financial market regulations. This push for regulatory parity, especially amid the SEC's consideration of tokenized stock sales, aims to protect investors and stabilize the crypto market by ensuring fair practices.",
-      "source": "PYMNTS.com"
+      "title": "Australia Enhances Financial Security with Real-Time Scam Network",
+      "body": "Australian banks have seen a notable decrease in financial crimes due to a new real-time intelligence sharing network. This collaborative initiative underscores the effectiveness of shared data in combating scams and money laundering, setting a benchmark for global financial security practices.",
+      "source": "Finextra"
+    },
+    {
+      "title": "India's Fintech Sector Surges, Outpacing China in Innovation",
+      "body": "India's fintech sector is experiencing explosive growth, surpassing even China in terms of innovation and development. According to Amrish Rau, CEO of Pine Labs, this surge is fueled by domestic advancements and expanding international opportunities, positioning India as a frontrunner in the global fintech arena.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin transaction was for two pizzas, costing 10,000 Bitcoins in 2010? Today, that would be worth millions of dollars!",
-    "source": "bitcoin.org"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
+    "source": "history.com"
   }
 }
