@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "European Council Revamps PSD2 to Combat Fraud, Boost Security",
-      "body": "The European Council and Parliament have agreed to amend the Payment Services Directive (PSD2), aiming to combat fraud and enhance transparency in online payments. This regulatory overhaul is crucial for strengthening consumer protection and adapting to the digital financial landscape, ensuring a more secure environment for users across Europe.",
+      "title": "FinCEN Urges MSBs to Monitor Cross-Border Transfers Closely",
+      "body": "The Financial Crimes Enforcement Network (FinCEN) has issued a new alert to money services businesses, emphasizing the need for stringent monitoring of cross-border transfers, especially from individuals without legal status in the U.S. This initiative is part of FinCEN's broader strategy to curb illicit financial flows and enhance national security.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Ripple's Stablecoin Approved for Expansion in the Middle East",
+      "body": "Ripple's USD stablecoin (RLUSD) has secured approval from Abu Dhabi\u2019s Financial Services Regulatory Authority, marking a pivotal expansion in the Middle East. This endorsement enables RLUSD to operate as an Accepted Fiat-Referenced Token, potentially amplifying Ripple's influence and operational footprint in the region.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "EU Set to Enhance Consumer Protections with New Payment Regulations",
+      "body": "The European Union is advancing its Payment Services Regulation (PSR) and the Third Payment Services Directive (PSD3), aimed at bolstering consumer protections. These regulations will enforce better safeguards against online fraud and hidden fees, ensuring payment service providers and online platforms are accountable for certain customer losses.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "US Bank Tests Blockchain with Stablecoin on Stellar Network",
+      "body": "US Bank is exploring blockchain technology by testing the issuance of custom stablecoins on the Stellar network. This pilot could signal a significant shift in how major U.S. banks approach blockchain and digital currencies, potentially leading to wider adoption in mainstream financial services.",
       "source": "Finextra"
     },
     {
-      "title": "US Bank Pilots Stablecoin Initiatives on Stellar Network",
-      "body": "US Bank is testing the waters with custom stablecoins on the Stellar blockchain network. This move signifies a pivotal shift as traditional financial institutions lean into blockchain to offer more stable and versatile digital currency solutions, potentially reshaping payment methodologies.",
+      "title": "Visa Partners with Aquanow to Boost Stablecoin Settlements",
+      "body": "Visa has teamed up with digital asset platform Aquanow to enhance its stablecoin settlement capabilities in the Cemea region. This partnership aims to streamline the settlement process for digital currency transactions, reinforcing Visa's commitment to integrating blockchain technology into its global payment network.",
       "source": "Finextra"
-    },
-    {
-      "title": "Visa Expands Stablecoin Settlements in CEMEA with Aquanow",
-      "body": "Visa has teamed up with Aquanow to extend its stablecoin settlement capabilities across CEMEA. This partnership is set to enhance digital transaction efficiency and increase stablecoin acceptance, marking a significant step in the integration of digital currencies into mainstream financial systems.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Australia Enhances Financial Security with Real-Time Scam Network",
-      "body": "Australian banks have seen a notable decrease in financial crimes due to a new real-time intelligence sharing network. This collaborative initiative underscores the effectiveness of shared data in combating scams and money laundering, setting a benchmark for global financial security practices.",
-      "source": "Finextra"
-    },
-    {
-      "title": "India's Fintech Sector Surges, Outpacing China in Innovation",
-      "body": "India's fintech sector is experiencing explosive growth, surpassing even China in terms of innovation and development. According to Amrish Rau, CEO of Pine Labs, this surge is fueled by domestic advancements and expanding international opportunities, positioning India as a frontrunner in the global fintech arena.",
-      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
-    "source": "history.com"
+    "text": "Did you know that the first mobile payment systems were introduced in the Philippines and Kenya, revolutionizing money transfer and banking services in regions with low bank penetration?",
+    "source": "industry knowledge"
   }
 }
