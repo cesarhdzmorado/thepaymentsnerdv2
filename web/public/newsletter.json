@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "FinCEN Urges MSBs to Monitor Cross-Border Transfers Closely",
-      "body": "The Financial Crimes Enforcement Network (FinCEN) has issued a new alert to money services businesses, emphasizing the need for stringent monitoring of cross-border transfers, especially from individuals without legal status in the U.S. This initiative is part of FinCEN's broader strategy to curb illicit financial flows and enhance national security.",
+      "title": "FinCEN Tightens Oversight on Cross-Border Money Transfers",
+      "body": "The U.S. Treasury's Financial Crimes Enforcement Network (FinCEN) has issued a directive to money services businesses to enhance monitoring and reporting of suspicious cross-border transactions. This move, particularly focused on transfers by individuals without legal status in the U.S., aims to bolster regulatory oversight and prevent financial system misuse. It's a critical update for compliance and risk management professionals in the financial sector.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Ripple's Stablecoin Approved for Expansion in the Middle East",
-      "body": "Ripple's USD stablecoin (RLUSD) has secured approval from Abu Dhabi\u2019s Financial Services Regulatory Authority, marking a pivotal expansion in the Middle East. This endorsement enables RLUSD to operate as an Accepted Fiat-Referenced Token, potentially amplifying Ripple's influence and operational footprint in the region.",
+      "title": "Ripple's Stablecoin Makes Headway in Abu Dhabi",
+      "body": "Ripple's USD stablecoin (RLUSD) has been greenlit by Abu Dhabi\u2019s Financial Services Regulatory Authority for use within the ADGM financial center. This approval significantly boosts Ripple's presence in the Middle East, potentially altering the regional payments landscape by integrating more blockchain-based solutions.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "EU Set to Enhance Consumer Protections with New Payment Regulations",
-      "body": "The European Union is advancing its Payment Services Regulation (PSR) and the Third Payment Services Directive (PSD3), aimed at bolstering consumer protections. These regulations will enforce better safeguards against online fraud and hidden fees, ensuring payment service providers and online platforms are accountable for certain customer losses.",
+      "title": "EU Set to Enforce Stricter Payment Services Regulations",
+      "body": "The European Parliament and Council have reached a consensus on new regulations under the Payment Services Directive (PSD3), focusing on enhancing consumer protections against online fraud and hidden fees. This legislative update mandates Payment Service Providers to cover certain customer losses, marking a significant shift towards greater transparency and security in online transactions.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "US Bank Tests Blockchain with Stablecoin on Stellar Network",
-      "body": "US Bank is exploring blockchain technology by testing the issuance of custom stablecoins on the Stellar network. This pilot could signal a significant shift in how major U.S. banks approach blockchain and digital currencies, potentially leading to wider adoption in mainstream financial services.",
+      "title": "Visa and Aquanow Collaborate to Boost Stablecoin Transactions",
+      "body": "Visa has teamed up with digital asset platform Aquanow to expand its stablecoin settlement capabilities across Central and Eastern Europe, the Middle East, and Africa. This partnership is set to streamline cross-border transactions, leveraging blockchain's stability and efficiency, and underscores Visa's commitment to modernizing payment infrastructures.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Partners with Aquanow to Boost Stablecoin Settlements",
-      "body": "Visa has teamed up with digital asset platform Aquanow to enhance its stablecoin settlement capabilities in the Cemea region. This partnership aims to streamline the settlement process for digital currency transactions, reinforcing Visa's commitment to integrating blockchain technology into its global payment network.",
+      "title": "Kraken Debuts Multi-Asset Debit Card in UK and EU",
+      "body": "Crypto exchange Kraken has launched the Krak card, a multi-asset debit card enabling payments in both fiat and cryptocurrencies across the UK and EU. This move signifies a major step towards the integration of cryptocurrencies into mainstream financial systems, offering users enhanced flexibility in managing digital and traditional currencies.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first mobile payment systems were introduced in the Philippines and Kenya, revolutionizing money transfer and banking services in regions with low bank penetration?",
-    "source": "industry knowledge"
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010? The cost at the time was 10,000 Bitcoins, which would now be worth millions of dollars!",
+    "source": "bitcoin.org"
   }
 }
