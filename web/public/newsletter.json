@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "FinCEN Tightens Oversight on Cross-Border Money Transfers",
-      "body": "The U.S. Treasury's Financial Crimes Enforcement Network (FinCEN) has issued a directive to money services businesses to enhance monitoring and reporting of suspicious cross-border transactions. This move, particularly focused on transfers by individuals without legal status in the U.S., aims to bolster regulatory oversight and prevent financial system misuse. It's a critical update for compliance and risk management professionals in the financial sector.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Ripple's Stablecoin Makes Headway in Abu Dhabi",
-      "body": "Ripple's USD stablecoin (RLUSD) has been greenlit by Abu Dhabi\u2019s Financial Services Regulatory Authority for use within the ADGM financial center. This approval significantly boosts Ripple's presence in the Middle East, potentially altering the regional payments landscape by integrating more blockchain-based solutions.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "EU Set to Enforce Stricter Payment Services Regulations",
-      "body": "The European Parliament and Council have reached a consensus on new regulations under the Payment Services Directive (PSD3), focusing on enhancing consumer protections against online fraud and hidden fees. This legislative update mandates Payment Service Providers to cover certain customer losses, marking a significant shift towards greater transparency and security in online transactions.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Visa and Aquanow Collaborate to Boost Stablecoin Transactions",
-      "body": "Visa has teamed up with digital asset platform Aquanow to expand its stablecoin settlement capabilities across Central and Eastern Europe, the Middle East, and Africa. This partnership is set to streamline cross-border transactions, leveraging blockchain's stability and efficiency, and underscores Visa's commitment to modernizing payment infrastructures.",
+      "title": "European Council Enhances Payment Security with PSD2 Amendments",
+      "body": "The European Council and Parliament have tightened the Payment Services Directive (PSD2), introducing robust fraud prevention and clearer operational guidelines for payment service providers. This overhaul is set to reshape the European payment landscape, ensuring higher security standards and transparency, crucial for maintaining consumer trust and compliance.",
       "source": "Finextra"
     },
     {
-      "title": "Kraken Debuts Multi-Asset Debit Card in UK and EU",
-      "body": "Crypto exchange Kraken has launched the Krak card, a multi-asset debit card enabling payments in both fiat and cryptocurrencies across the UK and EU. This move signifies a major step towards the integration of cryptocurrencies into mainstream financial systems, offering users enhanced flexibility in managing digital and traditional currencies.",
+      "title": "US Bank Pilots Stablecoins on Stellar Blockchain",
+      "body": "US Bank is testing the waters with its own stablecoins on the Stellar blockchain network, signaling a major shift towards embracing blockchain for enhanced payment solutions. This move could pave the way for broader adoption of digital currencies in mainstream banking, potentially transforming payment processes with increased speed and reduced costs.",
       "source": "Finextra"
+    },
+    {
+      "title": "AI Boosts Black Friday Sales to Record $11.8 Billion",
+      "body": "Artificial intelligence was a game-changer this Black Friday, driving online sales to a staggering $11.8 billion, a 9% increase from last year. AI's role in optimizing consumer engagement and traffic not only boosted sales but also highlighted the growing influence of tech in retail strategies, setting new standards for future shopping events.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Visa Expands Stablecoin Settlements in CEMEA with Aquanow",
+      "body": "Visa's new partnership with Aquanow to enhance stablecoin settlements across Central and Eastern Europe, the Middle East, and Africa marks a significant step in digital currency's integration into global finance. This collaboration aims to streamline transactions and expand digital payment infrastructures in these key markets.",
+      "source": "Finextra"
+    },
+    {
+      "title": "New York Takes Lead Against AI-Driven Personalized Pricing",
+      "body": "New York has set a precedent by legislating against AI-driven personalized pricing, requiring retailers to disclose if AI influences pricing strategies. This move towards greater transparency and consumer protection could inspire similar regulations globally, impacting how retailers leverage AI for pricing.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010? The cost at the time was 10,000 Bitcoins, which would now be worth millions of dollars!",
-    "source": "bitcoin.org"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
