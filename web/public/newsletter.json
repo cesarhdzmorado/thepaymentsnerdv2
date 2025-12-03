@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "NH NongHyup Bank Advances Blockchain for Cross-Border Payments",
-      "body": "NH NongHyup Bank in South Korea has successfully piloted a blockchain-based cross-border payment system using Partior\u2019s platform. This marks a significant leap towards integrating blockchain technology in mainstream banking, potentially revolutionizing payment efficiencies and security.",
+      "title": "MOVii Targets 8% of Peru's Payment Market in Latin Expansion",
+      "body": "Colombian fintech MOVii is making bold moves into Peru, aiming to seize at least 8% of the payment processing market within five years. This strategic expansion into Peru is just the beginning, as MOVii plans to spread its influence across Latin America. This expansion is pivotal as it underscores the rising clout of Latin American fintechs in the global arena.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Kalshi Lands $1 Billion to Scale Prediction Market Offerings",
+      "body": "In a striking show of confidence, Kalshi has secured $1 billion in Series E funding, pushing its valuation to $11 billion. The investment will fuel consumer adoption, brokerage integrations, and new partnerships, highlighting the growing traction of prediction markets in reshaping financial landscapes.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Euro Stablecoin Initiative Sets Stage for 2026 Launch",
+      "body": "A consortium of ten leading banks is advancing a major euro-denominated stablecoin project, set to launch in the second half of 2026. This initiative marks a significant evolution in integrating stablecoins within traditional banking, potentially revolutionizing the European digital currency space.",
       "source": "Finextra"
     },
     {
-      "title": "Sony Bank to Launch USD-Pegged Stablecoin for Ecosystem Payments",
-      "body": "Sony Bank is gearing up to issue a dollar-pegged stablecoin, aimed at facilitating transactions within its vast ecosystem, including gaming and media purchases. This strategic move underscores Sony's commitment to blending finance with technology, setting a precedent in the digital currency landscape.",
+      "title": "US States Probe BNPL Sector Over Consumer Protection Concerns",
+      "body": "Seven US states are investigating the Buy Now, Pay Later (BNPL) industry, scrutinizing unclear terms and potential debt traps. This inquiry could reshape the regulatory landscape, ensuring greater transparency and fairness in the rapidly growing BNPL market.",
       "source": "Finextra"
     },
     {
-      "title": "Visa and AWS Collaborate to Enhance AI Commerce Solutions",
-      "body": "Visa has teamed up with AWS to integrate its Intelligence Commerce platform into the AWS Marketplace. This partnership is set to streamline the deployment of AI-driven commerce solutions, offering developers and enterprises advanced tools to enhance their operational capabilities.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Sokin Secures $50M for Global Expansion of Cross-Border Payments",
-      "body": "Sokin, a UK-based B2B payments firm, has raised $50 million in Series B funding to fuel its international growth. This investment highlights the escalating demand for streamlined, efficient cross-border payment solutions in the global financial landscape.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Wise Gains Foothold in Africa with South African Regulatory Nod",
-      "body": "Wise has secured a regulatory license from the South African Reserve Bank, allowing it to operate as a foreign exchange dealer in Africa. This milestone is pivotal for Wise's expansion strategy, enhancing its ability to facilitate seamless money movements across the continent.",
+      "title": "Visa Boosts Digital Wallet Presence in Europe Amid Rising Demand",
+      "body": "Visa is expanding its digital wallet services across Europe, with new launches and a pilot set for early 2026. This strategic move aims to strengthen Visa's position in the burgeoning digital payments sector, reflecting the company's adaptation to consumer preferences for digital financial solutions.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first item ever purchased online was a Sting CD in 1994? This marked the beginning of e-commerce as we know it today.",
+    "text": "Did you know that the world's first credit card was issued in 1950? The Diners Club card started a financial revolution by allowing users to pay at multiple establishments with just one card.",
     "source": "history.com"
   }
 }
