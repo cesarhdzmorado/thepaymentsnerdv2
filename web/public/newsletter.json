@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "MOVii Targets 8% of Peru's Payment Market in Latin Expansion",
-      "body": "Colombian fintech MOVii is making bold moves into Peru, aiming to seize at least 8% of the payment processing market within five years. This strategic expansion into Peru is just the beginning, as MOVii plans to spread its influence across Latin America. This expansion is pivotal as it underscores the rising clout of Latin American fintechs in the global arena.",
+      "title": "Coinbase Partners with U.S. Banks to Pilot Crypto Projects",
+      "body": "Coinbase is making significant strides in bridging traditional banking with the crypto world by partnering with major U.S. banks on stablecoins, custody, and trading initiatives. Announced at the New York Times DealBook Summit by CEO Brian Armstrong, this collaboration could pave the way for broader cryptocurrency adoption in mainstream financial systems, potentially transforming how banks interact with digital currencies.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Kalshi Lands $1 Billion to Scale Prediction Market Offerings",
-      "body": "In a striking show of confidence, Kalshi has secured $1 billion in Series E funding, pushing its valuation to $11 billion. The investment will fuel consumer adoption, brokerage integrations, and new partnerships, highlighting the growing traction of prediction markets in reshaping financial landscapes.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Euro Stablecoin Initiative Sets Stage for 2026 Launch",
-      "body": "A consortium of ten leading banks is advancing a major euro-denominated stablecoin project, set to launch in the second half of 2026. This initiative marks a significant evolution in integrating stablecoins within traditional banking, potentially revolutionizing the European digital currency space.",
+      "title": "Stripe Expands Billing Capabilities with Metronome Acquisition",
+      "body": "Stripe has strategically acquired the usage-billing platform Metronome, enhancing its billing services to offer more dynamic solutions. This move not only broadens Stripe's service portfolio but also strengthens its position in the competitive payments landscape, offering clients more flexible and efficient billing options.",
       "source": "Finextra"
     },
     {
-      "title": "US States Probe BNPL Sector Over Consumer Protection Concerns",
-      "body": "Seven US states are investigating the Buy Now, Pay Later (BNPL) industry, scrutinizing unclear terms and potential debt traps. This inquiry could reshape the regulatory landscape, ensuring greater transparency and fairness in the rapidly growing BNPL market.",
+      "title": "Cumbuca Opens Brazilian Payments Market to Global Players",
+      "body": "Cumbuca, a Y Combinator-backed startup, is facilitating international companies' entry into Brazil's regulated payments market. By using Cumbuca's license, companies can tap into one of Latin America's largest economies, a move that could significantly impact global payment dynamics and market penetration strategies.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Boosts Digital Wallet Presence in Europe Amid Rising Demand",
-      "body": "Visa is expanding its digital wallet services across Europe, with new launches and a pilot set for early 2026. This strategic move aims to strengthen Visa's position in the burgeoning digital payments sector, reflecting the company's adaptation to consumer preferences for digital financial solutions.",
+      "title": "EU Launches Antitrust Investigation into Meta's AI in WhatsApp",
+      "body": "The European Union is initiating an antitrust probe into Meta's integration of AI in WhatsApp, marking another significant regulatory challenge for Big Tech. This investigation could lead to stricter AI usage regulations, impacting how tech companies deploy AI in communication platforms across Europe.",
+      "source": "Financial Times"
+    },
+    {
+      "title": "Mastercard Enhances Credit Decisioning with New Data Tool",
+      "body": "Mastercard has unveiled a new technology leveraging its vast network and data insights to assist lenders in making smarter, faster credit decisions. This tool aims to revolutionize financial services by enhancing analytical capabilities, thereby improving the efficiency and accuracy of credit assessments.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the world's first credit card was issued in 1950? The Diners Club card started a financial revolution by allowing users to pay at multiple establishments with just one card.",
-    "source": "history.com"
+    "text": "Did you know that the OpenAI Foundation recently awarded $40.5 million in grants to 208 nonprofits to foster AI development across various sectors?",
+    "source": "PYMNTS.com"
   }
 }
