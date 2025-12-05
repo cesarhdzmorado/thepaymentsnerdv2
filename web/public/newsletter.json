@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Coinbase Partners with U.S. Banks to Pilot Crypto Projects",
-      "body": "Coinbase is making significant strides in bridging traditional banking with the crypto world by partnering with major U.S. banks on stablecoins, custody, and trading initiatives. Announced at the New York Times DealBook Summit by CEO Brian Armstrong, this collaboration could pave the way for broader cryptocurrency adoption in mainstream financial systems, potentially transforming how banks interact with digital currencies.",
+      "title": "Europol Shuts Down \u20ac700 Million Crypto Fraud Network",
+      "body": "Europol has dismantled a colossal cryptocurrency fraud network, laundering over \u20ac700 million. This crackdown underscores the escalating battle against financial crimes in the crypto realm, spotlighting the need for robust security measures in digital finance.",
+      "source": "Finextra"
+    },
+    {
+      "title": "FinCEN Notes Sharp Decline in Ransomware Incidents in 2024",
+      "body": "The Financial Crimes Enforcement Network (FinCEN) reports a significant drop in ransomware incidents and payments in 2024, following the takedown of key ransomware groups. This trend is vital for enhancing cybersecurity and reducing financial risks associated with digital extortion.",
       "source": "PYMNTS.com"
     },
     {
+      "title": "Deutsche B\u00f6rse and Kraken Forge Digital Asset Partnership",
+      "body": "Deutsche B\u00f6rse has teamed up with Kraken to bridge traditional financial markets with the digital asset economy. This partnership, covering trading, custody, and tokenized assets, marks a pivotal move towards the mainstream integration of digital currencies.",
+      "source": "Finextra"
+    },
+    {
       "title": "Stripe Expands Billing Capabilities with Metronome Acquisition",
-      "body": "Stripe has strategically acquired the usage-billing platform Metronome, enhancing its billing services to offer more dynamic solutions. This move not only broadens Stripe's service portfolio but also strengthens its position in the competitive payments landscape, offering clients more flexible and efficient billing options.",
+      "body": "Stripe has acquired usage-billing platform Metronome, enhancing its billing services to provide more customized solutions. This strategic move bolsters Stripe's competitive edge in the payments industry, offering advanced billing options to its users.",
       "source": "Finextra"
     },
     {
-      "title": "Cumbuca Opens Brazilian Payments Market to Global Players",
-      "body": "Cumbuca, a Y Combinator-backed startup, is facilitating international companies' entry into Brazil's regulated payments market. By using Cumbuca's license, companies can tap into one of Latin America's largest economies, a move that could significantly impact global payment dynamics and market penetration strategies.",
-      "source": "Finextra"
-    },
-    {
-      "title": "EU Launches Antitrust Investigation into Meta's AI in WhatsApp",
-      "body": "The European Union is initiating an antitrust probe into Meta's integration of AI in WhatsApp, marking another significant regulatory challenge for Big Tech. This investigation could lead to stricter AI usage regulations, impacting how tech companies deploy AI in communication platforms across Europe.",
-      "source": "Financial Times"
-    },
-    {
-      "title": "Mastercard Enhances Credit Decisioning with New Data Tool",
-      "body": "Mastercard has unveiled a new technology leveraging its vast network and data insights to assist lenders in making smarter, faster credit decisions. This tool aims to revolutionize financial services by enhancing analytical capabilities, thereby improving the efficiency and accuracy of credit assessments.",
+      "title": "Mastercard Innovates Credit Decisions with Data Insights",
+      "body": "Mastercard is revolutionizing the lending process by leveraging its vast network and data for smarter credit decisions. This technological advancement promises to transform lending by enabling quicker, data-driven credit evaluations.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the OpenAI Foundation recently awarded $40.5 million in grants to 208 nonprofits to foster AI development across various sectors?",
-    "source": "PYMNTS.com"
+    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was initially made of cardboard!",
+    "source": "history.com"
   }
 }
