@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Europol Shuts Down \u20ac700 Million Crypto Fraud Network",
-      "body": "Europol has dismantled a colossal cryptocurrency fraud network, laundering over \u20ac700 million. This crackdown underscores the escalating battle against financial crimes in the crypto realm, spotlighting the need for robust security measures in digital finance.",
+      "title": "Europol Cracks Down on \u20ac700M Crypto Fraud Network",
+      "body": "Europol has dismantled a significant cryptocurrency fraud network, laundering over \u20ac700 million. This major operation highlights the persistent regulatory challenges and the need for robust measures in the digital currency space to combat financial crimes.",
       "source": "Finextra"
     },
     {
-      "title": "FinCEN Notes Sharp Decline in Ransomware Incidents in 2024",
-      "body": "The Financial Crimes Enforcement Network (FinCEN) reports a significant drop in ransomware incidents and payments in 2024, following the takedown of key ransomware groups. This trend is vital for enhancing cybersecurity and reducing financial risks associated with digital extortion.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Deutsche B\u00f6rse and Kraken Forge Digital Asset Partnership",
-      "body": "Deutsche B\u00f6rse has teamed up with Kraken to bridge traditional financial markets with the digital asset economy. This partnership, covering trading, custody, and tokenized assets, marks a pivotal move towards the mainstream integration of digital currencies.",
+      "title": "Cloudflare Outage Disrupts Banking Websites, Raises Concerns",
+      "body": "A recent outage at Cloudflare, its second in a month, severely impacted numerous banking websites, exposing the vulnerabilities of critical digital infrastructure in the financial sector. This incident underscores the urgent need for enhanced resilience and reliability in internet services that support essential banking operations.",
       "source": "Finextra"
     },
     {
-      "title": "Stripe Expands Billing Capabilities with Metronome Acquisition",
-      "body": "Stripe has acquired usage-billing platform Metronome, enhancing its billing services to provide more customized solutions. This strategic move bolsters Stripe's competitive edge in the payments industry, offering advanced billing options to its users.",
+      "title": "FinCEN Reports 77% Increase in Ransomware Payments in 2023",
+      "body": "The Financial Crimes Enforcement Network (FinCEN) has reported a staggering 77% increase in ransomware payments this year, totaling over $2.1 billion. This surge highlights the escalating threat of ransomware attacks and their profound financial impact on businesses and governmental entities.",
       "source": "Finextra"
     },
     {
-      "title": "Mastercard Innovates Credit Decisions with Data Insights",
-      "body": "Mastercard is revolutionizing the lending process by leveraging its vast network and data for smarter credit decisions. This technological advancement promises to transform lending by enabling quicker, data-driven credit evaluations.",
+      "title": "Revolut Targets High-End Market with New Ultra-Premium Card",
+      "body": "Revolut has launched Titan, its first ultra-premium business card, aimed at high-end corporate spending. This strategic move marks Revolut's entry into niche, high-value financial products, potentially reshaping competitive dynamics in the business card segment.",
+      "source": "Finextra"
+    },
+    {
+      "title": "ECB Advances Digital Euro Project with Specialist Recruitment",
+      "body": "The European Central Bank is accelerating its digital euro initiative by hiring market infrastructure specialists. This move is part of a global trend where central banks are actively exploring digital currencies, potentially transforming monetary policies and financial systems worldwide.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was initially made of cardboard!",
-    "source": "history.com"
+    "text": "Did you know that the Financial Crimes Enforcement Network (FinCEN) reported a 77% increase in ransomware payments in 2023, totaling over $2.1 billion?",
+    "source": "Finextra"
   }
 }
