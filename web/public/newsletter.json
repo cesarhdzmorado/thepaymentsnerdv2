@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Europol Dismantles Massive \u20ac700M Crypto Fraud Network",
-      "body": "Europol's recent takedown of a cryptocurrency fraud network laundering over \u20ac700 million marks a significant victory in the fight against digital financial crimes. This operation not only highlights the challenges of policing the digital currency space but also underscores the need for robust regulatory frameworks and advanced security measures in fintech.",
-      "source": "Finextra"
+      "title": "Senate Bill to Assess AI's Impact on U.S. Workforce",
+      "body": "The U.S. Senate has introduced the AI Workforce PREPARE Act, aiming to analyze artificial intelligence's influence on employment. This initiative could shape future AI-related labor policies, emphasizing the critical role AI plays in the evolving job market.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "ECB Accelerates Digital Euro Initiative with New Hires",
-      "body": "The European Central Bank is ramping up its digital euro project by hiring market infrastructure specialists. This strategic move signals a closer approach to the implementation of a digital currency by a major central bank, potentially transforming the European financial landscape and setting a precedent for global monetary policies.",
+      "title": "Cloudflare Outage Disrupts Banking Websites Again",
+      "body": "Cloudflare's recent outage, its second in a month, affected numerous banking websites, highlighting vulnerabilities in essential internet infrastructure. This incident underscores the need for enhanced reliability and security in financial sector's digital operations.",
       "source": "Finextra"
     },
     {
       "title": "FinCEN Reports 77% Surge in Ransomware Payments in 2023",
-      "body": "The Financial Crimes Enforcement Network has observed a 77% increase in ransomware payments in 2023, highlighting a significant rise in cyber financial threats. This surge underscores the urgent need for enhanced cybersecurity measures and proactive financial monitoring to mitigate the impact on businesses and financial institutions.",
+      "body": "A FinCEN report reveals a 77% increase in ransomware payments in the U.S. during 2023, though numbers declined in 2024. This trend stresses the escalating challenge of cybercrime in finance, emphasizing the critical need for advanced cybersecurity strategies.",
       "source": "Finextra"
     },
     {
-      "title": "Revolut Launches Titan, a New Ultra-Premium Business Card",
-      "body": "Revolut is set to disrupt the corporate finance sector with its new ultra-premium business card, Titan, designed for high-end corporate spending. This launch reflects the ongoing innovation in fintech, offering sophisticated tools for financial management and potentially reshaping business spending behaviors.",
+      "title": "Europol Takes Down \u20ac700M Crypto Fraud Network",
+      "body": "Europol has dismantled a significant cryptocurrency fraud network, responsible for laundering over \u20ac700 million. This major operation highlights the ongoing efforts to combat financial crimes in the digital currency arena, stressing the importance of robust regulatory frameworks.",
       "source": "Finextra"
     },
     {
-      "title": "Senate Bill Proposes Study on AI's Impact on Workforce",
-      "body": "The U.S. Senate has introduced the AI Workforce PREPARE Act, aiming to better understand artificial intelligence's influence on the workforce. This legislation could drive significant policy changes and workforce strategies, particularly affecting sectors heavily integrated with AI technologies.",
-      "source": "PYMNTS.com"
+      "title": "ECB Accelerates Development of Digital Euro",
+      "body": "The European Central Bank is stepping up its digital euro project by hiring market infrastructure experts. This development marks a pivotal advancement in Europe's journey towards launching a central bank digital currency (CBDC), potentially transforming the region's financial landscape.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first digital currency transaction was for a pizza purchase in 2010, costing 10,000 bitcoins, which would be worth millions today.",
-    "source": "bitcoin.org"
+    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was made of cardboard!",
+    "source": "history.com"
   }
 }
