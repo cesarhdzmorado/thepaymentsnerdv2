@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Europol Cracks Down on \u20ac700M Crypto Fraud Network",
-      "body": "Europol has dismantled a significant cryptocurrency fraud network, laundering over \u20ac700 million. This major operation highlights the persistent regulatory challenges and the need for robust measures in the digital currency space to combat financial crimes.",
+      "title": "Cloudflare Outage Disrupts Banking Websites Again",
+      "body": "Cloudflare's recent outage, its second in a month, significantly impacted several banking websites, raising serious concerns about the reliability of essential internet infrastructure for the financial sector. This incident underscores the critical need for robust, fail-safe systems in financial operations.",
       "source": "Finextra"
     },
     {
-      "title": "Cloudflare Outage Disrupts Banking Websites, Raises Concerns",
-      "body": "A recent outage at Cloudflare, its second in a month, severely impacted numerous banking websites, exposing the vulnerabilities of critical digital infrastructure in the financial sector. This incident underscores the urgent need for enhanced resilience and reliability in internet services that support essential banking operations.",
+      "title": "FinCEN Reports 77% Surge in Ransomware Payments in 2023",
+      "body": "The Financial Crimes Enforcement Network (FinCEN) has reported a staggering 77% increase in ransomware payments in 2023, totaling over $2.1 billion. This alarming trend highlights the escalating challenge of cybercrime in finance, emphasizing the urgent need for enhanced cybersecurity measures.",
       "source": "Finextra"
     },
     {
-      "title": "FinCEN Reports 77% Increase in Ransomware Payments in 2023",
-      "body": "The Financial Crimes Enforcement Network (FinCEN) has reported a staggering 77% increase in ransomware payments this year, totaling over $2.1 billion. This surge highlights the escalating threat of ransomware attacks and their profound financial impact on businesses and governmental entities.",
+      "title": "Europol Takes Down \u20ac700M Crypto Fraud Network",
+      "body": "In a significant crackdown, Europol has dismantled a cryptocurrency fraud network responsible for laundering over \u20ac700 million. This operation not only highlights the ongoing regulatory challenges in the digital currency space but also the critical importance of international cooperation in combating financial crime.",
       "source": "Finextra"
     },
     {
-      "title": "Revolut Targets High-End Market with New Ultra-Premium Card",
-      "body": "Revolut has launched Titan, its first ultra-premium business card, aimed at high-end corporate spending. This strategic move marks Revolut's entry into niche, high-value financial products, potentially reshaping competitive dynamics in the business card segment.",
+      "title": "ECB Accelerates Digital Euro Development",
+      "body": "The European Central Bank is ramping up its efforts on the digital euro project, signaling a major advancement in the development of a central bank digital currency (CBDC) in Europe. This move could reshape the financial landscape, offering a digital alternative that could enhance transaction efficiency and security.",
       "source": "Finextra"
     },
     {
-      "title": "ECB Advances Digital Euro Project with Specialist Recruitment",
-      "body": "The European Central Bank is accelerating its digital euro initiative by hiring market infrastructure specialists. This move is part of a global trend where central banks are actively exploring digital currencies, potentially transforming monetary policies and financial systems worldwide.",
+      "title": "Revolut Unveils Titan: A New Ultra-Premium Business Card",
+      "body": "Revolut has launched 'Titan,' its first ultra-premium business spend management card, targeting high-end corporate clients. This strategic move caters to the growing demand for sophisticated, feature-rich payment solutions in the business sector, potentially setting new standards in corporate financial services.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the Financial Crimes Enforcement Network (FinCEN) reported a 77% increase in ransomware payments in 2023, totaling over $2.1 billion?",
-    "source": "Finextra"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized how consumers made payments and laid the groundwork for the complex payment systems we use today.",
+    "source": "history.com"
   }
 }
