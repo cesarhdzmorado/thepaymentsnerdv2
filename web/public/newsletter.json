@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Senate Bill to Assess AI's Impact on U.S. Workforce",
-      "body": "The U.S. Senate has introduced the AI Workforce PREPARE Act, aiming to analyze artificial intelligence's influence on employment. This initiative could shape future AI-related labor policies, emphasizing the critical role AI plays in the evolving job market.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Cloudflare Outage Disrupts Banking Websites Again",
-      "body": "Cloudflare's recent outage, its second in a month, affected numerous banking websites, highlighting vulnerabilities in essential internet infrastructure. This incident underscores the need for enhanced reliability and security in financial sector's digital operations.",
+      "title": "Visa Europe Shifts HQ to Canary Wharf, Bolstering European Presence",
+      "body": "Visa Europe is relocating its headquarters to Canary Wharf, London, securing floors at the iconic One Canada Square. This move, expected to enhance Visa's operational capabilities, underscores its commitment to remain a key player in one of the world's premier financial districts. The strategic shift not only strengthens Visa's position in Europe but also signals confidence in London's financial market post-Brexit.",
       "source": "Finextra"
     },
     {
-      "title": "FinCEN Reports 77% Surge in Ransomware Payments in 2023",
-      "body": "A FinCEN report reveals a 77% increase in ransomware payments in the U.S. during 2023, though numbers declined in 2024. This trend stresses the escalating challenge of cybercrime in finance, emphasizing the critical need for advanced cybersecurity strategies.",
+      "title": "FinCEN Reports Alarming 77% Rise in Ransomware Payments in 2023",
+      "body": "The Financial Crimes Enforcement Network (FinCEN) has observed a staggering 77% increase in ransomware payments this year, totaling over $2.1 billion. This surge underscores the escalating challenge of cybercrime and its significant financial impact on businesses, highlighting an urgent need for robust cybersecurity measures and stronger regulatory frameworks to mitigate these threats.",
       "source": "Finextra"
     },
     {
-      "title": "Europol Takes Down \u20ac700M Crypto Fraud Network",
-      "body": "Europol has dismantled a significant cryptocurrency fraud network, responsible for laundering over \u20ac700 million. This major operation highlights the ongoing efforts to combat financial crimes in the digital currency arena, stressing the importance of robust regulatory frameworks.",
+      "title": "ECB Accelerates Digital Euro Development, Eyes Digital Transformation",
+      "body": "The European Central Bank is intensifying its efforts to develop a digital euro, recruiting specialists to potentially transform the Eurozone's monetary system. This initiative aligns with Europe's digital finance strategy, aiming to provide a secure and efficient digital currency that could revolutionize financial transactions and enhance monetary policy effectiveness.",
       "source": "Finextra"
     },
     {
-      "title": "ECB Accelerates Development of Digital Euro",
-      "body": "The European Central Bank is stepping up its digital euro project by hiring market infrastructure experts. This development marks a pivotal advancement in Europe's journey towards launching a central bank digital currency (CBDC), potentially transforming the region's financial landscape.",
+      "title": "Airwallex Set for Silicon Valley Expansion, Valued at $8 Billion",
+      "body": "Following a recent funding round, Airwallex is poised to expand into Silicon Valley with a valuation of $8 billion. This strategic move aims to tap into the U.S. market and leverage the region's robust tech ecosystem, potentially accelerating growth in digital payments and fintech innovation. The expansion also reflects a significant shift in investment strategy, with a reduction in Tencent\u2019s holding.",
+      "source": "Financial Times"
+    },
+    {
+      "title": "Coinstar and Lithic Unveil CINQ Debit Card, Bridging Cash to Digital",
+      "body": "Coinstar, in collaboration with Lithic, is launching the CINQ by Coinstar Debit Card, enabling seamless conversion from physical to digital currency. This initiative marks a pivotal step in Coinstar's digital transformation, aiming to bridge the gap between traditional cash transactions and digital financial services, thereby enhancing user convenience and promoting financial inclusion.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was made of cardboard!",
-    "source": "history.com"
+    "text": "Did you know that the Financial Crimes Enforcement Network (FinCEN) reported a 77% increase in ransomware payments in 2023, totaling over $2.1 billion? This highlights the growing challenge and financial impact of cybercrime on businesses.",
+    "source": "Finextra"
   }
 }
