@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Visa Europe Shifts HQ to Canary Wharf, Bolstering European Presence",
-      "body": "Visa Europe is relocating its headquarters to Canary Wharf, London, securing floors at the iconic One Canada Square. This move, expected to enhance Visa's operational capabilities, underscores its commitment to remain a key player in one of the world's premier financial districts. The strategic shift not only strengthens Visa's position in Europe but also signals confidence in London's financial market post-Brexit.",
+      "title": "Bank CEOs to Discuss Crypto Regulations with Senators",
+      "body": "On December 11, top executives from Citigroup, Wells Fargo, and Bank of America will convene with senators under the aegis of the Financial Services Forum to deliberate on crypto market regulations. This pivotal meeting could catalyze significant policy shifts, impacting both the financial and crypto sectors.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Argentina's Central Bank May Enable Crypto Trading by Lenders",
+      "body": "The Central Bank of Argentina is considering a proposal that would allow traditional financial institutions to engage in cryptocurrency trading for their clients by April 2026. This regulatory shift could dramatically widen crypto access and reshape the financial landscape in Argentina.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Airwallex Secures $330 Million, Valuation Hits $8 Billion",
+      "body": "In a recent Series G funding round, Airwallex has raised $330 million, spearheaded by Addition and supported by T. Rowe Price among others, pushing its valuation to $8 billion. This funding underscores Airwallex's expanding clout in the global business payments arena.",
       "source": "Finextra"
     },
     {
-      "title": "FinCEN Reports Alarming 77% Rise in Ransomware Payments in 2023",
-      "body": "The Financial Crimes Enforcement Network (FinCEN) has observed a staggering 77% increase in ransomware payments this year, totaling over $2.1 billion. This surge underscores the escalating challenge of cybercrime and its significant financial impact on businesses, highlighting an urgent need for robust cybersecurity measures and stronger regulatory frameworks to mitigate these threats.",
+      "title": "Visa Europe Relocates HQ to London's Canary Wharf",
+      "body": "Visa Europe has committed to several floors at One Canada Square, Canary Wharf, marking a significant post-Brexit commitment to London as a financial hub. This move could influence other financial services giants' location strategies in Europe.",
       "source": "Finextra"
     },
     {
-      "title": "ECB Accelerates Digital Euro Development, Eyes Digital Transformation",
-      "body": "The European Central Bank is intensifying its efforts to develop a digital euro, recruiting specialists to potentially transform the Eurozone's monetary system. This initiative aligns with Europe's digital finance strategy, aiming to provide a secure and efficient digital currency that could revolutionize financial transactions and enhance monetary policy effectiveness.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Airwallex Set for Silicon Valley Expansion, Valued at $8 Billion",
-      "body": "Following a recent funding round, Airwallex is poised to expand into Silicon Valley with a valuation of $8 billion. This strategic move aims to tap into the U.S. market and leverage the region's robust tech ecosystem, potentially accelerating growth in digital payments and fintech innovation. The expansion also reflects a significant shift in investment strategy, with a reduction in Tencent\u2019s holding.",
-      "source": "Financial Times"
-    },
-    {
-      "title": "Coinstar and Lithic Unveil CINQ Debit Card, Bridging Cash to Digital",
-      "body": "Coinstar, in collaboration with Lithic, is launching the CINQ by Coinstar Debit Card, enabling seamless conversion from physical to digital currency. This initiative marks a pivotal step in Coinstar's digital transformation, aiming to bridge the gap between traditional cash transactions and digital financial services, thereby enhancing user convenience and promoting financial inclusion.",
+      "title": "US Ransomware Payments Exceed $2.1 Billion Over Two Years",
+      "body": "A report from the US Treasury\u2019s Financial Crimes Enforcement Network reveals that ransomware payments in the US surged by 77% to over $2.1 billion between 2022 and 2024. This alarming rise underscores the escalating cyber threats impacting financial security.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the Financial Crimes Enforcement Network (FinCEN) reported a 77% increase in ransomware payments in 2023, totaling over $2.1 billion? This highlights the growing challenge and financial impact of cybercrime on businesses.",
+    "text": "Ransomware payments in the US reached over $2.1 billion between 2022 and 2024, indicating a significant rise in cyber threats.",
     "source": "Finextra"
   }
 }
