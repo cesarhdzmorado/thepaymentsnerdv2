@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Bank CEOs to Discuss Crypto Regulations with Senators",
-      "body": "On December 11, top executives from Citigroup, Wells Fargo, and Bank of America will convene with senators under the aegis of the Financial Services Forum to deliberate on crypto market regulations. This pivotal meeting could catalyze significant policy shifts, impacting both the financial and crypto sectors.",
+      "title": "Bitwise 10 Crypto Index ETF Uplists to NYSE Arca",
+      "body": "Bitwise Asset Management's Bitwise 10 Crypto Index ETF (BITW) has been uplisted to NYSE Arca, marking a pivotal moment for mainstream investors seeking regulated crypto market access. Launched in 2017, BITW features the top 10 crypto assets by market cap, with active screening and monthly rebalancing. This move could significantly influence the broader acceptance and investment in cryptocurrencies.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Argentina's Central Bank May Enable Crypto Trading by Lenders",
-      "body": "The Central Bank of Argentina is considering a proposal that would allow traditional financial institutions to engage in cryptocurrency trading for their clients by April 2026. This regulatory shift could dramatically widen crypto access and reshape the financial landscape in Argentina.",
+      "title": "Lumanu Integrates Visa Direct for Swift Global Creator Payments",
+      "body": "Lumanu's integration of Visa Direct revolutionizes its payment platform by enabling real-time payments to creators in over 195 countries. This enhancement not only speeds up transactions but also simplifies cross-border payments, potentially transforming the global creator economy by making it easier for creators to get paid promptly and efficiently.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Airwallex Secures $330 Million, Valuation Hits $8 Billion",
-      "body": "In a recent Series G funding round, Airwallex has raised $330 million, spearheaded by Addition and supported by T. Rowe Price among others, pushing its valuation to $8 billion. This funding underscores Airwallex's expanding clout in the global business payments arena.",
+      "title": "FCA Launches 'Firm Checker' to Shield Against Financial Scams",
+      "body": "The UK's Financial Conduct Authority has introduced the 'Firm Checker' tool in response to a surge in investment and pension scams, impacting around 800,000 individuals last year. This innovative tool assists users in verifying the legitimacy of firms, aiming to significantly reduce financial crime and protect consumers.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Europe Relocates HQ to London's Canary Wharf",
-      "body": "Visa Europe has committed to several floors at One Canada Square, Canary Wharf, marking a significant post-Brexit commitment to London as a financial hub. This move could influence other financial services giants' location strategies in Europe.",
+      "title": "Abu Dhabi Sets Up New Fintech Center to Boost Digital Assets",
+      "body": "Abu Dhabi is establishing a new fintech center to enhance its role as a digital assets hub in the Middle East. This strategic move aims to attract digital asset companies and promote innovation, positioning Abu Dhabi as a key player in the global fintech landscape.",
       "source": "Finextra"
     },
     {
-      "title": "US Ransomware Payments Exceed $2.1 Billion Over Two Years",
-      "body": "A report from the US Treasury\u2019s Financial Crimes Enforcement Network reveals that ransomware payments in the US surged by 77% to over $2.1 billion between 2022 and 2024. This alarming rise underscores the escalating cyber threats impacting financial security.",
+      "title": "EIB Invests \u20ac70m in BNPL Provider Scalapay to Fuel Expansion",
+      "body": "The European Investment Bank has invested \u20ac70 million in Scalapay, a leading Buy Now, Pay Later provider based in Italy. This investment underscores the growing significance of BNPL services in Europe and is set to support Scalapay's expansion plans, potentially reshaping the European financial services sector.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Ransomware payments in the US reached over $2.1 billion between 2022 and 2024, indicating a significant rise in cyber threats.",
-    "source": "Finextra"
+    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010? The cost at the time was 10,000 Bitcoins!",
+    "source": "bitcoin.org"
   }
 }
