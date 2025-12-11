@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Bitwise 10 Crypto Index ETF Uplists to NYSE Arca",
-      "body": "Bitwise Asset Management's Bitwise 10 Crypto Index ETF (BITW) has been uplisted to NYSE Arca, marking a pivotal moment for mainstream investors seeking regulated crypto market access. Launched in 2017, BITW features the top 10 crypto assets by market cap, with active screening and monthly rebalancing. This move could significantly influence the broader acceptance and investment in cryptocurrencies.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Lumanu Integrates Visa Direct for Swift Global Creator Payments",
-      "body": "Lumanu's integration of Visa Direct revolutionizes its payment platform by enabling real-time payments to creators in over 195 countries. This enhancement not only speeds up transactions but also simplifies cross-border payments, potentially transforming the global creator economy by making it easier for creators to get paid promptly and efficiently.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "FCA Launches 'Firm Checker' to Shield Against Financial Scams",
-      "body": "The UK's Financial Conduct Authority has introduced the 'Firm Checker' tool in response to a surge in investment and pension scams, impacting around 800,000 individuals last year. This innovative tool assists users in verifying the legitimacy of firms, aiming to significantly reduce financial crime and protect consumers.",
+      "title": "Bank of England Probes Impact of a Digital Pound on Businesses",
+      "body": "The Bank of England is engaging with businesses to gauge the potential impacts of a digital pound on the UK's financial ecosystem. This initiative, part of a broader global shift towards digital currencies, aims to understand both operational and economic consequences. Insights gained could shape the future of digital currency policy in the UK, signaling significant implications for payment systems and financial stability.",
       "source": "Finextra"
     },
     {
-      "title": "Abu Dhabi Sets Up New Fintech Center to Boost Digital Assets",
-      "body": "Abu Dhabi is establishing a new fintech center to enhance its role as a digital assets hub in the Middle East. This strategic move aims to attract digital asset companies and promote innovation, positioning Abu Dhabi as a key player in the global fintech landscape.",
-      "source": "Finextra"
+      "title": "EU Tightens Grip on Google Play, Demanding Fairer Competition",
+      "body": "The European Union is escalating its enforcement against Google Play's app store policies, pushing for compliance with the Digital Markets Act by early 2026. This move aims to dismantle technical barriers that stifle competition, potentially reshaping app distribution and monetization strategies for developers across Europe. The outcome could influence global app store policies and tech company operations.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "EIB Invests \u20ac70m in BNPL Provider Scalapay to Fuel Expansion",
-      "body": "The European Investment Bank has invested \u20ac70 million in Scalapay, a leading Buy Now, Pay Later provider based in Italy. This investment underscores the growing significance of BNPL services in Europe and is set to support Scalapay's expansion plans, potentially reshaping the European financial services sector.",
+      "title": "Oracle Pledges $15 Billion to Bolster AI Data Centers",
+      "body": "Oracle is ramping up its investment in AI infrastructure with a $15 billion commitment to enhance its data centers. This strategic investment is designed to meet the surging demand for AI-driven solutions, positioning Oracle to capitalize on the expanding AI market. The move underscores the growing importance of robust AI capabilities in maintaining competitive advantage in tech.",
+      "source": "Financial Times"
+    },
+    {
+      "title": "Capitol Hill Scrutinizes AI's Impact on Financial Markets",
+      "body": "The House Financial Services Committee recently debated the dual-edged role of AI in financial markets, highlighting the need for a solid regulatory framework. This discussion reflects the growing reliance on AI technologies and their potential to either stabilize or disrupt financial systems. The outcomes could dictate future regulatory approaches and technology adoption in the sector.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Abu Dhabi Sets Stage for Fintech Innovation with New Digital Hub",
+      "body": "Abu Dhabi is launching a new fintech hub focused on digital assets, aiming to become the Middle East's epicenter for digital financial technologies. This initiative seeks to attract top tech firms and innovators, potentially transforming the region into a key player in the global digital economy. The move highlights the strategic importance of fintech innovation in economic diversification plans.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin transaction was for two pizzas in 2010? The cost at the time was 10,000 Bitcoins!",
+    "text": "Did you know that the first digital currency transaction was for a pizza purchase in 2010? 10,000 bitcoins were used to buy two pizzas, worth about $41 at the time!",
     "source": "bitcoin.org"
   }
 }
