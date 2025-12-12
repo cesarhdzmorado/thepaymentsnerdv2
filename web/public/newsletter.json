@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Bank of England Probes Impact of a Digital Pound on Businesses",
-      "body": "The Bank of England is engaging with businesses to gauge the potential impacts of a digital pound on the UK's financial ecosystem. This initiative, part of a broader global shift towards digital currencies, aims to understand both operational and economic consequences. Insights gained could shape the future of digital currency policy in the UK, signaling significant implications for payment systems and financial stability.",
+      "title": "Terraform Labs Co-Founder Gets 15-Year Sentence for Crypto Crash",
+      "body": "Do Kwon, co-founder of Terraform Labs, has been sentenced to 15 years in prison due to his involvement in the $40 billion crash of TerraUSD and Luna coins in 2022. This marks a significant moment in cryptocurrency regulation, underscoring the legal risks and the need for robust compliance frameworks in the digital currency space.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Mollie Acquires GoCardless, Signaling Fintech Consolidation",
+      "body": "In a strategic expansion, Mollie has acquired GoCardless, heralding a new era of consolidation in the venture-backed fintech payment sector. This acquisition could dramatically alter the competitive dynamics, offering new integrated solutions and setting a precedent for future mergers and acquisitions in fintech.",
       "source": "Finextra"
     },
     {
-      "title": "EU Tightens Grip on Google Play, Demanding Fairer Competition",
-      "body": "The European Union is escalating its enforcement against Google Play's app store policies, pushing for compliance with the Digital Markets Act by early 2026. This move aims to dismantle technical barriers that stifle competition, potentially reshaping app distribution and monetization strategies for developers across Europe. The outcome could influence global app store policies and tech company operations.",
-      "source": "PYMNTS.com"
+      "title": "BIS Initiates Post-Quantum Cryptography Tests for Payments",
+      "body": "The Bank for International Settlements is collaborating with Swift and central banks from Italy, France, and Germany to test post-quantum cryptography in payments. This forward-looking initiative is crucial for preparing the financial infrastructure to withstand future technological disruptions and ensuring long-term security.",
+      "source": "Finextra"
     },
     {
-      "title": "Oracle Pledges $15 Billion to Bolster AI Data Centers",
-      "body": "Oracle is ramping up its investment in AI infrastructure with a $15 billion commitment to enhance its data centers. This strategic investment is designed to meet the surging demand for AI-driven solutions, positioning Oracle to capitalize on the expanding AI market. The move underscores the growing importance of robust AI capabilities in maintaining competitive advantage in tech.",
-      "source": "Financial Times"
+      "title": "Bank of England Explores Introduction of Digital Pound",
+      "body": "The Bank of England is actively consulting with businesses about the potential introduction of a digital pound. This exploration reflects a significant interest in digital currencies by major central banks, potentially transforming the financial landscape with implications for global payments and monetary policy.",
+      "source": "Finextra"
     },
     {
-      "title": "Capitol Hill Scrutinizes AI's Impact on Financial Markets",
-      "body": "The House Financial Services Committee recently debated the dual-edged role of AI in financial markets, highlighting the need for a solid regulatory framework. This discussion reflects the growing reliance on AI technologies and their potential to either stabilize or disrupt financial systems. The outcomes could dictate future regulatory approaches and technology adoption in the sector.",
-      "source": "PYMNTS.com"
-    },
-    {
-      "title": "Abu Dhabi Sets Stage for Fintech Innovation with New Digital Hub",
-      "body": "Abu Dhabi is launching a new fintech hub focused on digital assets, aiming to become the Middle East's epicenter for digital financial technologies. This initiative seeks to attract top tech firms and innovators, potentially transforming the region into a key player in the global digital economy. The move highlights the strategic importance of fintech innovation in economic diversification plans.",
+      "title": "Open Banking in the UK Faces Increasing Fraud Challenges",
+      "body": "The UK's open banking payments are experiencing a surge in fraud, particularly in authorized push payment scams. This troubling trend highlights the ongoing security challenges in the evolving fintech landscape, emphasizing the need for advanced fraud prevention technologies and regulatory strategies.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital currency transaction was for a pizza purchase in 2010? 10,000 bitcoins were used to buy two pizzas, worth about $41 at the time!",
-    "source": "bitcoin.org"
+    "text": "Did you know that the Bank for International Settlements, established in 1930, is the world's oldest international financial organization?",
+    "source": "bis.org"
   }
 }
