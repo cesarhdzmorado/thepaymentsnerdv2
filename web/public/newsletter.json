@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Terraform Labs Co-Founder Gets 15-Year Sentence for Crypto Crash",
-      "body": "Do Kwon, co-founder of Terraform Labs, has been sentenced to 15 years in prison due to his involvement in the $40 billion crash of TerraUSD and Luna coins in 2022. This marks a significant moment in cryptocurrency regulation, underscoring the legal risks and the need for robust compliance frameworks in the digital currency space.",
+      "title": "OCC Plans Major Reforms in Liquidity and Anti-Money Laundering by 2026",
+      "body": "The Office of the Comptroller of the Currency (OCC) is set to overhaul liquidity risk management and anti-money laundering compliance by 2026. This initiative, spearheaded by Comptroller Jonathan V. Gould, will significantly impact financial institutions' operational strategies and regulatory compliance. These reforms are crucial for enhancing the stability and integrity of the financial system.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Mollie Acquires GoCardless, Signaling Fintech Consolidation",
-      "body": "In a strategic expansion, Mollie has acquired GoCardless, heralding a new era of consolidation in the venture-backed fintech payment sector. This acquisition could dramatically alter the competitive dynamics, offering new integrated solutions and setting a precedent for future mergers and acquisitions in fintech.",
+      "title": "BIS Tests Post-Quantum Cryptography in Global Payments Systems",
+      "body": "The Bank for International Settlements, collaborating with Swift and central banks from Italy, France, and Germany, is testing the resilience of financial systems against quantum computing threats. This pioneering initiative is vital for safeguarding future financial infrastructures and ensuring robust global payment systems against emerging technological threats.",
       "source": "Finextra"
     },
     {
-      "title": "BIS Initiates Post-Quantum Cryptography Tests for Payments",
-      "body": "The Bank for International Settlements is collaborating with Swift and central banks from Italy, France, and Germany to test post-quantum cryptography in payments. This forward-looking initiative is crucial for preparing the financial infrastructure to withstand future technological disruptions and ensuring long-term security.",
+      "title": "AMINA Bank Adopts Ripple for Cross-Border Stablecoin Transactions",
+      "body": "AMINA Bank in Switzerland has integrated Ripple Payments to enhance cross-border stablecoin transactions. This strategic move not only bridges traditional banking with blockchain technology but also sets a potential trend for European banks, highlighting the growing fusion of fintech innovations with conventional banking.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Nationwide Hit with \u00a344m Fine for Lax Financial Crime Controls",
+      "body": "The UK's Financial Conduct Authority has fined Nationwide Building Society \u00a344 million for inadequate anti-financial crime systems. This hefty penalty underscores the critical importance of robust compliance systems within financial institutions, reflecting regulators' tightening grip on financial crime prevention.",
       "source": "Finextra"
     },
     {
-      "title": "Bank of England Explores Introduction of Digital Pound",
-      "body": "The Bank of England is actively consulting with businesses about the potential introduction of a digital pound. This exploration reflects a significant interest in digital currencies by major central banks, potentially transforming the financial landscape with implications for global payments and monetary policy.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Open Banking in the UK Faces Increasing Fraud Challenges",
-      "body": "The UK's open banking payments are experiencing a surge in fraud, particularly in authorized push payment scams. This troubling trend highlights the ongoing security challenges in the evolving fintech landscape, emphasizing the need for advanced fraud prevention technologies and regulatory strategies.",
+      "title": "Bank of England Probes Business Impact of Proposed Digital Pound",
+      "body": "The Bank of England is engaging with businesses to assess the potential impacts of a digital pound. This initiative is part of a broader effort to understand the implications of digital currencies on the UK's financial landscape, aiming to address both opportunities and concerns in the evolving digital economy.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the Bank for International Settlements, established in 1930, is the world's oldest international financial organization?",
-    "source": "bis.org"
+    "text": "Did you know that the first digital currency transaction was for a pizza? In 2010, a programmer bought two pizzas for 10,000 bitcoins, which would be worth millions today!",
+    "source": "bitcoin.org"
   }
 }
