@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "OCC Plans Major Reforms in Liquidity and Anti-Money Laundering by 2026",
-      "body": "The Office of the Comptroller of the Currency (OCC) is set to overhaul liquidity risk management and anti-money laundering compliance by 2026. This initiative, spearheaded by Comptroller Jonathan V. Gould, will significantly impact financial institutions' operational strategies and regulatory compliance. These reforms are crucial for enhancing the stability and integrity of the financial system.",
-      "source": "PYMNTS.com"
+      "title": "OCC Plans Major Regulatory Reforms for 2026",
+      "body": "The Office of the Comptroller of the Currency (OCC) is gearing up for a major overhaul in 2026, focusing on liquidity risk management and anti-money laundering compliance. These reforms are set to bolster the financial system's stability and reflect the OCC's commitment to keeping pace with evolving financial landscapes. This proactive regulatory shift is crucial for maintaining systemic integrity and adapting to new financial challenges.",
+      "source": "pymnts.com"
     },
     {
-      "title": "BIS Tests Post-Quantum Cryptography in Global Payments Systems",
-      "body": "The Bank for International Settlements, collaborating with Swift and central banks from Italy, France, and Germany, is testing the resilience of financial systems against quantum computing threats. This pioneering initiative is vital for safeguarding future financial infrastructures and ensuring robust global payment systems against emerging technological threats.",
-      "source": "Finextra"
+      "title": "Mollie Acquires GoCardless, Fuels Fintech Consolidation",
+      "body": "In a strategic move that underscores the ongoing consolidation in the fintech sector, Mollie has acquired GoCardless. This acquisition not only reshapes competitive dynamics but also enhances service offerings within the venture-backed payment landscape. It's a clear signal that the fintech industry is moving towards fewer, but more powerful, players.",
+      "source": "finextra.com"
     },
     {
-      "title": "AMINA Bank Adopts Ripple for Cross-Border Stablecoin Transactions",
-      "body": "AMINA Bank in Switzerland has integrated Ripple Payments to enhance cross-border stablecoin transactions. This strategic move not only bridges traditional banking with blockchain technology but also sets a potential trend for European banks, highlighting the growing fusion of fintech innovations with conventional banking.",
-      "source": "PYMNTS.com"
+      "title": "BIS Tests Post-Quantum Cryptography in Payments",
+      "body": "The Bank for International Settlements is collaborating with Swift and central banks from Italy, France, and Germany to test post-quantum cryptography in payments. This initiative is pivotal in preparing the financial sector for future technological threats, particularly those posed by quantum computing. Ensuring cryptographic resilience is essential for safeguarding global financial transactions.",
+      "source": "finextra.com"
     },
     {
       "title": "Nationwide Hit with \u00a344m Fine for Lax Financial Crime Controls",
-      "body": "The UK's Financial Conduct Authority has fined Nationwide Building Society \u00a344 million for inadequate anti-financial crime systems. This hefty penalty underscores the critical importance of robust compliance systems within financial institutions, reflecting regulators' tightening grip on financial crime prevention.",
-      "source": "Finextra"
+      "body": "The UK's Financial Conduct Authority has fined Nationwide Building Society \u00a344 million for failing to implement adequate anti-financial crime measures. This hefty penalty highlights the critical importance of robust compliance systems in today's regulatory environment, urging financial institutions to strengthen their frameworks to avoid similar repercussions.",
+      "source": "finextra.com"
     },
     {
-      "title": "Bank of England Probes Business Impact of Proposed Digital Pound",
-      "body": "The Bank of England is engaging with businesses to assess the potential impacts of a digital pound. This initiative is part of a broader effort to understand the implications of digital currencies on the UK's financial landscape, aiming to address both opportunities and concerns in the evolving digital economy.",
-      "source": "Finextra"
+      "title": "Bank of England Probes Impact of Digital Pound with Businesses",
+      "body": "The Bank of England is actively engaging with businesses to explore the potential impacts of introducing a digital pound. This initiative aims to integrate digital currency innovations responsibly, addressing both opportunities and concerns within the financial ecosystem. Such discussions are vital for shaping the future of digital currencies in alignment with economic and societal needs.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital currency transaction was for a pizza? In 2010, a programmer bought two pizzas for 10,000 bitcoins, which would be worth millions today!",
-    "source": "bitcoin.org"
+    "text": "Did you know that the first digital camera was invented in 1975 by an engineer at Eastman Kodak? It weighed 8 pounds and took 23 seconds to capture a black and white image!",
+    "source": "kodak.com"
   }
 }
