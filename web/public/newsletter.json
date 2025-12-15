@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "OCC Plans Major Regulatory Reforms for 2026",
-      "body": "The Office of the Comptroller of the Currency (OCC) is gearing up for a major overhaul in 2026, focusing on liquidity risk management and anti-money laundering compliance. These reforms are set to bolster the financial system's stability and reflect the OCC's commitment to keeping pace with evolving financial landscapes. This proactive regulatory shift is crucial for maintaining systemic integrity and adapting to new financial challenges.",
-      "source": "pymnts.com"
+      "title": "ServiceNow Set to Acquire Cybersecurity Firm Armis for $7 Billion",
+      "body": "ServiceNow is nearing a deal to purchase Armis for approximately $7 billion, as reported by Bloomberg. This acquisition could significantly bolster ServiceNow's security capabilities, particularly timely as Armis was gearing up for an IPO. This move underscores the growing importance of cybersecurity in the tech and payments sectors.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "Mollie Acquires GoCardless, Fuels Fintech Consolidation",
-      "body": "In a strategic move that underscores the ongoing consolidation in the fintech sector, Mollie has acquired GoCardless. This acquisition not only reshapes competitive dynamics but also enhances service offerings within the venture-backed payment landscape. It's a clear signal that the fintech industry is moving towards fewer, but more powerful, players.",
-      "source": "finextra.com"
+      "title": "YouTube and PayPal Pioneer Stablecoin Payments for Creators",
+      "body": "YouTube has partnered with PayPal to enable U.S. creators to receive payments via PayPal\u2019s stablecoin. This collaboration marks a pivotal integration of cryptocurrency into mainstream digital platforms, potentially setting a new standard for content monetization.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "BIS Tests Post-Quantum Cryptography in Payments",
-      "body": "The Bank for International Settlements is collaborating with Swift and central banks from Italy, France, and Germany to test post-quantum cryptography in payments. This initiative is pivotal in preparing the financial sector for future technological threats, particularly those posed by quantum computing. Ensuring cryptographic resilience is essential for safeguarding global financial transactions.",
-      "source": "finextra.com"
+      "title": "BIS Tests Post-Quantum Cryptography for Future-Proof Payments",
+      "body": "The Bank for International Settlements and major central banks are testing post-quantum cryptography in payment systems. This initiative aims to fortify the global financial infrastructure against emerging technological threats, ensuring long-term security and reliability in financial transactions.",
+      "source": "Finextra"
     },
     {
-      "title": "Nationwide Hit with \u00a344m Fine for Lax Financial Crime Controls",
-      "body": "The UK's Financial Conduct Authority has fined Nationwide Building Society \u00a344 million for failing to implement adequate anti-financial crime measures. This hefty penalty highlights the critical importance of robust compliance systems in today's regulatory environment, urging financial institutions to strengthen their frameworks to avoid similar repercussions.",
-      "source": "finextra.com"
+      "title": "Mollie's Strategic Acquisition of GoCardless Reshapes Fintech Landscape",
+      "body": "Mollie has agreed to acquire GoCardless, signaling a significant consolidation wave in the fintech sector. This acquisition could reshape competitive dynamics and enhance Mollie's position in the global payments ecosystem.",
+      "source": "Finextra"
     },
     {
-      "title": "Bank of England Probes Impact of Digital Pound with Businesses",
-      "body": "The Bank of England is actively engaging with businesses to explore the potential impacts of introducing a digital pound. This initiative aims to integrate digital currency innovations responsibly, addressing both opportunities and concerns within the financial ecosystem. Such discussions are vital for shaping the future of digital currencies in alignment with economic and societal needs.",
-      "source": "finextra.com"
+      "title": "UK Aims to Become Global Crypto Leader with New Regulations by 2027",
+      "body": "The UK government is set to introduce a comprehensive regulatory framework for cryptocurrencies by 2027. This ambitious plan aims to position the UK as a leading hub for fintech and crypto innovation, potentially influencing global standards and attracting international investments.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital camera was invented in 1975 by an engineer at Eastman Kodak? It weighed 8 pounds and took 23 seconds to capture a black and white image!",
-    "source": "kodak.com"
+    "text": "Did you know? The financial sector's proactive approach to post-quantum cryptography indicates a forward-thinking strategy to safeguard against future technological disruptions.",
+    "source": "Finextra"
   }
 }
