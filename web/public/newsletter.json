@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "ServiceNow Set to Acquire Cybersecurity Firm Armis for $7 Billion",
-      "body": "ServiceNow is nearing a deal to purchase Armis for approximately $7 billion, as reported by Bloomberg. This acquisition could significantly bolster ServiceNow's security capabilities, particularly timely as Armis was gearing up for an IPO. This move underscores the growing importance of cybersecurity in the tech and payments sectors.",
-      "source": "PYMNTS.com"
+      "title": "Stripe Unveils AI-Driven Agentic Commerce Suite for Retailers",
+      "body": "Stripe has launched its Agentic Commerce Suite, an AI-powered platform aimed at transforming retail and e-commerce interactions. This suite promises to enhance customer engagement and streamline sales processes, potentially reshaping the retail landscape with advanced AI capabilities.",
+      "source": "Finextra"
     },
     {
-      "title": "YouTube and PayPal Pioneer Stablecoin Payments for Creators",
-      "body": "YouTube has partnered with PayPal to enable U.S. creators to receive payments via PayPal\u2019s stablecoin. This collaboration marks a pivotal integration of cryptocurrency into mainstream digital platforms, potentially setting a new standard for content monetization.",
-      "source": "PYMNTS.com"
+      "title": "Visa Initiates Stablecoin Advisory for European Market Integration",
+      "body": "Visa has started a stablecoin advisory practice in Europe, targeting banks, fintechs, and merchants. This strategic move is set to influence the adoption and regulatory framework of stablecoins, offering crucial insights into market strategies and implementation.",
+      "source": "Finextra"
+    },
+    {
+      "title": "JPMorgan Debuts Tokenized Money Market Fund on Ethereum Blockchain",
+      "body": "JPMorgan Asset Management has introduced a tokenized money market fund on the Ethereum blockchain, marking a significant fusion of traditional finance and blockchain technology. This could revolutionize fund accessibility and liquidity, setting a precedent in the financial sector.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Ripple and Circle Secure Approval to Become National Trust Banks",
+      "body": "Ripple and Circle have received conditional approval to operate as national trust banks in the U.S. This approval is a major step towards regulatory clarity and could significantly expand their financial services in the digital assets domain, encouraging broader institutional engagement.",
+      "source": "Finextra"
     },
     {
       "title": "BIS Tests Post-Quantum Cryptography for Future-Proof Payments",
-      "body": "The Bank for International Settlements and major central banks are testing post-quantum cryptography in payment systems. This initiative aims to fortify the global financial infrastructure against emerging technological threats, ensuring long-term security and reliability in financial transactions.",
+      "body": "The Bank for International Settlements and central banks from Italy, France, and Germany have tested post-quantum cryptography in payment systems. This initiative aims to safeguard the financial infrastructure against emerging quantum computing threats, ensuring long-term transaction security.",
       "source": "Finextra"
-    },
-    {
-      "title": "Mollie's Strategic Acquisition of GoCardless Reshapes Fintech Landscape",
-      "body": "Mollie has agreed to acquire GoCardless, signaling a significant consolidation wave in the fintech sector. This acquisition could reshape competitive dynamics and enhance Mollie's position in the global payments ecosystem.",
-      "source": "Finextra"
-    },
-    {
-      "title": "UK Aims to Become Global Crypto Leader with New Regulations by 2027",
-      "body": "The UK government is set to introduce a comprehensive regulatory framework for cryptocurrencies by 2027. This ambitious plan aims to position the UK as a leading hub for fintech and crypto innovation, potentially influencing global standards and attracting international investments.",
-      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The financial sector's proactive approach to post-quantum cryptography indicates a forward-thinking strategy to safeguard against future technological disruptions.",
-    "source": "Finextra"
+    "text": "Did you know that the first digital currency transaction was for a pizza purchase in 2010? 10,000 bitcoins were used to buy two pizzas, worth about $41 at the time!",
+    "source": "bitcoin.org"
   }
 }
