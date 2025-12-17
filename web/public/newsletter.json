@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Stripe Unveils AI-Driven Agentic Commerce Suite for Retailers",
-      "body": "Stripe has launched its Agentic Commerce Suite, an AI-powered platform aimed at transforming retail and e-commerce interactions. This suite promises to enhance customer engagement and streamline sales processes, potentially reshaping the retail landscape with advanced AI capabilities.",
+      "title": "Visa Integrates USDC for Stablecoin Settlements in the US",
+      "body": "Visa has launched stablecoin settlements in the US using Circle's USDC, marking a pivotal integration of digital currencies within traditional financial systems. This move not only enhances transaction efficiency but also sets a benchmark for other financial entities to embrace similar technologies, potentially revolutionizing the payments landscape.",
       "source": "Finextra"
     },
     {
-      "title": "Visa Initiates Stablecoin Advisory for European Market Integration",
-      "body": "Visa has started a stablecoin advisory practice in Europe, targeting banks, fintechs, and merchants. This strategic move is set to influence the adoption and regulatory framework of stablecoins, offering crucial insights into market strategies and implementation.",
+      "title": "Erebor Bank Receives FDIC Approval, Targets Tech Sector",
+      "body": "Erebor Bank has secured FDIC approval to offer deposit and lending products, focusing on the technology and payments systems sectors. This approval positions Erebor uniquely within the banking industry, potentially reshaping financial services for tech and defense industries.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Stripe Unveils Agentic Commerce Suite, Boosting AI in E-commerce",
+      "body": "Stripe has launched its Agentic Commerce Suite, a cutting-edge technology that enables sales through AI agents. This innovation is attracting major retailers and could significantly alter the e-commerce landscape by setting new standards for automated and AI-driven sales interactions.",
       "source": "Finextra"
     },
     {
-      "title": "JPMorgan Debuts Tokenized Money Market Fund on Ethereum Blockchain",
-      "body": "JPMorgan Asset Management has introduced a tokenized money market fund on the Ethereum blockchain, marking a significant fusion of traditional finance and blockchain technology. This could revolutionize fund accessibility and liquidity, setting a precedent in the financial sector.",
+      "title": "FCA Launches New Entity for Variable Recurring Payments",
+      "body": "The UK's Financial Conduct Authority has established a new entity to facilitate variable recurring payments, backed by 31 firms. This initiative aims to streamline recurring transactions, enhancing efficiency and convenience for both consumers and businesses in managing ongoing payments.",
       "source": "Finextra"
     },
     {
-      "title": "Ripple and Circle Secure Approval to Become National Trust Banks",
-      "body": "Ripple and Circle have received conditional approval to operate as national trust banks in the U.S. This approval is a major step towards regulatory clarity and could significantly expand their financial services in the digital assets domain, encouraging broader institutional engagement.",
-      "source": "Finextra"
-    },
-    {
-      "title": "BIS Tests Post-Quantum Cryptography for Future-Proof Payments",
-      "body": "The Bank for International Settlements and central banks from Italy, France, and Germany have tested post-quantum cryptography in payment systems. This initiative aims to safeguard the financial infrastructure against emerging quantum computing threats, ensuring long-term transaction security.",
-      "source": "Finextra"
+      "title": "Real-Time Money Movement Expands to Weekends, Impacting CFOs",
+      "body": "The Federal Reserve is extending the operating days of its largest wholesale settlement rails to include weekends and holidays. This expansion forces CFOs to adapt to a new norm of real-time money movement, significantly affecting financial management and transaction handling beyond traditional banking hours.",
+      "source": "PYMNTS.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first digital currency transaction was for a pizza purchase in 2010? 10,000 bitcoins were used to buy two pizzas, worth about $41 at the time!",
-    "source": "bitcoin.org"
+    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was made of cardboard!",
+    "source": "history.com"
   }
 }
