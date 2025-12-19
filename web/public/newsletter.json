@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Visa Integrates USDC for Stablecoin Settlements in the US",
-      "body": "Visa has launched stablecoin settlements in the US using Circle's USDC, marking a pivotal integration of digital currencies within traditional financial systems. This move not only enhances transaction efficiency but also sets a benchmark for other financial entities to embrace similar technologies, potentially revolutionizing the payments landscape.",
+      "title": "SoFi Bank Debuts First U.S. National Bank-Issued Stablecoin",
+      "body": "SoFi Bank has launched a groundbreaking stablecoin on a public, permissionless blockchain, becoming the first U.S. national bank to do so. This move not only bridges traditional banking with blockchain technology but also sets a potential trend for other financial institutions to follow, reshaping how they operate in the digital currency space.",
       "source": "Finextra"
     },
     {
-      "title": "Erebor Bank Receives FDIC Approval, Targets Tech Sector",
-      "body": "Erebor Bank has secured FDIC approval to offer deposit and lending products, focusing on the technology and payments systems sectors. This approval positions Erebor uniquely within the banking industry, potentially reshaping financial services for tech and defense industries.",
+      "title": "Google Introduces UPI-Linked Credit Card in India",
+      "body": "Google has rolled out a UPI-powered digital co-branded credit card in India, targeting one of the largest consumer markets globally. This innovative product merges the ubiquitous UPI interface with credit facilities, aiming to boost convenience and financial inclusion. This strategic expansion could significantly influence digital payment landscapes in emerging markets.",
+      "source": "Finextra"
+    },
+    {
+      "title": "TikTok Secures U.S. Operations with Oracle-Led Joint Venture",
+      "body": "TikTok, in partnership with Oracle, Silver Lake, and MGX, has formed a joint venture to secure its operations in the U.S., effective January 22. This strategic alliance is pivotal in maintaining TikTok's presence in the lucrative U.S. market, potentially influencing social media and tech industry dynamics significantly.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Stripe Unveils Agentic Commerce Suite, Boosting AI in E-commerce",
-      "body": "Stripe has launched its Agentic Commerce Suite, a cutting-edge technology that enables sales through AI agents. This innovation is attracting major retailers and could significantly alter the e-commerce landscape by setting new standards for automated and AI-driven sales interactions.",
+      "title": "Stablecoin Platform RedotPay Secures $107 Million in Series B",
+      "body": "RedotPay, a notable player in the stablecoin market, has raised $107 million in a Series B funding round, bringing its total 2025 capital to $194 million. This substantial investment highlights growing confidence in stablecoin technologies, suggesting a transformative impact on future financial transactions.",
       "source": "Finextra"
     },
     {
-      "title": "FCA Launches New Entity for Variable Recurring Payments",
-      "body": "The UK's Financial Conduct Authority has established a new entity to facilitate variable recurring payments, backed by 31 firms. This initiative aims to streamline recurring transactions, enhancing efficiency and convenience for both consumers and businesses in managing ongoing payments.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Real-Time Money Movement Expands to Weekends, Impacting CFOs",
-      "body": "The Federal Reserve is extending the operating days of its largest wholesale settlement rails to include weekends and holidays. This expansion forces CFOs to adapt to a new norm of real-time money movement, significantly affecting financial management and transaction handling beyond traditional banking hours.",
-      "source": "PYMNTS.com"
+      "title": "EU Sets New Regulations to Foster Retail Investment in Capital Markets",
+      "body": "The European Union has enacted new rules to encourage retail investment in its capital markets, aiming to deepen market integration and enhance investment opportunities. This regulatory shift is crucial for fostering economic growth and could significantly impact the financial landscape in Europe.",
+      "source": "Financial Times"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first credit card was issued in 1950 by Diners Club and was made of cardboard!",
-    "source": "history.com"
+    "text": "Did you know that the ChatGPT mobile app saw consumer spending skyrocket to $2.5 billion in 2025, marking a 408% increase from the previous year? This highlights the explosive growth and potential of AI-driven applications in consumer markets.",
+    "source": "PYMNTS.com"
   }
 }
