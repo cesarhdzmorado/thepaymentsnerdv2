@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "SoFi Bank Debuts First U.S. National Bank-Issued Stablecoin",
-      "body": "SoFi Bank has launched a groundbreaking stablecoin on a public, permissionless blockchain, becoming the first U.S. national bank to do so. This move not only bridges traditional banking with blockchain technology but also sets a potential trend for other financial institutions to follow, reshaping how they operate in the digital currency space.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Google Introduces UPI-Linked Credit Card in India",
-      "body": "Google has rolled out a UPI-powered digital co-branded credit card in India, targeting one of the largest consumer markets globally. This innovative product merges the ubiquitous UPI interface with credit facilities, aiming to boost convenience and financial inclusion. This strategic expansion could significantly influence digital payment landscapes in emerging markets.",
-      "source": "Finextra"
-    },
-    {
-      "title": "TikTok Secures U.S. Operations with Oracle-Led Joint Venture",
-      "body": "TikTok, in partnership with Oracle, Silver Lake, and MGX, has formed a joint venture to secure its operations in the U.S., effective January 22. This strategic alliance is pivotal in maintaining TikTok's presence in the lucrative U.S. market, potentially influencing social media and tech industry dynamics significantly.",
+      "title": "FTX Executives Settle with SEC, Marking Legal Milestone",
+      "body": "Three former FTX executives have agreed to SEC final judgments in the fallout of the cryptocurrency exchange's collapse, without admitting guilt. This development underscores the critical importance of robust corporate governance and regulatory compliance in the volatile crypto sector.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Stablecoin Platform RedotPay Secures $107 Million in Series B",
-      "body": "RedotPay, a notable player in the stablecoin market, has raised $107 million in a Series B funding round, bringing its total 2025 capital to $194 million. This substantial investment highlights growing confidence in stablecoin technologies, suggesting a transformative impact on future financial transactions.",
+      "title": "Visa and Aldar Launch Voice-Enabled Real Estate Payments",
+      "body": "Visa and Aldar Properties have introduced a groundbreaking voice-enabled payment system for real estate transactions in Abu Dhabi. This AI-driven innovation enhances transaction convenience, setting a new standard in how technology can streamline financial operations in the real estate sector.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "New Federal Task Force Targets Crypto Scams",
+      "body": "A new U.S. federal task force is being established to combat cryptocurrency scams, coordinating between government and private sectors. This move reflects an increased regulatory focus on safeguarding consumers in the burgeoning digital currency market.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "SoFi Bank Pioneers with Launch of Stablecoin",
+      "body": "SoFi Bank has launched its own stablecoin, becoming the first U.S. national bank to do so on a public blockchain. This strategic move bridges traditional banking with blockchain technology, offering a regulated, stable digital currency to its customers.",
       "source": "Finextra"
     },
     {
-      "title": "EU Sets New Regulations to Foster Retail Investment in Capital Markets",
-      "body": "The European Union has enacted new rules to encourage retail investment in its capital markets, aiming to deepen market integration and enhance investment opportunities. This regulatory shift is crucial for fostering economic growth and could significantly impact the financial landscape in Europe.",
-      "source": "Financial Times"
+      "title": "EuroCTP Named EU's First Consolidated Tape Provider",
+      "body": "EuroCTP has been selected by ESMA as Europe's first consolidated tape provider for shares and ETFs. This initiative aims to boost market transparency and efficiency, providing a unified view of trading activities across the continent.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the ChatGPT mobile app saw consumer spending skyrocket to $2.5 billion in 2025, marking a 408% increase from the previous year? This highlights the explosive growth and potential of AI-driven applications in consumer markets.",
-    "source": "PYMNTS.com"
+    "text": "Did you know that the first U.S. national bank to issue a stablecoin on a public blockchain is SoFi Bank?",
+    "source": "Finextra"
   }
 }
