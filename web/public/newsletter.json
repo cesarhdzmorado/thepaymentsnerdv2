@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Europol Dismantles Massive \u20ac700M Crypto Fraud Network",
-      "body": "Europol's recent takedown of a cryptocurrency fraud network laundering over \u20ac700 million marks a significant victory in the fight against digital financial crimes. This operation not only highlights the challenges of policing the digital currency space but also underscores the need for robust regulatory frameworks and advanced security measures in fintech.",
-      "source": "Finextra"
-    },
-    {
-      "title": "ECB Accelerates Digital Euro Initiative with New Hires",
-      "body": "The European Central Bank is ramping up its digital euro project by hiring market infrastructure specialists. This strategic move signals a closer approach to the implementation of a digital currency by a major central bank, potentially transforming the European financial landscape and setting a precedent for global monetary policies.",
-      "source": "Finextra"
-    },
-    {
-      "title": "FinCEN Reports 77% Surge in Ransomware Payments in 2023",
-      "body": "The Financial Crimes Enforcement Network has observed a 77% increase in ransomware payments in 2023, highlighting a significant rise in cyber financial threats. This surge underscores the urgent need for enhanced cybersecurity measures and proactive financial monitoring to mitigate the impact on businesses and financial institutions.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Revolut Launches Titan, a New Ultra-Premium Business Card",
-      "body": "Revolut is set to disrupt the corporate finance sector with its new ultra-premium business card, Titan, designed for high-end corporate spending. This launch reflects the ongoing innovation in fintech, offering sophisticated tools for financial management and potentially reshaping business spending behaviors.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Senate Bill Proposes Study on AI's Impact on Workforce",
-      "body": "The U.S. Senate has introduced the AI Workforce PREPARE Act, aiming to better understand artificial intelligence's influence on the workforce. This legislation could drive significant policy changes and workforce strategies, particularly affecting sectors heavily integrated with AI technologies.",
+      "title": "FTX Executives Settle with SEC, Marking Legal Milestone",
+      "body": "Three former FTX executives have agreed to SEC final judgments in the fallout of the cryptocurrency exchange's collapse, without admitting guilt. This development underscores the critical importance of robust corporate governance and regulatory compliance in the volatile crypto market. It serves as a cautionary tale for fintech firms navigating complex legal landscapes.",
       "source": "PYMNTS.com"
+    },
+    {
+      "title": "Visa and Aldar Launch Voice-Activated Real Estate Payments",
+      "body": "Visa and Aldar Properties have introduced a groundbreaking voice-enabled payment system for real estate transactions. This innovation leverages AI to enhance customer interactions and streamline payment processes, setting a new standard for technological integration in the real estate sector.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "Senate Bill to Establish Task Force Against Crypto Scams",
+      "body": "The U.S. Senate has proposed the 'SAFE Crypto Act' to create a federal task force aimed at combating cryptocurrency scams. This initiative reflects increasing efforts to safeguard the integrity of the digital currency space, involving collaboration between government and industry experts to enhance consumer protection.",
+      "source": "PYMNTS.com"
+    },
+    {
+      "title": "EuroCTP Named EU's Official Provider for Market Transparency",
+      "body": "EuroCTP has been appointed by ESMA as Europe's first consolidated tape provider for shares and ETFs. This pivotal move aims to boost market transparency and efficiency across Europe, offering a unified trading data view that could significantly influence investment strategies and market oversight.",
+      "source": "Finextra"
+    },
+    {
+      "title": "SoFi Bank Pioneers with First US Bank-Issued Stablecoin",
+      "body": "SoFi Bank has launched the first stablecoin issued by a U.S. national bank, a landmark in blending traditional banking with blockchain technology. This could pave the way for broader acceptance and integration of digital currencies within mainstream financial institutions.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? The first digital currency transaction was for a pizza purchase in 2010, costing 10,000 bitcoins, which would be worth millions today.",
-    "source": "bitcoin.org"
+    "text": "Did you know that the first machine-generated voice was synthesized in 1936, using a keyboard and foot pedals?",
+    "source": "historyofinformation.com"
   }
 }
