@@ -2,6 +2,9 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "caniuse-lite": "^1.0.30001600"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
