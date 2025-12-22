@@ -1,15 +1,18 @@
-/* web/app/globals.css - CORRECTED VERSION */
+/* web/app/globals.css */
 
-/* This import directive MUST come first. */
+/* MUST be first (Tailwind v4) */
 @import "tailwindcss";
 
-/*
-  The following :root and @theme blocks are part of your project's
-  original setup. We will keep them.
-*/
+/* --- Theme tokens (kept from your setup) --- */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Extra tokens to make dark mode look intentional */
+  --muted-foreground: #475569; /* slate-600 */
+  --card: #ffffff;
+  --card-border: rgba(15, 23, 42, 0.10); /* slate-900 @ 10% */
+  --grid-line: rgba(226, 232, 240, 0.70); /* slate-200-ish */
 }
 
 @theme inline {
@@ -19,30 +22,66 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* System dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b1220; /* deep slate */
+    --foreground: #e5e7eb; /* gray-200 */
+
+    --muted-foreground: #94a3b8; /* slate-400 */
+    --card: rgba(15, 23, 42, 0.55); /* translucent slate */
+    --card-border: rgba(148, 163, 184, 0.18); /* slate-400 @ ~18% */
+    --grid-line: rgba(148, 163, 184, 0.18); /* subtle in dark */
   }
 }
 
-/* 
-  We will override the default body styles slightly to work with 
-  the new design, but we keep the variables.
-*/
+/* --- Base page defaults --- */
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  /* The font will be controlled by Next/Font in layout.tsx, so we can remove the explicit font-family here if we want, but it's a good fallback. */
+  height: 100%;
 }
 
-/* --- ADD THIS NEW CODE AT THE BOTTOM --- */
-/*
-  This custom utility class creates the subtle grid background pattern.
-  It uses Tailwind's theme() function to access your color palette.
-*/
+html {
+  color-scheme: light dark; /* makes form controls match theme */
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sensible defaults */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.25);
+}
+
+/* Optional helpers you can use in components */
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.card-surface {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem; /* 12px */
+}
+
+/* --- Grid background pattern (fixed for dark mode) --- */
 .bg-grid-pattern {
-  background-image: linear-gradient(to right, theme('colors.slate.200 / 0.5') 1px, transparent 1px),
-    linear-gradient(to bottom, theme('colors.slate.200 / 0.5') 1px, transparent 1px);
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 2rem 2rem;
 }
