@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Visa and Mastercard Pay $167 Million to Settle ATM Fee Lawsuit",
-      "body": "Visa and Mastercard have settled a lawsuit for $167.5 million over allegations of conspiring to inflate ATM fees. This settlement not only resolves a longstanding legal battle but also signals potential changes in ATM fee structures, directly affecting consumer costs and the operational strategies of financial institutions.",
+      "title": "Klarna Embraces USDC for Funding, Eyes Digital Asset Investors",
+      "body": "Klarna is poised to raise short-term funding using Coinbase's stablecoin, USDC, targeting digital asset-rich institutional investors. This strategic move not only bridges traditional finance with digital assets but also sets a potential trend for fintech integration with cryptocurrencies. Such developments could reshape funding strategies across the sector.",
+      "source": "Finextra"
+    },
+    {
+      "title": "SoFi Bank Pioneers with New Stablecoin Launch",
+      "body": "SoFi Bank has launched its own stablecoin on a public, permissionless blockchain, becoming the first U.S. national bank to do so. This groundbreaking move could significantly influence blockchain adoption in regulated banking, offering a blueprint for others in the industry.",
+      "source": "Finextra"
+    },
+    {
+      "title": "ABN Amro Achieves Milestone with Blockchain Smart Derivatives",
+      "body": "ABN Amro, in partnership with DZ BANK, has completed its first international Smart Derivative Contract using blockchain. This innovation not only enhances the efficiency and security of derivative contracts but also signals a major leap in applying blockchain in complex financial instruments.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Retailers Integrate Embedded Finance to Mitigate Rising Risks",
+      "body": "Amidst increasing market complexities, retailers are rapidly adopting embedded finance solutions to enhance customer experiences and streamline financial operations. This shift is crucial for maintaining competitive advantage and adapting to evolving consumer payment preferences.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "EU Council Advances Digital Euro with Dual Transaction Modes",
-      "body": "The EU Council's endorsement of a digital euro capable of both online and offline transactions marks a pivotal advancement in digital currency. This initiative could revolutionize transaction methods across Europe, enhancing accessibility and setting a new standard in the global digital economy.",
+      "title": "Citi Enhances Liquidity Management with 24/7 Treasury Operations",
+      "body": "Citi is transforming liquidity management by enabling real-time payment capabilities beyond traditional banking hours. This strategic enhancement aims to boost the operational flexibility and financial efficiency of multinational corporations, setting new standards in enterprise financial management.",
       "source": "PYMNTS.com"
-    },
-    {
-      "title": "SoFi Pioneers with First US Bank-Issued Stablecoin",
-      "body": "SoFi Bank has launched the first stablecoin issued by a U.S. national bank, setting a groundbreaking precedent in the integration of cryptocurrency within traditional banking frameworks. This could significantly influence future regulatory policies and the adoption of digital currencies in mainstream finance.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Google Launches UPI-Based Digital Credit Card in India",
-      "body": "Google has introduced a UPI-linked digital credit card in India, merging with the nation's widely-used UPI payment system. This strategic move could transform credit usage and accessibility in India, potentially increasing Google's footprint in the fintech sector of a major global market.",
-      "source": "Finextra"
-    },
-    {
-      "title": "FCA Sets Flexible Contactless Payment Limits for 2026",
-      "body": "The UK's Financial Conduct Authority (FCA) is set to implement flexible contactless payment limits by March 2026. This regulatory update aims to align with consumer preferences for quicker, more secure transactions, reflecting broader trends towards digital payment solutions.",
-      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that despite new scamming techniques, the payment fraud rate in the European Economic Area has remained stable at about 0.002% of total transaction value in 2024? This is thanks to robust customer authentication measures.",
-    "source": "Finextra"
+    "text": "Did you know? Nearly 3 in 4 retailers now prioritize embedded finance to enhance control and customization in consumer transactions.",
+    "source": "PYMNTS.com"
   }
 }
