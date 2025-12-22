@@ -1,9 +1,17 @@
 // web/components/Logo.tsx
-// This component is now just the text of your brand name.
+// Brand wordmark with light + dark gradients.
 
 export function Logo() {
   return (
-    <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
+    <h1
+      className="
+        text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter
+        bg-clip-text text-transparent
+
+        bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900
+        dark:bg-gradient-to-r dark:from-slate-100 dark:via-cyan-200 dark:to-indigo-200
+      "
+    >
       /thepaymentsnerd
     </h1>
   );
