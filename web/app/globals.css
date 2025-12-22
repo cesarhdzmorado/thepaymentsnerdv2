@@ -3,18 +3,28 @@
 /* MUST be first (Tailwind v4) */
 @import "tailwindcss";
 
-/* --- Theme tokens (kept from your setup) --- */
+/* --- Theme tokens (kept + expanded) --- */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 
-  /* Extra tokens to make dark mode look intentional */
+  /* Surfaces */
   --muted-foreground: #475569; /* slate-600 */
-  --card: #ffffff;
+  --card: rgba(255, 255, 255, 0.72);
+  --card-strong: rgba(255, 255, 255, 0.90);
   --card-border: rgba(15, 23, 42, 0.10); /* slate-900 @ 10% */
+
+  /* Grid + effects */
   --grid-line: rgba(226, 232, 240, 0.70); /* slate-200-ish */
+  --shadow: 0 20px 45px rgba(2, 6, 23, 0.08);
+  --shadow-strong: 0 30px 70px rgba(2, 6, 23, 0.12);
+
+  /* Accent “glow” used behind header/sections */
+  --glow-1: rgba(59, 130, 246, 0.18); /* blue-500 */
+  --glow-2: rgba(99, 102, 241, 0.16); /* indigo-500 */
 }
 
+/* Your existing theme inline mapping */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -25,13 +35,25 @@
 /* System dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0b1220; /* deep slate */
-    --foreground: #e5e7eb; /* gray-200 */
+    --background: #070b14;   /* darker than before (OLED-friendly) */
+    --foreground: #e5e7eb;   /* gray-200 */
 
     --muted-foreground: #94a3b8; /* slate-400 */
-    --card: rgba(15, 23, 42, 0.55); /* translucent slate */
-    --card-border: rgba(148, 163, 184, 0.18); /* slate-400 @ ~18% */
-    --grid-line: rgba(148, 163, 184, 0.18); /* subtle in dark */
+
+    /* Cards should NOT be white-ish in dark mode */
+    --card: rgba(15, 23, 42, 0.55);
+    --card-strong: rgba(15, 23, 42, 0.78);
+    --card-border: rgba(148, 163, 184, 0.18);
+
+    --grid-line: rgba(148, 163, 184, 0.10);
+
+    /* Shadows should be subtle in dark mode */
+    --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    --shadow-strong: 0 26px 70px rgba(0, 0, 0, 0.45);
+
+    /* Dark-mode glows need to be dimmer */
+    --glow-1: rgba(59, 130, 246, 0.12);
+    --glow-2: rgba(99, 102, 241, 0.10);
   }
 }
 
@@ -67,18 +89,44 @@ a {
   background: rgba(59, 130, 246, 0.25);
 }
 
-/* Optional helpers you can use in components */
+/* --- Small utility helpers (use in components) --- */
 .text-muted {
   color: var(--muted-foreground);
 }
 
+/* Card surface: consistent in both modes */
 .card-surface {
   background: var(--card);
   border: 1px solid var(--card-border);
-  border-radius: 0.75rem; /* 12px */
+  border-radius: 1rem; /* 16px */
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
 }
 
-/* --- Grid background pattern (fixed for dark mode) --- */
+/* Slightly stronger card for hero/curiosity sections */
+.card-surface-strong {
+  background: var(--card-strong);
+  border: 1px solid var(--card-border);
+  border-radius: 1.5rem; /* 24px */
+  box-shadow: var(--shadow-strong);
+  backdrop-filter: blur(16px);
+}
+
+/* Glow background block you can reuse */
+.glow-bg {
+  background: radial-gradient(
+    circle at 50% 20%,
+    var(--glow-1),
+    transparent 55%
+  ),
+  radial-gradient(
+    circle at 75% 30%,
+    var(--glow-2),
+    transparent 55%
+  );
+}
+
+/* --- Grid background pattern (works in both modes) --- */
 .bg-grid-pattern {
   background-image:
     linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
