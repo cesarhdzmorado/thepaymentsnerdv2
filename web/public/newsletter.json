@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Klarna Embraces USDC for Funding, Eyes Digital Asset Investors",
-      "body": "Klarna is poised to raise short-term funding using Coinbase's stablecoin, USDC, targeting institutional investors with digital asset holdings. This strategic move underscores the increasing fusion of cryptocurrency with mainstream financial mechanisms, potentially setting a precedent for future transactions in the fintech sector.",
-      "source": "Finextra"
-    },
-    {
-      "title": "ABN Amro Innovates with Blockchain in Smart Derivatives Contract",
-      "body": "ABN Amro, in partnership with DZ BANK, has successfully executed its first international 'Smart Derivative Contract' using blockchain technology. This breakthrough aims to mitigate risks and boost efficiency in financial transactions, signaling a significant shift towards blockchain adoption in complex financial operations.",
-      "source": "Finextra"
-    },
-    {
-      "title": "SoFi Bank Pioneers with Launch of Public Blockchain Stablecoin",
-      "body": "SoFi Bank has launched its own stablecoin on a public, permissionless blockchain, becoming the first U.S. national bank to do so. This landmark development marks a crucial step in blockchain technology's integration into regulated financial institutions, potentially reshaping how banks interact with digital currencies.",
-      "source": "Finextra"
-    },
-    {
-      "title": "Retailers Prioritize Embedded Finance to Navigate Market Risks",
-      "body": "Amidst increasing market complexities, nearly three-quarters of retailers are now integrating embedded finance solutions to enhance control over consumer payments. This strategic shift not only addresses rising risks but also aligns with evolving consumer expectations, potentially redefining the retail landscape.",
+      "title": "New Jersey Mandates Paper Check Payment Option",
+      "body": "The New Jersey State Senate recently passed a bill requiring the state to offer paper check payments to residents and state employees, with a decisive 35 to 1 vote. This legislation ensures that traditional banking preferences are respected and provides an alternative to digital payment methods, highlighting the importance of inclusivity in payment options.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "UK's FCA Sets Flexible Contactless Payment Limits for 2026",
-      "body": "The UK Financial Conduct Authority (FCA) is set to introduce flexible limits for contactless card payments starting March 2026. This initiative reflects changing consumer payment preferences and technological advancements, aiming to enhance transaction convenience and security.",
+      "title": "Visa to Launch AI-Enabled Personalized Online Shopping by 2026",
+      "body": "Visa is setting the stage for a revolution in digital commerce by partnering with 100 entities to roll out AI-enabled, personalized online shopping experiences by early 2026. This move is poised to significantly enhance consumer engagement and drive new standards in the e-commerce sector, marking a pivotal shift towards more tailored shopping experiences.",
+      "source": "Finextra"
+    },
+    {
+      "title": "Klarna Eyes New Funding Avenues with Stablecoin USDC",
+      "body": "Klarna is innovating its funding strategies by planning to raise short-term funds denominated in the stablecoin USDC. This approach not only diversifies its investment sources but also taps into the burgeoning digital asset market, potentially reshaping fintech funding landscapes.",
+      "source": "Finextra"
+    },
+    {
+      "title": "UK's PSR to Increase Transparency of Card Payment Fees",
+      "body": "The UK's Payment Systems Regulator (PSR) is enhancing oversight of card payment fees to ensure greater transparency for businesses. This regulatory change is expected to influence payment practices significantly, potentially leading to more competitive fee structures and impacting the overall cost of card acceptance for merchants.",
+      "source": "Finextra"
+    },
+    {
+      "title": "FCA Proposes Flexible Contactless Payment Limits in the UK",
+      "body": "The Financial Conduct Authority (FCA) in the UK is set to introduce flexible limits for contactless payments by March 2026. This regulatory adjustment reflects evolving consumer payment habits and aims to balance convenience with security, potentially setting a precedent for other markets.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know? Nearly three-quarters of retailers now prioritize embedded finance to enhance control over consumer payments, illustrating the significant impact of fintech innovations on traditional retail operations.",
-    "source": "PYMNTS.com"
+    "text": "Did you know that the first paper check is believed to have been used in 321 BC in India? It was a form of a banking instrument called 'Adesha'.",
+    "source": "history.com"
   }
 }
