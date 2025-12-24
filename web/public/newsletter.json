@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "New Jersey Mandates Paper Check Payment Option",
-      "body": "The New Jersey State Senate recently passed a bill requiring the state to offer paper check payments to residents and state employees, with a decisive 35 to 1 vote. This legislation ensures that traditional banking preferences are respected and provides an alternative to digital payment methods, highlighting the importance of inclusivity in payment options.",
-      "source": "PYMNTS.com"
+      "title": "FINRA Identifies Critical Gaps in AI Oversight for Finance",
+      "body": "The Financial Industry Regulatory Authority (FINRA) has spotlighted significant oversight gaps in the use of generative AI within financial operations. Their report warns that the swift integration of AI technologies by firms surpasses the development of essential controls, posing risks in governance and transparency. This revelation is crucial for firms to prioritize developing robust supervisory frameworks to mitigate potential regulatory and operational risks.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Visa to Launch AI-Enabled Personalized Online Shopping by 2026",
-      "body": "Visa is setting the stage for a revolution in digital commerce by partnering with 100 entities to roll out AI-enabled, personalized online shopping experiences by early 2026. This move is poised to significantly enhance consumer engagement and drive new standards in the e-commerce sector, marking a pivotal shift towards more tailored shopping experiences.",
-      "source": "Finextra"
+      "title": "SEC Cracks Down on $14 Million Crypto Scam",
+      "body": "The SEC has charged three entities involved in a $14 million cryptocurrency scam, exploiting social media to lure retail investors into fraudulent trading platforms. This enforcement action highlights the persistent vulnerabilities in the digital asset space and underscores the need for continuous regulatory oversight to protect investors.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Klarna Eyes New Funding Avenues with Stablecoin USDC",
-      "body": "Klarna is innovating its funding strategies by planning to raise short-term funds denominated in the stablecoin USDC. This approach not only diversifies its investment sources but also taps into the burgeoning digital asset market, potentially reshaping fintech funding landscapes.",
-      "source": "Finextra"
+      "title": "Visa Innovates with AI-Driven Agentic Shopping Experience",
+      "body": "Visa is setting the stage for a revolution in online shopping by partnering with over 100 entities to introduce AI-enabled personalized shopping by early 2026. This move towards agentic shopping experiences could redefine consumer interactions with online platforms, offering a more tailored and engaging shopping journey.",
+      "source": "finextra.com"
     },
     {
-      "title": "UK's PSR to Increase Transparency of Card Payment Fees",
-      "body": "The UK's Payment Systems Regulator (PSR) is enhancing oversight of card payment fees to ensure greater transparency for businesses. This regulatory change is expected to influence payment practices significantly, potentially leading to more competitive fee structures and impacting the overall cost of card acceptance for merchants.",
-      "source": "Finextra"
+      "title": "PSR to Implement New UK Regulations on Card Payment Fees",
+      "body": "The UK's Payment Systems Regulator (PSR) is introducing new regulations to enhance transparency around card payment fees. This change aims to create a fairer, more competitive market, directly impacting businesses and consumers by potentially lowering the cost of transactions and fostering better service conditions.",
+      "source": "finextra.com"
     },
     {
-      "title": "FCA Proposes Flexible Contactless Payment Limits in the UK",
-      "body": "The Financial Conduct Authority (FCA) in the UK is set to introduce flexible limits for contactless payments by March 2026. This regulatory adjustment reflects evolving consumer payment habits and aims to balance convenience with security, potentially setting a precedent for other markets.",
-      "source": "Finextra"
+      "title": "Edge AI Poised to Transform Real-Time Financial Services",
+      "body": "The financial sector is increasingly adopting edge AI to bypass the limitations of traditional cloud-based systems, especially in areas requiring instant data processing like payments and fraud detection. This strategic shift is pivotal for boosting operational efficiency and enhancing security, marking a significant evolution in financial technology infrastructure.",
+      "source": "pymnts.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first paper check is believed to have been used in 321 BC in India? It was a form of a banking instrument called 'Adesha'.",
-    "source": "history.com"
+    "text": "Did you know that in 2023, U.S. corporate bond sales driven by AI investments nearly reached the record highs of the 2020 pandemic, with issuances close to $1.7 trillion?",
+    "source": "Financial Times"
   }
 }
