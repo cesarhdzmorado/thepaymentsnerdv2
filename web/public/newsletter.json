@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "FINRA Identifies Critical Gaps in AI Oversight for Finance",
-      "body": "The Financial Industry Regulatory Authority (FINRA) has spotlighted significant oversight gaps in the use of generative AI within financial operations. Their report warns that the swift integration of AI technologies by firms surpasses the development of essential controls, posing risks in governance and transparency. This revelation is crucial for firms to prioritize developing robust supervisory frameworks to mitigate potential regulatory and operational risks.",
-      "source": "pymnts.com"
+      "title": "China UnionPay Launches 'Nihao China' App for Enhanced Travel",
+      "body": "China UnionPay has unveiled 'Nihao China', a mobile app designed to revolutionize the travel experience for international visitors to China. Integrating payment solutions with transportation and cultural insights, this app is a game-changer in digital consumer engagement and a significant stride in fintech innovation.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "SEC Cracks Down on $14 Million Crypto Scam",
-      "body": "The SEC has charged three entities involved in a $14 million cryptocurrency scam, exploiting social media to lure retail investors into fraudulent trading platforms. This enforcement action highlights the persistent vulnerabilities in the digital asset space and underscores the need for continuous regulatory oversight to protect investors.",
-      "source": "pymnts.com"
+      "title": "Visa to Pioneer AI-Enabled Agentic Shopping by 2026",
+      "body": "Visa is setting the stage for a major overhaul in online shopping with its AI-driven agentic shopping initiative, collaborating with over 100 partners for a 2026 launch. This move could redefine personalized shopping experiences, leveraging AI to enhance security and user engagement in the e-commerce sector.",
+      "source": "Finextra"
     },
     {
-      "title": "Visa Innovates with AI-Driven Agentic Shopping Experience",
-      "body": "Visa is setting the stage for a revolution in online shopping by partnering with over 100 entities to introduce AI-enabled personalized shopping by early 2026. This move towards agentic shopping experiences could redefine consumer interactions with online platforms, offering a more tailored and engaging shopping journey.",
-      "source": "finextra.com"
+      "title": "FCA Introduces Flexible Limits for Contactless Payments",
+      "body": "The UK's Financial Conduct Authority (FCA) is set to revolutionize contactless payments with new flexible limits starting March 2026. This policy adjustment aims to cater to consumer convenience while adapting to advanced security standards, marking a significant evolution in digital payment solutions.",
+      "source": "Finextra"
     },
     {
-      "title": "PSR to Implement New UK Regulations on Card Payment Fees",
-      "body": "The UK's Payment Systems Regulator (PSR) is introducing new regulations to enhance transparency around card payment fees. This change aims to create a fairer, more competitive market, directly impacting businesses and consumers by potentially lowering the cost of transactions and fostering better service conditions.",
-      "source": "finextra.com"
+      "title": "EU Tightens Crypto Regulations with New Tax Reporting Rules",
+      "body": "The European Union is escalating its regulatory framework on cryptocurrencies with new tax reporting mandates and potential asset seizures starting January. This move aims to enhance market transparency and control, signaling a significant shift in how crypto assets are managed within the EU.",
+      "source": "CoinDesk"
     },
     {
-      "title": "Edge AI Poised to Transform Real-Time Financial Services",
-      "body": "The financial sector is increasingly adopting edge AI to bypass the limitations of traditional cloud-based systems, especially in areas requiring instant data processing like payments and fraud detection. This strategic shift is pivotal for boosting operational efficiency and enhancing security, marking a significant evolution in financial technology infrastructure.",
-      "source": "pymnts.com"
+      "title": "SEC Targets Crypto Platforms in $14 Million Fraud Crackdown",
+      "body": "The SEC has charged multiple crypto platforms and investment clubs in a $14 million social media-based fraud scheme. This enforcement underscores the regulatory focus on protecting investors and maintaining market integrity within the rapidly evolving crypto sector.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that in 2023, U.S. corporate bond sales driven by AI investments nearly reached the record highs of the 2020 pandemic, with issuances close to $1.7 trillion?",
-    "source": "Financial Times"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
+    "source": "history.com"
   }
 }
