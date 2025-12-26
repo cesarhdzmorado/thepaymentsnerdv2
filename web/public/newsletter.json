@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "China UnionPay Launches 'Nihao China' App for Enhanced Travel",
-      "body": "China UnionPay has unveiled 'Nihao China', a mobile app designed to revolutionize the travel experience for international visitors to China. Integrating payment solutions with transportation and cultural insights, this app is a game-changer in digital consumer engagement and a significant stride in fintech innovation.",
+      "title": "China UnionPay Launches 'Nihao China' App for Travelers",
+      "body": "China UnionPay has unveiled 'Nihao China', a mobile app tailored for foreign visitors in China, integrating payment solutions with transportation and cultural tourism services. This strategic move not only enhances the travel experience but also positions UnionPay as a leader in the convergence of payments and tourism services, potentially reshaping visitor interactions in China.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Visa to Pioneer AI-Enabled Agentic Shopping by 2026",
-      "body": "Visa is setting the stage for a major overhaul in online shopping with its AI-driven agentic shopping initiative, collaborating with over 100 partners for a 2026 launch. This move could redefine personalized shopping experiences, leveraging AI to enhance security and user engagement in the e-commerce sector.",
+      "title": "Visa to Revolutionize Online Shopping with AI by 2026",
+      "body": "Visa is setting the stage for a revolution in e-commerce through a collaboration with over 100 partners to develop AI-driven, personalized shopping experiences slated for launch by early 2026. This initiative is poised to redefine online consumer engagement, offering enhanced security and a tailored shopping journey, marking a significant shift in how digital commerce operates.",
       "source": "Finextra"
     },
     {
-      "title": "FCA Introduces Flexible Limits for Contactless Payments",
-      "body": "The UK's Financial Conduct Authority (FCA) is set to revolutionize contactless payments with new flexible limits starting March 2026. This policy adjustment aims to cater to consumer convenience while adapting to advanced security standards, marking a significant evolution in digital payment solutions.",
+      "title": "Klarna Adopts USDC for Innovative Funding Strategy",
+      "body": "Klarna is pioneering a new funding approach by leveraging Coinbase's stablecoin, USDC, to attract digital asset-rich institutional investors. This strategic move not only diversifies Klarna's funding sources but also underscores the growing integration of cryptocurrency in mainstream financial operations, setting a precedent in fintech funding models.",
       "source": "Finextra"
     },
     {
-      "title": "EU Tightens Crypto Regulations with New Tax Reporting Rules",
-      "body": "The European Union is escalating its regulatory framework on cryptocurrencies with new tax reporting mandates and potential asset seizures starting January. This move aims to enhance market transparency and control, signaling a significant shift in how crypto assets are managed within the EU.",
-      "source": "CoinDesk"
+      "title": "UK to Implement Flexible Contactless Payment Limits by 2026",
+      "body": "The UK's Financial Conduct Authority (FCA) is set to introduce flexible limits for contactless payments by March 2026, enhancing payment convenience and reflecting higher consumer trust and technological advancements. This regulatory change is expected to accelerate the adoption of contactless transactions, potentially increasing transaction volumes and influencing global payment trends.",
+      "source": "Finextra"
     },
     {
-      "title": "SEC Targets Crypto Platforms in $14 Million Fraud Crackdown",
-      "body": "The SEC has charged multiple crypto platforms and investment clubs in a $14 million social media-based fraud scheme. This enforcement underscores the regulatory focus on protecting investors and maintaining market integrity within the rapidly evolving crypto sector.",
+      "title": "SEC Cracks Down on $14M Crypto Social Media Scam",
+      "body": "The SEC has charged multiple crypto platforms and investment clubs for a social media-based scam defrauding investors of around $14 million. This enforcement action highlights the regulatory scrutiny in the cryptocurrency sector and underscores the need for robust compliance measures to protect investors in the evolving digital asset landscape.",
       "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club? It revolutionized consumer spending habits and paved the way for the complex payment systems we use today.",
-    "source": "history.com"
+    "text": "Did you know that the AI boom has significantly increased the net worth of U.S. tech billionaires, with notable gains for figures like Elon Musk and Nvidia\u2019s Jensen Huang?",
+    "source": "Financial Times"
   }
 }
