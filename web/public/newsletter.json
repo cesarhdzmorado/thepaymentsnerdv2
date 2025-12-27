@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "China UnionPay Launches 'Nihao China' App for Travelers",
-      "body": "China UnionPay has unveiled 'Nihao China', a mobile app tailored for foreign visitors in China, integrating payment solutions with transportation and cultural tourism services. This strategic move not only enhances the travel experience but also positions UnionPay as a leader in the convergence of payments and tourism services, potentially reshaping visitor interactions in China.",
+      "title": "JPMorgan Freezes Accounts of Venezuelan Stablecoin Startups",
+      "body": "JPMorgan Chase has frozen the accounts of BlindPay and Kontigo, two stablecoin companies operating in Venezuela, due to U.S. sanctions. This move underscores the regulatory complexities for crypto firms in international markets and could disrupt digital payment flows in Latin America.",
       "source": "PYMNTS.com"
     },
     {
-      "title": "Visa to Revolutionize Online Shopping with AI by 2026",
-      "body": "Visa is setting the stage for a revolution in e-commerce through a collaboration with over 100 partners to develop AI-driven, personalized shopping experiences slated for launch by early 2026. This initiative is poised to redefine online consumer engagement, offering enhanced security and a tailored shopping journey, marking a significant shift in how digital commerce operates.",
+      "title": "SEC Cracks Down on $14 Million Crypto Social Media Scam",
+      "body": "The SEC has charged three crypto trading platforms and four investment clubs in a $14 million scam, highlighting intensified regulatory scrutiny in the cryptocurrency sector. This enforcement could signal tighter controls and investor wariness in the crypto market.",
       "source": "Finextra"
     },
     {
-      "title": "Klarna Adopts USDC for Innovative Funding Strategy",
-      "body": "Klarna is pioneering a new funding approach by leveraging Coinbase's stablecoin, USDC, to attract digital asset-rich institutional investors. This strategic move not only diversifies Klarna's funding sources but also underscores the growing integration of cryptocurrency in mainstream financial operations, setting a precedent in fintech funding models.",
+      "title": "Visa to Launch AI-Driven Personalized Shopping by 2026",
+      "body": "Visa is setting the stage for a revolution in e-commerce with its AI-enabled, personalized shopping experience, set to launch with over 100 partners by early 2026. This initiative could redefine consumer interactions online, enhancing security and personalization in digital commerce.",
       "source": "Finextra"
     },
     {
-      "title": "UK to Implement Flexible Contactless Payment Limits by 2026",
-      "body": "The UK's Financial Conduct Authority (FCA) is set to introduce flexible limits for contactless payments by March 2026, enhancing payment convenience and reflecting higher consumer trust and technological advancements. This regulatory change is expected to accelerate the adoption of contactless transactions, potentially increasing transaction volumes and influencing global payment trends.",
+      "title": "UK Regulator to Increase Transparency in Card Payment Fees",
+      "body": "The UK's Payment Systems Regulator is introducing new rules to make card payment fees more transparent for businesses. This regulatory shift aims to foster fairer pricing and enhance competition in the UK's digital payments sector.",
       "source": "Finextra"
     },
     {
-      "title": "SEC Cracks Down on $14M Crypto Social Media Scam",
-      "body": "The SEC has charged multiple crypto platforms and investment clubs for a social media-based scam defrauding investors of around $14 million. This enforcement action highlights the regulatory scrutiny in the cryptocurrency sector and underscores the need for robust compliance measures to protect investors in the evolving digital asset landscape.",
-      "source": "Finextra"
+      "title": "Trust Wallet Users Hit by $7 Million Hack via Chrome Extension",
+      "body": "Trust Wallet users have lost $7 million due to a hacked Chrome extension, spotlighting the ongoing security challenges in the cryptocurrency wallet space. This incident stresses the need for enhanced security protocols to safeguard digital assets effectively.",
+      "source": "CoinDesk"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the AI boom has significantly increased the net worth of U.S. tech billionaires, with notable gains for figures like Elon Musk and Nvidia\u2019s Jensen Huang?",
+    "text": "Did you know that the world's most valuable company, Nvidia, is acquiring top talent from AI chip startup Groq, including the engineer behind Google\u2019s Tensor Processing Unit?",
     "source": "Financial Times"
   }
 }
