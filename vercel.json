@@ -2,9 +2,7 @@
   "git": {
     "deploymentEnabled": false
   }
-}
-
-{
+  
   "crons": [
     {
       "path": "/api/send-daily",

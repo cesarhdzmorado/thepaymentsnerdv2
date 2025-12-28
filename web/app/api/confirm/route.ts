@@ -33,12 +33,45 @@ export async function GET(req: Request) {
     await resend.emails.send({
       from,
       to: email,
-      subject: "You're subscribed",
+      subject: "Welcome to /thepaymentsnerd",
       html: `
-        <div style="font-family:system-ui;line-height:1.4">
-          <p>You’re in.</p>
-          <p>You’ll get one payments insight per day (no noise).</p>
-          <p style="color:#666;font-size:12px"><a href="${unsubUrl}">Unsubscribe</a></p>
+        <div style="font-family: system-ui, -apple-system, Segoe UI, Roboto; line-height: 1.6; max-width: 520px;">
+          <p>Welcome 👋</p>
+
+          <p>
+            You’re now subscribed to <strong>/thepaymentsnerd</strong>.
+          </p>
+
+          <p>
+            Every day, you’ll get:
+          </p>
+
+          <ul>
+            <li>5 <strong>important signals</strong> from payments and fintech</li>
+            <li>No press releases, no fluff</li>
+            <li>Written by a human, not scraped</li>
+          </ul>
+
+          <p>
+            This exists because payments news are either:
+            <br/>• too shallow
+            <br/>• too salesy
+            <br/>• or too late
+          </p>
+
+          <p>
+            If you ever feel it’s not useful, one click unsubscribes you.
+          </p>
+
+          <p>
+            — César
+            <br/>
+            <span style="color:#666;font-size:12px">
+          </p>
+
+          <p style="margin-top:24px;color:#666;font-size:12px">
+            <a href="${unsubUrl}">Unsubscribe</a>
+          </p>
         </div>
       `,
     });
