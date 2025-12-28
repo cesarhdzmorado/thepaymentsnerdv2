@@ -1,9 +1,9 @@
 // web/app/page.tsx
 
 // ---- ISR CONFIG ----
-// Page will be cached and revalidated automatically
-// No redeploys needed, no forced dynamic rendering
-export const revalidate = 3600; // 1 hour
+// Page will be cached and revalidated automatically.
+// This prevents “stuck on last deployment” while avoiding fully-dynamic rendering.
+export const revalidate = 900; // 15 minutes (change to 3600 for 1 hour if you prefer)
 
 import { supabase } from "@/lib/supabaseClient";
 import { Logo } from "@/components/Logo";
@@ -138,11 +138,13 @@ export default async function HomePage() {
                     Topic #{index + 1}
                   </div>
 
-                  <h2 className="mb-4 text-2xl sm:text-3xl font-bold
-                                 text-slate-950 dark:text-slate-100
-                                 transition-colors duration-300
-                                 group-hover:text-indigo-800
-                                 dark:group-hover:text-white">
+                  <h2
+                    className="mb-4 text-2xl sm:text-3xl font-bold
+                               text-slate-950 dark:text-slate-100
+                               transition-colors duration-300
+                               group-hover:text-indigo-800
+                               dark:group-hover:text-white"
+                  >
                     {item.title}
                   </h2>
 
@@ -201,9 +203,11 @@ export default async function HomePage() {
               <Lightbulb className="h-7 w-7" />
             </div>
 
-            <h3 className="text-3xl font-bold bg-clip-text text-transparent
-                           bg-gradient-to-r from-amber-700 to-orange-700
-                           dark:from-amber-300 dark:to-orange-300">
+            <h3
+              className="text-3xl font-bold bg-clip-text text-transparent
+                         bg-gradient-to-r from-amber-700 to-orange-700
+                         dark:from-amber-300 dark:to-orange-300"
+            >
               Did You Know?
             </h3>
           </div>
@@ -225,4 +229,3 @@ export default async function HomePage() {
     </div>
   );
 }
-
