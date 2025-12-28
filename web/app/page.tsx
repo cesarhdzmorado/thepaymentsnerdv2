@@ -1,5 +1,10 @@
 // web/app/page.tsx
 
+// ---- ISR CONFIG ----
+// Page will be cached and revalidated automatically
+// No redeploys needed, no forced dynamic rendering
+export const revalidate = 3600; // 1 hour
+
 import { supabase } from "@/lib/supabaseClient";
 import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
@@ -17,20 +22,25 @@ interface NewsItem {
   body: string;
   source: string;
 }
+
 interface Curiosity {
   text: string;
   source: string;
 }
+
 interface NewsletterContent {
   news: NewsItem[];
   curiosity: Curiosity;
 }
+
 interface Newsletter {
   publication_date: string;
   content: NewsletterContent;
 }
 
 // --- Data Fetching Function ---
+// IMPORTANT: do NOT wrap in cache() or unstable_cache()
+// ISR handles caching at the page level
 async function getLatestNewsletter(): Promise<Newsletter | null> {
   const { data, error } = await supabase
     .from("newsletters")
@@ -43,6 +53,7 @@ async function getLatestNewsletter(): Promise<Newsletter | null> {
     console.error("Error fetching newsletter:", error?.message);
     return null;
   }
+
   return data as Newsletter;
 }
 
@@ -50,7 +61,7 @@ async function getLatestNewsletter(): Promise<Newsletter | null> {
 export default async function HomePage() {
   const newsletter = await getLatestNewsletter();
 
-  // --- "No Newsletter" Fallback Page ---
+  // --- "No Newsletter" Fallback ---
   if (!newsletter) {
     return (
       <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center glow-bg">
@@ -64,7 +75,7 @@ export default async function HomePage() {
   }
 
   const formattedDate = new Date(
-    newsletter.publication_date + "T00:00:00"
+    `${newsletter.publication_date}T00:00:00`
   ).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
@@ -93,7 +104,7 @@ export default async function HomePage() {
           Your daily briefing on the world of payments
         </p>
 
-        {/* Date pill (tokenized surface) */}
+        {/* Date pill */}
         <div className="inline-flex items-center gap-2 rounded-full px-4 py-2 card-surface">
           <Calendar className="h-4 w-4 text-blue-600 dark:text-cyan-300" />
           <span className="text-sm font-semibold">{formattedDate}</span>
@@ -105,24 +116,19 @@ export default async function HomePage() {
         {newsletter.content.news.map((item, index) => (
           <article
             key={index}
-            className={[
-              "group relative overflow-hidden",
-              "transition-transform duration-300 ease-out",
-              "hover:-translate-y-1",
-              "card-surface",
-            ].join(" ")}
+            className="group relative overflow-hidden card-surface
+                       transition-transform duration-300 ease-out
+                       hover:-translate-y-1"
           >
             <div className="relative p-8 sm:p-10">
               <div className="flex items-start gap-6">
-                {/* Icon tile */}
+                {/* Icon */}
                 <div
-                  className={[
-                    "flex-shrink-0 rounded-xl p-3 text-white",
-                    "shadow-md transition-transform duration-300",
-                    "bg-gradient-to-br from-blue-600 to-indigo-600",
-                    "dark:from-cyan-500 dark:to-indigo-500",
-                    "group-hover:scale-110",
-                  ].join(" ")}
+                  className="flex-shrink-0 rounded-xl p-3 text-white shadow-md
+                             bg-gradient-to-br from-blue-600 to-indigo-600
+                             dark:from-cyan-500 dark:to-indigo-500
+                             transition-transform duration-300
+                             group-hover:scale-110"
                 >
                   <BookOpen className="h-6 w-6" />
                 </div>
@@ -132,14 +138,11 @@ export default async function HomePage() {
                     Topic #{index + 1}
                   </div>
 
-                  <h2
-                    className={[
-                      "mb-4 text-2xl sm:text-3xl font-bold",
-                      "transition-colors duration-300",
-                      "text-slate-950 dark:text-slate-100",
-                      "group-hover:text-indigo-800 dark:group-hover:text-white",
-                    ].join(" ")}
-                  >
+                  <h2 className="mb-4 text-2xl sm:text-3xl font-bold
+                                 text-slate-950 dark:text-slate-100
+                                 transition-colors duration-300
+                                 group-hover:text-indigo-800
+                                 dark:group-hover:text-white">
                     {item.title}
                   </h2>
 
@@ -155,12 +158,10 @@ export default async function HomePage() {
                       href={`https://www.${item.source}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={[
-                        "inline-flex items-center gap-1 font-semibold",
-                        "transition-colors duration-300 underline-offset-4",
-                        "text-blue-700 hover:underline hover:text-indigo-700",
-                        "dark:text-cyan-300 dark:hover:text-cyan-200",
-                      ].join(" ")}
+                      className="inline-flex items-center gap-1 font-semibold
+                                 text-blue-700 hover:underline hover:text-indigo-700
+                                 dark:text-cyan-300 dark:hover:text-cyan-200
+                                 transition-colors duration-300"
                     >
                       {item.source}
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -170,11 +171,11 @@ export default async function HomePage() {
               </div>
             </div>
 
-            {/* subtle bottom sheen */}
+            {/* bottom sheen */}
             <div
               className="pointer-events-none absolute inset-x-0 bottom-0 h-px
-              bg-gradient-to-r from-transparent via-slate-200/70 to-transparent
-              dark:via-slate-700/60"
+                         bg-gradient-to-r from-transparent via-slate-200/70 to-transparent
+                         dark:via-slate-700/60"
               aria-hidden="true"
             />
           </article>
@@ -185,8 +186,8 @@ export default async function HomePage() {
       <section id="curiosity" className="relative">
         <div
           className="pointer-events-none absolute inset-0 -z-10 scale-105 rounded-3xl blur-2xl
-          bg-gradient-to-r from-amber-400/10 via-orange-400/10 to-yellow-400/10
-          dark:from-amber-300/10 dark:via-orange-300/10 dark:to-yellow-300/10"
+                     bg-gradient-to-r from-amber-400/10 via-orange-400/10 to-yellow-400/10
+                     dark:from-amber-300/10 dark:via-orange-300/10 dark:to-yellow-300/10"
           aria-hidden="true"
         />
 
@@ -194,24 +195,22 @@ export default async function HomePage() {
           <div className="mb-6 flex items-center justify-center gap-4">
             <div
               className="rounded-full p-3 text-white shadow-lg
-              bg-gradient-to-br from-amber-500 to-orange-600
-              dark:from-amber-400 dark:to-orange-500"
+                         bg-gradient-to-br from-amber-500 to-orange-600
+                         dark:from-amber-400 dark:to-orange-500"
             >
               <Lightbulb className="h-7 w-7" />
             </div>
 
-            <h3
-              className="text-3xl font-bold bg-clip-text text-transparent
-              bg-gradient-to-r from-amber-700 to-orange-700
-              dark:from-amber-300 dark:to-orange-300"
-            >
+            <h3 className="text-3xl font-bold bg-clip-text text-transparent
+                           bg-gradient-to-r from-amber-700 to-orange-700
+                           dark:from-amber-300 dark:to-orange-300">
               Did You Know?
             </h3>
           </div>
 
           <blockquote className="space-y-4">
             <p className="text-xl sm:text-2xl leading-relaxed font-medium italic text-slate-900 dark:text-slate-100">
-              {`"${newsletter.content.curiosity.text}"`}
+              “{newsletter.content.curiosity.text}”
             </p>
             <cite className="inline-block text-base font-semibold not-italic text-amber-800 dark:text-amber-200">
               — {newsletter.content.curiosity.source}
@@ -226,3 +225,4 @@ export default async function HomePage() {
     </div>
   );
 }
+
