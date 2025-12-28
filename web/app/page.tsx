@@ -8,6 +8,7 @@ export const revalidate = 900; // 15 minutes (change to 3600 for 1 hour if you p
 import { supabase } from "@/lib/supabaseClient";
 import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
+import { SubscribeForm } from "@/components/SubscribeForm";
 import {
   ArrowRight,
   BookOpen,
@@ -108,6 +109,11 @@ export default async function HomePage() {
         <div className="inline-flex items-center gap-2 rounded-full px-4 py-2 card-surface">
           <Calendar className="h-4 w-4 text-blue-600 dark:text-cyan-300" />
           <span className="text-sm font-semibold">{formattedDate}</span>
+        </div>
+
+        {/* Subscribe */}
+        <div className="mx-auto mt-8 max-w-2xl">
+          <SubscribeForm source="homepage_header" />
         </div>
       </header>
 
