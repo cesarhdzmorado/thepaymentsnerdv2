@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "JPMorgan Freezes Accounts of Venezuelan Stablecoin Startups",
-      "body": "JPMorgan Chase has frozen the accounts of BlindPay and Kontigo, two stablecoin companies operating in Venezuela, due to U.S. sanctions. This move underscores the regulatory complexities for crypto firms in international markets and could disrupt digital payment flows in Latin America.",
-      "source": "PYMNTS.com"
+      "title": "JPMorgan Freezes Accounts of Stablecoin Firms in Venezuela",
+      "body": "JPMorgan Chase has taken decisive action by freezing the accounts of stablecoin startups BlindPay and Kontigo, citing their operations in sanctioned Venezuela. This move underscores the heightened regulatory scrutiny on crypto companies with international dealings, spotlighting the complex interplay between global finance regulations and the burgeoning crypto sector.",
+      "source": "pymnts.com"
     },
     {
       "title": "SEC Cracks Down on $14 Million Crypto Social Media Scam",
-      "body": "The SEC has charged three crypto trading platforms and four investment clubs in a $14 million scam, highlighting intensified regulatory scrutiny in the cryptocurrency sector. This enforcement could signal tighter controls and investor wariness in the crypto market.",
-      "source": "Finextra"
+      "body": "The SEC has charged three crypto trading platforms and four investment clubs in a $14 million scam orchestrated via social media. This enforcement highlights the SEC's intensified efforts to root out fraud in the crypto space, signaling a tougher regulatory landscape for digital assets.",
+      "source": "finextra.com"
     },
     {
-      "title": "Visa to Launch AI-Driven Personalized Shopping by 2026",
-      "body": "Visa is setting the stage for a revolution in e-commerce with its AI-enabled, personalized shopping experience, set to launch with over 100 partners by early 2026. This initiative could redefine consumer interactions online, enhancing security and personalization in digital commerce.",
-      "source": "Finextra"
+      "title": "Visa to Revolutionize Online Shopping with AI by 2026",
+      "body": "Visa is setting the stage for a major overhaul in online shopping through a collaboration with 100 partners to integrate AI, aiming for a launch by early 2026. This initiative promises to personalize and secure the shopping experience, potentially reshaping consumer behaviors and expectations in digital commerce.",
+      "source": "finextra.com"
     },
     {
-      "title": "UK Regulator to Increase Transparency in Card Payment Fees",
-      "body": "The UK's Payment Systems Regulator is introducing new rules to make card payment fees more transparent for businesses. This regulatory shift aims to foster fairer pricing and enhance competition in the UK's digital payments sector.",
-      "source": "Finextra"
+      "title": "UK's PSR Enhances Transparency in Card Payment Fees",
+      "body": "The UK's Payment Systems Regulator is taking significant steps to increase transparency in card payment fees. By providing businesses with more detailed fee information, the PSR aims to foster a fairer payment ecosystem, which could influence fee structures globally.",
+      "source": "finextra.com"
     },
     {
-      "title": "Trust Wallet Users Hit by $7 Million Hack via Chrome Extension",
-      "body": "Trust Wallet users have lost $7 million due to a hacked Chrome extension, spotlighting the ongoing security challenges in the cryptocurrency wallet space. This incident stresses the need for enhanced security protocols to safeguard digital assets effectively.",
-      "source": "CoinDesk"
+      "title": "FCA to Introduce Flexible Contactless Payment Limits in 2026",
+      "body": "The Financial Conduct Authority in the UK plans to implement flexible limits for contactless payments starting March 2026. This adjustment reflects changing consumer preferences and the growing trend towards digital payment solutions, marking a significant shift in the regulatory approach to accommodate evolving payment technologies.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the world's most valuable company, Nvidia, is acquiring top talent from AI chip startup Groq, including the engineer behind Google\u2019s Tensor Processing Unit?",
+    "text": "Did you know that the AI boom is projected to add $500 billion to the net worth of US tech billionaires by 2025? This staggering figure highlights the transformative power of AI technology across industries.",
     "source": "Financial Times"
   }
 }
