@@ -14,13 +14,10 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { NewsletterNavigation } from "@/components/NewsletterNavigation";
 import {
   ArrowRight,
-  ArrowLeft,
   BookOpen,
   Lightbulb,
   Calendar,
   ExternalLink,
-  ChevronLeft,
-  ChevronRight,
 } from "lucide-react";
 
 // --- TypeScript types ---
