@@ -105,3 +105,35 @@ jobs:
         # This only runs if a commit was made AND the sync step was successful
         if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success'
         run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
+
+      # =======================================================
+      # STEP 5: WAIT FOR DEPLOYMENT & SEND EMAILS TO SUBSCRIBERS
+      # =======================================================
+      - name: Wait for Vercel deployment to complete
+        # Give Vercel time to deploy the new newsletter (adjust if needed)
+        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success'
+        run: sleep 60
+
+      - name: Send newsletter emails to subscribers
+        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success'
+        id: send_emails_step
+        run: |
+          echo "Sending newsletter to all active subscribers..."
+          response=$(curl -s -w "\n%{http_code}" -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "${{ secrets.NEXT_PUBLIC_SITE_URL }}/api/send-daily")
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Status: $http_code"
+
+          if [ "$http_code" -eq 200 ]; then
+            echo "✅ Emails sent successfully!"
+            echo "$body" | jq -r '"Sent to \(.sent) subscribers"' || echo "$body"
+          else
+            echo "❌ Failed to send emails (HTTP $http_code)"
+            echo "$body"
+            exit 1
+          fi
