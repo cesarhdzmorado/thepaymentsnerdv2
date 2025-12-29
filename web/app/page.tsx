@@ -7,13 +7,7 @@ import { supabase } from "@/lib/supabaseClient";
 import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
 import { SubscribeForm } from "@/components/SubscribeForm";
-import {
-  ArrowRight,
-  BookOpen,
-  Lightbulb,
-  Calendar,
-  ExternalLink,
-} from "lucide-react";
+import { Calendar } from "lucide-react";
 
 interface NewsItem {
   title: string;
