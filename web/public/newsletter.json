@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "Cantor Fitzgerald Predicts Continued Crypto Adoption by Institutions in 2026",
-      "body": "Cantor Fitzgerald forecasts that institutional adoption of cryptocurrencies will continue through 2026, driven by increasing regulatory clarity. This shift is crucial as it signals a growing mainstream acceptance of digital assets, potentially reshaping the financial landscape and encouraging banks and asset managers to engage more with crypto. As regulations evolve, the risk profile for institutions may improve, paving the way for broader adoption.",
+      "title": "Banks Eye Stablecoins for Efficient Cross-Border Payments",
+      "body": "Financial institutions in the US, UK, and Europe are increasingly exploring stablecoins to enhance cross-border payment efficiency. This shift could revolutionize transaction speeds and reduce costs, making international payments more accessible for businesses. As banks adapt to this trend, the implications for traditional payment systems could be profound.",
+      "source": "finextra.com"
+    },
+    {
+      "title": "Lloyds Banking Group to Shut Down Invoice Financing Service",
+      "body": "Lloyds Banking Group's decision to close its invoice factoring service by year-end poses significant challenges for small and medium-sized enterprises that depend on this financing method. This move could disrupt cash flow for many businesses, highlighting the need for alternative financing solutions in the market.",
+      "source": "finextra.com"
+    },
+    {
+      "title": "Cantor Fitzgerald Sees Continued Institutional Crypto Adoption",
+      "body": "Despite Bitcoin's price volatility, Cantor Fitzgerald predicts that institutional adoption of cryptocurrency will continue through 2026, fueled by clearer regulatory frameworks. This trend could lower risks for banks and asset managers, encouraging deeper engagement with digital assets and reshaping the investment landscape.",
       "source": "pymnts.com"
     },
     {
-      "title": "Zoomex Launches Card Bridging Traditional and Crypto Payment Systems",
-      "body": "Zoomex is set to launch a groundbreaking card that merges traditional financial systems with cryptocurrency payments. This innovation not only simplifies the use of crypto alongside conventional currencies but also introduces a multicurrency bank account feature, marking a significant step towards integrating digital finance into everyday transactions. This could redefine consumer payment experiences and broaden the appeal of cryptocurrencies.",
+      "title": "Zoomex Launches Innovative Card for Crypto and Traditional Payments",
+      "body": "Zoomex is set to launch a groundbreaking card that bridges traditional finance and cryptocurrency, allowing users to manage a multicurrency bank account seamlessly. This innovation could simplify crypto transactions in everyday life, potentially driving wider adoption of digital currencies among consumers.",
       "source": "pymnts.com"
     },
     {
-      "title": "Lloyds Banking Group to Close Invoice Financing Service",
-      "body": "Lloyds Banking Group's decision to shut down its invoice factoring service by year-end could disrupt cash flow management for small and medium enterprises. This move reflects a potential shift in financial service offerings, prompting businesses to seek alternative financing solutions. The closure may lead to increased pressure on SMEs, highlighting the need for adaptable financial strategies in a changing landscape.",
-      "source": "finextra.com"
-    },
-    {
-      "title": "Banks Eye Stablecoins for Enhanced Cross-Border Payments",
-      "body": "A recent report suggests that banks in the US, UK, and Europe are exploring the use of stablecoins to improve cross-border payment systems. This development could significantly reduce transaction costs and enhance efficiency in international payments, leveraging the stability of stablecoins. As banks adapt to this technology, it may lead to a more streamlined global payment infrastructure.",
-      "source": "finextra.com"
-    },
-    {
-      "title": "AI's Role in Enhancing Payment Exception Handling",
-      "body": "Banks are increasingly adopting AI to refine payment exception handling and reconciliation processes. This technology promises to enhance operational efficiency by reducing errors and accelerating transaction times, which is vital for maintaining customer satisfaction. As AI continues to evolve, its integration into payment systems could revolutionize how financial institutions manage exceptions.",
-      "source": "finextra.com"
+      "title": "AI Start-Ups Secure Record Funding Amid Market Bubble Concerns",
+      "body": "AI start-ups have raised a staggering $150 billion in funding, reflecting intense investor interest despite fears of a market bubble. This influx of capital underscores the belief in AI's transformative potential across various sectors, positioning these companies for significant growth in the coming years.",
+      "source": "financialtimes.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first Bitcoin transaction for a physical item was for two pizzas, costing 10,000 BTC?",
-    "source": "bitcoin.com"
+    "text": "Did you know that the first cryptocurrency, Bitcoin, was created in 2009 by an anonymous person or group using the pseudonym Satoshi Nakamoto?",
+    "source": "bitcoin.org"
   }
 }
