@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "JPMorgan Freezes Accounts of Stablecoin Firms in Venezuela",
-      "body": "JPMorgan Chase has taken decisive action by freezing the accounts of stablecoin startups BlindPay and Kontigo, citing their operations in sanctioned Venezuela. This move underscores the heightened regulatory scrutiny on crypto companies with international dealings, spotlighting the complex interplay between global finance regulations and the burgeoning crypto sector.",
-      "source": "pymnts.com"
+      "title": "FTX's Caroline Ellison to Be Released Early, Aids Legal Proceedings",
+      "body": "Caroline Ellison, a key figure in the FTX cryptocurrency scandal, is set for early release on January 21, following her cooperation against CEO Sam Bankman-Fried. Her pivotal testimony could reshape legal accountability in the crypto industry, spotlighting the consequences of corporate malfeasance.",
+      "source": "PYMNTS.com"
     },
     {
-      "title": "SEC Cracks Down on $14 Million Crypto Social Media Scam",
-      "body": "The SEC has charged three crypto trading platforms and four investment clubs in a $14 million scam orchestrated via social media. This enforcement highlights the SEC's intensified efforts to root out fraud in the crypto space, signaling a tougher regulatory landscape for digital assets.",
-      "source": "finextra.com"
+      "title": "UK's PSR Enhances Transparency with New Card Payment Fee Rules",
+      "body": "The UK's Payment Systems Regulator is introducing regulations to clarify card payment fees for businesses. This move, aimed at boosting transparency and fairness, could significantly impact the competitive landscape in financial services, ensuring businesses face fairer transaction conditions.",
+      "source": "Finextra"
     },
     {
       "title": "Visa to Revolutionize Online Shopping with AI by 2026",
-      "body": "Visa is setting the stage for a major overhaul in online shopping through a collaboration with 100 partners to integrate AI, aiming for a launch by early 2026. This initiative promises to personalize and secure the shopping experience, potentially reshaping consumer behaviors and expectations in digital commerce.",
-      "source": "finextra.com"
+      "body": "Visa is setting the stage for a major e-commerce evolution, partnering with over 100 entities to launch AI-driven, personalized shopping experiences by early 2026. This initiative could redefine consumer interactions online, offering enhanced security and customization.",
+      "source": "Finextra"
     },
     {
-      "title": "UK's PSR Enhances Transparency in Card Payment Fees",
-      "body": "The UK's Payment Systems Regulator is taking significant steps to increase transparency in card payment fees. By providing businesses with more detailed fee information, the PSR aims to foster a fairer payment ecosystem, which could influence fee structures globally.",
-      "source": "finextra.com"
+      "title": "Klarna Innovates with USDC-Denominated Funding Strategy",
+      "body": "Klarna is breaking new ground by planning to raise funding in the stablecoin USDC, tapping into a novel investor base. This move not only underscores the fusion of traditional finance with cryptocurrency but also signals potential shifts in how companies manage liquidity and capital.",
+      "source": "Finextra"
     },
     {
-      "title": "FCA to Introduce Flexible Contactless Payment Limits in 2026",
-      "body": "The Financial Conduct Authority in the UK plans to implement flexible limits for contactless payments starting March 2026. This adjustment reflects changing consumer preferences and the growing trend towards digital payment solutions, marking a significant shift in the regulatory approach to accommodate evolving payment technologies.",
-      "source": "finextra.com"
+      "title": "Dr. Ruth Wandh\u00f6fer to Lead UK's Transition to Open Finance",
+      "body": "Dr. Ruth Wandh\u00f6fer has been appointed to guide the UK from open banking to a broader open finance framework. This strategic shift promises to expand financial services' transparency and consumer choice, potentially revolutionizing the financial sector with enhanced data sharing.",
+      "source": "Finextra"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the AI boom is projected to add $500 billion to the net worth of US tech billionaires by 2025? This staggering figure highlights the transformative power of AI technology across industries.",
-    "source": "Financial Times"
+    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
+    "source": "history.com"
   }
 }
