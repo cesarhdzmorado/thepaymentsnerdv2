@@ -33,7 +33,12 @@ export function verifyToken<T>(token: string, secret: string): T {
   const expected = base64url(
     crypto.createHmac("sha256", secret).update(body).digest()
   );
-  if (!crypto.timingSafeEqual(Buffer.from(sig), Buffer.from(expected))) {
+  const sigBuffer = Buffer.from(sig);
+  const expectedBuffer = Buffer.from(expected);
+  if (sigBuffer.length !== expectedBuffer.length) {
+    throw new Error("Bad signature");
+  }
+  if (!crypto.timingSafeEqual(sigBuffer, expectedBuffer)) {
     throw new Error("Bad signature");
   }
 
