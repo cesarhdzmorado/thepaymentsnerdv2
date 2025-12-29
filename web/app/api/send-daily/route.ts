@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { makeToken } from "@/lib/emailTokens";
+import { generateDailyNewsletterEmail } from "@/lib/emailTemplate";
 
 export async function GET(req: Request) {
   try {
@@ -46,28 +47,18 @@ export async function GET(req: Request) {
       const unsubToken = makeToken(sub.email, "unsubscribe", secret, 365 * 24);
       const unsubUrl = `${siteUrl}/api/unsubscribe?token=${encodeURIComponent(unsubToken)}`;
 
+      const emailHtml = generateDailyNewsletterEmail({
+        publicationDate: newsletter.publication_date,
+        news: newsletter.content.news,
+        curiosity: newsletter.content.curiosity,
+        unsubscribeUrl: unsubUrl,
+      });
+
       await resend.emails.send({
         from,
         to: sub.email,
         subject: `The Payments Nerd — ${newsletter.publication_date}`,
-        html: `
-          <div style="font-family: system-ui; line-height:1.6; max-width: 600px;">
-            ${newsletter.content.news
-              .map(
-                (n: any) => `
-                  <h3>${n.title}</h3>
-                  <p>${n.body}</p>
-                  <p style="font-size:12px;color:#666">Source: ${n.source}</p>
-                  <hr/>
-                `
-              )
-              .join("")}
-
-            <p style="margin-top:24px;font-size:12px;color:#666">
-              <a href="${unsubUrl}">Unsubscribe</a>
-            </p>
-          </div>
-        `,
+        html: emailHtml,
       });
 
       sent++;
