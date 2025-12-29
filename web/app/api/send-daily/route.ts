@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { makeToken } from "@/lib/emailTokens";
-import { generateDailyNewsletterEmail } from "@/lib/emailTemplate";
+import { generateDailyNewsletterEmail, generateEmailSubject } from "@/lib/emailTemplate";
 
 export async function GET(req: Request) {
   try {
@@ -43,6 +43,9 @@ export async function GET(req: Request) {
 
     let sent = 0;
 
+    // Generate dynamic subject line from newsletter content
+    const emailSubject = generateEmailSubject(newsletter.content.news);
+
     for (const sub of subscribers ?? []) {
       const unsubToken = makeToken(sub.email, "unsubscribe", secret, 365 * 24);
       const unsubUrl = `${siteUrl}/api/unsubscribe?token=${encodeURIComponent(unsubToken)}`;
@@ -55,9 +58,9 @@ export async function GET(req: Request) {
       });
 
       await resend.emails.send({
-        from,
+        from: `The Payments Nerd <${from}>`,
         to: sub.email,
-        subject: `The Payments Nerd — ${newsletter.publication_date}`,
+        subject: emailSubject,
         html: emailHtml,
       });
 

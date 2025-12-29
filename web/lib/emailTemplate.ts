@@ -18,6 +18,30 @@ interface DailyNewsletterParams {
   unsubscribeUrl: string;
 }
 
+/**
+ * Generate a compelling subject line from newsletter content
+ * Format: "Today on Payments: Topic1 & Topic2"
+ */
+export function generateEmailSubject(news: NewsItem[]): string {
+  // Extract key topics from first 2 news items
+  const topics = news.slice(0, 2).map(item => {
+    // Extract main topic from title (first few words before details)
+    const title = item.title;
+    // Try to get the main subject (usually before "Launches", "Announces", "Reports", etc.)
+    const match = title.match(/^([^—:]+?)(?:\s+(?:Launches|Announces|Reports|Expects|to|Plans|Debuts))/i);
+    if (match) {
+      return match[1].trim();
+    }
+    // Otherwise, take first 5 words
+    const words = title.split(' ').slice(0, 5).join(' ');
+    return words.length < title.length ? words + '...' : words;
+  });
+
+  // Join with & and create subject
+  const highlight = topics.join(' & ');
+  return `Today on Payments: ${highlight}`;
+}
+
 export function generateDailyNewsletterEmail({
   publicationDate,
   news,
@@ -63,7 +87,7 @@ export function generateDailyNewsletterEmail({
               </h1>
 
               <!-- Tagline -->
-              <p style="margin: 0 0 24px; font-size: 18px; color: #64748b; font-weight: 500; line-height: 1.6;">
+              <p style="margin: 0 0 24px; font-size: 19px; color: #64748b; font-weight: 500; line-height: 1.6;">
                 Your daily briefing on the world of payments
               </p>
 
@@ -127,12 +151,12 @@ export function generateDailyNewsletterEmail({
                             </div>
 
                             <!-- Title -->
-                            <h2 style="margin: 0 0 12px; font-size: 22px; font-weight: 700; color: #0f172a; line-height: 1.3;">
+                            <h2 style="margin: 0 0 14px; font-size: 24px; font-weight: 700; color: #0f172a; line-height: 1.4;">
                               ${item.title}
                             </h2>
 
                             <!-- Body -->
-                            <p style="margin: 0 0 12px; font-size: 16px; color: #334155; line-height: 1.6;">
+                            <p style="margin: 0 0 16px; font-size: 18px; color: #334155; line-height: 1.7;">
                               ${item.body}
                             </p>
 
@@ -150,7 +174,7 @@ export function generateDailyNewsletterEmail({
                                   Source:
                                 </td>
                                 <td style="padding-left: 4px;">
-                                  <a href="https://www.${item.source}" target="_blank" rel="noopener noreferrer" style="font-size: 14px; color: #2563eb; font-weight: 600; text-decoration: none;">
+                                  <a href="https://www.${item.source}" target="_blank" rel="noopener noreferrer" style="font-size: 16px; color: #2563eb; font-weight: 600; text-decoration: none;">
                                     ${item.source}
                                   </a>
                                 </td>
@@ -206,12 +230,12 @@ export function generateDailyNewsletterEmail({
                     </table>
 
                     <!-- Curiosity Text -->
-                    <p style="margin: 0 0 16px; font-size: 18px; font-style: italic; color: #78350f; line-height: 1.6; font-weight: 500;">
+                    <p style="margin: 0 0 20px; font-size: 20px; font-style: italic; color: #78350f; line-height: 1.7; font-weight: 500;">
                       "${curiosity.text}"
                     </p>
 
                     <!-- Source -->
-                    <div style="display: inline-block; background-color: #fef3c7; color: #92400e; font-size: 14px; font-weight: 600; padding: 8px 16px; border-radius: 999px; border: 1px solid #fbbf24;">
+                    <div style="display: inline-block; background-color: #fef3c7; color: #92400e; font-size: 15px; font-weight: 600; padding: 10px 18px; border-radius: 999px; border: 1px solid #fbbf24;">
                       — ${curiosity.source}
                     </div>
                   </td>
