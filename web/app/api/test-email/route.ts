@@ -3,7 +3,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
-import { generateDailyNewsletterEmail } from "@/lib/emailTemplate";
+import { generateDailyNewsletterEmail, generateEmailSubject } from "@/lib/emailTemplate";
 
 /**
  * Test Email Endpoint
@@ -53,7 +53,7 @@ export async function GET(req: Request) {
       );
     }
 
-    // Generate email HTML
+    // Generate email HTML and dynamic subject
     const emailHtml = generateDailyNewsletterEmail({
       publicationDate: newsletter.publication_date,
       news: newsletter.content.news,
@@ -61,14 +61,16 @@ export async function GET(req: Request) {
       unsubscribeUrl: "https://example.com/unsubscribe?token=test-token",
     });
 
+    const emailSubject = generateEmailSubject(newsletter.content.news);
+
     // Send test email
     const resend = new Resend(process.env.RESEND_API_KEY!);
     const from = process.env.EMAIL_FROM!;
 
     const result = await resend.emails.send({
-      from,
+      from: `The Payments Nerd <${from}>`,
       to: testEmail,
-      subject: `[TEST] The Payments Nerd — ${newsletter.publication_date}`,
+      subject: `[TEST] ${emailSubject}`,
       html: emailHtml,
     });
 

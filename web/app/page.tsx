@@ -11,12 +11,16 @@ import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { NewsletterNavigation } from "@/components/NewsletterNavigation";
 import {
   ArrowRight,
+  ArrowLeft,
   BookOpen,
   Lightbulb,
   Calendar,
   ExternalLink,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 // --- TypeScript types ---
@@ -41,7 +45,7 @@ interface Newsletter {
   content: NewsletterContent;
 }
 
-// --- Data Fetching Function ---
+// --- Data Fetching Functions ---
 // IMPORTANT: do NOT wrap in cache() or unstable_cache()
 // ISR handles caching at the page level
 async function getLatestNewsletter(): Promise<Newsletter | null> {
@@ -60,9 +64,64 @@ async function getLatestNewsletter(): Promise<Newsletter | null> {
   return data as Newsletter;
 }
 
+async function getNewsletterByDate(date: string): Promise<Newsletter | null> {
+  const { data, error } = await supabase
+    .from("newsletters")
+    .select("publication_date, content")
+    .eq("publication_date", date)
+    .single();
+
+  if (error || !data) {
+    console.error("Error fetching newsletter for date:", date, error?.message);
+    return null;
+  }
+
+  return data as Newsletter;
+}
+
+async function getAdjacentDates(currentDate: string): Promise<{ prev: string | null; next: string | null }> {
+  // Get previous newsletter date
+  const { data: prevData } = await supabase
+    .from("newsletters")
+    .select("publication_date")
+    .lt("publication_date", currentDate)
+    .order("publication_date", { ascending: false })
+    .limit(1)
+    .single();
+
+  // Get next newsletter date
+  const { data: nextData } = await supabase
+    .from("newsletters")
+    .select("publication_date")
+    .gt("publication_date", currentDate)
+    .order("publication_date", { ascending: true })
+    .limit(1)
+    .single();
+
+  return {
+    prev: prevData?.publication_date || null,
+    next: nextData?.publication_date || null,
+  };
+}
+
 // --- The Main Page Component ---
-export default async function HomePage() {
-  const newsletter = await getLatestNewsletter();
+export default async function HomePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ date?: string }>;
+}) {
+  const params = await searchParams;
+  const requestedDate = params.date;
+
+  // Fetch newsletter based on date parameter or get latest
+  const newsletter = requestedDate
+    ? await getNewsletterByDate(requestedDate)
+    : await getLatestNewsletter();
+
+  // Get adjacent dates for navigation
+  const adjacentDates = newsletter
+    ? await getAdjacentDates(newsletter.publication_date)
+    : { prev: null, next: null };
 
   // --- "No Newsletter" Fallback ---
   if (!newsletter) {
@@ -255,6 +314,13 @@ export default async function HomePage() {
 
       {/* Scroll to top button */}
       <ScrollToTop />
+
+      {/* Newsletter navigation arrows */}
+      <NewsletterNavigation
+        prevDate={adjacentDates.prev}
+        nextDate={adjacentDates.next}
+        currentDate={newsletter.publication_date}
+      />
     </div>
   );
 }
