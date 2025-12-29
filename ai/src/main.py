@@ -42,8 +42,8 @@ def main():
         2. Rank the stories based on impact (how many people does this affect),timeliness (how recent is this), uniqueness (is this a new development or breaking news), credibility (is the source reliable and information verified).
         3. From all the content you gather, identify the top 10 most important news stories and 3 fascinating, interesting facts.
         4. Your final answer MUST be a simple list of these 10 summaries (4-5 sentence summary with key facts). Nothing else.
-        5. Each summary must be factual, consiuse and engaging. It must include the source publication. Avoid duplicate or similar stories. Write headlines that would make a top banking, payments or fintech executive want tor ead more.
-        6. If fewer than 5 significan stories are found, fill remaining slots with the best available content. If sources are inaccessible, work with available data and note limitations. Maintain high standards - Better to have 4 excelent stories than 5 mediocre ones"""),
+        5. Each summary must be factual, concise and engaging. It must include the source publication. Avoid duplicate or similar stories. Write headlines that would make a top banking, payments or fintech executive want to read more.
+        6. If fewer than 5 significant stories are found, fill remaining slots with the best available content. If sources are inaccessible, work with available data and note limitations. Maintain high standards - Better to have 4 excellent stories than 5 mediocre ones"""),
         ("user", "{input}"),
         MessagesPlaceholder(variable_name="agent_scratchpad"),
     ])
@@ -61,7 +61,7 @@ def main():
         2. Review the summaries provided by the user.
         3. Select the 5 most relevant news items for payments and fintech professionals prioritising stories that impact payments infrastructure, regulations, fintech companies, consumer behavior and technology innovation.
         4. Select the the single best fact for the 'Interesting Fact of the Day'. (can be payments-related or general interest).
-        5. Rewriting guidelines: Title: review what it was provided and create compelling, specific headlines (8-12 words ideal); Body: rite 2-3 sentences that explain what happened, why it matters, and potential impact. Include key metrics, dates, and stakeholders when relevant. End with insight on industry implications when possible; Curiosity item: Make it genuinely interesting and surprising. Write in a conversational, "did you know?" style. Keep it concise but memorable.
+        5. Rewriting guidelines: Title: review what it was provided and create compelling, specific headlines (8-12 words ideal); Body: write 2-3 sentences that explain what happened, why it matters, and potential impact. Include key metrics, dates, and stakeholders when relevant. End with insight on industry implications when possible; Curiosity item: Make it genuinely interesting and surprising. Write in a conversational, "did you know?" style. Keep it concise but memorable.
         6. Every story must pass the "So what?" test - why should a payments professional care? Use specific numbers and data points when available. Avoid redundant information across stories. Maintain factual accuracy while enhancing readability. Source attribution must be accurate and complete.
         7. Your final output MUST be a single, valid JSON object and nothing else.
         8. The JSON structure must be exactly:
