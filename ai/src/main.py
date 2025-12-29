@@ -73,7 +73,8 @@ def main():
     
     # MODIFIED: Create a simple 'chain' for the writer, as it doesn't need tools.
     # This avoids the "empty functions" error.
-    writer_chain = writer_prompt_template | llm
+    writer_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+    writer_chain = writer_prompt_template | writer_llm
 
     # 5. Run the agents in a chain
     print("--- Starting Researcher Agent ---")
