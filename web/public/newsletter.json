@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "FASB to Address Digital Assets Standards by 2026",
-      "body": "The Financial Accounting Standards Board (FASB) is set to tackle digital asset standards in 2026, focusing on their classification as cash equivalents and the accounting for transfers. This move underscores the growing significance of digital assets in finance, potentially reshaping how companies report these assets on their balance sheets, which could have far-reaching implications for financial reporting practices.",
+      "title": "Cantor Fitzgerald Predicts Continued Crypto Adoption by Institutions in 2026",
+      "body": "Cantor Fitzgerald forecasts that institutional adoption of cryptocurrencies will continue through 2026, driven by increasing regulatory clarity. This shift is crucial as it signals a growing mainstream acceptance of digital assets, potentially reshaping the financial landscape and encouraging banks and asset managers to engage more with crypto. As regulations evolve, the risk profile for institutions may improve, paving the way for broader adoption.",
       "source": "pymnts.com"
     },
     {
-      "title": "Rezolve Launches Revenue Pools for Blockchain Services",
-      "body": "Rezolve Ai has unveiled 'Revenue Pools' via its SQD Network, aimed at enhancing blockchain data services for large enterprises. This initiative responds to the surging demand for high-performance blockchain solutions, signaling a pivotal shift towards more robust infrastructures in major organizations, which could redefine operational efficiencies in the sector.",
+      "title": "Zoomex Launches Card Bridging Traditional and Crypto Payment Systems",
+      "body": "Zoomex is set to launch a groundbreaking card that merges traditional financial systems with cryptocurrency payments. This innovation not only simplifies the use of crypto alongside conventional currencies but also introduces a multicurrency bank account feature, marking a significant step towards integrating digital finance into everyday transactions. This could redefine consumer payment experiences and broaden the appeal of cryptocurrencies.",
       "source": "pymnts.com"
     },
     {
-      "title": "Coupang Offers $1.3 Billion in Vouchers After Data Breach",
-      "body": "In response to a massive data breach affecting 33.7 million customers, South Korean retailer Coupang is compensating affected individuals with vouchers worth up to $38 each. This substantial financial commitment highlights the escalating costs of cybersecurity incidents and the critical need for robust data protection measures in the retail sector.",
-      "source": "pymnts.com"
-    },
-    {
-      "title": "Banks Eye Stablecoins for Cross-Border Payment Solutions",
-      "body": "A recent report reveals that banks in the US, UK, and Europe are exploring the use of stablecoins to enhance cross-border payment efficiency. With varying regulatory landscapes, this strategic shift could revolutionize international transactions, offering faster and more cost-effective solutions for financial institutions and their clients.",
+      "title": "Lloyds Banking Group to Close Invoice Financing Service",
+      "body": "Lloyds Banking Group's decision to shut down its invoice factoring service by year-end could disrupt cash flow management for small and medium enterprises. This move reflects a potential shift in financial service offerings, prompting businesses to seek alternative financing solutions. The closure may lead to increased pressure on SMEs, highlighting the need for adaptable financial strategies in a changing landscape.",
       "source": "finextra.com"
     },
     {
-      "title": "AI Startups Secure $150 Billion Amid Market Uncertainty",
-      "body": "Silicon Valley AI startups have raised a staggering $150 billion in 2023, positioning themselves for potential market downturns. This unprecedented funding reflects a robust belief in AI's long-term value, suggesting that the sector is not just a passing trend but a foundational element of future technological advancements.",
-      "source": "pymnts.com"
+      "title": "Banks Eye Stablecoins for Enhanced Cross-Border Payments",
+      "body": "A recent report suggests that banks in the US, UK, and Europe are exploring the use of stablecoins to improve cross-border payment systems. This development could significantly reduce transaction costs and enhance efficiency in international payments, leveraging the stability of stablecoins. As banks adapt to this technology, it may lead to a more streamlined global payment infrastructure.",
+      "source": "finextra.com"
+    },
+    {
+      "title": "AI's Role in Enhancing Payment Exception Handling",
+      "body": "Banks are increasingly adopting AI to refine payment exception handling and reconciliation processes. This technology promises to enhance operational efficiency by reducing errors and accelerating transaction times, which is vital for maintaining customer satisfaction. As AI continues to evolve, its integration into payment systems could revolutionize how financial institutions manage exceptions.",
+      "source": "finextra.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the global blockchain market is expected to reach $163 billion by 2027? This explosive growth highlights the increasing adoption of blockchain technology across various industries.",
-    "source": "forbes.com"
+    "text": "Did you know that the first Bitcoin transaction for a physical item was for two pizzas, costing 10,000 BTC?",
+    "source": "bitcoin.com"
   }
 }
