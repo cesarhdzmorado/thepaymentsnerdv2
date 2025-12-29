@@ -1,9 +1,6 @@
 // web/app/page.tsx
 
-// ---- ISR CONFIG ----
-// Page will be cached and revalidated automatically.
-// This prevents “stuck on last deployment” while avoiding fully-dynamic rendering.
-export const revalidate = 900; // 15 minutes (change to 3600 for 1 hour if you prefer)
+export const revalidate = 900;
 
 import { Suspense } from "react";
 import { supabase } from "@/lib/supabaseClient";
@@ -18,7 +15,6 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-// --- TypeScript types ---
 interface NewsItem {
   title: string;
   body: string;
@@ -40,9 +36,6 @@ interface Newsletter {
   content: NewsletterContent;
 }
 
-// --- Data Fetching Function ---
-// IMPORTANT: do NOT wrap in cache() or unstable_cache()
-// ISR handles caching at the page level
 async function getLatestNewsletter(): Promise<Newsletter | null> {
   const { data, error } = await supabase
     .from("newsletters")
@@ -59,19 +52,13 @@ async function getLatestNewsletter(): Promise<Newsletter | null> {
   return data as Newsletter;
 }
 
-// --- The Main Page Component ---
 export default async function HomePage() {
   const newsletter = await getLatestNewsletter();
 
-  // --- "No Newsletter" Fallback ---
   if (!newsletter) {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center glow-bg">
+      <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center">
         <h1 className="text-2xl font-bold">No Newsletter Available</h1>
-        <p className="mt-4 max-w-md text-lg text-muted">
-          We’re working on bringing you the latest payment industry insights.
-          Please check back soon!
-        </p>
       </main>
     );
   }
@@ -85,34 +72,19 @@ export default async function HomePage() {
   });
 
   return (
-    <div className="relative mx-auto max-w-4xl p-2 sm:p-16 lg:p-16 pt-28">
-      {/* Background grid + soft glow */}
-      <div
-        className="pointer-events-none absolute inset-0 -z-20 bg-grid-pattern opacity-35 dark:opacity-20"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute inset-0 -z-30 glow-bg"
-        aria-hidden="true"
-      />
+    <div className="relative mx-auto max-w-4xl pt-28">
+      <header className="text-center">
+        <Logo />
 
-      {/* Header */}
-      <header className="relative mb-0 pb-12 text-center">
-        <div className="mb-4">
-          <Logo />
-        </div>
-
-        <p className="mx-auto mb-6 max-w-2xl text-xl font-medium text-muted">
+        <p className="mt-6 text-xl">
           Your daily briefing on the world of payments
         </p>
 
-        {/* Date pill */}
-        <div className="inline-flex items-center gap-2 rounded-full px-4 py-2 card-surface">
-          <Calendar className="h-4 w-4 text-blue-600 dark:text-cyan-300" />
-          <span className="text-sm font-semibold">{formattedDate}</span>
+        <div className="mt-4 inline-flex items-center gap-2 rounded-full px-4 py-2">
+          <Calendar className="h-4 w-4" />
+          <span>{formattedDate}</span>
         </div>
 
-        {/* Subscribe */}
         <div className="mx-auto mt-8 max-w-2xl">
           <Suspense fallback={null}>
             <SubscribeForm source="homepage_header" />
@@ -120,17 +92,23 @@ export default async function HomePage() {
         </div>
       </header>
 
-      {/* News */}
-      <section id="news-items" className="mb-20 space-y-8">
+      <section className="mt-16 space-y-8">
         {newsletter.content.news.map((item, index) => (
-          <article
-            key={index}
-            className="group relative overflow-hidden card-surface
-                       transition-transform duration-300 ease-out
-                       hover:-translate-y-1"
-          >
-            <div className="relative p-8 sm:p-10">
-              <div className="flex items-start gap-6">
-                {/* Icon */}
-                <div
+          <article key={index}>
+            <h2 className="text-2xl font-bold">{item.title}</h2>
+            <p className="mt-2">{item.body}</p>
+            <a
+              href={`https://www.${item.source}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.source}
+            </a>
+          </article>
+        ))}
+      </section>
 
+      <Footer />
+    </div>
+  );
+}
