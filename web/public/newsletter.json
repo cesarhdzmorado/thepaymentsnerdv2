@@ -1,33 +1,33 @@
 {
   "news": [
     {
-      "title": "FTX's Caroline Ellison to Be Released Early, Aids Legal Proceedings",
-      "body": "Caroline Ellison, a key figure in the FTX cryptocurrency scandal, is set for early release on January 21, following her cooperation against CEO Sam Bankman-Fried. Her pivotal testimony could reshape legal accountability in the crypto industry, spotlighting the consequences of corporate malfeasance.",
-      "source": "PYMNTS.com"
+      "title": "FASB to Address Digital Assets Standards by 2026",
+      "body": "The Financial Accounting Standards Board (FASB) is set to tackle digital asset standards in 2026, focusing on their classification as cash equivalents and the accounting for transfers. This move underscores the growing significance of digital assets in finance, potentially reshaping how companies report these assets on their balance sheets, which could have far-reaching implications for financial reporting practices.",
+      "source": "pymnts.com"
     },
     {
-      "title": "UK's PSR Enhances Transparency with New Card Payment Fee Rules",
-      "body": "The UK's Payment Systems Regulator is introducing regulations to clarify card payment fees for businesses. This move, aimed at boosting transparency and fairness, could significantly impact the competitive landscape in financial services, ensuring businesses face fairer transaction conditions.",
-      "source": "Finextra"
+      "title": "Rezolve Launches Revenue Pools for Blockchain Services",
+      "body": "Rezolve Ai has unveiled 'Revenue Pools' via its SQD Network, aimed at enhancing blockchain data services for large enterprises. This initiative responds to the surging demand for high-performance blockchain solutions, signaling a pivotal shift towards more robust infrastructures in major organizations, which could redefine operational efficiencies in the sector.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Visa to Revolutionize Online Shopping with AI by 2026",
-      "body": "Visa is setting the stage for a major e-commerce evolution, partnering with over 100 entities to launch AI-driven, personalized shopping experiences by early 2026. This initiative could redefine consumer interactions online, offering enhanced security and customization.",
-      "source": "Finextra"
+      "title": "Coupang Offers $1.3 Billion in Vouchers After Data Breach",
+      "body": "In response to a massive data breach affecting 33.7 million customers, South Korean retailer Coupang is compensating affected individuals with vouchers worth up to $38 each. This substantial financial commitment highlights the escalating costs of cybersecurity incidents and the critical need for robust data protection measures in the retail sector.",
+      "source": "pymnts.com"
     },
     {
-      "title": "Klarna Innovates with USDC-Denominated Funding Strategy",
-      "body": "Klarna is breaking new ground by planning to raise funding in the stablecoin USDC, tapping into a novel investor base. This move not only underscores the fusion of traditional finance with cryptocurrency but also signals potential shifts in how companies manage liquidity and capital.",
-      "source": "Finextra"
+      "title": "Banks Eye Stablecoins for Cross-Border Payment Solutions",
+      "body": "A recent report reveals that banks in the US, UK, and Europe are exploring the use of stablecoins to enhance cross-border payment efficiency. With varying regulatory landscapes, this strategic shift could revolutionize international transactions, offering faster and more cost-effective solutions for financial institutions and their clients.",
+      "source": "finextra.com"
     },
     {
-      "title": "Dr. Ruth Wandh\u00f6fer to Lead UK's Transition to Open Finance",
-      "body": "Dr. Ruth Wandh\u00f6fer has been appointed to guide the UK from open banking to a broader open finance framework. This strategic shift promises to expand financial services' transparency and consumer choice, potentially revolutionizing the financial sector with enhanced data sharing.",
-      "source": "Finextra"
+      "title": "AI Startups Secure $150 Billion Amid Market Uncertainty",
+      "body": "Silicon Valley AI startups have raised a staggering $150 billion in 2023, positioning themselves for potential market downturns. This unprecedented funding reflects a robust belief in AI's long-term value, suggesting that the sector is not just a passing trend but a foundational element of future technological advancements.",
+      "source": "pymnts.com"
     }
   ],
   "curiosity": {
-    "text": "Did you know that the first credit card was issued in 1950 by Diners Club and was made of cardboard?",
-    "source": "history.com"
+    "text": "Did you know that the global blockchain market is expected to reach $163 billion by 2027? This explosive growth highlights the increasing adoption of blockchain technology across various industries.",
+    "source": "forbes.com"
   }
 }
