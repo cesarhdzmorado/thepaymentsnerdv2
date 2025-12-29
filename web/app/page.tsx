@@ -5,6 +5,7 @@
 // This prevents “stuck on last deployment” while avoiding fully-dynamic rendering.
 export const revalidate = 900; // 15 minutes (change to 3600 for 1 hour if you prefer)
 
+import { Suspense } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
@@ -113,7 +114,9 @@ export default async function HomePage() {
 
         {/* Subscribe */}
         <div className="mx-auto mt-8 max-w-2xl">
-          <SubscribeForm source="homepage_header" />
+          <Suspense fallback={null}>
+            <SubscribeForm source="homepage_header" />
+          </Suspense>
         </div>
       </header>
 
@@ -130,108 +133,4 @@ export default async function HomePage() {
               <div className="flex items-start gap-6">
                 {/* Icon */}
                 <div
-                  className="flex-shrink-0 rounded-xl p-3 text-white shadow-md
-                             bg-gradient-to-br from-blue-600 to-indigo-600
-                             dark:from-cyan-500 dark:to-indigo-500
-                             transition-transform duration-300
-                             group-hover:scale-110"
-                >
-                  <BookOpen className="h-6 w-6" />
-                </div>
 
-                <div className="min-w-0 flex-1">
-                  <div className="mb-3 text-xs font-bold uppercase tracking-wider text-blue-700/80 dark:text-cyan-300/90">
-                    Topic #{index + 1}
-                  </div>
-
-                  <h2
-                    className="mb-4 text-2xl sm:text-3xl font-bold
-                               text-slate-950 dark:text-slate-100
-                               transition-colors duration-300
-                               group-hover:text-indigo-800
-                               dark:group-hover:text-white"
-                  >
-                    {item.title}
-                  </h2>
-
-                  <p className="mb-6 text-lg leading-relaxed text-slate-700 dark:text-slate-300">
-                    {item.body}
-                  </p>
-
-                  <div className="flex items-center gap-1.5 text-sm font-medium text-muted">
-                    <ExternalLink className="h-4 w-4" />
-                    <span>Source:</span>
-
-                    <a
-                      href={`https://www.${item.source}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 font-semibold
-                                 text-blue-700 hover:underline hover:text-indigo-700
-                                 dark:text-cyan-300 dark:hover:text-cyan-200
-                                 transition-colors duration-300"
-                    >
-                      {item.source}
-                      <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* bottom sheen */}
-            <div
-              className="pointer-events-none absolute inset-x-0 bottom-0 h-px
-                         bg-gradient-to-r from-transparent via-slate-200/70 to-transparent
-                         dark:via-slate-700/60"
-              aria-hidden="true"
-            />
-          </article>
-        ))}
-      </section>
-
-      {/* Curiosity */}
-      <section id="curiosity" className="relative">
-        <div
-          className="pointer-events-none absolute inset-0 -z-10 scale-105 rounded-3xl blur-2xl
-                     bg-gradient-to-r from-amber-400/10 via-orange-400/10 to-yellow-400/10
-                     dark:from-amber-300/10 dark:via-orange-300/10 dark:to-yellow-300/10"
-          aria-hidden="true"
-        />
-
-        <div className="relative p-8 sm:p-12 text-center card-surface-strong">
-          <div className="mb-6 flex items-center justify-center gap-4">
-            <div
-              className="rounded-full p-3 text-white shadow-lg
-                         bg-gradient-to-br from-amber-500 to-orange-600
-                         dark:from-amber-400 dark:to-orange-500"
-            >
-              <Lightbulb className="h-7 w-7" />
-            </div>
-
-            <h3
-              className="text-3xl font-bold bg-clip-text text-transparent
-                         bg-gradient-to-r from-amber-700 to-orange-700
-                         dark:from-amber-300 dark:to-orange-300"
-            >
-              Did You Know?
-            </h3>
-          </div>
-
-          <blockquote className="space-y-4">
-            <p className="text-xl sm:text-2xl leading-relaxed font-medium italic text-slate-900 dark:text-slate-100">
-              “{newsletter.content.curiosity.text}”
-            </p>
-            <cite className="inline-block text-base font-semibold not-italic text-amber-800 dark:text-amber-200">
-              — {newsletter.content.curiosity.source}
-            </cite>
-          </blockquote>
-        </div>
-      </section>
-
-      <div className="mt-20">
-        <Footer />
-      </div>
-    </div>
-  );
-}
