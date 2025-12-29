@@ -119,9 +119,34 @@ jobs:
         id: send_emails_step
         run: |
           echo "Sending newsletter to all active subscribers..."
+
+          # Debug: Check if secrets are set
+          if [ -z "${{ secrets.NEXT_PUBLIC_SITE_URL }}" ]; then
+            echo "❌ ERROR: NEXT_PUBLIC_SITE_URL secret is not set!"
+            exit 1
+          fi
+
+          if [ -z "${{ secrets.CRON_SECRET }}" ]; then
+            echo "❌ ERROR: CRON_SECRET secret is not set!"
+            exit 1
+          fi
+
+          echo "✓ Secrets are set"
+          echo "Calling API endpoint: ${{ secrets.NEXT_PUBLIC_SITE_URL }}/api/send-daily"
+
+          # Make the API call
           response=$(curl -s -w "\n%{http_code}" -X GET \
             -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
             "${{ secrets.NEXT_PUBLIC_SITE_URL }}/api/send-daily")
+
+          curl_exit_code=$?
+
+          # Check if curl command succeeded
+          if [ $curl_exit_code -ne 0 ]; then
+            echo "❌ curl command failed with exit code: $curl_exit_code"
+            echo "This usually means the URL is invalid or unreachable"
+            exit 1
+          fi
 
           http_code=$(echo "$response" | tail -n1)
           body=$(echo "$response" | sed '$d')
