@@ -21,7 +21,7 @@ interface DailyNewsletterParams {
 
 /**
  * Generate a compelling subject line from newsletter content
- * Format: "Today on Payments: Topic1 & Topic2"
+ * Format: "/thepaymentsnerd: Topic1 & Topic2"
  */
 export function generateEmailSubject(news: NewsItem[]): string {
   // Extract key topics from first 2 news items
@@ -38,9 +38,9 @@ export function generateEmailSubject(news: NewsItem[]): string {
     return words.length < title.length ? words + '...' : words;
   });
 
-  // Join with & and create subject
+  // Join with & and create subject with /thepaymentsnerd branding
   const highlight = topics.join(' & ');
-  return `Today on Payments: ${highlight}`;
+  return `/thepaymentsnerd: ${highlight}`;
 }
 
 export function generateDailyNewsletterEmail({
@@ -111,12 +111,12 @@ export function generateDailyNewsletterEmail({
                 </table>
 
                 <!-- Title -->
-                <h2 style="margin: 0 0 12px; font-size: 20px; font-weight: 700; color: #0f172a; line-height: 1.3;">
+                <h2 style="margin: 0 0 12px; font-size: 22px; font-weight: 700; color: #0f172a; line-height: 1.3;">
                   ${item.title}
                 </h2>
 
                 <!-- Body -->
-                <p style="margin: 0 0 14px; font-size: 16px; color: #334155; line-height: 1.6;">
+                <p style="margin: 0 0 14px; font-size: 17px; color: #334155; line-height: 1.6;">
                   ${item.body}
                 </p>
 
@@ -143,7 +143,7 @@ export function generateDailyNewsletterEmail({
                     <p style="margin: 0 0 6px; font-size: 12px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">
                       📊 The Nerd's Perspective
                     </p>
-                    <p style="margin: 0; font-size: 16px; color: #1e293b; line-height: 1.6; font-style: italic;">
+                    <p style="margin: 0; font-size: 17px; color: #1e293b; line-height: 1.6; font-style: italic;">
                       ${perspective}
                     </p>
                   </td>
@@ -164,10 +164,10 @@ export function generateDailyNewsletterEmail({
                     <p style="margin: 0 0 10px; font-size: 12px; font-weight: 700; color: #92400e; text-transform: uppercase; letter-spacing: 0.5px;">
                       💡 Did You Know?
                     </p>
-                    <p style="margin: 0 0 8px; font-size: 15px; color: #78350f; line-height: 1.5;">
+                    <p style="margin: 0 0 8px; font-size: 16px; color: #78350f; line-height: 1.5;">
                       ${curiosity.text}
                     </p>
-                    <p style="margin: 0; font-size: 13px; color: #a16207; font-style: italic;">
+                    <p style="margin: 0; font-size: 14px; color: #a16207; font-style: italic;">
                       — ${curiosity.source}
                     </p>
                   </td>
