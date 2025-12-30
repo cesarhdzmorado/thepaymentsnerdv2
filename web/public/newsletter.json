@@ -1,34 +1,34 @@
 {
   "news": [
     {
-      "title": "CFOs Embrace Real-Time Settlements, Shifting Banking Stability Landscape",
-      "body": "CFOs are increasingly prioritizing real-time settlements, moving away from traditional batch cycles to enhance financial stability. This shift is expected to attract clients seeking reliable cash flow management, fundamentally altering banking and enterprise finance. Firms that adopt this technology will likely gain a competitive edge, while those lagging may struggle to retain clients. Watch for increased investments in real-time payment infrastructure as firms adapt to this trend.",
+      "title": "Price.com's AI Checkout Could Disrupt E-Commerce Dynamics and Brand Loyalty",
+      "body": "Price.com has launched 'Buy with AI,' an AI-driven feature that autonomously searches for products, applies discounts, and completes purchases online. This innovation could shift market power towards AI platforms, reducing traditional e-commerce sites' control over the consumer journey. Retailers may face challenges in maintaining direct consumer engagement, while consumers benefit from enhanced convenience. Watch for increased competition among AI providers as they strive to offer similar services.",
+      "source": "https://www.pymnts.com/artificial-intelligence-2/2025/who-controls-checkout-price-com-pushes-ai-from-recommendation-to-execution/"
+    },
+    {
+      "title": "Citigroup's $1.2B Exit from Russia Signals Strategic Shift for Western Banks",
+      "body": "Citigroup has decided to sell its remaining Russian operations, incurring a $1.2 billion loss, as part of a broader trend of Western companies divesting from Russia due to geopolitical tensions. This exit could increase market share for local banks or other international banks willing to operate in Russia. Other financial institutions may reassess their Russian operations, potentially leading to further exits. Despite the loss, Citigroup may benefit long-term by reallocating resources to more stable markets.",
+      "source": "https://www.finextra.com/newsarticle/47095/citigroup-to-sell-remaining-russian-operations-at-12bn-loss"
+    },
+    {
+      "title": "Real-Time Settlements Adoption Signals Shift in Financial Operations",
+      "body": "CFOs are increasingly adopting real-time settlements to enhance financial stability and cash flow management, indicating a significant shift in operational strategies across industries. Firms offering real-time settlement solutions may gain a competitive edge, attracting clients seeking efficiency. This trend could lead to a decline in traditional batch processing systems, prompting tech upgrades across the industry. While beneficial, real-time settlements may increase operational risks if not managed properly.",
       "source": "https://www.pymnts.com/news/b2b-payments/2025/cfos-bet-on-real-time-settlements-for-stability/"
     },
     {
-      "title": "Crypto Tax Reporting Framework Launches in 2026, Impacting Platforms",
-      "body": "Starting January 1, 2026, the Crypto-Asset Reporting Framework will mandate 48 jurisdictions to require detailed customer information from crypto platforms for tax purposes. This regulation will challenge platforms to enhance compliance, potentially reshaping user trust and market dynamics. Platforms that adapt quickly may capture market share, while those that falter could see a decline in users. This signals a tightening grip of regulation on the crypto space, which could stifle innovation.",
-      "source": "https://www.pymnts.com/cryptocurrency/2025/crypto-tax-reporting-requirements-set-to-begin-in-uk-and-europe/"
-    },
-    {
-      "title": "Bitcoin ATMs Linked to $333.5M in Scams, Threatening Industry Trust",
-      "body": "Scams involving Bitcoin ATMs have surged, resulting in $333.5 million lost from January to November 2025, a significant increase from the previous year. This alarming trend poses a threat to the credibility of Bitcoin ATMs and could lead to stricter regulations impacting operators. As fraud rises, expect a push for enhanced security measures in cryptocurrency transactions. This situation may paradoxically drive innovation in security solutions, ultimately benefiting the industry.",
-      "source": "https://www.pymnts.com/cryptocurrency/2025/bitcoin-atms-become-preferred-method-of-payment-for-scammers/"
-    },
-    {
-      "title": "Fintech Mercury Seeks OCC Bank Charter, Aiming for Competitive Edge",
-      "body": "Fintech Mercury has applied for a national bank charter from the OCC, appointing a former SoFi executive as CEO to lead this initiative. Securing a bank charter could enable Mercury to expand its service offerings and compete more effectively with traditional banks. However, the regulatory scrutiny that comes with this application may slow its growth trajectory. This reflects a broader trend of fintechs pursuing bank charters to enhance credibility and operational capabilities.",
-      "source": "https://www.bankingdive.com/news/fintech-mercury-apply-occ-national-bank-charter-fdic-fed-jon-auxier-sofi/808411/"
-    },
-    {
-      "title": "Klarna and Shift4's Stablecoin Ventures Signal Digital Currency Shift",
-      "body": "Klarna and Shift4 have announced their ventures into stablecoins, marking a significant shift towards digital currencies in the payments landscape. This move could enhance payment efficiency and attract a new demographic of crypto-savvy customers, challenging traditional payment methods. As more companies integrate stablecoins, expect potential regulatory developments to emerge. However, the inherent volatility of crypto markets poses risks to stablecoin adoption in mainstream payments.",
+      "title": "Klarna and Shift4's Stablecoin Ventures Could Accelerate Digital Currency Adoption",
+      "body": "Klarna and Shift4 have announced new ventures involving stablecoins, expanding their payment offerings and potentially reshaping the payments landscape. Early adopters of stablecoins may gain a competitive advantage by providing innovative payment solutions. This could accelerate the adoption of stablecoins in mainstream commerce, influencing regulatory discussions. However, stablecoins still face regulatory hurdles that could limit their impact.",
       "source": "https://www.paymentsdive.com/news/klarna-shift4-embrace-stablecoins/808586/"
+    },
+    {
+      "title": "Fed's Proposed 'Skinny' Account Could Democratize Access to Financial Services",
+      "body": "The Federal Reserve is seeking public input on a proposed special payments account for financial institutions, which could democratize access to Fed services and level the playing field for smaller institutions. This initiative may lead to innovative payment solutions and increased competition in the financial sector. However, established banks may resist the proposal, wary of increased competition. This reflects ongoing efforts to modernize and democratize the financial infrastructure.",
+      "source": "https://www.bankingdive.com/news/fed-seeks-skinny-account-comment-waller/808530/"
     }
   ],
-  "perspective": "I'm watching the increasing regulatory pressures on both crypto platforms and traditional banks as they adapt to new market realities. The push for real-time settlements and stablecoin adoption indicates a significant shift in how payments will be processed in the future. As these trends evolve, the competitive landscape will likely favor those who can innovate while navigating regulatory challenges.",
+  "perspective": "I'm watching how the integration of AI in consumer transactions and the shift towards real-time settlements are reshaping the payments landscape. The Fed's proposed account could further democratize access to financial services, but established players may push back. As we head into 2026, the regulatory environment for stablecoins will be crucial to watch, especially with Klarna and Shift4 leading the charge.",
   "curiosity": {
-    "text": "Did you know that Bitcoin ATMs are now the preferred payment method for scammers, with losses reaching $333.5 million in 2025?",
+    "text": "Did you know that Bitcoin ATMs have become a preferred method of payment for scammers, with $333.5 million lost to fraud in the US this year?",
     "source": "https://www.pymnts.com/cryptocurrency/2025/bitcoin-atms-become-preferred-method-of-payment-for-scammers/"
   }
 }
