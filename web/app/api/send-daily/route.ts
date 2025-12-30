@@ -53,6 +53,7 @@ export async function GET(req: Request) {
       const emailHtml = generateDailyNewsletterEmail({
         publicationDate: newsletter.publication_date,
         news: newsletter.content.news,
+        perspective: newsletter.content.perspective,
         curiosity: newsletter.content.curiosity,
         unsubscribeUrl: unsubUrl,
       });
@@ -62,6 +63,11 @@ export async function GET(req: Request) {
         to: sub.email,
         subject: emailSubject,
         html: emailHtml,
+        headers: {
+          'X-Entity-Ref-ID': newsletter.publication_date,
+          'List-Unsubscribe': `<${unsubUrl}>`,
+          'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
+        },
       });
 
       sent++;
