@@ -54,7 +54,7 @@ export function SubscribeModal() {
           </button>
 
           {/* Content */}
-          <div className="p-6">
+          <div className="p-8 sm:p-12">
             <SubscribeForm source="modal_popup" />
           </div>
         </div>
@@ -100,7 +100,7 @@ export function SubscribeButton() {
               </button>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-8 sm:p-12">
                 <SubscribeForm source="subscribe_button" />
               </div>
             </div>
