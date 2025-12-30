@@ -10,6 +10,10 @@ from bs4 import BeautifulSoup
 from duckduckgo_search import DDGS
 import feedparser
 
+# Retry configuration
+MAX_RETRIES = 3
+RETRY_DELAY = 2  # seconds
+
 @tool
 def search_tool(query: str) -> str:
     """Performs a web search to find relevant URLs."""
@@ -27,42 +31,71 @@ def search_tool(query: str) -> str:
 
 @tool
 def scrape_tool(url: str) -> str:
-    """Scrapes the text content of a single webpage."""
-    try:
-        cached = _get_cached(("scrape", url))
-        if cached is not None:
-            return cached
-        headers = {'User-Agent': 'Mozilla/5.0'}
-        response = _session.get(url, headers=headers, timeout=10)
-        soup = BeautifulSoup(response.text, 'lxml')
-        for tag in soup(['script', 'style', 'nav', 'footer', 'header']):
-            tag.decompose()
-        output = soup.get_text(strip=True)[:4000]
-        _set_cached(("scrape", url), output)
-        return output
-    except Exception as e:
-        return f"Error scraping: {e}"
+    """Scrapes the text content of a single webpage with retry logic."""
+    cached = _get_cached(("scrape", url))
+    if cached is not None:
+        return cached
+
+    # Retry logic for failed scrapes
+    last_error = None
+    for attempt in range(MAX_RETRIES):
+        try:
+            headers = {'User-Agent': 'Mozilla/5.0'}
+            response = _session.get(url, headers=headers, timeout=10)
+            response.raise_for_status()  # Raise error for bad status codes
+
+            soup = BeautifulSoup(response.text, 'lxml')
+            for tag in soup(['script', 'style', 'nav', 'footer', 'header']):
+                tag.decompose()
+            output = soup.get_text(strip=True)[:4000]
+            _set_cached(("scrape", url), output)
+            return output
+
+        except Exception as e:
+            last_error = e
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY)
+                continue
+
+    return f"Error scraping {url} after {MAX_RETRIES} attempts: {last_error}"
 
 @tool
 def rss_tool(rss_feed_url: str) -> str:
-    """Fetches articles from an RSS feed."""
-    try:
-        cached = _get_cached(("rss", rss_feed_url))
-        if cached is not None:
-            return cached
-        feed = feedparser.parse(rss_feed_url)
-        entries = _filter_recent_entries(feed.entries, hours=48)[:5]
-        if not entries:
-            return "No articles found."
-        summaries = [
-            f"Title: {e.get('title', 'N/A')}\nSummary: {BeautifulSoup(e.get('summary', ''), 'lxml').get_text(strip=True)}"
-            for e in entries
-        ]
-        output = "\n\n".join(summaries)
-        _set_cached(("rss", rss_feed_url), output)
-        return output
-    except Exception as e:
-        return f"Error reading RSS feed: {e}"
+    """Fetches articles from an RSS feed with retry logic for reliability."""
+    cached = _get_cached(("rss", rss_feed_url))
+    if cached is not None:
+        return cached
+
+    # Retry logic for failed feeds
+    last_error = None
+    for attempt in range(MAX_RETRIES):
+        try:
+            feed = feedparser.parse(rss_feed_url)
+
+            # Check if feed parsed successfully
+            if hasattr(feed, 'bozo_exception'):
+                raise feed.bozo_exception
+
+            # Increased from 5 to 10 entries for broader coverage
+            entries = _filter_recent_entries(feed.entries, hours=48)[:10]
+            if not entries:
+                return f"No recent articles found in {rss_feed_url}"
+
+            summaries = [
+                f"Title: {e.get('title', 'N/A')}\nLink: {e.get('link', 'N/A')}\nSummary: {BeautifulSoup(e.get('summary', ''), 'lxml').get_text(strip=True)}"
+                for e in entries
+            ]
+            output = "\n\n".join(summaries)
+            _set_cached(("rss", rss_feed_url), output)
+            return output
+
+        except Exception as e:
+            last_error = e
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY)
+                continue
+
+    return f"Error reading RSS feed {rss_feed_url} after {MAX_RETRIES} attempts: {last_error}"
 
 
 _CACHE_TTL_SECONDS = 6 * 60 * 60
@@ -86,6 +119,7 @@ def _set_cached(key: Tuple[str, str], value: str) -> None:
 
 
 def _filter_recent_entries(entries, hours: int) -> list:
+    """Filter RSS entries to only include recent ones within specified hours."""
     cutoff = time.time() - (hours * 60 * 60)
     recent = []
     for entry in entries:
@@ -95,3 +129,52 @@ def _filter_recent_entries(entries, hours: int) -> list:
             if published_ts >= cutoff:
                 recent.append(entry)
     return recent or list(entries)
+
+
+def _calculate_similarity(text1: str, text2: str) -> float:
+    """
+    Calculate similarity between two texts using a simple word overlap metric.
+    Returns a score between 0 (completely different) and 1 (identical).
+    """
+    # Simple word-based similarity
+    words1 = set(text1.lower().split())
+    words2 = set(text2.lower().split())
+
+    if not words1 or not words2:
+        return 0.0
+
+    intersection = words1.intersection(words2)
+    union = words1.union(words2)
+
+    return len(intersection) / len(union) if union else 0.0
+
+
+def deduplicate_stories(stories: list, similarity_threshold: float = 0.4) -> list:
+    """
+    Remove duplicate or highly similar stories from a list.
+    Each story should be a dict with 'title' and optionally 'summary' or 'body'.
+    Returns deduplicated list of stories.
+    """
+    if not stories:
+        return []
+
+    deduplicated = []
+    seen_content = []
+
+    for story in stories:
+        # Combine title and body/summary for comparison
+        story_text = story.get('title', '') + ' ' + story.get('body', story.get('summary', ''))
+
+        # Check against already seen stories
+        is_duplicate = False
+        for seen in seen_content:
+            similarity = _calculate_similarity(story_text, seen)
+            if similarity > similarity_threshold:
+                is_duplicate = True
+                break
+
+        if not is_duplicate:
+            deduplicated.append(story)
+            seen_content.append(story_text)
+
+    return deduplicated
