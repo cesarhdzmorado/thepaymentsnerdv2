@@ -12,6 +12,7 @@ import { Footer } from "@/components/Footer";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { NewsletterNavigation } from "@/components/NewsletterNavigation";
+import { getPublicationName, ensureHttps } from "@/lib/publicationNames";
 import {
   ArrowRight,
   BookOpen,
@@ -229,7 +230,7 @@ export default async function HomePage({
                     <span>Source:</span>
 
                     <a
-                      href={`https://www.${item.source}`}
+                      href={ensureHttps(item.source)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 font-semibold
@@ -237,7 +238,7 @@ export default async function HomePage({
                                  dark:text-cyan-300 dark:hover:text-cyan-200
                                  transition-all duration-300 group/link"
                     >
-                      {item.source}
+                      {getPublicationName(item.source)}
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1" />
                     </a>
                   </div>
