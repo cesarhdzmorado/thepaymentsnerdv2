@@ -13,12 +13,12 @@ export function SubscribeModal() {
     const hasSeenModal = sessionStorage.getItem("subscribeModalShown");
 
     if (!hasSeenModal && !hasShown) {
-      // Show modal after 3 seconds
+      // Show modal after 2 seconds
       const timer = setTimeout(() => {
         setIsOpen(true);
         setHasShown(true);
         sessionStorage.setItem("subscribeModalShown", "true");
-      }, 3000);
+      }, 2000);
 
       return () => clearTimeout(timer);
     }
@@ -34,7 +34,7 @@ export function SubscribeModal() {
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 animate-fade-in"
+        className="fixed inset-0 bg-black/60 backdrop-blur-md z-50 animate-fade-in"
         onClick={closeModal}
       />
 
@@ -80,7 +80,7 @@ export function SubscribeButton() {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 animate-fade-in"
+            className="fixed inset-0 bg-black/60 backdrop-blur-md z-50 animate-fade-in"
             onClick={() => setIsOpen(false)}
           />
 
