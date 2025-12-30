@@ -82,7 +82,7 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
       </div>
 
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
+      <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3 px-4">
         Get the daily briefing by email
       </h2>
 
@@ -92,7 +92,7 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
       </p>
 
       {/* Form */}
-      <form onSubmit={onSubmit} className="w-full px-4">
+      <form onSubmit={onSubmit} className="w-full max-w-xl mx-auto px-4">
         <div className="flex flex-col sm:flex-row gap-3">
           <div className="relative flex-1">
             <input
