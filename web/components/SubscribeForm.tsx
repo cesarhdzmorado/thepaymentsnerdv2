@@ -87,12 +87,12 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
       </h2>
 
       {/* Subtitle */}
-      <p className="text-base text-slate-600 dark:text-slate-400 mb-8 max-w-md mx-auto">
+      <p className="text-base text-slate-600 dark:text-slate-400 mb-8 px-4">
         One payments insight per day. No noise. Confirm via email.
       </p>
 
       {/* Form */}
-      <form onSubmit={onSubmit} className="max-w-md mx-auto">
+      <form onSubmit={onSubmit} className="w-full px-4">
         <div className="flex flex-col sm:flex-row gap-3">
           <div className="relative flex-1">
             <input

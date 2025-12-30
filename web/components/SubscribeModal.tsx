@@ -41,7 +41,7 @@ export function SubscribeModal() {
       {/* Modal */}
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
         <div
-          className="relative w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl shadow-2xl pointer-events-auto animate-scale-in"
+          className="relative w-full max-w-lg bg-white dark:bg-slate-900 rounded-2xl shadow-2xl pointer-events-auto animate-scale-in"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Close Button */}
@@ -87,7 +87,7 @@ export function SubscribeButton() {
           {/* Modal */}
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
             <div
-              className="relative w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl shadow-2xl pointer-events-auto animate-scale-in"
+              className="relative w-full max-w-lg bg-white dark:bg-slate-900 rounded-2xl shadow-2xl pointer-events-auto animate-scale-in"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
