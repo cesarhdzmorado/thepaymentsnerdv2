@@ -1,11 +1,28 @@
 newsletters:
+  # Core Payments Industry Sources
   - url: "https://www.pymnts.com/feed/"
     topic: "General Payments News"
   - url: "https://www.finextra.com/rss/headlines.aspx"
-    topic: "General Payments News"
+    topic: "General Financial Technology News"
   - url: "https://www.finextra.com/rss/channel.aspx?channel=payments"
-    topic: "General Payments News"
-  - url: "https://www.coindesk.com/arc/outboundfeeds/rss/"
-    topic: "General Crypto News"
+    topic: "Payments-Specific Industry News"
+
+  # Banking & Regulatory
+  - url: "https://www.americanbanker.com/payments/feed"
+    topic: "US Banking Payments & Regulation"
+  - url: "https://www.bankingdive.com/feeds/news/"
+    topic: "Digital Banking Strategy & Innovation"
+
+  # Fintech & Innovation
+  - url: "https://techcrunch.com/tag/fintech/feed/"
+    topic: "Fintech Funding, Startups & Innovation"
+  - url: "https://www.paymentsdive.com/feeds/news/"
+    topic: "Payment Industry Trends & Analysis"
+
+  # Crypto & Blockchain (more payments-focused)
+  - url: "https://www.theblock.co/rss.xml"
+    topic: "Crypto Infrastructure & Digital Assets"
+
+  # Keep FT for high-level financial news
   - url: "https://www.ft.com/myft/following/4bc212f8-bfee-4452-80e4-5e6ed76b337e.rss"
-    topic: "FT Rss feed"
+    topic: "Financial Times Curated Feed"

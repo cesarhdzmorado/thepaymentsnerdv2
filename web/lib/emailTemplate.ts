@@ -12,6 +12,7 @@ interface Curiosity {
 interface DailyNewsletterParams {
   publicationDate: string;
   news: NewsItem[];
+  perspective?: string;  // Optional editorial perspective/synthesis
   curiosity: Curiosity;
   unsubscribeUrl: string;
 }
@@ -43,6 +44,7 @@ export function generateEmailSubject(news: NewsItem[]): string {
 export function generateDailyNewsletterEmail({
   publicationDate,
   news,
+  perspective,
   curiosity,
   unsubscribeUrl,
 }: DailyNewsletterParams): string {
@@ -194,6 +196,48 @@ export function generateDailyNewsletterEmail({
               `).join('')}
             </td>
           </tr>
+
+          ${perspective ? `
+          <!-- The Nerd's Perspective Section -->
+          <tr>
+            <td style="padding: 0 40px;">
+              <div style="height: 1px; background: linear-gradient(90deg, transparent, #e2e8f0, transparent);"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 32px 40px;">
+              <!-- Perspective Card -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 16px; border: 2px solid #3b82f6;">
+                <tr>
+                  <td style="padding: 28px 28px;">
+                    <!-- Header -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin-bottom: 16px;">
+                      <tr>
+                        <td style="padding-right: 12px; line-height: 0;">
+                          <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 10px; display: inline-flex; align-items: center; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                          </div>
+                        </td>
+                        <td>
+                          <h3 style="margin: 0; font-size: 22px; font-weight: 700; color: #1e40af;">
+                            📊 The Nerd's Perspective
+                          </h3>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Perspective Text -->
+                    <p style="margin: 0; font-size: 18px; color: #1e3a8a; line-height: 1.7; font-weight: 500; font-style: italic;">
+                      ${perspective}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          ` : ''}
 
           <!-- Curiosity Section -->
           <tr>
