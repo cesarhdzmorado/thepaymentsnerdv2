@@ -247,20 +247,20 @@ EDITORIAL PROCESS:
 
 OUTPUT FORMAT (MUST BE VALID JSON):
 
-{{
+{{{{
   "news": [
-    {{
+    {{{{
       "title": "...",
       "body": "...",
       "source": "..."
-    }}
+    }}}}
   ],
   "perspective": "...",
-  "curiosity": {{
+  "curiosity": {{{{
     "text": "...",
     "source": "..."
-  }}
-}}
+  }}}}
+}}}}
 
 CRITICAL RULES:
 - Return ONLY the JSON object, no markdown formatting, no additional text
