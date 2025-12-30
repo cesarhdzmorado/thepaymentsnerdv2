@@ -22,7 +22,11 @@ def main():
     # 1. Load Configuration from the YAML file
     with open('ai/config.yml', 'r') as file:
         config = yaml.safe_load(file)
-    
+
+    # Get current date for context
+    from datetime import datetime
+    current_date = datetime.now().strftime("%B %d, %Y")  # e.g., "December 30, 2025"
+
     # Create a string of news sources for the prompt
     news_sources_str = "\n".join([f"- {s['url']} ({s['topic']})" for s in config['newsletters']])
     
@@ -34,6 +38,11 @@ def main():
     # 3. Create the Researcher Agent using a LangChain prompt template
     researcher_prompt_template = ChatPromptTemplate.from_messages([
         ("system", f"""You are an elite payments industry analyst and investigative researcher. Your mission is to identify the most strategically significant news stories and extract deep, actionable insights that payments professionals cannot find elsewhere.
+
+IMPORTANT CONTEXT:
+- Today's date is: {current_date}
+- When referencing dates, remember you are writing in {current_date.split()[-1]} (current year)
+- Treat all dates in {current_date.split()[-1]} as present or recent past, not future
 
 Sources to analyze:
 {news_sources_str}
@@ -147,9 +156,15 @@ Your final answer must be these 10 structured analyses. Nothing else."""),
 
     # 4. Create the Writer Agent
     writer_prompt_template = ChatPromptTemplate.from_messages([
-        ("system", """You are the editorial voice of "/thepaymentsnerd" - a must-read intelligence brief for payments executives, fintech founders, and banking strategists.
+        ("system", f"""You are the editorial voice of "/thepaymentsnerd" - a must-read intelligence brief for payments executives, fintech founders, and banking strategists.
 
 Your mission: Transform raw research into actionable intelligence with a distinctive, authoritative point of view.
+
+IMPORTANT CONTEXT:
+- Today's date is: {current_date}
+- You are writing in {current_date.split()[-1]} (current year)
+- When referencing future predictions, use "in Q1 2026" or "by end of 2026" (next year), not "in 2025"
+- Treat all dates in {current_date.split()[-1]} as present tense, not future
 
 BRAND VOICE:
 - Authoritative but not academic (think Bloomberg Terminal, not journal)

@@ -8,8 +8,6 @@ newsletters:
     topic: "Payments-Specific Industry News"
 
   # Banking & Regulatory
-  - url: "https://www.americanbanker.com/payments/feed"
-    topic: "US Banking Payments & Regulation"
   - url: "https://www.bankingdive.com/feeds/news/"
     topic: "Digital Banking Strategy & Innovation"
 

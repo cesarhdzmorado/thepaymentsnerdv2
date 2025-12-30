@@ -18,6 +18,44 @@ interface DailyNewsletterParams {
 }
 
 /**
+ * Extract publication name from a URL
+ * Examples:
+ *   https://www.pymnts.com/article -> "PYMNTS"
+ *   https://techcrunch.com/article -> "TechCrunch"
+ *   https://www.finextra.com/article -> "Finextra"
+ */
+function getPublicationName(url: string): string {
+  try {
+    const urlObj = new URL(url);
+    const hostname = urlObj.hostname.replace('www.', '');
+
+    // Map of domains to clean publication names
+    const nameMap: Record<string, string> = {
+      'pymnts.com': 'PYMNTS',
+      'finextra.com': 'Finextra',
+      'techcrunch.com': 'TechCrunch',
+      'bankingdive.com': 'Banking Dive',
+      'paymentsdive.com': 'Payments Dive',
+      'theblock.co': 'The Block',
+      'ft.com': 'Financial Times',
+      'coindesk.com': 'CoinDesk',
+    };
+
+    // Check if we have a mapped name
+    if (nameMap[hostname]) {
+      return nameMap[hostname];
+    }
+
+    // Otherwise, capitalize the domain name
+    const domainName = hostname.split('.')[0];
+    return domainName.charAt(0).toUpperCase() + domainName.slice(1);
+  } catch (e) {
+    // If URL parsing fails, return the original string
+    return url;
+  }
+}
+
+/**
  * Generate a compelling subject line from newsletter content
  * Format: "Today on Payments: Topic1 & Topic2"
  */
@@ -174,8 +212,8 @@ export function generateDailyNewsletterEmail({
                                   Source:
                                 </td>
                                 <td style="padding-left: 4px;">
-                                  <a href="https://www.${item.source}" target="_blank" rel="noopener noreferrer" style="font-size: 16px; color: #2563eb; font-weight: 600; text-decoration: none;">
-                                    ${item.source}
+                                  <a href="${item.source.startsWith('http') ? item.source : `https://${item.source}`}" target="_blank" rel="noopener noreferrer" style="font-size: 16px; color: #2563eb; font-weight: 600; text-decoration: none;">
+                                    ${getPublicationName(item.source)}
                                   </a>
                                 </td>
                               </tr>
