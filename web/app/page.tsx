@@ -9,7 +9,7 @@ import { Suspense } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
-import { SubscribeForm } from "@/components/SubscribeForm";
+import { SubscribeButton } from "@/components/SubscribeModal";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { NewsletterNavigation } from "@/components/NewsletterNavigation";
 import { getPublicationName, ensureHttps } from "@/lib/publicationNames";
@@ -170,10 +170,10 @@ export default async function HomePage({
           <span className="text-sm font-semibold">{formattedDate}</span>
         </div>
 
-        {/* Subscribe */}
-        <div className="mx-auto mt-10 max-w-2xl animate-fade-in-up delay-300">
+        {/* Subscribe Button */}
+        <div className="mx-auto mt-10 animate-fade-in-up delay-300">
           <Suspense fallback={null}>
-            <SubscribeForm source="homepage_header" />
+            <SubscribeButton />
           </Suspense>
         </div>
       </header>
