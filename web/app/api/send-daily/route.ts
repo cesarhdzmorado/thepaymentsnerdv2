@@ -53,6 +53,7 @@ export async function GET(req: Request) {
       const emailHtml = generateDailyNewsletterEmail({
         publicationDate: newsletter.publication_date,
         news: newsletter.content.news,
+        perspective: newsletter.content.perspective,
         curiosity: newsletter.content.curiosity,
         unsubscribeUrl: unsubUrl,
       });
