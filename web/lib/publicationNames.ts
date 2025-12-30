@@ -30,7 +30,7 @@ export function getPublicationName(url: string): string {
     // Otherwise, capitalize the domain name
     const domainName = hostname.split('.')[0];
     return domainName.charAt(0).toUpperCase() + domainName.slice(1);
-  } catch (e) {
+  } catch {
     // If URL parsing fails, return the original string
     return url;
   }
@@ -40,6 +40,7 @@ export function getPublicationName(url: string): string {
  * Ensure URL has proper protocol
  */
 export function ensureHttps(url: string): string {
+  if (!url) return url;
   if (url.startsWith('http://') || url.startsWith('https://')) {
     return url;
   }
