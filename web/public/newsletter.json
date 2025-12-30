@@ -1,34 +1,34 @@
 {
   "news": [
     {
-      "title": "Price.com's AI Checkout Could Disrupt E-Commerce Dynamics and Brand Loyalty",
-      "body": "Price.com has launched 'Buy with AI,' an AI-driven feature that autonomously searches for products, applies discounts, and completes purchases online. This innovation could shift market power towards AI platforms, reducing traditional e-commerce sites' control over the consumer journey. Retailers may face challenges in maintaining direct consumer engagement, while consumers benefit from enhanced convenience. Watch for increased competition among AI providers as they strive to offer similar services.",
+      "title": "Price.com's AI-Driven Shopping Feature Threatens Retailer Brand Loyalty",
+      "body": "Price.com has launched 'Buy with AI,' an autonomous shopping feature that finds products, applies discounts, and completes purchases without user intervention. This shift could undermine traditional e-commerce platforms, as AI intermediaries gain power, potentially reducing direct consumer engagement with brands. Retailers must adapt quickly to integrate AI solutions or risk losing market share to these new players. Watch for increased regulatory scrutiny as AI-driven commerce evolves.",
       "source": "https://www.pymnts.com/artificial-intelligence-2/2025/who-controls-checkout-price-com-pushes-ai-from-recommendation-to-execution/"
     },
     {
-      "title": "Citigroup's $1.2B Exit from Russia Signals Strategic Shift for Western Banks",
-      "body": "Citigroup has decided to sell its remaining Russian operations, incurring a $1.2 billion loss, as part of a broader trend of Western companies divesting from Russia due to geopolitical tensions. This exit could increase market share for local banks or other international banks willing to operate in Russia. Other financial institutions may reassess their Russian operations, potentially leading to further exits. Despite the loss, Citigroup may benefit long-term by reallocating resources to more stable markets.",
+      "title": "New Crypto Tax Reporting Framework Set to Reshape European Market",
+      "body": "Starting January 1, 2026, the Crypto-Asset Reporting Framework (CARF) will mandate detailed tax reporting for crypto platforms across 48 jurisdictions in Europe. This regulatory shift will challenge smaller platforms that may lack the resources to comply, potentially leading to market consolidation. Platforms with strong compliance capabilities could emerge as leaders, while the increased transparency may foster greater trust in the crypto ecosystem. However, the burden of compliance could stifle innovation in the sector.",
+      "source": "https://www.pymnts.com/cryptocurrency/2025/crypto-tax-reporting-requirements-set-to-begin-in-uk-and-europe/"
+    },
+    {
+      "title": "Citigroup's $1.2B Loss Signals Strategic Retreat from Russian Market",
+      "body": "Citigroup is exiting its Russian operations, incurring a $1.2 billion loss, which may open doors for local banks to expand their presence in the region. This move reflects a broader trend of Western financial institutions reducing exposure to Russia amid ongoing geopolitical tensions. The exit could allow Citigroup to reallocate resources to more profitable markets, but it also raises questions about the future of foreign investment in Russia.",
       "source": "https://www.finextra.com/newsarticle/47095/citigroup-to-sell-remaining-russian-operations-at-12bn-loss"
     },
     {
-      "title": "Real-Time Settlements Adoption Signals Shift in Financial Operations",
-      "body": "CFOs are increasingly adopting real-time settlements to enhance financial stability and cash flow management, indicating a significant shift in operational strategies across industries. Firms offering real-time settlement solutions may gain a competitive edge, attracting clients seeking efficiency. This trend could lead to a decline in traditional batch processing systems, prompting tech upgrades across the industry. While beneficial, real-time settlements may increase operational risks if not managed properly.",
-      "source": "https://www.pymnts.com/news/b2b-payments/2025/cfos-bet-on-real-time-settlements-for-stability/"
-    },
-    {
-      "title": "Klarna and Shift4's Stablecoin Ventures Could Accelerate Digital Currency Adoption",
-      "body": "Klarna and Shift4 have announced new ventures involving stablecoins, expanding their payment offerings and potentially reshaping the payments landscape. Early adopters of stablecoins may gain a competitive advantage by providing innovative payment solutions. This could accelerate the adoption of stablecoins in mainstream commerce, influencing regulatory discussions. However, stablecoins still face regulatory hurdles that could limit their impact.",
+      "title": "Klarna and Shift4's Stablecoin Ventures Challenge Traditional Payments",
+      "body": "Klarna and Shift4 are venturing into stablecoins, indicating a significant shift towards digital currencies in mainstream payments. This move positions them as innovators in the payments landscape, potentially disrupting traditional payment methods. As stablecoins gain traction, we may see accelerated adoption in e-commerce and cross-border transactions, but regulatory hurdles and consumer skepticism could pose challenges. Watch for how these developments influence the broader payments ecosystem.",
       "source": "https://www.paymentsdive.com/news/klarna-shift4-embrace-stablecoins/808586/"
     },
     {
-      "title": "Fed's Proposed 'Skinny' Account Could Democratize Access to Financial Services",
-      "body": "The Federal Reserve is seeking public input on a proposed special payments account for financial institutions, which could democratize access to Fed services and level the playing field for smaller institutions. This initiative may lead to innovative payment solutions and increased competition in the financial sector. However, established banks may resist the proposal, wary of increased competition. This reflects ongoing efforts to modernize and democratize the financial infrastructure.",
-      "source": "https://www.bankingdive.com/news/fed-seeks-skinny-account-comment-waller/808530/"
+      "title": "FIS's $210M Settlement Highlights Risks in Payments M&A Activity",
+      "body": "FIS has agreed to a $210 million settlement related to its 2019 acquisition of Worldpay, raising concerns about the scrutiny of large acquisitions in the payments sector. This settlement could impact FIS's financial health and strategic focus, potentially altering its competitive positioning. As regulatory oversight increases, future M&A activity may face heightened challenges, prompting companies to reassess their acquisition strategies. This trend underscores the need for thorough due diligence in the payments landscape.",
+      "source": "https://www.paymentsdive.com/news/fis-agrees-to-pay-210m-settlement/808651/"
     }
   ],
-  "perspective": "I'm watching how the integration of AI in consumer transactions and the shift towards real-time settlements are reshaping the payments landscape. The Fed's proposed account could further democratize access to financial services, but established players may push back. As we head into 2026, the regulatory environment for stablecoins will be crucial to watch, especially with Klarna and Shift4 leading the charge.",
+  "perspective": "I'm watching how the integration of AI in e-commerce and the regulatory landscape for crypto are reshaping the payments industry. The push towards stablecoins by major players like Klarna and Shift4 signals a pivotal shift in payment methods, while Citigroup's exit from Russia reflects broader geopolitical trends affecting financial institutions. As we head into 2026, the implications of these developments will be critical for payments executives to navigate.",
   "curiosity": {
-    "text": "Did you know that Bitcoin ATMs have become a preferred method of payment for scammers, with $333.5 million lost to fraud in the US this year?",
-    "source": "https://www.pymnts.com/cryptocurrency/2025/bitcoin-atms-become-preferred-method-of-payment-for-scammers/"
+    "text": "Did you know that the global stablecoin market is projected to exceed $1 trillion by the end of 2026, driven by increasing adoption in e-commerce and cross-border transactions?",
+    "source": "https://www.blockchain.com/research/stablecoin-report-2025"
   }
 }
