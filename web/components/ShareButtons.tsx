@@ -4,12 +4,10 @@ import { Twitter, Linkedin, Share2, Check } from "lucide-react";
 import { useState } from "react";
 
 interface ShareButtonsProps {
-  title?: string;
   url?: string;
-  description?: string;
 }
 
-export function ShareButtons({ title, url, description }: ShareButtonsProps) {
+export function ShareButtons({ url }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
 
   // Default values
