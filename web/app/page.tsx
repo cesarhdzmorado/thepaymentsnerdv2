@@ -206,10 +206,7 @@ export default async function HomePage({
 
         {/* Share Buttons */}
         <div className="mx-auto mt-8 flex justify-center animate-fade-in-up delay-400">
-          <ShareButtons
-            title={`/thepaymentsnerd: ${formattedDate}`}
-            description="Your daily briefing on the world of payments, fintech, and financial innovation"
-          />
+          <ShareButtons />
         </div>
       </header>
 

@@ -14,14 +14,13 @@ export function ShareButtons({ title, url, description }: ShareButtonsProps) {
 
   // Default values
   const shareUrl = url || (typeof window !== "undefined" ? window.location.href : "");
-  const shareTitle = title || "/thepaymentsnerd - Daily Payments News";
-  const shareDescription = description || "Your daily briefing on the world of payments";
 
-  // Twitter share URL
-  const twitterText = `${shareTitle}\n\n${shareDescription}`;
-  const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterText)}&url=${encodeURIComponent(shareUrl)}`;
+  // Simple, clean Twitter share text
+  const twitterText = "www.thepaymentsnerd.co 👀";
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterText)}`;
 
-  // LinkedIn share URL
+  // LinkedIn share URL (LinkedIn doesn't support pre-populated text anymore)
+  // The OG tags will provide rich preview automatically
   const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
 
   const handleCopyLink = async () => {
