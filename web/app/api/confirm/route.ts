@@ -21,7 +21,7 @@ export async function GET(req: Request) {
     // First, check if already confirmed to prevent duplicate welcome emails
     const { data: existingSubscriber } = await supabaseAdmin
       .from("subscribers")
-      .select("status, confirmed_at")
+      .select("status, confirmed_at, referral_code")
       .eq("email", email)
       .single();
 
@@ -45,6 +45,10 @@ export async function GET(req: Request) {
       const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!;
       const unsubToken = makeToken(email, "unsubscribe", secret, 365 * 24);
       const unsubUrl = `${siteUrl}/api/unsubscribe?token=${encodeURIComponent(unsubToken)}`;
+
+      // Generate referral URL for this subscriber
+      const referralCode = existingSubscriber?.referral_code;
+      const referralUrl = referralCode ? `${siteUrl}?ref=${referralCode}` : siteUrl;
 
       await resend.emails.send({
         from,
@@ -79,10 +83,22 @@ export async function GET(req: Request) {
               If you ever feel it's not useful, one click unsubscribes you.
             </p>
 
-            <p>
+            ${referralCode ? `
+            <div style="margin-top: 32px; padding: 20px; background-color: #f9fafb; border-radius: 8px; border: 1px solid #e5e7eb;">
+              <p style="margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: #111827;">
+                💙 Share with your network
+              </p>
+              <p style="margin: 0 0 12px 0; font-size: 13px; color: #4b5563;">
+                Know someone who'd benefit from daily payments insights? Share your unique link:
+              </p>
+              <p style="margin: 0; padding: 10px; background-color: #ffffff; border: 1px solid #d1d5db; border-radius: 6px; font-family: monospace; font-size: 12px; word-break: break-all;">
+                <a href="${referralUrl}" style="color: #2563eb; text-decoration: none;">${referralUrl}</a>
+              </p>
+            </div>
+            ` : ''}
+
+            <p style="margin-top: 24px;">
               — César
-              <br/>
-              <span style="color:#666;font-size:12px">
             </p>
 
             <p style="margin-top:24px;color:#666;font-size:12px">

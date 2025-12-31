@@ -219,10 +219,35 @@ export function generateDailyNewsletterEmail({
 
           <!-- Signature -->
           <tr>
-            <td style="padding: 40px 40px 40px 40px; border-top: 1px solid #e5e5e5;">
+            <td style="padding: 40px 40px 20px 40px; border-top: 1px solid #e5e5e5;">
               <p style="margin: 0; font-size: 15px; color: #171717;">
                 — César
               </p>
+            </td>
+          </tr>
+
+          <!-- Share Section -->
+          <tr>
+            <td style="padding: 20px 40px 40px 40px; text-align: center;">
+              <p style="margin: 0 0 12px 0; font-size: 13px; color: #737373; font-weight: 600;">
+                Enjoying the newsletter? Share it with your network
+              </p>
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tr>
+                  <td style="padding: 0 6px;">
+                    <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`Just discovered /thepaymentsnerd - a daily AI-curated briefing on payments industry news. Worth checking out!`)}&url=${encodeURIComponent('https://thepaymentsnerd.com')}"
+                       style="display: inline-block; padding: 8px 16px; background-color: #2563eb; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600;">
+                      Share on Twitter
+                    </a>
+                  </td>
+                  <td style="padding: 0 6px;">
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://thepaymentsnerd.com')}"
+                       style="display: inline-block; padding: 8px 16px; background-color: #0a66c2; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600;">
+                      Share on LinkedIn
+                    </a>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 

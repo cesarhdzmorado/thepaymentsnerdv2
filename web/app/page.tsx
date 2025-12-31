@@ -12,6 +12,7 @@ import { Footer } from "@/components/Footer";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { NewsletterNavigation } from "@/components/NewsletterNavigation";
+import { ShareButtons } from "@/components/ShareButtons";
 import { getPublicationName, ensureHttps } from "@/lib/publicationNames";
 import {
   ArrowRight,
@@ -102,6 +103,20 @@ async function getAdjacentDates(currentDate: string): Promise<{ prev: string | n
   };
 }
 
+async function getSubscriberCount(): Promise<number> {
+  const { count, error } = await supabase
+    .from("subscribers")
+    .select("*", { count: "exact", head: true })
+    .eq("status", "active");
+
+  if (error) {
+    console.error("Error fetching subscriber count:", error.message);
+    return 0;
+  }
+
+  return count || 0;
+}
+
 // --- The Main Page Component ---
 export default async function HomePage({
   searchParams,
@@ -120,6 +135,9 @@ export default async function HomePage({
   const adjacentDates = newsletter
     ? await getAdjacentDates(newsletter.publication_date)
     : { prev: null, next: null };
+
+  // Get subscriber count for social proof
+  const subscriberCount = await getSubscriberCount();
 
   // --- "No Newsletter" Fallback ---
   if (!newsletter) {
@@ -164,6 +182,15 @@ export default async function HomePage({
           Your daily briefing on the world of payments
         </p>
 
+        {/* Social Proof - Subscriber Count */}
+        {subscriberCount > 0 && (
+          <div className="mb-6 animate-fade-in-up delay-150">
+            <p className="text-sm font-semibold text-slate-600 dark:text-slate-400">
+              Join {subscriberCount.toLocaleString()}+ payment professionals
+            </p>
+          </div>
+        )}
+
         {/* Date pill */}
         <div className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 card-surface animate-fade-in-up delay-200 hover:scale-105 transition-transform duration-200">
           <Calendar className="h-4 w-4 text-blue-600 dark:text-cyan-300" />
@@ -175,6 +202,14 @@ export default async function HomePage({
           <Suspense fallback={null}>
             <SubscribeForm source="homepage" />
           </Suspense>
+        </div>
+
+        {/* Share Buttons */}
+        <div className="mx-auto mt-8 flex justify-center animate-fade-in-up delay-400">
+          <ShareButtons
+            title={`/thepaymentsnerd: ${formattedDate}`}
+            description="Your daily briefing on the world of payments, fintech, and financial innovation"
+          />
         </div>
       </header>
 

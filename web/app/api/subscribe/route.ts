@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { makeToken } from "@/lib/emailTokens";
+import { generateReferralCode } from "@/lib/referrals";
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -11,7 +12,7 @@ function isValidEmail(email: string) {
 
 export async function POST(req: Request) {
   try {
-    const { email, source } = await req.json();
+    const { email, source, referralCode } = await req.json();
     const cleanEmail = String(email || "").toLowerCase().trim();
 
     if (!isValidEmail(cleanEmail)) {
@@ -20,6 +21,9 @@ export async function POST(req: Request) {
 
     const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || null;
     const ua = req.headers.get("user-agent") || null;
+
+    // Generate unique referral code for this subscriber
+    const newReferralCode = generateReferralCode();
 
     const { error } = await supabaseAdmin
       .from("subscribers")
@@ -32,6 +36,8 @@ export async function POST(req: Request) {
           consent_user_agent: ua,
           unsubscribed_at: null,
           confirmed_at: null,
+          referral_code: newReferralCode,
+          referred_by: referralCode || null, // Track who referred this person
         },
         { onConflict: "email" }
       );
