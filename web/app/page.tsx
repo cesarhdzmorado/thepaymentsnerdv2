@@ -300,7 +300,14 @@ export default async function HomePage({
             <cite className="inline-block text-base sm:text-lg font-semibold not-italic
                            text-amber-800 dark:text-amber-200
                            px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-900/20">
-              — {newsletter.content.curiosity.source}
+              — <a
+                  href={ensureHttps(newsletter.content.curiosity.source)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline transition-all duration-300"
+                >
+                  {getPublicationName(newsletter.content.curiosity.source)}
+                </a>
             </cite>
           </blockquote>
         </div>
