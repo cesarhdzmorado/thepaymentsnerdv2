@@ -220,7 +220,29 @@ EDITORIAL PROCESS:
    - Pattern recognition or trend connection
    - Actionable intelligence ("Watch for X", "This signals Y")
 
-3. **The Nerd's Perspective** (NEW - Required):
+3. **Daily Intro** (CONDITIONAL - Only if there's a real pattern):
+
+   CRITICAL: Only generate an intro if you identify a GENUINE macro pattern or connection across multiple stories.
+
+   When to include an intro:
+   - 3+ stories point to the same strategic shift (e.g., "embedded payments", "regulated stablecoins", "cross-border infrastructure")
+   - Multiple competitors making similar moves (signals industry direction)
+   - Stories that contradict conventional wisdom when viewed together
+   - Clear cause-and-effect relationship between stories
+
+   When to SKIP the intro:
+   - Stories are diverse/unrelated (this is fine! most days are eclectic)
+   - The only connection is generic (e.g., "all about payments")
+   - You're forcing a connection that isn't meaningful
+   - The pattern is obvious and adds no insight
+
+   If including an intro (1-2 sentences max):
+   - Lead with the insight, not setup ("Three infrastructure plays today, all betting on the same thing...")
+   - Make it specific and surprising
+   - Avoid generic phrases like "interesting developments" or "busy week"
+   - Write in a punchy, conversational tone
+
+4. **What Matters Today** (The Nerd's Perspective - Required):
 
    After selecting the 5 stories, synthesize the day's intelligence in 2-3 sentences:
    - What's the throughline connecting these stories?
@@ -229,25 +251,28 @@ EDITORIAL PROCESS:
    - Any contrarian take on the day's themes?
 
    Write this in first-person ("I'm watching...", "This signals...")
+   This appears BEFORE the stories and sets the editorial lens.
 
-4. **Interesting Fact** (Select 1):
+5. **Interesting Fact** (Select 1):
    - Must be genuinely surprising or counterintuitive
    - Payments/fintech preferred, general interest acceptable
    - Write in conversational "Did you know?" style
    - 1-2 sentences maximum
 
-5. **Quality Checklist** (Every newsletter must pass):
+6. **Quality Checklist** (Every newsletter must pass):
    - [ ] Every story passes the "So what?" test with clear implications
    - [ ] At least 3 stories include specific data/metrics
    - [ ] At least 2 stories have contrarian or non-obvious angles
    - [ ] No repetitive themes across the 5 stories
    - [ ] Every story identifies winners/losers or strategic impact
    - [ ] Language is active, specific, and punchy (no generic business jargon)
-   - [ ] "The Nerd's Perspective" provides synthesis and forward-looking view
+   - [ ] "What Matters Today" (perspective) provides synthesis and forward-looking view
+   - [ ] Intro is either absent OR genuinely insightful (never forced)
 
 OUTPUT FORMAT (MUST BE VALID JSON):
 
 {{{{
+  "intro": null | "1-2 sentence intro ONLY if genuine pattern exists",
   "news": [
     {{{{
       "title": "...",
@@ -266,9 +291,32 @@ CRITICAL RULES:
 - Return ONLY the JSON object, no markdown formatting, no additional text
 - Escape all quotes and special characters properly
 - Ensure exactly 5 news items (no more, no less)
-- All fields must be present and non-empty
+- The "intro" field must be null if no genuine pattern exists, OR a 1-2 sentence hook if there's real insight
+- The "perspective" field is your editorial synthesis (2-3 sentences, ALWAYS required)
+- The "curiosity" field must have both text and source
 - Use the source URL from the research when available
-- The "perspective" field is your editorial synthesis (2-3 sentences)"""),
+
+EXAMPLES OF GOOD vs BAD INTROS:
+
+GOOD (Real pattern):
+"intro": "Three infrastructure announcements today, and they're all saying the same thing: payments is becoming a feature, not a product."
+
+GOOD (Surprising connection):
+"intro": "Visa reports record growth while regulators circle BNPL providers. The message: established players are winning the compliance game."
+
+GOOD (Contrarian):
+"intro": "Everyone's calling it a 'crypto winter,' but institutional payment rails are moving faster than ever."
+
+BAD (Forced/Generic):
+"intro": "Another busy day in payments with several interesting developments."
+
+BAD (Obvious):
+"intro": "Today's stories cover a wide range of payment topics from different sectors."
+
+BAD (Not insightful):
+"intro": "Here are five important payment stories you need to know about today."
+
+WHEN IN DOUBT: Set intro to null. Better to have no intro than a forced one."""),
         ("user", "Here are the raw summaries:\n\n{input}"),
     ])
     
@@ -308,11 +356,19 @@ QUALITY CHECKS:
    - Are all 5 stories sufficiently different?
 
 5. **Completeness**:
-   - Are all required fields present (news, perspective, curiosity)?
+   - Are all required fields present (intro, news, perspective, curiosity)?
    - Is the JSON valid and properly formatted?
    - Is the "perspective" field providing synthesis?
+   - Is the "intro" field either null OR genuinely insightful (not forced)?
 
-6. **Brand Voice**:
+6. **Intro Quality** (Critical):
+   - If intro exists, does it identify a real pattern/connection?
+   - Is it specific and surprising (not generic)?
+   - Does it avoid phrases like "busy day" or "interesting developments"?
+   - Is it 1-2 sentences max?
+   - If stories are unrelated, intro should be null (that's perfectly fine!)
+
+7. **Brand Voice**:
    - Does it sound authoritative but accessible?
    - Is there a clear point of view?
    - Any contrarian or forward-looking angles?
