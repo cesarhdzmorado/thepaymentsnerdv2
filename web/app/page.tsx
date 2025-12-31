@@ -179,7 +179,7 @@ export default async function HomePage({
         </div>
 
         <p className="mx-auto mb-8 max-w-2xl text-xl sm:text-2xl font-medium text-muted leading-relaxed animate-fade-in-up delay-100">
-          Your daily briefing on the world of payments
+          Five critical payments insights. Zero noise. Daily.
         </p>
 
         {/* Social Proof - Subscriber Count */}
