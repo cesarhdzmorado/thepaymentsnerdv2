@@ -209,8 +209,10 @@ export function generateDailyNewsletterEmail({
           </tr>
           <tr>
             <td style="padding: 0 40px 40px 40px;">
-              <p style="margin: 0; font-size: 14px; color: #737373; font-style: italic;">
-                — ${curiosity.source}
+              <p style="margin: 0; font-size: 14px; color: #737373;">
+                — <a href="${ensureHttps(curiosity.source)}" target="_blank" rel="noopener noreferrer" style="color: #737373; text-decoration: none; font-style: italic;">
+                  ${getPublicationName(curiosity.source)}
+                </a>
               </p>
             </td>
           </tr>
