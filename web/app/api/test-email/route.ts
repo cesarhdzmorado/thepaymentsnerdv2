@@ -56,7 +56,9 @@ export async function GET(req: Request) {
     // Generate email HTML and dynamic subject
     const emailHtml = generateDailyNewsletterEmail({
       publicationDate: newsletter.publication_date,
+      intro: newsletter.content.intro,
       news: newsletter.content.news,
+      perspective: newsletter.content.perspective,
       curiosity: newsletter.content.curiosity,
       unsubscribeUrl: "https://example.com/unsubscribe?token=test-token",
     });
