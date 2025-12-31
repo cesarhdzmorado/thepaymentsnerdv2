@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NavigationBar } from "@/components/NavigationBar";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -10,6 +11,29 @@ export const metadata: Metadata = {
   title: "/thepaymentsnerd - Daily Payments News",
   description:
     "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
+  openGraph: {
+    title: "/thepaymentsnerd - Daily Payments News",
+    description:
+      "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
+    url: "https://thepaymentsnerd.com",
+    siteName: "/thepaymentsnerd",
+    type: "website",
+    images: [
+      {
+        url: "https://thepaymentsnerd.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "/thepaymentsnerd - Daily Payments News",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "/thepaymentsnerd - Daily Payments News",
+    description:
+      "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
+    images: ["https://thepaymentsnerd.com/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -35,6 +59,7 @@ export default function RootLayout({
             {children}
           </main>
         </div>
+        <Analytics />
       </body>
     </html>
   );

@@ -13,12 +13,13 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
 
   const subscribedFlag = searchParams.get("subscribed");
   const unsubscribedFlag = searchParams.get("unsubscribed");
+  const referralCode = searchParams.get("ref"); // Capture referral code from URL
 
   const bannerMessage = useMemo(() => {
-    if (subscribedFlag === "1") return "✅ Confirmed. You’re subscribed.";
-    if (subscribedFlag === "0") return "⚠️ That confirmation link didn’t work. Try subscribing again.";
-    if (unsubscribedFlag === "1") return "✅ You’ve been unsubscribed.";
-    if (unsubscribedFlag === "0") return "⚠️ Unsubscribe link didn’t work.";
+    if (subscribedFlag === "1") return "✅ Confirmed. You're subscribed.";
+    if (subscribedFlag === "0") return "⚠️ That confirmation link didn't work. Try subscribing again.";
+    if (unsubscribedFlag === "1") return "✅ You've been unsubscribed.";
+    if (unsubscribedFlag === "0") return "⚠️ Unsubscribe link didn't work.";
     return null;
   }, [subscribedFlag, unsubscribedFlag]);
 
@@ -44,7 +45,11 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: cleanEmail, source }),
+        body: JSON.stringify({
+          email: cleanEmail,
+          source,
+          referralCode: referralCode || undefined,
+        }),
       });
 
       const data = await res.json().catch(() => ({}));
