@@ -2,7 +2,7 @@
 
 import { useMemo, useState, type FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
-import { Mail, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -75,21 +75,6 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
           {bannerMessage}
         </div>
       )}
-
-      {/* Icon */}
-      <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 dark:from-blue-400 dark:to-indigo-500 mb-6">
-        <Mail className="h-8 w-8 text-white" />
-      </div>
-
-      {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3 px-4">
-        Get the daily briefing by email
-      </h2>
-
-      {/* Subtitle */}
-      <p className="text-base text-slate-600 dark:text-slate-400 mb-8 px-4">
-        One payments insight per day. No noise. Confirm via email.
-      </p>
 
       {/* Form */}
       <form onSubmit={onSubmit} className="w-full max-w-xl mx-auto px-4">
