@@ -60,7 +60,7 @@ export function Footer() {
 
       <div className="mt-6 text-center">
         <p className="text-xs text-slate-400 dark:text-slate-500">
-          Daily insights on payments, fintech, and financial innovation
+          Five critical payments insights. Zero noise. Daily.
         </p>
       </div>
     </footer>

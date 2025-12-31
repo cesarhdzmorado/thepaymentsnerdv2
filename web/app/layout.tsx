@@ -9,12 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "/thepaymentsnerd - Daily Payments News",
-  description:
-    "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
+  description: "Five critical payments insights. Zero noise. Daily.",
   openGraph: {
     title: "/thepaymentsnerd - Daily Payments News",
-    description:
-      "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
+    description: "Five critical payments insights. Zero noise. Daily.",
     url: "https://www.thepaymentsnerd.co",
     siteName: "/thepaymentsnerd",
     type: "website",
@@ -30,8 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "/thepaymentsnerd - Daily Payments News",
-    description:
-      "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
+    description: "Five critical payments insights. Zero noise. Daily.",
     images: ["https://www.thepaymentsnerd.co/og-image.png"],
   },
 };
