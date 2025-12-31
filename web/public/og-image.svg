@@ -1,0 +1,22 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#0A0A0A" text-anchor="middle">
+    /thepaymentsnerd
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="32" fill="#525252" text-anchor="middle">
+    Your daily briefing on the world of payments,
+  </text>
+  <text x="600" y="390" font-family="Arial, sans-serif" font-size="32" fill="#525252" text-anchor="middle">
+    fintech, and financial innovation
+  </text>
+
+  <!-- Badge -->
+  <rect x="500" y="440" width="200" height="40" rx="20" fill="#2563EB"/>
+  <text x="600" y="467" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+    📬 Daily at 7am ET
+  </text>
+</svg>

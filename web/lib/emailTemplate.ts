@@ -235,13 +235,13 @@ export function generateDailyNewsletterEmail({
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tr>
                   <td style="padding: 0 6px;">
-                    <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`Just discovered /thepaymentsnerd - a daily AI-curated briefing on payments industry news. Worth checking out!`)}&url=${encodeURIComponent('https://thepaymentsnerd.com')}"
+                    <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`Just discovered /thepaymentsnerd - a daily AI-curated briefing on payments industry news. Worth checking out!`)}&url=${encodeURIComponent('https://www.thepaymentsnerd.co')}"
                        style="display: inline-block; padding: 8px 16px; background-color: #2563eb; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600;">
                       Share on Twitter
                     </a>
                   </td>
                   <td style="padding: 0 6px;">
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://thepaymentsnerd.com')}"
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.thepaymentsnerd.co')}"
                        style="display: inline-block; padding: 8px 16px; background-color: #0a66c2; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600;">
                       Share on LinkedIn
                     </a>

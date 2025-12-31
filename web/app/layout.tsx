@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     title: "/thepaymentsnerd - Daily Payments News",
     description:
       "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
-    url: "https://thepaymentsnerd.com",
+    url: "https://www.thepaymentsnerd.co",
     siteName: "/thepaymentsnerd",
     type: "website",
     images: [
       {
-        url: "https://thepaymentsnerd.com/og-image.png",
+        url: "https://www.thepaymentsnerd.co/og-image.png",
         width: 1200,
         height: 630,
         alt: "/thepaymentsnerd - Daily Payments News",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "/thepaymentsnerd - Daily Payments News",
     description:
       "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
-    images: ["https://thepaymentsnerd.com/og-image.png"],
+    images: ["https://www.thepaymentsnerd.co/og-image.png"],
   },
 };
 
