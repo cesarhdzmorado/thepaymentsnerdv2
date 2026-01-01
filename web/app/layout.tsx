@@ -1,11 +1,23 @@
 // web/app/layout.tsx
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Archivo } from "next/font/google";
 import { NavigationBar } from "@/components/NavigationBar";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// Body font - clean, readable for content
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+// Heading font - modern, geometric, tech-forward
+const archivo = Archivo({
+  subsets: ["latin"],
+  variable: "--font-archivo",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "/thepaymentsnerd - Daily Payments News",
@@ -42,8 +54,9 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body
         className={[
-          inter.className,
-          "min-h-screen antialiased",
+          inter.variable,
+          archivo.variable,
+          "min-h-screen antialiased font-sans",
           // force the entire app to respect your CSS variables in globals.css
           "bg-[var(--background)] text-[var(--foreground)]",
         ].join(" ")}

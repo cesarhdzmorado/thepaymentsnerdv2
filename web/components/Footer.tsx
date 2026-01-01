@@ -1,13 +1,21 @@
 // web/components/Footer.tsx
+"use client";
 
 import { Heart } from "lucide-react";
+import { useState } from "react";
 
 export function Footer() {
+  const [heartClicks, setHeartClicks] = useState(0);
+
   const footerLinks = [
     { name: "Legal Terms", href: "/legal" },
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Cookies Policy", href: "/cookies" },
   ];
+
+  const handleHeartClick = () => {
+    setHeartClicks((prev) => prev + 1);
+  };
 
   return (
     <footer
@@ -27,13 +35,28 @@ export function Footer() {
         <div className="text-center sm:text-left">
           <p className="text-sm flex items-center gap-1.5 justify-center sm:justify-start">
             © {new Date().getFullYear()}{" "}
-            <span className="font-semibold text-slate-700 dark:text-slate-300 bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-cyan-400 dark:to-indigo-400 bg-clip-text text-transparent">
+            <span className="font-display font-semibold text-slate-700 dark:text-slate-300 bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-cyan-400 dark:to-indigo-400 bg-clip-text text-transparent transition-all duration-300 hover:scale-105 inline-block cursor-default">
               /thepaymentsnerd
             </span>
           </p>
           <p className="text-xs mt-1.5 flex items-center gap-1.5 justify-center sm:justify-start text-slate-500 dark:text-slate-400">
             Made with{" "}
-            <Heart className="h-3 w-3 text-red-500 dark:text-red-400 fill-current animate-pulse" />{" "}
+            <button
+              onClick={handleHeartClick}
+              className="group relative focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full p-0.5 transition-transform duration-200 hover:scale-125 active:scale-90"
+              aria-label="Show some love"
+            >
+              <Heart
+                className={`h-3 w-3 text-red-500 dark:text-red-400 fill-current transition-all duration-300 ${
+                  heartClicks > 0 ? "animate-pulse" : ""
+                }`}
+              />
+              {heartClicks > 0 && (
+                <span className="absolute -top-4 left-1/2 -translate-x-1/2 text-[10px] font-bold text-red-500 dark:text-red-400 animate-fade-in-up pointer-events-none">
+                  +{heartClicks}
+                </span>
+              )}
+            </button>{" "}
             for the payments community
           </p>
         </div>
@@ -47,9 +70,10 @@ export function Footer() {
                 text-sm font-medium
                 text-slate-600 dark:text-slate-400
                 hover:text-blue-700 dark:hover:text-cyan-300
-                transition-all duration-200
+                transition-all duration-300
                 hover:underline underline-offset-4
                 decoration-2 decoration-blue-600/50 dark:decoration-cyan-400/50
+                hover:scale-105 inline-block
               "
             >
               {link.name}
@@ -59,7 +83,7 @@ export function Footer() {
       </div>
 
       <div className="mt-6 text-center">
-        <p className="text-xs text-slate-400 dark:text-slate-500">
+        <p className="text-xs text-slate-400 dark:text-slate-500 hover:text-slate-500 dark:hover:text-slate-400 transition-colors duration-300">
           Five critical payments insights. Zero noise. Daily.
         </p>
       </div>

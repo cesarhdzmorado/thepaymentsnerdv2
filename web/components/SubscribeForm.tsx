@@ -84,14 +84,17 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
       {/* Form */}
       <form onSubmit={onSubmit} className="w-full max-w-xl mx-auto px-4">
         <div className="flex flex-col sm:flex-row gap-3">
-          <div className="relative flex-1">
+          <div className={`relative flex-1 ${status === "error" ? "animate-shake" : ""}`}>
             <input
               type="email"
               inputMode="email"
               autoComplete="email"
               placeholder="you@company.com"
               value={email}
-              onChange={(ev) => setEmail(ev.target.value)}
+              onChange={(ev) => {
+                setEmail(ev.target.value);
+                if (status === "error") setStatus("idle");
+              }}
               className="w-full rounded-lg px-4 py-3.5 text-base
                          bg-white dark:bg-slate-800
                          border-2 border-slate-300 dark:border-slate-600
@@ -101,24 +104,27 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
                          focus:border-blue-500 dark:focus:border-blue-400
                          focus:ring-4 focus:ring-blue-500/10
                          transition-all duration-200
+                         hover:border-slate-400 dark:hover:border-slate-500
                          disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={status === "loading"}
             />
             {status === "success" && (
-              <CheckCircle2 className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-green-600 dark:text-green-400 animate-fade-in" />
+              <CheckCircle2 className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-green-600 dark:text-green-400 animate-scale-in" />
             )}
           </div>
 
           <button
             type="submit"
             disabled={status === "loading"}
-            className="rounded-lg px-8 py-3.5 text-base font-semibold
-                       bg-slate-900 text-white
-                       hover:bg-slate-800
-                       dark:bg-slate-100 dark:text-slate-900
-                       dark:hover:bg-white
-                       transition-all duration-200
-                       disabled:opacity-50 disabled:cursor-not-allowed
+            className="group relative overflow-hidden rounded-lg px-8 py-3.5 text-base font-semibold
+                       bg-gradient-to-r from-slate-900 to-slate-800 text-white
+                       hover:from-slate-800 hover:to-slate-700
+                       dark:from-slate-100 dark:to-slate-50 dark:text-slate-900
+                       dark:hover:from-white dark:hover:to-slate-100
+                       transition-all duration-300
+                       hover:shadow-lg hover:shadow-slate-900/20 dark:hover:shadow-slate-100/10
+                       hover:scale-105 active:scale-95
+                       disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
                        flex items-center justify-center gap-2
                        min-w-[140px] sm:min-w-[120px]"
           >
@@ -128,8 +134,11 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
                 <span>Subscribing…</span>
               </>
             ) : (
-              <span>Subscribe</span>
+              <span className="relative z-10">Subscribe</span>
             )}
+            {/* Hover glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/10 to-blue-500/0
+                            opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </button>
         </div>
       </form>
@@ -137,14 +146,14 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
       {/* Message */}
       {message && (
         <div
-          className={`mt-5 rounded-lg px-4 py-3 text-sm font-medium flex items-center justify-center gap-2 animate-fade-in ${
+          className={`mt-5 rounded-lg px-4 py-3 text-sm font-medium flex items-center justify-center gap-2 ${
             status === "error"
-              ? "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800"
-              : "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800"
+              ? "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800 animate-shake"
+              : "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800 animate-scale-in"
           }`}
         >
           {status === "error" ? (
-            <AlertCircle className="h-4 w-4 flex-shrink-0" />
+            <AlertCircle className="h-4 w-4 flex-shrink-0 animate-pulse" />
           ) : (
             <CheckCircle2 className="h-4 w-4 flex-shrink-0" />
           )}
@@ -153,7 +162,7 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
       )}
 
       {/* Footer text */}
-      <p className="mt-6 text-xs text-slate-500 dark:text-slate-400">
+      <p className="mt-6 text-xs text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors duration-200">
         You can unsubscribe anytime with one click.
       </p>
     </div>

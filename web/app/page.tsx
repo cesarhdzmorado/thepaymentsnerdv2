@@ -219,46 +219,54 @@ export default async function HomePage({
               key={index}
               className="group relative overflow-hidden card-surface
                          transition-all duration-300 ease-out
-                         hover:-translate-y-1 hover:shadow-xl
+                         hover:-translate-y-2 hover:shadow-2xl
+                         hover:scale-[1.01]
                          animate-fade-in-up"
               style={{ animationDelay: delay }}
             >
+            {/* Subtle gradient glow on hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true" />
+
             <div className="relative p-6 sm:p-10">
               <div className="flex items-start gap-4 sm:gap-6">
-                {/* Icon */}
+                {/* Icon with enhanced micro-interaction */}
                 <div
                   className="flex-shrink-0 rounded-xl p-3 text-white shadow-md
                              bg-gradient-to-br from-blue-600 to-indigo-600
                              dark:from-cyan-500 dark:to-indigo-500
                              transition-all duration-300
-                             group-hover:scale-110 group-hover:rotate-3"
+                             group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg"
                 >
-                  <BookOpen className="h-6 w-6" />
+                  <BookOpen className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
                 </div>
 
                 <div className="min-w-0 flex-1">
                   <div className="mb-3 inline-block rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider
                                   bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-cyan-300
-                                  transition-colors duration-300">
+                                  transition-all duration-300
+                                  group-hover:bg-blue-100 dark:group-hover:bg-blue-900/50
+                                  group-hover:scale-105">
                     Topic #{index + 1}
                   </div>
 
                   <h2
-                    className="mb-4 text-2xl sm:text-3xl font-bold leading-tight
+                    className="mb-4 text-2xl sm:text-3xl font-display font-bold leading-tight
                                text-slate-950 dark:text-slate-100
-                               transition-colors duration-300
+                               transition-all duration-300
                                group-hover:text-blue-700
                                dark:group-hover:text-cyan-300"
                   >
                     {item.title}
                   </h2>
 
-                  <p className="mb-6 text-base sm:text-lg leading-relaxed text-slate-700 dark:text-slate-300">
+                  <p className="mb-6 text-base sm:text-lg leading-relaxed text-slate-700 dark:text-slate-300
+                                transition-colors duration-300
+                                group-hover:text-slate-900 dark:group-hover:text-slate-200">
                     {item.body}
                   </p>
 
                   <div className="flex items-center gap-2 text-sm font-medium text-muted">
-                    <ExternalLink className="h-4 w-4 flex-shrink-0" />
+                    <ExternalLink className="h-4 w-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110" />
                     <span>Source:</span>
 
                     <a
@@ -268,7 +276,8 @@ export default async function HomePage({
                       className="inline-flex items-center gap-1.5 font-semibold
                                  text-blue-700 hover:underline hover:text-indigo-700
                                  dark:text-cyan-300 dark:hover:text-cyan-200
-                                 transition-all duration-300 group/link"
+                                 transition-all duration-300 group/link
+                                 hover:gap-2"
                     >
                       {getPublicationName(item.source)}
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1" />
@@ -278,11 +287,11 @@ export default async function HomePage({
               </div>
             </div>
 
-            {/* bottom sheen */}
+            {/* Enhanced bottom sheen with gradient */}
             <div
-              className="pointer-events-none absolute inset-x-0 bottom-0 h-px
-                         bg-gradient-to-r from-transparent via-blue-200/70 to-transparent
-                         dark:via-cyan-700/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-1
+                         bg-gradient-to-r from-transparent via-blue-500/50 to-transparent
+                         dark:via-cyan-500/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"
               aria-hidden="true"
             />
           </article>
