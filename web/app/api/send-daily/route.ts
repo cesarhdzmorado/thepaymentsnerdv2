@@ -50,7 +50,7 @@ export async function GET(req: Request) {
       const unsubToken = makeToken(sub.email, "unsubscribe", secret, 365 * 24);
       const unsubUrl = `${siteUrl}/api/unsubscribe?token=${encodeURIComponent(unsubToken)}`;
 
-      const emailHtml = generateDailyNewsletterEmail({
+      const emailHtml = await generateDailyNewsletterEmail({
         publicationDate: newsletter.publication_date,
         intro: newsletter.content.intro,
         news: newsletter.content.news,

@@ -46,14 +46,14 @@ export function generateEmailSubject(news: NewsItem[]): string {
   return `/thepaymentsnerd: ${highlight}`;
 }
 
-export function generateDailyNewsletterEmail({
+export async function generateDailyNewsletterEmail({
   publicationDate,
   intro,
   news,
   perspective,
   curiosity,
   unsubscribeUrl,
-}: DailyNewsletterParams): string {
+}: DailyNewsletterParams): Promise<string> {
   const formattedDate = new Date(`${publicationDate}T00:00:00`).toLocaleDateString("en-US", {
     weekday: "long",
     year: "numeric",
@@ -73,7 +73,7 @@ export function generateDailyNewsletterEmail({
   };
 
   // Render React Email component to HTML string
-  const html = render(
+  const html = await render(
     DailyNewsletter({
       publicationDate,
       formattedDate,
