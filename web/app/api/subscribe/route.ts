@@ -22,8 +22,23 @@ export async function POST(req: Request) {
     const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || null;
     const ua = req.headers.get("user-agent") || null;
 
-    // Generate unique referral code for this subscriber
-    const newReferralCode = generateReferralCode();
+    // Check if subscriber already exists and is active
+    const { data: existingSubscriber } = await supabaseAdmin
+      .from("subscribers")
+      .select("status, confirmed_at, referral_code")
+      .eq("email", cleanEmail)
+      .single();
+
+    // If already active and confirmed, don't reset their status
+    const isAlreadyActive = existingSubscriber?.status === "active" && existingSubscriber?.confirmed_at;
+
+    if (isAlreadyActive) {
+      // User is already subscribed - just return success without sending another confirmation email
+      return NextResponse.json({ ok: true });
+    }
+
+    // Generate unique referral code for new subscribers
+    const newReferralCode = existingSubscriber?.referral_code || generateReferralCode();
 
     const { error } = await supabaseAdmin
       .from("subscribers")
