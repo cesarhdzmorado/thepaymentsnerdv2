@@ -54,7 +54,7 @@ export async function GET(req: Request) {
     }
 
     // Generate email HTML and dynamic subject
-    const emailHtml = generateDailyNewsletterEmail({
+    const emailHtml = await generateDailyNewsletterEmail({
       publicationDate: newsletter.publication_date,
       intro: newsletter.content.intro,
       news: newsletter.content.news,

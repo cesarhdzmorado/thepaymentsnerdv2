@@ -53,16 +53,18 @@ const sampleNewsletter = {
   unsubscribeUrl: "https://example.com/unsubscribe?token=sample"
 };
 
-// Generate the email HTML
-const emailHtml = generateDailyNewsletterEmail(sampleNewsletter);
+// Generate the email HTML (async function)
+(async () => {
+  const emailHtml = await generateDailyNewsletterEmail(sampleNewsletter);
 
-// Write to file
-const outputPath = path.join(__dirname, "..", "email-preview.html");
-fs.writeFileSync(outputPath, emailHtml, "utf-8");
+  // Write to file
+  const outputPath = path.join(__dirname, "..", "email-preview.html");
+  fs.writeFileSync(outputPath, emailHtml, "utf-8");
 
-console.log("✅ Email preview generated successfully!");
-console.log(`📧 Open this file in your browser: ${outputPath}`);
-console.log("\nTip: You can also use online email testing tools like:");
-console.log("  • https://putsmail.com/tests/new");
-console.log("  • https://litmus.com/");
-console.log("  • https://www.emailonacid.com/");
+  console.log("✅ Email preview generated successfully!");
+  console.log(`📧 Open this file in your browser: ${outputPath}`);
+  console.log("\nTip: You can also use online email testing tools like:");
+  console.log("  • https://putsmail.com/tests/new");
+  console.log("  • https://litmus.com/");
+  console.log("  • https://www.emailonacid.com/");
+})();
