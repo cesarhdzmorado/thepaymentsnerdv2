@@ -1,0 +1,416 @@
+import {
+  Html,
+  Head,
+  Preview,
+  Body,
+  Container,
+  Section,
+  Text,
+  Link,
+  Heading,
+  Hr,
+} from "@react-email/components";
+
+interface NewsItem {
+  title: string;
+  body: string;
+  source: string;
+}
+
+interface Curiosity {
+  text: string;
+  source: string;
+}
+
+interface DailyNewsletterProps {
+  publicationDate: string;
+  formattedDate: string;
+  intro?: string;
+  perspective?: string;
+  news: NewsItem[];
+  curiosity: Curiosity;
+  unsubscribeUrl: string;
+}
+
+export function DailyNewsletter({
+  publicationDate,
+  formattedDate,
+  intro,
+  perspective,
+  news,
+  curiosity,
+  unsubscribeUrl,
+}: DailyNewsletterProps) {
+  const heroStory = news[0];
+  const quickHits = news.slice(1);
+
+  return (
+    <Html lang="en">
+      <Head>
+        <meta name="color-scheme" content="light dark" />
+        <meta name="supported-color-schemes" content="light dark" />
+        <style>{`
+          @media (prefers-color-scheme: dark) {
+            .dark-mode { display: block !important; }
+            .light-mode { display: none !important; }
+          }
+          @media (prefers-color-scheme: light) {
+            .dark-mode { display: none !important; }
+            .light-mode { display: block !important; }
+          }
+        `}</style>
+      </Head>
+      <Preview>
+        Five critical payments insights. Zero noise. Daily.
+      </Preview>
+      <Body style={main}>
+        <Container style={container}>
+          {/* Header */}
+          <Section style={header}>
+            <Heading style={logoHeading}>/thepaymentsnerd</Heading>
+            <Text style={dateText}>{formattedDate}</Text>
+          </Section>
+
+          {/* Optional Intro */}
+          {intro && (
+            <Section style={section}>
+              <Text style={introText}>{intro}</Text>
+            </Section>
+          )}
+
+          {/* What Matters Today */}
+          {perspective && (
+            <>
+              <Section style={section}>
+                <Text style={sectionLabel}>WHAT MATTERS TODAY</Text>
+                <Text style={perspectiveText}>{perspective}</Text>
+              </Section>
+              <Hr style={divider} />
+            </>
+          )}
+
+          {/* Hero Story */}
+          <Section style={section}>
+            <Text style={sectionLabel}>TODAY'S LEAD STORY</Text>
+            <Heading as="h2" style={heroTitle}>
+              {heroStory.title}
+            </Heading>
+            <Text style={bodyText}>{heroStory.body}</Text>
+            <Text style={sourceText}>
+              <Link href={heroStory.source} style={sourceLink}>
+                → {getPublicationName(heroStory.source)}
+              </Link>
+            </Text>
+          </Section>
+
+          {/* Quick Hits */}
+          {quickHits.length > 0 && (
+            <>
+              <Hr style={divider} />
+              <Section style={section}>
+                <Text style={sectionLabel}>ALSO WORTH KNOWING</Text>
+              </Section>
+              {quickHits.map((item, index) => (
+                <Section key={index} style={quickHitSection}>
+                  <Heading as="h3" style={quickHitTitle}>
+                    {item.title}
+                  </Heading>
+                  <Text style={quickHitBody}>{item.body}</Text>
+                  <Text style={sourceText}>
+                    <Link href={item.source} style={sourceLink}>
+                      → {getPublicationName(item.source)}
+                    </Link>
+                  </Text>
+                </Section>
+              ))}
+            </>
+          )}
+
+          {/* Did You Know */}
+          <Hr style={divider} />
+          <Section style={section}>
+            <Text style={sectionLabel}>💡 DID YOU KNOW?</Text>
+            <Text style={curiosityText}>{curiosity.text}</Text>
+            <Text style={curiositySource}>
+              —{" "}
+              <Link href={curiosity.source} style={curiosityLink}>
+                {getPublicationName(curiosity.source)}
+              </Link>
+            </Text>
+          </Section>
+
+          {/* Signature */}
+          <Hr style={divider} />
+          <Section style={section}>
+            <Text style={signature}>— César</Text>
+          </Section>
+
+          {/* Share Section */}
+          <Section style={shareSection}>
+            <Text style={shareHeading}>
+              Enjoying the newsletter? Share it with your network
+            </Text>
+            <table
+              role="presentation"
+              cellSpacing="0"
+              cellPadding="0"
+              style={{ margin: "0 auto" }}
+            >
+              <tbody>
+                <tr>
+                  <td style={{ padding: "0 6px" }}>
+                    <Link href={getTwitterShareUrl()} style={shareButtonTwitter}>
+                      Share on Twitter
+                    </Link>
+                  </td>
+                  <td style={{ padding: "0 6px" }}>
+                    <Link href={getLinkedInShareUrl()} style={shareButtonLinkedIn}>
+                      Share on LinkedIn
+                    </Link>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </Section>
+
+          {/* Footer */}
+          <Section style={footer}>
+            <Text style={footerText}>
+              <Link href="https://www.thepaymentsnerd.co" style={footerLink}>
+                www.thepaymentsnerd.co
+              </Link>
+            </Text>
+            <Text style={footerText}>
+              <Link href={unsubscribeUrl} style={footerLink}>
+                Unsubscribe
+              </Link>
+            </Text>
+            <Text style={footerTagline}>
+              Five critical payments insights. Zero noise. Daily.
+            </Text>
+          </Section>
+        </Container>
+      </Body>
+    </Html>
+  );
+}
+
+// Helper functions
+function getPublicationName(url: string): string {
+  try {
+    const hostname = new URL(url).hostname.replace("www.", "");
+    return hostname.charAt(0).toUpperCase() + hostname.slice(1);
+  } catch {
+    return "Source";
+  }
+}
+
+function getTwitterShareUrl(): string {
+  const text = encodeURIComponent(
+    "Just discovered /thepaymentsnerd - a daily AI-curated briefing on payments industry news. Worth checking out!"
+  );
+  const url = encodeURIComponent("https://www.thepaymentsnerd.co");
+  return `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+}
+
+function getLinkedInShareUrl(): string {
+  const url = encodeURIComponent("https://www.thepaymentsnerd.co");
+  return `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+}
+
+// Styles with dark mode support
+const main = {
+  backgroundColor: "#fafaf9",
+  fontFamily:
+    '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif',
+  WebkitFontSmoothing: "antialiased",
+  MozOsxFontSmoothing: "grayscale",
+};
+
+const container = {
+  maxWidth: "600px",
+  margin: "0 auto",
+  backgroundColor: "#ffffff",
+};
+
+const header = {
+  padding: "40px 40px 32px 40px",
+};
+
+const logoHeading = {
+  margin: "0 0 8px 0",
+  fontSize: "26px",
+  fontWeight: "700",
+  color: "#0a0a0a",
+  letterSpacing: "-0.5px",
+};
+
+const dateText = {
+  margin: "0",
+  fontSize: "14px",
+  color: "#737373",
+  fontWeight: "400",
+};
+
+const section = {
+  padding: "0 40px 32px 40px",
+};
+
+const sectionLabel = {
+  margin: "0 0 12px 0",
+  fontSize: "11px",
+  fontWeight: "700",
+  color: "#737373",
+  textTransform: "uppercase" as const,
+  letterSpacing: "0.8px",
+};
+
+const introText = {
+  margin: "0",
+  fontSize: "17px",
+  color: "#262626",
+  lineHeight: "1.7",
+};
+
+const perspectiveText = {
+  margin: "0",
+  fontSize: "17px",
+  color: "#171717",
+  lineHeight: "1.7",
+  fontWeight: "500",
+};
+
+const heroTitle = {
+  margin: "0 0 16px 0",
+  fontSize: "24px",
+  fontWeight: "700",
+  color: "#0a0a0a",
+  lineHeight: "1.3",
+};
+
+const bodyText = {
+  margin: "0 0 12px 0",
+  fontSize: "17px",
+  color: "#404040",
+  lineHeight: "1.7",
+};
+
+const sourceText = {
+  margin: "0",
+  fontSize: "15px",
+};
+
+const sourceLink = {
+  color: "#2563eb",
+  textDecoration: "none",
+  fontWeight: "500",
+};
+
+const quickHitSection = {
+  padding: "0 40px 28px 40px",
+};
+
+const quickHitTitle = {
+  margin: "0 0 8px 0",
+  fontSize: "18px",
+  fontWeight: "600",
+  color: "#171717",
+  lineHeight: "1.4",
+};
+
+const quickHitBody = {
+  margin: "0 0 8px 0",
+  fontSize: "16px",
+  color: "#525252",
+  lineHeight: "1.6",
+};
+
+const curiosityText = {
+  margin: "0 0 8px 0",
+  fontSize: "16px",
+  color: "#262626",
+  lineHeight: "1.6",
+};
+
+const curiositySource = {
+  margin: "0",
+  fontSize: "14px",
+  color: "#737373",
+};
+
+const curiosityLink = {
+  color: "#737373",
+  textDecoration: "none",
+  fontStyle: "italic",
+};
+
+const divider = {
+  borderTop: "1px solid #e5e5e5",
+  margin: "0",
+};
+
+const signature = {
+  margin: "0",
+  fontSize: "16px",
+  color: "#171717",
+  fontWeight: "500",
+};
+
+const shareSection = {
+  padding: "32px 40px",
+  textAlign: "center" as const,
+};
+
+const shareHeading = {
+  margin: "0 0 16px 0",
+  fontSize: "14px",
+  color: "#737373",
+  fontWeight: "600",
+};
+
+const shareButtonTwitter = {
+  display: "inline-block",
+  padding: "10px 18px",
+  backgroundColor: "#2563eb",
+  color: "#ffffff",
+  textDecoration: "none",
+  borderRadius: "8px",
+  fontSize: "14px",
+  fontWeight: "600",
+};
+
+const shareButtonLinkedIn = {
+  display: "inline-block",
+  padding: "10px 18px",
+  backgroundColor: "#0a66c2",
+  color: "#ffffff",
+  textDecoration: "none",
+  borderRadius: "8px",
+  fontSize: "14px",
+  fontWeight: "600",
+};
+
+const footer = {
+  padding: "32px 40px",
+  textAlign: "center" as const,
+  borderTop: "1px solid #e5e5e5",
+};
+
+const footerText = {
+  margin: "0 0 8px 0",
+  fontSize: "13px",
+  color: "#737373",
+};
+
+const footerLink = {
+  color: "#737373",
+  textDecoration: "none",
+};
+
+const footerTagline = {
+  margin: "12px 0 0 0",
+  fontSize: "12px",
+  color: "#a3a3a3",
+};
+
+export default DailyNewsletter;
