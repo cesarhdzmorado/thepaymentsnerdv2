@@ -30,7 +30,7 @@ newsletters:
 # Weight: 1-10 (how important/prevalent this trend is right now)
 current_trends:
   - name: "Stablecoins Going Mainstream"
-    weight: 10
+    weight: 7
     description: "Stablecoins transitioning from crypto-native use to mainstream payments infrastructure, with growing regulatory clarity and institutional adoption"
     signals:
       - "stablecoin"
@@ -59,23 +59,8 @@ current_trends:
       - "autonomous finance"
       - "AI treasury"
 
-  - name: "Instant Payments Acceleration"
-    weight: 9
-    description: "Global shift from batch processing to real-time settlement, driven by FedNow, RTP, PIX, and similar instant payment rails"
-    signals:
-      - "FedNow"
-      - "instant payments"
-      - "real-time payments"
-      - "RTP"
-      - "PIX"
-      - "real-time settlement"
-      - "instant settlement"
-      - "faster payments"
-      - "immediate transfer"
-      - "24/7 payments"
-
   - name: "Open Banking/Open Finance Expansion"
-    weight: 8
+    weight: 7
     description: "APIs and data-sharing frameworks enabling third-party access to financial data, expanding beyond banking into broader financial services"
     signals:
       - "open banking"
@@ -88,3 +73,125 @@ current_trends:
       - "CFPB 1033"
       - "data portability"
       - "financial APIs"
+
+  - name: "Wallets Evolve into Identity & Control Hubs"
+    weight: 8
+    description: "Digital wallets are evolving from simple payment instruments into unified hubs that combine payments, digital identity, authentication, and user-defined controls, tightening the link between authorization, security, and user experience"
+    signals:
+      - "digital wallets"
+      - "identity wallets"
+      - "wallet-based authentication"
+      - "passkeys"
+      - "biometric authentication"
+      - "tokenized credentials"
+      - "wallet controls"
+      - "super apps"
+      - "mobile NFC wallets"
+      - "payment + identity convergence"
+
+- name: "Real-Time Payments as the Default Infrastructure"
+  weight: 8
+  description: "Instant payment rails become baseline infrastructure globally, shifting competition toward value-added overlays such as liquidity management, fraud controls, request-to-pay, and multi-rail orchestration rather than speed alone"
+  signals:
+    - "real-time payments"
+    - "instant settlement"
+    - "Faster Payments"
+    - "RTP"
+    - "SEPA Instant"
+    - "payment orchestration"
+    - "request to pay"
+    - "liquidity management"
+    - "always-on payments"
+    - "RTP"
+    - "PIX"
+    - "real-time settlement"
+    - "instant settlement"
+    - "faster payments"
+    - "immediate transfer"
+    - "24/7 payments"
+
+- name: "AI-Native Payments & Fintech Operations"
+  weight: 8
+  description: "Artificial intelligence becomes embedded across the payments stack, powering fraud prevention, AML automation, customer support, intelligent routing, reconciliation, and pricing with minimal human intervention"
+  signals:
+    - "AI in payments"
+    - "machine learning fraud"
+    - "AML automation"
+    - "agentic workflows"
+    - "intelligent routing"
+    - "payment optimization"
+    - "AI reconciliation"
+    - "risk scoring models"
+
+- name: "Embedded Finance & Invisible Payments"
+  weight: 8
+  description: "Payments are increasingly embedded directly into platforms, marketplaces, ERPs, and apps, removing checkout friction and enabling contextual commerce and financial services within core user journeys"
+  signals:
+    - "embedded finance"
+    - "embedded payments"
+    - "invisible payments"
+    - "platform payments"
+    - "marketplace payments"
+    - "in-app checkout"
+    - "contextual commerce"
+    - "vertical SaaS payments"
+
+- name: "Stablecoins, Tokenization & Programmable Money"
+  weight: 7
+  description: "Tokenized payment credentials, stablecoins, and programmable money move from pilots to regulated production use cases, particularly in cross-border settlement and treasury efficiency"
+  signals:
+    - "stablecoins"
+    - "tokenized payments"
+    - "programmable money"
+    - "on-chain settlement"
+    - "CBDC pilots"
+    - "payment tokenization"
+    - "digital assets in payments"
+
+- name: "Cross-Border Payments Reinvention"
+  weight: 5
+  description: "Cross-border payments are re-architected around speed, transparency, interoperability, and improved FX economics, challenging legacy correspondent banking models"
+  signals:
+    - "cross-border payments"
+    - "real-time cross-border"
+    - "ISO 20022"
+    - "FX transparency"
+    - "virtual accounts"
+    - "multi-currency wallets"
+    - "alternative payment rails"
+
+- name: "Merchant-Centric Economics & Value-Added Services"
+  weight: 8
+  description: "As acceptance becomes commoditized, PSPs and fintechs compete by bundling payments with analytics, loyalty, fraud tools, and financing to improve merchant margins and retention"
+  signals:
+    - "merchant services"
+    - "value-added services"
+    - "payments analytics"
+    - "merchant financing"
+    - "loyalty integration"
+    - "conversion optimization"
+    - "PSP bundling"
+
+- name: "Regulation, Safeguarding & Operational Resilience as Differentiators"
+  weight: 9
+  description: "Stricter regulatory scrutiny makes compliance, safeguarding of funds, and operational resilience core product attributes and key partner selection criteria"
+  signals:
+    - "operational resilience"
+    - "safeguarding"
+    - "consumer duty"
+    - "payment regulation"
+    - "risk governance"
+    - "wind-down planning"
+    - "regulatory reporting"
+
+- name: "Fintech Consolidation & Lean-Scale Operating Models"
+  weight: 7
+  description: "Capital discipline, M&A, and AI-driven efficiency enable fintechs to scale with smaller teams, reshaping competitive dynamics across banks, PSPs, and platforms"
+  signals:
+    - "fintech consolidation"
+    - "M&A"
+    - "capital efficiency"
+    - "lean fintech teams"
+    - "AI-driven ops"
+    - "platform partnerships"
+    - "ecosystem plays"
