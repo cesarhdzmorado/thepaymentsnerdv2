@@ -51,6 +51,9 @@ export async function GET(req: Request) {
 
     console.log(`Starting daily send for ${subscribers?.length || 0} subscribers`);
 
+    // Helper function to add delay between sends (respects Resend rate limit: 2 req/sec)
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
     for (const sub of subscribers ?? []) {
       try {
         console.log(`Processing subscriber: ${sub.email}`);
@@ -94,6 +97,10 @@ export async function GET(req: Request) {
         errors.push({ email: sub.email, error: errorMsg });
         console.error(`❌ Exception for ${sub.email}:`, errorMsg, error.stack);
       }
+
+      // Add delay between sends to respect Resend rate limit (2 requests/sec)
+      // Using 600ms delay = ~1.6 req/sec (safely under limit)
+      await delay(600);
     }
 
     console.log(`Daily send complete: ${sent} sent, ${failed} failed`);
