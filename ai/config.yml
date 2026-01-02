@@ -24,3 +24,67 @@ newsletters:
   # Keep FT for high-level financial news
   - url: "https://www.ft.com/myft/following/4bc212f8-bfee-4452-80e4-5e6ed76b337e.rss"
     topic: "Financial Times Curated Feed"
+
+# Current Industry Trends (manually update as trends evolve)
+# These provide context to agents for better story selection and analysis
+# Weight: 1-10 (how important/prevalent this trend is right now)
+current_trends:
+  - name: "Stablecoins Going Mainstream"
+    weight: 10
+    description: "Stablecoins transitioning from crypto-native use to mainstream payments infrastructure, with growing regulatory clarity and institutional adoption"
+    signals:
+      - "stablecoin"
+      - "USDC"
+      - "USDT"
+      - "Tether"
+      - "digital dollar"
+      - "fiat-backed"
+      - "regulated stablecoin"
+      - "stablecoin regulation"
+      - "PayPal USD"
+      - "stablecoin payments"
+
+  - name: "Agentic AI in Payments"
+    weight: 9
+    description: "AI agents autonomously executing payment decisions, fraud detection, and transaction optimization with minimal human intervention"
+    signals:
+      - "AI agent"
+      - "agentic AI"
+      - "autonomous payments"
+      - "AI-powered fraud"
+      - "machine learning payments"
+      - "AI fraud detection"
+      - "intelligent routing"
+      - "AI underwriting"
+      - "autonomous finance"
+      - "AI treasury"
+
+  - name: "Instant Payments Acceleration"
+    weight: 9
+    description: "Global shift from batch processing to real-time settlement, driven by FedNow, RTP, PIX, and similar instant payment rails"
+    signals:
+      - "FedNow"
+      - "instant payments"
+      - "real-time payments"
+      - "RTP"
+      - "PIX"
+      - "real-time settlement"
+      - "instant settlement"
+      - "faster payments"
+      - "immediate transfer"
+      - "24/7 payments"
+
+  - name: "Open Banking/Open Finance Expansion"
+    weight: 8
+    description: "APIs and data-sharing frameworks enabling third-party access to financial data, expanding beyond banking into broader financial services"
+    signals:
+      - "open banking"
+      - "open finance"
+      - "API banking"
+      - "financial data sharing"
+      - "account aggregation"
+      - "PSD2"
+      - "Consumer Financial Protection Bureau"
+      - "CFPB 1033"
+      - "data portability"
+      - "financial APIs"

@@ -15,6 +15,40 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 # Import our custom tools
 from .tools import search_tool, scrape_tool, rss_tool, deduplicate_stories
 
+def format_trends_for_prompt(trends):
+    """
+    Formats the trends from config.yml into a readable string for agent prompts.
+
+    Args:
+        trends: List of trend dictionaries from config.yml
+
+    Returns:
+        Formatted string describing current industry trends
+    """
+    if not trends:
+        return "No specific trends configured."
+
+    # Sort by weight (descending) to prioritize most important trends
+    sorted_trends = sorted(trends, key=lambda x: x.get('weight', 0), reverse=True)
+
+    formatted = []
+    for i, trend in enumerate(sorted_trends, 1):
+        name = trend.get('name', 'Unnamed Trend')
+        weight = trend.get('weight', 0)
+        description = trend.get('description', '')
+        signals = trend.get('signals', [])
+
+        trend_text = f"{i}. **{name}** (Priority: {weight}/10)\n"
+        trend_text += f"   {description}\n"
+        if signals:
+            trend_text += f"   Watch for: {', '.join(signals[:5])}"
+            if len(signals) > 5:
+                trend_text += f" (+{len(signals)-5} more)"
+
+        formatted.append(trend_text)
+
+    return "\n\n".join(formatted)
+
 def main():
     """The main function that runs the agent-based workflow."""
     load_dotenv()
@@ -29,6 +63,10 @@ def main():
 
     # Create a string of news sources for the prompt
     news_sources_str = "\n".join([f"- {s['url']} ({s['topic']})" for s in config['newsletters']])
+
+    # Load and format current industry trends
+    current_trends = config.get('current_trends', [])
+    trends_context = format_trends_for_prompt(current_trends)
     
     # 2. Initialize the Language Model and the tools list
     # Using gpt-4o for latest knowledge (Oct 2023) and better reasoning
@@ -46,6 +84,22 @@ IMPORTANT CONTEXT:
 
 Sources to analyze:
 {news_sources_str}
+
+CURRENT INDUSTRY TRENDS (Context for Story Evaluation):
+
+These trends represent what's happening NOW in the payments industry. Use this context to:
+- Recognize when a story signals or accelerates one of these trends
+- Boost the STRATEGIC IMPORTANCE score for trend-aligned stories
+- Identify second-order effects related to these trends
+- Connect dots between stories and larger industry shifts
+
+{trends_context}
+
+Important: These trends provide CONTEXT, not directives. You still have full autonomy to:
+- Evaluate stories based on their merit using the scoring framework
+- Identify emerging trends not listed here
+- Recognize when a story challenges or contradicts these trends
+- Select non-trend stories that are strategically important
 
 RESEARCH FRAMEWORK:
 
@@ -165,6 +219,24 @@ IMPORTANT CONTEXT:
 - You are writing in {current_date.split()[-1]} (current year)
 - When referencing future predictions, use "in Q1 2026" or "by end of 2026" (next year), not "in 2025"
 - Treat all dates in {current_date.split()[-1]} as present tense, not future
+
+CURRENT INDUSTRY TRENDS (Editorial Context):
+
+These are the key trends shaping the payments industry RIGHT NOW:
+
+{trends_context}
+
+Use this context to:
+- Prioritize stories that signal shifts in these trends
+- Connect individual stories to larger industry movements in your "perspective" section
+- Identify when the day's stories reveal a pattern related to these trends (for intro)
+- Frame implications through the lens of these trends when relevant
+
+Important: These trends inform your editorial lens but don't override your judgment. You still have full autonomy to:
+- Select stories based on strategic merit, even if not trend-aligned
+- Identify patterns and trends not listed here
+- Write perspectives that challenge these narratives
+- Focus on non-trend stories when they're more important
 
 BRAND VOICE:
 - Authoritative but not academic (think Bloomberg Terminal, not journal)
