@@ -43,6 +43,14 @@ current_trends:
       - "stablecoin regulation"
       - "PayPal USD"
       - "stablecoin payments"
+    companies_to_watch:
+      - "Circle (USDC issuer)"
+      - "Tether (USDT issuer)"
+      - "PayPal (PYUSD)"
+      - "Coinbase"
+      - "Paxos"
+      - "Stripe"
+    watch_for: "New entrants, traditional banks launching stablecoins, regulatory wins/losses for issuers, payment processors integrating stablecoins"
 
   - name: "Agentic AI in Payments"
     weight: 9
@@ -58,6 +66,16 @@ current_trends:
       - "AI underwriting"
       - "autonomous finance"
       - "AI treasury"
+    companies_to_watch:
+      - "Stripe (AI routing)"
+      - "Adyen"
+      - "Mastercard (AI fraud detection)"
+      - "Visa"
+      - "Plaid"
+      - "Unit21"
+      - "Feedzai"
+      - "Sift"
+    watch_for: "AI startups disrupting fraud detection, payment processors launching AI routing, financial institutions deploying autonomous treasury management"
 
   - name: "Instant Payments Acceleration"
     weight: 9
@@ -73,6 +91,16 @@ current_trends:
       - "faster payments"
       - "immediate transfer"
       - "24/7 payments"
+    companies_to_watch:
+      - "The Clearing House (RTP network)"
+      - "Federal Reserve (FedNow)"
+      - "Zelle"
+      - "Wise"
+      - "Stripe"
+      - "PayPal/Venmo"
+      - "Block/Cash App"
+      - "Revolut"
+    watch_for: "Banks announcing FedNow/RTP adoption, fintechs leveraging instant rails, cross-border instant payment partnerships, merchants demanding instant settlement"
 
   - name: "Open Banking/Open Finance Expansion"
     weight: 8
@@ -88,3 +116,13 @@ current_trends:
       - "CFPB 1033"
       - "data portability"
       - "financial APIs"
+    companies_to_watch:
+      - "Plaid"
+      - "Stripe (Financial Connections)"
+      - "MX"
+      - "Finicity (Mastercard)"
+      - "Yodlee (Envestnet)"
+      - "Tink (Visa)"
+      - "Akoya"
+      - "Trustly"
+    watch_for: "CFPB 1033 rule implementation, banks launching their own data APIs, new use cases beyond account aggregation, vertical SaaS companies embedding open banking"
