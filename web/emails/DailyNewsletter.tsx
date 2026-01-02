@@ -1,3 +1,4 @@
+import * as React from "react";
 import {
   Html,
   Head,
@@ -67,8 +68,21 @@ export function DailyNewsletter({
         <Container style={container}>
           {/* Header */}
           <Section style={header}>
-            <Heading style={logoHeading}>/thepaymentsnerd</Heading>
-            <Text style={dateText}>{formattedDate}</Text>
+            <table role="presentation" cellSpacing="0" cellPadding="0" style={{ width: '100%' }}>
+              <tbody>
+                <tr>
+                  <td style={{ verticalAlign: 'top' }}>
+                    <Heading style={logoHeading}>/thepaymentsnerd</Heading>
+                    <Text style={dateText}>{formattedDate}</Text>
+                  </td>
+                  <td style={{ verticalAlign: 'top', textAlign: 'right' }}>
+                    <Link href="https://www.thepaymentsnerd.co" style={viewOnlineLink}>
+                      View Online
+                    </Link>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </Section>
 
           {/* Optional Intro */}
@@ -250,6 +264,13 @@ const dateText = {
   fontSize: "14px",
   color: "#737373",
   fontWeight: "400",
+};
+
+const viewOnlineLink = {
+  fontSize: "13px",
+  color: "#2563eb",
+  textDecoration: "none",
+  fontWeight: "500",
 };
 
 const section = {

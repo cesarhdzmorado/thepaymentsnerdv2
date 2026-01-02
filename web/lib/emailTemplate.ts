@@ -24,7 +24,7 @@ interface DailyNewsletterParams {
 
 /**
  * Generate a compelling subject line from newsletter content
- * Format: "/thepaymentsnerd: Topic1 & Topic2"
+ * Format: "🤓 /thepaymentsnerd: Topic1 & Topic2"
  */
 export function generateEmailSubject(news: NewsItem[]): string {
   // Extract key topics from first 2 news items
@@ -41,9 +41,9 @@ export function generateEmailSubject(news: NewsItem[]): string {
     return words.length < title.length ? words + '...' : words;
   });
 
-  // Join with & and create subject with /thepaymentsnerd branding
+  // Join with & and create subject with /thepaymentsnerd branding and nerd emoji
   const highlight = topics.join(' & ');
-  return `/thepaymentsnerd: ${highlight}`;
+  return `🤓 /thepaymentsnerd: ${highlight}`;
 }
 
 export async function generateDailyNewsletterEmail({
