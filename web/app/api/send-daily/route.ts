@@ -26,11 +26,12 @@ export async function GET(req: Request) {
       throw new Error("No newsletter found");
     }
 
-    // 2) Get active subscribers
+    // 2) Get active subscribers (ordered by creation date for deterministic processing)
     const { data: subscribers, error: sErr } = await supabaseAdmin
       .from("subscribers")
       .select("email")
-      .eq("status", "active");
+      .eq("status", "active")
+      .order("created_at", { ascending: true });
 
     if (sErr) {
       throw new Error("Failed to load subscribers");
