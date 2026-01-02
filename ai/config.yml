@@ -33,16 +33,25 @@ current_trends:
     weight: 7
     description: "Stablecoins transitioning from crypto-native use to mainstream payments infrastructure, with growing regulatory clarity and institutional adoption"
     signals:
-      - "stablecoin"
-      - "USDC"
-      - "USDT"
-      - "Tether"
-      - "digital dollar"
-      - "fiat-backed"
-      - "regulated stablecoin"
-      - "stablecoin regulation"
-      - "PayPal USD"
-      - "stablecoin payments"
+      - "operational resilience"
+      - "safeguarding"
+      - "consumer duty"
+      - "payment regulation"
+      - "risk governance"
+      - "wind-down planning"
+      - "regulatory reporting"
+      - "compliance infrastructure"
+      - "FCA regulation"
+      - "payment services directive"
+    companies_to_watch:
+      - "Wise"
+      - "Revolut"
+      - "Stripe"
+      - "Adyen"
+      - "PayPal"
+      - "Block"
+      - "Checkout.com"
+    watch_for: "New safeguarding requirements, operational resilience mandates, fintechs upgrading compliance infrastructure, regulatory fines/enforcement actions, partnerships with regulated entities"
 
   - name: "Agentic AI in Payments"
     weight: 9
@@ -58,6 +67,16 @@ current_trends:
       - "AI underwriting"
       - "autonomous finance"
       - "AI treasury"
+    companies_to_watch:
+      - "Stripe (AI routing)"
+      - "Adyen"
+      - "Mastercard (AI fraud detection)"
+      - "Visa"
+      - "Plaid"
+      - "Unit21"
+      - "Feedzai"
+      - "Sift"
+    watch_for: "AI startups disrupting fraud detection, payment processors launching AI routing, financial institutions deploying autonomous treasury management, agent-to-agent payment protocols"
 
   - name: "Open Banking/Open Finance Expansion"
     weight: 7
