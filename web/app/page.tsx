@@ -219,7 +219,7 @@ export default async function HomePage({
         <div className="mb-6 flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-500/30 to-transparent dark:via-cyan-500/30" />
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">
-            Today's Lead Story
+            Today&rsquo;s Lead Story
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-500/30 to-transparent dark:via-cyan-500/30" />
         </div>
