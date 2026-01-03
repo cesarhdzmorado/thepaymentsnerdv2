@@ -61,6 +61,7 @@ export async function GET(req: Request) {
       perspective: newsletter.content.perspective,
       curiosity: newsletter.content.curiosity,
       unsubscribeUrl: "https://example.com/unsubscribe?token=test-token",
+      referralCode: "TESTCODE",
     });
 
     const emailSubject = generateEmailSubject(newsletter.content.news);

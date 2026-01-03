@@ -20,6 +20,7 @@ interface DailyNewsletterParams {
   perspective?: string;  // Editorial lens/setup - "What Matters Today"
   curiosity: Curiosity;
   unsubscribeUrl: string;
+  referralCode: string;
 }
 
 /**
@@ -53,6 +54,7 @@ export async function generateDailyNewsletterEmail({
   perspective,
   curiosity,
   unsubscribeUrl,
+  referralCode,
 }: DailyNewsletterParams): Promise<string> {
   const formattedDate = new Date(`${publicationDate}T00:00:00`).toLocaleDateString("en-US", {
     weekday: "long",
@@ -82,6 +84,7 @@ export async function generateDailyNewsletterEmail({
       news: processedNews,
       curiosity: processedCuriosity,
       unsubscribeUrl,
+      referralCode,
     })
   );
 

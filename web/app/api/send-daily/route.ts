@@ -29,7 +29,7 @@ export async function GET(req: Request) {
     // 2) Get active subscribers (ordered by creation date for deterministic processing)
     const { data: subscribers, error: sErr } = await supabaseAdmin
       .from("subscribers")
-      .select("email")
+      .select("email, referral_code")
       .eq("status", "active")
       .order("created_at", { ascending: true });
 
@@ -68,6 +68,7 @@ export async function GET(req: Request) {
           perspective: newsletter.content.perspective,
           curiosity: newsletter.content.curiosity,
           unsubscribeUrl: unsubUrl,
+          referralCode: sub.referral_code,
         });
 
         const result = await resend.emails.send({
