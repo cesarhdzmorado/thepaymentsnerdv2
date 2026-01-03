@@ -71,11 +71,11 @@ export function DailyNewsletter({
             <table role="presentation" cellSpacing="0" cellPadding="0" style={{ width: '100%' }}>
               <tbody>
                 <tr>
-                  <td style={{ verticalAlign: 'top', width: '70%' }}>
+                  <td style={{ verticalAlign: 'top', width: '65%', paddingRight: '10px' }}>
                     <Heading style={logoHeading}>/thepaymentsnerd</Heading>
                     <Text style={dateText}>{formattedDate}</Text>
                   </td>
-                  <td style={{ verticalAlign: 'top', textAlign: 'right', width: '30%', whiteSpace: 'nowrap' }}>
+                  <td style={{ verticalAlign: 'top', textAlign: 'right', width: '35%', paddingLeft: '10px' }}>
                     <Link href="https://www.thepaymentsnerd.co" style={viewOnlineLink}>
                       View Online
                     </Link>
@@ -267,12 +267,13 @@ const dateText = {
 };
 
 const viewOnlineLink = {
-  fontSize: "12px",
+  fontSize: "11px",
   color: "#2563eb",
   textDecoration: "none",
   fontWeight: "500",
   whiteSpace: "nowrap" as const,
   display: "inline-block",
+  lineHeight: "16px",
 };
 
 const section = {
