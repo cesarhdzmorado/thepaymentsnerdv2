@@ -157,7 +157,7 @@ export function DailyNewsletter({
 
           {/* Signature */}
           <Hr style={divider} />
-          <Section style={section}>
+          <Section style={signatureSection}>
             <Text style={signatureText}>
               Made with ❤️ for the payments community
             </Text>
@@ -295,6 +295,10 @@ const viewOnlineLink = {
 
 const section = {
   padding: "0 40px 32px 40px",
+};
+
+const signatureSection = {
+  padding: "24px 40px 32px 40px",
 };
 
 const sectionLabel = {
