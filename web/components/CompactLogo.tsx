@@ -1,7 +1,7 @@
 // web/components/CompactLogo.tsx
 export function CompactLogo() {
   return (
-    <div className="select-none text-xl font-extrabold tracking-tight">
+    <div className="select-none font-display text-xl font-extrabold tracking-tight">
       <span className="text-slate-500 dark:text-slate-400">/</span>
 
       <span

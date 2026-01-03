@@ -50,19 +50,22 @@ const sampleNewsletter = {
     text: "The first credit card was introduced in 1950 by Diners Club and could only be used at 27 restaurants in New York City. Today, there are over 2.8 billion credit cards in circulation worldwide.",
     source: "Financial History Archives"
   },
-  unsubscribeUrl: "https://example.com/unsubscribe?token=sample"
+  unsubscribeUrl: "https://example.com/unsubscribe?token=sample",
+  referralCode: "SAMPLE123"
 };
 
-// Generate the email HTML
-const emailHtml = generateDailyNewsletterEmail(sampleNewsletter);
+// Generate the email HTML (async function)
+(async () => {
+  const emailHtml = await generateDailyNewsletterEmail(sampleNewsletter);
 
-// Write to file
-const outputPath = path.join(__dirname, "..", "email-preview.html");
-fs.writeFileSync(outputPath, emailHtml, "utf-8");
+  // Write to file
+  const outputPath = path.join(__dirname, "..", "email-preview.html");
+  fs.writeFileSync(outputPath, emailHtml, "utf-8");
 
-console.log("✅ Email preview generated successfully!");
-console.log(`📧 Open this file in your browser: ${outputPath}`);
-console.log("\nTip: You can also use online email testing tools like:");
-console.log("  • https://putsmail.com/tests/new");
-console.log("  • https://litmus.com/");
-console.log("  • https://www.emailonacid.com/");
+  console.log("✅ Email preview generated successfully!");
+  console.log(`📧 Open this file in your browser: ${outputPath}`);
+  console.log("\nTip: You can also use online email testing tools like:");
+  console.log("  • https://putsmail.com/tests/new");
+  console.log("  • https://litmus.com/");
+  console.log("  • https://www.emailonacid.com/");
+})();

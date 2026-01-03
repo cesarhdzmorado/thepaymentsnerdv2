@@ -1,20 +1,30 @@
 // web/app/layout.tsx
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Archivo } from "next/font/google";
 import { NavigationBar } from "@/components/NavigationBar";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// Body font - clean, readable for content
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+// Heading font - modern, geometric, tech-forward
+const archivo = Archivo({
+  subsets: ["latin"],
+  variable: "--font-archivo",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "/thepaymentsnerd - Daily Payments News",
-  description:
-    "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
+  description: "Five critical payments insights. Zero noise. Daily.",
   openGraph: {
     title: "/thepaymentsnerd - Daily Payments News",
-    description:
-      "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
+    description: "Five critical payments insights. Zero noise. Daily.",
     url: "https://www.thepaymentsnerd.co",
     siteName: "/thepaymentsnerd",
     type: "website",
@@ -30,8 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "/thepaymentsnerd - Daily Payments News",
-    description:
-      "Your daily briefing on the world of payments, fintech, and financial innovation, powered by AI.",
+    description: "Five critical payments insights. Zero noise. Daily.",
     images: ["https://www.thepaymentsnerd.co/og-image.png"],
   },
 };
@@ -45,8 +54,9 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body
         className={[
-          inter.className,
-          "min-h-screen antialiased",
+          inter.variable,
+          archivo.variable,
+          "min-h-screen antialiased font-sans",
           // force the entire app to respect your CSS variables in globals.css
           "bg-[var(--background)] text-[var(--foreground)]",
         ].join(" ")}

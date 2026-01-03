@@ -7,9 +7,21 @@ import { CompactLogo } from "./CompactLogo";
 
 export function NavigationBar() {
   const [isVisible, setIsVisible] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => setIsVisible(window.scrollY > 200);
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > 200);
+
+      // Calculate scroll progress percentage
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
+      const scrollableHeight = documentHeight - windowHeight;
+      const progress = scrollableHeight > 0 ? (scrollTop / scrollableHeight) * 100 : 0;
+      setScrollProgress(Math.min(100, Math.max(0, progress)));
+    };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
@@ -38,8 +50,14 @@ export function NavigationBar() {
         "dark:shadow-lg dark:shadow-black/20",
       ].join(" ")}
     >
-      {/* Top accent line with gradient */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent dark:via-cyan-400/30" />
+      {/* Reading progress indicator - gradient line at top */}
+      <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-slate-200/50 via-slate-300/50 to-slate-200/50 dark:from-slate-700/30 dark:via-slate-600/30 dark:to-slate-700/30">
+        <div
+          className="h-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 transition-all duration-150 ease-out"
+          style={{ width: `${scrollProgress}%` }}
+          aria-hidden="true"
+        />
+      </div>
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">

@@ -26,11 +26,12 @@ export async function GET(req: Request) {
       throw new Error("No newsletter found");
     }
 
-    // 2) Get active subscribers
+    // 2) Get active subscribers (ordered by creation date for deterministic processing)
     const { data: subscribers, error: sErr } = await supabaseAdmin
       .from("subscribers")
-      .select("email")
-      .eq("status", "active");
+      .select("email, referral_code")
+      .eq("status", "active")
+      .order("created_at", { ascending: true });
 
     if (sErr) {
       throw new Error("Failed to load subscribers");
@@ -42,39 +43,76 @@ export async function GET(req: Request) {
     const secret = process.env.SUBSCRIBE_TOKEN_SECRET!;
 
     let sent = 0;
+    let failed = 0;
+    const errors: Array<{ email: string; error: string }> = [];
 
     // Generate dynamic subject line from newsletter content
     const emailSubject = generateEmailSubject(newsletter.content.news);
 
+    console.log(`Starting daily send for ${subscribers?.length || 0} subscribers`);
+
+    // Helper function to add delay between sends (respects Resend rate limit: 2 req/sec)
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
     for (const sub of subscribers ?? []) {
-      const unsubToken = makeToken(sub.email, "unsubscribe", secret, 365 * 24);
-      const unsubUrl = `${siteUrl}/api/unsubscribe?token=${encodeURIComponent(unsubToken)}`;
+      try {
+        console.log(`Processing subscriber: ${sub.email}`);
 
-      const emailHtml = generateDailyNewsletterEmail({
-        publicationDate: newsletter.publication_date,
-        intro: newsletter.content.intro,
-        news: newsletter.content.news,
-        perspective: newsletter.content.perspective,
-        curiosity: newsletter.content.curiosity,
-        unsubscribeUrl: unsubUrl,
-      });
+        const unsubToken = makeToken(sub.email, "unsubscribe", secret, 365 * 24);
+        const unsubUrl = `${siteUrl}/api/unsubscribe?token=${encodeURIComponent(unsubToken)}`;
 
-      await resend.emails.send({
-        from: `The Payments Nerd <${from}>`,
-        to: sub.email,
-        subject: emailSubject,
-        html: emailHtml,
-        headers: {
-          'X-Entity-Ref-ID': newsletter.publication_date,
-          'List-Unsubscribe': `<${unsubUrl}>`,
-          'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
-        },
-      });
+        const emailHtml = await generateDailyNewsletterEmail({
+          publicationDate: newsletter.publication_date,
+          intro: newsletter.content.intro,
+          news: newsletter.content.news,
+          perspective: newsletter.content.perspective,
+          curiosity: newsletter.content.curiosity,
+          unsubscribeUrl: unsubUrl,
+          referralCode: sub.referral_code,
+        });
 
-      sent++;
+        const result = await resend.emails.send({
+          from: `The Payments Nerd <${from}>`,
+          to: sub.email,
+          subject: emailSubject,
+          html: emailHtml,
+          headers: {
+            'X-Entity-Ref-ID': newsletter.publication_date,
+            'List-Unsubscribe': `<${unsubUrl}>`,
+            'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
+          },
+        });
+
+        if (result.data?.id) {
+          sent++;
+          console.log(`✅ Sent to ${sub.email} (ID: ${result.data.id})`);
+        } else if (result.error) {
+          failed++;
+          const errorMsg = result.error.message || 'Unknown Resend error';
+          errors.push({ email: sub.email, error: errorMsg });
+          console.error(`❌ Resend error for ${sub.email}:`, errorMsg);
+        }
+      } catch (error: any) {
+        failed++;
+        const errorMsg = error.message || 'Unknown error';
+        errors.push({ email: sub.email, error: errorMsg });
+        console.error(`❌ Exception for ${sub.email}:`, errorMsg, error.stack);
+      }
+
+      // Add delay between sends to respect Resend rate limit (2 requests/sec)
+      // Using 600ms delay = ~1.6 req/sec (safely under limit)
+      await delay(600);
     }
 
-    return NextResponse.json({ ok: true, sent });
+    console.log(`Daily send complete: ${sent} sent, ${failed} failed`);
+
+    return NextResponse.json({
+      ok: true,
+      sent,
+      failed,
+      total: subscribers?.length || 0,
+      errors: errors.length > 0 ? errors : undefined,
+    });
   } catch (e: any) {
     console.error("Daily send error:", e.message);
     return NextResponse.json({ error: "Failed" }, { status: 500 });
