@@ -10,7 +10,21 @@ import * as dotenv from "dotenv";
 import * as path from "path";
 
 // Load environment variables from .env.local
-dotenv.config({ path: path.join(__dirname, "..", ".env.local") });
+const envPath = path.join(__dirname, "..", ".env.local");
+console.log("🔍 Debug Info:");
+console.log(`   __dirname: ${__dirname}`);
+console.log(`   Trying to load .env from: ${envPath}`);
+
+const result = dotenv.config({ path: envPath });
+if (result.error) {
+  console.log(`   ❌ Error loading .env: ${result.error.message}`);
+} else {
+  console.log(`   ✅ .env file loaded successfully`);
+}
+
+console.log(`   RESEND_API_KEY found: ${process.env.RESEND_API_KEY ? 'YES' : 'NO'}`);
+console.log(`   EMAIL_FROM found: ${process.env.EMAIL_FROM ? 'YES' : 'NO'}`);
+console.log("");
 
 import { Resend } from "resend";
 import { generateDailyNewsletterEmail, generateEmailSubject } from "../lib/emailTemplate";
