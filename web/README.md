@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Payments Nerd - Web Application
 
-## Getting Started
+Next.js 15 web application for The Payments Nerd newsletter platform.
 
-First, run the development server:
+## Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Set up environment variables
+# Copy .env.example from project root and configure
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Inter](https://fonts.google.com/specimen/Inter).
+For complete documentation, see the main README and docs:
+
+- **[Main README](../README.md)** - Project overview, quick start, tech stack
+- **[Setup Guide](../docs/SETUP.md)** - Environment configuration, API keys
+- **[Architecture](../docs/ARCHITECTURE.md)** - System design, data flow
+- **[Deployment](../docs/DEPLOYMENT.md)** - Vercel deployment, GitHub Actions
+- **[Email System](../docs/EMAIL_SYSTEM.md)** - Email delivery, compliance
+
+## Project Structure
+
+```
+web/
+├── app/                # Next.js App Router
+│   ├── api/            # API routes
+│   ├── page.tsx        # Homepage
+│   └── layout.tsx      # Root layout
+├── components/         # React components
+├── emails/             # React Email templates
+├── lib/                # Utilities (Supabase, tokens, email)
+├── public/             # Static assets
+└── scripts/            # Development scripts
+```
+
+## Available Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm start            # Start production server
+npm run lint         # Run ESLint
+npm test             # Run tests with Vitest
+```
+
+## Tech Stack
+
+- **Framework:** Next.js 15.3.8 (App Router)
+- **UI:** React 19, Tailwind CSS v4
+- **Email:** React Email, Resend
+- **Database:** Supabase
+- **Analytics:** Vercel Analytics
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Email Docs](https://react.email)
+- [Tailwind CSS Docs](https://tailwindcss.com)
+- [Supabase Docs](https://supabase.com/docs)
