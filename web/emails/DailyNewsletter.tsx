@@ -31,6 +31,7 @@ interface DailyNewsletterProps {
   news: NewsItem[];
   curiosity: Curiosity;
   unsubscribeUrl: string;
+  referralCode: string;
 }
 
 export function DailyNewsletter({
@@ -41,6 +42,7 @@ export function DailyNewsletter({
   news,
   curiosity,
   unsubscribeUrl,
+  referralCode,
 }: DailyNewsletterProps) {
   const heroStory = news[0];
   const quickHits = news.slice(1);
@@ -156,30 +158,46 @@ export function DailyNewsletter({
           {/* Signature */}
           <Hr style={divider} />
           <Section style={section}>
-            <Text style={signature}>— César</Text>
+            <Text style={signatureText}>
+              Made with ❤️ for the payments community
+            </Text>
+            <Text style={signatureAuthor}>
+              by <Link href="https://www.linkedin.com/in/cesarhernandezm" style={signatureLink}>Cesar Hernandez</Link>
+            </Text>
           </Section>
 
           {/* Share Section */}
+          <Hr style={divider} />
           <Section style={shareSection}>
             <Text style={shareHeading}>
-              Enjoying the newsletter? Share it with your network
+              Share the Nerd's take
             </Text>
+            <Text style={shareSubtext}>
+              Your payments friends get smarter, you get rewarded. Win-win.
+            </Text>
+            <Text style={shareIncentive}>
+              Share your unique link and unlock exclusive content as you refer more readers.
+            </Text>
+            <Link href={`https://www.thepaymentsnerd.co/subscribe?ref=${referralCode}`} style={referralLinkStyle}>
+              https://www.thepaymentsnerd.co/subscribe?ref={referralCode}
+            </Link>
+
             <table
               role="presentation"
               cellSpacing="0"
               cellPadding="0"
-              style={{ margin: "0 auto" }}
+              style={{ margin: "24px auto 0", textAlign: "center" as const }}
             >
               <tbody>
                 <tr>
-                  <td style={{ padding: "0 6px" }}>
-                    <Link href={getTwitterShareUrl()} style={shareButtonTwitter}>
-                      Share on Twitter
+                  <td style={{ padding: "0 12px" }}>
+                    <Link href={getTwitterShareUrl(referralCode)}>
+                      <img src="https://www.thepaymentsnerd.co/images/x-logo.png" alt="Share on X" width="32" height="32" style={{ display: "block" }} />
                     </Link>
                   </td>
-                  <td style={{ padding: "0 6px" }}>
-                    <Link href={getLinkedInShareUrl()} style={shareButtonLinkedIn}>
-                      Share on LinkedIn
+                  <td style={{ padding: "0 12px" }}>
+                    <Link href={getLinkedInShareUrl(referralCode)}>
+                      <img src="https://www.thepaymentsnerd.co/images/linkedin-logo.png" alt="Share on LinkedIn" width="32" height="32" style={{ display: "block" }} />
                     </Link>
                   </td>
                 </tr>
@@ -219,16 +237,16 @@ function getPublicationName(url: string): string {
   }
 }
 
-function getTwitterShareUrl(): string {
+function getTwitterShareUrl(referralCode: string): string {
   const text = encodeURIComponent(
     "Just discovered /thepaymentsnerd - a daily AI-curated briefing on payments industry news. Worth checking out!"
   );
-  const url = encodeURIComponent("https://www.thepaymentsnerd.co");
+  const url = encodeURIComponent(`https://www.thepaymentsnerd.co/subscribe?ref=${referralCode}`);
   return `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
 }
 
-function getLinkedInShareUrl(): string {
-  const url = encodeURIComponent("https://www.thepaymentsnerd.co");
+function getLinkedInShareUrl(referralCode: string): string {
+  const url = encodeURIComponent(`https://www.thepaymentsnerd.co/subscribe?ref=${referralCode}`);
   return `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
 }
 
@@ -372,10 +390,24 @@ const divider = {
   margin: "0",
 };
 
-const signature = {
-  margin: "0",
-  fontSize: "16px",
+const signatureText = {
+  margin: "0 0 8px 0",
+  fontSize: "15px",
   color: "#171717",
+  fontWeight: "400",
+  textAlign: "center" as const,
+};
+
+const signatureAuthor = {
+  margin: "0",
+  fontSize: "14px",
+  color: "#525252",
+  textAlign: "center" as const,
+};
+
+const signatureLink = {
+  color: "#2563eb",
+  textDecoration: "none",
   fontWeight: "500",
 };
 
@@ -385,32 +417,38 @@ const shareSection = {
 };
 
 const shareHeading = {
+  margin: "0 0 12px 0",
+  fontSize: "18px",
+  color: "#171717",
+  fontWeight: "700",
+};
+
+const shareSubtext = {
   margin: "0 0 16px 0",
-  fontSize: "14px",
-  color: "#737373",
-  fontWeight: "600",
+  fontSize: "15px",
+  color: "#404040",
+  lineHeight: "1.6",
 };
 
-const shareButtonTwitter = {
-  display: "inline-block",
-  padding: "10px 18px",
-  backgroundColor: "#2563eb",
-  color: "#ffffff",
-  textDecoration: "none",
-  borderRadius: "8px",
+const shareIncentive = {
+  margin: "0 0 12px 0",
   fontSize: "14px",
-  fontWeight: "600",
+  color: "#525252",
+  lineHeight: "1.5",
 };
 
-const shareButtonLinkedIn = {
-  display: "inline-block",
-  padding: "10px 18px",
-  backgroundColor: "#0a66c2",
-  color: "#ffffff",
+const referralLinkStyle = {
+  display: "block",
+  margin: "0",
+  padding: "12px 16px",
+  backgroundColor: "#f4f4f5",
+  color: "#2563eb",
   textDecoration: "none",
   borderRadius: "8px",
-  fontSize: "14px",
-  fontWeight: "600",
+  fontSize: "13px",
+  fontWeight: "500",
+  border: "1px solid #e5e5e5",
+  wordBreak: "break-all" as const,
 };
 
 const footer = {

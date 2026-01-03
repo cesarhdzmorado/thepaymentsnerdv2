@@ -50,7 +50,8 @@ const sampleNewsletter = {
     text: "The first credit card was introduced in 1950 by Diners Club and could only be used at 27 restaurants in New York City. Today, there are over 2.8 billion credit cards in circulation worldwide.",
     source: "Financial History Archives"
   },
-  unsubscribeUrl: "https://example.com/unsubscribe?token=sample"
+  unsubscribeUrl: "https://example.com/unsubscribe?token=sample",
+  referralCode: "SAMPLE123"
 };
 
 // Generate the email HTML (async function)
