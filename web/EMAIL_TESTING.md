@@ -1,14 +1,21 @@
 # 📧 Email Newsletter Testing Guide
 
-This guide will help you test the new daily newsletter email template.
+This guide will help you test the new daily newsletter email template with the referral system and updated signature.
 
-## 🎨 Method 1: Preview in Browser (Instant)
+## ✨ What's New
+
+Your newsletter now includes:
+- ✅ **New Signature**: "Made with ❤️ for the payments community" by Cesar Hernandez (with LinkedIn link)
+- ✅ **Referral Section**: "Share the Nerd's take" with personalized referral links
+- ✅ **Gamification**: "Your payments friends get smarter, you get rewarded. Win-win."
+- ✅ **Social Sharing**: X and LinkedIn logos with referral tracking
+
+## 🎨 Method 1: Preview in Browser (Instant - Recommended)
 
 The fastest way to see how the email looks:
 
 ```bash
-cd web
-npx tsx scripts/previewEmail.ts
+npm run email:preview
 ```
 
 This creates `email-preview.html` in the web directory. Open it in your browser to see the full design with sample data.
@@ -18,38 +25,37 @@ This creates `email-preview.html` in the web directory. Open it in your browser 
 /home/user/thepaymentsnerdv2/web/email-preview.html
 ```
 
-## 📨 Method 2: Send Test Email to Yourself
+## 📨 Method 2: Send Test Email to Yourself (Easy)
 
-### Setup
+✅ **Environment already configured!** All required variables are in `.env.local`
 
-1. Add this to your `.env.local` file:
-   ```env
-   TEST_EMAIL_SECRET=your-secret-test-token-here
-   ```
+### Quick Send
 
-2. Make sure you have these existing variables:
-   ```env
-   RESEND_API_KEY=your_resend_api_key
-   EMAIL_FROM=your-sender-email@example.com
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-   SUPABASE_SERVICE_ROLE_KEY=your_supabase_key
-   ```
+Send a test email with sample newsletter data:
 
-### Send Test Email
-
-Start your development server:
 ```bash
+# Send to default email (cesc_haz@hotmail.es)
+npm run email:test
+
+# Or specify a different email
+npm run email:test your.email@example.com
+```
+
+This script (`scripts/sendTestEmailDirect.ts`) uses sample data and doesn't require the database.
+
+### Alternative: Test via API (Requires Newsletter in Database)
+
+If you have newsletters in your Supabase database:
+
+```bash
+# Start dev server
 npm run dev
-```
 
-Then make a GET request:
-```bash
-curl "http://localhost:3000/api/test-email?to=YOUR_EMAIL@example.com&secret=your-secret-test-token-here"
-```
+# In another terminal, send test email
+npm run email:test:api
 
-Or visit in your browser:
-```
-http://localhost:3000/api/test-email?to=YOUR_EMAIL@example.com&secret=your-secret-test-token-here
+# Or to a different email
+./scripts/sendTestEmail.sh your.email@example.com
 ```
 
 **Expected Response:**
@@ -59,7 +65,7 @@ http://localhost:3000/api/test-email?to=YOUR_EMAIL@example.com&secret=your-secre
   "message": "Test email sent to your@email.com",
   "emailId": "...",
   "newsletter": {
-    "date": "2025-12-29",
+    "date": "2026-01-03",
     "newsCount": 5
   }
 }
@@ -107,22 +113,39 @@ Check your inbox! 🎉
 
 ## 🔍 What to Check in the Email
 
-When testing, verify:
+When testing, verify the **new features**:
 
-- ✅ Logo displays correctly with gradient
-- ✅ Date badge shows the correct date with calendar icon
-- ✅ All 5 news items appear with:
-  - Blue gradient book icons
-  - "TOPIC #1" badges
-  - Titles, body text, and sources
-- ✅ "Did You Know?" section with lightbulb icon
+- ✅ **New Signature Section**:
+  - "Made with ❤️ for the payments community"
+  - "by Cesar Hernandez" with LinkedIn link to https://www.linkedin.com/in/cesarhernandezm
+- ✅ **Share the Nerd's take Section**:
+  - Heading: "Share the Nerd's take"
+  - Subtext: "Your payments friends get smarter, you get rewarded. Win-win."
+  - Incentive text about unlocking exclusive content
+  - Personalized referral link (e.g., https://www.thepaymentsnerd.co/subscribe?ref=TESTCODE123)
+  - X and LinkedIn logo buttons (⚠️ will show broken images until you add logo files)
+- ✅ All 5 news items with titles, body text, and sources
+- ✅ "Did You Know?" section
 - ✅ Footer with unsubscribe link
 - ✅ Responsive design (test on mobile and desktop)
-- ✅ Works in different email clients:
-  - Gmail
-  - Outlook
-  - Apple Mail
-  - Mobile email apps
+
+## ⚠️ Important: Logo Images
+
+The X and LinkedIn logos won't display until you add the image files:
+
+1. **Download logos:**
+   - X Logo: https://about.twitter.com/en/who-we-are/brand-toolkit
+   - LinkedIn Logo: https://brand.linkedin.com/downloads
+
+2. **Save as (32x32px):**
+   - `web/public/images/x-logo.png`
+   - `web/public/images/linkedin-logo.png`
+
+3. **Deploy to production**
+
+The emails reference these URLs:
+- `https://www.thepaymentsnerd.co/images/x-logo.png`
+- `https://www.thepaymentsnerd.co/images/linkedin-logo.png`
 
 ## 🎯 Online Email Testing Tools
 
