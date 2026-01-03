@@ -1,4 +1,8 @@
 newsletters:
+  # High level financial news
+  - url: "https://www.ft.com/myft/following/6c102223-b2c8-4ade-8eff-6048a0d5aba6.rss"
+    topic: "high level financial news"
+    
   # Core Payments Industry Sources
   - url: "https://www.pymnts.com/feed/"
     topic: "General Payments News"
@@ -24,10 +28,6 @@ newsletters:
   # Crypto & Blockchain (more payments-focused)
   - url: "https://www.theblock.co/rss.xml"
     topic: "Crypto Infrastructure & Digital Assets"
-
-  # Keep FT for high-level financial news
-  - url: "https://www.ft.com/myft/following/4bc212f8-bfee-4452-80e4-5e6ed76b337e.rss"
-    topic: "Financial Times Curated Feed"
 
 # Current Industry Trends (manually update as trends evolve)
 # These provide context to agents for better story selection and analysis
