@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest run",
-    "publish": "cd .. && git add web/public/newsletter.json && git commit -m \"docs: Add newsletter for $(date +%F)\" && git push"
+    "publish": "cd .. && git add web/public/newsletter.json && git commit -m \"docs: Add newsletter for $(date +%F)\" && git push",
+    "email:preview": "npx tsx scripts/previewEmail.ts",
+    "email:test": "npx tsx scripts/sendTestEmailDirect.ts",
+    "email:test:api": "./scripts/sendTestEmail.sh"
   },
   "dependencies": {
     "@react-email/components": "^1.0.3",
