@@ -191,7 +191,7 @@ export function DailyNewsletter({
               <tbody>
                 <tr>
                   <td style={{ padding: "0 12px" }}>
-                    <Link href={getTwitterShareUrl(referralCode)}>
+                    <Link href={getXShareUrl(referralCode)}>
                       <img src="https://www.thepaymentsnerd.co/images/x-logo.png" alt="Share on X" width="32" height="32" style={{ display: "block" }} />
                     </Link>
                   </td>
@@ -237,7 +237,7 @@ function getPublicationName(url: string): string {
   }
 }
 
-function getTwitterShareUrl(referralCode: string): string {
+function getXShareUrl(referralCode: string): string {
   const text = encodeURIComponent(
     "Just discovered /thepaymentsnerd - a daily AI-curated briefing on payments industry news. Worth checking out!"
   );

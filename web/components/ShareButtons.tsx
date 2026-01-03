@@ -1,6 +1,6 @@
 "use client";
 
-import { Twitter, Linkedin, Share2, Check } from "lucide-react";
+import { X, Linkedin, Share2, Check } from "lucide-react";
 import { useState } from "react";
 
 interface ShareButtonsProps {
@@ -13,9 +13,9 @@ export function ShareButtons({ url }: ShareButtonsProps) {
   // Default values
   const shareUrl = url || (typeof window !== "undefined" ? window.location.href : "");
 
-  // Simple, clean Twitter share text
-  const twitterText = "www.thepaymentsnerd.co 👀";
-  const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterText)}`;
+  // Simple, clean X share text
+  const xText = "www.thepaymentsnerd.co 👀";
+  const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(xText)}`;
 
   // LinkedIn share URL (LinkedIn doesn't support pre-populated text anymore)
   // The OG tags will provide rich preview automatically
@@ -37,9 +37,9 @@ export function ShareButtons({ url }: ShareButtonsProps) {
         Share:
       </span>
 
-      {/* Twitter */}
+      {/* X */}
       <a
-        href={twitterUrl}
+        href={xUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg
@@ -52,10 +52,10 @@ export function ShareButtons({ url }: ShareButtonsProps) {
                    transition-all duration-300
                    hover:scale-105 hover:shadow-md active:scale-95
                    text-sm font-medium"
-        aria-label="Share on Twitter"
+        aria-label="Share on X"
       >
-        <Twitter className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12" />
-        <span className="hidden sm:inline">Twitter</span>
+        <X className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12" />
+        <span className="hidden sm:inline">X</span>
       </a>
 
       {/* LinkedIn */}
