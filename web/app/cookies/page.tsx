@@ -42,8 +42,8 @@ export default function CookiesPolicyPage() {
         If you have any questions about this Cookie Policy or our data handling practices, please contact us at:
       </p>
       <p>
-        <a href="mailto:cesar.hernandezm@outlook.com" className="text-blue-600 hover:underline">
-          📩 cesar.hernandezm@outlook.com
+        <a href="mailto:cesar@thepaymentsnerd.co" className="text-blue-600 hover:underline">
+          📩 cesar@thepaymentsnerd.co
         </a>
       </p>
       
