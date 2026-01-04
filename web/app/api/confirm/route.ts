@@ -63,24 +63,24 @@ export async function GET(req: Request) {
             </p>
 
             <p>
-              Every day, you'll get:
+              <strong>📬 What to expect:</strong>
             </p>
 
             <ul>
-              <li>5 <strong>important signals</strong> from payments and fintech</li>
-              <li>No press releases, no fluff</li>
-              <li>Written by a human, not scraped</li>
+              <li>Daily at 7 AM ET (Mon-Fri)</li>
+              <li>5 hand-picked signals from payments & fintech</li>
+              <li>3-minute read, zero fluff</li>
+              <li>Curated daily, never generic press releases</li>
             </ul>
 
             <p>
-              This exists because payments news are either:
-              <br/>• too shallow
-              <br/>• too salesy
-              <br/>• or too late
+              I built this for myself—my daily filter through 50+ payments sources to find what actually matters. Makes me smarter every morning. Sharing in case it helps you too.
             </p>
 
             <p>
-              If you ever feel it's not useful, one click unsubscribes you.
+              <strong>✓ Your first issue arrives tomorrow at 7 AM ET</strong><br/>
+              <strong>✓ Whitelist this email to never miss it</strong><br/>
+              <strong>✓ One-click unsubscribe anytime</strong>
             </p>
 
             ${referralCode ? `
@@ -99,6 +99,10 @@ export async function GET(req: Request) {
 
             <p style="margin-top: 24px;">
               — César
+            </p>
+
+            <p style="margin-top: 8px; color: #666; font-size: 14px;">
+              P.S. Questions? Just reply.
             </p>
 
             <p style="margin-top:24px;color:#666;font-size:12px">
