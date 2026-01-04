@@ -22,6 +22,15 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "/thepaymentsnerd - Daily Payments News",
   description: "Five critical payments insights. Zero noise. Daily.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     title: "/thepaymentsnerd - Daily Payments News",
     description: "Five critical payments insights. Zero noise. Daily.",

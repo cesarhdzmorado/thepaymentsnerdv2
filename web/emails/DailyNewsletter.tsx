@@ -70,21 +70,13 @@ export function DailyNewsletter({
         <Container style={container}>
           {/* Header */}
           <Section style={header}>
-            <table role="presentation" cellSpacing="0" cellPadding="0" style={{ width: '100%' }}>
-              <tbody>
-                <tr>
-                  <td style={{ verticalAlign: 'top', width: '65%', paddingRight: '10px' }}>
-                    <Heading style={logoHeading}>/thepaymentsnerd</Heading>
-                    <Text style={dateText}>{formattedDate}</Text>
-                  </td>
-                  <td style={{ verticalAlign: 'top', textAlign: 'right', width: '35%', paddingLeft: '10px' }}>
-                    <Link href="https://www.thepaymentsnerd.co" style={viewOnlineLink}>
-                      View Online
-                    </Link>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <Heading style={logoHeading}>/thepaymentsnerd</Heading>
+            <Text style={dateText}>{formattedDate}</Text>
+            <Text style={{ margin: "8px 0 0 0" }}>
+              <Link href="https://www.thepaymentsnerd.co" style={viewOnlineLink}>
+                View Online
+              </Link>
+            </Text>
           </Section>
 
           {/* Optional Intro */}
@@ -178,8 +170,8 @@ export function DailyNewsletter({
             <Text style={shareIncentive}>
               Share your unique link and unlock exclusive content as you refer more readers.
             </Text>
-            <Link href={`https://www.thepaymentsnerd.co/subscribe?ref=${referralCode}`} style={referralLinkStyle}>
-              https://www.thepaymentsnerd.co/subscribe?ref={referralCode}
+            <Link href={`https://www.thepaymentsnerd.co?ref=${referralCode}`} style={referralLinkStyle}>
+              https://www.thepaymentsnerd.co?ref={referralCode}
             </Link>
 
             <table
@@ -192,12 +184,12 @@ export function DailyNewsletter({
                 <tr>
                   <td style={{ padding: "0 12px" }}>
                     <Link href={getXShareUrl(referralCode)}>
-                      <img src="https://www.thepaymentsnerd.co/images/x-logo.png" alt="Share on X" width="32" height="32" style={{ display: "block" }} />
+                      <img src="https://www.thepaymentsnerd.co/images/x-logo.png" alt="Share on X" width="28" height="28" style={{ display: "block" }} />
                     </Link>
                   </td>
                   <td style={{ padding: "0 12px" }}>
                     <Link href={getLinkedInShareUrl(referralCode)}>
-                      <img src="https://www.thepaymentsnerd.co/images/linkedin-logo.png" alt="Share on LinkedIn" width="32" height="32" style={{ display: "block" }} />
+                      <img src="https://www.thepaymentsnerd.co/images/linkedin-logo.png" alt="Share on LinkedIn" width="28" height="28" style={{ display: "block" }} />
                     </Link>
                   </td>
                 </tr>
@@ -241,12 +233,12 @@ function getXShareUrl(referralCode: string): string {
   const text = encodeURIComponent(
     "Just discovered /thepaymentsnerd - a daily AI-curated briefing on payments industry news. Worth checking out!"
   );
-  const url = encodeURIComponent(`https://www.thepaymentsnerd.co/subscribe?ref=${referralCode}`);
+  const url = encodeURIComponent(`https://www.thepaymentsnerd.co?ref=${referralCode}`);
   return `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
 }
 
 function getLinkedInShareUrl(referralCode: string): string {
-  const url = encodeURIComponent(`https://www.thepaymentsnerd.co/subscribe?ref=${referralCode}`);
+  const url = encodeURIComponent(`https://www.thepaymentsnerd.co?ref=${referralCode}`);
   return `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
 }
 

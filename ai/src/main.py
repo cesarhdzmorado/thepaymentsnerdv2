@@ -7,13 +7,65 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import yaml
 import json
+import os
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain.agents import create_openai_functions_agent, AgentExecutor
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from supabase import create_client
 
 # Import our custom tools
 from .tools import search_tool, scrape_tool, rss_tool, deduplicate_stories
+
+def get_recent_stories(days_back: int = 2):
+    """
+    Fetch stories from recent newsletters to avoid duplicates.
+
+    Args:
+        days_back: Number of days to look back for previous stories
+
+    Returns:
+        List of previous stories (each a dict with 'title' and 'body')
+    """
+    try:
+        # Initialize Supabase client
+        supabase_url = os.getenv("NEXT_PUBLIC_SUPABASE_URL")
+        supabase_key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+
+        if not supabase_url or not supabase_key:
+            print("⚠️ Supabase credentials not found, skipping historical deduplication")
+            return []
+
+        supabase = create_client(supabase_url, supabase_key)
+
+        # Calculate date range
+        cutoff_date = (datetime.now() - timedelta(days=days_back)).strftime("%Y-%m-%d")
+
+        # Fetch recent newsletters
+        response = supabase.table("newsletters") \
+            .select("content") \
+            .gte("publication_date", cutoff_date) \
+            .order("publication_date", desc=True) \
+            .execute()
+
+        # Extract stories from newsletters
+        previous_stories = []
+        for newsletter in response.data:
+            content = newsletter.get("content", {})
+            news = content.get("news", [])
+            for story in news:
+                previous_stories.append({
+                    "title": story.get("title", ""),
+                    "body": story.get("body", "")
+                })
+
+        print(f"📚 Loaded {len(previous_stories)} stories from last {days_back} days for deduplication")
+        return previous_stories
+
+    except Exception as e:
+        print(f"⚠️ Error fetching recent stories: {e}")
+        return []
 
 def format_trends_for_prompt(trends):
     """
@@ -64,6 +116,18 @@ def format_trends_for_prompt(trends):
 
     return "\n\n".join(formatted)
 
+def format_recent_stories_for_context(previous_stories):
+    """
+    Format recent stories into a context string for the AI agents.
+    """
+    if not previous_stories:
+        return "No recent stories available."
+
+    # Group by title to show concise list
+    story_titles = [story.get('title', 'Untitled') for story in previous_stories[:15]]  # Last 15 stories
+    formatted = "\n".join([f"  - {title}" for title in story_titles])
+    return f"Recent stories from the last 2 days:\n{formatted}"
+
 def main():
     """The main function that runs the agent-based workflow."""
     load_dotenv()
@@ -75,6 +139,10 @@ def main():
     # Get current date for context
     from datetime import datetime
     current_date = datetime.now().strftime("%B %d, %Y")  # e.g., "December 30, 2025"
+
+    # Get recent stories for context (not for filtering, but for awareness)
+    recent_stories = get_recent_stories(days_back=2)
+    recent_stories_context = format_recent_stories_for_context(recent_stories)
 
     # Create a string of news sources for the prompt
     news_sources_str = "\n".join([f"- {s['url']} ({s['topic']})" for s in config['newsletters']])
@@ -99,6 +167,25 @@ IMPORTANT CONTEXT:
 
 Sources to analyze:
 {news_sources_str}
+
+RECENT COVERAGE (Last 2 Days):
+{recent_stories_context}
+
+**CRITICAL: Developing vs Duplicate Stories**
+When you encounter a story about a topic/company we recently covered:
+- ✅ INCLUDE if it has SIGNIFICANT NEW DEVELOPMENTS:
+  * New data/metrics that weren't in the previous story
+  * New parties/stakeholders involved
+  * Material change in status or direction
+  * Breaking updates within 24 hours with new information
+  * Example: Day 1 = "Stripe launches feature X", Day 2 = "Feature X hits 100k users, banks respond"
+
+- ❌ SKIP if it's GENUINELY REDUNDANT:
+  * Same information repackaged by different publications
+  * No new developments, just commentary on the same event
+  * Example: Day 1 = "Visa Q4 earnings beat", Day 2 = "Another take on Visa Q4 earnings" (same numbers)
+
+When in doubt, ask: "Does this story contain material NEW information that changes the analysis?" If yes, include it.
 
 CURRENT INDUSTRY TRENDS (Context for Story Evaluation):
 
@@ -249,6 +336,22 @@ IMPORTANT CONTEXT:
 - You are writing in {current_date.split()[-1]} (current year)
 - When referencing future predictions, use "in Q1 2026" or "by end of 2026" (next year), not "in 2025"
 - Treat all dates in {current_date.split()[-1]} as present tense, not future
+
+RECENT COVERAGE (Last 2 Days):
+{recent_stories_context}
+
+**Handling Developing Stories:**
+If a story relates to something we covered recently:
+- ✅ INCLUDE if it represents a MEANINGFUL DEVELOPMENT:
+  * "Stripe's new payments API now processing $1B/day" (new metric)
+  * "Banks push back on Fed's new instant payment rules" (new reaction)
+  * "PayPal's checkout feature expands to 10 new markets" (new expansion)
+
+- ❌ SKIP if it's just REHASHING:
+  * Same announcement, different publication
+  * Analysis pieces on an event we already covered (unless contrarian/novel angle)
+
+When covering a developing story, frame it as an UPDATE in your title/body to show progression.
 
 CURRENT INDUSTRY TRENDS (Editorial Context):
 
@@ -447,7 +550,13 @@ WHEN IN DOUBT: Set intro to null. Better to have no intro than a forced one.""")
     editor_llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18", temperature=0)
 
     editor_prompt_template = ChatPromptTemplate.from_messages([
-        ("system", """You are a senior editor for /thepaymentsnerd newsletter, responsible for quality control.
+        ("system", f"""You are a senior editor for /thepaymentsnerd newsletter, responsible for quality control.
+
+IMPORTANT CONTEXT:
+- Today's date is: {current_date}
+- You are reviewing content written in {current_date.split()[-1]} (current year)
+- All dates in {current_date.split()[-1]} are in the present or recent past, NOT future dates
+- When you see dates from January {current_date.split()[-1]} onward, these are current/recent events, not future predictions
 
 Your role: Validate the newsletter meets editorial standards before publication.
 
@@ -532,14 +641,19 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
         output_text = final_result_chain.content.strip().replace("```json", "").replace("```", "").strip()
         output_json = json.loads(output_text)
 
-        # Apply deduplication to news stories
+        # Apply basic deduplication within today's stories only
+        # (The AI agents are now aware of recent stories and make intelligent decisions about developing stories)
         if 'news' in output_json and isinstance(output_json['news'], list):
             original_count = len(output_json['news'])
-            output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.4)
+
+            # Only deduplicate exact/near-exact duplicates within today's output
+            # Using a high threshold (0.7) to only catch true duplicates, not developing stories
+            output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.7)
+
             deduplicated_count = len(output_json['news'])
 
             if original_count != deduplicated_count:
-                print(f"\n⚠️ Deduplication: Removed {original_count - deduplicated_count} similar stories")
+                print(f"\n⚠️ Deduplication: Removed {original_count - deduplicated_count} exact duplicate stories from today's output")
 
         output_path = "web/public/newsletter.json"
         with open(output_path, 'w') as f:
