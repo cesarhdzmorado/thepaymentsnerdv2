@@ -54,7 +54,7 @@ export function ShareButtons({ url }: ShareButtonsProps) {
                    text-sm font-medium"
         aria-label="Share on X"
       >
-        <img src="/images/x-logo.png" alt="X" className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12" />
+        <img src="/images/x-logo.png" alt="X" className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12 dark:brightness-0 dark:invert" />
         <span className="hidden sm:inline">X</span>
       </a>
 
@@ -75,7 +75,7 @@ export function ShareButtons({ url }: ShareButtonsProps) {
                    text-sm font-medium"
         aria-label="Share on LinkedIn"
       >
-        <img src="/images/linkedin-logo.png" alt="LinkedIn" className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
+        <img src="/images/linkedin-logo.png" alt="LinkedIn" className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12 dark:brightness-0 dark:invert" />
         <span className="hidden sm:inline">LinkedIn</span>
       </a>
 
