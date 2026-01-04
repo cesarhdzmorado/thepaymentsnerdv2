@@ -236,8 +236,8 @@ export default async function HomePage({
           {/* Accent bar */}
           <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-blue-600 via-indigo-600 to-purple-600 dark:from-cyan-500 dark:via-indigo-500 dark:to-purple-500" aria-hidden="true" />
 
-          <div className="relative p-8 sm:p-12 pl-10 sm:pl-14">
-            <div className="flex items-start gap-6 sm:gap-8">
+          <div className="relative p-6 sm:p-12 pl-8 sm:pl-14">
+            <div className="flex items-start gap-4 sm:gap-8">
               {/* Enhanced icon for hero story */}
               <div
                 className="flex-shrink-0 rounded-2xl p-4 text-white shadow-xl
@@ -251,7 +251,7 @@ export default async function HomePage({
 
               <div className="min-w-0 flex-1">
                 <h3
-                  className="mb-5 text-3xl sm:text-4xl lg:text-5xl font-display font-bold leading-tight
+                  className="mb-4 text-2xl sm:text-4xl lg:text-5xl font-display font-bold leading-tight
                              bg-clip-text text-transparent bg-gradient-to-r
                              from-slate-900 via-blue-900 to-indigo-900
                              dark:from-slate-100 dark:via-cyan-300 dark:to-indigo-300
@@ -260,7 +260,7 @@ export default async function HomePage({
                   {heroStory.title}
                 </h3>
 
-                <p className="mb-6 text-lg sm:text-xl leading-relaxed text-slate-700 dark:text-slate-300
+                <p className="mb-5 text-base sm:text-xl leading-relaxed text-slate-700 dark:text-slate-300
                               transition-colors duration-300
                               group-hover:text-slate-900 dark:group-hover:text-slate-200">
                   {heroStory.body}

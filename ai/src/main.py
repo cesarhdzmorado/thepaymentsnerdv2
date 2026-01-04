@@ -7,13 +7,65 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import yaml
 import json
+import os
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain.agents import create_openai_functions_agent, AgentExecutor
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from supabase import create_client
 
 # Import our custom tools
 from .tools import search_tool, scrape_tool, rss_tool, deduplicate_stories
+
+def get_recent_stories(days_back: int = 2):
+    """
+    Fetch stories from recent newsletters to avoid duplicates.
+
+    Args:
+        days_back: Number of days to look back for previous stories
+
+    Returns:
+        List of previous stories (each a dict with 'title' and 'body')
+    """
+    try:
+        # Initialize Supabase client
+        supabase_url = os.getenv("NEXT_PUBLIC_SUPABASE_URL")
+        supabase_key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+
+        if not supabase_url or not supabase_key:
+            print("⚠️ Supabase credentials not found, skipping historical deduplication")
+            return []
+
+        supabase = create_client(supabase_url, supabase_key)
+
+        # Calculate date range
+        cutoff_date = (datetime.now() - timedelta(days=days_back)).strftime("%Y-%m-%d")
+
+        # Fetch recent newsletters
+        response = supabase.table("newsletters") \
+            .select("content") \
+            .gte("publication_date", cutoff_date) \
+            .order("publication_date", desc=True) \
+            .execute()
+
+        # Extract stories from newsletters
+        previous_stories = []
+        for newsletter in response.data:
+            content = newsletter.get("content", {})
+            news = content.get("news", [])
+            for story in news:
+                previous_stories.append({
+                    "title": story.get("title", ""),
+                    "body": story.get("body", "")
+                })
+
+        print(f"📚 Loaded {len(previous_stories)} stories from last {days_back} days for deduplication")
+        return previous_stories
+
+    except Exception as e:
+        print(f"⚠️ Error fetching recent stories: {e}")
+        return []
 
 def format_trends_for_prompt(trends):
     """
@@ -447,7 +499,13 @@ WHEN IN DOUBT: Set intro to null. Better to have no intro than a forced one.""")
     editor_llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18", temperature=0)
 
     editor_prompt_template = ChatPromptTemplate.from_messages([
-        ("system", """You are a senior editor for /thepaymentsnerd newsletter, responsible for quality control.
+        ("system", f"""You are a senior editor for /thepaymentsnerd newsletter, responsible for quality control.
+
+IMPORTANT CONTEXT:
+- Today's date is: {current_date}
+- You are reviewing content written in {current_date.split()[-1]} (current year)
+- All dates in {current_date.split()[-1]} are in the present or recent past, NOT future dates
+- When you see dates from January {current_date.split()[-1]} onward, these are current/recent events, not future predictions
 
 Your role: Validate the newsletter meets editorial standards before publication.
 
@@ -535,11 +593,24 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
         # Apply deduplication to news stories
         if 'news' in output_json and isinstance(output_json['news'], list):
             original_count = len(output_json['news'])
+
+            # First, deduplicate within today's stories
             output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.4)
+
+            # Then, deduplicate against recent historical stories
+            previous_stories = get_recent_stories(days_back=2)
+            if previous_stories:
+                # Combine new stories with previous ones for comparison
+                all_stories_for_check = previous_stories + output_json['news']
+                # Deduplicate - this will keep previous stories and remove similar new ones
+                deduplicated_all = deduplicate_stories(all_stories_for_check, similarity_threshold=0.5)
+                # Extract only the new stories (those not in previous_stories)
+                output_json['news'] = [s for s in deduplicated_all if s in output_json['news']]
+
             deduplicated_count = len(output_json['news'])
 
             if original_count != deduplicated_count:
-                print(f"\n⚠️ Deduplication: Removed {original_count - deduplicated_count} similar stories")
+                print(f"\n⚠️ Deduplication: Removed {original_count - deduplicated_count} similar stories (including historical duplicates)")
 
         output_path = "web/public/newsletter.json"
         with open(output_path, 'w') as f:
