@@ -78,8 +78,10 @@ export async function GET(req: Request) {
           html: emailHtml,
           headers: {
             'X-Entity-Ref-ID': newsletter.publication_date,
+            // List-Unsubscribe header for email clients
+            // Using GET-only (no List-Unsubscribe-Post) to prevent corporate email
+            // scanners from auto-unsubscribing users. Users must confirm via web page.
             'List-Unsubscribe': `<${unsubUrl}>`,
-            'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
           },
         });
 
