@@ -2,6 +2,7 @@
 
 import { useSearchParams, useRouter } from "next/navigation";
 import { useState, useEffect, Suspense } from "react";
+import Link from "next/link";
 
 function UnsubscribeContent() {
   const searchParams = useSearchParams();
@@ -50,7 +51,7 @@ function UnsubscribeContent() {
         const data = await response.json();
         setError(data.error || "Failed to unsubscribe. Please try again.");
       }
-    } catch (err) {
+    } catch {
       setError("An error occurred. Please try again later.");
     } finally {
       setLoading(false);
@@ -65,12 +66,12 @@ function UnsubscribeContent() {
           <p className="text-stone-600 mb-6">
             This unsubscribe link is invalid or has expired.
           </p>
-          <a
+          <Link
             href="/"
             className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
             Go to Homepage
-          </a>
+          </Link>
         </div>
       </div>
     );
@@ -96,7 +97,7 @@ function UnsubscribeContent() {
             </svg>
           </div>
           <h1 className="text-2xl font-bold text-stone-900 mb-4">
-            You've Been Unsubscribed
+            You&apos;ve Been Unsubscribed
           </h1>
           <p className="text-stone-600 mb-6">
             You will no longer receive emails from The Payments Nerd.
@@ -104,12 +105,12 @@ function UnsubscribeContent() {
           <p className="text-sm text-stone-500 mb-6">
             Changed your mind? You can always resubscribe at our homepage.
           </p>
-          <a
+          <Link
             href="/"
             className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
             Go to Homepage
-          </a>
+          </Link>
         </div>
       </div>
     );
@@ -130,7 +131,7 @@ function UnsubscribeContent() {
           Unsubscribe from The Payments Nerd?
         </h1>
         <p className="text-stone-600 mb-6 text-center">
-          We're sorry to see you go! You will no longer receive our daily payments insights.
+          We&apos;re sorry to see you go! You will no longer receive our daily payments insights.
         </p>
 
         {error && (
@@ -184,16 +185,16 @@ function UnsubscribeContent() {
           >
             {loading ? "Processing..." : "Confirm Unsubscribe"}
           </button>
-          <a
+          <Link
             href="/"
             className="px-6 py-3 bg-stone-200 text-stone-900 font-medium rounded-lg hover:bg-stone-300 transition-colors text-center"
           >
             Keep Subscription
-          </a>
+          </Link>
         </div>
 
         <p className="text-xs text-stone-500 mt-6 text-center">
-          If you're having trouble, please contact us at{" "}
+          If you&apos;re having trouble, please contact us at{" "}
           <a href="mailto:support@thepaymentsnerd.co" className="text-blue-600 hover:underline">
             support@thepaymentsnerd.co
           </a>
