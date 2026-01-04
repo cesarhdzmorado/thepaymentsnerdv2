@@ -116,6 +116,18 @@ def format_trends_for_prompt(trends):
 
     return "\n\n".join(formatted)
 
+def format_recent_stories_for_context(previous_stories):
+    """
+    Format recent stories into a context string for the AI agents.
+    """
+    if not previous_stories:
+        return "No recent stories available."
+
+    # Group by title to show concise list
+    story_titles = [story.get('title', 'Untitled') for story in previous_stories[:15]]  # Last 15 stories
+    formatted = "\n".join([f"  - {title}" for title in story_titles])
+    return f"Recent stories from the last 2 days:\n{formatted}"
+
 def main():
     """The main function that runs the agent-based workflow."""
     load_dotenv()
@@ -127,6 +139,10 @@ def main():
     # Get current date for context
     from datetime import datetime
     current_date = datetime.now().strftime("%B %d, %Y")  # e.g., "December 30, 2025"
+
+    # Get recent stories for context (not for filtering, but for awareness)
+    recent_stories = get_recent_stories(days_back=2)
+    recent_stories_context = format_recent_stories_for_context(recent_stories)
 
     # Create a string of news sources for the prompt
     news_sources_str = "\n".join([f"- {s['url']} ({s['topic']})" for s in config['newsletters']])
@@ -151,6 +167,25 @@ IMPORTANT CONTEXT:
 
 Sources to analyze:
 {news_sources_str}
+
+RECENT COVERAGE (Last 2 Days):
+{recent_stories_context}
+
+**CRITICAL: Developing vs Duplicate Stories**
+When you encounter a story about a topic/company we recently covered:
+- ✅ INCLUDE if it has SIGNIFICANT NEW DEVELOPMENTS:
+  * New data/metrics that weren't in the previous story
+  * New parties/stakeholders involved
+  * Material change in status or direction
+  * Breaking updates within 24 hours with new information
+  * Example: Day 1 = "Stripe launches feature X", Day 2 = "Feature X hits 100k users, banks respond"
+
+- ❌ SKIP if it's GENUINELY REDUNDANT:
+  * Same information repackaged by different publications
+  * No new developments, just commentary on the same event
+  * Example: Day 1 = "Visa Q4 earnings beat", Day 2 = "Another take on Visa Q4 earnings" (same numbers)
+
+When in doubt, ask: "Does this story contain material NEW information that changes the analysis?" If yes, include it.
 
 CURRENT INDUSTRY TRENDS (Context for Story Evaluation):
 
@@ -301,6 +336,22 @@ IMPORTANT CONTEXT:
 - You are writing in {current_date.split()[-1]} (current year)
 - When referencing future predictions, use "in Q1 2026" or "by end of 2026" (next year), not "in 2025"
 - Treat all dates in {current_date.split()[-1]} as present tense, not future
+
+RECENT COVERAGE (Last 2 Days):
+{recent_stories_context}
+
+**Handling Developing Stories:**
+If a story relates to something we covered recently:
+- ✅ INCLUDE if it represents a MEANINGFUL DEVELOPMENT:
+  * "Stripe's new payments API now processing $1B/day" (new metric)
+  * "Banks push back on Fed's new instant payment rules" (new reaction)
+  * "PayPal's checkout feature expands to 10 new markets" (new expansion)
+
+- ❌ SKIP if it's just REHASHING:
+  * Same announcement, different publication
+  * Analysis pieces on an event we already covered (unless contrarian/novel angle)
+
+When covering a developing story, frame it as an UPDATE in your title/body to show progression.
 
 CURRENT INDUSTRY TRENDS (Editorial Context):
 
@@ -590,27 +641,19 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
         output_text = final_result_chain.content.strip().replace("```json", "").replace("```", "").strip()
         output_json = json.loads(output_text)
 
-        # Apply deduplication to news stories
+        # Apply basic deduplication within today's stories only
+        # (The AI agents are now aware of recent stories and make intelligent decisions about developing stories)
         if 'news' in output_json and isinstance(output_json['news'], list):
             original_count = len(output_json['news'])
 
-            # First, deduplicate within today's stories
-            output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.4)
-
-            # Then, deduplicate against recent historical stories
-            previous_stories = get_recent_stories(days_back=2)
-            if previous_stories:
-                # Combine new stories with previous ones for comparison
-                all_stories_for_check = previous_stories + output_json['news']
-                # Deduplicate - this will keep previous stories and remove similar new ones
-                deduplicated_all = deduplicate_stories(all_stories_for_check, similarity_threshold=0.5)
-                # Extract only the new stories (those not in previous_stories)
-                output_json['news'] = [s for s in deduplicated_all if s in output_json['news']]
+            # Only deduplicate exact/near-exact duplicates within today's output
+            # Using a high threshold (0.7) to only catch true duplicates, not developing stories
+            output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.7)
 
             deduplicated_count = len(output_json['news'])
 
             if original_count != deduplicated_count:
-                print(f"\n⚠️ Deduplication: Removed {original_count - deduplicated_count} similar stories (including historical duplicates)")
+                print(f"\n⚠️ Deduplication: Removed {original_count - deduplicated_count} exact duplicate stories from today's output")
 
         output_path = "web/public/newsletter.json"
         with open(output_path, 'w') as f:
