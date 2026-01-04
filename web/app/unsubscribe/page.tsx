@@ -195,8 +195,8 @@ function UnsubscribeContent() {
 
         <p className="text-xs text-stone-500 mt-6 text-center">
           If you&apos;re having trouble, please contact us at{" "}
-          <a href="mailto:support@thepaymentsnerd.co" className="text-blue-600 hover:underline">
-            support@thepaymentsnerd.co
+          <a href="mailto:cesar@thepaymentsnerd.co" className="text-blue-600 hover:underline">
+            cesar@thepaymentsnerd.co
           </a>
         </p>
       </div>
