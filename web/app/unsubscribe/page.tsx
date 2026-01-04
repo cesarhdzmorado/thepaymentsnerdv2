@@ -11,6 +11,8 @@ function UnsubscribeContent() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [reason, setReason] = useState<string>("");
+  const [feedback, setFeedback] = useState<string>("");
 
   // If already unsubscribed (from redirect), show success
   useEffect(() => {
@@ -31,6 +33,13 @@ function UnsubscribeContent() {
     try {
       const response = await fetch(`/api/unsubscribe?token=${encodeURIComponent(token)}`, {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          reason: reason || undefined,
+          feedback: feedback || undefined,
+        }),
       });
 
       if (response.ok) {
@@ -106,13 +115,21 @@ function UnsubscribeContent() {
     );
   }
 
+  const reasons = [
+    { value: "too_frequent", label: "Emails are too frequent" },
+    { value: "not_relevant", label: "Content isn't relevant to me" },
+    { value: "too_long", label: "Emails are too long" },
+    { value: "quality", label: "Quality doesn't meet my expectations" },
+    { value: "other", label: "Other reason" },
+  ];
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-stone-50 px-4">
-      <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8 text-center">
-        <h1 className="text-2xl font-bold text-stone-900 mb-4">
+    <div className="min-h-screen flex items-center justify-center bg-stone-50 px-4 py-8">
+      <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
+        <h1 className="text-2xl font-bold text-stone-900 mb-4 text-center">
           Unsubscribe from The Payments Nerd?
         </h1>
-        <p className="text-stone-600 mb-6">
+        <p className="text-stone-600 mb-6 text-center">
           We're sorry to see you go! You will no longer receive our daily payments insights.
         </p>
 
@@ -122,23 +139,60 @@ function UnsubscribeContent() {
           </div>
         )}
 
+        {/* Optional: Help us improve section */}
+        <div className="mb-6 text-left">
+          <p className="text-sm font-medium text-stone-700 mb-3">
+            Help us improve (optional):
+          </p>
+          <div className="space-y-2">
+            {reasons.map((r) => (
+              <label key={r.value} className="flex items-center space-x-3 cursor-pointer">
+                <input
+                  type="radio"
+                  name="reason"
+                  value={r.value}
+                  checked={reason === r.value}
+                  onChange={(e) => setReason(e.target.value)}
+                  className="w-4 h-4 text-blue-600 border-stone-300 focus:ring-blue-500"
+                />
+                <span className="text-sm text-stone-700">{r.label}</span>
+              </label>
+            ))}
+          </div>
+
+          {/* Optional feedback textarea */}
+          <div className="mt-4">
+            <label htmlFor="feedback" className="block text-sm font-medium text-stone-700 mb-2">
+              Any additional thoughts? (optional)
+            </label>
+            <textarea
+              id="feedback"
+              value={feedback}
+              onChange={(e) => setFeedback(e.target.value)}
+              rows={3}
+              className="w-full px-3 py-2 border border-stone-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+              placeholder="Tell us what we could do better..."
+            />
+          </div>
+        </div>
+
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <button
             onClick={handleUnsubscribe}
             disabled={loading}
             className="px-6 py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {loading ? "Processing..." : "Yes, Unsubscribe"}
+            {loading ? "Processing..." : "Confirm Unsubscribe"}
           </button>
           <a
             href="/"
-            className="px-6 py-3 bg-stone-200 text-stone-900 font-medium rounded-lg hover:bg-stone-300 transition-colors"
+            className="px-6 py-3 bg-stone-200 text-stone-900 font-medium rounded-lg hover:bg-stone-300 transition-colors text-center"
           >
-            Cancel
+            Keep Subscription
           </a>
         </div>
 
-        <p className="text-xs text-stone-500 mt-6">
+        <p className="text-xs text-stone-500 mt-6 text-center">
           If you're having trouble, please contact us at{" "}
           <a href="mailto:support@thepaymentsnerd.co" className="text-blue-600 hover:underline">
             support@thepaymentsnerd.co

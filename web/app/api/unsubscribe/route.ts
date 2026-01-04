@@ -45,9 +45,33 @@ export async function POST(req: Request) {
 
     const email = payload.email.toLowerCase().trim();
 
+    // Parse optional reason and feedback from request body
+    let reason: string | undefined;
+    let feedback: string | undefined;
+    try {
+      const body = await req.json();
+      reason = body.reason;
+      feedback = body.feedback;
+    } catch {
+      // Body is optional, ignore parsing errors
+    }
+
+    const updateData: any = {
+      status: "unsubscribed",
+      unsubscribed_at: new Date().toISOString(),
+    };
+
+    // Add reason and feedback if provided
+    if (reason) {
+      updateData.unsubscribe_reason = reason;
+    }
+    if (feedback) {
+      updateData.unsubscribe_feedback = feedback;
+    }
+
     const { error } = await supabaseAdmin
       .from("subscribers")
-      .update({ status: "unsubscribed", unsubscribed_at: new Date().toISOString() })
+      .update(updateData)
       .eq("email", email);
 
     if (error) {
@@ -55,7 +79,8 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Failed to unsubscribe" }, { status: 500 });
     }
 
-    console.log(`✅ Unsubscribed: ${email}`);
+    const reasonLog = reason ? ` (reason: ${reason})` : "";
+    console.log(`✅ Unsubscribed: ${email}${reasonLog}`);
     return NextResponse.json({ success: true });
   } catch (e: any) {
     console.error("Unsubscribe POST error:", e?.message || e);
