@@ -2,15 +2,20 @@ import { render } from "@react-email/render";
 import DailyNewsletter from "@/emails/DailyNewsletter";
 import { ensureHttps } from "./publicationNames";
 
+interface Source {
+  name: string;
+  url: string;
+}
+
 interface NewsItem {
   title: string;
   body: string;
-  source: string;
+  source: Source;
 }
 
 interface Curiosity {
   text: string;
-  source: string;
+  source: Source;
 }
 
 interface DailyNewsletterParams {
@@ -66,12 +71,18 @@ export async function generateDailyNewsletterEmail({
   // Ensure sources have https
   const processedNews = news.map(item => ({
     ...item,
-    source: ensureHttps(item.source),
+    source: {
+      name: item.source.name,
+      url: ensureHttps(item.source.url),
+    },
   }));
 
   const processedCuriosity = {
     ...curiosity,
-    source: ensureHttps(curiosity.source),
+    source: {
+      name: curiosity.source.name,
+      url: ensureHttps(curiosity.source.url),
+    },
   };
 
   // Render React Email component to HTML string

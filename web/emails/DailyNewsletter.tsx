@@ -12,15 +12,20 @@ import {
   Hr,
 } from "@react-email/components";
 
+interface Source {
+  name: string;
+  url: string;
+}
+
 interface NewsItem {
   title: string;
   body: string;
-  source: string;
+  source: Source;
 }
 
 interface Curiosity {
   text: string;
-  source: string;
+  source: Source;
 }
 
 interface DailyNewsletterProps {
@@ -105,8 +110,8 @@ export function DailyNewsletter({
             </Heading>
             <Text style={bodyText}>{heroStory.body}</Text>
             <Text style={sourceText}>
-              <Link href={heroStory.source} style={sourceLink}>
-                → {getPublicationName(heroStory.source)}
+              <Link href={heroStory.source.url} style={sourceLink}>
+                → {heroStory.source.name}
               </Link>
             </Text>
           </Section>
@@ -125,8 +130,8 @@ export function DailyNewsletter({
                   </Heading>
                   <Text style={quickHitBody}>{item.body}</Text>
                   <Text style={sourceText}>
-                    <Link href={item.source} style={sourceLink}>
-                      → {getPublicationName(item.source)}
+                    <Link href={item.source.url} style={sourceLink}>
+                      → {item.source.name}
                     </Link>
                   </Text>
                 </Section>
@@ -141,8 +146,8 @@ export function DailyNewsletter({
             <Text style={curiosityText}>{curiosity.text}</Text>
             <Text style={curiositySource}>
               —{" "}
-              <Link href={curiosity.source} style={curiosityLink}>
-                {getPublicationName(curiosity.source)}
+              <Link href={curiosity.source.url} style={curiosityLink}>
+                {curiosity.source.name}
               </Link>
             </Text>
           </Section>
@@ -220,15 +225,6 @@ export function DailyNewsletter({
 }
 
 // Helper functions
-function getPublicationName(url: string): string {
-  try {
-    const hostname = new URL(url).hostname.replace("www.", "");
-    return hostname.charAt(0).toUpperCase() + hostname.slice(1);
-  } catch {
-    return "Source";
-  }
-}
-
 function getXShareUrl(referralCode: string): string {
   const text = encodeURIComponent(
     "Just discovered /thepaymentsnerd - a daily AI-curated briefing on payments industry news. Worth checking out!"
