@@ -4,32 +4,50 @@
     {
       "title": "Klarna and Shift4's Stablecoin Ventures Signal Mainstream Adoption",
       "body": "Klarna and Shift4 have announced new initiatives involving stablecoins, aiming to integrate digital currencies into their payment systems. This move is significant as it could accelerate the mainstream adoption of stablecoins, pressuring competitors to follow suit. The increased usage of stablecoins may also attract regulatory scrutiny, necessitating new compliance frameworks. As these companies innovate, they may face volatility and regulatory risks associated with stablecoins.",
-      "source": "Payments Dive - https://www.paymentsdive.com/news/klarna-shift4-embrace-stablecoins/808586/"
+      "source": {
+        "name": "Payments Dive",
+        "url": "https://www.paymentsdive.com/news/klarna-shift4-embrace-stablecoins/808586/"
+      }
     },
     {
       "title": "Fiserv and Visa's Partnership on Agentic Tools Enhances Merchant Services",
       "body": "Fiserv and Visa have partnered to develop agentic commerce tools designed to improve merchant services. This collaboration could strengthen both companies' market positions, offering enhanced services that competitors may struggle to match. The partnership may inspire similar collaborations across the industry as firms seek to integrate AI-driven tools into their offerings. However, the success of this initiative will depend on merchant adoption and the effectiveness of the new tools.",
-      "source": "Payments Dive - https://www.paymentsdive.com/news/fiserv-visa-unite-on-agentic-tools/808505/"
+      "source": {
+        "name": "Payments Dive",
+        "url": "https://www.paymentsdive.com/news/fiserv-visa-unite-on-agentic-tools/808505/"
+      }
     },
     {
       "title": "FIS Settles $210M Lawsuit, Impacts Future Acquisition Strategies",
       "body": "FIS has agreed to a $210 million settlement over claims it misrepresented the benefits of its 2019 Worldpay acquisition. This settlement could affect FIS's financial position and its ability to pursue future acquisitions, potentially altering competitive dynamics in the payments processing industry. Other companies may become more cautious in their acquisition strategies, leading to increased due diligence and transparency in merger communications. While costly, this settlement might allow FIS to refocus on its core operations.",
-      "source": "Payments Dive - https://www.paymentsdive.com/news/fis-agrees-to-pay-210m-settlement/808651/"
+      "source": {
+        "name": "Payments Dive",
+        "url": "https://www.paymentsdive.com/news/fis-agrees-to-pay-210m-settlement/808651/"
+      }
     },
     {
       "title": "Coinbase Halts Operations in Argentina, Opens Door for Competitors",
       "body": "Coinbase has paused its services in Argentina as part of a strategic review of its operations. This decision could create opportunities for local competitors or other international exchanges to fill the gap left by Coinbase. The pause may lead to decreased cryptocurrency adoption in Argentina and impact local fintech ecosystems reliant on crypto services. This move reflects a trend of crypto companies reassessing their global footprints amid regulatory and economic challenges.",
-      "source": "PYMNTS - https://www.pymnts.com/cryptocurrency/2026/coinbase-takes-step-back-from-crypto-services-in-argentina/"
+      "source": {
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/cryptocurrency/2026/coinbase-takes-step-back-from-crypto-services-in-argentina/"
+      }
     },
     {
       "title": "PwC Expands Crypto Engagement Amid US Regulatory Shifts",
       "body": "PwC plans to deepen its involvement in the crypto space, driven by recent regulatory changes in the US. This move could set a precedent for other major firms to enhance their crypto offerings, intensifying competition in the consulting sector. Increased institutional involvement may lead to greater legitimacy and stability in the crypto market. However, PwC's engagement might be more about capitalizing on current trends than a long-term strategic shift.",
-      "source": "The Block - https://www.theblock.co/post/384223/pwc-to-deepen-crypto-engagement-citing-us-regulatory-shift-ft"
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/384223/pwc-to-deepen-crypto-engagement-citing-us-regulatory-shift-ft"
+      }
     }
   ],
   "perspective": "I'm watching the growing integration of stablecoins and AI-driven tools in payments, as these developments signal a shift towards more innovative and efficient payment solutions. The regulatory landscape will play a crucial role in shaping these trends, particularly as companies navigate compliance challenges. Additionally, the competitive dynamics are shifting, with traditional firms like PwC and Fiserv adapting to the evolving market.",
   "curiosity": {
     "text": "Did you know that Bitcoin's price can be significantly influenced by geopolitical events, as seen with its recent surge amid US-Venezuela tensions?",
-    "source": "The Block - https://www.theblock.co/post/384230/bitcoin-tops-93000-venezuela?utm_source=rss&utm_medium=rss"
+    "source": {
+      "name": "The Block",
+      "url": "https://www.theblock.co/post/384230/bitcoin-tops-93000-venezuela?utm_source=rss&utm_medium=rss"
+    }
   }
 }
