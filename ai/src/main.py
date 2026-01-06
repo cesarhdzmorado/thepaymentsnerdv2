@@ -521,7 +521,7 @@ CRITICAL RULES:
 - The "perspective" field is your editorial synthesis (2-3 sentences, ALWAYS required)
 - The "curiosity" field must have both text and source
 - **CRITICAL: The "source" field must be an object with "name" and "url" properties**
-- Extract the publication name and URL from the research source (if research shows "Source: Payments Dive - https://example.com", use {{"name": "Payments Dive", "url": "https://example.com"}})
+- Extract the publication name and URL from the research source (if research shows "Source: Payments Dive - https://example.com", use {{{{"name": "Payments Dive", "url": "https://example.com"}}}})
 
 EXAMPLES OF GOOD vs BAD INTROS:
 
