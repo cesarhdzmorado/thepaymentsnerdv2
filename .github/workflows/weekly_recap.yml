@@ -1,0 +1,292 @@
+# .github/workflows/weekly_recap.yml - WEEKLY RECAP WORKFLOW
+
+name: Weekly Recap Newsletter (If Needed)
+
+on:
+  workflow_dispatch: # Allows manual trigger for testing
+  schedule:
+    # Runs every Friday at 15:00 UTC (3:00 PM GMT, 4:00 PM CET)
+    # This gives the full week of data and runs after daily workflow
+    - cron: '0 15 * * 5'
+
+# Grant write permissions for the commit/push step
+permissions:
+  contents: write
+
+jobs:
+  check-and-generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      # =======================================================
+      # STEP 1: CHECK IF RECAP IS NEEDED
+      # =======================================================
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ai/requirements.txt
+
+      - name: Check newsletter count this week
+        id: check_count
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          echo "================================================"
+          echo "📊 CHECKING WEEKLY NEWSLETTER COUNT"
+          echo "================================================"
+          echo "Date: $(date)"
+          echo "Day: $(date +%A)"
+          echo ""
+
+          # Run Python script to check count
+          python -c "
+          import os
+          from datetime import datetime, timedelta
+          from supabase import create_client
+
+          # Initialize Supabase
+          supabase_url = os.getenv('NEXT_PUBLIC_SUPABASE_URL')
+          supabase_key = os.getenv('SUPABASE_SERVICE_ROLE_KEY')
+          supabase = create_client(supabase_url, supabase_key)
+
+          # Calculate start of this week (Monday)
+          today = datetime.now()
+          start_of_week = (today - timedelta(days=today.weekday())).strftime('%Y-%m-%d')
+
+          print(f'Week start: {start_of_week}')
+          print(f'Today: {today.strftime(\"%Y-%m-%d\")}')
+          print('')
+
+          # Query newsletters published this week
+          response = supabase.table('newsletters') \
+              .select('publication_date') \
+              .gte('publication_date', start_of_week) \
+              .lte('publication_date', today.strftime('%Y-%m-%d')) \
+              .execute()
+
+          count = len(response.data)
+          print(f'Newsletters sent this week: {count}')
+          print('')
+
+          # Decision logic
+          if count < 4:
+              print('✅ RECAP NEEDED: Less than 4 newsletters this week')
+              print('Proceeding with weekly recap generation...')
+              print('need_recap=true')
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write('need_recap=true\n')
+          else:
+              print('⏭️  RECAP NOT NEEDED: Already sent {0} newsletters this week'.format(count))
+              print('Skipping recap generation.')
+              print('need_recap=false')
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write('need_recap=false\n')
+          "
+
+      # =======================================================
+      # STEP 2: GENERATE WEEKLY RECAP (if needed)
+      # =======================================================
+      - name: Generate weekly recap
+        if: steps.check_count.outputs.need_recap == 'true'
+        id: generate_step
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          echo "================================================"
+          echo "📰 GENERATING WEEKLY RECAP"
+          echo "================================================"
+          echo "Mode: Weekly recap with extended analysis"
+          echo "Date: $(date)"
+          echo ""
+
+          python -m ai.src.weekly_recap
+
+          echo ""
+          echo "✅ Weekly recap generation completed"
+          echo "File size: $(wc -c < web/public/newsletter.json) bytes"
+          echo "Preview: $(head -c 200 web/public/newsletter.json)..."
+
+      # =======================================================
+      # STEP 3: COMMIT AND PUSH
+      # =======================================================
+      - name: Commit and push weekly recap
+        if: steps.check_count.outputs.need_recap == 'true'
+        id: commit_step
+        run: |
+          echo "================================================"
+          echo "📝 COMMIT & PUSH STEP"
+          echo "================================================"
+
+          git config --global user.name "The Payments Nerd Bot"
+          git config --global user.email "bot@thepaymentsnerd.com"
+
+          echo "Current branch: $(git branch --show-current)"
+          echo "Last commit: $(git log -1 --oneline)"
+          echo ""
+
+          echo "Pulling latest changes from origin/main..."
+          git pull origin main
+
+          echo "Checking newsletter.json status..."
+          echo "File timestamp: $(stat -c '%y' web/public/newsletter.json)"
+          echo "Git status before add:"
+          git status web/public/newsletter.json
+          echo ""
+
+          git add web/public/newsletter.json
+
+          echo "Checking for staged changes..."
+          git diff --staged --stat
+          echo ""
+
+          if git diff --staged --quiet; then
+            echo "⚠️  NO CHANGES DETECTED"
+            echo "Recap generated identical content - skipping commit"
+            echo "changes_committed=false" >> $GITHUB_OUTPUT
+          else
+            echo "✅ CHANGES DETECTED - Proceeding with commit"
+            git diff --staged web/public/newsletter.json | head -30
+            echo ""
+            echo "Committing and pushing weekly recap..."
+            git commit -m "feat: 📊 Weekly Recap - $(date +%F)"
+            git push
+            echo "✅ Successfully pushed to main"
+            echo "changes_committed=true" >> $GITHUB_OUTPUT
+            echo "RESULT: Weekly recap committed - proceeding to deployment"
+          fi
+
+      # =======================================================
+      # STEP 4: SYNC TO SUPABASE
+      # =======================================================
+      - name: Set up Node.js for Supabase Sync
+        if: steps.commit_step.outputs.changes_committed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install Node dependencies
+        if: steps.commit_step.outputs.changes_committed == 'true'
+        run: npm install
+        working-directory: ./web
+
+      - name: Sync data to Supabase
+        if: steps.commit_step.outputs.changes_committed == 'true'
+        id: sync_step
+        run: node scripts/syncToSupabase.js
+        working-directory: ./web
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      # =======================================================
+      # STEP 5: DEPLOY TO VERCEL
+      # =======================================================
+      - name: Trigger Vercel Deployment
+        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success'
+        run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
+
+      # =======================================================
+      # STEP 6: SEND EMAILS
+      # =======================================================
+      - name: Wait for Vercel deployment to complete
+        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success'
+        run: sleep 60
+
+      - name: Send weekly recap emails to subscribers
+        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success'
+        id: send_emails_step
+        run: |
+          echo "Sending weekly recap to all active subscribers..."
+
+          if [ -z "${{ secrets.NEXT_PUBLIC_SITE_URL }}" ]; then
+            echo "❌ ERROR: NEXT_PUBLIC_SITE_URL secret is not set!"
+            exit 1
+          fi
+
+          if [ -z "${{ secrets.CRON_SECRET }}" ]; then
+            echo "❌ ERROR: CRON_SECRET secret is not set!"
+            exit 1
+          fi
+
+          echo "✓ Secrets are set"
+          echo "Calling API endpoint: ${{ secrets.NEXT_PUBLIC_SITE_URL }}/api/send-daily"
+
+          response=$(curl -s -w "\n%{http_code}" -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "${{ secrets.NEXT_PUBLIC_SITE_URL }}/api/send-daily")
+
+          curl_exit_code=$?
+
+          if [ $curl_exit_code -ne 0 ]; then
+            echo "❌ curl command failed with exit code: $curl_exit_code"
+            exit 1
+          fi
+
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "Response: $body"
+          echo "HTTP Status: $http_code"
+
+          if [ "$http_code" -eq 200 ]; then
+            echo "✅ Weekly recap sent successfully!"
+            echo "$body" | jq -r '"Sent to \(.sent) subscribers"' || echo "$body"
+          else
+            echo "❌ Failed to send weekly recap (HTTP $http_code)"
+            echo "$body"
+            exit 1
+          fi
+
+      # =======================================================
+      # STEP 7: WORKFLOW SUMMARY
+      # =======================================================
+      - name: Workflow Summary
+        if: always()
+        run: |
+          echo "================================================"
+          echo "📊 WEEKLY RECAP WORKFLOW SUMMARY"
+          echo "================================================"
+          echo "Date: $(date +%F)"
+          echo "Day: $(date +%A)"
+          echo ""
+          echo "Status:"
+          echo "  Recap Needed: ${{ steps.check_count.outputs.need_recap || 'not checked' }}"
+          echo "  Recap Generated: ${{ steps.generate_step.outcome || 'skipped' }}"
+          echo "  Changes Committed: ${{ steps.commit_step.outputs.changes_committed || 'false' }}"
+          echo "  Supabase Sync: ${{ steps.sync_step.outcome || 'skipped' }}"
+          echo "  Email Delivery: ${{ steps.send_emails_step.outcome || 'skipped' }}"
+          echo ""
+
+          if [ "${{ steps.check_count.outputs.need_recap }}" = "false" ]; then
+            echo "✅ WEEKLY QUOTA MET: Already sent enough newsletters this week"
+            echo "No recap needed - subscribers received regular daily content"
+            exit 0
+          elif [ "${{ steps.send_emails_step.outcome }}" = "success" ]; then
+            echo "✅ COMPLETE SUCCESS: Weekly recap generated and delivered"
+            exit 0
+          elif [ "${{ steps.check_count.outputs.need_recap }}" = "true" ] && [ "${{ steps.commit_step.outputs.changes_committed }}" = "false" ]; then
+            echo "⚠️  RECAP GENERATED BUT NO CHANGES: Identical to existing content"
+            exit 0
+          elif [ "${{ steps.sync_step.outcome }}" != "success" ]; then
+            echo "❌ FAILED: Supabase sync failed"
+            exit 1
+          else
+            echo "❌ FAILED: Email delivery failed"
+            exit 1
+          fi
