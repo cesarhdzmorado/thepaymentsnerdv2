@@ -654,8 +654,9 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
             original_count = len(output_json['news'])
 
             # Only deduplicate exact/near-exact duplicates within today's output
-            # Using a high threshold (0.7) to only catch true duplicates, not developing stories
-            output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.7)
+            # Using a very high threshold (0.9) to only catch nearly identical copies
+            # This allows developing stories, same company/topic from different angles
+            output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.9)
 
             deduplicated_count = len(output_json['news'])
 

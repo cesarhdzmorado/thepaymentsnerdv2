@@ -5,8 +5,9 @@ name: Daily Newsletter Pipeline
 on:
   workflow_dispatch: # Allows you to run this manually from the Actions tab
   schedule:
-    # Runs at 05:00 UTC every day. You can adjust this time.
-    - cron: '0 5 * * *'
+    # Runs at 09:00 UTC (9:00 AM GMT/10:00 AM CET) every day
+    # Captures full 24h news cycle, arrives mid-morning for optimal reading
+    - cron: '0 9 * * *'
 
 # Grant write permissions for the commit/push step
 permissions:
