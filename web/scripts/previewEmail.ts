@@ -23,32 +23,50 @@ const sampleNewsletter = {
     {
       title: "PayPal Launches New Cross-Border Payment Solution for SMEs",
       body: "PayPal has unveiled a new service aimed at small and medium enterprises, reducing cross-border transaction fees by 30%. The platform now supports instant settlements in over 100 currencies, marking a significant step in democratizing global commerce.",
-      source: "pymnts.com"
+      source: {
+        name: "PYMNTS",
+        url: "https://www.pymnts.com"
+      }
     },
     {
       title: "Central Bank Digital Currencies Gain Momentum in Asia-Pacific",
       body: "Five major economies in the Asia-Pacific region announced collaborative efforts to develop interoperable CBDC frameworks. The initiative aims to streamline cross-border transactions and reduce settlement times from days to seconds.",
-      source: "finextra.com"
+      source: {
+        name: "Finextra",
+        url: "https://www.finextra.com"
+      }
     },
     {
       title: "Visa Reports 23% Growth in Contactless Payment Adoption",
       body: "Visa's Q4 earnings revealed a substantial increase in contactless transactions, with tap-to-pay now representing 65% of all in-person card payments globally. The surge is attributed to enhanced security features and consumer preference for speed.",
-      source: "financialtimes.com"
+      source: {
+        name: "Financial Times",
+        url: "https://www.ft.com"
+      }
     },
     {
       title: "Buy Now Pay Later Market Faces New Regulatory Scrutiny",
       body: "Regulators in the UK and EU are proposing stricter guidelines for BNPL providers, including mandatory credit checks and transparent fee disclosures. Industry leaders anticipate compliance costs but welcome standardization.",
-      source: "finextra.com"
+      source: {
+        name: "Finextra",
+        url: "https://www.finextra.com"
+      }
     },
     {
       title: "Blockchain Payment Network Achieves 50,000 Transactions Per Second",
       body: "A new layer-2 blockchain solution demonstrated unprecedented transaction throughput in live testing, positioning itself as a viable alternative to traditional payment rails. Major financial institutions are reportedly exploring integration.",
-      source: "coindesk.com"
+      source: {
+        name: "CoinDesk",
+        url: "https://www.coindesk.com"
+      }
     }
   ],
   curiosity: {
     text: "The first credit card was introduced in 1950 by Diners Club and could only be used at 27 restaurants in New York City. Today, there are over 2.8 billion credit cards in circulation worldwide.",
-    source: "Financial History Archives"
+    source: {
+      name: "Financial History Archives",
+      url: "https://example.com/financial-history"
+    }
   },
   unsubscribeUrl: "https://example.com/unsubscribe?token=sample",
   referralCode: "SAMPLE123"
