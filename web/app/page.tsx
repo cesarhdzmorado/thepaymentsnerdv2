@@ -13,7 +13,7 @@ import { SubscribeForm } from "@/components/SubscribeForm";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { NewsletterNavigation } from "@/components/NewsletterNavigation";
 import { ShareButtons } from "@/components/ShareButtons";
-import { getPublicationName, ensureHttps } from "@/lib/publicationNames";
+import { ensureHttps } from "@/lib/publicationNames";
 import {
   ArrowRight,
   BookOpen,
@@ -23,19 +23,26 @@ import {
 } from "lucide-react";
 
 // --- TypeScript types ---
+interface Source {
+  name: string;
+  url: string;
+}
+
 interface NewsItem {
   title: string;
   body: string;
-  source: string;
+  source: Source;
 }
 
 interface Curiosity {
   text: string;
-  source: string;
+  source: Source;
 }
 
 interface NewsletterContent {
+  intro?: string;
   news: NewsItem[];
+  perspective?: string;
   curiosity: Curiosity;
 }
 
@@ -271,7 +278,7 @@ export default async function HomePage({
                   <span>Source:</span>
 
                   <a
-                    href={ensureHttps(heroStory.source)}
+                    href={ensureHttps(heroStory.source.url)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 font-semibold
@@ -280,7 +287,7 @@ export default async function HomePage({
                                transition-all duration-300 group/link
                                hover:gap-2"
                   >
-                    {getPublicationName(heroStory.source)}
+                    {heroStory.source.name}
                     <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1" />
                   </a>
                 </div>
@@ -351,7 +358,7 @@ export default async function HomePage({
                   <div className="flex items-center gap-2 text-xs font-medium text-muted">
                     <ExternalLink className="h-3.5 w-3.5 flex-shrink-0 transition-transform duration-300 group-hover:scale-110" />
                     <a
-                      href={ensureHttps(item.source)}
+                      href={ensureHttps(item.source.url)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 font-semibold
@@ -360,7 +367,7 @@ export default async function HomePage({
                                  transition-all duration-300 group/link
                                  hover:gap-1.5"
                     >
-                      {getPublicationName(item.source)}
+                      {item.source.name}
                       <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/link:translate-x-0.5" />
                     </a>
                   </div>
@@ -422,12 +429,12 @@ export default async function HomePage({
                            text-amber-800 dark:text-amber-200
                            px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-900/20">
               — <a
-                  href={ensureHttps(newsletter.content.curiosity.source)}
+                  href={ensureHttps(newsletter.content.curiosity.source.url)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline transition-all duration-300"
                 >
-                  {getPublicationName(newsletter.content.curiosity.source)}
+                  {newsletter.content.curiosity.source.name}
                 </a>
             </cite>
           </blockquote>
