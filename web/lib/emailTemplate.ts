@@ -69,13 +69,35 @@ export async function generateDailyNewsletterEmail({
   });
 
   // Ensure sources have https
-  const processedNews = news.map(item => ({
-    ...item,
-    source: {
-      name: item.source.name,
-      url: ensureHttps(item.source.url),
-    },
-  }));
+  const processedNews = news.map((item, index) => {
+    // Debug logging
+    if (typeof item.source !== 'object' || !item.source) {
+      console.error(`Invalid source at news item ${index}:`, item.source);
+      throw new Error(`News item ${index} has invalid source format. Expected object with name and url, got: ${typeof item.source}`);
+    }
+    if (typeof item.source.url !== 'string') {
+      console.error(`Invalid source.url at news item ${index}:`, item.source);
+      throw new Error(`News item ${index} has invalid source.url. Expected string, got: ${typeof item.source.url}`);
+    }
+
+    return {
+      ...item,
+      source: {
+        name: item.source.name,
+        url: ensureHttps(item.source.url),
+      },
+    };
+  });
+
+  // Validate curiosity source
+  if (typeof curiosity.source !== 'object' || !curiosity.source) {
+    console.error(`Invalid curiosity source:`, curiosity.source);
+    throw new Error(`Curiosity has invalid source format. Expected object with name and url, got: ${typeof curiosity.source}`);
+  }
+  if (typeof curiosity.source.url !== 'string') {
+    console.error(`Invalid curiosity source.url:`, curiosity.source);
+    throw new Error(`Curiosity has invalid source.url. Expected string, got: ${typeof curiosity.source.url}`);
+  }
 
   const processedCuriosity = {
     ...curiosity,
