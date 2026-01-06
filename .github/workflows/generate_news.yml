@@ -161,7 +161,8 @@ jobs:
         run: sleep 60
 
       - name: Send newsletter emails to subscribers
-        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success'
+        # Only send emails when running on main branch (prevents accidental sends from test branches)
+        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success' && github.ref == 'refs/heads/main'
         id: send_emails_step
         run: |
           echo "Sending newsletter to all active subscribers..."
