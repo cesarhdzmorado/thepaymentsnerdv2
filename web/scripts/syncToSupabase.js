@@ -61,7 +61,12 @@ async function syncNewsletter() {
 
     const newsletterRecord = {
       publication_date: publicationDate,
-      content: { news: data.news, curiosity: data.curiosity },
+      content: {
+        intro: data.intro,
+        news: data.news,
+        perspective: data.perspective,
+        curiosity: data.curiosity
+      },
     };
     console.log("Record prepared for Supabase.");
 
