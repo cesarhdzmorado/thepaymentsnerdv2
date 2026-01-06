@@ -41,7 +41,22 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
-        run: python -m ai.src.main
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          echo "================================================"
+          echo "📰 STARTING NEWSLETTER GENERATION"
+          echo "================================================"
+          echo "Date: $(date)"
+          echo "Timezone: $(date -u)"
+          echo ""
+
+          python -m ai.src.main
+
+          echo ""
+          echo "✅ Newsletter generation completed"
+          echo "File size: $(wc -c < web/public/newsletter.json) bytes"
+          echo "Preview: $(head -c 200 web/public/newsletter.json)..."
 
       # =======================================================
       # STEP 2: COMMIT AND PUSH THE NEW FILE
@@ -49,27 +64,57 @@ jobs:
       - name: Commit and Push new newsletter
         id: commit_step # Give this step an ID to reference its output
         run: |
+          echo "================================================"
+          echo "📝 COMMIT & PUSH STEP"
+          echo "================================================"
+
           # Configure Git with a bot user identity
           git config --global user.name "The Payments Nerd Bot"
           git config --global user.email "bot@thepaymentsnerd.com"
-          
+
+          echo "Current branch: $(git branch --show-current)"
+          echo "Last commit: $(git log -1 --oneline)"
+          echo ""
+
           # Pull latest changes to avoid conflicts before pushing
+          echo "Pulling latest changes from origin/main..."
           git pull origin main
-          
+
+          echo "Checking newsletter.json status..."
+          echo "File timestamp: $(stat -c '%y' web/public/newsletter.json)"
+          echo "Git status before add:"
+          git status web/public/newsletter.json
+          echo ""
+
           # Add the potentially modified file to the staging area
           git add web/public/newsletter.json
-          
+
+          echo "Checking for staged changes..."
+          git diff --staged --stat
+          echo ""
+
           # Check if there are any actual changes to commit
           if git diff --staged --quiet; then
-            echo "No changes to newsletter.json. Halting workflow."
+            echo "⚠️  NO CHANGES DETECTED"
+            echo "Reason: Generated newsletter is identical to committed version"
+            echo "This means the AI produced the same content as the previous run."
+            echo ""
+            echo "Comparing with last commit:"
+            git diff HEAD web/public/newsletter.json | head -20 || echo "No differences found"
             # Set an output variable so subsequent steps know not to run
             echo "changes_committed=false" >> $GITHUB_OUTPUT
+            echo "RESULT: Workflow halted - no deployment will occur"
           else
-            echo "Newsletter has been modified, committing and pushing..."
+            echo "✅ CHANGES DETECTED - Proceeding with commit"
+            git diff --staged web/public/newsletter.json | head -30
+            echo ""
+            echo "Committing and pushing..."
             git commit -m "feat: ✨ Generate daily newsletter for $(date +%F)"
             git push
+            echo "✅ Successfully pushed to main"
             # Set the output variable to true
             echo "changes_committed=true" >> $GITHUB_OUTPUT
+            echo "RESULT: Newsletter committed - proceeding to deployment"
           fi
 
       # =======================================================
@@ -160,5 +205,48 @@ jobs:
           else
             echo "❌ Failed to send emails (HTTP $http_code)"
             echo "$body"
+            exit 1
+          fi
+
+      # =======================================================
+      # STEP 6: WORKFLOW SUMMARY (Always runs)
+      # =======================================================
+      - name: Workflow Summary
+        if: always()
+        run: |
+          echo "================================================"
+          echo "📊 WORKFLOW SUMMARY"
+          echo "================================================"
+          echo "Date: $(date)"
+          echo "Branch: $(git branch --show-current 2>/dev/null || echo 'N/A')"
+          echo ""
+          echo "Status:"
+          echo "  Newsletter Generated: ${{ steps.generate_step.outcome }}"
+          echo "  Changes Committed: ${{ steps.commit_step.outputs.changes_committed || 'false' }}"
+          echo "  Supabase Sync: ${{ steps.sync_step.outcome || 'skipped' }}"
+          echo "  Email Delivery: ${{ steps.send_emails_step.outcome || 'skipped' }}"
+          echo ""
+
+          if [ "${{ steps.commit_step.outputs.changes_committed }}" = "false" ]; then
+            echo "⚠️  WORKFLOW HALTED: No changes detected"
+            echo ""
+            echo "Possible reasons:"
+            echo "  • AI generated identical content to previous run"
+            echo "  • News sources haven't updated with new content"
+            echo "  • Same stories selected by AI for multiple days"
+            echo ""
+            echo "Action required:"
+            echo "  • Review AI deduplication logic"
+            echo "  • Check if news sources are updating"
+            echo "  • Consider adjusting story selection criteria"
+            exit 0
+          elif [ "${{ steps.send_emails_step.outcome }}" = "success" ]; then
+            echo "✅ COMPLETE SUCCESS: Newsletter generated, committed, synced, and delivered"
+            exit 0
+          elif [ "${{ steps.sync_step.outcome }}" != "success" ]; then
+            echo "❌ FAILED: Supabase sync failed"
+            exit 1
+          else
+            echo "❌ FAILED: Email delivery failed"
             exit 1
           fi
