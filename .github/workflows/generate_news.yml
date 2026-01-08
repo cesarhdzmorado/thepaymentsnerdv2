@@ -155,14 +155,26 @@ jobs:
       # =======================================================
       # STEP 5: WAIT FOR DEPLOYMENT & SEND EMAILS TO SUBSCRIBERS
       # =======================================================
+      - name: Check if today is a weekend
+        id: check_weekend
+        run: |
+          day_of_week=$(date +%u)  # 1=Monday, 7=Sunday
+          if [ "$day_of_week" -eq 6 ] || [ "$day_of_week" -eq 7 ]; then
+            echo "is_weekend=true" >> $GITHUB_OUTPUT
+            echo "📅 Today is a weekend - emails will be skipped"
+          else
+            echo "is_weekend=false" >> $GITHUB_OUTPUT
+            echo "📅 Today is a weekday - emails will be sent"
+          fi
+
       - name: Wait for Vercel deployment to complete
         # Give Vercel time to deploy the new newsletter (adjust if needed)
-        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success'
+        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success' && steps.check_weekend.outputs.is_weekend == 'false'
         run: sleep 60
 
       - name: Send newsletter emails to subscribers
-        # Only send emails when running on main branch (prevents accidental sends from test branches)
-        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success' && github.ref == 'refs/heads/main'
+        # Only send emails when running on main branch and not on weekends (prevents spam on Saturday/Sunday)
+        if: steps.commit_step.outputs.changes_committed == 'true' && steps.sync_step.outcome == 'success' && github.ref == 'refs/heads/main' && steps.check_weekend.outputs.is_weekend == 'false'
         id: send_emails_step
         run: |
           echo "Sending newsletter to all active subscribers..."
@@ -226,10 +238,15 @@ jobs:
           echo "  Newsletter Generated: ${{ steps.generate_step.outcome }}"
           echo "  Changes Committed: ${{ steps.commit_step.outputs.changes_committed || 'false' }}"
           echo "  Supabase Sync: ${{ steps.sync_step.outcome || 'skipped' }}"
+          echo "  Weekend Check: ${{ steps.check_weekend.outputs.is_weekend || 'not checked' }}"
           echo "  Email Delivery: ${{ steps.send_emails_step.outcome || 'skipped' }}"
           echo ""
 
-          if [ "${{ steps.commit_step.outputs.changes_committed }}" = "false" ]; then
+          if [ "${{ steps.check_weekend.outputs.is_weekend }}" = "true" ]; then
+            echo "📅 WEEKEND MODE: Newsletter generated and deployed, but emails skipped"
+            echo "Emails are not sent on Saturday and Sunday to avoid spamming subscribers"
+            exit 0
+          elif [ "${{ steps.commit_step.outputs.changes_committed }}" = "false" ]; then
             echo "⚠️  WORKFLOW HALTED: No changes detected"
             echo ""
             echo "Possible reasons:"
