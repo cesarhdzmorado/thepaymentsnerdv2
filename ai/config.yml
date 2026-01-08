@@ -20,10 +20,6 @@ newsletters:
     topic: "Fintech Funding, Startups & Innovation"
   - url: "https://www.fintechfutures.com/fintech"
     topic: "Fintech"
-  - url: "https://sifted.eu/sector/fintech"
-    topic: "European Fintech"
-  - url: "https://www.paymentsdive.com/feeds/news/"
-    topic: "Payment Industry Trends & Analysis"
 
   # Crypto & Blockchain (more payments-focused)
   - url: "https://www.theblock.co/rss.xml"
