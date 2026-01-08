@@ -152,11 +152,31 @@ Since this is a slower week, find 3-5 stories from our usual sources that either
 2. Have SIGNIFICANT NEW DEVELOPMENTS since we last covered them
 3. Are evergreen analysis/trends pieces that add strategic value
 
-CRITICAL GUIDELINES:
-- DO NOT simply rehash stories we already covered (listed above)
+**🚨 CRITICAL ANTI-DUPLICATION PROTOCOL 🚨**
+
+BEFORE selecting ANY story, CHECK THE "WE ALREADY COVERED" LIST ABOVE.
+
+**MANDATORY CHECKLIST:**
+1. Is this company/topic in our weekly coverage? → Check the list carefully
+2. Does this story have NEW information not already covered? → Compare details
+3. If it's the same event/announcement we covered → REJECT IMMEDIATELY
+
+**EXPLICIT EXAMPLES:**
+
+If we already covered "Barclays Invests in Ubyx for Stablecoin Settlement":
+- ❌ REJECT: "Barclays makes stablecoin play with Ubyx" (same story, different source)
+- ❌ REJECT: "Barclays enters tokenized money via Ubyx stake" (same event, reworded)
+- ✅ ACCEPT: "Barclays Ubyx investment triggers competitor responses from HSBC, Citi" (NEW reactions)
+
+If we already covered "Flutterwave Acquires Mono":
+- ❌ REJECT: "Flutterwave buys Nigerian fintech Mono" (same acquisition)
+- ✅ ACCEPT: "Flutterwave-Mono integration complete, processing 50K transactions/day" (NEW milestone)
+
+**QUALITY OVER QUANTITY:**
+- 3 excellent NEW stories >> 5 stories with 2 duplicates
 - DO look for: follow-ups, new data, market reactions, competitive responses
 - PREFER stories published in last 48 hours if possible
-- For slower weeks, quality over quantity (3 excellent stories > 5 mediocre ones)
+- Better to return 2-3 truly new stories than pad with duplicates
 
 Sources to check:
 {news_sources_str}
@@ -201,6 +221,14 @@ CONTEXT:
 - Today: {current_date} (Friday)
 - This week was SLOWER for breaking news
 - We're sending a recap because we only sent 1-3 daily newsletters this week
+
+**🚨 CRITICAL: FINAL ANTI-DUPLICATION CHECK 🚨**
+
+The Researcher should have filtered out duplicates, but YOU are the final gatekeeper.
+
+Before selecting ANY story, verify it's not a duplicate of something we already covered this week.
+If a story is about the SAME event with NO new information → REJECT IT.
+Better to have 3 genuinely new stories than 5 stories with duplicates.
 
 YOUR MISSION: Transform the research into a weekly recap with EXTENDED ANALYSIS.
 
@@ -362,14 +390,46 @@ Be thorough but fair."""),
         output_text = writer_result.content.strip().replace("```json", "").replace("```", "").strip()
         output_json = json.loads(output_text)
 
-        # Light deduplication (very high threshold for recap)
+        # Two-stage deduplication approach (same as daily newsletter)
         if 'news' in output_json and isinstance(output_json['news'], list):
             original_count = len(output_json['news'])
-            output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.9)
-            deduplicated_count = len(output_json['news'])
 
-            if original_count != deduplicated_count:
-                print(f"\n⚠️ Deduplication: Removed {original_count - deduplicated_count} duplicate stories")
+            # STAGE 1: Deduplicate against weekly stories (entire week)
+            # Threshold 0.6 = catches similar stories but allows developing stories with new info
+            if weekly_stories:
+                print(f"\n🔍 Stage 1: Checking {original_count} stories against {len(weekly_stories)} weekly stories...")
+
+                # Combine today's stories with weekly stories for comparison
+                combined_stories = weekly_stories + output_json['news']
+
+                # Deduplicate the combined list
+                deduplicated_combined = deduplicate_stories(combined_stories, similarity_threshold=0.6)
+
+                # Keep only the stories that are NEW (not in the weekly_stories list)
+                new_stories = []
+                for story in deduplicated_combined:
+                    # Check if this story is from today (has same title/body as one of today's original stories)
+                    is_from_today = any(
+                        story.get('title') == today_story.get('title')
+                        for today_story in output_json['news']
+                    )
+                    if is_from_today:
+                        new_stories.append(story)
+
+                output_json['news'] = new_stories
+                stage1_count = len(output_json['news'])
+
+                if original_count != stage1_count:
+                    print(f"⚠️ Stage 1: Removed {original_count - stage1_count} duplicate stories from this week")
+
+            # STAGE 2: Deduplicate within today's stories only
+            # Using a very high threshold (0.9) to only catch nearly identical copies within today
+            stage2_input_count = len(output_json['news'])
+            output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.9)
+            stage2_count = len(output_json['news'])
+
+            if stage2_input_count != stage2_count:
+                print(f"⚠️ Stage 2: Removed {stage2_input_count - stage2_count} exact duplicate stories from today's output")
 
         output_path = "web/public/newsletter.json"
         with open(output_path, 'w') as f:

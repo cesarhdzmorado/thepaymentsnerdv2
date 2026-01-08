@@ -171,21 +171,38 @@ Sources to analyze:
 RECENT COVERAGE (Last 2 Days):
 {recent_stories_context}
 
-**CRITICAL: Developing vs Duplicate Stories**
-When you encounter a story about a topic/company we recently covered:
-- ✅ INCLUDE if it has SIGNIFICANT NEW DEVELOPMENTS:
-  * New data/metrics that weren't in the previous story
-  * New parties/stakeholders involved
-  * Material change in status or direction
-  * Breaking updates within 24 hours with new information
-  * Example: Day 1 = "Stripe launches feature X", Day 2 = "Feature X hits 100k users, banks respond"
+**🚨 CRITICAL ANTI-DUPLICATION PROTOCOL 🚨**
 
-- ❌ SKIP if it's GENUINELY REDUNDANT:
-  * Same information repackaged by different publications
-  * No new developments, just commentary on the same event
-  * Example: Day 1 = "Visa Q4 earnings beat", Day 2 = "Another take on Visa Q4 earnings" (same numbers)
+BEFORE selecting ANY story, you MUST check it against the RECENT COVERAGE list above.
 
-When in doubt, ask: "Does this story contain material NEW information that changes the analysis?" If yes, include it.
+**MANDATORY CHECKLIST FOR EACH STORY:**
+1. Is the company/topic in the recent coverage list? → Check the list above
+2. Does this story have NEW information not in the recent coverage? → Compare carefully
+3. If it's the same event/announcement → REJECT IT IMMEDIATELY
+
+**EXPLICIT EXAMPLES OF WHAT TO REJECT:**
+
+If recent coverage includes "Barclays Invests in Ubyx, Signaling Commitment to Regulated Tokenized Money":
+- ❌ REJECT: Any story about "Barclays invests in Ubyx" from a different source (same event, no new info)
+- ❌ REJECT: "Barclays makes first stablecoin investment in Ubyx" (exact same story, different headline)
+- ❌ REJECT: "Barclays bets on stablecoins with Ubyx stake" (repackaged, no new data)
+- ✅ ACCEPT: "Barclays Ubyx investment reaches $100M, expands to 3 new markets" (new metrics, new expansion)
+
+If recent coverage includes "Flutterwave Acquires Mono for Open Banking":
+- ❌ REJECT: "Flutterwave buys Mono in strategic move" (same acquisition, different wording)
+- ❌ REJECT: "Mono acquired by Flutterwave to boost open banking" (same event, flipped headline)
+- ✅ ACCEPT: "Flutterwave-Mono deal faces regulatory scrutiny in Nigeria" (new development post-acquisition)
+
+**DEVELOPING vs DUPLICATE - The Test:**
+- DUPLICATE = Same event, same facts, just from different publication → REJECT
+- DEVELOPING = Same topic BUT with new data, new stakeholders, or material change → ACCEPT
+
+**When in doubt, ask yourself:**
+"If I read yesterday's coverage, would this story tell me something I didn't already know?"
+- If NO → REJECT IT
+- If YES → Include it
+
+**ZERO TOLERANCE:** We'd rather have 7 excellent NEW stories than 10 stories with 3 duplicates.
 
 CURRENT INDUSTRY TRENDS (Context for Story Evaluation):
 
@@ -340,18 +357,42 @@ IMPORTANT CONTEXT:
 RECENT COVERAGE (Last 2 Days):
 {recent_stories_context}
 
-**Handling Developing Stories:**
-If a story relates to something we covered recently:
-- ✅ INCLUDE if it represents a MEANINGFUL DEVELOPMENT:
-  * "Stripe's new payments API now processing $1B/day" (new metric)
-  * "Banks push back on Fed's new instant payment rules" (new reaction)
-  * "PayPal's checkout feature expands to 10 new markets" (new expansion)
+**🚨 CRITICAL: ZERO TOLERANCE FOR DUPLICATE STORIES 🚨**
 
-- ❌ SKIP if it's just REHASHING:
-  * Same announcement, different publication
-  * Analysis pieces on an event we already covered (unless contrarian/novel angle)
+The Researcher has already filtered stories, but YOU are the final gatekeeper.
 
-When covering a developing story, frame it as an UPDATE in your title/body to show progression.
+**MANDATORY PRE-SELECTION CHECK:**
+Before selecting any story from the Researcher's output, cross-reference against recent coverage above.
+
+**EXPLICIT REJECTION CRITERIA:**
+
+If recent coverage includes "Barclays Invests in Ubyx, Signaling Commitment to Regulated Tokenized Money":
+- ❌ REJECT: Any researcher story about the same Barclays-Ubyx investment (even with different wording)
+- ❌ REJECT: "Barclays enters stablecoin space via Ubyx" (same event, reworded)
+- ✅ ACCEPT: "Barclays Ubyx stake triggers regulatory review by UK FCA" (NEW development)
+
+If recent coverage includes "Flutterwave Acquires Mono for Open Banking":
+- ❌ REJECT: "Flutterwave-Mono acquisition strengthens African fintech" (same acquisition, no new info)
+- ✅ ACCEPT: "Flutterwave integration of Mono completed ahead of schedule" (new milestone)
+
+**HANDLING DEVELOPING STORIES:**
+If a story has GENUINE NEW DEVELOPMENTS since our last coverage:
+- ✅ INCLUDE and frame as an UPDATE in your title
+  * "Stripe's API Hits $1B Daily Volume, 2x Launch Projections" (new metric)
+  * "UPDATE: Banks Push Back on Fed Instant Payment Rules" (new reaction)
+  * "PayPal Checkout Expands to 10 Markets After EU Success" (new expansion)
+
+- ❌ SKIP if it's REHASHING the same information:
+  * Same announcement from different publication
+  * Commentary on event we already covered (unless genuinely contrarian)
+
+**THE LITMUS TEST:**
+Ask yourself: "If I read yesterday's newsletter, would this story give me NEW actionable intelligence?"
+- If NO → DO NOT SELECT IT (no matter how well the Researcher analyzed it)
+- If YES → Include it and make the NEW information prominent
+
+**SELECTION PRIORITY:**
+We'd rather publish 3 genuinely new stories than 5 stories with 2 duplicates. Quality and novelty over quantity.
 
 CURRENT INDUSTRY TRENDS (Editorial Context):
 
@@ -648,20 +689,47 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
         output_text = final_result_chain.content.strip().replace("```json", "").replace("```", "").strip()
         output_json = json.loads(output_text)
 
-        # Apply basic deduplication within today's stories only
-        # (The AI agents are now aware of recent stories and make intelligent decisions about developing stories)
+        # Two-stage deduplication approach (Option 1 + Option 3)
         if 'news' in output_json and isinstance(output_json['news'], list):
             original_count = len(output_json['news'])
 
-            # Only deduplicate exact/near-exact duplicates within today's output
-            # Using a very high threshold (0.9) to only catch nearly identical copies
-            # This allows developing stories, same company/topic from different angles
+            # STAGE 1: Deduplicate against historical stories (last 2 days)
+            # Threshold 0.6 = catches similar stories but allows developing stories with new info
+            if recent_stories:
+                print(f"\n🔍 Stage 1: Checking {original_count} stories against {len(recent_stories)} recent stories...")
+
+                # Combine today's stories with recent stories for comparison
+                combined_stories = recent_stories + output_json['news']
+
+                # Deduplicate the combined list
+                deduplicated_combined = deduplicate_stories(combined_stories, similarity_threshold=0.6)
+
+                # Keep only the stories that are NEW (not in the recent_stories list)
+                # We identify new stories by checking if they were in the original output_json['news']
+                new_stories = []
+                for story in deduplicated_combined:
+                    # Check if this story is from today (has same title/body as one of today's original stories)
+                    is_from_today = any(
+                        story.get('title') == today_story.get('title')
+                        for today_story in output_json['news']
+                    )
+                    if is_from_today:
+                        new_stories.append(story)
+
+                output_json['news'] = new_stories
+                stage1_count = len(output_json['news'])
+
+                if original_count != stage1_count:
+                    print(f"⚠️ Stage 1: Removed {original_count - stage1_count} duplicate stories from previous days")
+
+            # STAGE 2: Deduplicate within today's stories only
+            # Using a very high threshold (0.9) to only catch nearly identical copies within today
+            stage2_input_count = len(output_json['news'])
             output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.9)
+            stage2_count = len(output_json['news'])
 
-            deduplicated_count = len(output_json['news'])
-
-            if original_count != deduplicated_count:
-                print(f"\n⚠️ Deduplication: Removed {original_count - deduplicated_count} exact duplicate stories from today's output")
+            if stage2_input_count != stage2_count:
+                print(f"⚠️ Stage 2: Removed {stage2_input_count - stage2_count} exact duplicate stories from today's output")
 
         output_path = "web/public/newsletter.json"
         with open(output_path, 'w') as f:
