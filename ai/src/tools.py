@@ -47,7 +47,9 @@ def scrape_tool(url: str) -> str:
             soup = BeautifulSoup(response.text, 'lxml')
             for tag in soup(['script', 'style', 'nav', 'footer', 'header']):
                 tag.decompose()
-            output = soup.get_text(strip=True)[:4000]
+            # Increased from 4000 to 12000 chars to capture full article content
+            # 12000 chars ≈ 3000 tokens, prevents losing critical details at end of articles
+            output = soup.get_text(strip=True)[:12000]
             _set_cached(("scrape", url), output)
             return output
 
@@ -76,13 +78,16 @@ def rss_tool(rss_feed_url: str) -> str:
             if hasattr(feed, 'bozo_exception'):
                 raise feed.bozo_exception
 
-            # Increased from 5 to 10 entries for broader coverage
-            entries = _filter_recent_entries(feed.entries, hours=48)[:10]
+            # Increased from 10 to 15 entries to capture more stories from high-volume feeds
+            # Prevents missing important stories from feeds that publish 20+ articles/day
+            entries = _filter_recent_entries(feed.entries, hours=48)[:15]
             if not entries:
                 return f"No recent articles found in {rss_feed_url}"
 
             summaries = [
-                f"Title: {e.get('title', 'N/A')}\nLink: {e.get('link', 'N/A')}\nSummary: {BeautifulSoup(e.get('summary', ''), 'lxml').get_text(strip=True)}"
+                # Truncate summary to 1000 chars to prevent runaway RSS feeds that include full article text
+                # This prevents token overflow while preserving key information
+                f"Title: {e.get('title', 'N/A')}\nLink: {e.get('link', 'N/A')}\nSummary: {BeautifulSoup(e.get('summary', ''), 'lxml').get_text(strip=True)[:1000]}"
                 for e in entries
             ]
             output = "\n\n".join(summaries)
