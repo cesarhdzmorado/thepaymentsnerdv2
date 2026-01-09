@@ -196,7 +196,7 @@ export default async function HomePage({
         {/* Social Proof - Subscriber Count */}
         <div className="mb-6 animate-fade-in-up delay-150">
           <p className="text-sm font-semibold text-slate-600 dark:text-slate-400">
-            {subscriberCount > 0
+            {subscriberCount > 10
               ? `Join ${subscriberCount.toLocaleString()}+ payment professionals`
               : "Be among the first to join"}
           </p>
