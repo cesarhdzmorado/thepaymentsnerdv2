@@ -1,6 +1,7 @@
 import { render } from "@react-email/render";
 import DailyNewsletter from "@/emails/DailyNewsletter";
 import { ensureHttps } from "./publicationNames";
+import OpenAI from "openai";
 
 interface Source {
   name: string;
@@ -29,27 +30,74 @@ interface DailyNewsletterParams {
 }
 
 /**
- * Generate a compelling subject line from newsletter content
- * Format: "🤓 /thepaymentsnerd: Topic1 & Topic2"
+ * Generate a compelling subject line from newsletter content using AI
+ * Format: "🤓 /thepaymentsnerd: [Creative title based on lead story]"
  */
-export function generateEmailSubject(news: NewsItem[]): string {
-  // Extract key topics from first 2 news items
-  const topics = news.slice(0, 2).map(item => {
-    // Extract main topic from title (first few words before details)
-    const title = item.title;
-    // Try to get the main subject (usually before "Launches", "Announces", "Reports", etc.)
-    const match = title.match(/^([^—:]+?)(?:\s+(?:Launches|Announces|Reports|Expects|to|Plans|Debuts))/i);
-    if (match) {
-      return match[1].trim();
-    }
-    // Otherwise, take first 5 words
-    const words = title.split(' ').slice(0, 5).join(' ');
-    return words.length < title.length ? words + '...' : words;
-  });
+export async function generateEmailSubject(news: NewsItem[]): Promise<string> {
+  if (!news || news.length === 0) {
+    return "🤓 /thepaymentsnerd: Today's Payment Intelligence";
+  }
 
-  // Join with & and create subject with /thepaymentsnerd branding and nerd emoji
-  const highlight = topics.join(' & ');
-  return `🤓 /thepaymentsnerd: ${highlight}`;
+  // Get the lead story
+  const leadStory = news[0];
+
+  try {
+    // Initialize OpenAI client
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+
+    // Generate a creative, clever title based on the lead story
+    const completion = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content: `You are a creative email subject line writer for /thepaymentsnerd, a payments industry newsletter.
+Your task is to create a clever, punchy subject line based on the lead story.
+
+Requirements:
+- Maximum 10 words (not including the emoji and branding prefix)
+- Make it clever, intriguing, or thought-provoking
+- Focus on the key insight or implication, not just the headline
+- Use active, punchy language
+- Avoid generic business jargon
+- Make readers curious to open the email
+
+Examples of good approaches:
+- Highlight a surprising angle or implication
+- Use a clever turn of phrase
+- Create intrigue about what's changing
+- Focus on the "so what" rather than the "what"
+
+Return ONLY the subject line text (without the emoji and /thepaymentsnerd prefix, as that will be added automatically).`
+        },
+        {
+          role: "user",
+          content: `Create a clever ~10 word subject line for this story:
+
+Title: ${leadStory.title}
+
+Summary: ${leadStory.body}
+
+Return only the subject line text, no quotes or additional formatting.`
+        }
+      ],
+      temperature: 0.7,
+      max_tokens: 50,
+    });
+
+    const creativeTitle = completion.choices[0]?.message?.content?.trim() || leadStory.title.split(' ').slice(0, 7).join(' ');
+
+    // Return with branding and emoji
+    return `🤓 /thepaymentsnerd: ${creativeTitle}`;
+  } catch (error) {
+    console.error("Error generating creative email subject:", error);
+
+    // Fallback to a simple version of the lead story title
+    const fallbackTitle = leadStory.title.split(' ').slice(0, 10).join(' ');
+    return `🤓 /thepaymentsnerd: ${fallbackTitle}`;
+  }
 }
 
 export async function generateDailyNewsletterEmail({

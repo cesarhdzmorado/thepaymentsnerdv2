@@ -64,7 +64,7 @@ export async function GET(req: Request) {
       referralCode: "TESTCODE",
     });
 
-    const emailSubject = generateEmailSubject(newsletter.content.news);
+    const emailSubject = await generateEmailSubject(newsletter.content.news);
 
     // Send test email
     const resend = new Resend(process.env.RESEND_API_KEY!);

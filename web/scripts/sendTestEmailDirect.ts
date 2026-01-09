@@ -96,9 +96,9 @@ async function sendTestEmail() {
     console.log(`📧 Sending test email to: ${TEST_EMAIL}`);
     console.log("");
 
-    // Generate email HTML
+    // Generate email HTML and dynamic subject
     const emailHtml = await generateDailyNewsletterEmail(sampleNewsletter);
-    const emailSubject = generateEmailSubject(sampleNewsletter.news);
+    const emailSubject = await generateEmailSubject(sampleNewsletter.news);
 
     // Send email
     const resend = new Resend(RESEND_API_KEY);
