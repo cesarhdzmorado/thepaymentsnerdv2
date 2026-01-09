@@ -67,7 +67,7 @@ export async function GET(req: Request) {
             </p>
 
             <ul>
-              <li>Daily at 7 AM ET (Mon-Fri)</li>
+              <li>Daily at 9:30 AM GMT (Mon-Fri)</li>
               <li>5 hand-picked signals from payments & fintech</li>
               <li>3-minute read, zero fluff</li>
               <li>Curated daily, never generic press releases</li>
@@ -78,7 +78,7 @@ export async function GET(req: Request) {
             </p>
 
             <p>
-              <strong>✓ Your first issue arrives tomorrow at 7 AM ET</strong><br/>
+              <strong>✓ Your first issue arrives tomorrow at 9:30 AM GMT</strong><br/>
               <strong>✓ Whitelist this email to never miss it</strong><br/>
               <strong>✓ One-click unsubscribe anytime</strong>
             </p>
