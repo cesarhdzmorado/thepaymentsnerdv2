@@ -1,7 +1,7 @@
 newsletters:
-  # High level financial news
+  # Top-notch level financial news
   - url: "https://www.ft.com/myft/following/6c102223-b2c8-4ade-8eff-6048a0d5aba6.rss"
-    topic: "high level financial news"
+    topic: "financial news"
     
   # Core Payments Industry Sources
   - url: "https://www.pymnts.com/feed/"
@@ -30,7 +30,7 @@ newsletters:
 # Weight: 1-10 (how important/prevalent this trend is right now)
 current_trends:
   - name: "Regulation, Safeguarding & Operational Resilience as Differentiators"
-    weight: 9
+    weight: 7
     description: "Stricter regulatory scrutiny makes compliance, safeguarding of funds, and operational resilience core product attributes and key partner selection criteria"
     signals:
       - "operational resilience"
@@ -55,7 +55,7 @@ current_trends:
 
   - name: "Agentic AI in Payments"
     weight: 9
-    description: "AI agents autonomously executing payment decisions, fraud detection, and transaction optimization with minimal human intervention"
+    description: "Agentic commerce is moving from pilots to early scale, led by repeat-buy (grocery) and search-heavy categories (apparel, travel, tickets). Protocols and standards (e.g., ACP, MCP, Agentic Al Foundation) are improving interoperability; payment networks are enabling agent-optimized rails via tokenization. Merchant distribution is shifting toward Al surfaces (Operator, Instant Checkout), showing higher-intent traffic and conversion lifts. Trust, safety, and fraud tooling are becoming essential as agent flows often lack traditional signals. 2026 looks like a "scale-and-experiment" year; medium-term estimates: $2-5T in agentic transaction volume by 2030 (=3-7% of global payment volume).AI agents autonomously executing payment decisions, fraud detection, and transaction optimization with minimal human intervention"
     signals:
       - "AI agent"
       - "agentic AI"
@@ -68,15 +68,20 @@ current_trends:
       - "autonomous finance"
       - "AI treasury"
     companies_to_watch:
-      - "Stripe (AI routing)"
+      - "OpenAI"
+      - "Stripe"
+      - "Shopify"
+      - "Etsy"
+      - "Google"
+      - "Anthropic"
+      - "Microsoft"
+      - "AWS"
       - "Adyen"
-      - "Mastercard (AI fraud detection)"
+      - "Mastercard"
       - "Visa"
-      - "Plaid"
-      - "Unit21"
-      - "Feedzai"
-      - "Sift"
-    watch_for: "AI startups disrupting fraud detection, payment processors launching AI routing, financial institutions deploying autonomous treasury management, agent-to-agent payment protocols"
+      - "PayPal"
+      - "Riskified"
+    watch_for: "Standards convergence among ACP, MCP, and industry foundations. Merchant ROl proof points: conversion, AOV, repeat rates, attribution quality. Payments performance: tokenization-driven auth lift and fraud outcomes in agent flows. Retail media migration: ad spend and measurement frameworks for agent-native surfaces. Privacy, identity, and delegation: consent and authorization standards for multi-agent ecosystems. Vertical breakouts beyond grocery and travel: home and personal care, electronics, tickets."
 
   - name: "Wallets Evolve into Identity & Control Hubs"
     weight: 8
