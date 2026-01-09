@@ -46,10 +46,10 @@ export async function GET(req: Request) {
     let failed = 0;
     const errors: Array<{ email: string; error: string }> = [];
 
-    // Generate dynamic subject line from newsletter content
-    const emailSubject = generateEmailSubject(newsletter.content.news);
+    // Generate dynamic subject line from newsletter content using AI
+    const emailSubject = await generateEmailSubject(newsletter.content.news);
 
-    console.log(`Starting daily send for ${subscribers?.length || 0} subscribers`);
+    console.log(`Starting daily send for ${subscribers?.length || 0} subscribers with subject: ${emailSubject}`);
 
     // Helper function to add delay between sends (respects Resend rate limit: 2 req/sec)
     const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
