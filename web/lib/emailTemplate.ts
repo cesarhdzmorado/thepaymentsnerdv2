@@ -31,11 +31,11 @@ interface DailyNewsletterParams {
 
 /**
  * Generate a compelling subject line from newsletter content using AI
- * Format: "🤓 /thepaymentsnerd: [Creative title based on lead story]"
+ * Format: "🤓 [Creative title based on lead story]"
  */
 export async function generateEmailSubject(news: NewsItem[]): Promise<string> {
   if (!news || news.length === 0) {
-    return "🤓 /thepaymentsnerd: Today's Payment Intelligence";
+    return "🤓 Today's Payment Intelligence";
   }
 
   // Get the lead story
@@ -57,7 +57,7 @@ export async function generateEmailSubject(news: NewsItem[]): Promise<string> {
 Your task is to create a clever, punchy subject line based on the lead story.
 
 Requirements:
-- Maximum 10 words (not including the emoji and branding prefix)
+- Maximum 10 words (not including the emoji prefix)
 - Make it clever, intriguing, or thought-provoking
 - Focus on the key insight or implication, not just the headline
 - Use active, punchy language
@@ -70,7 +70,7 @@ Examples of good approaches:
 - Create intrigue about what's changing
 - Focus on the "so what" rather than the "what"
 
-Return ONLY the subject line text (without the emoji and /thepaymentsnerd prefix, as that will be added automatically).`
+Return ONLY the subject line text (without the emoji prefix, as that will be added automatically).`
         },
         {
           role: "user",
@@ -89,14 +89,14 @@ Return only the subject line text, no quotes or additional formatting.`
 
     const creativeTitle = completion.choices[0]?.message?.content?.trim() || leadStory.title.split(' ').slice(0, 7).join(' ');
 
-    // Return with branding and emoji
-    return `🤓 /thepaymentsnerd: ${creativeTitle}`;
+    // Return with emoji only
+    return `🤓 ${creativeTitle}`;
   } catch (error) {
     console.error("Error generating creative email subject:", error);
 
     // Fallback to a simple version of the lead story title
     const fallbackTitle = leadStory.title.split(' ').slice(0, 10).join(' ');
-    return `🤓 /thepaymentsnerd: ${fallbackTitle}`;
+    return `🤓 ${fallbackTitle}`;
   }
 }
 
