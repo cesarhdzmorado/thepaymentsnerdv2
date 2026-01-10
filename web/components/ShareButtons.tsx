@@ -76,7 +76,7 @@ export function ShareButtons({ url }: ShareButtonsProps) {
                    text-sm font-medium"
         aria-label="Share on LinkedIn"
       >
-        <Image src="/images/linkedin-logo.png" alt="LinkedIn" width={16} height={16} className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12 dark:brightness-0 dark:invert" />
+        <Image src="/images/linkedin-logo.png" alt="LinkedIn" width={16} height={16} className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
         <span className="hidden sm:inline">LinkedIn</span>
       </a>
 
