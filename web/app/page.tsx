@@ -148,6 +148,9 @@ export default async function HomePage({
   const subscriberCount = await getSubscriberCount();
   console.log("📊 Using subscriber count for display:", subscriberCount, "Show count?", subscriberCount > 10);
 
+  // Round subscriber count to nearest 10 (20+, 30+, 40+, etc.)
+  const roundedCount = subscriberCount > 10 ? Math.floor(subscriberCount / 10) * 10 : subscriberCount;
+
   // --- "No Newsletter" Fallback ---
   if (!newsletter) {
     return (
@@ -198,9 +201,17 @@ export default async function HomePage({
         {/* Social Proof - Subscriber Count */}
         <div className="mb-6 animate-fade-in-up delay-150">
           <p className="text-sm font-semibold text-slate-600 dark:text-slate-400">
-            {subscriberCount > 10
-              ? `Join ${subscriberCount.toLocaleString()}+ payment professionals`
-              : "Be among the first to join"}
+            {subscriberCount > 10 ? (
+              <>
+                Join{" "}
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-slate-100 dark:via-cyan-200 dark:to-indigo-200">
+                  {roundedCount.toLocaleString()}+
+                </span>{" "}
+                payment professionals
+              </>
+            ) : (
+              "Be among the first to join"
+            )}
           </p>
         </div>
 
