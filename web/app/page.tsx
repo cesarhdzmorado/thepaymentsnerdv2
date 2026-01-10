@@ -7,6 +7,7 @@ export const revalidate = 900; // 15 minutes (change to 3600 for 1 hour if you p
 
 import { Suspense } from "react";
 import { supabase } from "@/lib/supabaseClient";
+import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
 import { SubscribeForm } from "@/components/SubscribeForm";
@@ -111,7 +112,7 @@ async function getAdjacentDates(currentDate: string): Promise<{ prev: string | n
 }
 
 async function getSubscriberCount(): Promise<number> {
-  const { count, error } = await supabase
+  const { count, error } = await supabaseAdmin
     .from("subscribers")
     .select("*", { count: "exact", head: true });
 
