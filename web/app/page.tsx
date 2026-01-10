@@ -120,6 +120,7 @@ async function getSubscriberCount(): Promise<number> {
     return 0;
   }
 
+  console.log("📊 Subscriber count fetched:", count);
   return count || 0;
 }
 
@@ -144,6 +145,7 @@ export default async function HomePage({
 
   // Get subscriber count for social proof
   const subscriberCount = await getSubscriberCount();
+  console.log("📊 Using subscriber count for display:", subscriberCount, "Show count?", subscriberCount > 10);
 
   // --- "No Newsletter" Fallback ---
   if (!newsletter) {
