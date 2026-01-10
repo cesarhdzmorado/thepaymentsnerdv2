@@ -113,8 +113,7 @@ async function getAdjacentDates(currentDate: string): Promise<{ prev: string | n
 async function getSubscriberCount(): Promise<number> {
   const { count, error } = await supabase
     .from("subscribers")
-    .select("*", { count: "exact", head: true })
-    .eq("status", "active");
+    .select("*", { count: "exact", head: true });
 
   if (error) {
     console.error("Error fetching subscriber count:", error.message);
