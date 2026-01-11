@@ -299,6 +299,61 @@ a {
   transform: translateY(-2px);
 }
 
+/* --- Legal page prose styling --- */
+.prose-legal h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.prose-legal p {
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+  color: var(--muted-foreground);
+}
+
+.prose-legal ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+  color: var(--muted-foreground);
+}
+
+.prose-legal ul li {
+  margin-bottom: 0.5rem;
+}
+
+.prose-legal a {
+  color: #2563eb; /* blue-600 */
+  transition: color 0.2s ease;
+}
+
+.prose-legal a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-legal a {
+    color: #67e8f9; /* cyan-300 */
+  }
+}
+
+.prose-legal hr {
+  border: none;
+  border-top: 1px solid var(--card-border);
+  margin: 2rem 0;
+}
+
+.prose-legal em {
+  color: var(--muted-foreground);
+}
+
+.prose-legal strong {
+  color: var(--foreground);
+}
+
 /* --- Enhanced loading states --- */
 .skeleton {
   background: linear-gradient(
