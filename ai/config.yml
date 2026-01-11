@@ -30,7 +30,7 @@ newsletters:
 # Weight: 1-10 (how important/prevalent this trend is right now)
 current_trends:
   - name: "Regulation, Safeguarding & Operational Resilience as Differentiators"
-    weight: 7
+    weight: 8
     description: "Stricter regulatory scrutiny makes compliance, safeguarding of funds, and operational resilience core product attributes and key partner selection criteria"
     signals:
       - "operational resilience"
@@ -54,7 +54,7 @@ current_trends:
     watch_for: "New safeguarding requirements, operational resilience mandates, fintechs upgrading compliance infrastructure, regulatory fines/enforcement actions, partnerships with regulated entities"
 
   - name: "Agentic AI in Payments"
-    weight: 9
+    weight: 8
     description: "Agentic commerce is moving from pilots to early scale, led by repeat-buy (grocery) and search-heavy categories (apparel, travel, tickets). Protocols and standards (e.g., ACP, MCP, Agentic Al Foundation) are improving interoperability; payment networks are enabling agent-optimized rails via tokenization. Merchant distribution is shifting toward Al surfaces (Operator, Instant Checkout), showing higher-intent traffic and conversion lifts. Trust, safety, and fraud tooling are becoming essential as agent flows often lack traditional signals. 2026 looks like a 'scale-and-experiment' year; medium-term estimates: $2-5T in agentic transaction volume by 2030 (=3-7% of global payment volume). AI agents autonomously executing payment decisions, fraud detection, and transaction optimization with minimal human intervention"
     signals:
       - "AI agent"
@@ -84,7 +84,7 @@ current_trends:
     watch_for: "Standards convergence among ACP, MCP, and industry foundations. Merchant ROl proof points: conversion, AOV, repeat rates, attribution quality. Payments performance: tokenization-driven auth lift and fraud outcomes in agent flows. Retail media migration: ad spend and measurement frameworks for agent-native surfaces. Privacy, identity, and delegation: consent and authorization standards for multi-agent ecosystems. Vertical breakouts beyond grocery and travel: home and personal care, electronics, tickets."
 
   - name: "Wallets Evolve into Identity & Control Hubs"
-    weight: 8
+    weight: 6
     description: "Digital wallets are evolving from simple payment instruments into unified hubs that combine payments, digital identity, authentication, and user-defined controls, tightening the link between authorization, security, and user experience"
     signals:
       - "digital wallets"
@@ -109,7 +109,7 @@ current_trends:
     watch_for: "Wallets adding passkey/biometric auth, identity verification features in wallets, wallet providers partnering with government ID programs, super app expansion in Western markets"
 
   - name: "Real-Time Payments as the Default Infrastructure"
-    weight: 8
+    weight: 5
     description: "Instant payment rails become baseline infrastructure globally, shifting competition toward value-added overlays such as liquidity management, fraud controls, request-to-pay, and multi-rail orchestration rather than speed alone"
     signals:
       - "real-time payments"
@@ -137,7 +137,7 @@ current_trends:
     watch_for: "Banks announcing FedNow/RTP adoption, request-to-pay implementations, multi-rail orchestration platforms, liquidity-as-a-service offerings, merchants demanding instant settlement"
 
   - name: "AI-Native Payments & Fintech Operations"
-    weight: 8
+    weight: 6
     description: "Artificial intelligence becomes embedded across the payments stack, powering fraud prevention, AML automation, customer support, intelligent routing, reconciliation, and pricing with minimal human intervention"
     signals:
       - "AI in payments"
@@ -187,7 +187,7 @@ current_trends:
     watch_for: "Vertical SaaS platforms adding payments, new embedded finance use cases, platforms unbundling from traditional payment processors, context-aware payment flows"
 
   - name: "Merchant-Centric Economics & Value-Added Services"
-    weight: 8
+    weight: 7
     description: "As acceptance becomes commoditized, PSPs and fintechs compete by bundling payments with analytics, loyalty, fraud tools, and financing to improve merchant margins and retention"
     signals:
       - "merchant services"
@@ -211,7 +211,7 @@ current_trends:
     watch_for: "PSPs launching merchant financing, analytics dashboards becoming AI-powered, loyalty/rewards integration at checkout, conversion optimization tools, bundled offers challenging traditional pricing"
 
   - name: "Stablecoins Going Mainstream"
-    weight: 7
+    weight: 8
     description: "Stablecoins transitioning from crypto-native use to mainstream payments infrastructure, with growing regulatory clarity and institutional adoption"
     signals:
       - "stablecoin"
@@ -259,7 +259,7 @@ current_trends:
     watch_for: "Banks deploying tokenized deposits, CBDC production launches, programmable payment use cases in supply chain/trade finance, DLT-based settlement going live"
 
   - name: "Open Banking/Open Finance Expansion"
-    weight: 7
+    weight: 6
     description: "APIs and data-sharing frameworks enabling third-party access to financial data, expanding beyond banking into broader financial services"
     signals:
       - "open banking"
@@ -284,7 +284,7 @@ current_trends:
     watch_for: "CFPB 1033 rule implementation, banks launching their own data APIs, open finance expanding beyond accounts (investments, insurance, etc.), vertical SaaS embedding open banking"
 
   - name: "Fintech Consolidation & Lean-Scale Operating Models"
-    weight: 7
+    weight: 6
     description: "Capital discipline, M&A, and AI-driven efficiency enable fintechs to scale with smaller teams, reshaping competitive dynamics across banks, PSPs, and platforms"
     signals:
       - "fintech consolidation"
@@ -321,6 +321,7 @@ current_trends:
       - "correspondent banking"
       - "SWIFT gpi"
     companies_to_watch:
+      - "J.P. Morgan"
       - "Wise"
       - "Ripple"
       - "Stripe (cross-border)"
