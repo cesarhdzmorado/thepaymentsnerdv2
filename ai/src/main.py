@@ -463,16 +463,24 @@ EDITORIAL PROCESS:
 
    **BODY** (3-4 sentences following this structure):
 
+   CRITICAL: Use ACTIVE VOICE throughout. Lead with the actor, not the action.
+   - WRONG: "A partnership was announced between Stripe and..."
+   - RIGHT: "Stripe announced a partnership with..."
+   - WRONG: "This initiative could disrupt traditional services"
+   - RIGHT: "This initiative threatens traditional services" OR "PayPal's move directly challenges..."
+
    Sentence 1 - THE WHAT (Facts + Data):
-   - State what happened with key numbers and stakeholders
-   - Include who, what, when, specific metrics
+   - Lead with WHO did WHAT (active voice: "Visa launched...", "Regulators approved...")
+   - Include specific metrics, dates, and stakeholders
+   - Never start with passive constructions like "It was announced..." or "A deal was made..."
 
    Sentence 2 - THE SO WHAT (Impact):
    - Why this matters to payments professionals specifically
+   - Use direct language: "This means...", "The impact:", "For payments teams..."
    - Implications for business models, infrastructure, or strategy
 
    Sentence 3 - THE NOW WHAT (Competitive/Strategic Angle):
-   - Who benefits, who's threatened, and why
+   - Name specific winners and losers: "X gains...", "Y loses...", "Z must respond..."
    - What changes in the competitive landscape
    - OR: What second-order effects to watch for
 
@@ -485,40 +493,76 @@ EDITORIAL PROCESS:
 
    CRITICAL: Only generate an intro if you identify a GENUINE macro pattern or connection across multiple stories.
 
-   When to include an intro:
-   - 3+ stories point to the same strategic shift (e.g., "embedded payments", "regulated stablecoins", "cross-border infrastructure")
-   - Multiple competitors making similar moves (signals industry direction)
-   - Stories that contradict conventional wisdom when viewed together
-   - Clear cause-and-effect relationship between stories
+   TYPES OF VALID CONNECTIONS (use these as a checklist):
 
-   When to SKIP the intro:
+   A) CONVERGENCE: 3+ players making the same bet
+      Example: "Visa, Mastercard, and PayPal all announced stablecoin integrations this week. The card networks are racing to own crypto rails before crypto owns theirs."
+
+   B) TENSION/PARADOX: Stories that seem to contradict each other
+      Example: "JPMorgan warns clients about crypto risk while quietly filing three blockchain patents. The message: do as I do, not as I say."
+
+   C) CAUSE-EFFECT: One story explains or triggers another
+      Example: "The UK's new licensing rules sent ripples today—Revolut announced UK-first expansion, while Binance quietly exited the market."
+
+   D) HIDDEN SIGNAL: What the stories reveal when viewed together
+      Example: "Every infrastructure deal this week targeted emerging markets. The developed-market land grab is over; payments giants are moving south."
+
+   When to SKIP the intro (set to null):
    - Stories are diverse/unrelated (this is fine! most days are eclectic)
-   - The only connection is generic (e.g., "all about payments")
+   - The only connection is generic (e.g., "all about payments" or "fintech companies making moves")
    - You're forcing a connection that isn't meaningful
    - The pattern is obvious and adds no insight
+   - You cannot clearly articulate the connection in one specific sentence
 
    If including an intro (1-2 sentences max):
-   - Lead with the insight, not setup ("Three infrastructure plays today, all betting on the same thing...")
-   - Make it specific and surprising
-   - Avoid generic phrases like "interesting developments" or "busy week"
+   - Lead with the SPECIFIC insight, not setup
+   - Name the companies or trends explicitly
+   - Make a claim that could be wrong (this forces specificity)
+   - Avoid generic phrases like "interesting developments", "busy week", or "several stories point to..."
    - Write in a punchy, conversational tone
 
 4. **What Matters Today** (The Nerd's Perspective - Required):
 
-   After selecting the 5 stories, synthesize the day's intelligence in 2-3 sentences:
-   - What's the throughline connecting these stories?
-   - What does this tell us about where payments is heading?
-   - What should readers be watching this week/month?
-   - Any contrarian take on the day's themes?
+   After selecting the 5 stories, synthesize the day's intelligence in 2-3 sentences.
 
-   Write this in first-person ("I'm watching...", "This signals...")
+   CRITICAL: Reference SPECIFIC stories from today's selection. Don't make generic observations.
+
+   TYPES OF SYNTHESIS (pick the most relevant):
+
+   A) PATTERN SYNTHESIS: "Today's stories about [X], [Y], and [Z] all point to..."
+      Example: "The Visa-Stripe partnership, Square's bank charter news, and Plaid's acquisition all signal one thing: the line between payments and banking is dissolving faster than regulators can draw it."
+
+   B) CONTRARIAN TAKE: "Everyone's focused on X, but today's stories suggest Y"
+      Example: "The headlines focus on Klarna's IPO price, but I'm watching the Affirm-Amazon deal buried in paragraph four. That's where the real BNPL battle is playing out."
+
+   C) ACTIONABLE INSIGHT: What should readers do with this information?
+      Example: "If you're in cross-border payments, today's FedNow and SEPA stories are your signal to accelerate—the window for proprietary rails is closing."
+
+   D) FORWARD-LOOKING: What these stories mean for next quarter/year
+      Example: "Three compliance stories in one day isn't noise—it's the market pricing in the regulatory crackdown we've been warning about since Q1."
+
+   WRONG (too generic): "Stablecoins continue to be an important topic in payments."
+   RIGHT (specific to stories): "Today's Circle and Paxos moves show stablecoin issuers pivoting from retail hype to enterprise infrastructure—the B2B stablecoin era is here."
+
+   Write this in first-person ("I'm watching...", "This signals...", "What stands out to me...")
    This appears BEFORE the stories and sets the editorial lens.
 
 5. **Interesting Fact** (Select 1):
+
+   CRITICAL: Must be a CURRENT or HISTORICAL fact, NOT a future projection.
+   - WRONG: "Stablecoins are projected to account for 3-7% of payment volume by 2030"
+   - WRONG: "Experts predict that digital wallets will replace cash by 2028"
+   - RIGHT: "Visa processed $14.2 trillion in payment volume last year—more than the GDP of China"
+   - RIGHT: "The first electronic funds transfer happened in 1871 via Western Union telegraph"
+   - RIGHT: "Nigeria has more mobile money accounts than Germany has bank accounts"
+
+   Requirements:
    - Must be genuinely surprising or counterintuitive
+   - Must be verifiable with current data (not speculation or forecasts)
    - Payments/fintech preferred, general interest acceptable
    - Write in conversational "Did you know?" style
    - 1-2 sentences maximum
+   - Include context that makes the fact meaningful (comparisons, implications)
 
 6. **Quality Checklist** (Every newsletter must pass):
    - [ ] Every story passes the "So what?" test with clear implications
@@ -617,7 +661,10 @@ QUALITY CHECKS:
 
 2. **Clarity & Readability**:
    - Is the language clear and specific?
-   - Are sentences punchy and active (not passive)?
+   - Are sentences in ACTIVE VOICE? Flag passive constructions like:
+     * "A partnership was announced..." (should be "X announced a partnership...")
+     * "This could disrupt..." (should be "This threatens..." or "X's move challenges...")
+     * "It was reported that..." (should be "Source reports that X...")
    - Any jargon that needs explanation?
 
 3. **Insight Quality**:
@@ -646,6 +693,23 @@ QUALITY CHECKS:
    - Does it sound authoritative but accessible?
    - Is there a clear point of view?
    - Any contrarian or forward-looking angles?
+
+8. **Story Coherence** (Critical):
+   - If an intro exists, do the stories actually support the claimed pattern?
+   - Does each story relate to the newsletter's main themes (payments, fintech, banking)?
+   - Flag any story that feels disconnected from the others or the intro's thesis
+   - If a story doesn't fit (e.g., general tech news unrelated to payments), recommend replacing it
+
+9. **Perspective Specificity** (Critical):
+   - Does the "perspective" field reference SPECIFIC stories from today's selection?
+   - Is it synthesizing insights from the actual stories, not making generic observations?
+   - WRONG: "Stablecoins continue to be important" (generic)
+   - RIGHT: "Today's Circle and Paxos stories show..." (specific to content)
+
+10. **Curiosity Fact Validity**:
+    - Is the curiosity fact a CURRENT or HISTORICAL fact (not a future projection)?
+    - Flag predictions like "by 2030..." or "projected to..." or "experts predict..."
+    - Must be verifiable with current/past data
 
 RETURN FORMAT:
 
