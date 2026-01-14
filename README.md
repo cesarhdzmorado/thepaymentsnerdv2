@@ -16,7 +16,9 @@ The Payments Nerd is an automated newsletter platform that uses AI to discover, 
 - **Subscriber Management:** Double opt-in flow with email confirmation and one-click unsubscribe
 - **Referral System:** Track subscriber referrals with analytics
 - **Modern Web Interface:** Next.js 15 with React 19 and Tailwind CSS v4
+- **Dark Mode Support:** Full dark mode across all pages including legal pages
 - **Newsletter Archive:** Browse and share past newsletters online
+- **UK Legal Compliance:** Privacy, Terms, and Cookie policies compliant with UK GDPR, DPA 2018, and PECR 2003
 
 ## Quick Start
 
@@ -279,14 +281,26 @@ For Apple iCloud compliance and deliverability troubleshooting, see [docs/EMAIL_
 CREATE TABLE subscribers (
   id UUID PRIMARY KEY,
   email TEXT UNIQUE NOT NULL,
-  active BOOLEAN DEFAULT true,
-  confirmed BOOLEAN DEFAULT false,
-  subscribed_at TIMESTAMP,
+  status TEXT DEFAULT 'pending',  -- 'pending', 'active', 'unsubscribed'
   confirmed_at TIMESTAMP,
-  referrer_id UUID REFERENCES subscribers(id),
-  referral_count INTEGER DEFAULT 0
+  referral_code TEXT,
+  referred_by TEXT,
+  consent_ip TEXT,
+  consent_user_agent TEXT
 );
 ```
+
+**Newsletters Table:**
+```sql
+CREATE TABLE newsletters (
+  id UUID PRIMARY KEY,
+  publication_date DATE UNIQUE NOT NULL,
+  content JSONB NOT NULL,
+  sent_at TIMESTAMP
+);
+```
+
+**Note:** Row Level Security (RLS) is enabled on the `subscribers` table. Server-side operations requiring full access should use the Supabase admin client (service role key).
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for complete schema.
 
@@ -298,7 +312,7 @@ Private project - All rights reserved.
 
 For issues or questions:
 - Open an issue on GitHub
-- Contact: newsletter@thepaymentsnerd.co
+- Contact: cesar@thepaymentsnerd.co
 
 ## Acknowledgments
 
