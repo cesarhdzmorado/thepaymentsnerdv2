@@ -63,8 +63,11 @@ thepaymentsnerdv2/
 │   │   │   └── webhooks/resend/ # POST - Resend webhook handler (bounces)
 │   │   ├── page.tsx             # Homepage with newsletter preview
 │   │   ├── layout.tsx           # Root layout
-│   │   └── [legal pages]/       # Privacy, cookies, legal pages
-│   ├── components/              # React components
+│   │   ├── globals.css          # CSS variables, dark mode, utility classes
+│   │   ├── privacy/             # Privacy Policy (UK GDPR compliant)
+│   │   ├── legal/               # Terms of Use (UK Consumer Rights Act)
+│   │   └── cookies/             # Cookie Policy (UK PECR compliant)
+│   ├── components/              # React components (Logo, SubscribeForm, LegalPageLayout, etc.)
 │   ├── emails/                  # React Email templates
 │   ├── lib/                     # Utilities (Supabase clients, tokens, email)
 │   ├── scripts/                 # Helper scripts (preview email, sync to Supabase)
@@ -204,6 +207,17 @@ curl "http://localhost:3000/api/test-email?secret=YOUR_CRON_SECRET&to=your@email
 - The hack at the top of `main.py` replaces sqlite3 with pysqlite3
 - Don't remove this or Chroma will fail
 
+### 8. Legal Pages (UK Compliance)
+- Privacy, Terms, and Cookie policies are compliant with UK laws (GDPR, DPA 2018, Consumer Rights Act 2015, PECR 2003)
+- Contact email across legal pages is `cesar@thepaymentsnerd.co`
+- Legal pages use `LegalPageLayout` component with full dark mode support
+- References ICO (Information Commissioner's Office) as the data protection authority
+
+### 9. Subscriber Count Display
+- Subscriber count on homepage is rounded to nearest 10 (displays as "20+", "30+", etc.)
+- Count is styled with the logo gradient for brand consistency
+- Uses `supabaseAdmin` to bypass RLS for accurate count
+
 ## Code Style Guidelines
 
 ### Simplicity Over Complexity
@@ -245,7 +259,9 @@ return NextResponse.json({ ok: true, data: result });
 - Use **Tailwind CSS classes** directly in JSX
 - Use **CSS variables** for theme colors (defined in globals.css)
 - Prefer **inline conditional classes** over complex className logic
-- Dark mode is handled via Tailwind's `dark:` variant
+- Dark mode is handled via CSS `prefers-color-scheme` media queries
+- Legal pages use the `prose-legal` utility class for consistent dark mode text styling
+- Use utility classes like `card-surface`, `card-surface-strong`, `glow-bg`, `bg-grid-pattern` from globals.css
 
 ### Commit Messages
 
@@ -354,7 +370,21 @@ npm run email:preview
 Create `web/app/api/[route-name]/route.ts` with GET/POST handlers.
 
 ### Update industry trends for AI
-Edit `ai/config.yml` under `current_trends` section.
+Edit `ai/config.yml` under `current_trends` section. Each trend has:
+- `name`: Trend title
+- `weight`: Importance score 1-10 (higher = more focus)
+- `description`: Context for the AI
+- `signals`: Keywords to detect in news
+- `companies_to_watch`: Relevant companies
+- `watch_for`: Specific developments to monitor
+
+### Modify legal pages
+Edit files in `web/app/` directory:
+- `privacy/page.tsx` - Privacy Policy
+- `legal/page.tsx` - Terms of Use
+- `cookies/page.tsx` - Cookie Policy
+
+All legal pages use the `LegalPageLayout` component and `prose-legal` CSS class for consistent styling.
 
 ### Check subscriber count
 ```sql
