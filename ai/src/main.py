@@ -219,6 +219,7 @@ def main():
 
     # Get recent stories and editorial context (for deduplication and narrative continuity)
     recent_data = get_recent_stories(days_back=3)  # Extended to 3 days for better narrative context
+    recent_stories = recent_data.get('stories', [])  # Extract stories list for deduplication
     recent_stories_context = format_recent_stories_for_context(recent_data)
     narrative_context = format_narrative_context(recent_data)
 
