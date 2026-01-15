@@ -7,6 +7,12 @@ web/node_modules
 .venv
 ai/.venv
 
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
 # environment variables
 .env
 .env.local
