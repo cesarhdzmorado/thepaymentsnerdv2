@@ -18,8 +18,6 @@ newsletters:
   # Fintech & Innovation
   - url: "https://techcrunch.com/tag/fintech/feed/"
     topic: "Fintech Funding, Startups & Innovation"
-  - url: "https://www.fintechfutures.com/fintech"
-    topic: "Fintech"
 
   # Crypto & Blockchain (more payments-focused)
   - url: "https://www.theblock.co/rss.xml"
@@ -48,6 +46,7 @@ current_trends:
       - "Revolut"
       - "Stripe"
       - "Adyen"
+      - "Airwallex"
       - "PayPal"
       - "Block"
       - "Checkout.com"
@@ -71,7 +70,6 @@ current_trends:
       - "OpenAI"
       - "Stripe"
       - "Shopify"
-      - "Etsy"
       - "Google"
       - "Anthropic"
       - "Microsoft"
@@ -80,7 +78,6 @@ current_trends:
       - "Mastercard"
       - "Visa"
       - "PayPal"
-      - "Riskified"
     watch_for: "Standards convergence among ACP, MCP, and industry foundations. Merchant ROl proof points: conversion, AOV, repeat rates, attribution quality. Payments performance: tokenization-driven auth lift and fraud outcomes in agent flows. Retail media migration: ad spend and measurement frameworks for agent-native surfaces. Privacy, identity, and delegation: consent and authorization standards for multi-agent ecosystems. Vertical breakouts beyond grocery and travel: home and personal care, electronics, tickets."
 
   - name: "Wallets Evolve into Identity & Control Hubs"
@@ -98,10 +95,13 @@ current_trends:
       - "mobile NFC wallets"
       - "payment + identity convergence"
     companies_to_watch:
-      - "Apple (Apple Pay/Wallet)"
-      - "Google (Google Wallet)"
-      - "PayPal/Venmo"
-      - "Block (Cash App)"
+      - "Apple Pay"
+      - "Google Pay"
+      - "Apple Wallet"
+      - "Google Wallet"
+      - "PayPal"
+      - "Venmo"
+      - "Cash App"
       - "Revolut"
       - "Grab"
       - "WeChat Pay"
@@ -327,6 +327,7 @@ current_trends:
       - "Stripe (cross-border)"
       - "Revolut"
       - "Airwallex"
+      - "Nium"
       - "Payoneer"
       - "SWIFT"
       - "Thunes"
