@@ -3,6 +3,10 @@
 node_modules
 web/node_modules
 
+# Python virtual environment
+.venv
+ai/.venv
+
 # environment variables
 .env
 .env.local
