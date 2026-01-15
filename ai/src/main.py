@@ -247,42 +247,6 @@ IMPORTANT CONTEXT:
 Sources to analyze:
 {news_sources_str}
 
-RECENT COVERAGE (Last 2 Days):
-{recent_stories_context}
-
-**🚨 CRITICAL ANTI-DUPLICATION PROTOCOL 🚨**
-
-BEFORE selecting ANY story, you MUST check it against the RECENT COVERAGE list above.
-
-**MANDATORY CHECKLIST FOR EACH STORY:**
-1. Is the company/topic in the recent coverage list? → Check the list above
-2. Does this story have NEW information not in the recent coverage? → Compare carefully
-3. If it's the same event/announcement → REJECT IT IMMEDIATELY
-
-**EXPLICIT EXAMPLES OF WHAT TO REJECT:**
-
-If recent coverage includes "Barclays Invests in Ubyx, Signaling Commitment to Regulated Tokenized Money":
-- ❌ REJECT: Any story about "Barclays invests in Ubyx" from a different source (same event, no new info)
-- ❌ REJECT: "Barclays makes first stablecoin investment in Ubyx" (exact same story, different headline)
-- ❌ REJECT: "Barclays bets on stablecoins with Ubyx stake" (repackaged, no new data)
-- ✅ ACCEPT: "Barclays Ubyx investment reaches $100M, expands to 3 new markets" (new metrics, new expansion)
-
-If recent coverage includes "Flutterwave Acquires Mono for Open Banking":
-- ❌ REJECT: "Flutterwave buys Mono in strategic move" (same acquisition, different wording)
-- ❌ REJECT: "Mono acquired by Flutterwave to boost open banking" (same event, flipped headline)
-- ✅ ACCEPT: "Flutterwave-Mono deal faces regulatory scrutiny in Nigeria" (new development post-acquisition)
-
-**DEVELOPING vs DUPLICATE - The Test:**
-- DUPLICATE = Same event, same facts, just from different publication → REJECT
-- DEVELOPING = Same topic BUT with new data, new stakeholders, or material change → ACCEPT
-
-**When in doubt, ask yourself:**
-"If I read yesterday's coverage, would this story tell me something I didn't already know?"
-- If NO → REJECT IT
-- If YES → Include it
-
-**ZERO TOLERANCE:** We'd rather have 7 excellent NEW stories than 10 stories with 3 duplicates.
-
 CURRENT INDUSTRY TRENDS (Context for Story Evaluation):
 
 These trends represent what's happening NOW in the payments industry. Use this context to:
@@ -379,7 +343,7 @@ RESEARCH FRAMEWORK:
       - What does this signal about industry direction?
 
 4. **Quality Standards**:
-   - Avoid duplicate or highly similar stories (check for same company/topic)
+   - Ensure diversity across the 10 stories (avoid multiple stories on the same company/topic)
    - Prefer primary sources and data-rich stories
    - Skip generic announcements without strategic impact
    - Better 7 excellent stories than 10 mediocre ones
@@ -433,15 +397,12 @@ IMPORTANT CONTEXT:
 - When referencing future predictions, use "in Q1 2026" or "by end of 2026" (next year), not "in 2025"
 - Treat all dates in {current_date.split()[-1]} as present tense, not future
 
-RECENT COVERAGE (Last 3 Days):
-{recent_stories_context}
-
 NARRATIVE CONTINUITY (Editorial Memory):
 {narrative_context}
 
-**🚨 NARRATIVE CONTINUITY REQUIREMENTS 🚨**
+**NARRATIVE CONTINUITY GUIDELINES**
 
-You are NOT writing in a vacuum. Use the editorial memory above to:
+Use the editorial memory above to:
 
 1. **BUILD ON PREVIOUS PERSPECTIVES** - If yesterday we said "stablecoins are shifting from retail to enterprise,"
    today's stablecoin story should acknowledge this: "Yesterday's enterprise stablecoin trend continues with..."
@@ -460,43 +421,6 @@ You are NOT writing in a vacuum. Use the editorial memory above to:
    - WHAT is shifting (e.g., "regulatory posture", "enterprise adoption", "cross-border infrastructure")
    - WHY it matters NOW (e.g., "positioning for Q2 compliance deadlines", "ahead of FedNow's next phase")
    - WHO wins/loses (e.g., "traditional remittance providers face margin compression")
-
-**🚨 CRITICAL: ZERO TOLERANCE FOR DUPLICATE STORIES 🚨**
-
-The Researcher has already filtered stories, but YOU are the final gatekeeper.
-
-**MANDATORY PRE-SELECTION CHECK:**
-Before selecting any story from the Researcher's output, cross-reference against recent coverage above.
-
-**EXPLICIT REJECTION CRITERIA:**
-
-If recent coverage includes "Barclays Invests in Ubyx, Signaling Commitment to Regulated Tokenized Money":
-- ❌ REJECT: Any researcher story about the same Barclays-Ubyx investment (even with different wording)
-- ❌ REJECT: "Barclays enters stablecoin space via Ubyx" (same event, reworded)
-- ✅ ACCEPT: "Barclays Ubyx stake triggers regulatory review by UK FCA" (NEW development)
-
-If recent coverage includes "Flutterwave Acquires Mono for Open Banking":
-- ❌ REJECT: "Flutterwave-Mono acquisition strengthens African fintech" (same acquisition, no new info)
-- ✅ ACCEPT: "Flutterwave integration of Mono completed ahead of schedule" (new milestone)
-
-**HANDLING DEVELOPING STORIES:**
-If a story has GENUINE NEW DEVELOPMENTS since our last coverage:
-- ✅ INCLUDE and frame as an UPDATE in your title
-  * "Stripe's API Hits $1B Daily Volume, 2x Launch Projections" (new metric)
-  * "UPDATE: Banks Push Back on Fed Instant Payment Rules" (new reaction)
-  * "PayPal Checkout Expands to 10 Markets After EU Success" (new expansion)
-
-- ❌ SKIP if it's REHASHING the same information:
-  * Same announcement from different publication
-  * Commentary on event we already covered (unless genuinely contrarian)
-
-**THE LITMUS TEST:**
-Ask yourself: "If I read yesterday's newsletter, would this story give me NEW actionable intelligence?"
-- If NO → DO NOT SELECT IT (no matter how well the Researcher analyzed it)
-- If YES → Include it and make the NEW information prominent
-
-**SELECTION PRIORITY:**
-We'd rather publish 3 genuinely new stories than 5 stories with 2 duplicates. Quality and novelty over quantity.
 
 CURRENT INDUSTRY TRENDS (Editorial Context):
 
@@ -540,7 +464,7 @@ BRAND VOICE:
 
 EDITORIAL PROCESS:
 
-1. **Story Selection** (Choose 5 from the 10 provided):
+1. **Story Selection** (Choose 5 from the stories provided - input has been pre-filtered for duplicates):
 
    Prioritize stories that:
    - Have clear implications for payments infrastructure, business models, or strategy
@@ -754,6 +678,44 @@ WHEN IN DOUBT: Set intro to null. Better to have no intro than a forced one.""")
     writer_llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18", temperature=0.1)
     writer_chain = writer_prompt_template | writer_llm
 
+    # 4.5. Create the Parser chain to structure Researcher output for deduplication
+    parser_llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18", temperature=0)
+    parser_prompt_template = ChatPromptTemplate.from_messages([
+        ("system", """You are a data extraction assistant. Your job is to parse the Researcher's free-text output into structured JSON.
+
+Extract each story from the input and return a JSON array with exactly 10 story objects.
+
+For each story, extract:
+- "title": The headline from "STORY [N] - [HEADLINE]"
+- "body": Combine WHAT HAPPENED + WHO'S AFFECTED + COMPETITIVE DYNAMICS into a coherent summary (2-3 sentences)
+- "source_name": The publication name from "Source: [Name] - [URL]"
+- "source_url": The URL from "Source: [Name] - [URL]"
+- "contrarian_take": The CONTRARIAN TAKE section
+- "pattern": The PATTERN section
+- "second_order_effects": The SECOND-ORDER EFFECTS section
+
+OUTPUT FORMAT (must be valid JSON):
+[
+  {
+    "title": "Story headline here",
+    "body": "Combined summary of what happened, who's affected, and competitive dynamics.",
+    "source_name": "Publication Name",
+    "source_url": "https://example.com/article",
+    "contrarian_take": "The contrarian angle",
+    "pattern": "Related trend or signal",
+    "second_order_effects": "What to watch for next"
+  }
+]
+
+CRITICAL:
+- Return ONLY the JSON array, no markdown formatting, no additional text
+- Preserve all factual details, numbers, and company names exactly as written
+- If a field is missing in the input, use an empty string ""
+- Ensure exactly 10 stories are extracted (or fewer if the Researcher provided fewer)"""),
+        ("user", "{input}"),
+    ])
+    parser_chain = parser_prompt_template | parser_llm
+
     # 5. Create the Editor Agent for quality control
     editor_llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18", temperature=0)
 
@@ -788,9 +750,9 @@ QUALITY CHECKS:
    - Are implications clear and actionable?
    - Is there genuine analysis beyond summarization?
 
-4. **Deduplication**:
-   - Any repetitive themes across stories?
-   - Are all 5 stories sufficiently different?
+4. **Theme Diversity**:
+   - Are the 5 stories covering sufficiently different topics?
+   - Flag if multiple stories cover the same company or announcement
 
 5. **Completeness**:
    - Are all required fields present (intro, news, perspective, curiosity)?
@@ -863,9 +825,51 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
     print("--- Starting Researcher Agent ---")
     research_result = researcher_executor.invoke({"input": "Please research the latest news from my list of sources."})
 
+    # 6.5. Parse Researcher output into structured JSON for deduplication
+    print("\n--- Parsing Researcher Output ---")
+    parser_result = parser_chain.invoke({"input": research_result['output']})
+
+    try:
+        parsed_text = parser_result.content.strip().replace("```json", "").replace("```", "").strip()
+        parsed_stories = json.loads(parsed_text)
+        print(f"✅ Parsed {len(parsed_stories)} stories from Researcher output")
+    except (json.JSONDecodeError, AttributeError) as e:
+        print(f"⚠️ Failed to parse Researcher output: {e}")
+        print("Falling back to raw Researcher output for Writer")
+        parsed_stories = None
+
+    # 6.6. Deduplicate against recent stories (BEFORE Writer sees them)
+    if parsed_stories and recent_stories:
+        print(f"\n🔍 Deduplication: Checking {len(parsed_stories)} stories against {len(recent_stories)} recent stories...")
+
+        # Combine recent stories with today's parsed stories
+        combined_stories = recent_stories + parsed_stories
+
+        # Run deduplication (threshold 0.6 catches similar stories but allows developing stories)
+        deduplicated_combined = deduplicate_stories(combined_stories, similarity_threshold=0.6)
+
+        # Keep only today's stories that survived deduplication
+        filtered_stories = [
+            story for story in deduplicated_combined
+            if any(story.get('title') == parsed.get('title') for parsed in parsed_stories)
+        ]
+
+        removed_count = len(parsed_stories) - len(filtered_stories)
+        if removed_count > 0:
+            print(f"⚠️ Removed {removed_count} duplicate stories from previous coverage")
+        print(f"✅ {len(filtered_stories)} unique stories passed to Writer")
+
+        # Format filtered stories for Writer input
+        writer_input = json.dumps(filtered_stories, indent=2)
+    elif parsed_stories:
+        print("ℹ️ No recent stories to deduplicate against")
+        writer_input = json.dumps(parsed_stories, indent=2)
+    else:
+        # Fallback to raw output if parsing failed
+        writer_input = research_result['output']
+
     print("\n--- Starting Writer Agent ---")
-    # MODIFIED: Invoke the new writer_chain
-    final_result_chain = writer_chain.invoke({"input": research_result['output']})
+    final_result_chain = writer_chain.invoke({"input": writer_input})
 
     # 7. Run the Editor Agent for quality control
     print("\n--- Starting Editor Review ---")
@@ -884,47 +888,16 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
         output_text = final_result_chain.content.strip().replace("```json", "").replace("```", "").strip()
         output_json = json.loads(output_text)
 
-        # Two-stage deduplication approach (Option 1 + Option 3)
+        # Safety net: Within-day deduplication only
+        # Historical dedup is now handled BEFORE the Writer (see step 6.6)
+        # This catches only nearly identical copies that might slip through
         if 'news' in output_json and isinstance(output_json['news'], list):
             original_count = len(output_json['news'])
-
-            # STAGE 1: Deduplicate against historical stories (last 2 days)
-            # Threshold 0.6 = catches similar stories but allows developing stories with new info
-            if recent_stories:
-                print(f"\n🔍 Stage 1: Checking {original_count} stories against {len(recent_stories)} recent stories...")
-
-                # Combine today's stories with recent stories for comparison
-                combined_stories = recent_stories + output_json['news']
-
-                # Deduplicate the combined list
-                deduplicated_combined = deduplicate_stories(combined_stories, similarity_threshold=0.6)
-
-                # Keep only the stories that are NEW (not in the recent_stories list)
-                # We identify new stories by checking if they were in the original output_json['news']
-                new_stories = []
-                for story in deduplicated_combined:
-                    # Check if this story is from today (has same title/body as one of today's original stories)
-                    is_from_today = any(
-                        story.get('title') == today_story.get('title')
-                        for today_story in output_json['news']
-                    )
-                    if is_from_today:
-                        new_stories.append(story)
-
-                output_json['news'] = new_stories
-                stage1_count = len(output_json['news'])
-
-                if original_count != stage1_count:
-                    print(f"⚠️ Stage 1: Removed {original_count - stage1_count} duplicate stories from previous days")
-
-            # STAGE 2: Deduplicate within today's stories only
-            # Using a very high threshold (0.9) to only catch nearly identical copies within today
-            stage2_input_count = len(output_json['news'])
             output_json['news'] = deduplicate_stories(output_json['news'], similarity_threshold=0.9)
-            stage2_count = len(output_json['news'])
+            final_count = len(output_json['news'])
 
-            if stage2_input_count != stage2_count:
-                print(f"⚠️ Stage 2: Removed {stage2_input_count - stage2_count} exact duplicate stories from today's output")
+            if original_count != final_count:
+                print(f"⚠️ Safety net: Removed {original_count - final_count} near-identical stories from final output")
 
         output_path = "web/public/newsletter.json"
         with open(output_path, 'w') as f:
