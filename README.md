@@ -233,24 +233,131 @@ npm run build
 npm start
 ```
 
-### Generating Newsletter Manually
+## Local Testing Guide
+
+This section explains how to test each component of the newsletter system locally without waiting for the daily GitHub Action.
+
+### 1. Test AI Content Generation (Prompt Engineering)
+
+Generate newsletter content locally to test your prompt changes:
 
 ```bash
 cd ai
-source .venv/bin/activate
-python src/main.py
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+python -m ai.src.main
 ```
 
-This generates `web/public/newsletter.json`.
+This generates `web/public/newsletter.json` with fresh content from RSS feeds and web search.
 
-### Email Preview
+**Requirements:** `OPENAI_API_KEY` in your `.env` file.
+
+**Tips:**
+- The script has verbose logging enabled, so you'll see all AI reasoning steps
+- Modify `ai/config.yml` to adjust RSS feeds, search sources, and industry trends
+- Each run costs API credits (GPT-4o for research, GPT-4o-mini for writing/editing)
+
+### 2. Test Website UI/UX
+
+Start the development server and preview the homepage:
 
 ```bash
 cd web
-npx tsx scripts/previewEmail.ts
+npm run dev
 ```
 
-Opens email preview in browser.
+**Option A: View with local data (no Supabase needed)**
+
+After generating content with the AI, view it immediately:
+
+```
+http://localhost:3000?local=true
+```
+
+This loads directly from `public/newsletter.json` — perfect for testing UI changes without syncing to Supabase. A yellow banner indicates local preview mode.
+
+**Option B: View from Supabase (production-like)**
+
+```
+http://localhost:3000
+```
+
+This loads from Supabase. If you generated new content locally, sync it first:
+
+```bash
+node scripts/syncToSupabase.js
+```
+
+**Requirements for Option B:** Supabase credentials in `.env` file.
+
+### 3. Test Email UI/UX
+
+Three ways to test email template changes:
+
+**Option A: Browser Preview (Fastest, no API keys needed)**
+
+```bash
+cd web
+npm run email:preview
+```
+
+Opens `email-preview.html` in your browser with sample data. Great for quick design iteration.
+
+**Option B: Send Test Email via Resend**
+
+```bash
+cd web
+npm run email:test                    # Uses default test address
+npm run email:test -- your@email.com  # Send to specific address
+```
+
+Sends an actual email via Resend API to verify deliverability and rendering.
+
+**Requirements:** `RESEND_API_KEY`, `EMAIL_FROM`, `OPENAI_API_KEY` in `.env.local`
+
+**Option C: Send via API Endpoint**
+
+With the dev server running:
+
+```bash
+./scripts/sendTestEmail.sh your@email.com
+```
+
+Or manually:
+
+```bash
+curl "http://localhost:3000/api/test-email?to=your@email.com&secret=YOUR_CRON_SECRET"
+```
+
+### Testing Workflow Summary
+
+| What to Test | Command | API Keys Needed |
+|--------------|---------|-----------------|
+| AI prompt engineering | `python -m ai.src.main` | OPENAI_API_KEY |
+| Website UI (local data) | `npm run dev` → `localhost:3000?local=true` | None |
+| Website UI (production-like) | `npm run dev` → `localhost:3000` | Supabase keys |
+| Email design | `npm run email:preview` | None |
+| Email delivery | `npm run email:test` | RESEND_API_KEY, OPENAI_API_KEY |
+
+### Full Local Test Cycle
+
+Test the entire pipeline locally:
+
+```bash
+# 1. Generate newsletter content
+cd ai && source .venv/bin/activate && python -m ai.src.main
+
+# 2. Preview website with local data
+cd ../web && npm run dev
+# Open: http://localhost:3000?local=true
+
+# 3. Preview email template
+npm run email:preview
+# Open: web/email-preview.html
+
+# 4. (Optional) Sync to Supabase and send test email
+node scripts/syncToSupabase.js
+npm run email:test -- your@email.com
+```
 
 ## Deployment
 

@@ -6,6 +6,8 @@
 export const revalidate = 900; // 15 minutes (change to 3600 for 1 hour if you prefer)
 
 import { Suspense } from "react";
+import { promises as fs } from "fs";
+import path from "path";
 import { supabase } from "@/lib/supabaseClient";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { Logo } from "@/components/Logo";
@@ -55,6 +57,30 @@ interface Newsletter {
 // --- Data Fetching Functions ---
 // IMPORTANT: do NOT wrap in cache() or unstable_cache()
 // ISR handles caching at the page level
+
+/**
+ * Load newsletter from local public/newsletter.json file.
+ * Used for local development testing with ?local=true query param.
+ */
+async function getLocalNewsletter(): Promise<Newsletter | null> {
+  try {
+    const filePath = path.join(process.cwd(), "public", "newsletter.json");
+    const fileContent = await fs.readFile(filePath, "utf-8");
+    const content = JSON.parse(fileContent) as NewsletterContent;
+
+    // Use today's date as publication date for local preview
+    const today = new Date().toISOString().split("T")[0];
+
+    return {
+      publication_date: today,
+      content,
+    };
+  } catch (error) {
+    console.error("Error loading local newsletter:", error);
+    return null;
+  }
+}
+
 async function getLatestNewsletter(): Promise<Newsletter | null> {
   const { data, error } = await supabase
     .from("newsletters")
@@ -129,24 +155,40 @@ async function getSubscriberCount(): Promise<number> {
 export default async function HomePage({
   searchParams,
 }: {
-  searchParams: Promise<{ date?: string }>;
+  searchParams: Promise<{ date?: string; local?: string }>;
 }) {
   const params = await searchParams;
   const requestedDate = params.date;
+  const useLocalData = params.local === "true";
 
-  // Fetch newsletter based on date parameter or get latest
-  const newsletter = requestedDate
-    ? await getNewsletterByDate(requestedDate)
-    : await getLatestNewsletter();
+  // Fetch newsletter based on parameters:
+  // - ?local=true -> Load from local public/newsletter.json (for development testing)
+  // - ?date=YYYY-MM-DD -> Load specific date from Supabase
+  // - No params -> Load latest from Supabase
+  let newsletter: Newsletter | null;
+  let adjacentDates = { prev: null as string | null, next: null as string | null };
 
-  // Get adjacent dates for navigation
-  const adjacentDates = newsletter
-    ? await getAdjacentDates(newsletter.publication_date)
-    : { prev: null, next: null };
+  if (useLocalData) {
+    // Local preview mode: load from public/newsletter.json
+    newsletter = await getLocalNewsletter();
+    // No navigation in local mode
+  } else if (requestedDate) {
+    newsletter = await getNewsletterByDate(requestedDate);
+    adjacentDates = newsletter
+      ? await getAdjacentDates(newsletter.publication_date)
+      : { prev: null, next: null };
+  } else {
+    newsletter = await getLatestNewsletter();
+    adjacentDates = newsletter
+      ? await getAdjacentDates(newsletter.publication_date)
+      : { prev: null, next: null };
+  }
 
-  // Get subscriber count for social proof
-  const subscriberCount = await getSubscriberCount();
-  console.log("📊 Using subscriber count for display:", subscriberCount, "Show count?", subscriberCount > 10);
+  // Get subscriber count for social proof (skip in local mode for faster loading)
+  const subscriberCount = useLocalData ? 0 : await getSubscriberCount();
+  if (!useLocalData) {
+    console.log("📊 Using subscriber count for display:", subscriberCount, "Show count?", subscriberCount > 10);
+  }
 
   // Round subscriber count to nearest 10 (20+, 30+, 40+, etc.)
   const roundedCount = subscriberCount > 10 ? Math.floor(subscriberCount / 10) * 10 : subscriberCount;
@@ -178,6 +220,13 @@ export default async function HomePage({
 
   return (
     <div className="relative mx-auto max-w-4xl px-4 sm:px-8 lg:px-16 py-8 sm:py-12 lg:py-16 pt-24 sm:pt-28">
+      {/* Local preview mode banner */}
+      {useLocalData && (
+        <div className="fixed top-0 left-0 right-0 z-50 bg-amber-500 text-amber-950 text-center py-2 text-sm font-semibold">
+          📁 Local Preview Mode — Loading from public/newsletter.json
+        </div>
+      )}
+
       {/* Background grid + soft glow */}
       <div
         className="pointer-events-none absolute inset-0 -z-20 bg-grid-pattern opacity-35 dark:opacity-20"
