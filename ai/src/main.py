@@ -20,13 +20,13 @@ from .tools import search_tool, scrape_tool, rss_tool, deduplicate_stories
 
 def get_recent_stories(days_back: int = 2):
     """
-    Fetch stories from recent newsletters to avoid duplicates.
+    Fetch stories and editorial context from recent newsletters.
 
     Args:
         days_back: Number of days to look back for previous stories
 
     Returns:
-        List of previous stories (each a dict with 'title' and 'body')
+        Dict with 'stories' (list), 'perspectives' (list), 'intros' (list), and 'themes' (list)
     """
     try:
         # Initialize Supabase client
@@ -35,7 +35,7 @@ def get_recent_stories(days_back: int = 2):
 
         if not supabase_url or not supabase_key:
             print("⚠️ Supabase credentials not found, skipping historical deduplication")
-            return []
+            return {'stories': [], 'perspectives': [], 'intros': [], 'themes': []}
 
         supabase = create_client(supabase_url, supabase_key)
 
@@ -44,28 +44,68 @@ def get_recent_stories(days_back: int = 2):
 
         # Fetch recent newsletters
         response = supabase.table("newsletters") \
-            .select("content") \
+            .select("content, publication_date") \
             .gte("publication_date", cutoff_date) \
             .order("publication_date", desc=True) \
             .execute()
 
-        # Extract stories from newsletters
+        # Extract stories, perspectives, and intros from newsletters
         previous_stories = []
+        perspectives = []
+        intros = []
+        themes = []
+
         for newsletter in response.data:
             content = newsletter.get("content", {})
+            pub_date = newsletter.get("publication_date", "Unknown date")
             news = content.get("news", [])
+
+            # Collect stories
             for story in news:
                 previous_stories.append({
                     "title": story.get("title", ""),
-                    "body": story.get("body", "")
+                    "body": story.get("body", ""),
+                    "date": pub_date
                 })
 
-        print(f"📚 Loaded {len(previous_stories)} stories from last {days_back} days for deduplication")
-        return previous_stories
+            # Collect perspective with date
+            perspective = content.get("perspective", "")
+            if perspective:
+                perspectives.append({
+                    "date": pub_date,
+                    "text": perspective
+                })
+
+            # Collect intro with date (if not null)
+            intro = content.get("intro")
+            if intro:
+                intros.append({
+                    "date": pub_date,
+                    "text": intro
+                })
+
+            # Extract key themes from story titles (simple keyword extraction)
+            for story in news:
+                title = story.get("title", "").lower()
+                # Look for recurring theme keywords
+                theme_keywords = ["stablecoin", "crypto", "regulation", "cross-border", "bnpl",
+                                  "embedded", "instant payment", "digital wallet", "open banking",
+                                  "ai", "fraud", "compliance", "licensing"]
+                for keyword in theme_keywords:
+                    if keyword in title and keyword not in themes:
+                        themes.append(keyword)
+
+        print(f"📚 Loaded {len(previous_stories)} stories, {len(perspectives)} perspectives from last {days_back} days")
+        return {
+            'stories': previous_stories,
+            'perspectives': perspectives,
+            'intros': intros,
+            'themes': themes[:5]  # Top 5 recurring themes
+        }
 
     except Exception as e:
         print(f"⚠️ Error fetching recent stories: {e}")
-        return []
+        return {'stories': [], 'perspectives': [], 'intros': [], 'themes': []}
 
 def format_trends_for_prompt(trends):
     """
@@ -116,17 +156,54 @@ def format_trends_for_prompt(trends):
 
     return "\n\n".join(formatted)
 
-def format_recent_stories_for_context(previous_stories):
+def format_recent_stories_for_context(recent_data):
     """
-    Format recent stories into a context string for the AI agents.
+    Format recent stories into a context string for deduplication.
     """
-    if not previous_stories:
+    stories = recent_data.get('stories', []) if isinstance(recent_data, dict) else recent_data
+    if not stories:
         return "No recent stories available."
 
     # Group by title to show concise list
-    story_titles = [story.get('title', 'Untitled') for story in previous_stories[:15]]  # Last 15 stories
+    story_titles = [story.get('title', 'Untitled') for story in stories[:15]]  # Last 15 stories
     formatted = "\n".join([f"  - {title}" for title in story_titles])
     return f"Recent stories from the last 2 days:\n{formatted}"
+
+
+def format_narrative_context(recent_data):
+    """
+    Format recent editorial context (perspectives, intros, themes) for narrative continuity.
+    This helps the Writer build on previous days' narratives rather than repeating generic observations.
+    """
+    if not isinstance(recent_data, dict):
+        return "No narrative context available."
+
+    perspectives = recent_data.get('perspectives', [])
+    intros = recent_data.get('intros', [])
+    themes = recent_data.get('themes', [])
+
+    sections = []
+
+    # Recent perspectives (what we've been saying)
+    if perspectives:
+        sections.append("WHAT WE'VE BEEN SAYING (Recent Perspectives):")
+        for p in perspectives[:3]:  # Last 3 days max
+            sections.append(f"  [{p['date']}]: \"{p['text']}\"")
+
+    # Recent intros (patterns we've identified)
+    if intros:
+        sections.append("\nPATTERNS WE'VE IDENTIFIED (Recent Intros):")
+        for i in intros[:3]:
+            sections.append(f"  [{i['date']}]: \"{i['text']}\"")
+
+    # Recurring themes
+    if themes:
+        sections.append(f"\nRECURRING THEMES THIS WEEK: {', '.join(themes)}")
+
+    if not sections:
+        return "No narrative context available."
+
+    return "\n".join(sections)
 
 def main():
     """The main function that runs the agent-based workflow."""
@@ -140,9 +217,10 @@ def main():
     from datetime import datetime
     current_date = datetime.now().strftime("%B %d, %Y")  # e.g., "December 30, 2025"
 
-    # Get recent stories for context (not for filtering, but for awareness)
-    recent_stories = get_recent_stories(days_back=2)
-    recent_stories_context = format_recent_stories_for_context(recent_stories)
+    # Get recent stories and editorial context (for deduplication and narrative continuity)
+    recent_data = get_recent_stories(days_back=3)  # Extended to 3 days for better narrative context
+    recent_stories_context = format_recent_stories_for_context(recent_data)
+    narrative_context = format_narrative_context(recent_data)
 
     # Create a string of news sources for the prompt
     news_sources_str = "\n".join([f"- {s['url']} ({s['topic']})" for s in config['newsletters']])
@@ -354,8 +432,33 @@ IMPORTANT CONTEXT:
 - When referencing future predictions, use "in Q1 2026" or "by end of 2026" (next year), not "in 2025"
 - Treat all dates in {current_date.split()[-1]} as present tense, not future
 
-RECENT COVERAGE (Last 2 Days):
+RECENT COVERAGE (Last 3 Days):
 {recent_stories_context}
+
+NARRATIVE CONTINUITY (Editorial Memory):
+{narrative_context}
+
+**🚨 NARRATIVE CONTINUITY REQUIREMENTS 🚨**
+
+You are NOT writing in a vacuum. Use the editorial memory above to:
+
+1. **BUILD ON PREVIOUS PERSPECTIVES** - If yesterday we said "stablecoins are shifting from retail to enterprise,"
+   today's stablecoin story should acknowledge this: "Yesterday's enterprise stablecoin trend continues with..."
+   or "Counter to yesterday's enterprise focus, today's news shows retail adoption surging..."
+
+2. **AVOID REPETITIVE FRAMING** - If we've said "signals a shift" or "marks a pivot" recently, find fresh language:
+   - Instead of: "This signals a shift in the payments landscape"
+   - Try: "This accelerates the pattern we've tracked all week: [specific pattern]"
+   - Or: "After three days of stablecoin news, today's story reveals WHY: [specific insight]"
+
+3. **CONNECT RECURRING THEMES** - If the same theme (stablecoins, regulation, etc.) appears multiple days:
+   - Reference the pattern: "This is the third stablecoin partnership this week, and together they reveal..."
+   - Provide cumulative insight: "Combined with Monday's Visa move and yesterday's Stripe news, today's announcement confirms..."
+
+4. **SPECIFY THE "SO WHAT"** - Never just say "signals a shift." Always specify:
+   - WHAT is shifting (e.g., "regulatory posture", "enterprise adoption", "cross-border infrastructure")
+   - WHY it matters NOW (e.g., "positioning for Q2 compliance deadlines", "ahead of FedNow's next phase")
+   - WHO wins/loses (e.g., "traditional remittance providers face margin compression")
 
 **🚨 CRITICAL: ZERO TOLERANCE FOR DUPLICATE STORIES 🚨**
 
@@ -507,6 +610,10 @@ EDITORIAL PROCESS:
    D) HIDDEN SIGNAL: What the stories reveal when viewed together
       Example: "Every infrastructure deal this week targeted emerging markets. The developed-market land grab is over; payments giants are moving south."
 
+   E) MULTI-DAY PATTERN: Today's stories build on a pattern from earlier this week (check NARRATIVE CONTINUITY above)
+      Example: "Third day of stablecoin news this week, and the pattern is now clear: every major player is building treasury infrastructure, not retail products."
+      Example: "After Monday's Visa move and yesterday's Mastercard response, today's PayPal announcement confirms it: the card networks have chosen stablecoins over CBDCs."
+
    When to SKIP the intro (set to null):
    - Stories are diverse/unrelated (this is fine! most days are eclectic)
    - The only connection is generic (e.g., "all about payments" or "fintech companies making moves")
@@ -525,7 +632,10 @@ EDITORIAL PROCESS:
 
    After selecting the 5 stories, synthesize the day's intelligence in 2-3 sentences.
 
-   CRITICAL: Reference SPECIFIC stories from today's selection. Don't make generic observations.
+   CRITICAL REQUIREMENTS:
+   1. Reference SPECIFIC stories from today's selection by name
+   2. If today's themes connect to previous days (see NARRATIVE CONTINUITY above), BUILD ON that context
+   3. Never use generic phrases like "signals a shift" or "marks a pivot" without specifying WHAT is shifting and WHY
 
    TYPES OF SYNTHESIS (pick the most relevant):
 
@@ -541,8 +651,13 @@ EDITORIAL PROCESS:
    D) FORWARD-LOOKING: What these stories mean for next quarter/year
       Example: "Three compliance stories in one day isn't noise—it's the market pricing in the regulatory crackdown we've been warning about since Q1."
 
+   E) NARRATIVE CONTINUATION: Build on what we've been saying this week
+      Example: "I've been tracking stablecoin enterprise adoption all week—today's Stripe treasury integration and Circle's API launch confirm the pattern: B2B stablecoins are the real story, not retail speculation."
+      Example: "After Monday's UK FCA news and yesterday's MiCA update, today's Singapore announcement completes the picture: the regulatory race is now global, and first-movers will define the framework."
+
    WRONG (too generic): "Stablecoins continue to be an important topic in payments."
-   RIGHT (specific to stories): "Today's Circle and Paxos moves show stablecoin issuers pivoting from retail hype to enterprise infrastructure—the B2B stablecoin era is here."
+   WRONG (no specifics): "Today's stories signal a shift in the payments landscape."
+   RIGHT (specific + contextual): "Today's Circle and Paxos moves—combined with Monday's Visa announcement—show stablecoin issuers pivoting from retail hype to enterprise infrastructure. The B2B stablecoin era is here."
 
    Write this in first-person ("I'm watching...", "This signals...", "What stands out to me...")
    This appears BEFORE the stories and sets the editorial lens.
@@ -710,6 +825,21 @@ QUALITY CHECKS:
     - Is the curiosity fact a CURRENT or HISTORICAL fact (not a future projection)?
     - Flag predictions like "by 2030..." or "projected to..." or "experts predict..."
     - Must be verifiable with current/past data
+    - If using relative dates like "last year", ensure the actual year is specified (e.g., "in 2025" not just "last year")
+
+11. **Narrative Continuity** (Critical):
+    - Does the intro/perspective avoid repetitive framing from previous days?
+    - Flag generic phrases like "signals a shift" or "marks a pivot" without specifics
+    - If recurring themes (stablecoins, regulation, etc.) appear multiple days, does the content BUILD on previous coverage?
+    - WRONG: "Stablecoins are reshaping the payments landscape" (could be written any day)
+    - RIGHT: "Today's Stripe announcement is the third stablecoin partnership this week, confirming enterprise adoption is accelerating"
+
+12. **Specificity Check** (Critical):
+    - Every claim of "shift", "pivot", or "transformation" must specify:
+      * WHAT exactly is shifting (not just "the payments landscape")
+      * WHO is affected (winners/losers)
+      * WHY this matters NOW (timing/urgency)
+    - Flag vague conclusions that could apply to any week's news
 
 RETURN FORMAT:
 
