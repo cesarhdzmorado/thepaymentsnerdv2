@@ -16,7 +16,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from supabase import create_client
 
 # Import our custom tools
-from .tools import search_tool, scrape_tool, rss_tool, deduplicate_stories
+from .tools import search_tool, scrape_tool, rss_tool, deduplicate_stories, filter_against_history
 
 def get_recent_stories(days_back: int = 2):
     """
@@ -842,17 +842,13 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
     if parsed_stories and recent_stories:
         print(f"\n🔍 Deduplication: Checking {len(parsed_stories)} stories against {len(recent_stories)} recent stories...")
 
-        # Combine recent stories with today's parsed stories
-        combined_stories = recent_stories + parsed_stories
-
-        # Run deduplication (threshold 0.6 catches similar stories but allows developing stories)
-        deduplicated_combined = deduplicate_stories(combined_stories, similarity_threshold=0.6)
-
-        # Keep only today's stories that survived deduplication
-        filtered_stories = [
-            story for story in deduplicated_combined
-            if any(story.get('title') == parsed.get('title') for parsed in parsed_stories)
-        ]
+        # Filter out stories that are too similar to recent coverage
+        # Each parsed story is checked against ALL recent stories individually
+        filtered_stories = filter_against_history(
+            new_stories=parsed_stories,
+            historical_stories=recent_stories,
+            similarity_threshold=0.6
+        )
 
         removed_count = len(parsed_stories) - len(filtered_stories)
         if removed_count > 0:
