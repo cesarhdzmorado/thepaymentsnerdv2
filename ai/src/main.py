@@ -669,7 +669,7 @@ BAD (Not insightful):
 "intro": "Here are five important payment stories you need to know about today."
 
 WHEN IN DOUBT: Set intro to null. Better to have no intro than a forced one."""),
-        ("user", "Here are the raw summaries:\n\n{input}"),
+        ("user", "Here are the stories to select from (pre-filtered for duplicates):\n\n{input}"),
     ])
     
     # MODIFIED: Create a simple 'chain' for the writer, as it doesn't need tools.
@@ -853,10 +853,14 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
         removed_count = len(parsed_stories) - len(filtered_stories)
         if removed_count > 0:
             print(f"⚠️ Removed {removed_count} duplicate stories from previous coverage")
-        print(f"✅ {len(filtered_stories)} unique stories passed to Writer")
 
-        # Format filtered stories for Writer input
-        writer_input = json.dumps(filtered_stories, indent=2)
+        # Handle edge case: all stories were duplicates
+        if not filtered_stories:
+            print("⚠️ All stories were duplicates! Falling back to raw Researcher output")
+            writer_input = research_result['output']
+        else:
+            print(f"✅ {len(filtered_stories)} unique stories passed to Writer")
+            writer_input = json.dumps(filtered_stories, indent=2)
     elif parsed_stories:
         print("ℹ️ No recent stories to deduplicate against")
         writer_input = json.dumps(parsed_stories, indent=2)
