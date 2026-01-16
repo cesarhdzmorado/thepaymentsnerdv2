@@ -696,7 +696,7 @@ For each story, extract:
 
 OUTPUT FORMAT (must be valid JSON):
 [
-  {
+  {{
     "title": "Story headline here",
     "body": "Combined summary of what happened, who's affected, and competitive dynamics.",
     "source_name": "Publication Name",
@@ -704,7 +704,7 @@ OUTPUT FORMAT (must be valid JSON):
     "contrarian_take": "The contrarian angle",
     "pattern": "Related trend or signal",
     "second_order_effects": "What to watch for next"
-  }
+  }}
 ]
 
 CRITICAL:
