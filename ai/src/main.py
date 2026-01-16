@@ -16,7 +16,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from supabase import create_client
 
 # Import our custom tools
-from .tools import search_tool, scrape_tool, rss_tool, deduplicate_stories
+from .tools import search_tool, scrape_tool, rss_tool, deduplicate_stories, filter_against_history
 
 def get_recent_stories(days_back: int = 2):
     """
@@ -669,7 +669,7 @@ BAD (Not insightful):
 "intro": "Here are five important payment stories you need to know about today."
 
 WHEN IN DOUBT: Set intro to null. Better to have no intro than a forced one."""),
-        ("user", "Here are the raw summaries:\n\n{input}"),
+        ("user", "Here are the stories to select from (pre-filtered for duplicates):\n\n{input}"),
     ])
     
     # MODIFIED: Create a simple 'chain' for the writer, as it doesn't need tools.
@@ -842,25 +842,25 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
     if parsed_stories and recent_stories:
         print(f"\n🔍 Deduplication: Checking {len(parsed_stories)} stories against {len(recent_stories)} recent stories...")
 
-        # Combine recent stories with today's parsed stories
-        combined_stories = recent_stories + parsed_stories
-
-        # Run deduplication (threshold 0.6 catches similar stories but allows developing stories)
-        deduplicated_combined = deduplicate_stories(combined_stories, similarity_threshold=0.6)
-
-        # Keep only today's stories that survived deduplication
-        filtered_stories = [
-            story for story in deduplicated_combined
-            if any(story.get('title') == parsed.get('title') for parsed in parsed_stories)
-        ]
+        # Filter out stories that are too similar to recent coverage
+        # Each parsed story is checked against ALL recent stories individually
+        filtered_stories = filter_against_history(
+            new_stories=parsed_stories,
+            historical_stories=recent_stories,
+            similarity_threshold=0.6
+        )
 
         removed_count = len(parsed_stories) - len(filtered_stories)
         if removed_count > 0:
             print(f"⚠️ Removed {removed_count} duplicate stories from previous coverage")
-        print(f"✅ {len(filtered_stories)} unique stories passed to Writer")
 
-        # Format filtered stories for Writer input
-        writer_input = json.dumps(filtered_stories, indent=2)
+        # Handle edge case: all stories were duplicates
+        if not filtered_stories:
+            print("⚠️ All stories were duplicates! Falling back to raw Researcher output")
+            writer_input = research_result['output']
+        else:
+            print(f"✅ {len(filtered_stories)} unique stories passed to Writer")
+            writer_input = json.dumps(filtered_stories, indent=2)
     elif parsed_stories:
         print("ℹ️ No recent stories to deduplicate against")
         writer_input = json.dumps(parsed_stories, indent=2)

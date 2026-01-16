@@ -183,3 +183,54 @@ def deduplicate_stories(stories: list, similarity_threshold: float = 0.4) -> lis
             seen_content.append(story_text)
 
     return deduplicated
+
+
+def filter_against_history(
+    new_stories: list,
+    historical_stories: list,
+    similarity_threshold: float = 0.6
+) -> list:
+    """
+    Filter out stories that are too similar to historical coverage.
+
+    Unlike deduplicate_stories() which removes duplicates within a single list,
+    this function checks each new story against a separate list of historical
+    stories and excludes any that are similar.
+
+    Args:
+        new_stories: List of story dicts to filter (today's stories)
+        historical_stories: List of story dicts to compare against (recent coverage)
+        similarity_threshold: Jaccard similarity threshold (0-1). Stories with
+            similarity above this threshold are considered duplicates.
+            Default 0.6 catches similar stories while allowing developing stories.
+
+    Returns:
+        List of new stories that are NOT similar to any historical story.
+    """
+    if not new_stories:
+        return []
+
+    if not historical_stories:
+        return new_stories
+
+    # Pre-compute text representations for historical stories
+    historical_texts = []
+    for story in historical_stories:
+        text = story.get('title', '') + ' ' + story.get('body', story.get('summary', ''))
+        historical_texts.append(text)
+
+    filtered = []
+    for story in new_stories:
+        story_text = story.get('title', '') + ' ' + story.get('body', story.get('summary', ''))
+
+        is_duplicate = False
+        for historical_text in historical_texts:
+            similarity = _calculate_similarity(story_text, historical_text)
+            if similarity > similarity_threshold:
+                is_duplicate = True
+                break
+
+        if not is_duplicate:
+            filtered.append(story)
+
+    return filtered
