@@ -76,14 +76,6 @@ def get_recent_stories(days_back: int = 2):
                     "text": perspective
                 })
 
-            # Collect intro with date (if not null)
-            intro = content.get("intro")
-            if intro:
-                intros.append({
-                    "date": pub_date,
-                    "text": intro
-                })
-
             # Extract key themes from story titles (simple keyword extraction)
             for story in news:
                 title = story.get("title", "").lower()
@@ -431,7 +423,6 @@ These are the key trends shaping the payments industry RIGHT NOW:
 Use this context to:
 - Prioritize stories that signal shifts in these trends
 - Connect individual stories to larger industry movements in your "perspective" section
-- Identify when the day's stories reveal a pattern related to these trends (for intro)
 - Frame implications through the lens of these trends when relevant
 
 Important: These trends inform your editorial lens but don't override your judgment. You still have full autonomy to:
@@ -517,43 +508,7 @@ EDITORIAL PROCESS:
    - Pattern recognition or trend connection
    - Actionable intelligence ("Watch for X", "This signals Y")
 
-3. **Daily Intro** (CONDITIONAL - Only if there's a real pattern):
-
-   CRITICAL: Only generate an intro if you identify a GENUINE macro pattern or connection across multiple stories.
-
-   TYPES OF VALID CONNECTIONS (use these as a checklist):
-
-   A) CONVERGENCE: 3+ players making the same bet
-      Example: "Visa, Mastercard, and PayPal all announced stablecoin integrations this week. The card networks are racing to own crypto rails before crypto owns theirs."
-
-   B) TENSION/PARADOX: Stories that seem to contradict each other
-      Example: "JPMorgan warns clients about crypto risk while quietly filing three blockchain patents. The message: do as I do, not as I say."
-
-   C) CAUSE-EFFECT: One story explains or triggers another
-      Example: "The UK's new licensing rules sent ripples today—Revolut announced UK-first expansion, while Binance quietly exited the market."
-
-   D) HIDDEN SIGNAL: What the stories reveal when viewed together
-      Example: "Every infrastructure deal this week targeted emerging markets. The developed-market land grab is over; payments giants are moving south."
-
-   E) MULTI-DAY PATTERN: Today's stories build on a pattern from earlier this week (check NARRATIVE CONTINUITY above)
-      Example: "Third day of stablecoin news this week, and the pattern is now clear: every major player is building treasury infrastructure, not retail products."
-      Example: "After Monday's Visa move and yesterday's Mastercard response, today's PayPal announcement confirms it: the card networks have chosen stablecoins over CBDCs."
-
-   When to SKIP the intro (set to null):
-   - Stories are diverse/unrelated (this is fine! most days are eclectic)
-   - The only connection is generic (e.g., "all about payments" or "fintech companies making moves")
-   - You're forcing a connection that isn't meaningful
-   - The pattern is obvious and adds no insight
-   - You cannot clearly articulate the connection in one specific sentence
-
-   If including an intro (1-2 sentences max):
-   - Lead with the SPECIFIC insight, not setup
-   - Name the companies or trends explicitly
-   - Make a claim that could be wrong (this forces specificity)
-   - Avoid generic phrases like "interesting developments", "busy week", or "several stories point to..."
-   - Write in a punchy, conversational tone
-
-4. **What Matters Today** (The Nerd's Perspective - Required):
+3. **What Matters Today** (The Nerd's Perspective - Required):
 
    After selecting the 5 stories, synthesize the day's intelligence in 2-3 sentences.
 
@@ -587,7 +542,7 @@ EDITORIAL PROCESS:
    Write this in first-person ("I'm watching...", "This signals...", "What stands out to me...")
    This appears BEFORE the stories and sets the editorial lens.
 
-5. **Interesting Fact** (Select 1):
+4. **Interesting Fact** (Select 1):
 
    CRITICAL: Must be a CURRENT or HISTORICAL fact, NOT a future projection.
    - WRONG: "Stablecoins are projected to account for 3-7% of payment volume by 2030"
@@ -604,7 +559,7 @@ EDITORIAL PROCESS:
    - 1-2 sentences maximum
    - Include context that makes the fact meaningful (comparisons, implications)
 
-6. **Quality Checklist** (Every newsletter must pass):
+5. **Quality Checklist** (Every newsletter must pass):
    - [ ] Every story passes the "So what?" test with clear implications
    - [ ] At least 3 stories include specific data/metrics
    - [ ] At least 2 stories have contrarian or non-obvious angles
@@ -612,12 +567,10 @@ EDITORIAL PROCESS:
    - [ ] Every story identifies winners/losers or strategic impact
    - [ ] Language is active, specific, and punchy (no generic business jargon)
    - [ ] "What Matters Today" (perspective) provides synthesis and forward-looking view
-   - [ ] Intro is either absent OR genuinely insightful (never forced)
 
 OUTPUT FORMAT (MUST BE VALID JSON):
 
 {{{{
-  "intro": null | "1-2 sentence intro ONLY if genuine pattern exists",
   "news": [
     {{{{
       "title": "...",
@@ -642,33 +595,10 @@ CRITICAL RULES:
 - Return ONLY the JSON object, no markdown formatting, no additional text
 - Escape all quotes and special characters properly
 - Ensure exactly 5 news items (no more, no less)
-- The "intro" field must be null if no genuine pattern exists, OR a 1-2 sentence hook if there's real insight
 - The "perspective" field is your editorial synthesis (2-3 sentences, ALWAYS required)
 - The "curiosity" field must have both text and source
 - **CRITICAL: The "source" field must be an object with "name" and "url" properties**
-- Extract the publication name and URL from the research source (if research shows "Source: Payments Dive - https://example.com", use {{{{"name": "Payments Dive", "url": "https://example.com"}}}})
-
-EXAMPLES OF GOOD vs BAD INTROS:
-
-GOOD (Real pattern):
-"intro": "Three infrastructure announcements today, and they're all saying the same thing: payments is becoming a feature, not a product."
-
-GOOD (Surprising connection):
-"intro": "Visa reports record growth while regulators circle BNPL providers. The message: established players are winning the compliance game."
-
-GOOD (Contrarian):
-"intro": "Everyone's calling it a 'crypto winter,' but institutional payment rails are moving faster than ever."
-
-BAD (Forced/Generic):
-"intro": "Another busy day in payments with several interesting developments."
-
-BAD (Obvious):
-"intro": "Today's stories cover a wide range of payment topics from different sectors."
-
-BAD (Not insightful):
-"intro": "Here are five important payment stories you need to know about today."
-
-WHEN IN DOUBT: Set intro to null. Better to have no intro than a forced one."""),
+- Extract the publication name and URL from the research source (if research shows "Source: Payments Dive - https://example.com", use {{{{"name": "Payments Dive", "url": "https://example.com"}}}}"""),
         ("user", "Here are the stories to select from (pre-filtered for duplicates):\n\n{input}"),
     ])
     
@@ -755,49 +685,40 @@ QUALITY CHECKS:
    - Flag if multiple stories cover the same company or announcement
 
 5. **Completeness**:
-   - Are all required fields present (intro, news, perspective, curiosity)?
+   - Are all required fields present (news, perspective, curiosity)?
    - Is the JSON valid and properly formatted?
    - Is the "perspective" field providing synthesis?
-   - Is the "intro" field either null OR genuinely insightful (not forced)?
 
-6. **Intro Quality** (Critical):
-   - If intro exists, does it identify a real pattern/connection?
-   - Is it specific and surprising (not generic)?
-   - Does it avoid phrases like "busy day" or "interesting developments"?
-   - Is it 1-2 sentences max?
-   - If stories are unrelated, intro should be null (that's perfectly fine!)
-
-7. **Brand Voice**:
+6. **Brand Voice**:
    - Does it sound authoritative but accessible?
    - Is there a clear point of view?
    - Any contrarian or forward-looking angles?
 
-8. **Story Coherence** (Critical):
-   - If an intro exists, do the stories actually support the claimed pattern?
+7. **Story Coherence** (Critical):
    - Does each story relate to the newsletter's main themes (payments, fintech, banking)?
-   - Flag any story that feels disconnected from the others or the intro's thesis
+   - Flag any story that feels disconnected from the others
    - If a story doesn't fit (e.g., general tech news unrelated to payments), recommend replacing it
 
-9. **Perspective Specificity** (Critical):
+8. **Perspective Specificity** (Critical):
    - Does the "perspective" field reference SPECIFIC stories from today's selection?
    - Is it synthesizing insights from the actual stories, not making generic observations?
    - WRONG: "Stablecoins continue to be important" (generic)
    - RIGHT: "Today's Circle and Paxos stories show..." (specific to content)
 
-10. **Curiosity Fact Validity**:
+9. **Curiosity Fact Validity**:
     - Is the curiosity fact a CURRENT or HISTORICAL fact (not a future projection)?
     - Flag predictions like "by 2030..." or "projected to..." or "experts predict..."
     - Must be verifiable with current/past data
     - If using relative dates like "last year", ensure the actual year is specified (e.g., "in 2025" not just "last year")
 
-11. **Narrative Continuity** (Critical):
-    - Does the intro/perspective avoid repetitive framing from previous days?
+10. **Narrative Continuity** (Critical):
+    - Does the perspective avoid repetitive framing from previous days?
     - Flag generic phrases like "signals a shift" or "marks a pivot" without specifics
     - If recurring themes (stablecoins, regulation, etc.) appear multiple days, does the content BUILD on previous coverage?
     - WRONG: "Stablecoins are reshaping the payments landscape" (could be written any day)
     - RIGHT: "Today's Stripe announcement is the third stablecoin partnership this week, confirming enterprise adoption is accelerating"
 
-12. **Specificity Check** (Critical):
+11. **Specificity Check** (Critical):
     - Every claim of "shift", "pivot", or "transformation" must specify:
       * WHAT exactly is shifting (not just "the payments landscape")
       * WHO is affected (winners/losers)

@@ -31,7 +31,6 @@ interface Curiosity {
 interface DailyNewsletterProps {
   publicationDate: string;
   formattedDate: string;
-  intro?: string;
   perspective?: string;
   news: NewsItem[];
   curiosity: Curiosity;
@@ -42,7 +41,6 @@ interface DailyNewsletterProps {
 export function DailyNewsletter({
   publicationDate,
   formattedDate,
-  intro,
   perspective,
   news,
   curiosity,
@@ -83,13 +81,6 @@ export function DailyNewsletter({
               </Link>
             </Text>
           </Section>
-
-          {/* Optional Intro */}
-          {intro && (
-            <Section style={section}>
-              <Text style={introText}>{intro}</Text>
-            </Section>
-          )}
 
           {/* What Matters Today */}
           {perspective && (
@@ -297,13 +288,6 @@ const sectionLabel = {
   color: "#737373",
   textTransform: "uppercase" as const,
   letterSpacing: "0.8px",
-};
-
-const introText = {
-  margin: "0",
-  fontSize: "17px",
-  color: "#262626",
-  lineHeight: "1.7",
 };
 
 const perspectiveText = {

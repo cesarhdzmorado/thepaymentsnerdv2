@@ -62,7 +62,6 @@ async function syncNewsletter() {
     const newsletterRecord = {
       publication_date: publicationDate,
       content: {
-        intro: data.intro,
         news: data.news,
         perspective: data.perspective,
         curiosity: data.curiosity
