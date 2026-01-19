@@ -280,13 +280,11 @@ Sentence 7-8: THE NEXT (Forward Looking)
 1. Stories are LONGER (6-8 sentences vs 3-4)
 2. More analytical depth
 3. Forward-looking "what's next" angle
-4. Intro acknowledges slower week
-5. Perspective includes "next week" preview
+4. Perspective includes "next week" preview
 
 OUTPUT FORMAT (MUST BE VALID JSON):
 
 {{
-  "intro": "2-3 sentence intro acknowledging slower week and teasing content",
   "news": [
     {{
       "title": "...",
@@ -311,7 +309,6 @@ QUALITY CHECKS:
 - Each story body is 6-8 sentences (count them!)
 - Stories have clear "what's next" angle
 - Perspective includes forward-looking view
-- Intro acknowledges this is a weekly recap
 - All JSON properly formatted
 
 Return ONLY the JSON, no markdown formatting."""),

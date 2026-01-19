@@ -17,7 +17,6 @@ import * as path from "path";
 // Sample newsletter data for preview
 const sampleNewsletter = {
   publicationDate: "2025-12-29",
-  intro: "Three infrastructure announcements today, and they're all saying the same thing: payments is becoming a feature, not a product.",
   perspective: "Every major player is betting that embedded payments will replace standalone payment products. The question isn't whether this happens, but how fast — and who gets left behind.",
   news: [
     {

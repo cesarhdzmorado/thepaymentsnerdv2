@@ -21,7 +21,6 @@ interface Curiosity {
 
 interface DailyNewsletterParams {
   publicationDate: string;
-  intro?: string;  // Optional daily intro - only when there's a real macro insight
   news: NewsItem[];
   perspective?: string;  // Editorial lens/setup - "What Matters Today"
   curiosity: Curiosity;
@@ -102,7 +101,6 @@ Return only the subject line text, no quotes or additional formatting.`
 
 export async function generateDailyNewsletterEmail({
   publicationDate,
-  intro,
   news,
   perspective,
   curiosity,
@@ -160,7 +158,6 @@ export async function generateDailyNewsletterEmail({
     DailyNewsletter({
       publicationDate,
       formattedDate,
-      intro,
       perspective,
       news: processedNews,
       curiosity: processedCuriosity,

@@ -43,7 +43,6 @@ interface Curiosity {
 }
 
 interface NewsletterContent {
-  intro?: string;
   news: NewsItem[];
   perspective?: string;
   curiosity: Curiosity;
