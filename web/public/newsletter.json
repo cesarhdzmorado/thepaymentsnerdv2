@@ -1,53 +1,52 @@
 {
-  "intro": "Today's stories about Revolut's integration with Google's Agent Payments Protocol, WalletConnect's push for crypto payments, and the regulatory challenges surrounding stablecoins reveal a critical intersection: the payments landscape is rapidly evolving towards more autonomous and integrated systems, driven by AI and regulatory pressures.",
   "news": [
     {
       "title": "Revolut Pay Integrates with Google's Agent Payments Protocol",
-      "body": "Revolut Pay has integrated with Google's Agent Payments Protocol (AP2), becoming one of the first EU payment methods to do so. This positions Revolut to leverage agentic commerce, affecting users and competitors in the digital payments space as they may need to accelerate their own AI integrations. Expect increased adoption of agentic commerce in Europe, driving further AI integration in payments. Regulatory scrutiny on AI-driven transactions may intensify.",
+      "body": "Revolut Pay has integrated with Google's Agent Payments Protocol, becoming one of the first EU payment methods to do so. This move enhances user experiences and positions Revolut as a leader in agentic commerce, potentially pressuring competitors to adopt similar technologies. The impact: payments professionals must prioritize agentic commerce capabilities to stay competitive. Expect increased adoption of agentic commerce protocols across Europe, influencing payment methods and merchant strategies.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47156/revolut-pay-gets-ready-for-agentic-commerce?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47156/revolut-pay-gets-ready-for-agentic-commerce"
       }
     },
     {
-      "title": "WalletConnect Pay CEO Bets on Scaling Crypto Payments",
-      "body": "WalletConnect Pay CEO Jess Houlgrave announced efforts to scale crypto payments at checkout, focusing on usability rather than blockchain technology. This shift could challenge traditional payment processors and pressure competitors to enhance their crypto offerings. Increased crypto payment adoption could lead to regulatory developments and influence merchant strategies in accepting digital currencies.",
+      "title": "Bermuda Partners with Coinbase and Circle for Onchain Economy",
+      "body": "Bermuda is collaborating with Coinbase and Circle to create a fully onchain national economy, utilizing stablecoin payments across government agencies and local businesses. This initiative positions Bermuda as a pioneer in digital asset integration, potentially attracting fintech innovation and investment. This means that payments professionals should watch for similar initiatives in other regions. Successful implementation may encourage other countries to explore similar onchain economic models, influencing global regulatory frameworks.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/386159/bermuda-coinbase-circle-onchain-economy"
+      }
+    },
+    {
+      "title": "NYSE Develops Tokenized Securities Platform",
+      "body": "The New York Stock Exchange is developing a platform for trading tokenized securities, enabling 24/7 trading and on-chain settlement. This move could redefine securities trading, challenging traditional stock exchanges and encouraging other financial markets to adopt similar technologies. For payments teams, this signals a shift towards more flexible and accessible financial markets. Expect increased liquidity and accessibility in securities markets, potentially lowering barriers for retail investors.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/386123/nyse-develops-tokenized-securities-platform-to-support-24-7-trading"
+      }
+    },
+    {
+      "title": "Visa on Building Trust at the Moment of Authorization",
+      "body": "Visa emphasizes the importance of trust and security during transaction authorization, which is crucial for customer retention and satisfaction. This focus could set a new standard for transaction security, pressuring competitors to enhance their own security measures. The impact: payments professionals must prioritize security to maintain customer loyalty. Improved trust and security could lead to higher transaction volumes and customer loyalty for Visa.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/cryptocurrency/2026/walletconnect-pay-ceo-bets-crypto-payments-can-finally-scale-checkout/"
+        "url": "https://www.pymnts.com/credit-cards/2026/visa-on-how-trust-is-built-at-the-moment-of-authorization/"
       }
     },
     {
-      "title": "Stablecoin Yield Fight Threatens CLARITY Act",
-      "body": "A dispute over stablecoin yields between Coinbase and the White House threatens the passage of the CLARITY Act, a key legislative effort to regulate digital assets. The outcome could shape the regulatory environment for stablecoins, impacting market strategies. Expect increased lobbying and advocacy efforts from crypto firms, influencing future regulatory developments.",
+      "title": "Credit Unions See AI's Promise but Lag in Readiness",
+      "body": "Credit unions recognize AI's potential for personalization and fraud detection but face challenges in readiness and infrastructure. This lag in AI adoption may cause credit unions to lose competitive edge to more technologically advanced financial institutions. This highlights the urgency for payments teams to invest in AI capabilities. Increased investment in AI infrastructure and partnerships will be necessary to bridge the readiness gap in credit unions.",
       "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/386061/stablecoin-yield-fight-threatens-to-sink-clarity-act-as-coinbase-and-white-house-clash?utm_source=rss&utm_medium=rss"
-      }
-    },
-    {
-      "title": "Worldline and YouLend Launch Cash Advance for European SMBs",
-      "body": "Worldline and YouLend have introduced a Cash Advance solution for European small and medium-sized businesses (SMBs), providing fast, data-driven access to capital. This offering strengthens Worldline's position in the SMB market and challenges traditional lenders. Increased competition in SMB financing could drive innovation and better terms for businesses. Regulatory scrutiny on lending practices may increase.",
-      "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108538/worldline-and-youlend-launch-cash-advance-for-european-smbs?utm_medium=rss&utm_source=finextrafeed"
-      }
-    },
-    {
-      "title": "China's mBridge CBDC Platform Surpasses $55 Billion in Volume",
-      "body": "China's mBridge platform, a cross-border CBDC initiative, has surpassed $55 billion in transaction volume, with the digital yuan accounting for 95% of settlements. This leadership in CBDC deployment could influence global adoption and standards. Expect increased interest in CBDC collaborations and potential shifts in international trade dynamics.",
-      "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/386057/china-led-cross-border-cbdc-platform-mbridge-surges-past-55-billion-in-transaction-volume-reuters?utm_source=rss&utm_medium=rss"
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/artificial-intelligence-2/2026/credit-unions-see-ais-promise-but-readiness-lags-adoption/"
       }
     }
   ],
-  "perspective": "I'm watching how Revolut's integration with Google's Agent Payments Protocol and WalletConnect's focus on scaling crypto payments highlight a significant shift towards more autonomous transaction systems. Combined with the ongoing regulatory challenges surrounding stablecoins, these developments underscore the need for payments professionals to adapt quickly to an evolving landscape where AI and compliance are paramount. The competition is intensifying, and those who can navigate these complexities will emerge as leaders.",
+  "perspective": "I'm watching how Revolut's integration with Google's Agent Payments Protocol and Bermuda's onchain economy initiative highlight a growing trend towards autonomous and digital-first payment systems. These developments, combined with the NYSE's tokenized securities platform, signal a shift in how financial markets and payment infrastructures are evolving. Payments professionals must adapt to these changes to remain competitive and relevant in an increasingly digital landscape.",
   "curiosity": {
-    "text": "Did you know that China's mBridge CBDC platform has surpassed $55 billion in transaction volume, with the digital yuan accounting for 95% of settlements?",
+    "text": "Did you know that the New York Stock Exchange is developing a platform for trading tokenized securities, enabling 24/7 trading and on-chain settlement?",
     "source": {
       "name": "The Block",
-      "url": "https://www.theblock.co/post/386057/china-led-cross-border-cbdc-platform-mbridge-surges-past-55-billion-in-transaction-volume-reuters?utm_source=rss&utm_medium=rss"
+      "url": "https://www.theblock.co/post/386123/nyse-develops-tokenized-securities-platform-to-support-24-7-trading"
     }
   }
 }
