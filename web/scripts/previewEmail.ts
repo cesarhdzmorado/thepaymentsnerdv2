@@ -67,6 +67,29 @@ const sampleNewsletter = {
       url: "https://example.com/financial-history"
     }
   },
+  whatsHot: [
+    {
+      flag: "🇦🇷",
+      type: "fundraising" as const,
+      company: "Pomelo",
+      description: "raises $55M to develop global stablecoin card",
+      source_url: "https://www.finextra.com/newsarticle/47169"
+    },
+    {
+      flag: "🇬🇧",
+      type: "M&A" as const,
+      company: "Zepz",
+      description: "acquires Pomelo International to expand beyond remittances",
+      source_url: "https://www.finextra.com/newsarticle/47165"
+    },
+    {
+      flag: "🇺🇸",
+      type: "product" as const,
+      company: "Stripe",
+      description: "launches Stripe Capital for UK merchants",
+      source_url: "https://stripe.com/newsroom"
+    }
+  ],
   unsubscribeUrl: "https://example.com/unsubscribe?token=sample",
   referralCode: "SAMPLE123"
 };
