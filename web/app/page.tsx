@@ -566,6 +566,19 @@ export default async function HomePage({
                       {item.company}
                     </span>{" "}
                     {item.description}
+                    {item.source_url && (
+                      <>
+                        {"… "}
+                        <a
+                          href={item.source_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-medium text-blue-600 dark:text-cyan-400 hover:underline"
+                        >
+                          Read more
+                        </a>
+                      </>
+                    )}
                   </span>
                 </li>
               ))}
