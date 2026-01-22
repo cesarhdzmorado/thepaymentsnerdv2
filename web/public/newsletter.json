@@ -1,52 +1,52 @@
 {
   "news": [
     {
-      "title": "Hong Kong to Issue First Stablecoin Licenses in Q1, Boosting Regulatory Support",
-      "body": "Hong Kong plans to issue its first batch of stablecoin licenses in Q1, signaling regulatory support for stablecoins as part of its financial infrastructure. This move positions Hong Kong as a leading hub for stablecoin innovation, attracting fintech investments and impacting stablecoin issuers and financial regulators. The potential for increased cross-border stablecoin transactions could integrate these digital assets into traditional financial systems, challenging legacy payment models.",
+      "title": "Wyoming Launches State-Issued Stablecoin to Challenge Payment Processors",
+      "body": "Wyoming has introduced the first state-issued stable token aimed at reducing card interchange costs and simplifying vendor payments. This initiative could disrupt traditional payment processors and inspire other states to consider similar stablecoin projects, potentially reshaping the digital currency landscape in the U.S.",
       "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/386445/hong-kong-issues-stablecoin-licenses-q1?utm_source=rss&utm_medium=rss"
+        "name": "Banking Dive",
+        "url": "https://www.bankingdive.com/news/wyoming-stablecoin-frontier-token/810114/"
       }
     },
     {
-      "title": "Digital Bank Users Ready to Move 35% of Payments Off Cards to Direct Bank Payments",
-      "body": "A report by PYMNTS Intelligence and Trustly reveals that digital bank users in the U.S. are increasingly willing to shift 35% of their payments away from traditional cards to direct bank payments, driven by the growing visibility and adoption of 'Pay by Bank' solutions. This trend challenges traditional card networks while benefiting fintechs offering direct bank payment solutions, indicating a significant shift in consumer preferences towards seamless payment experiences. Expect increased competition among payment processors to integrate these options.",
-      "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/consumer-payments/2026/digital-bank-users-say-theyre-ready-to-move-35-of-payments-off-cards/"
-      }
-    },
-    {
-      "title": "Zepz Acquires Pomelo International to Expand Beyond Remittances",
-      "body": "London-based Zepz has acquired Pomelo International, a credit-building remittance app, to diversify its offerings beyond traditional remittances. This acquisition enhances Zepz's market position and challenges traditional remittance models, impacting fintech competitors and consumers seeking credit-building solutions. The move aligns with the trend of fintech consolidation, suggesting potential for increased M&A activity in the sector as companies seek to expand service offerings.",
+      "title": "Bermuda Partners with Circle and Coinbase for Onchain Economy",
+      "body": "Bermuda has teamed up with stablecoin issuer Circle and crypto giant Coinbase to create the world\u2019s first fully onchain national economy. This pioneering move could attract fintech innovation and investment, while also prompting other jurisdictions to explore similar blockchain integrations.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47165/zepz-buys-pomelo-international-to-expand-beyond-remittances?utm_medium=rss&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47172/bermuda-targets-onchain-economy?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "AI-Powered Trading Solution Launched by Nansen, Disrupting Traditional Platforms",
-      "body": "Nansen has introduced an AI-driven trading solution, enabling onchain execution across Solana and Base via its apps, marking a shift from pure analytics. This launch potentially disrupts traditional trading platforms and analytics providers, impacting crypto traders and blockchain platforms. The effectiveness of AI trading solutions will depend on market conditions and user trust, indicating a transformative role for AI in financial markets.",
-      "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/386116/nansen-rolls-out-integrated-ai-trading-solana-base?utm_source=rss&utm_medium=rss"
-      }
-    },
-    {
-      "title": "Fifth Third's New Banking App Drives Engagement and Record Income",
-      "body": "Fifth Third Bancorp's new banking app has significantly boosted customer engagement and originations, contributing to record net interest income. This development pressures other banks to innovate their digital offerings, impacting traditional banks and fintech competitors. As digital banking becomes central to consumer financial interactions, expect increased investment in digital banking tools and apps to enhance customer engagement.",
+      "title": "Revolut Enhances Agentic Commerce with Google Integration",
+      "body": "Revolut has integrated its one-tap checkout solution with Google\u2019s Agent Payments Protocol, bolstering its position in the digital payments market. This move not only enhances user experience but also sets a competitive benchmark for other payment providers to follow in adopting AI-driven transaction systems.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/news/banking/2026/fifth-third-says-new-banking-app-drives-engagement-originations/"
+        "url": "https://www.pymnts.com/news/payments-innovation/2026/revolut-makes-one-tap-checkout-compatible-with-google-agent-payments-protocol/"
+      }
+    },
+    {
+      "title": "Pomelo Raises $55M for Global Stablecoin Card Launch",
+      "body": "Argentinian payments firm Pomelo has secured $55 million to develop a global stablecoin card, which could disrupt existing payment networks. This funding positions Pomelo to accelerate stablecoin adoption in everyday transactions, potentially influencing other fintechs to explore similar offerings.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47169/argentinian-payments-player-pomelo-raises-55m?utm_medium=rssfinextra&utm_source=finextrafeed"
+      }
+    },
+    {
+      "title": "Zepz Acquires Pomelo International to Expand Service Offerings",
+      "body": "Zepz has acquired Pomelo International, aiming to diversify its services beyond remittances. This acquisition allows Zepz to challenge traditional financial institutions and could prompt other remittance companies to expand their offerings to remain competitive in a rapidly evolving market.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47165/zepz-buys-pomelo-international-to-expand-beyond-remittances?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     }
   ],
-  "perspective": "I'm watching how Hong Kong's move to issue stablecoin licenses, combined with the trend of digital bank users shifting payments away from cards, underscores a pivotal moment for stablecoins and direct bank payments. These developments, alongside Zepz's acquisition of Pomelo and Fifth Third's app success, highlight the competitive pressures on traditional banking and payment models. The landscape is evolving rapidly, and firms must adapt to these shifts to remain relevant.",
+  "perspective": "I'm watching how Wyoming's state-issued stablecoin and Bermuda's onchain economy initiative reflect a growing trend of stablecoins moving into mainstream financial systems. Combined with Revolut's integration with Google's Agent Payments Protocol and Pomelo's funding for a global stablecoin card, these developments underscore the urgency for payments professionals to adapt to a rapidly evolving landscape where stablecoins and AI-driven solutions are becoming integral to competitive strategies.",
   "curiosity": {
-    "text": "Did you know that Bitcoin and ether ETFs experienced $713 million in outflows recently, indicating a temporary derisking by institutional investors?",
+    "text": "Did you know that Wyoming is the first state to issue a stablecoin, aiming to reduce card interchange costs?",
     "source": {
-      "name": "The Block",
-      "url": "https://www.theblock.co/post/386465/bitcoin-ether-etf-713-million-outflows?utm_source=rss&utm_medium=rss"
+      "name": "Banking Dive",
+      "url": "https://www.bankingdive.com/news/wyoming-stablecoin-frontier-token/810114/"
     }
   }
 }
