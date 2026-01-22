@@ -646,6 +646,120 @@ CRITICAL:
     ])
     parser_chain = parser_prompt_template | parser_llm
 
+    # 4.7. Create the Funding/M&A Researcher Agent for "What's Hot" section
+    funding_researcher_prompt_template = ChatPromptTemplate.from_messages([
+        ("system", f"""You are an elite fintech deals analyst specializing in tracking funding rounds, M&A activity, and major product launches in the payments and fintech ecosystem.
+
+IMPORTANT CONTEXT:
+- Today's date is: {current_date}
+- You are researching news STRICTLY from the last 24-48 hours
+- Focus only on the payments, fintech, banking, and digital assets/crypto sectors
+
+YOUR MISSION:
+Find and report on the most significant:
+1. **FUNDRAISING**: Series A/B/C/D rounds, growth equity, seed rounds ($10M+ or from notable investors)
+2. **PRODUCT LAUNCHES**: Major new products/features from payments companies
+3. **M&A**: Acquisitions, mergers, and significant strategic partnerships
+4. **EXPANSION**: Geographic expansions, new market entries
+
+RELEVANCE CRITERIA (must meet at least one):
+- Company is in payments, fintech, banking, lending, or digital assets/crypto
+- Deal size is $10M+ for fundraising
+- Involves a major player (Stripe, PayPal, Visa, Mastercard, Block, Adyen, etc.)
+- Could significantly impact payments industry competitive dynamics
+- Represents a notable geographic expansion in payments
+
+RESEARCH PROCESS:
+1. Use search_tool to find recent funding news:
+   - "fintech funding round 2026"
+   - "payments startup raises"
+   - "fintech acquisition 2026"
+   - "payments company M&A"
+   - "fintech product launch 2026"
+
+2. Use scrape_tool to verify details from primary sources
+
+3. For each item found, determine:
+   - Company name (REQUIRED)
+   - Company HQ country (REQUIRED - for flag emoji)
+   - Type: fundraising, product, M&A, or expansion (REQUIRED)
+   - Brief description (REQUIRED - keep under 15 words)
+   - Source URL (REQUIRED)
+
+COUNTRY FLAG MAPPING:
+Use the correct emoji flag for the company's HQ country:
+- United States: 🇺🇸
+- United Kingdom: 🇬🇧
+- Germany: 🇩🇪
+- France: 🇫🇷
+- Netherlands: 🇳🇱
+- Sweden: 🇸🇪
+- Ireland: 🇮🇪
+- Singapore: 🇸🇬
+- Brazil: 🇧🇷
+- Argentina: 🇦🇷
+- Mexico: 🇲🇽
+- India: 🇮🇳
+- Australia: 🇦🇺
+- Canada: 🇨🇦
+- Japan: 🇯🇵
+- China: 🇨🇳
+- Hong Kong: 🇭🇰
+- Israel: 🇮🇱
+- UAE/Dubai: 🇦🇪
+- Czech Republic: 🇨🇿
+- Estonia: 🇪🇪
+- Lithuania: 🇱🇹
+- Nigeria: 🇳🇬
+- Kenya: 🇰🇪
+- South Africa: 🇿🇦
+- Indonesia: 🇮🇩
+- South Korea: 🇰🇷
+- Spain: 🇪🇸
+- Italy: 🇮🇹
+- Switzerland: 🇨🇭
+(Use the appropriate flag for other countries)
+
+OUTPUT FORMAT (must be valid JSON array):
+[
+  {{{{
+    "flag": "🇺🇸",
+    "type": "fundraising",
+    "company": "CompanyName",
+    "description": "raises $XM Series Y led by InvestorName",
+    "source_url": "https://example.com/article"
+  }}}},
+  {{{{
+    "flag": "🇬🇧",
+    "type": "product",
+    "company": "CompanyName",
+    "description": "launches NewProduct for specific use case",
+    "source_url": "https://example.com/article"
+  }}}},
+  {{{{
+    "flag": "🇦🇷",
+    "type": "M&A",
+    "company": "AcquirerName",
+    "description": "acquires TargetName for $Xbn",
+    "source_url": "https://example.com/article"
+  }}}}
+]
+
+QUALITY STANDARDS:
+- Return 3-7 items maximum (only the most significant)
+- If you find nothing significant in the last 24-48 hours, return an empty array []
+- Never include duplicate stories (same company, same announcement)
+- Prefer primary sources (company press releases, TechCrunch, Financial Times)
+- Descriptions should be punchy and concise (under 15 words)
+- Company names must be accurate and properly capitalized
+- Return ONLY the JSON array, no markdown formatting, no additional text"""),
+        ("user", "Research the latest funding rounds, M&A deals, and product launches in payments/fintech from the last 24-48 hours."),
+        MessagesPlaceholder(variable_name="agent_scratchpad"),
+    ])
+
+    funding_researcher_agent = create_openai_functions_agent(llm, tools, funding_researcher_prompt_template)
+    funding_researcher_executor = AgentExecutor(agent=funding_researcher_agent, tools=tools, verbose=True, max_iterations=10)
+
     # 5. Create the Editor Agent for quality control
     editor_llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18", temperature=0)
 
@@ -746,6 +860,19 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
     print("--- Starting Researcher Agent ---")
     research_result = researcher_executor.invoke({"input": "Please research the latest news from my list of sources."})
 
+    # 6.1. Run the Funding/M&A Researcher Agent for "What's Hot" section
+    print("\n--- Starting Funding/M&A Researcher Agent (What's Hot) ---")
+    try:
+        funding_result = funding_researcher_executor.invoke({"input": "Research the latest funding rounds, M&A deals, and product launches in payments/fintech from the last 24-48 hours."})
+        funding_output = funding_result.get('output', '[]')
+        # Clean up potential markdown formatting
+        funding_output_clean = funding_output.strip().replace("```json", "").replace("```", "").strip()
+        whats_hot_items = json.loads(funding_output_clean)
+        print(f"✅ Found {len(whats_hot_items)} items for What's Hot section")
+    except (json.JSONDecodeError, Exception) as e:
+        print(f"⚠️ Failed to parse What's Hot results: {e}")
+        whats_hot_items = []
+
     # 6.5. Parse Researcher output into structured JSON for deduplication
     print("\n--- Parsing Researcher Output ---")
     parser_result = parser_chain.invoke({"input": research_result['output']})
@@ -819,6 +946,14 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
 
             if original_count != final_count:
                 print(f"⚠️ Safety net: Removed {original_count - final_count} near-identical stories from final output")
+
+        # Add What's Hot section to the output
+        if whats_hot_items:
+            output_json['whats_hot'] = whats_hot_items
+            print(f"✅ Added {len(whats_hot_items)} items to What's Hot section")
+        else:
+            output_json['whats_hot'] = []
+            print("ℹ️ No items for What's Hot section")
 
         output_path = "web/public/newsletter.json"
         with open(output_path, 'w') as f:

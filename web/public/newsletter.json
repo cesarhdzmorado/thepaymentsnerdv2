@@ -48,5 +48,28 @@
       "name": "Banking Dive",
       "url": "https://www.bankingdive.com/news/wyoming-stablecoin-frontier-token/810114/"
     }
-  }
+  },
+  "whats_hot": [
+    {
+      "flag": "🇦🇷",
+      "type": "fundraising",
+      "company": "Pomelo",
+      "description": "raises $55M to develop global stablecoin card",
+      "source_url": "https://www.finextra.com/newsarticle/47169/argentinian-payments-player-pomelo-raises-55m"
+    },
+    {
+      "flag": "🇬🇧",
+      "type": "M&A",
+      "company": "Zepz",
+      "description": "acquires Pomelo International to expand beyond remittances",
+      "source_url": "https://www.finextra.com/newsarticle/47165/zepz-buys-pomelo-international-to-expand-beyond-remittances"
+    },
+    {
+      "flag": "🇬🇧",
+      "type": "product",
+      "company": "Revolut",
+      "description": "integrates one-tap checkout with Google's Agent Payments Protocol",
+      "source_url": "https://www.pymnts.com/news/payments-innovation/2026/revolut-makes-one-tap-checkout-compatible-with-google-agent-payments-protocol/"
+    }
+  ]
 }

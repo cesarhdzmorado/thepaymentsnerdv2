@@ -19,11 +19,20 @@ interface Curiosity {
   source: Source;
 }
 
+interface WhatsHotItem {
+  flag: string;
+  type: "fundraising" | "product" | "M&A" | "expansion";
+  company: string;
+  description: string;
+  source_url?: string;
+}
+
 interface DailyNewsletterParams {
   publicationDate: string;
   news: NewsItem[];
   perspective?: string;  // Editorial lens/setup - "What Matters Today"
   curiosity: Curiosity;
+  whatsHot?: WhatsHotItem[];  // Funding, M&A & Product Launches
   unsubscribeUrl: string;
   referralCode: string;
 }
@@ -104,6 +113,7 @@ export async function generateDailyNewsletterEmail({
   news,
   perspective,
   curiosity,
+  whatsHot,
   unsubscribeUrl,
   referralCode,
 }: DailyNewsletterParams): Promise<string> {
@@ -161,6 +171,7 @@ export async function generateDailyNewsletterEmail({
       perspective,
       news: processedNews,
       curiosity: processedCuriosity,
+      whatsHot,
       unsubscribeUrl,
       referralCode,
     })

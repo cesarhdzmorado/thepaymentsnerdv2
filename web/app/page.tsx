@@ -23,6 +23,7 @@ import {
   Lightbulb,
   Calendar,
   ExternalLink,
+  Flame,
 } from "lucide-react";
 
 // --- TypeScript types ---
@@ -42,10 +43,19 @@ interface Curiosity {
   source: Source;
 }
 
+interface WhatsHotItem {
+  flag: string;
+  type: "fundraising" | "product" | "M&A" | "expansion";
+  company: string;
+  description: string;
+  source_url?: string;
+}
+
 interface NewsletterContent {
   news: NewsItem[];
   perspective?: string;
   curiosity: Curiosity;
+  whats_hot?: WhatsHotItem[];
 }
 
 interface Newsletter {
@@ -501,6 +511,68 @@ export default async function HomePage({
           </blockquote>
         </div>
       </section>
+
+      {/* WHAT'S HOT */}
+      {newsletter.content.whats_hot && newsletter.content.whats_hot.length > 0 && (
+        <section
+          id="whats-hot"
+          className="mt-16 relative animate-fade-in-up"
+          style={{ animationDelay: "1100ms" }}
+        >
+          <div
+            className="pointer-events-none absolute inset-0 -z-10 scale-105 rounded-3xl blur-3xl
+                       bg-gradient-to-r from-red-400/15 via-orange-400/15 to-rose-400/15
+                       dark:from-red-300/12 dark:via-orange-300/12 dark:to-rose-300/12
+                       animate-pulse-glow"
+            aria-hidden="true"
+          />
+
+          <div className="relative p-8 sm:p-10 card-surface-strong">
+            <div className="mb-6 flex items-center gap-4">
+              <div
+                className="rounded-full p-3 text-white shadow-lg
+                           bg-gradient-to-br from-red-500 to-orange-600
+                           dark:from-red-400 dark:to-orange-500"
+              >
+                <Flame className="h-6 w-6" />
+              </div>
+
+              <div>
+                <h3
+                  className="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent
+                             bg-gradient-to-r from-red-700 via-orange-700 to-rose-700
+                             dark:from-red-300 dark:via-orange-300 dark:to-rose-300"
+                >
+                  What&rsquo;s Hot
+                </h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400">
+                  Funding, M&A & Product Launches
+                </p>
+              </div>
+            </div>
+
+            <ul className="space-y-4">
+              {newsletter.content.whats_hot.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-start gap-3 text-base sm:text-lg text-slate-700 dark:text-slate-300"
+                >
+                  <span className="text-xl flex-shrink-0">{item.flag}</span>
+                  <span>
+                    <span className="text-sm text-slate-500 dark:text-slate-400">
+                      ({item.type})
+                    </span>{" "}
+                    <span className="font-bold text-slate-900 dark:text-slate-100">
+                      {item.company}
+                    </span>{" "}
+                    {item.description}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       <div className="mt-20">
         <Footer />

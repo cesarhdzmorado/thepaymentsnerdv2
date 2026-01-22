@@ -59,6 +59,7 @@ export async function GET(req: Request) {
       news: newsletter.content.news,
       perspective: newsletter.content.perspective,
       curiosity: newsletter.content.curiosity,
+      whatsHot: newsletter.content.whats_hot,
       unsubscribeUrl: "https://example.com/unsubscribe?token=test-token",
       referralCode: "TESTCODE",
     });
