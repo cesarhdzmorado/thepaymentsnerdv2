@@ -66,6 +66,7 @@ export async function GET(req: Request) {
           news: newsletter.content.news,
           perspective: newsletter.content.perspective,
           curiosity: newsletter.content.curiosity,
+          whatsHot: newsletter.content.whats_hot,
           unsubscribeUrl: unsubUrl,
           referralCode: sub.referral_code,
         });

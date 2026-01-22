@@ -28,12 +28,21 @@ interface Curiosity {
   source: Source;
 }
 
+interface WhatsHotItem {
+  flag: string;
+  type: "fundraising" | "product" | "M&A" | "expansion";
+  company: string;
+  description: string;
+  source_url?: string;
+}
+
 interface DailyNewsletterProps {
   publicationDate: string;
   formattedDate: string;
   perspective?: string;
   news: NewsItem[];
   curiosity: Curiosity;
+  whatsHot?: WhatsHotItem[];
   unsubscribeUrl: string;
   referralCode: string;
 }
@@ -44,6 +53,7 @@ export function DailyNewsletter({
   perspective,
   news,
   curiosity,
+  whatsHot,
   unsubscribeUrl,
   referralCode,
 }: DailyNewsletterProps) {
@@ -142,6 +152,25 @@ export function DailyNewsletter({
               </Link>
             </Text>
           </Section>
+
+          {/* What's Hot */}
+          {whatsHot && whatsHot.length > 0 && (
+            <>
+              <Hr style={divider} />
+              <Section style={section}>
+                <Text style={sectionLabel}>🔥 WHAT'S HOT</Text>
+                <Text style={whatsHotSubtitle}>Funding, M&A & Product Launches</Text>
+                {whatsHot.map((item, index) => (
+                  <Text key={index} style={whatsHotItem}>
+                    {item.flag}{" "}
+                    <span style={whatsHotType}>({item.type})</span>{" "}
+                    <span style={whatsHotCompany}>{item.company}</span>{" "}
+                    {item.description}
+                  </Text>
+                ))}
+              </Section>
+            </>
+          )}
 
           {/* Signature */}
           <Hr style={divider} />
@@ -449,6 +478,31 @@ const footerTagline = {
   margin: "12px 0 0 0",
   fontSize: "12px",
   color: "#a3a3a3",
+};
+
+const whatsHotSubtitle = {
+  margin: "0 0 16px 0",
+  fontSize: "13px",
+  color: "#737373",
+  fontStyle: "italic",
+};
+
+const whatsHotItem = {
+  margin: "0 0 10px 0",
+  fontSize: "15px",
+  color: "#404040",
+  lineHeight: "1.6",
+};
+
+const whatsHotType = {
+  fontSize: "13px",
+  color: "#737373",
+  fontWeight: "400",
+};
+
+const whatsHotCompany = {
+  fontWeight: "700",
+  color: "#171717",
 };
 
 export default DailyNewsletter;
