@@ -646,7 +646,7 @@ CRITICAL:
     ])
     parser_chain = parser_prompt_template | parser_llm
 
-    # 4.7. Create the Funding/M&A Researcher Agent for "What's Hot" section
+    # 4.7. Create the Funding/Product/M&A Researcher Agent for "What's Hot" section
     funding_researcher_prompt_template = ChatPromptTemplate.from_messages([
         ("system", f"""You are an elite fintech deals analyst specializing in tracking funding rounds, M&A activity, and major product launches in the payments and fintech ecosystem.
 
@@ -750,7 +750,7 @@ QUALITY STANDARDS:
 - If you find nothing significant in the last 24-48 hours, return an empty array []
 - Never include duplicate stories (same company, same announcement)
 - Prefer primary sources (company press releases, TechCrunch, Financial Times)
-- Descriptions should be punchy and concise (under 15 words)
+- Descriptions should be punchy and concise (under 10 words)
 - Company names must be accurate and properly capitalized
 - Return ONLY the JSON array, no markdown formatting, no additional text"""),
         ("user", "Research the latest funding rounds, M&A deals, and product launches in payments/fintech from the last 24-48 hours."),
