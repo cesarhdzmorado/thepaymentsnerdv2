@@ -166,6 +166,14 @@ export function DailyNewsletter({
                     <span style={whatsHotType}>({item.type})</span>{" "}
                     <span style={whatsHotCompany}>{item.company}</span>{" "}
                     {item.description}
+                    {item.source_url && (
+                      <>
+                        {"… "}
+                        <Link href={item.source_url} style={whatsHotLink}>
+                          Read more
+                        </Link>
+                      </>
+                    )}
                   </Text>
                 ))}
               </Section>
@@ -503,6 +511,13 @@ const whatsHotType = {
 const whatsHotCompany = {
   fontWeight: "700",
   color: "#171717",
+};
+
+const whatsHotLink = {
+  color: "#2563eb",
+  textDecoration: "none",
+  fontWeight: "500",
+  fontSize: "14px",
 };
 
 export default DailyNewsletter;
