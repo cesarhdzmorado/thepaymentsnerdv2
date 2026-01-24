@@ -887,20 +887,26 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
         parsed_stories = None
 
     # 6.6. Deduplicate against recent stories (BEFORE Writer sees them)
+    # Uses hybrid detection: entity extraction + word similarity + semantic embeddings
     if parsed_stories and recent_stories:
         print(f"\n🔍 Deduplication: Checking {len(parsed_stories)} stories against {len(recent_stories)} recent stories...")
+        print("   Using hybrid detection (entities + words + embeddings)")
 
         # Filter out stories that are too similar to recent coverage
-        # Each parsed story is checked against ALL recent stories individually
-        filtered_stories = filter_against_history(
+        # Hybrid mode catches stories about same event even with different wording
+        filtered_stories, removed_stories = filter_against_history(
             new_stories=parsed_stories,
             historical_stories=recent_stories,
-            similarity_threshold=0.6
+            use_hybrid=True,
+            use_embeddings=True,
+            verbose=True
         )
 
-        removed_count = len(parsed_stories) - len(filtered_stories)
-        if removed_count > 0:
-            print(f"⚠️ Removed {removed_count} duplicate stories from previous coverage")
+        if removed_stories:
+            print(f"\n⚠️ Removed {len(removed_stories)} duplicate stories:")
+            for item in removed_stories:
+                print(f"   - {item['story'].get('title', 'Untitled')[:60]}...")
+                print(f"     Reason: {item['reason']}")
 
         # Handle edge case: all stories were duplicates
         if not filtered_stories:
