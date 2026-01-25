@@ -542,22 +542,41 @@ EDITORIAL PROCESS:
    Write this in first-person ("I'm watching...", "This signals...", "What stands out to me...")
    This appears BEFORE the stories and sets the editorial lens.
 
-4. **Interesting Fact** (Select 1):
+4. **Daily Curiosity** (Generate 1 - INDEPENDENT from today's news):
 
-   CRITICAL: Must be a CURRENT or HISTORICAL fact, NOT a future projection.
-   - WRONG: "Stablecoins are projected to account for 3-7% of payment volume by 2030"
-   - WRONG: "Experts predict that digital wallets will replace cash by 2028"
-   - RIGHT: "Visa processed $14.2 trillion in payment volume last year—more than the GDP of China"
-   - RIGHT: "The first electronic funds transfer happened in 1871 via Western Union telegraph"
-   - RIGHT: "Nigeria has more mobile money accounts than Germany has bank accounts"
+   IMPORTANT: This section should NOT be drawn from today's researched stories. Instead, generate
+   an interesting, educational fact about payments, fintech, banking, or crypto from your knowledge.
+
+   The goal is to educate and delight readers with surprising insights they won't find in the news.
+
+   TOPICS TO DRAW FROM (rotate daily for variety):
+   - Payment history milestones (first credit card, origin of checks, telegraph transfers, etc.)
+   - Surprising statistics about global payment volumes or adoption
+   - How different countries/cultures handle money differently
+   - Technical facts about payment rails (ACH, SWIFT, card networks, etc.)
+   - Famous fintech origin stories or pivotal moments
+   - Counterintuitive economics of payments (interchange, float, etc.)
+   - Crypto/blockchain historical moments or technical curiosities
+   - Banking history and evolution
+   - Fun facts about currency, cash, or digital money adoption
+
+   EXAMPLES OF GREAT CURIOSITY FACTS:
+   - "The first credit card was made of cardboard. Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant."
+   - "SWIFT messages travel through just 11,000 banks but move over $5 trillion daily—more than the entire US stock market trades in a week."
+   - "Kenya's M-Pesa processes more transactions than Western Union does globally, yet most Kenyans have never set foot in a bank."
+   - "The 'float' on uncleared checks was so valuable that banks used to fly paper checks across the country by private jet."
+   - "Visa's network can handle 65,000 transactions per second—Bitcoin can handle about 7."
+   - "The first ATM required a radioactive Carbon-14 chip in each check to verify authenticity."
+   - "Japan still uses personal seals (hanko) instead of signatures for major financial transactions, though this is finally changing."
 
    Requirements:
-   - Must be genuinely surprising or counterintuitive
-   - Must be verifiable with current data (not speculation or forecasts)
-   - Payments/fintech preferred, general interest acceptable
+   - Must be genuinely surprising, counterintuitive, or educational
+   - Must be a verifiable fact (historical or current), NOT a future projection
+   - Must be DIFFERENT from any of today's news stories
    - Write in conversational "Did you know?" style
    - 1-2 sentences maximum
    - Include context that makes the fact meaningful (comparisons, implications)
+   - No source required since this comes from general industry knowledge
 
 5. **Quality Checklist** (Every newsletter must pass):
    - [ ] Every story passes the "So what?" test with clear implications
@@ -583,11 +602,7 @@ OUTPUT FORMAT (MUST BE VALID JSON):
   ],
   "perspective": "...",
   "curiosity": {{{{
-    "text": "...",
-    "source": {{{{
-      "name": "Publication Name",
-      "url": "https://example.com/article"
-    }}}}
+    "text": "..."
   }}}}
 }}}}
 
@@ -596,8 +611,8 @@ CRITICAL RULES:
 - Escape all quotes and special characters properly
 - Ensure exactly 5 news items (no more, no less)
 - The "perspective" field is your editorial synthesis (2-3 sentences, ALWAYS required)
-- The "curiosity" field must have both text and source
-- **CRITICAL: The "source" field must be an object with "name" and "url" properties**
+- The "curiosity" field must have a "text" field with an interesting fact (source is NOT required)
+- **CRITICAL: For NEWS items, the "source" field must be an object with "name" and "url" properties**
 - Extract the publication name and URL from the research source (if research shows "Source: Payments Dive - https://example.com", use {{{{"name": "Payments Dive", "url": "https://example.com"}}}}"""),
         ("user", "Here are the stories to select from (pre-filtered for duplicates):\n\n{input}"),
     ])
@@ -820,9 +835,11 @@ QUALITY CHECKS:
    - RIGHT: "Today's Circle and Paxos stories show..." (specific to content)
 
 9. **Curiosity Fact Validity**:
-    - Is the curiosity fact a CURRENT or HISTORICAL fact (not a future projection)?
+    - Is the curiosity fact INDEPENDENT from today's news stories? (It should NOT be a restatement of a news story)
+    - Is it a CURRENT or HISTORICAL fact (not a future projection)?
     - Flag predictions like "by 2030..." or "projected to..." or "experts predict..."
-    - Must be verifiable with current/past data
+    - Must be genuinely surprising, educational, or counterintuitive
+    - Topics can include: payment history, global statistics, how payment rails work, fintech origin stories, crypto milestones, etc.
     - If using relative dates like "last year", ensure the actual year is specified (e.g., "in 2025" not just "last year")
 
 10. **Narrative Continuity** (Critical):

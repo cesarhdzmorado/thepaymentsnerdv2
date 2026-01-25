@@ -25,7 +25,7 @@ interface NewsItem {
 
 interface Curiosity {
   text: string;
-  source: Source;
+  source?: Source;  // Source is now optional for creative curiosity facts
 }
 
 interface WhatsHotItem {
@@ -145,12 +145,14 @@ export function DailyNewsletter({
           <Section style={section}>
             <Text style={sectionLabel}>💡 DID YOU KNOW?</Text>
             <Text style={curiosityText}>{curiosity.text}</Text>
-            <Text style={curiositySource}>
-              —{" "}
-              <Link href={curiosity.source.url} style={curiosityLink}>
-                {curiosity.source.name}
-              </Link>
-            </Text>
+            {curiosity.source && (
+              <Text style={curiositySource}>
+                —{" "}
+                <Link href={curiosity.source.url} style={curiosityLink}>
+                  {curiosity.source.name}
+                </Link>
+              </Text>
+            )}
           </Section>
 
           {/* What's Hot */}

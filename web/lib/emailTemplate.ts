@@ -16,7 +16,7 @@ interface NewsItem {
 
 interface Curiosity {
   text: string;
-  source: Source;
+  source?: Source;  // Source is now optional for creative curiosity facts
 }
 
 interface WhatsHotItem {
@@ -145,23 +145,18 @@ export async function generateDailyNewsletterEmail({
     };
   });
 
-  // Validate curiosity source
-  if (typeof curiosity.source !== 'object' || !curiosity.source) {
-    console.error(`Invalid curiosity source:`, curiosity.source);
-    throw new Error(`Curiosity has invalid source format. Expected object with name and url, got: ${typeof curiosity.source}`);
-  }
-  if (typeof curiosity.source.url !== 'string') {
-    console.error(`Invalid curiosity source.url:`, curiosity.source);
-    throw new Error(`Curiosity has invalid source.url. Expected string, got: ${typeof curiosity.source.url}`);
-  }
+  // Process curiosity - source is now optional
+  const processedCuriosity: Curiosity = {
+    text: curiosity.text,
+  };
 
-  const processedCuriosity = {
-    ...curiosity,
-    source: {
+  // Only add source if it exists and is valid
+  if (curiosity.source && typeof curiosity.source === 'object' && typeof curiosity.source.url === 'string') {
+    processedCuriosity.source = {
       name: curiosity.source.name,
       url: ensureHttps(curiosity.source.url),
-    },
-  };
+    };
+  }
 
   // Render React Email component to HTML string
   const html = await render(
