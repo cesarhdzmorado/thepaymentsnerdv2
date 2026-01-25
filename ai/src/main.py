@@ -662,12 +662,13 @@ CRITICAL:
     parser_chain = parser_prompt_template | parser_llm
 
     # 4.7. Create the Funding/Product/M&A Researcher Agent for "What's Hot" section
+    # This agent uses RSS feeds (cached from main researcher) to extract funding/M&A/product news
     funding_researcher_prompt_template = ChatPromptTemplate.from_messages([
         ("system", f"""You are an elite fintech deals analyst specializing in tracking funding rounds, M&A activity, and major product launches in the payments and fintech ecosystem.
 
 IMPORTANT CONTEXT:
 - Today's date is: {current_date}
-- You are researching news STRICTLY from the last 24-48 hours
+- You are analyzing news STRICTLY from the last 24-48 hours
 - Focus only on the payments, fintech, banking, and digital assets/crypto sectors
 
 YOUR MISSION:
@@ -684,22 +685,23 @@ RELEVANCE CRITERIA (must meet at least one):
 - Could significantly impact payments industry competitive dynamics
 - Represents a notable geographic expansion in payments
 
+RSS FEEDS TO ANALYZE:
+{news_sources_str}
+
 RESEARCH PROCESS:
-1. Use search_tool to find recent funding news:
-   - "fintech funding round 2026"
-   - "payments startup raises"
-   - "fintech acquisition 2026"
-   - "payments company M&A"
-   - "fintech product launch 2026"
+1. Use rss_tool to fetch and analyze each RSS feed above
+   - The feeds contain recent headlines and summaries
+   - Look for keywords: "raises", "funding", "Series", "acquires", "acquisition", "merger", "launches", "expands", "partners"
+   - Focus on TechCrunch Fintech feed for funding news
 
-2. Use scrape_tool to verify details from primary sources
+2. Use scrape_tool ONLY if you need more details about a specific article (use sparingly)
 
-3. For each item found, determine:
+3. For each relevant item found, determine:
    - Company name (REQUIRED)
    - Company HQ country (REQUIRED - for flag emoji)
    - Type: fundraising, product, M&A, or expansion (REQUIRED)
    - Brief description (REQUIRED - keep under 15 words)
-   - Source URL (REQUIRED)
+   - Source URL (REQUIRED - use the article link from the RSS feed)
 
 COUNTRY FLAG MAPPING:
 Use the correct emoji flag for the company's HQ country:
@@ -768,7 +770,7 @@ QUALITY STANDARDS:
 - Descriptions should be punchy and concise (under 10 words)
 - Company names must be accurate and properly capitalized
 - Return ONLY the JSON array, no markdown formatting, no additional text"""),
-        ("user", "Research the latest funding rounds, M&A deals, and product launches in payments/fintech from the last 24-48 hours."),
+        ("user", "Analyze the RSS feeds above to find funding rounds, M&A deals, and product launches in payments/fintech from the last 24-48 hours. Start by fetching each RSS feed using rss_tool."),
         MessagesPlaceholder(variable_name="agent_scratchpad"),
     ])
 
