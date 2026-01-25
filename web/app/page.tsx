@@ -40,7 +40,7 @@ interface NewsItem {
 
 interface Curiosity {
   text: string;
-  source: Source;
+  source?: Source;  // Source is now optional for creative curiosity facts
 }
 
 interface WhatsHotItem {
@@ -496,18 +496,20 @@ export default async function HomePage({
               <span className="absolute -left-4 -top-6 text-6xl text-amber-200 dark:text-amber-800 opacity-50 select-none">&ldquo;</span>
               {newsletter.content.curiosity.text}
             </p>
-            <cite className="inline-block text-base sm:text-lg font-semibold not-italic
-                           text-amber-800 dark:text-amber-200
-                           px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-900/20">
-              — <a
-                  href={ensureHttps(newsletter.content.curiosity.source.url)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline transition-all duration-300"
-                >
-                  {newsletter.content.curiosity.source.name}
-                </a>
-            </cite>
+            {newsletter.content.curiosity.source && (
+              <cite className="inline-block text-base sm:text-lg font-semibold not-italic
+                             text-amber-800 dark:text-amber-200
+                             px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-900/20">
+                — <a
+                    href={ensureHttps(newsletter.content.curiosity.source.url)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline transition-all duration-300"
+                  >
+                    {newsletter.content.curiosity.source.name}
+                  </a>
+              </cite>
+            )}
           </blockquote>
         </div>
       </section>
