@@ -23,6 +23,14 @@ newsletters:
   - url: "https://www.theblock.co/rss.xml"
     topic: "Crypto Infrastructure & Digital Assets"
 
+  # Funding & M&A focused feeds (for What's Hot section)
+  - url: "https://www.finextra.com/rss/channel.aspx?channel=startups"
+    topic: "Fintech Startups, Funding & VCs"
+  - url: "https://sifted.eu/sector/fintech/feed"
+    topic: "European Fintech Funding & Startups"
+  - url: "https://news.crunchbase.com/feed/"
+    topic: "Startup Funding Rounds & M&A"
+
 # Current Industry Trends (manually update as trends evolve)
 # These provide context to agents for better story selection and analysis
 # Weight: 1-10 (how important/prevalent this trend is right now)
