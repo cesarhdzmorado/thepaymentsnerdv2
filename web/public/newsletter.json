@@ -1,53 +1,49 @@
 {
   "news": [
     {
-      "title": "Payoneer Authorized as Cross-Border Payment Aggregator in India",
-      "body": "Payoneer received in-principle authorization from the Reserve Bank of India to operate as a cross-border payment aggregator, facilitating transactions in and out of India. This entry could intensify competition in the cross-border payments market, challenging incumbents like PayPal and Western Union. If successful, Payoneer may lower transaction costs and increase efficiency for Indian businesses engaged in international trade.",
+      "title": "Nexi Joins Agentic Commerce Alliance, Positioning for AI-Driven Payments",
+      "body": "Nexi Group has joined the Agentic Commerce Alliance (ACA), focusing on making agent-driven commerce accessible and secure for merchants. This move positions Nexi as a leader in agentic commerce, potentially influencing the direction of this emerging market and prompting competitors to join similar alliances. For payments teams, this means a shift towards more autonomous and AI-driven commerce solutions, enhancing operational efficiency and customer experiences.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108616/payoneer-receives-in-principle-authorisation-as-cross-border-payment-aggregator-in-india"
+        "url": "https://www.finextra.com/pressarticle/108619/nexi-joins-agentic-commerce-alliance?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Affirm Applies for Industrial Loan Company Charter",
-      "body": "Affirm has submitted applications to establish Affirm Bank, a Nevada-chartered industrial loan company, aiming to expand its financial services offerings. This move could disrupt traditional banking and increase competition among BNPL providers and traditional banks. If successful, Affirm could set a precedent for other fintechs seeking similar charters, reshaping the competitive landscape.",
+      "title": "Banks Eye Stablecoins to Transform Cross-Border Payments Landscape",
+      "body": "A recent discussion highlighted the strategic opportunities for banks in the US, UK, and Europe to leverage stablecoins for cross-border payments. By adopting stablecoins, banks could offer faster, cheaper, and more transparent transactions, pressuring traditional payment networks to innovate. This trend underscores the growing role of stablecoins in global payments infrastructure, compelling banks to rethink their strategies and partnerships.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108617/bnpl-giant-affirm-applies-to-establish-industrial-loan-company"
+        "url": "https://www.finextra.com/event-info/597/banking-on-stablecoins-accelerating-cross-border-payments-in-the-us-uk-and-europe?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Spanish Regulator Fines Santander $47 Million",
-      "body": "Banco Santander was fined $47 million by Spain's anti-money laundering watchdog for deficiencies in internal processes at its digital unit Openbank. This fine highlights the importance of compliance and could lead to increased scrutiny on digital banking operations, affecting Santander and other banks operating in Spain. Other banks may review and strengthen their compliance frameworks to avoid similar penalties.",
+      "title": "Affirm's Nevada Bank Charter Application Signals BNPL Expansion",
+      "body": "Affirm has applied for a Nevada bank charter to establish Affirm Bank, aiming to broaden its financial services offerings. This strategic move could disrupt traditional banks and other fintechs in the buy now, pay later (BNPL) space by enabling Affirm to provide a wider range of financial products. As competition intensifies, other fintechs may follow suit, prompting increased regulatory scrutiny on the sector.",
+      "source": {
+        "name": "Banking Dive",
+        "url": "https://www.bankingdive.com/news/affirm-seeks-nevada-bank-charter-ilc-fdic/810372/"
+      }
+    },
+    {
+      "title": "FIS Integrates Payments into Intelligence Layer, Redefining Consumer Experience",
+      "body": "FIS is reimagining the shopping journey by integrating payments, loyalty, and digital wallets into an intelligence layer, enhancing the overall consumer experience. This innovative approach could set a new standard for payment experiences, compelling competitors to adopt similar strategies. As embedded finance continues to evolve, merchants must adapt to these integrated solutions to maintain customer loyalty and engagement.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/bank-regulation/2026/spanish-regulator-imposes-47-million-fine-on-santander"
+        "url": "https://www.pymnts.com/opinion/2026/fis-moves-payments-from-checkout-to-intelligence-layer/"
       }
     },
     {
-      "title": "KeyBank Utilizes Conversational AI to Reduce Call Center Costs",
-      "body": "KeyBank is using conversational AI to cut call center costs, achieving cost advantages per interaction. This AI adoption could become a competitive advantage, improving customer experience while reducing costs. However, over-reliance on AI could impact customer satisfaction if not balanced with human interaction.",
+      "title": "Crypto Crime Surge Signals Need for Enhanced Regulatory Measures",
+      "body": "Crypto crime reached record levels in 2025, with $154 billion flowing to illicit addresses, marking a 160% increase in illicit volumes. This alarming trend may lead to stricter regulations and compliance requirements for exchanges, potentially increasing operational costs and impacting user trust. As the crypto landscape evolves, platforms must enhance their anti-money laundering (AML) and know-your-customer (KYC) measures to navigate this challenging environment.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/keybank-taps-conversational-ai-cut-call-center-costs"
-      }
-    },
-    {
-      "title": "UBS Considers Crypto Trading for Private Clients",
-      "body": "UBS plans to offer crypto trading to select private banking clients, expanding its digital asset services. This move could pressure other banks to offer similar services, increasing competition in the crypto space. It may lead to increased institutional adoption of crypto, driving market growth and innovation.",
-      "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/386831/ubs-considers-crypto-trading-offering-for-some-private-clients-bloomberg"
+        "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-crime-hits-record-levels-as-nation-states-dodge-sanctions/"
       }
     }
   ],
-  "perspective": "Today's stories about Payoneer's authorization in India, Affirm's banking charter application, and UBS's crypto trading plans highlight a critical moment in the payments landscape. Payoneer's entry into the cross-border payments market could disrupt incumbents, while Affirm's move signals a broader trend of fintechs seeking banking capabilities. Meanwhile, UBS's expansion into crypto reflects the increasing institutional interest in digital assets, further intensifying competition across financial services.",
+  "perspective": "Today's stories about Nexi's entry into the Agentic Commerce Alliance, banks exploring stablecoins for cross-border payments, and Affirm's bank charter application all highlight a critical moment in the payments landscape. These developments reflect the ongoing shift towards AI-driven solutions, the mainstreaming of stablecoins, and the increasing competition in the BNPL sector. As these trends unfold, payments professionals must adapt their strategies to stay ahead of the curve.",
   "curiosity": {
-    "text": "Did you know that Banco Santander was fined $47 million for deficiencies in its digital banking processes? This highlights the growing importance of compliance in the financial sector.",
-    "source": {
-      "name": "PYMNTS",
-      "url": "https://www.pymnts.com/bank-regulation/2026/spanish-regulator-imposes-47-million-fine-on-santander"
-    }
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
   },
   "whats_hot": []
 }
