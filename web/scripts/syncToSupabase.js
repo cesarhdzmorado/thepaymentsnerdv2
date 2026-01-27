@@ -64,7 +64,8 @@ async function syncNewsletter() {
       content: {
         news: data.news,
         perspective: data.perspective,
-        curiosity: data.curiosity
+        curiosity: data.curiosity,
+        whats_hot: data.whats_hot || []
       },
     };
     console.log("Record prepared for Supabase.");

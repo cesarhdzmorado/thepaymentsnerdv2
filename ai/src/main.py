@@ -341,8 +341,29 @@ RESEARCH FRAMEWORK:
    - Better 7 excellent stories than 10 mediocre ones
    - Each story must have a clear "why this matters" angle
 
-5. **Output Format**:
+5. **"What's Hot" Discovery** (Funding, M&A, Product Launches):
 
+   WHILE researching the RSS feeds, also identify notable:
+   - **FUNDRAISING**: Series A/B/C/D rounds, growth equity, seed rounds ($10M+ or notable investors)
+   - **PRODUCT LAUNCHES**: Major new products/features from payments companies
+   - **M&A**: Acquisitions, mergers, significant strategic partnerships
+   - **EXPANSION**: Geographic expansions, new market entries
+
+   Relevance criteria (must meet at least one):
+   - Company is in payments, fintech, banking, lending, or digital assets/crypto
+   - Deal size is $10M+ for fundraising
+   - Involves a major player or could significantly impact competitive dynamics
+   - Represents a notable geographic expansion in payments
+
+   For each What's Hot item, note:
+   - Company name and HQ country (for flag emoji)
+   - Type: fundraising, product, M&A, or expansion
+   - Brief description (under 15 words)
+   - Source URL
+
+6. **Output Format**:
+
+   PART 1 - TOP 10 STORIES:
    For each of the top 10 stories, return:
 
    ---
@@ -369,7 +390,21 @@ RESEARCH FRAMEWORK:
    [Related trend or signal]
    ---
 
-Your final answer must be these 10 structured analyses. Nothing else."""),
+   PART 2 - WHAT'S HOT:
+   List 3-7 funding rounds, M&A deals, or product launches found during research:
+
+   ---
+   WHATS_HOT [N]:
+   Company: [Name]
+   Country: [HQ country for flag]
+   Type: [fundraising/product/M&A/expansion]
+   Description: [brief description under 15 words]
+   Source: [URL]
+   ---
+
+   If no significant funding/M&A/product news found, write: "WHATS_HOT: None found"
+
+Your final answer must include BOTH Part 1 (10 stories) and Part 2 (What's Hot items). This allows us to extract everything from a single research pass."""),
         ("user", "{input}"),
         MessagesPlaceholder(variable_name="agent_scratchpad"),
     ])
@@ -624,13 +659,18 @@ CRITICAL RULES:
     writer_chain = writer_prompt_template | writer_llm
 
     # 4.5. Create the Parser chain to structure Researcher output for deduplication
+    # This parser now extracts BOTH news stories AND What's Hot items from the unified researcher output
     parser_llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18", temperature=0)
     parser_prompt_template = ChatPromptTemplate.from_messages([
         ("system", """You are a data extraction assistant. Your job is to parse the Researcher's free-text output into structured JSON.
 
-Extract each story from the input and return a JSON array with exactly 10 story objects.
+The Researcher output contains TWO parts:
+1. PART 1 - TOP 10 STORIES: Main news stories
+2. PART 2 - WHAT'S HOT: Funding rounds, M&A deals, and product launches
 
-For each story, extract:
+Extract BOTH parts and return a JSON object with "stories" and "whats_hot" arrays.
+
+For each STORY, extract:
 - "title": The headline from "STORY [N] - [HEADLINE]"
 - "body": Combine WHAT HAPPENED + WHO'S AFFECTED + COMPETITIVE DYNAMICS into a coherent summary (2-3 sentences)
 - "source_name": The publication name from "Source: [Name] - [URL]"
@@ -639,143 +679,46 @@ For each story, extract:
 - "pattern": The PATTERN section
 - "second_order_effects": The SECOND-ORDER EFFECTS section
 
+For each WHATS_HOT item, extract:
+- "flag": Convert the country to emoji flag (US=🇺🇸, UK=🇬🇧, Germany=🇩🇪, France=🇫🇷, Netherlands=🇳🇱, Sweden=🇸🇪, Ireland=🇮🇪, Singapore=🇸🇬, Brazil=🇧🇷, Argentina=🇦🇷, Mexico=🇲🇽, India=🇮🇳, Australia=🇦🇺, Canada=🇨🇦, Japan=🇯🇵, China=🇨🇳, Hong Kong=🇭🇰, Israel=🇮🇱, UAE=🇦🇪, Czech Republic=🇨🇿, Estonia=🇪🇪, Lithuania=🇱🇹, Nigeria=🇳🇬, Kenya=🇰🇪, South Africa=🇿🇦, Indonesia=🇮🇩, South Korea=🇰🇷, Spain=🇪🇸, Italy=🇮🇹, Switzerland=🇨🇭)
+- "type": One of "fundraising", "product", "M&A", or "expansion"
+- "company": Company name
+- "description": Brief description (under 15 words)
+- "source_url": The URL
+
 OUTPUT FORMAT (must be valid JSON):
-[
-  {{
-    "title": "Story headline here",
-    "body": "Combined summary of what happened, who's affected, and competitive dynamics.",
-    "source_name": "Publication Name",
-    "source_url": "https://example.com/article",
-    "contrarian_take": "The contrarian angle",
-    "pattern": "Related trend or signal",
-    "second_order_effects": "What to watch for next"
-  }}
-]
+{{
+  "stories": [
+    {{
+      "title": "Story headline here",
+      "body": "Combined summary of what happened, who's affected, and competitive dynamics.",
+      "source_name": "Publication Name",
+      "source_url": "https://example.com/article",
+      "contrarian_take": "The contrarian angle",
+      "pattern": "Related trend or signal",
+      "second_order_effects": "What to watch for next"
+    }}
+  ],
+  "whats_hot": [
+    {{
+      "flag": "🇺🇸",
+      "type": "fundraising",
+      "company": "CompanyName",
+      "description": "raises $XM Series Y led by InvestorName",
+      "source_url": "https://example.com/article"
+    }}
+  ]
+}}
 
 CRITICAL:
-- Return ONLY the JSON array, no markdown formatting, no additional text
+- Return ONLY the JSON object, no markdown formatting, no additional text
 - Preserve all factual details, numbers, and company names exactly as written
 - If a field is missing in the input, use an empty string ""
-- Ensure exactly 10 stories are extracted (or fewer if the Researcher provided fewer)"""),
+- If "WHATS_HOT: None found" or no What's Hot items present, return an empty array for "whats_hot"
+- Ensure exactly 10 stories are extracted in the "stories" array (or fewer if the Researcher provided fewer)"""),
         ("user", "{input}"),
     ])
     parser_chain = parser_prompt_template | parser_llm
-
-    # 4.7. Create the Funding/Product/M&A Researcher Agent for "What's Hot" section
-    # This agent uses RSS feeds (cached from main researcher) to extract funding/M&A/product news
-    funding_researcher_prompt_template = ChatPromptTemplate.from_messages([
-        ("system", f"""You are an elite fintech deals analyst specializing in tracking funding rounds, M&A activity, and major product launches in the payments and fintech ecosystem.
-
-IMPORTANT CONTEXT:
-- Today's date is: {current_date}
-- You are analyzing news STRICTLY from the last 24-48 hours
-- Focus only on the payments, fintech, banking, and digital assets/crypto sectors
-
-YOUR MISSION:
-Find and report on the most significant:
-1. **FUNDRAISING**: Series A/B/C/D rounds, growth equity, seed rounds ($10M+ or from notable investors)
-2. **PRODUCT LAUNCHES**: Major new products/features from payments companies
-3. **M&A**: Acquisitions, mergers, and significant strategic partnerships
-4. **EXPANSION**: Geographic expansions, new market entries
-
-RELEVANCE CRITERIA (must meet at least one):
-- Company is in payments, fintech, banking, lending, or digital assets/crypto
-- Deal size is $10M+ for fundraising
-- Involves a major player (Stripe, PayPal, Visa, Mastercard, Block, Adyen, etc.)
-- Could significantly impact payments industry competitive dynamics
-- Represents a notable geographic expansion in payments
-
-RSS FEEDS TO ANALYZE:
-{news_sources_str}
-
-RESEARCH PROCESS:
-1. Use rss_tool to fetch and analyze each RSS feed above
-   - The feeds contain recent headlines and summaries
-   - Look for keywords: "raises", "funding", "Series", "acquires", "acquisition", "merger", "launches", "expands", "partners"
-   - Focus on TechCrunch Fintech feed for funding news
-
-2. Use scrape_tool ONLY if you need more details about a specific article (use sparingly)
-
-3. For each relevant item found, determine:
-   - Company name (REQUIRED)
-   - Company HQ country (REQUIRED - for flag emoji)
-   - Type: fundraising, product, M&A, or expansion (REQUIRED)
-   - Brief description (REQUIRED - keep under 15 words)
-   - Source URL (REQUIRED - use the article link from the RSS feed)
-
-COUNTRY FLAG MAPPING:
-Use the correct emoji flag for the company's HQ country:
-- United States: 🇺🇸
-- United Kingdom: 🇬🇧
-- Germany: 🇩🇪
-- France: 🇫🇷
-- Netherlands: 🇳🇱
-- Sweden: 🇸🇪
-- Ireland: 🇮🇪
-- Singapore: 🇸🇬
-- Brazil: 🇧🇷
-- Argentina: 🇦🇷
-- Mexico: 🇲🇽
-- India: 🇮🇳
-- Australia: 🇦🇺
-- Canada: 🇨🇦
-- Japan: 🇯🇵
-- China: 🇨🇳
-- Hong Kong: 🇭🇰
-- Israel: 🇮🇱
-- UAE/Dubai: 🇦🇪
-- Czech Republic: 🇨🇿
-- Estonia: 🇪🇪
-- Lithuania: 🇱🇹
-- Nigeria: 🇳🇬
-- Kenya: 🇰🇪
-- South Africa: 🇿🇦
-- Indonesia: 🇮🇩
-- South Korea: 🇰🇷
-- Spain: 🇪🇸
-- Italy: 🇮🇹
-- Switzerland: 🇨🇭
-(Use the appropriate flag for other countries)
-
-OUTPUT FORMAT (must be valid JSON array):
-[
-  {{{{
-    "flag": "🇺🇸",
-    "type": "fundraising",
-    "company": "CompanyName",
-    "description": "raises $XM Series Y led by InvestorName",
-    "source_url": "https://example.com/article"
-  }}}},
-  {{{{
-    "flag": "🇬🇧",
-    "type": "product",
-    "company": "CompanyName",
-    "description": "launches NewProduct for specific use case",
-    "source_url": "https://example.com/article"
-  }}}},
-  {{{{
-    "flag": "🇦🇷",
-    "type": "M&A",
-    "company": "AcquirerName",
-    "description": "acquires TargetName for $Xbn",
-    "source_url": "https://example.com/article"
-  }}}}
-]
-
-QUALITY STANDARDS:
-- Return 3-7 items maximum (only the most significant)
-- If you find nothing significant in the last 24-48 hours, return an empty array []
-- Never include duplicate stories (same company, same announcement)
-- Prefer primary sources (company press releases, TechCrunch, Financial Times)
-- Descriptions should be punchy and concise (under 10 words)
-- Company names must be accurate and properly capitalized
-- Return ONLY the JSON array, no markdown formatting, no additional text"""),
-        ("user", "Analyze the RSS feeds above to find funding rounds, M&A deals, and product launches in payments/fintech from the last 24-48 hours. Start by fetching each RSS feed using rss_tool."),
-        MessagesPlaceholder(variable_name="agent_scratchpad"),
-    ])
-
-    funding_researcher_agent = create_openai_functions_agent(llm, tools, funding_researcher_prompt_template)
-    funding_researcher_executor = AgentExecutor(agent=funding_researcher_agent, tools=tools, verbose=True, max_iterations=10)
 
     # 5. Create the Editor Agent for quality control
     editor_llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18", temperature=0)
@@ -877,33 +820,28 @@ Be thorough but fair. Minor issues are acceptable if overall quality is high."""
 
     # 6. Run the agents in a chain
     print("--- Starting Researcher Agent ---")
+    # The unified researcher now finds BOTH main stories AND What's Hot items in a single pass
     research_result = researcher_executor.invoke({"input": "Please research the latest news from my list of sources."})
 
-    # 6.1. Run the Funding/M&A Researcher Agent for "What's Hot" section
-    print("\n--- Starting Funding/M&A Researcher Agent (What's Hot) ---")
-    try:
-        funding_result = funding_researcher_executor.invoke({"input": "Research the latest funding rounds, M&A deals, and product launches in payments/fintech from the last 24-48 hours."})
-        funding_output = funding_result.get('output', '[]')
-        # Clean up potential markdown formatting
-        funding_output_clean = funding_output.strip().replace("```json", "").replace("```", "").strip()
-        whats_hot_items = json.loads(funding_output_clean)
-        print(f"✅ Found {len(whats_hot_items)} items for What's Hot section")
-    except (json.JSONDecodeError, Exception) as e:
-        print(f"⚠️ Failed to parse What's Hot results: {e}")
-        whats_hot_items = []
-
     # 6.5. Parse Researcher output into structured JSON for deduplication
-    print("\n--- Parsing Researcher Output ---")
+    # Parser now extracts both stories and whats_hot from the unified output
+    print("\n--- Parsing Researcher Output (Stories + What's Hot) ---")
     parser_result = parser_chain.invoke({"input": research_result['output']})
 
+    parsed_stories = None
+    whats_hot_items = []
     try:
         parsed_text = parser_result.content.strip().replace("```json", "").replace("```", "").strip()
-        parsed_stories = json.loads(parsed_text)
-        print(f"✅ Parsed {len(parsed_stories)} stories from Researcher output")
+        parsed_data = json.loads(parsed_text)
+        # Extract stories and whats_hot from unified parser output
+        parsed_stories = parsed_data.get('stories', [])
+        whats_hot_items = parsed_data.get('whats_hot', [])
+        print(f"✅ Parsed {len(parsed_stories)} stories and {len(whats_hot_items)} What's Hot items from Researcher output")
     except (json.JSONDecodeError, AttributeError) as e:
         print(f"⚠️ Failed to parse Researcher output: {e}")
         print("Falling back to raw Researcher output for Writer")
         parsed_stories = None
+        whats_hot_items = []
 
     # 6.6. Deduplicate against recent stories (BEFORE Writer sees them)
     # Uses hybrid detection: entity extraction + word similarity + semantic embeddings
