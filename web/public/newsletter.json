@@ -1,49 +1,85 @@
 {
   "news": [
     {
-      "title": "Nexi Joins Agentic Commerce Alliance, Positioning for AI-Driven Payments",
-      "body": "Nexi Group has joined the Agentic Commerce Alliance (ACA), focusing on making agent-driven commerce accessible and secure for merchants. This move positions Nexi as a leader in agentic commerce, potentially influencing the direction of this emerging market and prompting competitors to join similar alliances. For payments teams, this means a shift towards more autonomous and AI-driven commerce solutions, enhancing operational efficiency and customer experiences.",
+      "title": "Revolut Expands into Revenue Operations with New Billing Tool for Merchants",
+      "body": "Revolut has launched a new service allowing merchants to manage recurring billing without additional subscription software costs, marking its entry into revenue operations. This expansion pressures existing providers in the billing space, as Revolut's integrated solutions offer lower costs and greater convenience. Competitors must now innovate to retain their market share, while fintechs may follow suit to capture more of the business operations market. Success will depend on Revolut's execution and integration with existing systems.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108619/nexi-joins-agentic-commerce-alliance?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47197/revolut-business-moves-into-revenue-operations-with-recurring-billing-tool?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Banks Eye Stablecoins to Transform Cross-Border Payments Landscape",
-      "body": "A recent discussion highlighted the strategic opportunities for banks in the US, UK, and Europe to leverage stablecoins for cross-border payments. By adopting stablecoins, banks could offer faster, cheaper, and more transparent transactions, pressuring traditional payment networks to innovate. This trend underscores the growing role of stablecoins in global payments infrastructure, compelling banks to rethink their strategies and partnerships.",
+      "title": "DXC Technology Partners with Ripple to Embed Digital Asset Custody in Banking",
+      "body": "DXC Technology has partnered with Ripple to integrate digital asset custody and RLUSD stablecoin capabilities into its core banking hub, enabling banks to adopt digital asset solutions at scale. This partnership strengthens Ripple's position in the market and opens new avenues for banks looking to innovate. However, the integration of digital assets into traditional banking faces regulatory and technological hurdles that could slow adoption. Increased adoption may prompt regulatory scrutiny and drive further innovation in digital asset management.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/event-info/597/banking-on-stablecoins-accelerating-cross-border-payments-in-the-us-uk-and-europe?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47189/dxc-connects-with-ripple-to-embed-digital-asset-custody-and-rlusd-stablecoin-into-core-hub?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Affirm's Nevada Bank Charter Application Signals BNPL Expansion",
-      "body": "Affirm has applied for a Nevada bank charter to establish Affirm Bank, aiming to broaden its financial services offerings. This strategic move could disrupt traditional banks and other fintechs in the buy now, pay later (BNPL) space by enabling Affirm to provide a wider range of financial products. As competition intensifies, other fintechs may follow suit, prompting increased regulatory scrutiny on the sector.",
-      "source": {
-        "name": "Banking Dive",
-        "url": "https://www.bankingdive.com/news/affirm-seeks-nevada-bank-charter-ilc-fdic/810372/"
-      }
-    },
-    {
-      "title": "FIS Integrates Payments into Intelligence Layer, Redefining Consumer Experience",
-      "body": "FIS is reimagining the shopping journey by integrating payments, loyalty, and digital wallets into an intelligence layer, enhancing the overall consumer experience. This innovative approach could set a new standard for payment experiences, compelling competitors to adopt similar strategies. As embedded finance continues to evolve, merchants must adapt to these integrated solutions to maintain customer loyalty and engagement.",
+      "title": "Visa Urges Banks to Innovate Loyalty Programs Beyond Credit Card Rewards",
+      "body": "Visa has called on banks to innovate their loyalty programs, moving beyond traditional credit card rewards to more meaningful engagement with consumers. This shift could give banks that successfully innovate a competitive edge in customer retention. However, banks may struggle to implement new loyalty strategies without clear ROI metrics, potentially limiting the effectiveness of these initiatives. A shift in loyalty program strategies could lead to new partnerships and technological solutions in the loyalty space.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/opinion/2026/fis-moves-payments-from-checkout-to-intelligence-layer/"
+        "url": "https://www.pymnts.com/visa/2026/visa-urges-banks-to-rethink-loyalty-beyond-credit-card-rewards/"
       }
     },
     {
-      "title": "Crypto Crime Surge Signals Need for Enhanced Regulatory Measures",
-      "body": "Crypto crime reached record levels in 2025, with $154 billion flowing to illicit addresses, marking a 160% increase in illicit volumes. This alarming trend may lead to stricter regulations and compliance requirements for exchanges, potentially increasing operational costs and impacting user trust. As the crypto landscape evolves, platforms must enhance their anti-money laundering (AML) and know-your-customer (KYC) measures to navigate this challenging environment.",
+      "title": "PayPal Partners with Paga to Launch Services in Nigeria",
+      "body": "PayPal has partnered with Nigerian fintech Paga to enable live account linking for customers in Nigeria, marking its entry into the Nigerian market. This move could disrupt local payment ecosystems and drive digital payment adoption in Nigeria. However, local payment providers may still hold an advantage due to established networks and local market knowledge. This partnership may encourage other global payment providers to enter the market, intensifying competition.",
       "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-crime-hits-record-levels-as-nation-states-dodge-sanctions/"
+        "name": "Finextra",
+        "url": "https://www.finextra.com/pressarticle/108638/paypal-goes-live-in-nigeria-through-paga?utm_medium=rssfinextra&utm_source=finextrafeed"
+      }
+    },
+    {
+      "title": "Bitwise Launches Onchain Vault for USDC Yield Amid Institutional Demand",
+      "body": "Bitwise has launched an onchain vault via Morpho, targeting up to 6% yield on USDC, highlighting growing institutional demand for onchain capital allocation. This move could increase competition in the onchain yield space and attract institutional investors. However, regulatory challenges and market volatility could impact the attractiveness of onchain yield products. Success could lead to more onchain yield products and increased institutional interest in digital assets.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/387093/bitwise-onchain-vault-morpho-yield-usdc?utm_source=rss&utm_medium=rss"
       }
     }
   ],
-  "perspective": "Today's stories about Nexi's entry into the Agentic Commerce Alliance, banks exploring stablecoins for cross-border payments, and Affirm's bank charter application all highlight a critical moment in the payments landscape. These developments reflect the ongoing shift towards AI-driven solutions, the mainstreaming of stablecoins, and the increasing competition in the BNPL sector. As these trends unfold, payments professionals must adapt their strategies to stay ahead of the curve.",
+  "perspective": "Today's stories about Revolut's billing tool, DXC's partnership with Ripple, and PayPal's entry into Nigeria highlight a critical moment in the payments landscape. These developments reflect the ongoing trend of fintechs expanding their service offerings and the increasing integration of digital assets into traditional banking. As these dynamics unfold, payments professionals must adapt their strategies to navigate the evolving competitive landscape and regulatory challenges.",
   "curiosity": {
     "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
   },
-  "whats_hot": []
+  "whats_hot": [
+    {
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "type": "fundraising",
+      "company": "Raylo",
+      "description": "raises \u00a330M Series B led by Citibank",
+      "source_url": "https://www.finextra.com/newsarticle/47196/citibank-leads-30-million-series-b-fundraise-in-subscription-service-raylo?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    {
+      "flag": "\ud83c\uddf8\ud83c\uddec",
+      "type": "fundraising",
+      "company": "Fingular",
+      "description": "raises SGD 30M in debt financing",
+      "source_url": "https://www.finextra.com/pressarticle/108635/fingular-scores-sgd30-million-in-debt-financing?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    {
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "type": "M&A",
+      "company": "ClearScore",
+      "description": "acquires Acre Platforms to enter mortgage industry",
+      "source_url": "https://www.finextra.com/newsarticle/47186/clearscore-enters-mortgage-industry-via-acre-platforms-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    {
+      "flag": "\ud83c\uddf3\ud83c\uddec",
+      "type": "expansion",
+      "company": "PayPal",
+      "description": "goes live in Nigeria through Paga",
+      "source_url": "https://www.finextra.com/pressarticle/108638/paypal-goes-live-in-nigeria-through-paga?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "product",
+      "company": "Bitwise",
+      "description": "launches onchain vault via Morpho for USDC yield",
+      "source_url": "https://www.theblock.co/post/387093/bitwise-onchain-vault-morpho-yield-usdc?utm_source=rss&utm_medium=rss"
+    }
+  ]
 }
