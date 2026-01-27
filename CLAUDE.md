@@ -13,7 +13,7 @@ The Payments Nerd is an **automated AI-powered newsletter platform** delivering 
 
 ### How It Works
 
-1. **GitHub Actions** runs daily at 09:00 UTC, executing the Python AI agent
+1. **GitHub Actions** runs daily at 08:30 UTC, executing the Python AI agent
 2. AI fetches RSS feeds, searches web, analyzes content with GPT-4o
 3. Newsletter JSON is generated, committed to repo, and synced to Supabase
 4. Vercel deployment is triggered, then emails are sent to subscribers via Resend
