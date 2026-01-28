@@ -1,85 +1,99 @@
 {
   "news": [
     {
-      "title": "Revolut Expands into Revenue Operations with New Billing Tool for Merchants",
-      "body": "Revolut has launched a new service allowing merchants to manage recurring billing without additional subscription software costs, marking its entry into revenue operations. This expansion pressures existing providers in the billing space, as Revolut's integrated solutions offer lower costs and greater convenience. Competitors must now innovate to retain their market share, while fintechs may follow suit to capture more of the business operations market. Success will depend on Revolut's execution and integration with existing systems.",
+      "title": "Revolut Expands Banking Operations to Mexico, Disrupting Local Market",
+      "body": "Revolut has launched full banking operations in Mexico, marking its first bank established outside of Europe. This expansion could disrupt traditional banks in Mexico by offering competitive digital banking services. For payments teams, this means increased competition in the digital banking space, prompting local banks to innovate or risk losing market share. As Revolut adapts its European model to the Mexican regulatory environment, watch for potential challenges that could arise.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47197/revolut-business-moves-into-revenue-operations-with-recurring-billing-tool?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47207/revolut-launches-full-banking-operations-in-mexico"
       }
     },
     {
-      "title": "DXC Technology Partners with Ripple to Embed Digital Asset Custody in Banking",
-      "body": "DXC Technology has partnered with Ripple to integrate digital asset custody and RLUSD stablecoin capabilities into its core banking hub, enabling banks to adopt digital asset solutions at scale. This partnership strengthens Ripple's position in the market and opens new avenues for banks looking to innovate. However, the integration of digital assets into traditional banking faces regulatory and technological hurdles that could slow adoption. Increased adoption may prompt regulatory scrutiny and drive further innovation in digital asset management.",
+      "title": "Fiserv and Affirm Shift BNPL Competition from Credit to Debit Cards",
+      "body": "Fiserv has partnered with Affirm to integrate Buy Now, Pay Later (BNPL) capabilities into debit card programs for banks and credit unions. This move challenges traditional credit card models and could reshape consumer credit behavior. Payments professionals should note that increased adoption of BNPL could lead to regulatory scrutiny, as consumers may be wary of overextending their finances. This shift may also prompt other players to explore similar integrations.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47189/dxc-connects-with-ripple-to-embed-digital-asset-custody-and-rlusd-stablecoin-into-core-hub?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47201/fiserv-and-affirm-bring-bnpl-to-debit-programmes"
       }
     },
     {
-      "title": "Visa Urges Banks to Innovate Loyalty Programs Beyond Credit Card Rewards",
-      "body": "Visa has called on banks to innovate their loyalty programs, moving beyond traditional credit card rewards to more meaningful engagement with consumers. This shift could give banks that successfully innovate a competitive edge in customer retention. However, banks may struggle to implement new loyalty strategies without clear ROI metrics, potentially limiting the effectiveness of these initiatives. A shift in loyalty program strategies could lead to new partnerships and technological solutions in the loyalty space.",
+      "title": "Mastercard's Intelligent Agent Suite Enhances AI-Driven Payment Solutions",
+      "body": "Mastercard is launching a suite of services to help banks and merchants integrate agentic AI into operations, enhancing payment processes. This strengthens Mastercard's position in AI-driven payment solutions and could set new industry standards. For payments teams, this means a potential acceleration in AI adoption, prompting competitors to develop similar offerings. However, the complexity of AI integration may deter smaller banks and merchants from fully embracing these solutions.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47203/mastercard-to-launch-intelligent-agent-suite"
+      }
+    },
+    {
+      "title": "Tether's USAT Stablecoin Launch Intensifies U.S. Market Competition",
+      "body": "Tether has launched the USAT stablecoin, entering the regulated U.S. stablecoin market amid concerns about stablecoin fragmentation. This move could intensify competition in the U.S. stablecoin market, challenging existing players like USDC. Payments professionals should prepare for potential regulatory changes as fragmentation risks prompt authorities to expedite stablecoin regulations. The entry of Tether may also lead to inefficiencies and interoperability issues within the stablecoin ecosystem.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/visa/2026/visa-urges-banks-to-rethink-loyalty-beyond-credit-card-rewards/"
+        "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoin-fragmentation-creates-new-risks-for-businesses/"
       }
     },
     {
-      "title": "PayPal Partners with Paga to Launch Services in Nigeria",
-      "body": "PayPal has partnered with Nigerian fintech Paga to enable live account linking for customers in Nigeria, marking its entry into the Nigerian market. This move could disrupt local payment ecosystems and drive digital payment adoption in Nigeria. However, local payment providers may still hold an advantage due to established networks and local market knowledge. This partnership may encourage other global payment providers to enter the market, intensifying competition.",
-      "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108638/paypal-goes-live-in-nigeria-through-paga?utm_medium=rssfinextra&utm_source=finextrafeed"
-      }
-    },
-    {
-      "title": "Bitwise Launches Onchain Vault for USDC Yield Amid Institutional Demand",
-      "body": "Bitwise has launched an onchain vault via Morpho, targeting up to 6% yield on USDC, highlighting growing institutional demand for onchain capital allocation. This move could increase competition in the onchain yield space and attract institutional investors. However, regulatory challenges and market volatility could impact the attractiveness of onchain yield products. Success could lead to more onchain yield products and increased institutional interest in digital assets.",
+      "title": "Ripple's New Treasury Platform Enhances Digital Asset Management",
+      "body": "Ripple has launched a new treasury platform that combines cash and digital asset management, following its $1 billion acquisition of GTreasury. This enhances Ripple's offerings in digital asset management and could attract more corporate clients. For payments teams, this signals a growing trend of integrating digital assets into mainstream financial operations, potentially driving broader adoption in corporate treasury functions. However, conservative financial managers may resist this integration.",
       "source": {
         "name": "The Block",
-        "url": "https://www.theblock.co/post/387093/bitwise-onchain-vault-morpho-yield-usdc?utm_source=rss&utm_medium=rss"
+        "url": "https://www.theblock.co/post/387357/ripple-introduces-treasury-platform"
       }
     }
   ],
-  "perspective": "Today's stories about Revolut's billing tool, DXC's partnership with Ripple, and PayPal's entry into Nigeria highlight a critical moment in the payments landscape. These developments reflect the ongoing trend of fintechs expanding their service offerings and the increasing integration of digital assets into traditional banking. As these dynamics unfold, payments professionals must adapt their strategies to navigate the evolving competitive landscape and regulatory challenges.",
+  "perspective": "Today's stories about Revolut's expansion into Mexico, Fiserv's BNPL integration with debit cards, and Tether's USAT stablecoin launch highlight a critical moment in the payments landscape. These developments reflect the ongoing trend of fintechs disrupting traditional banking models and the increasing competition in the stablecoin market. As these dynamics unfold, payments professionals must adapt their strategies to navigate the evolving competitive landscape and regulatory challenges.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, paving the way for the modern credit system we know today."
   },
   "whats_hot": [
     {
-      "flag": "\ud83c\uddec\ud83c\udde7",
+      "flag": "\ud83c\udde9\ud83c\uddf0",
       "type": "fundraising",
-      "company": "Raylo",
-      "description": "raises \u00a330M Series B led by Citibank",
-      "source_url": "https://www.finextra.com/newsarticle/47196/citibank-leads-30-million-series-b-fundraise-in-subscription-service-raylo?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddf8\ud83c\uddec",
-      "type": "fundraising",
-      "company": "Fingular",
-      "description": "raises SGD 30M in debt financing",
-      "source_url": "https://www.finextra.com/pressarticle/108635/fingular-scores-sgd30-million-in-debt-financing?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "M&A",
-      "company": "ClearScore",
-      "description": "acquires Acre Platforms to enter mortgage industry",
-      "source_url": "https://www.finextra.com/newsarticle/47186/clearscore-enters-mortgage-industry-via-acre-platforms-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddf3\ud83c\uddec",
-      "type": "expansion",
-      "company": "PayPal",
-      "description": "goes live in Nigeria through Paga",
-      "source_url": "https://www.finextra.com/pressarticle/108638/paypal-goes-live-in-nigeria-through-paga?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "company": "Lunar",
+      "description": "Raised \u20ac46M to expand Nordic business banking.",
+      "source_url": "https://www.finextra.com/newsarticle/47205/lunar-raises-46m-to-accelerate-nordic-growth"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "product",
-      "company": "Bitwise",
-      "description": "launches onchain vault via Morpho for USDC yield",
-      "source_url": "https://www.theblock.co/post/387093/bitwise-onchain-vault-morpho-yield-usdc?utm_source=rss&utm_medium=rss"
+      "type": "fundraising",
+      "company": "Mine",
+      "description": "Raised $14M to launch AI money agent for Gen Z.",
+      "source_url": "https://www.finextra.com/newsarticle/47193/mine-raises-14m-to-launch-ai-money-agent-for-gen-z"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "fundraising",
+      "company": "Northwood Space",
+      "description": "Raised $100M Series B for satellite communication infrastructure.",
+      "source_url": "https://news.crunchbase.com/venture/northwood-space-tech-100m-seriesb-washington-harbour-a16z/"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "fundraising",
+      "company": "Zocks",
+      "description": "Raised $45M Series B for AI assistant for financial advisers.",
+      "source_url": "https://news.crunchbase.com/fintech/zocks-raises-seriesb-ai-assistant-financial-advisers/"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "fundraising",
+      "company": "Ricursive Intelligence",
+      "description": "Raised $300M Series A at $4B valuation for AI lab.",
+      "source_url": "https://news.crunchbase.com/venture/startup-ai-lab-ricursive-seriesa-unicorn/"
+    },
+    {
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "type": "fundraising",
+      "company": "Lerian",
+      "description": "Raised R$30M seed round for financial infrastructure solutions.",
+      "source_url": "https://www.finextra.com/pressarticle/108647/brazilian-financial-infrastructure-startup-lerian-raises-r30-million-in-seed-round"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "fundraising",
+      "company": "Venre",
+      "description": "Closed Pre-Series A raising $9.6M for wealth creation platform.",
+      "source_url": "https://www.finextra.com/pressarticle/108620/venre-closes-pre-series-a-funding-round-raising-96-million"
     }
   ]
 }
