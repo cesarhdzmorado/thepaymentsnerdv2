@@ -17,6 +17,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { NewsletterNavigation } from "@/components/NewsletterNavigation";
 import { ShareButtons } from "@/components/ShareButtons";
 import { ensureHttps } from "@/lib/publicationNames";
+import { groupWhatsHotByRegion } from "@/lib/regions";
 import {
   ArrowRight,
   BookOpen,
@@ -553,38 +554,48 @@ export default async function HomePage({
               </div>
             </div>
 
-            <ul className="space-y-4">
-              {newsletter.content.whats_hot.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-3 text-base sm:text-lg text-slate-700 dark:text-slate-300"
-                >
-                  <span className="text-xl flex-shrink-0">{item.flag}</span>
-                  <span>
-                    <span className="text-sm text-slate-500 dark:text-slate-400">
-                      ({item.type})
-                    </span>{" "}
-                    <span className="font-bold text-slate-900 dark:text-slate-100">
-                      {item.company}
-                    </span>{" "}
-                    {item.description}
-                    {item.source_url && (
-                      <>
-                        {"… "}
-                        <a
-                          href={item.source_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm font-medium text-blue-600 dark:text-cyan-400 hover:underline"
-                        >
-                          Read more
-                        </a>
-                      </>
-                    )}
-                  </span>
-                </li>
+            <div className="space-y-6">
+              {groupWhatsHotByRegion(newsletter.content.whats_hot).map((group) => (
+                <div key={group.region}>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-3 flex items-center gap-2">
+                    <span>{group.info.emoji}</span>
+                    <span>{group.info.name}</span>
+                  </h4>
+                  <ul className="space-y-3 pl-2">
+                    {group.items.map((item, index) => (
+                      <li
+                        key={index}
+                        className="flex items-start gap-3 text-base sm:text-lg text-slate-700 dark:text-slate-300"
+                      >
+                        <span className="text-xl flex-shrink-0">{item.flag}</span>
+                        <span>
+                          <span className="text-sm text-slate-500 dark:text-slate-400">
+                            ({item.type})
+                          </span>{" "}
+                          <span className="font-bold text-slate-900 dark:text-slate-100">
+                            {item.company}
+                          </span>{" "}
+                          {item.description}
+                          {item.source_url && (
+                            <>
+                              {"… "}
+                              <a
+                                href={item.source_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm font-medium text-blue-600 dark:text-cyan-400 hover:underline"
+                              >
+                                Read more
+                              </a>
+                            </>
+                          )}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </section>
       )}

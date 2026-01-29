@@ -11,6 +11,7 @@ import {
   Heading,
   Hr,
 } from "@react-email/components";
+import { groupWhatsHotByRegion, type WhatsHotItem } from "@/lib/regions";
 
 interface Source {
   name: string;
@@ -26,14 +27,6 @@ interface NewsItem {
 interface Curiosity {
   text: string;
   source?: Source;  // Source is now optional for creative curiosity facts
-}
-
-interface WhatsHotItem {
-  flag: string;
-  type: "fundraising" | "product" | "M&A" | "expansion";
-  company: string;
-  description: string;
-  source_url?: string;
 }
 
 interface DailyNewsletterProps {
@@ -162,21 +155,28 @@ export function DailyNewsletter({
               <Section style={section}>
                 <Text style={sectionLabel}>🔥 WHAT'S HOT</Text>
                 <Text style={whatsHotSubtitle}>Funding, M&A & Product Launches</Text>
-                {whatsHot.map((item, index) => (
-                  <Text key={index} style={whatsHotItem}>
-                    {item.flag}{" "}
-                    <span style={whatsHotType}>({item.type})</span>{" "}
-                    <span style={whatsHotCompany}>{item.company}</span>{" "}
-                    {item.description}
-                    {item.source_url && (
-                      <>
-                        {"… "}
-                        <Link href={item.source_url} style={whatsHotLink}>
-                          Read more
-                        </Link>
-                      </>
-                    )}
-                  </Text>
+                {groupWhatsHotByRegion(whatsHot).map((group) => (
+                  <React.Fragment key={group.region}>
+                    <Text style={regionHeader}>
+                      {group.info.emoji} {group.info.name}
+                    </Text>
+                    {group.items.map((item, index) => (
+                      <Text key={index} style={whatsHotItem}>
+                        {item.flag}{" "}
+                        <span style={whatsHotType}>({item.type})</span>{" "}
+                        <span style={whatsHotCompany}>{item.company}</span>{" "}
+                        {item.description}
+                        {item.source_url && (
+                          <>
+                            {"… "}
+                            <Link href={item.source_url} style={whatsHotLink}>
+                              Read more
+                            </Link>
+                          </>
+                        )}
+                      </Text>
+                    ))}
+                  </React.Fragment>
                 ))}
               </Section>
             </>
@@ -497,11 +497,21 @@ const whatsHotSubtitle = {
   fontStyle: "italic",
 };
 
+const regionHeader = {
+  margin: "16px 0 8px 0",
+  fontSize: "13px",
+  fontWeight: "700",
+  color: "#525252",
+  textTransform: "uppercase" as const,
+  letterSpacing: "0.5px",
+};
+
 const whatsHotItem = {
   margin: "0 0 10px 0",
   fontSize: "15px",
   color: "#404040",
   lineHeight: "1.6",
+  paddingLeft: "8px",
 };
 
 const whatsHotType = {
