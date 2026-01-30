@@ -1,92 +1,85 @@
 {
   "news": [
     {
-      "title": "UAE Launches First Central Bank-Registered Stablecoin, USDU",
-      "body": "Universal Digital has launched the UAE's first central bank-approved USD-backed stablecoin, USDU, aimed at boosting digital asset settlement. This move positions the UAE as a leader in stablecoin adoption, potentially challenging traditional banking systems. The success of USDU will depend on broader adoption by businesses and consumers, which may take time. Expect increased adoption of stablecoins in the region, influencing other central banks to follow suit.",
-      "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47218/universal-launches-uaes-first-central-bank-registered-stablecoin?utm_medium=rssfinextra&utm_source=finextrafeed"
-      }
-    },
-    {
-      "title": "Checkout.com Acquires Euro Stablecoin Issuer Blue EMI to Enhance Digital Currency Capabilities",
-      "body": "Checkout.com has acquired Blue EMI, a licensed issuer of euro stablecoins, enhancing its capabilities in the digital currency space. This acquisition strengthens Checkout.com's position in the European payments market and could accelerate the adoption of euro-denominated stablecoins. The success of this acquisition hinges on regulatory acceptance and the ability to integrate stablecoins into existing financial systems. Watch for increased use of stablecoins in cross-border transactions and treasury management within Europe.",
-      "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47212/checkoutcom-acquires-euro-stablecoin-issuer-blue-emi?utm_medium=rssfinextra&utm_source=finextrafeed"
-      }
-    },
-    {
-      "title": "AI-Fueled Fraud Forces Banks to Rethink Identity Checks Amid Rising Financial Crime",
-      "body": "AI-driven fraud is prompting banks to overhaul their identity verification processes to better manage financial crime in the digital economy. Banks that effectively integrate AI into their fraud prevention strategies may gain a competitive edge by reducing fraud-related losses. However, while AI can enhance fraud prevention, it also introduces new vulnerabilities that banks must address. Expect increased investment in AI-based identity verification solutions and potential regulatory changes to address AI-driven fraud.",
+      "title": "Visa Credentials Soar as Payments Hyperscaler Eyes Agentic Commerce",
+      "body": "Visa reported a strong start to fiscal 2026, emphasizing the importance of credentials over cards in its global payments architecture. This focus on agentic commerce could shift market power towards companies that effectively integrate AI and tokenization into payment processes, affecting payment networks, merchants, and consumers globally. Expect increased competition in agentic commerce and stablecoin integration, influencing merchant strategies and consumer payment preferences. The emphasis on credentials over cards might challenge traditional card-based business models.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/opinion/2026/ai-fueled-fraud-forces-banks-to-rethink-identity-checks/"
+        "url": "https://www.pymnts.com/earnings/2026/visa-credentials-soar-as-payments-hyperscaler-eyes-agentic-commerce/"
       }
     },
     {
-      "title": "Mastercard Launches BIN Sponsorship Programme for UK Fintechs to Streamline Market Entry",
-      "body": "Mastercard has launched an accreditation programme for BIN sponsors to support UK fintechs in launching card programmes, streamlining market entry for new players. This initiative could strengthen Mastercard's position in the fintech sector and increase competition for established banks. While beneficial for fintechs, the programme may lead to market saturation, making it harder for individual companies to stand out. Expect a rise in fintech card offerings in the UK, leading to increased innovation and competition in the payments space.",
+      "title": "Universal Launches UAE's First Central Bank-Registered Stablecoin",
+      "body": "Universal Digital launched USDU, the UAE's first central bank-approved USD-backed stablecoin, marking a milestone in the region's digital currency landscape. This move positions the UAE as a leader in stablecoin adoption, potentially influencing other regions to follow suit. This could drive regulatory developments and stablecoin adoption in the Middle East and beyond. The success of USDU will depend on its integration with existing financial systems and consumer trust.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47217/mastercard-launches-bin-sponsorship-programme-for-uk-fintechs?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47218/universal-launches-uaes-first-central-bank-registered-stablecoin"
       }
     },
     {
-      "title": "White House to Host Banking-Crypto Summit to Advance Stalled Crypto Legislation",
-      "body": "The White House plans to host a summit with banking and cryptocurrency industry leaders to advance stalled crypto legislation. Progress on crypto legislation could provide regulatory clarity, benefiting compliant crypto firms and potentially disadvantaging those unable to meet new standards. While the summit aims to advance legislation, differing interests among participants may hinder consensus. Expect increased lobbying efforts and potential market volatility as stakeholders react to legislative developments.",
+      "title": "Nu Wins Conditional Approval for US National Bank Charter",
+      "body": "Nubank received conditional approval from the OCC to establish a national bank in the US, marking a significant step in its expansion strategy. This entry into the US market could intensify competition in digital banking services, affecting Nubank and its fintech competitors. Potential for increased M&A activity as traditional banks respond to fintech encroachment. Nubank's success in the US is not guaranteed; regulatory hurdles and market saturation could pose challenges.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/cryptocurrency/2026/white-house-to-host-banking-crypto-summit-to-restart-progress-on-crypto-bill/"
+        "url": "https://www.pymnts.com/bank-regulation/2026/nu-wins-conditional-approval-for-us-national-bank-charter/"
+      }
+    },
+    {
+      "title": "Mastercard Launches BIN Sponsorship Programme for UK Fintechs",
+      "body": "Mastercard introduced a BIN sponsorship program to support UK fintechs in launching card programs, facilitating easier market entry. This initiative could lower entry barriers for fintechs, increasing competition in the UK payments market. Potential acceleration of fintech innovation and partnerships with established financial institutions. The program may not address deeper challenges fintechs face, such as regulatory compliance and customer acquisition.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47217/mastercard-launches-bin-sponsorship-programme-for-uk-fintechs"
+      }
+    },
+    {
+      "title": "Senate Crypto Bill Finds Common Ground on Data Standards",
+      "body": "The US Senate Agriculture Committee advanced a crypto market structure bill, granting the CFTC primary authority over spot trading. This regulatory clarity could boost institutional participation in crypto markets, shifting power dynamics in the financial landscape. Expect increased compliance costs and potential market consolidation as firms adapt to new regulations. Regulatory focus on data standards might overlook other critical areas like consumer protection and fraud prevention.",
+      "source": {
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/cryptocurrency/2026/senate-crypto-bill-finds-common-ground-on-data-standards/"
       }
     }
   ],
-  "perspective": "Today's stories about the UAE's stablecoin launch, Checkout.com's acquisition of Blue EMI, and Mastercard's BIN sponsorship programme highlight a critical moment in the payments landscape. These developments reflect the ongoing trend of stablecoins going mainstream and the increasing integration of AI in fraud prevention. As these dynamics unfold, payments professionals must adapt their strategies to navigate the evolving competitive landscape and regulatory challenges.",
+  "perspective": "Today's stories about Visa's pivot towards agentic commerce, Universal Digital's stablecoin launch, and Nubank's national bank charter approval all point to a rapidly evolving payments landscape. The emphasis on credentials and regulatory clarity in stablecoins reflects a broader trend of fintechs and traditional players adapting to new market realities. As competition intensifies, payments professionals must reassess their strategies to stay ahead of these shifts.",
   "curiosity": {
     "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant."
   },
   "whats_hot": [
     {
-      "flag": "\ud83c\uddec\ud83c\udde7",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "Bleap",
-      "description": "Ex-Revolut staffers raise $6M for self-custodial money app",
-      "source_url": "https://www.finextra.com/newsarticle/47211/ex-revolut-staffers-raise-6m-for-self-custodial-money-app?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "company": "Mesh",
+      "description": "Crypto network Mesh hits unicorn status with $75M Series C.",
+      "source_url": "https://www.finextra.com/newsarticle/47225/crypto-network-mesh-hits-unicorn-status"
     },
     {
       "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "fundraising",
-      "company": "WealthAi",
-      "description": "WealthAi raises $800k in pre-seed funding for AI-driven wealth OS",
-      "source_url": "https://www.finextra.com/pressarticle/108669/wealthai-scores-800k-in-pre-seed-funding?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "type": "M&A",
+      "company": "Checkout.com",
+      "description": "Acquires euro stablecoin issuer Blue EMI.",
+      "source_url": "https://www.finextra.com/newsarticle/47212/checkoutcom-acquires-euro-stablecoin-issuer-blue-emi"
+    },
+    {
+      "flag": "\ud83c\udde6\ud83c\uddea",
+      "type": "product",
+      "company": "Universal Digital",
+      "description": "Launches UAE's first central bank-registered stablecoin.",
+      "source_url": "https://www.finextra.com/newsarticle/47218/universal-launches-uaes-first-central-bank-registered-stablecoin"
     },
     {
       "flag": "\ud83c\udde7\ud83c\uddf7",
-      "type": "fundraising",
-      "company": "Lerian",
-      "description": "Lerian raises R$30M in seed round for financial infrastructure",
-      "source_url": "https://www.finextra.com/pressarticle/108647/brazilian-financial-infrastructure-startup-lerian-raises-r30-million-in-seed-round?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "type": "expansion",
+      "company": "Nubank",
+      "description": "Wins conditional approval for US national bank charter.",
+      "source_url": "https://www.pymnts.com/bank-regulation/2026/nu-wins-conditional-approval-for-us-national-bank-charter/"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Doppler",
-      "description": "Doppler raises $9M seed round led by Pantera Capital",
-      "source_url": "https://www.theblock.co/post/387485/token-creation-platform-doppler-seed-round-pantera-capital?utm_source=rssfinextra&utm_medium=rss"
-    },
-    {
-      "flag": "\ud83c\uddef\ud83c\uddf5",
-      "type": "fundraising",
-      "company": "Startale Group",
-      "description": "Sony invests $13M in Startale Group's Series A",
-      "source_url": "https://www.theblock.co/post/387473/sony-innovation-fund-invests-13-million-in-soneium-l2-co-developer-startale-group?utm_source=rssfinextra&utm_medium=rss"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Northwood Space",
-      "description": "Northwood Space raises $100M Series B for satellite infrastructure",
-      "source_url": "https://news.crunchbase.com/venture/northwood-space-tech-100m-seriesb-washington-harbour-a16z/"
+      "type": "product",
+      "company": "Mastercard",
+      "description": "Launches BIN sponsorship programme for UK fintechs.",
+      "source_url": "https://www.finextra.com/newsarticle/47217/mastercard-launches-bin-sponsorship-programme-for-uk-fintechs"
     }
   ]
 }
