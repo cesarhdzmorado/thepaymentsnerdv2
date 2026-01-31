@@ -1,85 +1,99 @@
 {
   "news": [
     {
-      "title": "Visa Credentials Soar as Payments Hyperscaler Eyes Agentic Commerce",
-      "body": "Visa reported a strong start to fiscal 2026, emphasizing the importance of credentials over cards in its global payments architecture. This focus on agentic commerce could shift market power towards companies that effectively integrate AI and tokenization into payment processes, affecting payment networks, merchants, and consumers globally. Expect increased competition in agentic commerce and stablecoin integration, influencing merchant strategies and consumer payment preferences. The emphasis on credentials over cards might challenge traditional card-based business models.",
+      "title": "Visa and Mastercard Accelerate Stablecoin Adoption Amid Regulatory Uncertainty",
+      "body": "Visa and Mastercard are leveraging their earnings reports to showcase their advancements in stablecoin settlement, transitioning from discussions to execution. This shift positions both companies as leaders in stablecoin adoption, impacting payment networks, stablecoin issuers, and financial institutions globally. Increased stablecoin adoption could accelerate regulatory clarity and encourage more financial institutions to integrate stablecoin solutions. As competition heats up, traditional banks must adapt or risk losing relevance in the evolving payments landscape.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/earnings/2026/visa-credentials-soar-as-payments-hyperscaler-eyes-agentic-commerce/"
+        "url": "https://www.pymnts.com/blockchain/2026/payment-networks-use-earnings-season-to-press-their-case-on-stablecoins/"
       }
     },
     {
-      "title": "Universal Launches UAE's First Central Bank-Registered Stablecoin",
-      "body": "Universal Digital launched USDU, the UAE's first central bank-approved USD-backed stablecoin, marking a milestone in the region's digital currency landscape. This move positions the UAE as a leader in stablecoin adoption, potentially influencing other regions to follow suit. This could drive regulatory developments and stablecoin adoption in the Middle East and beyond. The success of USDU will depend on its integration with existing financial systems and consumer trust.",
+      "title": "Nubank's Conditional Approval for US National Bank Charter Signals Fintech Disruption",
+      "body": "Nubank has received conditional approval from the OCC to establish a national bank in the US, marking a significant step in its international expansion strategy. This move threatens traditional banks and challenges existing fintech competitors, potentially reshaping the US banking sector. Increased competition could drive innovation and customer-centric services in the US banking sector. Watch for how traditional banks respond to this new competitive pressure as fintechs continue to seek standalone licenses.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47218/universal-launches-uaes-first-central-bank-registered-stablecoin"
+        "url": "https://www.finextra.com/newsarticle/47227/brazilian-giant-nubank-gets-conditional-approval-for-us-national-bank?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Nu Wins Conditional Approval for US National Bank Charter",
-      "body": "Nubank received conditional approval from the OCC to establish a national bank in the US, marking a significant step in its expansion strategy. This entry into the US market could intensify competition in digital banking services, affecting Nubank and its fintech competitors. Potential for increased M&A activity as traditional banks respond to fintech encroachment. Nubank's success in the US is not guaranteed; regulatory hurdles and market saturation could pose challenges.",
+      "title": "Affirm Becomes Exclusive BNPL Provider for Expedia Group, Expanding Market Reach",
+      "body": "Affirm has secured a deal to become the exclusive BNPL provider for Expedia Group brands in the US, with plans to expand to Canada. This partnership strengthens Affirm's position in the BNPL market and could prompt other travel companies to explore similar options, increasing competition among providers. The travel sector's reliance on BNPL could expose it to financial risks if consumer debt levels rise. This move underscores the growing trend of embedded finance as BNPL becomes a standard offering across various sectors.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/bank-regulation/2026/nu-wins-conditional-approval-for-us-national-bank-charter/"
+        "url": "https://www.pymnts.com/bnpl/2026/affirm-becomes-expedia-groups-exclusive-bnpl-provider-in-us/"
       }
     },
     {
-      "title": "Mastercard Launches BIN Sponsorship Programme for UK Fintechs",
-      "body": "Mastercard introduced a BIN sponsorship program to support UK fintechs in launching card programs, facilitating easier market entry. This initiative could lower entry barriers for fintechs, increasing competition in the UK payments market. Potential acceleration of fintech innovation and partnerships with established financial institutions. The program may not address deeper challenges fintechs face, such as regulatory compliance and customer acquisition.",
+      "title": "Fipto Achieves Dual Licensing for Stablecoin Payments in Europe",
+      "body": "Fipto has become the first European stablecoin payment institution to hold both a Payment Institution license and a Crypto-Asset Service Provider license. This development positions Fipto as a leader in the regulated stablecoin payment space, impacting stablecoin issuers and payment processors. Increased regulatory scrutiny could set a precedent for other companies in the stablecoin market. As regulatory frameworks evolve, watch for how this influences competition among stablecoin providers.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47217/mastercard-launches-bin-sponsorship-programme-for-uk-fintechs"
+        "url": "https://www.finextra.com/pressarticle/108704/fipto-becomes-europes-first-duel-licenced-stablecoin-payment-institution?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Senate Crypto Bill Finds Common Ground on Data Standards",
-      "body": "The US Senate Agriculture Committee advanced a crypto market structure bill, granting the CFTC primary authority over spot trading. This regulatory clarity could boost institutional participation in crypto markets, shifting power dynamics in the financial landscape. Expect increased compliance costs and potential market consolidation as firms adapt to new regulations. Regulatory focus on data standards might overlook other critical areas like consumer protection and fraud prevention.",
+      "title": "Lloyds Banking Group Expands AI Deployments After Reporting \u00a350 Million Value",
+      "body": "Lloyds Banking Group plans to expand its AI deployments after reporting \u00a350 million in value from current initiatives, with expectations of \u00a3100 million more in 2026. This expansion could prompt other banks to accelerate their AI investments, reshaping the UK banking sector and impacting AI developers. Increased focus on AI safety could slow down the deployment of agentic AI systems. As banks invest more in AI, partnerships with tech firms may become essential to enhance service offerings.",
       "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/cryptocurrency/2026/senate-crypto-bill-finds-common-ground-on-data-standards/"
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47222/lloyds-to-go-deeper-into-ai-after-totting-up-financial-value-of-current-deployments?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     }
   ],
-  "perspective": "Today's stories about Visa's pivot towards agentic commerce, Universal Digital's stablecoin launch, and Nubank's national bank charter approval all point to a rapidly evolving payments landscape. The emphasis on credentials and regulatory clarity in stablecoins reflects a broader trend of fintechs and traditional players adapting to new market realities. As competition intensifies, payments professionals must reassess their strategies to stay ahead of these shifts.",
+  "perspective": "Today's stories about Visa and Mastercard's stablecoin initiatives, Nubank's bank charter approval, and Affirm's BNPL partnership with Expedia highlight a critical moment in the payments landscape. These developments reflect the ongoing trend of fintechs disrupting traditional banking models and the increasing competition in the stablecoin market. As these dynamics unfold, payments professionals must adapt their strategies to navigate the evolving competitive landscape and regulatory challenges.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way people made purchases."
   },
   "whats_hot": [
+    {
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "type": "IPO",
+      "company": "PicPay",
+      "description": "Raised $434M in New York IPO, valued at $2.5B.",
+      "source_url": "https://www.finextra.com/newsarticle/47230/picpay-reaches-25-billion-valuation-in-new-york-ipo?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
       "company": "Mesh",
-      "description": "Crypto network Mesh hits unicorn status with $75M Series C.",
-      "source_url": "https://www.finextra.com/newsarticle/47225/crypto-network-mesh-hits-unicorn-status"
+      "description": "Achieved unicorn status with $75M Series C funding.",
+      "source_url": "https://www.finextra.com/newsarticle/47225/crypto-network-mesh-hits-unicorn-status?utm_medium=rssfinextra&utm_source=finextrafeed"
     },
     {
-      "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "M&A",
-      "company": "Checkout.com",
-      "description": "Acquires euro stablecoin issuer Blue EMI.",
-      "source_url": "https://www.finextra.com/newsarticle/47212/checkoutcom-acquires-euro-stablecoin-issuer-blue-emi"
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "IPO",
+      "company": "Kraken-backed KRAKacquisition Corp",
+      "description": "Completed $345M upsized IPO, begins Nasdaq trading.",
+      "source_url": "https://www.theblock.co/post/387831/kraken-backed-krakacquisition-corp-completes-345-million-upsized-ipo-begins-nasdaq-trading?utm_source=rss&utm_medium=rss"
     },
     {
-      "flag": "\ud83c\udde6\ud83c\uddea",
-      "type": "product",
-      "company": "Universal Digital",
-      "description": "Launches UAE's first central bank-registered stablecoin.",
-      "source_url": "https://www.finextra.com/newsarticle/47218/universal-launches-uaes-first-central-bank-registered-stablecoin"
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
+      "type": "fundraising",
+      "company": "Pennylane",
+      "description": "Raised \u20ac175M at \u20ac3.6B valuation.",
+      "source_url": "https://sifted.eu/articles/pennylane-raises-175m-series-e/"
     },
     {
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "type": "expansion",
-      "company": "Nubank",
-      "description": "Wins conditional approval for US national bank charter.",
-      "source_url": "https://www.pymnts.com/bank-regulation/2026/nu-wins-conditional-approval-for-us-national-bank-charter/"
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
+      "type": "licensing",
+      "company": "Fipto",
+      "description": "Secured dual licensing for stablecoin payments in Europe.",
+      "source_url": "https://www.finextra.com/pressarticle/108704/fipto-becomes-europes-first-duel-licenced-stablecoin-payment-institution?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "fundraising",
+      "company": "Givefront",
+      "description": "Raised $2M to build fintech for nonprofits.",
+      "source_url": "https://techcrunch.com/2025/12/18/these-21-year-old-dropouts-raised-2m-to-build-givefront-a-fintech-for-nonprofits/"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "product",
-      "company": "Mastercard",
-      "description": "Launches BIN sponsorship programme for UK fintechs.",
-      "source_url": "https://www.finextra.com/newsarticle/47217/mastercard-launches-bin-sponsorship-programme-for-uk-fintechs"
+      "company": "Amboss",
+      "description": "Unveiled Lightning-native P2P platform RailsX.",
+      "source_url": "https://www.theblock.co/post/387396/amboss-unveils-lightning-native-p2p-platform-railsx-bitcoin-stablecoin-swaps?utm_source=rss&utm_medium=rss"
     }
   ]
 }
