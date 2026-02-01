@@ -1,99 +1,85 @@
 {
   "news": [
     {
-      "title": "Visa and Mastercard Accelerate Stablecoin Adoption Amid Regulatory Uncertainty",
-      "body": "Visa and Mastercard are leveraging their earnings reports to showcase their advancements in stablecoin settlement, transitioning from discussions to execution. This shift positions both companies as leaders in stablecoin adoption, impacting payment networks, stablecoin issuers, and financial institutions globally. Increased stablecoin adoption could accelerate regulatory clarity and encourage more financial institutions to integrate stablecoin solutions. As competition heats up, traditional banks must adapt or risk losing relevance in the evolving payments landscape.",
+      "title": "Visa and Mastercard Accelerate Stablecoin Adoption Amid Earnings Season",
+      "body": "Visa and Mastercard have highlighted their progress in stablecoin settlement during earnings season, indicating a shift from concept to execution. This means payment networks are positioning themselves as leaders in stablecoin integration, potentially setting a new standard for the industry. Expect increased competition among payment networks to adopt stablecoin technology, influencing regulatory discussions and cross-border payment strategies. This development underscores the growing importance of stablecoins in mainstream payments infrastructure.",
       "source": {
         "name": "PYMNTS",
         "url": "https://www.pymnts.com/blockchain/2026/payment-networks-use-earnings-season-to-press-their-case-on-stablecoins/"
       }
     },
     {
-      "title": "Nubank's Conditional Approval for US National Bank Charter Signals Fintech Disruption",
-      "body": "Nubank has received conditional approval from the OCC to establish a national bank in the US, marking a significant step in its international expansion strategy. This move threatens traditional banks and challenges existing fintech competitors, potentially reshaping the US banking sector. Increased competition could drive innovation and customer-centric services in the US banking sector. Watch for how traditional banks respond to this new competitive pressure as fintechs continue to seek standalone licenses.",
+      "title": "Fipto Becomes Europe's First Dual-Licensed Stablecoin Payment Institution",
+      "body": "Fipto has secured both a Payment Institution and a Crypto-Asset Service Provider license from the French AMF, becoming the first European stablecoin payment player to achieve this dual status. This milestone positions Fipto as a leader in the market and may prompt other fintechs to pursue similar licensing, accelerating stablecoin adoption in Europe. As regulatory clarity improves, expect a wave of new entrants in the stablecoin space, challenging traditional payment models. This development highlights the increasing mainstream acceptance of stablecoins.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47227/brazilian-giant-nubank-gets-conditional-approval-for-us-national-bank?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/pressarticle/108704/fipto-becomes-europes-first-duel-licenced-stablecoin-payment-institution"
       }
     },
     {
-      "title": "Affirm Becomes Exclusive BNPL Provider for Expedia Group, Expanding Market Reach",
-      "body": "Affirm has secured a deal to become the exclusive BNPL provider for Expedia Group brands in the US, with plans to expand to Canada. This partnership strengthens Affirm's position in the BNPL market and could prompt other travel companies to explore similar options, increasing competition among providers. The travel sector's reliance on BNPL could expose it to financial risks if consumer debt levels rise. This move underscores the growing trend of embedded finance as BNPL becomes a standard offering across various sectors.",
+      "title": "OpenAI Warns of Malicious Links Threatening Agentic AI",
+      "body": "OpenAI has issued guidance on the risks of malicious links in autonomous AI systems, highlighting the potential for exploitation as AI agents move beyond conversation into action. This warning affects AI developers and industries deploying agentic AI, as companies providing AI security solutions may gain market power amid increasing demand for protection. Expect increased investment in AI security and potential regulatory scrutiny on AI deployment as the industry grapples with these emerging threats. This underscores the critical need for robust trust and safety measures in the evolving payments landscape.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/bnpl/2026/affirm-becomes-expedia-groups-exclusive-bnpl-provider-in-us/"
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-warns-malicious-links-could-undermine-agentic-ai/"
       }
     },
     {
-      "title": "Fipto Achieves Dual Licensing for Stablecoin Payments in Europe",
-      "body": "Fipto has become the first European stablecoin payment institution to hold both a Payment Institution license and a Crypto-Asset Service Provider license. This development positions Fipto as a leader in the regulated stablecoin payment space, impacting stablecoin issuers and payment processors. Increased regulatory scrutiny could set a precedent for other companies in the stablecoin market. As regulatory frameworks evolve, watch for how this influences competition among stablecoin providers.",
+      "title": "Revolut Scraps US Bank Acquisition for Standalone License",
+      "body": "Revolut has abandoned its plans to acquire a US bank, opting instead to pursue a standalone banking license in the US. This decision allows Revolut to operate more independently and tailor its offerings to the US market, but it may limit its ability to leverage existing banking infrastructure. Expect increased regulatory scrutiny and potential delays as Revolut navigates the US banking landscape. This move reflects the ongoing trend of fintechs adapting to complex regulatory environments while seeking operational resilience.",
       "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108704/fipto-becomes-europes-first-duel-licenced-stablecoin-payment-institution?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "name": "Sifted",
+        "url": "https://sifted.eu/articles/revolut-scraps-us-bank-acquisition-in-push-for-standalone-licence-reports-say/"
       }
     },
     {
-      "title": "Lloyds Banking Group Expands AI Deployments After Reporting \u00a350 Million Value",
-      "body": "Lloyds Banking Group plans to expand its AI deployments after reporting \u00a350 million in value from current initiatives, with expectations of \u00a3100 million more in 2026. This expansion could prompt other banks to accelerate their AI investments, reshaping the UK banking sector and impacting AI developers. Increased focus on AI safety could slow down the deployment of agentic AI systems. As banks invest more in AI, partnerships with tech firms may become essential to enhance service offerings.",
+      "title": "Nubank Gets Conditional OCC Approval for Charter",
+      "body": "Nubank received conditional approval from the OCC for a US banking charter, with plans to capitalize the institution within 12 months. This approval may intensify competition among digital banks as Nubank enters the US market, allowing it to tailor its offerings to local consumers. Expect increased regulatory scrutiny and potential partnerships as Nubank establishes its US presence. This development highlights the growing trend of digital banks expanding into new markets amid evolving regulatory landscapes.",
       "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47222/lloyds-to-go-deeper-into-ai-after-totting-up-financial-value-of-current-deployments?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "name": "Banking Dive",
+        "url": "https://www.bankingdive.com/news/nubank-gets-conditional-occ-approval-charter/810981/"
       }
     }
   ],
-  "perspective": "Today's stories about Visa and Mastercard's stablecoin initiatives, Nubank's bank charter approval, and Affirm's BNPL partnership with Expedia highlight a critical moment in the payments landscape. These developments reflect the ongoing trend of fintechs disrupting traditional banking models and the increasing competition in the stablecoin market. As these dynamics unfold, payments professionals must adapt their strategies to navigate the evolving competitive landscape and regulatory challenges.",
+  "perspective": "Today's stories about Visa and Mastercard's stablecoin initiatives, Fipto's licensing milestone, and Nubank's charter approval reflect a critical moment in the payments landscape. These developments underscore the accelerating trend of stablecoins going mainstream, as regulatory clarity and institutional adoption reshape competitive dynamics. As fintechs and traditional players adapt to these shifts, payments professionals must reassess their strategies to stay ahead in this evolving environment.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way people made purchases."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
   },
   "whats_hot": [
     {
       "flag": "\ud83c\udde7\ud83c\uddf7",
       "type": "IPO",
       "company": "PicPay",
-      "description": "Raised $434M in New York IPO, valued at $2.5B.",
-      "source_url": "https://www.finextra.com/newsarticle/47230/picpay-reaches-25-billion-valuation-in-new-york-ipo?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Mesh",
-      "description": "Achieved unicorn status with $75M Series C funding.",
-      "source_url": "https://www.finextra.com/newsarticle/47225/crypto-network-mesh-hits-unicorn-status?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "IPO",
-      "company": "Kraken-backed KRAKacquisition Corp",
-      "description": "Completed $345M upsized IPO, begins Nasdaq trading.",
-      "source_url": "https://www.theblock.co/post/387831/kraken-backed-krakacquisition-corp-completes-345-million-upsized-ipo-begins-nasdaq-trading?utm_source=rss&utm_medium=rss"
+      "description": "Raised $434 million in New York IPO, valued at $2.5 billion.",
+      "source_url": "https://www.finextra.com/newsarticle/47230/picpay-reaches-25-billion-valuation-in-new-york-ipo"
     },
     {
       "flag": "\ud83c\uddeb\ud83c\uddf7",
-      "type": "fundraising",
-      "company": "Pennylane",
-      "description": "Raised \u20ac175M at \u20ac3.6B valuation.",
-      "source_url": "https://sifted.eu/articles/pennylane-raises-175m-series-e/"
-    },
-    {
-      "flag": "\ud83c\uddeb\ud83c\uddf7",
-      "type": "licensing",
+      "type": "Licensing",
       "company": "Fipto",
-      "description": "Secured dual licensing for stablecoin payments in Europe.",
-      "source_url": "https://www.finextra.com/pressarticle/108704/fipto-becomes-europes-first-duel-licenced-stablecoin-payment-institution?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "description": "Secured dual licenses as stablecoin payment institution in Europe.",
+      "source_url": "https://www.finextra.com/pressarticle/108704/fipto-becomes-europes-first-duel-licenced-stablecoin-payment-institution"
     },
     {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Givefront",
-      "description": "Raised $2M to build fintech for nonprofits.",
-      "source_url": "https://techcrunch.com/2025/12/18/these-21-year-old-dropouts-raised-2m-to-build-givefront-a-fintech-for-nonprofits/"
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "type": "Partnership",
+      "company": "Volt",
+      "description": "Partnered with ClearBank to enhance open banking offerings.",
+      "source_url": "https://www.finextra.com/pressarticle/108699/volt-partners-with-clearbank-to-enhance-open-banking-offerings"
     },
     {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "product",
-      "company": "Amboss",
-      "description": "Unveiled Lightning-native P2P platform RailsX.",
-      "source_url": "https://www.theblock.co/post/387396/amboss-unveils-lightning-native-p2p-platform-railsx-bitcoin-stablecoin-swaps?utm_source=rss&utm_medium=rss"
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "type": "Expansion",
+      "company": "Nubank",
+      "description": "Received conditional OCC approval for US banking charter.",
+      "source_url": "https://www.bankingdive.com/news/nubank-gets-conditional-occ-approval-charter/810981/"
+    },
+    {
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "type": "Licensing",
+      "company": "Revolut",
+      "description": "Pursuing standalone US banking license, scrapping acquisition plans.",
+      "source_url": "https://sifted.eu/articles/revolut-scraps-us-bank-acquisition-in-push-for-standalone-licence-reports-say/"
     }
   ]
 }
