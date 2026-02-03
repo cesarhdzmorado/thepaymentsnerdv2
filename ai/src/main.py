@@ -547,35 +547,60 @@ EDITORIAL PROCESS:
 
    After selecting the 5 stories, synthesize the day's intelligence in 2-3 sentences.
 
-   CRITICAL REQUIREMENTS:
-   1. Reference SPECIFIC stories from today's selection by name
-   2. If today's themes connect to previous days (see NARRATIVE CONTINUITY above), BUILD ON that context
-   3. Never use generic phrases like "signals a shift" or "marks a pivot" without specifying WHAT is shifting and WHY
+   CRITICAL: Write this as a THEMATIC INSIGHT, not a story summary.
 
-   TYPES OF SYNTHESIS (pick the most relevant):
+   **THE TECHNIQUE:**
+   Identify the single unifying thread or tension that connects today's most important stories,
+   then explore that theme. Your job is to REFRAME what happened, not enumerate what happened.
 
-   A) PATTERN SYNTHESIS: "Today's stories about [X], [Y], and [Z] all point to..."
-      Example: "The Visa-Stripe partnership, Square's bank charter news, and Plaid's acquisition all signal one thing: the line between payments and banking is dissolving faster than regulators can draw it."
+   **NARRATIVE STRUCTURES (pick one):**
 
-   B) CONTRARIAN TAKE: "Everyone's focused on X, but today's stories suggest Y"
-      Example: "The headlines focus on Klarna's IPO price, but I'm watching the Affirm-Amazon deal buried in paragraph four. That's where the real BNPL battle is playing out."
+   A) THE LENS: Apply a recurring conceptual framework
+      - "Everything is a payment rail now" — examine how a theme is showing up across stories
+      - "The compliance paradox" — when regulation produces opposite effects
+      - Pattern: "[Conceptual lens]. [How today's news fits]. [What it means]."
+      - Example: "Everything is an acquiring play now. Whether it's Apple expanding tap-to-pay or Stripe's new treasury product, the real prize isn't transactions—it's owning the merchant relationship."
 
-   C) ACTIONABLE INSIGHT: What should readers do with this information?
-      Example: "If you're in cross-border payments, today's FedNow and SEPA stories are your signal to accelerate—the window for proprietary rails is closing."
+   B) THE REFRAME: Acknowledge the surface story, pivot to the real story
+      - "The headline is about interchange rates. The real story is about..."
+      - "Everyone's watching the IPO. I'm watching the footnote about..."
+      - Pattern: "The obvious read is X. But actually, Y."
+      - Example: "The obvious read on Visa's new fees is margin pressure. But actually, this is Visa signaling which payment flows they're willing to lose—and which ones they'll defend at all costs."
 
-   D) FORWARD-LOOKING: What these stories mean for next quarter/year
-      Example: "Three compliance stories in one day isn't noise—it's the market pricing in the regulatory crackdown we've been warning about since Q1."
+   C) THE THREAD: Identify what connects disparate stories
+      - "Three different companies, three different continents, same bet"
+      - "What do [A], [B], and [C] have in common? They're all asking..."
+      - Pattern: "[Diverse elements]. [Unifying thread]. [Implication]."
+      - Example: "A Brazilian neobank, a European PSP, and a US card network all made the same move this week: betting that embedded finance beats standalone apps. The distribution wars are here."
 
-   E) NARRATIVE CONTINUATION: Build on what we've been saying this week
-      Example: "I've been tracking stablecoin enterprise adoption all week—today's Stripe treasury integration and Circle's API launch confirm the pattern: B2B stablecoins are the real story, not retail speculation."
-      Example: "After Monday's UK FCA news and yesterday's MiCA update, today's Singapore announcement completes the picture: the regulatory race is now global, and first-movers will define the framework."
+   D) THE STAKES: Connect directly to reader decisions
+      - "If you're building on card rails, this week just changed your calculus"
+      - "The window for [X strategy] is closing faster than most teams realize"
+      - Pattern: "[Reader context]. [What changed]. [Action implication]."
+      - Example: "If you're still treating instant payments as a nice-to-have, this week's Fed announcement just made it a competitive necessity. The grace period is over."
 
-   WRONG (too generic): "Stablecoins continue to be an important topic in payments."
-   WRONG (no specifics): "Today's stories signal a shift in the payments landscape."
-   RIGHT (specific + contextual): "Today's Circle and Paxos moves—combined with Monday's Visa announcement—show stablecoin issuers pivoting from retail hype to enterprise infrastructure. The B2B stablecoin era is here."
+   E) THE TENSION: Frame as competing forces
+      - "Two forces collided this week: [X] and [Y]. [Who's winning]."
+      - "The industry wants [A]. Regulators want [B]. This week, [B] scored."
+      - Pattern: "[Force 1] vs [Force 2]. [This week's development]. [Direction]."
+      - Example: "Speed versus safety—the eternal payments tension—tilted toward speed this week. Three central banks signaled they're willing to accept more fraud risk for faster settlement. That's a regime change."
 
-   Write this in first-person ("I'm watching...", "This signals...", "What stands out to me...")
-   This appears BEFORE the stories and sets the editorial lens.
+   **WHAT TO AVOID:**
+   - DO NOT list stories: "Today's stories about X, Y, and Z..."
+   - DO NOT enumerate: "First, we saw... Second, there was... Third..."
+   - DO NOT use generic framing: "signals a shift" / "marks a pivot" (without specifying WHAT)
+   - DO NOT summarize — your reader will read the stories; your job is to REFRAME them
+
+   **QUALITY TEST:**
+   Before finalizing, ask: "Could this perspective have been written without reading today's specific stories?"
+   If yes, it's too generic. Rewrite with specific details that prove you digested the content.
+
+   **NARRATIVE CONTINUITY:**
+   If today's themes connect to previous days (see NARRATIVE CONTINUITY section above), weave that context
+   naturally into your framing—don't announce it mechanically.
+
+   Write in first-person ("I'm watching...", "What stands out...", "The real question is...")
+   This appears BEFORE the stories and sets the editorial lens for how to read them.
 
 4. **Daily Curiosity** (Generate 1 - INDEPENDENT from today's news):
 
@@ -773,11 +798,14 @@ QUALITY CHECKS:
    - Flag any story that feels disconnected from the others
    - If a story doesn't fit (e.g., general tech news unrelated to payments), recommend replacing it
 
-8. **Perspective Specificity** (Critical):
-   - Does the "perspective" field reference SPECIFIC stories from today's selection?
-   - Is it synthesizing insights from the actual stories, not making generic observations?
-   - WRONG: "Stablecoins continue to be important" (generic)
-   - RIGHT: "Today's Circle and Paxos stories show..." (specific to content)
+8. **Perspective Quality** (Critical):
+   - Does the "perspective" field provide a THEMATIC INSIGHT rather than a story summary?
+   - Is it reframing the news through a conceptual lens, not just listing what happened?
+   - Does it identify a unifying thread, tension, or pattern across stories?
+   - WRONG: "Stablecoins continue to be important" (generic, no insight)
+   - WRONG: "Today's stories about Circle, Paxos, and Visa show..." (mechanical enumeration)
+   - RIGHT: "Everything is an acquiring play now. Whether it's Apple or Stripe, the real prize isn't transactions—it's owning the merchant relationship." (thematic lens)
+   - RIGHT: "The obvious read is margin pressure. But actually, this is about which payment flows they'll defend at all costs." (reframe technique)
 
 9. **Curiosity Fact Validity**:
     - Is the curiosity fact INDEPENDENT from today's news stories? (It should NOT be a restatement of a news story)
