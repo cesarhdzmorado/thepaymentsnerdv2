@@ -1,99 +1,92 @@
 {
   "news": [
     {
-      "title": "Nubank's US Charter Approval: A New Challenger in Digital Banking",
-      "body": "Nubank has received conditional approval from the OCC for a US banking charter, aiming to enter the US market within 18 months. This move could intensify competition in the US digital banking sector, challenging incumbents with innovative offerings. As Nubank prepares to launch, traditional banks must enhance their digital services to retain customers. This expansion reflects the trend of international fintechs targeting the lucrative US market, potentially accelerating digital transformation across the industry.",
+      "title": "NymCard Enables Stablecoin Settlement with Visa in GCC, Challenging Traditional Banks",
+      "body": "NymCard launches stablecoin settlement with Visa in the Gulf Cooperation Council (GCC), modernizing settlement infrastructure. This positions NymCard as a leader in modern payment solutions in the GCC, potentially challenging traditional banks. The move could accelerate stablecoin adoption in the region and influence regulatory frameworks.",
       "source": {
-        "name": "Banking Dive",
-        "url": "https://www.bankingdive.com/news/nubank-gets-conditional-occ-approval-charter/810981/"
+        "name": "Finextra",
+        "url": "https://www.finextra.com/pressarticle/108707/nymcard-enables-stablecoin-settlement-with-visa-in-the-gcc"
       }
     },
     {
-      "title": "Starling Bank's US Expansion: Selling Software to Banks",
-      "body": "Starling Bank plans to expand into the US by selling its software to mid-tier banks and credit unions, marking a shift from retail banking to B2B solutions. This move could enhance Starling's market power and challenge existing software providers in the US fintech space. As Starling enters this competitive landscape, US banks may need to innovate their offerings to keep pace. This aligns with the trend of fintechs diversifying revenue streams by entering new markets and offering B2B services.",
+      "title": "Intuit Partners with Affirm for Exclusive BNPL Offering in QuickBooks Payments",
+      "body": "Intuit partners with Affirm to offer Buy Now, Pay Later (BNPL) options for QuickBooks Payments users. This strengthens Intuit's payment offerings, challenging other BNPL providers. The partnership could increase BNPL adoption among small businesses using QuickBooks, reshaping the competitive landscape.",
       "source": {
-        "name": "Financial Times",
-        "url": "https://www.ft.com/content/a42dfbfe-886d-433d-81ed-077d73adf900?segmentId=776b81d7-dd92-c731-e669-99cdd37d3a96#myft:my-news:rss"
+        "name": "Finextra",
+        "url": "https://www.finextra.com/pressarticle/108715/intuit-gives-affirm-exclusive-rights-to-provide-bnpl-for-quickbooks-payments"
       }
     },
     {
-      "title": "Stablecoin Wars: Wall Street vs Crypto",
-      "body": "The ongoing battle between Wall Street and crypto firms over stablecoin regulations highlights banks' concerns about digital currencies posing risks to financial stability. This conflict could shape the future of stablecoins and their integration into mainstream finance. As regulatory frameworks evolve, banks must adapt or risk losing ground to more agile crypto firms. This reflects the trend of stablecoins moving towards mainstream adoption and the regulatory challenges they face.",
-      "source": {
-        "name": "Financial Times",
-        "url": "https://www.ft.com/content/0fe2232a-4689-4296-b4cd-8c07c326c48c?segmentId=776b81d7-dd92-c731-e669-99cdd37d3a96#myft:my-news:rss"
-      }
-    },
-    {
-      "title": "PicPay's US IPO: A Credit Strategy Play",
-      "body": "Brazilian fintech PicPay has launched its IPO in the US, focusing on credit offerings as a growth engine. This strategic shift could enhance its market visibility and challenge existing credit providers in the US. If successful, PicPay's entry could inspire other Latin American fintechs to pursue similar strategies in the US market. This aligns with the trend of fintechs leveraging public markets to fuel international expansion.",
+      "title": "FuturePay Integrates Paysafe\u2019s SafetyPay Solution for Latin America Expansion",
+      "body": "FuturePay integrates Paysafe\u2019s SafetyPay to support its expansion into Latin America, enhancing its payment platform with local payment methods. This move gives FuturePay a competitive edge in the region, challenging local payment providers. Increased adoption of digital payments in Latin America could follow, reshaping the market.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/mobile-wallets/2026/picpay-takes-its-credit-strategy-to-wall-street-with-us-ipo/"
+        "url": "https://www.pymnts.com/partnerships/2026/futurepay-integrates-paysafes-safetypay-solution-to-support-expansion-into-latin-america/"
       }
     },
     {
-      "title": "CrossCurve Bridge Exploited: $3M Loss Undermines DeFi Trust",
-      "body": "CrossCurve bridge suffered a $3 million exploit due to a missing validation check, allowing attackers to spoof cross-chain messages. This incident could undermine trust in DeFi platforms, benefiting more secure competitors. As the DeFi space grapples with security challenges, platforms must prioritize robust validation mechanisms to regain user confidence. This highlights ongoing security challenges in DeFi and the need for enhanced security protocols.",
+      "title": "While US Debates Stablecoin Yield, Europe and Asia Set Clearer Rules",
+      "body": "Europe and Asia establish clearer stablecoin regulations, while the US continues to debate stablecoin yield. This regulatory clarity may attract more stablecoin projects to Europe and Asia, challenging US dominance. The fragmentation in global stablecoin markets could intensify as different regions adopt varying standards.",
       "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/387939/crosscurve-bridge-exploited-for-approximately-3-million-across-multiple-chains-via-spoofed-messages?utm_source=rss&utm_medium=rss"
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/cryptocurrency/2026/while-us-debates-stablecoin-yield-europe-and-asia-set-clearer-rules/"
+      }
+    },
+    {
+      "title": "Varo Raises $123.9m in Series G Funding, Strengthening Digital Banking Position",
+      "body": "Varo, a US digital bank, raises $123.9 million in Series G funding led by Warburg Pincus and Coliseum Capital Management. This funding strengthens Varo's position in digital banking, potentially challenging traditional banks. Increased innovation and competition in digital banking could follow as Varo leverages this capital.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47237/varo-raises-1239m"
       }
     }
   ],
-  "perspective": "Today's stories about Nubank's charter approval, Starling's US expansion, and the ongoing stablecoin regulatory battle illustrate a pivotal moment in the payments landscape. Nubank's entry into the US market could disrupt traditional banking, while Starling's B2B focus signals a shift in fintech strategies. Meanwhile, the clash over stablecoin regulations underscores the need for banks to adapt to the evolving digital currency landscape, as competition intensifies from both fintechs and crypto firms.",
+  "perspective": "Today's stories about NymCard's stablecoin settlement with Visa, Intuit's BNPL partnership with Affirm, and the regulatory clarity in Europe and Asia all point to a critical moment for stablecoins and embedded finance. The NymCard initiative could accelerate stablecoin adoption in the GCC, while Intuit's move strengthens its competitive position in the BNPL space. As Europe and Asia set clearer rules, the US risks falling behind in the stablecoin race, prompting payments professionals to reassess their strategies.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing how consumers approached payments."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way people made payments."
   },
   "whats_hot": [
     {
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "type": "fundraising",
+      "company": "Incard",
+      "description": "Raised \u00a310m for digital entrepreneurs' financial OS.",
+      "source_url": "https://www.finextra.com/newsarticle/47239/incard-raises-10m-to-build-financial-os-for-digital-entrepreneurs"
+    },
+    {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "Mine",
-      "description": "Raised $14M to launch AI money agent for Gen Z",
-      "source_url": "https://www.finextra.com/newsarticle/47193/mine-raises-14m-to-launch-ai-money-agent-for-gen-z?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "company": "Varo",
+      "description": "Raised $123.9m in Series G funding.",
+      "source_url": "https://www.finextra.com/newsarticle/47237/varo-raises-1239m"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "M&A",
+      "company": "SpaceX",
+      "description": "Acquired xAI for space-based AI development.",
+      "source_url": "https://www.pymnts.com/acquisitions/2026/spacex-acquires-xai-to-enable-solar-powered-space-based-ai/"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "M&A",
+      "company": "TransUnion",
+      "description": "Acquiring RealNetworks' mobile division.",
+      "source_url": "https://www.pymnts.com/acquisitions/2026/transunion-to-acquire-mobile-division-of-realnetworks/"
     },
     {
       "flag": "\ud83c\uddec\ud83c\udde7",
+      "type": "expansion",
+      "company": "FuturePay",
+      "description": "Integrates SafetyPay for Latin America expansion.",
+      "source_url": "https://www.pymnts.com/partnerships/2026/futurepay-integrates-paysafes-safetypay-solution-to-support-expansion-into-latin-america/"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "investment",
-      "company": "Barclays",
-      "description": "Invests in US stablecoin settlement startup Ubyx",
-      "source_url": "https://www.finextra.com/newsarticle/47110/barclays-makes-first-investment-in-stablecoin-related-company?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Pluto Financial Technologies",
-      "description": "Raised $8.6M seed for AI-powered lending platform",
-      "source_url": "https://www.finextra.com/newsarticle/47101/pluto-launches-ai-powered-lending-platform-to-unlock-liquidity-in-private-markets?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "type": "fundraising",
-      "company": "Lerian",
-      "description": "Raised R$30M seed for financial infrastructure solutions",
-      "source_url": "https://www.finextra.com/pressarticle/108647/brazilian-financial-infrastructure-startup-lerian-raises-r30-million-in-seed-round?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddeb\ud83c\uddf7",
-      "type": "fundraising",
-      "company": "Pennylane",
-      "description": "Raised \u20ac175M at \u20ac3.6bn valuation",
-      "source_url": "https://sifted.eu/articles/pennylane-raises-175m-series-e/"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Zocks",
-      "description": "Raised $45M Series B for AI assistant to financial advisers",
-      "source_url": "https://news.crunchbase.com/fintech/zocks-raises-seriesb-ai-assistant-financial-advisers/"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Northwood Space",
-      "description": "Raised $100M Series B for satellite communication infrastructure",
-      "source_url": "https://news.crunchbase.com/venture/northwood-space-tech-100m-seriesb-washington-harbour-a16z/"
+      "company": "Ark Invest",
+      "description": "Invested in Circle, Bitmine, Bullish during market dip.",
+      "source_url": "https://www.theblock.co/post/388116/ark-invest-circle-bitmine-bullish"
     }
   ]
 }
