@@ -118,7 +118,6 @@ def main():
 
     # Get current date
     current_date = datetime.now().strftime("%B %d, %Y")
-    current_year = datetime.now().year
 
     # Get all stories from this week
     weekly_stories = get_week_stories(days_back=7)

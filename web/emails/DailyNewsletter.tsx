@@ -30,7 +30,6 @@ interface Curiosity {
 }
 
 interface DailyNewsletterProps {
-  publicationDate: string;
   formattedDate: string;
   perspective?: string;
   news: NewsItem[];
@@ -41,7 +40,6 @@ interface DailyNewsletterProps {
 }
 
 export function DailyNewsletter({
-  publicationDate,
   formattedDate,
   perspective,
   news,
