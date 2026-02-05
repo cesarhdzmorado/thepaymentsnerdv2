@@ -1,85 +1,85 @@
 {
   "news": [
     {
-      "title": "Visa Direct and UnionPay Team Up for Cross-Border Payments",
-      "body": "Visa Direct has partnered with UnionPay International to facilitate cross-border money transfers into mainland China, enhancing financial connectivity. This collaboration strengthens Visa's market position against competitors and signals a commitment to improving transaction speed and interoperability. Expect increased competition in cross-border payment solutions, potentially leading to lower fees and faster transaction times. However, regulatory hurdles in China could pose challenges to seamless implementation.",
-      "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47244/visa-direct-and-unionpay-team-up-on-cross-border-money-movement-into-china?utm_medium=rssfinextra&utm_source=finextrafeed"
-      }
-    },
-    {
-      "title": "PayPal Appoints New CEO Amid Competitive Pressure",
-      "body": "PayPal has appointed Peter Lores as its new CEO following disappointing financial results, amid rising competition from tech giants. This leadership change signals potential strategic shifts to counteract competitive threats, but may not be sufficient to address deep-rooted challenges. Watch for potential restructuring within PayPal and shifts in market strategies to regain its competitive edge. The move reflects broader trends of fintech consolidation and lean-scale operating models as companies adapt to competitive pressures.",
-      "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47243/paypal-appoints-new-ceo-as-results-disappoint?utm_medium=rssfinextra&utm_source=finextrafeed"
-      }
-    },
-    {
-      "title": "Nevada Takes Legal Action Against Coinbase",
-      "body": "The Nevada Gaming Control Board has filed a civil enforcement action against Coinbase to stop it from offering event contracts, impacting the regulatory environment for crypto platforms. This action could deter other platforms from similar offerings, affecting innovation in the crypto space. Increased regulatory scrutiny on crypto platforms offering non-traditional financial products is likely, as regulators seek to establish clearer guidelines. While this may stifle innovation, it could also lead to safer markets.",
+      "title": "Instant Payments Adoption Reaches 74%, Pressuring Providers to Innovate",
+      "body": "Instant payments have become mainstream, with 74% of consumers having received at least one instant payout. This marks a significant shift in consumer expectations for payment speed and accessibility, putting pressure on payment providers and financial institutions to adopt similar capabilities to retain customers. The demand for instant payments may drive further innovation in payment technologies and infrastructure.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/news/regulation/2026/nevada-files-civil-enforcement-action-to-stop-coinbase-from-offering-event-contracts/"
+        "url": "https://www.pymnts.com/disbursements/2026/instant-payments-hit-mainstream-as-consumer-adoption-climbs-to-74/"
       }
     },
     {
-      "title": "Lydian Enables Crypto Acceptance for Fiserv Clover Merchants",
-      "body": "Lydian has partnered with Fiserv to allow Clover merchants to accept payments in crypto and stablecoins, enhancing Fiserv's offerings. This positions Fiserv as a forward-thinking payment processor and could drive wider merchant adoption of crypto payments, influencing consumer payment preferences. However, volatility in crypto markets may deter some merchants from adopting these payment methods. This move aligns with the trend of stablecoins going mainstream, integrating digital currencies into traditional payment systems.",
+      "title": "BBVA Joins Euro Stablecoin Joint Venture, Accelerating Digital Currency Adoption",
+      "body": "BBVA has joined Qivalis, a bank-backed euro-denominated stablecoin joint venture, aiming to enhance digital currency adoption in Europe. BBVA's involvement could accelerate stablecoin adoption in Europe, challenging traditional banking models. This may lead to increased regulatory scrutiny and the development of new digital currency frameworks.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47241/lydian-enables-crypto-acceptance-for-fiserv-clover-merchants?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47251/bbva-joins-bank-backed-euro-stablecoin-joint-venture"
       }
     },
     {
-      "title": "Varo Raises $123.9M in Series G Funding",
-      "body": "Varo, a US digital bank, secured $123.9 million in Series G funding led by Warburg Pincus and Coliseum Capital Management. This funding bolsters Varo's financial position, enabling expansion and innovation in digital banking services. Despite this significant capital influx, profitability remains a challenge for digital banks in a competitive market. This funding round reflects the ongoing trend of fintech consolidation and lean-scale operating models, focusing on capital efficiency and growth.",
+      "title": "Mastercard Launches AI Agent Suite to Boost Enterprise Readiness",
+      "body": "Mastercard announced the launch of its Agent Suite, a set of services and customizable AI agents designed to help businesses integrate AI into their operations. This move aims to support enterprises in adopting agentic AI across banking and commerce, positioning Mastercard as a leader in AI integration within payments. Increased AI adoption could lead to more efficient operations and cost savings for enterprises, influencing broader market adoption of AI solutions.",
+      "source": {
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mastercard-says-readiness-is-key-as-enterprises-move-to-ai-agents/"
+      }
+    },
+    {
+      "title": "Revolut Business Expands Merchant Acquiring in Australia, Challenging Competitors",
+      "body": "Revolut Business launched a merchant acquiring product in Australia, integrating account-to-account, online, and in-person payments within a single platform. This expansion strengthens Revolut's position in the Australian market, challenging local and international competitors in the payment service sector. Increased competition could lead to innovation in Australia's payment services market.",
+      "source": {
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/news/b2b-payments/2026/revolut-business-launches-merchant-acquiring-product-in-australia/"
+      }
+    },
+    {
+      "title": "PayPal Appoints New CEO Amid Competitive Pressure to Revitalize Strategy",
+      "body": "PayPal has appointed Peter Lores as its new CEO, following disappointing financial results and increased competition from Big Tech companies. The leadership change aims to revitalize PayPal's strategy and counter competitive threats from companies like Apple and Google. Potential strategic shifts at PayPal could impact its market position and innovation efforts.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47237/varo-raises-1239m?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47243/paypal-appoints-new-ceo-as-results-disappoint"
       }
     }
   ],
-  "perspective": "Today's developments underscore a critical tension in the payments landscape: the push for innovation versus the tightening grip of regulation. Visa's partnership with UnionPay and Lydian's crypto acceptance initiative highlight the industry's drive to enhance cross-border and digital payment solutions. However, regulatory actions against Coinbase and PayPal's leadership change signal that navigating this evolving environment will require agility and strategic foresight.",
+  "perspective": "Today's news underscores a pivotal moment in the payments landscape, where consumer expectations for speed and efficiency are reshaping the competitive dynamics. With instant payments now adopted by 74% of consumers, providers must innovate or risk losing market share. Meanwhile, BBVA's entry into the stablecoin space and Revolut's expansion in Australia signal that traditional banking models are under increasing pressure from fintechs leveraging new technologies.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing how people paid for goods and services."
   },
   "whats_hot": [
     {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "flag": "\ud83c\uddec\ud83c\udde7",
       "type": "fundraising",
-      "company": "Lotus Health AI",
-      "description": "Raised $41 million for AI-powered primary care model",
-      "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/lotus-health-ai-raises-41-million-to-build-ai-powered-model-for-primary-care/"
+      "company": "Apexx Global",
+      "description": "$10M investment for payments orchestration platform",
+      "source_url": "https://www.finextra.com/newsarticle/47255/apexx-global-raises-10m-for-payments-orchestration-platform"
+    },
+    {
+      "flag": "\ud83c\udde8\ud83c\udde6",
+      "type": "fundraising",
+      "company": "Neo Financial",
+      "description": "C$68.5M for securitisation programme",
+      "source_url": "https://www.finextra.com/newsarticle/47253/neo-financial-raises-c685m-for-securitisation-programme"
+    },
+    {
+      "flag": "\ud83c\uddea\ud83c\uddfa",
+      "type": "fundraising",
+      "company": "Axiology",
+      "description": "\u20ac5M seed funding for tokenised securities",
+      "source_url": "https://www.finextra.com/newsarticle/47248/dlt-based-capital-markets-startup-axiology-raises-5-million"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "bond sale",
+      "company": "Cipher",
+      "description": "$13B offers in $2B junk bond sale",
+      "source_url": "https://www.theblock.co/post/388568/ciphers-ai-subsidiary-black-pearl-compute-garners-13-billion-offers-in-2-billion-junk-bond-sale-report"
     },
     {
       "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "fundraising",
-      "company": "Incard",
-      "description": "Secured \u00a310 million for financial OS for digital entrepreneurs",
-      "source_url": "https://www.finextra.com/newsarticle/47239/incard-raises-10m-to-build-financial-os-for-digital-entrepreneurs?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Varo",
-      "description": "Raised $123.9 million in Series G round",
-      "source_url": "https://www.finextra.com/newsarticle/47237/varo-raises-1239m?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "product",
-      "company": "Lydian",
-      "description": "Enables crypto acceptance for Fiserv Clover merchants",
-      "source_url": "https://www.finextra.com/newsarticle/47241/lydian-enables-crypto-acceptance-for-fiserv-clover-merchants?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "M&A",
-      "company": "Teciem",
-      "description": "Launched from Finastra's spun-out treasury business",
-      "source_url": "https://www.finextra.com/newsarticle/47232/apax-spins-out-finastra-treasury-and-capital-markets-business-as-teciem?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "company": "Revolut Business",
+      "description": "Merchant acquiring product launch in Australia",
+      "source_url": "https://www.pymnts.com/news/b2b-payments/2026/revolut-business-launches-merchant-acquiring-product-in-australia/"
     }
   ]
 }
