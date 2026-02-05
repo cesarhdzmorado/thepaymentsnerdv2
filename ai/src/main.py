@@ -35,7 +35,7 @@ def get_recent_stories(days_back: int = 2):
 
         if not supabase_url or not supabase_key:
             print("⚠️ Supabase credentials not found, skipping historical deduplication")
-            return {'stories': [], 'perspectives': [], 'intros': [], 'themes': []}
+            return {'stories': [], 'perspectives': [], 'themes': []}
 
         supabase = create_client(supabase_url, supabase_key)
 
@@ -49,10 +49,9 @@ def get_recent_stories(days_back: int = 2):
             .order("publication_date", desc=True) \
             .execute()
 
-        # Extract stories, perspectives, and intros from newsletters
+        # Extract stories, perspectives, and themes from newsletters
         previous_stories = []
         perspectives = []
-        intros = []
         themes = []
 
         for newsletter in response.data:
@@ -91,7 +90,6 @@ def get_recent_stories(days_back: int = 2):
         return {
             'stories': previous_stories,
             'perspectives': perspectives,
-            'intros': intros,
             'themes': themes[:5]  # Top 5 recurring themes
         }
 
@@ -148,20 +146,6 @@ def format_trends_for_prompt(trends):
 
     return "\n\n".join(formatted)
 
-def format_recent_stories_for_context(recent_data):
-    """
-    Format recent stories into a context string for deduplication.
-    """
-    stories = recent_data.get('stories', []) if isinstance(recent_data, dict) else recent_data
-    if not stories:
-        return "No recent stories available."
-
-    # Group by title to show concise list
-    story_titles = [story.get('title', 'Untitled') for story in stories[:15]]  # Last 15 stories
-    formatted = "\n".join([f"  - {title}" for title in story_titles])
-    return f"Recent stories from the last 2 days:\n{formatted}"
-
-
 def format_narrative_context(recent_data):
     """
     Format recent editorial context (perspectives, intros, themes) for narrative continuity.
@@ -171,7 +155,6 @@ def format_narrative_context(recent_data):
         return "No narrative context available."
 
     perspectives = recent_data.get('perspectives', [])
-    intros = recent_data.get('intros', [])
     themes = recent_data.get('themes', [])
 
     sections = []
@@ -181,12 +164,6 @@ def format_narrative_context(recent_data):
         sections.append("WHAT WE'VE BEEN SAYING (Recent Perspectives):")
         for p in perspectives[:3]:  # Last 3 days max
             sections.append(f"  [{p['date']}]: \"{p['text']}\"")
-
-    # Recent intros (patterns we've identified)
-    if intros:
-        sections.append("\nPATTERNS WE'VE IDENTIFIED (Recent Intros):")
-        for i in intros[:3]:
-            sections.append(f"  [{i['date']}]: \"{i['text']}\"")
 
     # Recurring themes
     if themes:
@@ -206,13 +183,11 @@ def main():
         config = yaml.safe_load(file)
 
     # Get current date for context
-    from datetime import datetime
     current_date = datetime.now().strftime("%B %d, %Y")  # e.g., "December 30, 2025"
 
     # Get recent stories and editorial context (for deduplication and narrative continuity)
     recent_data = get_recent_stories(days_back=3)  # Extended to 3 days for better narrative context
     recent_stories = recent_data.get('stories', [])  # Extract stories list for deduplication
-    recent_stories_context = format_recent_stories_for_context(recent_data)
     narrative_context = format_narrative_context(recent_data)
 
     # Create a string of news sources for the prompt

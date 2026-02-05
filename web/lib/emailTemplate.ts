@@ -161,7 +161,6 @@ export async function generateDailyNewsletterEmail({
   // Render React Email component to HTML string
   const html = await render(
     DailyNewsletter({
-      publicationDate,
       formattedDate,
       perspective,
       news: processedNews,
