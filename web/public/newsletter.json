@@ -1,85 +1,99 @@
 {
   "news": [
     {
-      "title": "Instant Payments Adoption Reaches 74%, Pressuring Providers to Innovate",
-      "body": "Instant payments have become mainstream, with 74% of consumers having received at least one instant payout. This marks a significant shift in consumer expectations for payment speed and accessibility, putting pressure on payment providers and financial institutions to adopt similar capabilities to retain customers. The demand for instant payments may drive further innovation in payment technologies and infrastructure.",
-      "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/disbursements/2026/instant-payments-hit-mainstream-as-consumer-adoption-climbs-to-74/"
-      }
-    },
-    {
-      "title": "BBVA Joins Euro Stablecoin Joint Venture, Accelerating Digital Currency Adoption",
-      "body": "BBVA has joined Qivalis, a bank-backed euro-denominated stablecoin joint venture, aiming to enhance digital currency adoption in Europe. BBVA's involvement could accelerate stablecoin adoption in Europe, challenging traditional banking models. This may lead to increased regulatory scrutiny and the development of new digital currency frameworks.",
+      "title": "BBVA Joins Euro Stablecoin Joint Venture, Accelerating Institutional Adoption",
+      "body": "BBVA has joined Qivalis, a bank-backed euro-denominated stablecoin joint venture, marking a significant step in stablecoin adoption by traditional banks. This involvement could accelerate stablecoin adoption in Europe, challenging non-bank stablecoin issuers.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47251/bbva-joins-bank-backed-euro-stablecoin-joint-venture"
+        "url": "https://www.finextra.com/newsarticle/47251/bbva-joins-bank-backed-euro-stablecoin-joint-venture?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Mastercard Launches AI Agent Suite to Boost Enterprise Readiness",
-      "body": "Mastercard announced the launch of its Agent Suite, a set of services and customizable AI agents designed to help businesses integrate AI into their operations. This move aims to support enterprises in adopting agentic AI across banking and commerce, positioning Mastercard as a leader in AI integration within payments. Increased AI adoption could lead to more efficient operations and cost savings for enterprises, influencing broader market adoption of AI solutions.",
+      "title": "Citi Advocates for Tokenized Deposits as Core to Global Finance",
+      "body": "Citi has advocated for tokenized deposits to become a central component of global finance, emphasizing their potential to transform on-chain settlement processes. This comes amid growing interest in blockchain technologies within the banking sector, positioning Citi as a forward-thinking leader in blockchain adoption.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mastercard-says-readiness-is-key-as-enterprises-move-to-ai-agents/"
+        "url": "https://www.pymnts.com/blockchain/2026/citi-argues-tokenized-deposits-belong-at-the-core-of-finance/"
       }
     },
     {
-      "title": "Revolut Business Expands Merchant Acquiring in Australia, Challenging Competitors",
-      "body": "Revolut Business launched a merchant acquiring product in Australia, integrating account-to-account, online, and in-person payments within a single platform. This expansion strengthens Revolut's position in the Australian market, challenging local and international competitors in the payment service sector. Increased competition could lead to innovation in Australia's payment services market.",
-      "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/news/b2b-payments/2026/revolut-business-launches-merchant-acquiring-product-in-australia/"
-      }
-    },
-    {
-      "title": "PayPal Appoints New CEO Amid Competitive Pressure to Revitalize Strategy",
-      "body": "PayPal has appointed Peter Lores as its new CEO, following disappointing financial results and increased competition from Big Tech companies. The leadership change aims to revitalize PayPal's strategy and counter competitive threats from companies like Apple and Google. Potential strategic shifts at PayPal could impact its market position and innovation efforts.",
+      "title": "Truist Launches AI-Enabled Receivables Platform to Enhance Cash Management",
+      "body": "Truist Financial Corporation has introduced an AI-enabled receivables platform designed to simplify receivables management and improve cash visibility for commercial clients. This innovation could enhance Truist's value proposition, prompting competitors to innovate their receivables solutions.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47243/paypal-appoints-new-ceo-as-results-disappoint"
+        "url": "https://www.finextra.com/pressarticle/108750/truist-launches-ai-enabled-receivables-platform?utm_medium=rssfinextra&utm_source=finextrafeed"
+      }
+    },
+    {
+      "title": "Remitly Cuts 110 Jobs in Israel, Streamlining Operations Amid Economic Pressures",
+      "body": "Remitly has announced the closure of its R&D hub in Israel, resulting in 110 job cuts. This decision follows the acquisition of local fintech Rewire three years ago, potentially impacting Remitly's operational capabilities and innovation pace.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47261/remitly-cuts-110-jobs-in-israel?utm_medium=rssfinextra&utm_source=finextrafeed"
+      }
+    },
+    {
+      "title": "Cross River Bank Predicts Significant Growth in Embedded Finance",
+      "body": "Cross River Bank executives predict significant growth in embedded finance, with financial services increasingly integrated into consumer experiences. This trend could disrupt traditional banking models, prompting banks to innovate and collaborate with tech platforms.",
+      "source": {
+        "name": "Banking Dive",
+        "url": "https://www.bankingdive.com/news/embedded-finance-cross-river-bank/811308/"
       }
     }
   ],
-  "perspective": "Today's news underscores a pivotal moment in the payments landscape, where consumer expectations for speed and efficiency are reshaping the competitive dynamics. With instant payments now adopted by 74% of consumers, providers must innovate or risk losing market share. Meanwhile, BBVA's entry into the stablecoin space and Revolut's expansion in Australia signal that traditional banking models are under increasing pressure from fintechs leveraging new technologies.",
+  "perspective": "Today's news underscores the accelerating integration of stablecoins and tokenization into mainstream finance, as evidenced by BBVA's joint venture and Citi's advocacy for tokenized deposits. Meanwhile, Truist's AI-enabled platform and Cross River Bank's predictions for embedded finance highlight the ongoing push for innovation in banking services. As fintechs like Remitly streamline operations, the competitive landscape is shifting, with traditional banks and fintechs alike racing to adapt to these emerging trends.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing how people paid for goods and services."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
   },
   "whats_hot": [
+    {
+      "flag": "\ud83c\uddea\ud83c\uddfa",
+      "type": "fundraising",
+      "company": "Duna",
+      "description": "Business identity startup Duna raises \u20ac30M Series A led by CapitalG.",
+      "source_url": "https://www.finextra.com/newsarticle/47260/business-identity-startup-duna-raises-30m?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    {
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "type": "fundraising",
+      "company": "Bound",
+      "description": "FX hedging platform Bound raises $24.5M Series A for EU expansion.",
+      "source_url": "https://www.finextra.com/newsarticle/47257/fx-hedging-platform-bound-raises-245-million?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "investment",
+      "company": "Anchorage Digital",
+      "description": "Anchorage Digital secures $100M investment from Tether.",
+      "source_url": "https://www.finextra.com/pressarticle/108763/anchorage-digital-secures-100m-tether-investment?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
     {
       "flag": "\ud83c\uddec\ud83c\udde7",
       "type": "fundraising",
       "company": "Apexx Global",
-      "description": "$10M investment for payments orchestration platform",
-      "source_url": "https://www.finextra.com/newsarticle/47255/apexx-global-raises-10m-for-payments-orchestration-platform"
+      "description": "Apexx Global raises $10M for payments orchestration platform.",
+      "source_url": "https://www.finextra.com/newsarticle/47255/apexx-global-raises-10m-for-payments-orchestration-platform?utm_medium=rssfinextra&utm_source=finextrafeed"
     },
     {
       "flag": "\ud83c\udde8\ud83c\udde6",
       "type": "fundraising",
       "company": "Neo Financial",
-      "description": "C$68.5M for securitisation programme",
-      "source_url": "https://www.finextra.com/newsarticle/47253/neo-financial-raises-c685m-for-securitisation-programme"
+      "description": "Neo Financial raises C$68.5M for securitisation programme.",
+      "source_url": "https://www.finextra.com/newsarticle/47253/neo-financial-raises-c685m-for-securitisation-programme?utm_medium=rssfinextra&utm_source=finextrafeed"
     },
     {
-      "flag": "\ud83c\uddea\ud83c\uddfa",
-      "type": "fundraising",
-      "company": "Axiology",
-      "description": "\u20ac5M seed funding for tokenised securities",
-      "source_url": "https://www.finextra.com/newsarticle/47248/dlt-based-capital-markets-startup-axiology-raises-5-million"
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "type": "expansion",
+      "company": "Ebanx",
+      "description": "Ebanx expands in Asia with new global CPO in Singapore.",
+      "source_url": "https://www.finextra.com/pressarticle/108760/ebanx-expands-in-asia-with-new-global-cpo-based-in-singapore?utm_medium=rssfinextra&utm_source=finextrafeed"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "bond sale",
-      "company": "Cipher",
-      "description": "$13B offers in $2B junk bond sale",
-      "source_url": "https://www.theblock.co/post/388568/ciphers-ai-subsidiary-black-pearl-compute-garners-13-billion-offers-in-2-billion-junk-bond-sale-report"
-    },
-    {
-      "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "product",
-      "company": "Revolut Business",
-      "description": "Merchant acquiring product launch in Australia",
-      "source_url": "https://www.pymnts.com/news/b2b-payments/2026/revolut-business-launches-merchant-acquiring-product-in-australia/"
+      "type": "fundraising",
+      "company": "GrubMarket",
+      "description": "GrubMarket hits $4.5B valuation with $50M Series H funding.",
+      "source_url": "https://www.pymnts.com/supply-chain/2026/grubmarket-hits-4-5-billion-valuation-as-ai-optimizes-food-supply-chain/"
     }
   ]
 }
