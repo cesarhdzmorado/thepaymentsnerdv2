@@ -1,99 +1,99 @@
 {
   "news": [
     {
-      "title": "BBVA Joins Euro Stablecoin Joint Venture, Accelerating Institutional Adoption",
-      "body": "BBVA has joined Qivalis, a bank-backed euro-denominated stablecoin joint venture, marking a significant step in stablecoin adoption by traditional banks. This involvement could accelerate stablecoin adoption in Europe, challenging non-bank stablecoin issuers.",
-      "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47251/bbva-joins-bank-backed-euro-stablecoin-joint-venture?utm_medium=rssfinextra&utm_source=finextrafeed"
-      }
-    },
-    {
-      "title": "Citi Advocates for Tokenized Deposits as Core to Global Finance",
-      "body": "Citi has advocated for tokenized deposits to become a central component of global finance, emphasizing their potential to transform on-chain settlement processes. This comes amid growing interest in blockchain technologies within the banking sector, positioning Citi as a forward-thinking leader in blockchain adoption.",
+      "title": "Goldman Sachs Utilizes AI for Accounting and Compliance",
+      "body": "Goldman Sachs is leveraging AI agents to automate accounting and compliance tasks, enhancing operational efficiency and potentially reducing costs. This strategic move positions Goldman Sachs at the forefront of AI adoption in the finance sector. The impact: payments teams must now consider how AI can streamline their operations and reduce overhead. As Goldman leads the charge, competitors may feel pressured to adopt similar technologies or risk falling behind.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/blockchain/2026/citi-argues-tokenized-deposits-belong-at-the-core-of-finance/"
+        "url": "https://www.pymnts.com/artificial-intelligence-2/2026/goldman-sachs-lets-ai-agents-do-accounting-and-compliance-work/"
       }
     },
     {
-      "title": "Truist Launches AI-Enabled Receivables Platform to Enhance Cash Management",
-      "body": "Truist Financial Corporation has introduced an AI-enabled receivables platform designed to simplify receivables management and improve cash visibility for commercial clients. This innovation could enhance Truist's value proposition, prompting competitors to innovate their receivables solutions.",
+      "title": "Visa Launches Platform for US Small Businesses",
+      "body": "Visa has launched a new platform aimed at supporting US small businesses by providing access to capital and business tools. This initiative strengthens Visa's position in the small business sector and could challenge fintech competitors. For payments professionals, this means a potential shift in how small businesses engage with payment solutions, as Visa's offering may redefine expectations for service and support. Fintechs must now innovate to keep pace with Visa's enhanced value proposition.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108750/truist-launches-ai-enabled-receivables-platform?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47262/visa-launches-platform-to-back-us-small-businesses"
       }
     },
     {
-      "title": "Remitly Cuts 110 Jobs in Israel, Streamlining Operations Amid Economic Pressures",
-      "body": "Remitly has announced the closure of its R&D hub in Israel, resulting in 110 job cuts. This decision follows the acquisition of local fintech Rewire three years ago, potentially impacting Remitly's operational capabilities and innovation pace.",
+      "title": "Circle Partners with Polymarket for Dollar-Denominated Settlements",
+      "body": "Circle has partnered with Polymarket to provide dollar-denominated settlement infrastructure for prediction markets, enhancing its position in this niche space. This partnership could increase the adoption of USDC in prediction markets. The implications for payments teams are significant, as this move signals a growing acceptance of stablecoins in diverse financial applications. As regulatory scrutiny looms, stakeholders must navigate compliance challenges to capitalize on this trend.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47261/remitly-cuts-110-jobs-in-israel?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/pressarticle/108762/circle-partners-prediction-market-polymarket"
       }
     },
     {
-      "title": "Cross River Bank Predicts Significant Growth in Embedded Finance",
-      "body": "Cross River Bank executives predict significant growth in embedded finance, with financial services increasingly integrated into consumer experiences. This trend could disrupt traditional banking models, prompting banks to innovate and collaborate with tech platforms.",
+      "title": "Ebanx Expands in Asia with New CPO",
+      "body": "Ebanx has appointed Eduardo de Abreu as Chief Product Officer to lead its expansion in Asia, strengthening its presence in the region. This move could challenge local payment providers and accelerate innovations in cross-border payments. For payments executives, this expansion highlights the competitive landscape in Asia, where local players must adapt quickly to retain market share. Ebanx's success may prompt further investment in cross-border capabilities from other fintechs.",
       "source": {
-        "name": "Banking Dive",
-        "url": "https://www.bankingdive.com/news/embedded-finance-cross-river-bank/811308/"
+        "name": "Finextra",
+        "url": "https://www.finextra.com/pressarticle/108760/ebanx-expands-in-asia-with-new-global-cpo-based-in-singapore"
+      }
+    },
+    {
+      "title": "Remitly Closes Israeli R&D Hub, Cuts Jobs",
+      "body": "Remitly is closing its Israeli R&D hub, resulting in 110 job cuts as part of a strategic shift. This decision may weaken Remitly's innovation capacity but could streamline operations and reduce costs. The impact on the remittance market could be significant, as reduced innovation may hinder Remitly's ability to compete effectively. Other players in the space should watch closely, as this could signal a trend toward consolidation and cost-cutting in the industry.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47261/remitly-cuts-110-jobs-in-israel"
       }
     }
   ],
-  "perspective": "Today's news underscores the accelerating integration of stablecoins and tokenization into mainstream finance, as evidenced by BBVA's joint venture and Citi's advocacy for tokenized deposits. Meanwhile, Truist's AI-enabled platform and Cross River Bank's predictions for embedded finance highlight the ongoing push for innovation in banking services. As fintechs like Remitly streamline operations, the competitive landscape is shifting, with traditional banks and fintechs alike racing to adapt to these emerging trends.",
+  "perspective": "Today's news underscores the growing importance of AI and embedded finance in reshaping the payments landscape. As Goldman Sachs leads the charge in automating compliance and accounting, Visa's new platform for small businesses signals a competitive response to fintechs. Meanwhile, Circle's partnership with Polymarket highlights the mainstreaming of stablecoins, while Ebanx's expansion into Asia emphasizes the need for agility in cross-border payments. The pressure is on for payments professionals to innovate or risk being left behind.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing how consumers approached payments."
   },
   "whats_hot": [
     {
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "type": "fundraising",
       "company": "Duna",
-      "description": "Business identity startup Duna raises \u20ac30M Series A led by CapitalG.",
-      "source_url": "https://www.finextra.com/newsarticle/47260/business-identity-startup-duna-raises-30m?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "description": "Business identity startup Duna raises \u20ac30m in Series A.",
+      "source_url": "https://www.finextra.com/newsarticle/47260/business-identity-startup-duna-raises-30m"
     },
     {
       "flag": "\ud83c\uddec\ud83c\udde7",
       "type": "fundraising",
       "company": "Bound",
-      "description": "FX hedging platform Bound raises $24.5M Series A for EU expansion.",
-      "source_url": "https://www.finextra.com/newsarticle/47257/fx-hedging-platform-bound-raises-245-million?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "description": "FX hedging platform Bound raises $24.5 million in Series A.",
+      "source_url": "https://www.finextra.com/newsarticle/47257/fx-hedging-platform-bound-raises-245-million"
     },
     {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "investment",
-      "company": "Anchorage Digital",
-      "description": "Anchorage Digital secures $100M investment from Tether.",
-      "source_url": "https://www.finextra.com/pressarticle/108763/anchorage-digital-secures-100m-tether-investment?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddec\ud83c\udde7",
+      "flag": "\ud83c\uddea\ud83c\uddfa",
       "type": "fundraising",
-      "company": "Apexx Global",
-      "description": "Apexx Global raises $10M for payments orchestration platform.",
-      "source_url": "https://www.finextra.com/newsarticle/47255/apexx-global-raises-10m-for-payments-orchestration-platform?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "company": "Pennylane",
+      "description": "Fintech unicorn Pennylane raises \u20ac175m at \u20ac3.6bn valuation.",
+      "source_url": "https://sifted.eu/articles/pennylane-raises-175m-series-e/"
     },
     {
-      "flag": "\ud83c\udde8\ud83c\udde6",
-      "type": "fundraising",
-      "company": "Neo Financial",
-      "description": "Neo Financial raises C$68.5M for securitisation programme.",
-      "source_url": "https://www.finextra.com/newsarticle/47253/neo-financial-raises-c685m-for-securitisation-programme?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
+      "type": "IPO",
+      "company": "Ledger",
+      "description": "Crypto unicorn Ledger preps $4bn IPO in the US.",
+      "source_url": "https://sifted.eu/articles/ledger-preps-4bn-ipo-us/"
     },
     {
       "flag": "\ud83c\udde7\ud83c\uddf7",
       "type": "expansion",
       "company": "Ebanx",
-      "description": "Ebanx expands in Asia with new global CPO in Singapore.",
-      "source_url": "https://www.finextra.com/pressarticle/108760/ebanx-expands-in-asia-with-new-global-cpo-based-in-singapore?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "description": "Ebanx expands in Asia with new global CPO based in Singapore.",
+      "source_url": "https://www.finextra.com/pressarticle/108760/ebanx-expands-in-asia-with-new-global-cpo-based-in-singapore"
+    },
+    {
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "type": "M&A",
+      "company": "Revolut",
+      "description": "Revolut in talks to buy Turkish neobank FUPS.",
+      "source_url": "https://sifted.eu/articles/revolut-turkey-acquisition/"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "GrubMarket",
-      "description": "GrubMarket hits $4.5B valuation with $50M Series H funding.",
-      "source_url": "https://www.pymnts.com/supply-chain/2026/grubmarket-hits-4-5-billion-valuation-as-ai-optimizes-food-supply-chain/"
+      "company": "Waymo",
+      "description": "Waymo leads AI-driven lineup of large financings.",
+      "source_url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-waymo-cerebras/"
     }
   ]
 }
