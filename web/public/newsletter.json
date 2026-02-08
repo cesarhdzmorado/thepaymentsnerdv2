@@ -1,99 +1,85 @@
 {
   "news": [
     {
-      "title": "Goldman Sachs Utilizes AI for Accounting and Compliance",
-      "body": "Goldman Sachs is leveraging AI agents to automate accounting and compliance tasks, enhancing operational efficiency and potentially reducing costs. This strategic move positions Goldman Sachs at the forefront of AI adoption in the finance sector. The impact: payments teams must now consider how AI can streamline their operations and reduce overhead. As Goldman leads the charge, competitors may feel pressured to adopt similar technologies or risk falling behind.",
+      "title": "Virgin Media O2 Partners with Affirm for Hardware Sales",
+      "body": "Virgin Media O2 has partnered with Affirm to provide flexible payment options for hardware purchases, allowing customers to use pay-over-time plans for items like phones and game consoles. This partnership enhances Virgin Media O2's competitive edge, potentially increasing customer acquisition and retention in the UK mobile market. For payments teams, this means a growing emphasis on embedded finance solutions as telecom providers seek to differentiate themselves. Other telecom providers may feel pressured to adopt similar BNPL solutions to remain competitive.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/artificial-intelligence-2/2026/goldman-sachs-lets-ai-agents-do-accounting-and-compliance-work/"
+        "url": "https://www.pymnts.com/partnerships/2026/virgin-media-o2-bets-on-affirm-to-fuel-hardware-sales/"
       }
     },
     {
-      "title": "Visa Launches Platform for US Small Businesses",
-      "body": "Visa has launched a new platform aimed at supporting US small businesses by providing access to capital and business tools. This initiative strengthens Visa's position in the small business sector and could challenge fintech competitors. For payments professionals, this means a potential shift in how small businesses engage with payment solutions, as Visa's offering may redefine expectations for service and support. Fintechs must now innovate to keep pace with Visa's enhanced value proposition.",
+      "title": "Gemini Exits Europe to Focus on US Prediction Markets",
+      "body": "Gemini is cutting 25% of its workforce and exiting Europe to focus on US prediction markets, a strategic shift announced by the Winklevoss twins. This move may strengthen Gemini's position in the US but leaves a gap in the European market for competitors to exploit. The impact is significant for payments professionals as it highlights the ongoing trend of fintech consolidation, with potential for increased competition in US prediction markets as European competitors capitalize on Gemini's exit.",
       "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47262/visa-launches-platform-to-back-us-small-businesses"
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/cryptocurrency/2026/gemini-slashes-staff-and-exits-europe-to-chase-prediction-market-profits/"
       }
     },
     {
-      "title": "Circle Partners with Polymarket for Dollar-Denominated Settlements",
-      "body": "Circle has partnered with Polymarket to provide dollar-denominated settlement infrastructure for prediction markets, enhancing its position in this niche space. This partnership could increase the adoption of USDC in prediction markets. The implications for payments teams are significant, as this move signals a growing acceptance of stablecoins in diverse financial applications. As regulatory scrutiny looms, stakeholders must navigate compliance challenges to capitalize on this trend.",
+      "title": "AI Personal Banking Assistant Cleo Relaunches in UK",
+      "body": "AI financial assistant Cleo is relaunching in the UK after operating in the USA since 2022, intensifying competition in the UK personal finance management space. This return could drive innovation in AI-powered financial services in the region. For payments teams, this means a heightened focus on AI-native solutions as they seek to enhance customer engagement and streamline operations. Cleo's relaunch may prompt other fintechs to innovate in personal finance management.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108762/circle-partners-prediction-market-polymarket"
+        "url": "https://www.finextra.com/newsarticle/47264/ai-personal-banking-assistant-cleo-relaunches-in-uk"
       }
     },
     {
-      "title": "Ebanx Expands in Asia with New CPO",
-      "body": "Ebanx has appointed Eduardo de Abreu as Chief Product Officer to lead its expansion in Asia, strengthening its presence in the region. This move could challenge local payment providers and accelerate innovations in cross-border payments. For payments executives, this expansion highlights the competitive landscape in Asia, where local players must adapt quickly to retain market share. Ebanx's success may prompt further investment in cross-border capabilities from other fintechs.",
+      "title": "Sberbank Prepares Crypto-Backed Loans",
+      "body": "Sberbank plans to issue loans using crypto as collateral, following a successful pilot, positioning itself as a pioneer in crypto-backed lending. This move could attract new customers and encourage other banks to explore similar financial products. The implications for payments professionals are significant, as this development aligns with the trend of stablecoins and tokenization in mainstream finance, potentially reshaping lending practices across the industry.",
       "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108760/ebanx-expands-in-asia-with-new-global-cpo-based-in-singapore"
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/388822/russias-largest-bank-prepares-to-issue-loans-using-crypto-as-collateral-report"
       }
     },
     {
-      "title": "Remitly Closes Israeli R&D Hub, Cuts Jobs",
-      "body": "Remitly is closing its Israeli R&D hub, resulting in 110 job cuts as part of a strategic shift. This decision may weaken Remitly's innovation capacity but could streamline operations and reduce costs. The impact on the remittance market could be significant, as reduced innovation may hinder Remitly's ability to compete effectively. Other players in the space should watch closely, as this could signal a trend toward consolidation and cost-cutting in the industry.",
+      "title": "Federal Reserve's 'Skinny Master Account' Proposal Sparks Debate",
+      "body": "The Federal Reserve's proposal for a 'skinny master account' has received mixed reactions from crypto and community banks, potentially democratizing access to Fed services. This could impact traditional banking models and increase competition in financial services. For payments teams, this proposal signals a shift towards open banking and financial inclusion, with the potential to reshape how smaller institutions interact with the Fed's infrastructure.",
       "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47261/remitly-cuts-110-jobs-in-israel"
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/388895/federal-reserve-skinny-master-account-proposal-comments-clashes-crypto-community-banks"
       }
     }
   ],
-  "perspective": "Today's news underscores the growing importance of AI and embedded finance in reshaping the payments landscape. As Goldman Sachs leads the charge in automating compliance and accounting, Visa's new platform for small businesses signals a competitive response to fintechs. Meanwhile, Circle's partnership with Polymarket highlights the mainstreaming of stablecoins, while Ebanx's expansion into Asia emphasizes the need for agility in cross-border payments. The pressure is on for payments professionals to innovate or risk being left behind.",
+  "perspective": "Today's stories reveal a dynamic interplay between innovation and competition in the payments landscape. The push for embedded finance solutions, as seen with Virgin Media O2 and Affirm, underscores the urgency for telecom providers to enhance customer engagement. Meanwhile, Gemini's strategic retreat from Europe highlights the consolidation trend in fintech, while Sberbank's foray into crypto-backed loans signals a potential shift in lending practices. As the Federal Reserve explores new account structures, the implications for open banking and financial inclusion are profound, suggesting a transformative year ahead for payments professionals.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing how consumers approached payments."
+    "text": "Did you know that the first ATM was installed in 1967 in London? It allowed customers to withdraw cash using a special paper voucher, marking a significant milestone in the evolution of banking technology."
   },
   "whats_hot": [
     {
-      "flag": "\ud83c\uddea\ud83c\uddfa",
-      "type": "fundraising",
-      "company": "Duna",
-      "description": "Business identity startup Duna raises \u20ac30m in Series A.",
-      "source_url": "https://www.finextra.com/newsarticle/47260/business-identity-startup-duna-raises-30m"
-    },
-    {
-      "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "fundraising",
-      "company": "Bound",
-      "description": "FX hedging platform Bound raises $24.5 million in Series A.",
-      "source_url": "https://www.finextra.com/newsarticle/47257/fx-hedging-platform-bound-raises-245-million"
-    },
-    {
-      "flag": "\ud83c\uddea\ud83c\uddfa",
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
       "type": "fundraising",
       "company": "Pennylane",
-      "description": "Fintech unicorn Pennylane raises \u20ac175m at \u20ac3.6bn valuation.",
+      "description": "raises \u20ac175m at \u20ac3.6bn valuation",
       "source_url": "https://sifted.eu/articles/pennylane-raises-175m-series-e/"
     },
     {
       "flag": "\ud83c\uddeb\ud83c\uddf7",
       "type": "IPO",
       "company": "Ledger",
-      "description": "Crypto unicorn Ledger preps $4bn IPO in the US.",
+      "description": "preps $4bn IPO in the US",
       "source_url": "https://sifted.eu/articles/ledger-preps-4bn-ipo-us/"
     },
     {
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "type": "expansion",
-      "company": "Ebanx",
-      "description": "Ebanx expands in Asia with new global CPO based in Singapore.",
-      "source_url": "https://www.finextra.com/pressarticle/108760/ebanx-expands-in-asia-with-new-global-cpo-based-in-singapore"
-    },
-    {
-      "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "M&A",
-      "company": "Revolut",
-      "description": "Revolut in talks to buy Turkish neobank FUPS.",
-      "source_url": "https://sifted.eu/articles/revolut-turkey-acquisition/"
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
+      "type": "fundraising",
+      "company": "Klearly",
+      "description": "raises \u20ac12m backed by PayPal Ventures",
+      "source_url": "https://sifted.eu/articles/klearly-fundraise/"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
       "company": "Waymo",
-      "description": "Waymo leads AI-driven lineup of large financings.",
+      "description": "leads AI-driven funding rounds",
       "source_url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-waymo-cerebras/"
+    },
+    {
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "type": "expansion",
+      "company": "Revolut",
+      "description": "in talks to buy Turkish neobank FUPS",
+      "source_url": "https://sifted.eu/articles/revolut-turkey-acquisition/"
     }
   ]
 }
