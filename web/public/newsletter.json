@@ -1,85 +1,99 @@
 {
   "news": [
     {
-      "title": "Virgin Media O2 Partners with Affirm for Hardware Sales",
-      "body": "Virgin Media O2 has partnered with Affirm to provide flexible payment options for hardware purchases, allowing customers to use pay-over-time plans for items like phones and game consoles. This partnership enhances Virgin Media O2's competitive edge, potentially increasing customer acquisition and retention in the UK mobile market. For payments teams, this means a growing emphasis on embedded finance solutions as telecom providers seek to differentiate themselves. Other telecom providers may feel pressured to adopt similar BNPL solutions to remain competitive.",
+      "title": "Visa Says Cybersecurity Decides Who Wins Digital Commerce",
+      "body": "Visa emphasized the pivotal role of cybersecurity in digital commerce, stating that effective cybersecurity is a competitive advantage as fraud scales. This means digital payment platforms and e-commerce businesses must prioritize robust cybersecurity measures to maintain market leadership. Companies that fail to invest in cybersecurity risk losing ground to competitors who do. Watch for increased investment in cybersecurity technologies and partnerships as firms seek to bolster their defenses.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/partnerships/2026/virgin-media-o2-bets-on-affirm-to-fuel-hardware-sales/"
+        "url": "https://www.pymnts.com/cybersecurity/2026/visa-says-cybersecurity-decides-who-wins-digital-commerce/"
       }
     },
     {
-      "title": "Gemini Exits Europe to Focus on US Prediction Markets",
-      "body": "Gemini is cutting 25% of its workforce and exiting Europe to focus on US prediction markets, a strategic shift announced by the Winklevoss twins. This move may strengthen Gemini's position in the US but leaves a gap in the European market for competitors to exploit. The impact is significant for payments professionals as it highlights the ongoing trend of fintech consolidation, with potential for increased competition in US prediction markets as European competitors capitalize on Gemini's exit.",
+      "title": "90% of FinTechs Offer Embedded Payments as Competition Intensifies",
+      "body": "A report reveals that 90% of fintechs now offer embedded payments, integrating financial functions into digital ecosystems to deepen customer relationships. This trend pressures traditional payment processors to innovate or partner with fintechs, as embedded payments become a key differentiator. Companies that fail to adapt may find themselves sidelined in an increasingly competitive landscape. Expect new business models and revenue streams to emerge from this shift toward embedded finance.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/cryptocurrency/2026/gemini-slashes-staff-and-exits-europe-to-chase-prediction-market-profits/"
+        "url": "https://www.pymnts.com/news/b2b-payments/2026/90-of-fintechs-offer-embedded-payments-as-competition-intensifies/"
       }
     },
     {
-      "title": "AI Personal Banking Assistant Cleo Relaunches in UK",
-      "body": "AI financial assistant Cleo is relaunching in the UK after operating in the USA since 2022, intensifying competition in the UK personal finance management space. This return could drive innovation in AI-powered financial services in the region. For payments teams, this means a heightened focus on AI-native solutions as they seek to enhance customer engagement and streamline operations. Cleo's relaunch may prompt other fintechs to innovate in personal finance management.",
+      "title": "China Extends Crypto Ban to Stablecoins and Tokenized Assets",
+      "body": "China expanded its cryptocurrency crackdown to include stablecoins and tokenized assets, citing speculative activities and risk prevention challenges. This move could shift crypto activities to jurisdictions with more favorable regulations, impacting China's fintech innovation. Companies operating in or entering the Chinese market must reassess their strategies in light of these regulatory hurdles. Watch for increased regulatory scrutiny in other regions as global crypto market dynamics shift.",
+      "source": {
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/cryptocurrency/2026/china-extends-crypto-ban-to-stablecoins-and-tokenized-assets/"
+      }
+    },
+    {
+      "title": "Payments Providers Ink MoU to Drive 'Sovereign' Pan-European Payments",
+      "body": "The European Payments Initiative signed an MoU with other providers to accelerate the rollout of pan-European payment options, aiming for sovereignty in payments. This could reshape the competitive landscape in Europe by reducing reliance on non-European payment systems. Banks and payment providers must prepare for increased collaboration and innovation as they navigate this new landscape. Watch for potential technical and regulatory hurdles that could challenge the initiative's success.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47264/ai-personal-banking-assistant-cleo-relaunches-in-uk"
+        "url": "https://www.finextra.com/newsarticle/47266/payments-providers-ink-mou-to-drive-sovereign-pan-european-payments"
       }
     },
     {
-      "title": "Sberbank Prepares Crypto-Backed Loans",
-      "body": "Sberbank plans to issue loans using crypto as collateral, following a successful pilot, positioning itself as a pioneer in crypto-backed lending. This move could attract new customers and encourage other banks to explore similar financial products. The implications for payments professionals are significant, as this development aligns with the trend of stablecoins and tokenization in mainstream finance, potentially reshaping lending practices across the industry.",
+      "title": "Jack Dorsey\u2019s Block Looking to Cut Up to 10% of Workforce in Latest Efficiency Push",
+      "body": "Block, led by Jack Dorsey, plans to reduce its workforce by up to 10% as part of an efficiency drive, following previous layoffs. This could improve profitability but may impact innovation and employee morale, affecting Block's competitive position. Other fintech companies may follow suit with similar efficiency measures, reshaping the industry's talent landscape. Watch for how these workforce reductions influence innovation and growth opportunities in the sector.",
       "source": {
         "name": "The Block",
-        "url": "https://www.theblock.co/post/388822/russias-largest-bank-prepares-to-issue-loans-using-crypto-as-collateral-report"
-      }
-    },
-    {
-      "title": "Federal Reserve's 'Skinny Master Account' Proposal Sparks Debate",
-      "body": "The Federal Reserve's proposal for a 'skinny master account' has received mixed reactions from crypto and community banks, potentially democratizing access to Fed services. This could impact traditional banking models and increase competition in financial services. For payments teams, this proposal signals a shift towards open banking and financial inclusion, with the potential to reshape how smaller institutions interact with the Fed's infrastructure.",
-      "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/388895/federal-reserve-skinny-master-account-proposal-comments-clashes-crypto-community-banks"
+        "url": "https://www.theblock.co/post/388971/jack-dorseys-block-reportedly-cutting-up-to-10-of-workforce-in-latest-efficiency-push-bloomberg"
       }
     }
   ],
-  "perspective": "Today's stories reveal a dynamic interplay between innovation and competition in the payments landscape. The push for embedded finance solutions, as seen with Virgin Media O2 and Affirm, underscores the urgency for telecom providers to enhance customer engagement. Meanwhile, Gemini's strategic retreat from Europe highlights the consolidation trend in fintech, while Sberbank's foray into crypto-backed loans signals a potential shift in lending practices. As the Federal Reserve explores new account structures, the implications for open banking and financial inclusion are profound, suggesting a transformative year ahead for payments professionals.",
+  "perspective": "Today's stories highlight the critical intersection of cybersecurity, embedded finance, and regulatory challenges shaping the payments landscape. As Visa underscores the importance of cybersecurity, fintechs rush to embed payments, while regulatory crackdowns in China signal a tightening grip on crypto. The competitive dynamics are shifting, with companies needing to innovate or risk being left behind in a rapidly evolving market.",
   "curiosity": {
-    "text": "Did you know that the first ATM was installed in 1967 in London? It allowed customers to withdraw cash using a special paper voucher, marking a significant milestone in the evolution of banking technology."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing how people made payments."
   },
   "whats_hot": [
     {
-      "flag": "\ud83c\uddeb\ud83c\uddf7",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "Pennylane",
-      "description": "raises \u20ac175m at \u20ac3.6bn valuation",
-      "source_url": "https://sifted.eu/articles/pennylane-raises-175m-series-e/"
-    },
-    {
-      "flag": "\ud83c\uddeb\ud83c\uddf7",
-      "type": "IPO",
-      "company": "Ledger",
-      "description": "preps $4bn IPO in the US",
-      "source_url": "https://sifted.eu/articles/ledger-preps-4bn-ipo-us/"
-    },
-    {
-      "flag": "\ud83c\uddeb\ud83c\uddf7",
-      "type": "fundraising",
-      "company": "Klearly",
-      "description": "raises \u20ac12m backed by PayPal Ventures",
-      "source_url": "https://sifted.eu/articles/klearly-fundraise/"
+      "company": "Anthropic",
+      "description": "Concluding $20 billion funding round.",
+      "source_url": "https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-days-away-from-concluding-20-billion-funding-round/"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "expansion",
+      "company": "Erebor",
+      "description": "First bank chartered under new administration.",
+      "source_url": "https://www.pymnts.com/news/banking/2026/erebor-becomes-first-bank-okd-under-new-administration/"
+    },
+    {
+      "flag": "\ud83c\uddea\ud83c\uddfa",
       "type": "fundraising",
-      "company": "Waymo",
-      "description": "leads AI-driven funding rounds",
-      "source_url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-waymo-cerebras/"
+      "company": "Duna",
+      "description": "Raises \u20ac30 million for business identity solutions.",
+      "source_url": "https://www.finextra.com/newsarticle/47260/business-identity-startup-duna-raises-30m"
     },
     {
       "flag": "\ud83c\uddec\ud83c\udde7",
       "type": "expansion",
       "company": "Revolut",
-      "description": "in talks to buy Turkish neobank FUPS",
-      "source_url": "https://sifted.eu/articles/revolut-turkey-acquisition/"
+      "description": "Investing $400 million in Australian operations.",
+      "source_url": "https://www.finextra.com/newsarticle/47269/revolut-to-invest-400-million-in-australian-business"
+    },
+    {
+      "flag": "\ud83c\udded\ud83c\uddf0",
+      "type": "expansion",
+      "company": "Tether",
+      "description": "Plans to add 150 staff over 18 months.",
+      "source_url": "https://www.theblock.co/post/388984/tether-to-add-staff"
+    },
+    {
+      "flag": "\ud83c\udde6\ud83c\uddea",
+      "type": "product",
+      "company": "Al Fardan Group",
+      "description": "Launches cross-border money transmission subsidiary.",
+      "source_url": "https://www.finextra.com/pressarticle/108769/al-fardan-group-launches-cross-border-money-transmission-subsidiary"
+    },
+    {
+      "flag": "\ud83c\uddea\ud83c\uddfa",
+      "type": "fundraising",
+      "company": "Axiology",
+      "description": "Raises \u20ac5 million for DLT-based capital markets platform.",
+      "source_url": "https://www.finextra.com/newsarticle/47248/dlt-based-capital-markets-startup-axiology-raises-5-million"
     }
   ]
 }
