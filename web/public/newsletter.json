@@ -1,99 +1,85 @@
 {
   "news": [
     {
-      "title": "Visa Says Cybersecurity Decides Who Wins Digital Commerce",
-      "body": "Visa emphasized the pivotal role of cybersecurity in digital commerce, stating that effective cybersecurity is a competitive advantage as fraud scales. This means digital payment platforms and e-commerce businesses must prioritize robust cybersecurity measures to maintain market leadership. Companies that fail to invest in cybersecurity risk losing ground to competitors who do. Watch for increased investment in cybersecurity technologies and partnerships as firms seek to bolster their defenses.",
-      "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/cybersecurity/2026/visa-says-cybersecurity-decides-who-wins-digital-commerce/"
-      }
-    },
-    {
-      "title": "90% of FinTechs Offer Embedded Payments as Competition Intensifies",
-      "body": "A report reveals that 90% of fintechs now offer embedded payments, integrating financial functions into digital ecosystems to deepen customer relationships. This trend pressures traditional payment processors to innovate or partner with fintechs, as embedded payments become a key differentiator. Companies that fail to adapt may find themselves sidelined in an increasingly competitive landscape. Expect new business models and revenue streams to emerge from this shift toward embedded finance.",
-      "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/news/b2b-payments/2026/90-of-fintechs-offer-embedded-payments-as-competition-intensifies/"
-      }
-    },
-    {
-      "title": "China Extends Crypto Ban to Stablecoins and Tokenized Assets",
-      "body": "China expanded its cryptocurrency crackdown to include stablecoins and tokenized assets, citing speculative activities and risk prevention challenges. This move could shift crypto activities to jurisdictions with more favorable regulations, impacting China's fintech innovation. Companies operating in or entering the Chinese market must reassess their strategies in light of these regulatory hurdles. Watch for increased regulatory scrutiny in other regions as global crypto market dynamics shift.",
-      "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/cryptocurrency/2026/china-extends-crypto-ban-to-stablecoins-and-tokenized-assets/"
-      }
-    },
-    {
-      "title": "Payments Providers Ink MoU to Drive 'Sovereign' Pan-European Payments",
-      "body": "The European Payments Initiative signed an MoU with other providers to accelerate the rollout of pan-European payment options, aiming for sovereignty in payments. This could reshape the competitive landscape in Europe by reducing reliance on non-European payment systems. Banks and payment providers must prepare for increased collaboration and innovation as they navigate this new landscape. Watch for potential technical and regulatory hurdles that could challenge the initiative's success.",
+      "title": "CFTC Allows National Trust Banks to Issue Stablecoins, Leveling the Playing Field",
+      "body": "The CFTC has revised rules to permit national trust banks to issue stablecoins, marking a significant regulatory shift that could level the playing field between traditional banks and fintechs. This change may accelerate stablecoin adoption and integration into mainstream financial services.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47266/payments-providers-ink-mou-to-drive-sovereign-pan-european-payments"
+        "url": "https://www.finextra.com/pressarticle/108780/cftc-changes-rules-to-allow-national-trust-banks-to-issue-stablecoins"
       }
     },
     {
-      "title": "Jack Dorsey\u2019s Block Looking to Cut Up to 10% of Workforce in Latest Efficiency Push",
-      "body": "Block, led by Jack Dorsey, plans to reduce its workforce by up to 10% as part of an efficiency drive, following previous layoffs. This could improve profitability but may impact innovation and employee morale, affecting Block's competitive position. Other fintech companies may follow suit with similar efficiency measures, reshaping the industry's talent landscape. Watch for how these workforce reductions influence innovation and growth opportunities in the sector.",
+      "title": "Mastercard Tightens Rules for BIN Sponsors, Impacting FinTech Card Issuers",
+      "body": "Mastercard has introduced stricter regulations for BIN sponsors that support fintech card issuers to ensure compliance and mitigate risks. This move affects fintech companies relying on these sponsors and may lead to increased operational costs, benefiting larger, compliant players in the market.",
       "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/388971/jack-dorseys-block-reportedly-cutting-up-to-10-of-workforce-in-latest-efficiency-push-bloomberg"
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/mastercard/2026/mastercard-tightens-rules-for-bin-sponsors-that-support-fintech-card-issuers/"
+      }
+    },
+    {
+      "title": "Payments Orchestration Becomes a Profit Center, Driving M&A Activity",
+      "body": "Payments orchestration is evolving into a strategic profit center, impacting revenue and transaction speed for merchants and payment service providers. Companies optimizing this area will gain a competitive edge, potentially leading to increased investment and M&A activity.",
+      "source": {
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/news/payment-methods/2026/payments-orchestration-becomes-a-profit-center/"
+      }
+    },
+    {
+      "title": "Gemini Exits UK, EU, and Australia, Allowing Competitors to Capture Market Share",
+      "body": "Crypto exchange Gemini is exiting the UK, EU, and Australia, laying off a quarter of its workforce due to a global crypto market downturn. This exit may allow competitors to capture Gemini's market share in these regions, strengthening their positions.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47270/gemini-retrenches-during-crypto-downturn-exits-uk-eu-and-aus"
+      }
+    },
+    {
+      "title": "Revolut to Invest $400 Million in Australian Expansion, Disrupting Local Market",
+      "body": "Revolut plans to invest $400 million in its Australian operations over the next five years, following significant customer growth. This investment could disrupt the Australian market, challenging traditional banks and fintechs with innovative services.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47269/revolut-to-invest-400-million-in-australian-business"
       }
     }
   ],
-  "perspective": "Today's stories highlight the critical intersection of cybersecurity, embedded finance, and regulatory challenges shaping the payments landscape. As Visa underscores the importance of cybersecurity, fintechs rush to embed payments, while regulatory crackdowns in China signal a tightening grip on crypto. The competitive dynamics are shifting, with companies needing to innovate or risk being left behind in a rapidly evolving market.",
+  "perspective": "Today's news underscores the intensifying regulatory landscape and its implications for both traditional banks and fintechs. The CFTC's decision to allow national trust banks to issue stablecoins could catalyze mainstream adoption, while Mastercard's tightened rules for BIN sponsors signal a shift towards compliance as a competitive differentiator. As companies like Revolut aggressively expand, the pressure mounts on smaller fintechs to innovate or risk being sidelined.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing how people made payments."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
   },
   "whats_hot": [
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "Anthropic",
-      "description": "Concluding $20 billion funding round.",
-      "source_url": "https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-days-away-from-concluding-20-billion-funding-round/"
+      "company": "Givefront",
+      "description": "Raised $2M to build a fintech for nonprofits",
+      "source_url": "https://techcrunch.com/2025/12/18/these-21-year-old-dropouts-raised-2m-to-build-givefront-a-fintech-for-nonprofits/"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "expansion",
-      "company": "Erebor",
-      "description": "First bank chartered under new administration.",
-      "source_url": "https://www.pymnts.com/news/banking/2026/erebor-becomes-first-bank-okd-under-new-administration/"
-    },
-    {
-      "flag": "\ud83c\uddea\ud83c\uddfa",
       "type": "fundraising",
-      "company": "Duna",
-      "description": "Raises \u20ac30 million for business identity solutions.",
-      "source_url": "https://www.finextra.com/newsarticle/47260/business-identity-startup-duna-raises-30m"
+      "company": "Backpack",
+      "description": "Reaches $1B unicorn valuation on tokenization push",
+      "source_url": "https://www.theblock.co/post/389141/backpack-exchange-1-billion-unicorn-valuation-tokenization-push-axios"
     },
     {
-      "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "expansion",
-      "company": "Revolut",
-      "description": "Investing $400 million in Australian operations.",
-      "source_url": "https://www.finextra.com/newsarticle/47269/revolut-to-invest-400-million-in-australian-business"
-    },
-    {
-      "flag": "\ud83c\udded\ud83c\uddf0",
-      "type": "expansion",
-      "company": "Tether",
-      "description": "Plans to add 150 staff over 18 months.",
-      "source_url": "https://www.theblock.co/post/388984/tether-to-add-staff"
-    },
-    {
-      "flag": "\ud83c\udde6\ud83c\uddea",
-      "type": "product",
-      "company": "Al Fardan Group",
-      "description": "Launches cross-border money transmission subsidiary.",
-      "source_url": "https://www.finextra.com/pressarticle/108769/al-fardan-group-launches-cross-border-money-transmission-subsidiary"
-    },
-    {
-      "flag": "\ud83c\uddea\ud83c\uddfa",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "Axiology",
-      "description": "Raises \u20ac5 million for DLT-based capital markets platform.",
-      "source_url": "https://www.finextra.com/newsarticle/47248/dlt-based-capital-markets-startup-axiology-raises-5-million"
+      "company": "Numeral",
+      "description": "Raises $35M to automate sales tax with AI",
+      "source_url": "https://techcrunch.com/2025/09/18/numeral-raises-35m-to-automate-sales-tax-with-ai/"
+    },
+    {
+      "flag": "\ud83c\uddf8\ud83c\uddea",
+      "type": "fundraising",
+      "company": "Froda",
+      "description": "Secures $23M Series B for debt financing platform",
+      "source_url": "https://techcrunch.com/2025/04/23/froda-secures-23m-series-b-for-its-debt-financing-platform-for-smes/"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "fundraising",
+      "company": "Alpaca",
+      "description": "Raises $52M Series C to expand API brokerage platform",
+      "source_url": "https://techcrunch.com/2025/04/23/alpaca-a-developer-of-api-brokerage-platform-raises-52m-in-series-c/"
     }
   ]
 }
