@@ -1,85 +1,85 @@
 {
   "news": [
     {
-      "title": "CFTC Allows National Trust Banks to Issue Stablecoins, Leveling the Playing Field",
-      "body": "The CFTC has revised rules to permit national trust banks to issue stablecoins, marking a significant regulatory shift that could level the playing field between traditional banks and fintechs. This change may accelerate stablecoin adoption and integration into mainstream financial services.",
+      "title": "Amazon Launches Pay by Bank in the UK, Challenging Traditional Payment Methods",
+      "body": "Amazon has introduced a 'Pay by Bank' feature in the UK, allowing customers to make purchases and set up Prime memberships through direct connections to their bank accounts. This move pressures competitors to offer similar payment options, aligning with the trend of embedded finance and reducing reliance on traditional card networks. As a result, payment processors may need to adapt their strategies to accommodate this shift towards bank-linked payments.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108780/cftc-changes-rules-to-allow-national-trust-banks-to-issue-stablecoins"
+        "url": "https://www.finextra.com/newsarticle/47275/amazon-rolls-out-pay-by-bank-in-the-uk?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Mastercard Tightens Rules for BIN Sponsors, Impacting FinTech Card Issuers",
-      "body": "Mastercard has introduced stricter regulations for BIN sponsors that support fintech card issuers to ensure compliance and mitigate risks. This move affects fintech companies relying on these sponsors and may lead to increased operational costs, benefiting larger, compliant players in the market.",
+      "title": "UK's New BNPL Affordability Checks Signal Regulatory Shift in Consumer Protection",
+      "body": "The UK's Financial Conduct Authority (FCA) announced new consumer protections for Buy Now, Pay Later (BNPL) services, effective July 15, 2026. This regulatory move compels BNPL providers to adjust their business models, potentially increasing operational costs and reflecting a broader trend towards safeguarding in the payments industry. Smaller players may struggle to comply, leading to consolidation in the sector as larger firms adapt more easily.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/mastercard/2026/mastercard-tightens-rules-for-bin-sponsors-that-support-fintech-card-issuers/"
+        "url": "https://www.pymnts.com/buy-now-pay-later/2026/united-kingdom-unveils-new-affordability-checks-bnpl-customers/"
       }
     },
     {
-      "title": "Payments Orchestration Becomes a Profit Center, Driving M&A Activity",
-      "body": "Payments orchestration is evolving into a strategic profit center, impacting revenue and transaction speed for merchants and payment service providers. Companies optimizing this area will gain a competitive edge, potentially leading to increased investment and M&A activity.",
+      "title": "Stripe's USDC Integration on Base Enhances Crypto Payment Capabilities",
+      "body": "Stripe has launched x402-based USDC agent payments on Base, enhancing its crypto payment capabilities and challenging traditional payment processors. This integration signifies a step towards mainstream adoption of stablecoins, as it allows businesses to accept USDC more seamlessly. The move may accelerate discussions around regulatory frameworks for stablecoins, impacting how payment systems evolve in the coming years.",
       "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/news/payment-methods/2026/payments-orchestration-becomes-a-profit-center/"
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/389352/stripe-adds-x402-integration-usdc-agent-payments?utm_source=rss&utm_medium=rss"
       }
     },
     {
-      "title": "Gemini Exits UK, EU, and Australia, Allowing Competitors to Capture Market Share",
-      "body": "Crypto exchange Gemini is exiting the UK, EU, and Australia, laying off a quarter of its workforce due to a global crypto market downturn. This exit may allow competitors to capture Gemini's market share in these regions, strengthening their positions.",
-      "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47270/gemini-retrenches-during-crypto-downturn-exits-uk-eu-and-aus"
-      }
-    },
-    {
-      "title": "Revolut to Invest $400 Million in Australian Expansion, Disrupting Local Market",
-      "body": "Revolut plans to invest $400 million in its Australian operations over the next five years, following significant customer growth. This investment could disrupt the Australian market, challenging traditional banks and fintechs with innovative services.",
+      "title": "MoonPay Partners with Deel to Enable Stablecoin Salary Payments",
+      "body": "MoonPay has partnered with Deel to facilitate stablecoin salary payments, expanding its crypto payment infrastructure and challenging traditional salary payment methods. This partnership enhances MoonPay's position in the payroll sector and reflects the growing trend of stablecoins integrating into everyday financial transactions. As adoption increases, it could influence tax and regulatory policies surrounding payroll practices.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47269/revolut-to-invest-400-million-in-australian-business"
+        "url": "https://www.finextra.com/pressarticle/108800/deel-checks-in-with-moonpay-for-stablecoin-salary-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
+      }
+    },
+    {
+      "title": "Betterment Data Breach Highlights Need for Enhanced Cybersecurity Measures",
+      "body": "A data breach at Betterment has potentially compromised the personal information of 1.4 million customers, raising concerns about operational resilience in fintech. This incident may damage Betterment's reputation and benefit competitors, while also prompting increased investment in cybersecurity across the financial sector. The breach underscores the critical importance of safeguarding customer data in an increasingly digital landscape.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47278/betterment-data-breach-exposes-14-million-accounts?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     }
   ],
-  "perspective": "Today's news underscores the intensifying regulatory landscape and its implications for both traditional banks and fintechs. The CFTC's decision to allow national trust banks to issue stablecoins could catalyze mainstream adoption, while Mastercard's tightened rules for BIN sponsors signal a shift towards compliance as a competitive differentiator. As companies like Revolut aggressively expand, the pressure mounts on smaller fintechs to innovate or risk being sidelined.",
+  "perspective": "Today's stories reveal a clear trend towards the integration of stablecoins and bank-linked payments into mainstream financial practices. Amazon's 'Pay by Bank' feature and Stripe's USDC integration signal a shift in how consumers interact with payment systems, while regulatory developments in the BNPL space and the Betterment breach highlight the growing importance of compliance and cybersecurity. As these dynamics unfold, payments professionals must adapt their strategies to stay competitive in an evolving landscape.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
+    "text": "Did you know that the first electronic funds transfer (EFT) system was introduced in 1970 by the Bank of America? It allowed customers to transfer money electronically, paving the way for modern digital payment systems we rely on today."
   },
   "whats_hot": [
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "Givefront",
-      "description": "Raised $2M to build a fintech for nonprofits",
-      "source_url": "https://techcrunch.com/2025/12/18/these-21-year-old-dropouts-raised-2m-to-build-givefront-a-fintech-for-nonprofits/"
+      "company": "Runway",
+      "description": "Raised $315M Series E at $5.3B valuation.",
+      "source_url": "https://news.crunchbase.com/venture/gen-ai-video-startup-unicorn-runway-seriese-raise/"
+    },
+    {
+      "flag": "\ud83c\uddea\ud83c\uddfa",
+      "type": "fundraising",
+      "company": "Porters",
+      "description": "Secured \u20ac2.7M pre-seed for AI-native backoffice.",
+      "source_url": "https://www.finextra.com/newsarticle/47254/porters-raises-27m-to-build-ai-native-backoffice?utm_medium=rssfinextra&utm_source=finextrafeed"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Backpack",
-      "description": "Reaches $1B unicorn valuation on tokenization push",
-      "source_url": "https://www.theblock.co/post/389141/backpack-exchange-1-billion-unicorn-valuation-tokenization-push-axios"
+      "type": "partnership",
+      "company": "MoonPay",
+      "description": "Partners with Deel for stablecoin salary payments.",
+      "source_url": "https://www.finextra.com/pressarticle/108800/deel-checks-in-with-moonpay-for-stablecoin-salary-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Numeral",
-      "description": "Raises $35M to automate sales tax with AI",
-      "source_url": "https://techcrunch.com/2025/09/18/numeral-raises-35m-to-automate-sales-tax-with-ai/"
-    },
-    {
-      "flag": "\ud83c\uddf8\ud83c\uddea",
-      "type": "fundraising",
-      "company": "Froda",
-      "description": "Secures $23M Series B for debt financing platform",
-      "source_url": "https://techcrunch.com/2025/04/23/froda-secures-23m-series-b-for-its-debt-financing-platform-for-smes/"
+      "type": "product",
+      "company": "Interactive Brokers",
+      "description": "Launches nano Bitcoin, Ether futures via Coinbase.",
+      "source_url": "https://www.finextra.com/pressarticle/108801/interactive-brokers-launches-coinbase-derivatives?utm_medium=rssfinextra&utm_source=finextrafeed"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Alpaca",
-      "description": "Raises $52M Series C to expand API brokerage platform",
-      "source_url": "https://techcrunch.com/2025/04/23/alpaca-a-developer-of-api-brokerage-platform-raises-52m-in-series-c/"
+      "type": "product",
+      "company": "Amazon",
+      "description": "Rolls out Pay by Bank in the UK.",
+      "source_url": "https://www.finextra.com/newsarticle/47275/amazon-rolls-out-pay-by-bank-in-the-uk?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   ]
 }
