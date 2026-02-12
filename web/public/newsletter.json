@@ -1,85 +1,85 @@
 {
   "news": [
     {
-      "title": "Amazon Launches Pay by Bank in the UK, Challenging Traditional Payment Methods",
-      "body": "Amazon has introduced a 'Pay by Bank' feature in the UK, allowing customers to make purchases and set up Prime memberships through direct connections to their bank accounts. This move pressures competitors to offer similar payment options, aligning with the trend of embedded finance and reducing reliance on traditional card networks. As a result, payment processors may need to adapt their strategies to accommodate this shift towards bank-linked payments.",
+      "title": "European Parliament Backs Digital Euro Initiative to Modernize Payments",
+      "body": "The European Parliament supports the development of a digital euro to modernize the EU's monetary system and enhance digital payment capabilities. This initiative will benefit European financial institutions and consumers while increasing competition for traditional banks. The introduction of a digital euro could shift market power towards digital payment providers and fintechs.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47275/amazon-rolls-out-pay-by-bank-in-the-uk?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47289/european-parliament-backs-online-and-off-line-digital-euro?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "UK's New BNPL Affordability Checks Signal Regulatory Shift in Consumer Protection",
-      "body": "The UK's Financial Conduct Authority (FCA) announced new consumer protections for Buy Now, Pay Later (BNPL) services, effective July 15, 2026. This regulatory move compels BNPL providers to adjust their business models, potentially increasing operational costs and reflecting a broader trend towards safeguarding in the payments industry. Smaller players may struggle to comply, leading to consolidation in the sector as larger firms adapt more easily.",
-      "source": {
-        "name": "PYMNTS",
-        "url": "https://www.pymnts.com/buy-now-pay-later/2026/united-kingdom-unveils-new-affordability-checks-bnpl-customers/"
-      }
-    },
-    {
-      "title": "Stripe's USDC Integration on Base Enhances Crypto Payment Capabilities",
-      "body": "Stripe has launched x402-based USDC agent payments on Base, enhancing its crypto payment capabilities and challenging traditional payment processors. This integration signifies a step towards mainstream adoption of stablecoins, as it allows businesses to accept USDC more seamlessly. The move may accelerate discussions around regulatory frameworks for stablecoins, impacting how payment systems evolve in the coming years.",
+      "title": "Zerohash Expands USDC Payments with Monad Support for Enhanced Interoperability",
+      "body": "Zerohash has added support for the Monad blockchain, enabling USDC stablecoin payments on its platform. This expansion enhances crypto payment capabilities and interoperability, benefiting Zerohash users and partners. It could attract more users seeking stablecoin payment solutions.",
       "source": {
         "name": "The Block",
-        "url": "https://www.theblock.co/post/389352/stripe-adds-x402-integration-usdc-agent-payments?utm_source=rss&utm_medium=rss"
+        "url": "https://www.theblock.co/post/389531/zerohash-monad-usdc-stablecoin-payments?utm_source=rss&utm_medium=rss"
       }
     },
     {
-      "title": "MoonPay Partners with Deel to Enable Stablecoin Salary Payments",
-      "body": "MoonPay has partnered with Deel to facilitate stablecoin salary payments, expanding its crypto payment infrastructure and challenging traditional salary payment methods. This partnership enhances MoonPay's position in the payroll sector and reflects the growing trend of stablecoins integrating into everyday financial transactions. As adoption increases, it could influence tax and regulatory policies surrounding payroll practices.",
+      "title": "NCUA Proposes Stablecoin Issuer Rules to Ensure Market Compliance",
+      "body": "The National Credit Union Administration has proposed new rules for stablecoin issuers to ensure compliance and stability in the market. This initiative affects stablecoin issuers, credit unions, and consumers using stablecoins. Regulatory clarity could encourage more issuers to enter the market, increasing competition.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108800/deel-checks-in-with-moonpay-for-stablecoin-salary-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/pressarticle/108814/ncua-proposes-rules-for-permitted-stablecoin-issuers?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Betterment Data Breach Highlights Need for Enhanced Cybersecurity Measures",
-      "body": "A data breach at Betterment has potentially compromised the personal information of 1.4 million customers, raising concerns about operational resilience in fintech. This incident may damage Betterment's reputation and benefit competitors, while also prompting increased investment in cybersecurity across the financial sector. The breach underscores the critical importance of safeguarding customer data in an increasingly digital landscape.",
+      "title": "Paxful Fined $4 Million for AML Failures Amid Regulatory Scrutiny",
+      "body": "Paxful has been fined $4 million for inadequate anti-money laundering controls that allegedly facilitated criminal activities, highlighting regulatory challenges in the crypto sector. This enforcement action affects Paxful and other crypto platforms facing increased scrutiny. The fine may pressure crypto platforms to enhance compliance measures.",
       "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47278/betterment-data-breach-exposes-14-million-accounts?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "name": "The Block",
+        "url": "https://www.theblock.co/post/389518/paxful-crypto-platform-fined-4-million-prosecutors-say-profited-moving-money-criminals?utm_source=rss&utm_medium=rss"
+      }
+    },
+    {
+      "title": "Salesforce Acquires Cimulate to Boost AI Commerce Capabilities",
+      "body": "Salesforce has acquired Cimulate to enhance its Agentforce Commerce platform with AI-driven product discovery capabilities. This acquisition benefits Salesforce and its customers while challenging competitors in the AI-driven commerce space. It strengthens Salesforce's position in AI commerce, prompting rivals to enhance their own offerings.",
+      "source": {
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/acquisitions/2026/salesforce-advances-ai-expansion-with-cimulate-deal/"
       }
     }
   ],
-  "perspective": "Today's stories reveal a clear trend towards the integration of stablecoins and bank-linked payments into mainstream financial practices. Amazon's 'Pay by Bank' feature and Stripe's USDC integration signal a shift in how consumers interact with payment systems, while regulatory developments in the BNPL space and the Betterment breach highlight the growing importance of compliance and cybersecurity. As these dynamics unfold, payments professionals must adapt their strategies to stay competitive in an evolving landscape.",
+  "perspective": "Today's developments underscore the accelerating integration of stablecoins and regulatory frameworks into mainstream financial systems. The European Parliament's backing of the digital euro and the NCUA's proposed rules for stablecoin issuers signal a pivotal moment for digital currencies, enhancing compliance and competition. Meanwhile, Zerohash's expansion into USDC payments and Paxful's regulatory challenges highlight the urgent need for robust compliance measures in the evolving crypto landscape.",
   "curiosity": {
-    "text": "Did you know that the first electronic funds transfer (EFT) system was introduced in 1970 by the Bank of America? It allowed customers to transfer money electronically, paving the way for modern digital payment systems we rely on today."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
   },
   "whats_hot": [
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
+      "company": "Levl",
+      "description": "Raised $7M to bridge traditional banking and stablecoin payments",
+      "source_url": "https://www.finextra.com/newsarticle/47291/levl-raises-7m-to-bridge-traditional-banking-and-stablecoin-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "M&A",
+      "company": "Rezolve Ai",
+      "description": "Acquired Reward for $230M to enhance AI-driven commerce",
+      "source_url": "https://www.finextra.com/pressarticle/108808/rezolve-ai-acquires-reward-for-230m?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    {
+      "flag": "\ud83c\uddee\ud83c\uddf1",
+      "type": "fundraising",
+      "company": "Winn.AI",
+      "description": "Raised $18M Series A for AI-powered sales assistant",
+      "source_url": "https://news.crunchbase.com/venture/startup-winn-ai-seriesa-real-time-assistant/"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "fundraising",
       "company": "Runway",
-      "description": "Raised $315M Series E at $5.3B valuation.",
+      "description": "Raised $315M Series E for AI video technology",
       "source_url": "https://news.crunchbase.com/venture/gen-ai-video-startup-unicorn-runway-seriese-raise/"
     },
     {
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "type": "fundraising",
       "company": "Porters",
-      "description": "Secured \u20ac2.7M pre-seed for AI-native backoffice.",
+      "description": "Secured \u20ac2.7M to build AI-native backoffice",
       "source_url": "https://www.finextra.com/newsarticle/47254/porters-raises-27m-to-build-ai-native-backoffice?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "partnership",
-      "company": "MoonPay",
-      "description": "Partners with Deel for stablecoin salary payments.",
-      "source_url": "https://www.finextra.com/pressarticle/108800/deel-checks-in-with-moonpay-for-stablecoin-salary-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "product",
-      "company": "Interactive Brokers",
-      "description": "Launches nano Bitcoin, Ether futures via Coinbase.",
-      "source_url": "https://www.finextra.com/pressarticle/108801/interactive-brokers-launches-coinbase-derivatives?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "product",
-      "company": "Amazon",
-      "description": "Rolls out Pay by Bank in the UK.",
-      "source_url": "https://www.finextra.com/newsarticle/47275/amazon-rolls-out-pay-by-bank-in-the-uk?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   ]
 }
