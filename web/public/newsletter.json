@@ -1,85 +1,92 @@
 {
   "news": [
     {
-      "title": "European Parliament Backs Digital Euro Initiative to Modernize Payments",
-      "body": "The European Parliament supports the development of a digital euro to modernize the EU's monetary system and enhance digital payment capabilities. This initiative will benefit European financial institutions and consumers while increasing competition for traditional banks. The introduction of a digital euro could shift market power towards digital payment providers and fintechs.",
+      "title": "Coinbase Unveils Agentic Wallets for AI-Driven Transactions",
+      "body": "Coinbase has launched a new cryptocurrency wallet infrastructure designed for AI agents, enabling autonomous transactions. This development affects crypto users, AI developers, and fintech companies, as Coinbase strengthens its position in the AI-driven fintech space, potentially challenging other platforms to innovate. Increased adoption of AI-driven wallets could lead to new regulatory considerations and standards for AI transactions. While AI wallets are innovative, their success depends on user trust and regulatory acceptance, which may take time to develop.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47300/coinbase-unveils-agentic-wallets?utm_medium=rssfinextra&utm_source=finextrafeed"
+      }
+    },
+    {
+      "title": "Google Introduces Agentic Shopping in AI Search",
+      "body": "Google has rolled out agentic commerce technology, allowing US shoppers to purchase items directly through AI-enhanced search results. This move affects e-commerce platforms and consumers, potentially disrupting traditional e-commerce by shifting interactions to AI-driven environments. The potential for increased AI adoption in retail could lead to new business models and consumer behavior patterns. While promising, the success of agentic shopping relies on consumer adaptation to AI interfaces, which may face resistance.",
+      "source": {
+        "name": "Finextra",
+        "url": "https://www.finextra.com/newsarticle/47299/google-brings-agentic-shopping-to-ai-search?utm_medium=rssfinextra&utm_source=finextrafeed"
+      }
+    },
+    {
+      "title": "European Parliament Supports Digital Euro Development",
+      "body": "The European Parliament has endorsed the development of a digital euro, supporting online and offline functionalities to enhance the EU's financial infrastructure. This affects EU financial institutions and consumers, potentially reshaping the financial landscape and encouraging innovation. Successful implementation could lead to increased digital currency adoption across Europe, impacting global financial markets. While promising, the digital euro's success depends on addressing privacy and security concerns.",
       "source": {
         "name": "Finextra",
         "url": "https://www.finextra.com/newsarticle/47289/european-parliament-backs-online-and-off-line-digital-euro?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Zerohash Expands USDC Payments with Monad Support for Enhanced Interoperability",
-      "body": "Zerohash has added support for the Monad blockchain, enabling USDC stablecoin payments on its platform. This expansion enhances crypto payment capabilities and interoperability, benefiting Zerohash users and partners. It could attract more users seeking stablecoin payment solutions.",
-      "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/389531/zerohash-monad-usdc-stablecoin-payments?utm_source=rss&utm_medium=rss"
-      }
-    },
-    {
-      "title": "NCUA Proposes Stablecoin Issuer Rules to Ensure Market Compliance",
-      "body": "The National Credit Union Administration has proposed new rules for stablecoin issuers to ensure compliance and stability in the market. This initiative affects stablecoin issuers, credit unions, and consumers using stablecoins. Regulatory clarity could encourage more issuers to enter the market, increasing competition.",
+      "title": "HSBC Wins Digital Gilts Pilot for UK Government",
+      "body": "HSBC has secured a contract to provide a blockchain platform for the UK's Digital Gilt Instrument pilot, marking a significant step in the digitization of government securities. This affects the UK government and financial institutions, positioning HSBC as a leader in blockchain-based financial services. Successful implementation could lead to broader adoption of blockchain in government finance, impacting traditional securities markets. While innovative, the success of digital gilts depends on regulatory support and market acceptance.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/pressarticle/108814/ncua-proposes-rules-for-permitted-stablecoin-issuers?utm_medium=rssfinextra&utm_source=finextrafeed"
+        "url": "https://www.finextra.com/newsarticle/47297/hsbc-wins-government-tender-for-digital-gilts-pilot?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Paxful Fined $4 Million for AML Failures Amid Regulatory Scrutiny",
-      "body": "Paxful has been fined $4 million for inadequate anti-money laundering controls that allegedly facilitated criminal activities, highlighting regulatory challenges in the crypto sector. This enforcement action affects Paxful and other crypto platforms facing increased scrutiny. The fine may pressure crypto platforms to enhance compliance measures.",
-      "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/389518/paxful-crypto-platform-fined-4-million-prosecutors-say-profited-moving-money-criminals?utm_source=rss&utm_medium=rss"
-      }
-    },
-    {
-      "title": "Salesforce Acquires Cimulate to Boost AI Commerce Capabilities",
-      "body": "Salesforce has acquired Cimulate to enhance its Agentforce Commerce platform with AI-driven product discovery capabilities. This acquisition benefits Salesforce and its customers while challenging competitors in the AI-driven commerce space. It strengthens Salesforce's position in AI commerce, prompting rivals to enhance their own offerings.",
+      "title": "FanDuel Eliminates Credit Card Deposits Amid Regulatory Pressure",
+      "body": "FanDuel will stop accepting credit card deposits for its services, responding to regulatory scrutiny over junk fees. This affects sports betting users and financial institutions, potentially influencing other platforms to reevaluate their payment methods. This shift may lead to increased adoption of alternative payment methods, such as digital wallets and bank transfers, in the betting industry. While regulatory compliance is crucial, the shift away from credit cards may inconvenience some users and impact transaction volumes.",
       "source": {
         "name": "PYMNTS",
-        "url": "https://www.pymnts.com/acquisitions/2026/salesforce-advances-ai-expansion-with-cimulate-deal/"
+        "url": "https://www.pymnts.com/consumer-payments-2/2026/fanduel-ditches-credit-cards-as-sen-warren-targets-junk-fees/"
       }
     }
   ],
-  "perspective": "Today's developments underscore the accelerating integration of stablecoins and regulatory frameworks into mainstream financial systems. The European Parliament's backing of the digital euro and the NCUA's proposed rules for stablecoin issuers signal a pivotal moment for digital currencies, enhancing compliance and competition. Meanwhile, Zerohash's expansion into USDC payments and Paxful's regulatory challenges highlight the urgent need for robust compliance measures in the evolving crypto landscape.",
+  "perspective": "Today's stories highlight the accelerating integration of AI and regulatory pressures in the payments landscape. Coinbase and Google are pushing the boundaries of AI-driven transactions and commerce, while the European Parliament's support for the digital euro and HSBC's blockchain initiative signal a shift towards digital currencies and innovative financial instruments. As regulatory scrutiny intensifies, companies must navigate these changes carefully to maintain competitive advantage.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant."
   },
   "whats_hot": [
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "Levl",
-      "description": "Raised $7M to bridge traditional banking and stablecoin payments",
-      "source_url": "https://www.finextra.com/newsarticle/47291/levl-raises-7m-to-bridge-traditional-banking-and-stablecoin-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "company": "Anthropic",
+      "description": "Raised $30B at $380B valuation, second-largest venture deal ever",
+      "source_url": "https://news.crunchbase.com/ai/anthropic-raises-30b-second-largest-deal-all-time/"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "fundraising",
+      "company": "Inertia Enterprises",
+      "description": "Raised $450M Series A for nuclear fusion technology",
+      "source_url": "https://news.crunchbase.com/clean-tech-and-energy/next-gen-nuclear-funding-lively-inertia-seriesa/"
+    },
+    {
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "type": "fundraising",
+      "company": "Bretton AI",
+      "description": "Raised $75M in Series B for AI compliance solutions",
+      "source_url": "https://www.finextra.com/newsarticle/47296/financial-compliance-vendor-bretton-ai-raises-75-million"
+    },
+    {
+      "flag": "\ud83c\uddf8\ud83c\uddec",
       "type": "M&A",
-      "company": "Rezolve Ai",
-      "description": "Acquired Reward for $230M to enhance AI-driven commerce",
-      "source_url": "https://www.finextra.com/pressarticle/108808/rezolve-ai-acquires-reward-for-230m?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "company": "Grab",
+      "description": "Acquired US investing app Stash for $425M",
+      "source_url": "https://www.finextra.com/newsarticle/47294/grab-acquires-us-investing-app-stash"
     },
     {
-      "flag": "\ud83c\uddee\ud83c\uddf1",
+      "flag": "\ud83c\uddec\ud83c\udde7",
       "type": "fundraising",
-      "company": "Winn.AI",
-      "description": "Raised $18M Series A for AI-powered sales assistant",
-      "source_url": "https://news.crunchbase.com/venture/startup-winn-ai-seriesa-real-time-assistant/"
+      "company": "Tembo",
+      "description": "Raised \u00a316M for digital savings and mortgage platform",
+      "source_url": "https://www.finextra.com/newsarticle/47298/digital-savings-and-mortgage-platform-tembo-raises-16-million"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "Runway",
-      "description": "Raised $315M Series E for AI video technology",
-      "source_url": "https://news.crunchbase.com/venture/gen-ai-video-startup-unicorn-runway-seriese-raise/"
-    },
-    {
-      "flag": "\ud83c\uddea\ud83c\uddfa",
-      "type": "fundraising",
-      "company": "Porters",
-      "description": "Secured \u20ac2.7M to build AI-native backoffice",
-      "source_url": "https://www.finextra.com/newsarticle/47254/porters-raises-27m-to-build-ai-native-backoffice?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "company": "Waffo",
+      "description": "Completed $30M funding for global payments platform",
+      "source_url": "https://www.finextra.com/pressarticle/108826/payment-infrastructure-firm-waffo-raises-15-million"
     }
   ]
 }
