@@ -27,6 +27,12 @@ interface WhatsHotItem {
   source_url?: string;
 }
 
+interface Sponsor {
+  name: string;
+  url: string;
+  logoUrl?: string;
+}
+
 interface DailyNewsletterParams {
   publicationDate: string;
   news: NewsItem[];
@@ -35,6 +41,7 @@ interface DailyNewsletterParams {
   whatsHot?: WhatsHotItem[];  // Funding, M&A & Product Launches
   unsubscribeUrl: string;
   referralCode: string;
+  sponsor?: Sponsor;
 }
 
 /**
@@ -116,6 +123,7 @@ export async function generateDailyNewsletterEmail({
   whatsHot,
   unsubscribeUrl,
   referralCode,
+  sponsor,
 }: DailyNewsletterParams): Promise<string> {
   const formattedDate = new Date(`${publicationDate}T00:00:00`).toLocaleDateString("en-US", {
     weekday: "long",
@@ -168,6 +176,7 @@ export async function generateDailyNewsletterEmail({
       whatsHot,
       unsubscribeUrl,
       referralCode,
+      sponsor,
     })
   );
 

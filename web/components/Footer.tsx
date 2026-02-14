@@ -8,6 +8,7 @@ export function Footer() {
   const [heartClicks, setHeartClicks] = useState(0);
 
   const footerLinks = [
+    { name: "Advertise", href: "mailto:cesar@thepaymentsnerd.co?subject=Sponsorship%20Inquiry%20%E2%80%94%20The%20Payments%20Nerd" },
     { name: "Legal Terms", href: "/legal" },
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Cookies Policy", href: "/cookies" },

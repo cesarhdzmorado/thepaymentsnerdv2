@@ -29,6 +29,12 @@ interface Curiosity {
   source?: Source;  // Source is now optional for creative curiosity facts
 }
 
+interface Sponsor {
+  name: string;
+  url: string;
+  logoUrl?: string;
+}
+
 interface DailyNewsletterProps {
   formattedDate: string;
   perspective?: string;
@@ -37,6 +43,7 @@ interface DailyNewsletterProps {
   whatsHot?: WhatsHotItem[];
   unsubscribeUrl: string;
   referralCode: string;
+  sponsor?: Sponsor;
 }
 
 export function DailyNewsletter({
@@ -47,6 +54,7 @@ export function DailyNewsletter({
   whatsHot,
   unsubscribeUrl,
   referralCode,
+  sponsor,
 }: DailyNewsletterProps) {
   const heroStory = news[0];
   const quickHits = news.slice(1);
@@ -82,6 +90,29 @@ export function DailyNewsletter({
               </Link>
             </Text>
           </Section>
+
+          {/* Presented by Sponsor */}
+          {sponsor && (
+            <>
+              <Section style={sponsorSection}>
+                <Text style={sponsorLabel}>PRESENTED BY</Text>
+                {sponsor.logoUrl ? (
+                  <Link href={sponsor.url} style={sponsorLogoLink}>
+                    <img
+                      src={sponsor.logoUrl}
+                      alt={sponsor.name}
+                      style={sponsorLogo}
+                    />
+                  </Link>
+                ) : (
+                  <Link href={sponsor.url} style={sponsorNameLink}>
+                    {sponsor.name}
+                  </Link>
+                )}
+              </Section>
+              <Hr style={divider} />
+            </>
+          )}
 
           {/* What Matters Today */}
           {perspective && (
@@ -232,14 +263,20 @@ export function DailyNewsletter({
 
           {/* Footer */}
           <Section style={footer}>
-            <Text style={footerText}>
-              <Link href="https://www.thepaymentsnerd.co" style={footerLink}>
-                www.thepaymentsnerd.co
+            <Text style={footerLinksRow}>
+              <Link
+                href="mailto:cesar@thepaymentsnerd.co?subject=Sponsorship%20Inquiry%20%E2%80%94%20The%20Payments%20Nerd"
+                style={footerLinkBold}
+              >
+                ADVERTISE
               </Link>
-            </Text>
-            <Text style={footerText}>
+              {"  //  "}
               <Link href={unsubscribeUrl} style={footerLink}>
                 Unsubscribe
+              </Link>
+              {"  //  "}
+              <Link href="https://www.thepaymentsnerd.co" style={footerLink}>
+                View Online
               </Link>
             </Text>
             <Text style={footerTagline}>
@@ -463,6 +500,53 @@ const referralLinkStyle = {
   fontWeight: "500",
   border: "1px solid #e5e5e5",
   wordBreak: "break-all" as const,
+};
+
+const sponsorSection = {
+  padding: "24px 40px",
+  textAlign: "center" as const,
+};
+
+const sponsorLabel = {
+  margin: "0 0 8px 0",
+  fontSize: "10px",
+  fontWeight: "700",
+  color: "#a3a3a3",
+  textTransform: "uppercase" as const,
+  letterSpacing: "1.5px",
+};
+
+const sponsorLogoLink = {
+  textDecoration: "none",
+};
+
+const sponsorLogo = {
+  maxWidth: "180px",
+  maxHeight: "40px",
+  display: "block" as const,
+  margin: "0 auto",
+};
+
+const sponsorNameLink = {
+  fontSize: "20px",
+  fontWeight: "700",
+  color: "#171717",
+  textDecoration: "none",
+  letterSpacing: "-0.3px",
+};
+
+const footerLinksRow = {
+  margin: "0 0 12px 0",
+  fontSize: "13px",
+  color: "#737373",
+  textAlign: "center" as const,
+};
+
+const footerLinkBold = {
+  color: "#525252",
+  textDecoration: "none",
+  fontWeight: "700",
+  letterSpacing: "0.5px",
 };
 
 const footer = {
