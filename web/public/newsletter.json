@@ -1,99 +1,85 @@
 {
   "news": [
     {
-      "title": "Coinbase Unveils Agentic Wallets for AI-Driven Transactions",
-      "body": "Coinbase has launched new cryptocurrency wallet infrastructure designed for AI agents, enhancing autonomous financial transactions. This development strengthens Coinbase's position in the AI-driven fintech space, challenging competitors to innovate. Expect increased adoption of AI-driven financial tools and potential regulatory scrutiny on these transactions. The focus on AI might overshadow the enhanced security and efficiency these wallets offer.",
+      "title": "Goldman Sachs Partners with Anthropic to Enhance AI Compliance Efficiency",
+      "body": "Goldman Sachs is collaborating with AI company Anthropic to develop autonomous AI agents for accounting and compliance tasks, aiming to enhance operational efficiency. This partnership positions Goldman Sachs to set a new standard for AI use in compliance, compelling other financial institutions to accelerate their AI adoption. As a result, firms that fail to innovate may find themselves at a competitive disadvantage in the evolving landscape.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47300/coinbase-unveils-agentic-wallets"
+        "url": "https://www.finextra.com/newsarticle/47306/goldman-sachs-enlists-anthropic-for-accounting-and-compliance-ai-agents?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Alipay Reports Surge in Agent Payments Amid AI Adoption",
-      "body": "Alipay has seen a significant increase in agent payments, indicating rapid adoption of agentic commerce in China. This surge puts pressure on competitors to enhance their AI capabilities, while also raising concerns about regulatory attention on AI-driven transactions and privacy. The surge might be temporary, driven by novelty rather than sustainable consumer behavior change. Watch for increased scrutiny as the market evolves.",
+      "title": "Bank of Ireland's AI Fraud Detection Saves \u20ac9.7M, Sets New Benchmark",
+      "body": "The Bank of Ireland leveraged AI to assess 1 billion card transactions for fraud in 2025, successfully preventing \u20ac9.7 million in losses. This achievement may push other banks to adopt similar AI-driven fraud detection systems, increasing competition in security solutions. However, as AI adoption grows, so too may the sophistication of fraud attempts, necessitating continuous innovation in security measures.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47295/alipay-reports-surge-in-agent-payments"
+        "url": "https://www.finextra.com/newsarticle/47303/bank-of-ireland-saved-customers-97-million-by-using-ai-to-detect-fraud-in-card-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Stripe Delays IPO Plans, Aiming for $140 Billion Valuation",
-      "body": "Stripe is not hurrying to go public and plans a tender offer to boost its valuation to $140 billion. This decision could set a precedent for other fintechs considering IPOs, potentially increasing investor interest in private fintechs. The focus on valuation might overshadow operational challenges or market saturation risks. This strategic growth approach may reshape how fintechs view public market entry.",
+      "title": "SoftBank's PayPay Files for US IPO, Aiming to Disrupt Payment Apps",
+      "body": "SoftBank-backed payments app PayPay has filed paperwork for a US IPO, signaling its ambitions to enter the competitive US market. This move could intensify competition among payment apps, challenging incumbents like Venmo and Cash App. If successful, PayPay's IPO may lead to further international expansion and increased investment in payment technologies, reshaping the landscape.",
       "source": {
         "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47301/stripe-in-no-rush-to-go-public-plan-to-increase-valuation-to-140-billion"
+        "url": "https://www.finextra.com/newsarticle/47302/softbanks-paypay-files-for-us-initial-public-offering?utm_medium=rssfinextra&utm_source=finextrafeed"
       }
     },
     {
-      "title": "Bank of Ireland Saves \u20ac9.7M Using AI for Fraud Detection",
-      "body": "The Bank of Ireland used AI to detect fraud in card payments, saving customers \u20ac9.7 million in 2025. This success could push other banks to adopt similar technologies, leading to increased investment in AI-driven fraud prevention solutions across the banking sector. However, the focus on AI might overshadow other critical areas of fraud prevention and customer service. Expect a wave of AI adoption as banks seek to enhance security.",
+      "title": "Crypto Advocates Push for Narrower UK FCA Regulations",
+      "body": "The DeFi Education Fund is urging the UK's FCA to limit its cryptocurrency regulations to entities with unilateral control over user funds. This narrower regulatory scope could benefit smaller DeFi platforms by reducing compliance burdens, potentially fostering innovation. However, it may also increase risks for consumers and investors, prompting a reevaluation of regulatory frameworks globally.",
       "source": {
-        "name": "Finextra",
-        "url": "https://www.finextra.com/newsarticle/47303/bank-of-ireland-saved-customers-97-million-by-using-ai-to-detect-fraud-in-card-payments"
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/news/regulation/2026/crypto-advocates-urge-united-kingdom-fca-narrow-regulatory-scope/"
       }
     },
     {
-      "title": "Grayscale Files to Convert AAVE Token Trust into ETF",
-      "body": "Grayscale is seeking to convert its AAVE token trust into an ETF, aiming to list it on NYSE Arca. This move could set a precedent for other crypto trusts seeking ETF status, impacting the broader crypto investment community. The focus on ETFs might overlook the inherent risks and volatility of crypto assets. Watch for increased regulatory scrutiny and market volatility as more crypto assets pursue ETF status.",
+      "title": "Figure Tests Blockchain Stock Launch, Challenging Traditional Exchanges",
+      "body": "Figure Technology Solutions has launched a secondary public offering of its Blockchain Common Stock, testing blockchain's role in trading. Success could disrupt traditional stock exchanges by offering a new model for trading and capital raising, potentially accelerating blockchain adoption in capital markets. However, the complexity and regulatory hurdles of blockchain may limit widespread acceptance in this sector.",
       "source": {
-        "name": "The Block",
-        "url": "https://www.theblock.co/post/389943/grayscale-files-convert-aave-token-trust-etf-list-nyse-arca"
+        "name": "PYMNTS",
+        "url": "https://www.pymnts.com/blockchain/2026/figure-tests-future-of-trading-with-blockchain-stock-launch/"
       }
     }
   ],
-  "perspective": "Today's stories highlight the accelerating integration of AI in payments, from Coinbase's new agentic wallets to the Bank of Ireland's AI-driven fraud detection. As AI adoption surges, the industry faces increased regulatory scrutiny and evolving consumer behaviors. Payments professionals must adapt to these changes to maintain competitive advantage in a rapidly shifting landscape.",
+  "perspective": "Today's stories highlight the ongoing integration of AI and blockchain technologies in the financial landscape. Goldman Sachs and the Bank of Ireland are setting benchmarks for AI in compliance and fraud detection, respectively, while PayPay's IPO signals a competitive shift in the payments space. Meanwhile, the push for narrower regulations in the UK reflects the tension between fostering innovation and ensuring consumer protection in the crypto sector.",
   "curiosity": {
-    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing how consumers approached payments."
+    "text": "Did you know that the first credit card was made of cardboard? Diners Club introduced it in 1950 after founder Frank McNamara forgot his wallet at a restaurant, revolutionizing the way consumers approached payments."
   },
   "whats_hot": [
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
-      "company": "Bretton AI",
-      "description": "Raised $75M Series B for AI compliance solutions.",
-      "source_url": "https://www.finextra.com/newsarticle/47296/financial-compliance-vendor-bretton-ai-raises-75-million"
-    },
-    {
-      "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "fundraising",
-      "company": "Tembo",
-      "description": "Raised \u00a316M for digital savings and mortgage platform.",
-      "source_url": "https://www.finextra.com/newsarticle/47298/digital-savings-and-mortgage-platform-tembo-raises-16-million"
-    },
-    {
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "fundraising",
-      "company": "Waffo",
-      "description": "Raised $15M for global payments platform.",
-      "source_url": "https://www.finextra.com/pressarticle/108826/payment-infrastructure-firm-waffo-raises-15-million"
+      "company": "Anthropic",
+      "description": "Raised $30 billion in Series G funding.",
+      "source_url": "https://news.crunchbase.com/venture/biggest-funding-rounds-anthropic-leads-ai-robotics/"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "type": "fundraising",
       "company": "Shield AI",
-      "description": "Seeks $1B to lead defense tech surge.",
+      "description": "Seeks $1 billion funding round, valuing at $11 billion.",
       "source_url": "https://www.pymnts.com/startups/2026/shield-ai-seeks-1-billion-dollars-lead-global-defense-tech-surge/"
     },
     {
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "type": "IPO",
-      "company": "SoftBank\u2019s PayPay",
+      "company": "SoftBank's PayPay",
       "description": "Filed for US initial public offering.",
-      "source_url": "https://www.finextra.com/newsarticle/47302/softbanks-paypay-files-for-us-initial-public-offering"
-    },
-    {
-      "flag": "\ud83c\uddec\ud83c\udde7",
-      "type": "fundraising",
-      "company": "Bracket",
-      "description": "Raised $7M for FX and treasury platform.",
-      "source_url": "https://www.finextra.com/newsarticle/47293/london-fintech-bracket-raises-7-million"
+      "source_url": "https://www.finextra.com/newsarticle/47302/softbanks-paypay-files-for-us-initial-public-offering?utm_medium=rssfinextra&utm_source=finextrafeed"
     },
     {
       "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "type": "ETF",
-      "company": "Grayscale",
-      "description": "Filed to convert AAVE trust into ETF.",
-      "source_url": "https://www.theblock.co/post/389943/grayscale-files-convert-aave-token-trust-etf-list-nyse-arca"
+      "type": "product",
+      "company": "Figure",
+      "description": "Launched blockchain stock offering.",
+      "source_url": "https://www.pymnts.com/blockchain/2026/figure-tests-future-of-trading-with-blockchain-stock-launch/"
+    },
+    {
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
+      "type": "IPO",
+      "company": "Ledger",
+      "description": "Preps $4 billion IPO in the US.",
+      "source_url": "https://sifted.eu/articles/ledger-preps-4bn-ipo-us/"
     }
   ]
 }
