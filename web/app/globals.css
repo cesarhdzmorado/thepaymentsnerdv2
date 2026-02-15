@@ -94,7 +94,12 @@ a {
 }
 
 /* Accessibility: Improved focus styles */
-*:focus-visible {
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[role="button"]:focus-visible {
   outline: 2px solid rgba(99, 102, 241, 0.6);
   outline-offset: 2px;
   border-radius: 4px;
@@ -211,11 +216,15 @@ a {
 }
 
 .animate-fade-in-up {
+  opacity: 0;
   animation: fade-in-up 0.6s ease-out forwards;
+  animation-fill-mode: both;
 }
 
 .animate-fade-in {
+  opacity: 0;
   animation: fade-in 0.5s ease-out forwards;
+  animation-fill-mode: both;
 }
 
 .animate-pulse-glow {
@@ -223,7 +232,9 @@ a {
 }
 
 .animate-scale-in {
+  opacity: 0;
   animation: scale-in 0.3s ease-out forwards;
+  animation-fill-mode: both;
 }
 
 .animate-shake {
@@ -233,6 +244,10 @@ a {
 /* Staggered animation delays */
 .delay-100 {
   animation-delay: 100ms;
+}
+
+.delay-150 {
+  animation-delay: 150ms;
 }
 
 .delay-200 {

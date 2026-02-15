@@ -3,17 +3,20 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { buttonClasses, cardClasses } from './ui';
 
 interface NewsletterNavigationProps {
   prevDate: string | null;
   nextDate: string | null;
   currentDate: string;
+  position?: 'top' | 'bottom';
 }
 
 export function NewsletterNavigation({
   prevDate,
   nextDate,
   currentDate,
+  position = 'bottom',
 }: NewsletterNavigationProps) {
   const router = useRouter();
   const [todayLocal, setTodayLocal] = useState<string | null>(null);
@@ -26,11 +29,12 @@ export function NewsletterNavigation({
     setTodayLocal(`${year}-${month}-${day}`);
   }, []);
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Only trigger if not typing in an input field
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+      if (
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLTextAreaElement
+      ) {
         return;
       }
 
@@ -50,71 +54,73 @@ export function NewsletterNavigation({
     return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
   };
 
+  const showTodayButton = todayLocal !== null && currentDate !== todayLocal;
+  const hasControls = Boolean(prevDate || nextDate || showTodayButton);
+
+  if (!hasControls && position === 'top') {
+    return null;
+  }
+
   return (
-    <>
-      {/* Previous Day Arrow */}
-      {prevDate && (
-        <button
-          onClick={() => router.push(`/?date=${prevDate}`)}
-          className="fixed left-4 top-1/2 -translate-y-1/2 z-50
-                     group flex items-center gap-2 px-4 py-3
-                     card-surface hover:scale-105
-                     transition-all duration-300 ease-out
-                     hover:shadow-xl
-                     focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
-                     animate-fade-in"
-          aria-label="Previous day's newsletter"
+    <div className={position === 'top' ? 'mb-10' : 'mt-14'}>
+      {hasControls && (
+        <nav
+          className={cardClasses({
+            className:
+              'mx-auto flex w-full max-w-3xl flex-wrap items-center justify-between gap-3 p-3',
+          })}
+          aria-label="Newsletter archive navigation"
         >
-          <ChevronLeft className="h-6 w-6 text-blue-600 dark:text-cyan-300
-                                  group-hover:-translate-x-1 transition-transform duration-300" />
-          <span className="hidden md:block text-sm font-semibold text-muted">
-            {formatDateLabel(prevDate)}
-          </span>
-        </button>
+          <div className="flex items-center gap-2">
+            {prevDate ? (
+              <button
+                onClick={() => router.push(`/?date=${prevDate}`)}
+                className={buttonClasses({ variant: 'secondary', size: 'sm' })}
+                aria-label="Previous day's newsletter"
+              >
+                <ChevronLeft className="h-4 w-4" />
+                <span>{formatDateLabel(prevDate)}</span>
+              </button>
+            ) : (
+              <span className="px-2 text-xs text-slate-400 dark:text-slate-600">
+                Start
+              </span>
+            )}
+          </div>
+
+          <div className="flex items-center gap-2">
+            {showTodayButton && (
+              <button
+                onClick={() => router.push('/')}
+                className={buttonClasses({ variant: 'ghost', size: 'sm' })}
+              >
+                Today
+              </button>
+            )}
+
+            {nextDate ? (
+              <button
+                onClick={() => router.push(`/?date=${nextDate}`)}
+                className={buttonClasses({ variant: 'secondary', size: 'sm' })}
+                aria-label="Next day's newsletter"
+              >
+                <span>{formatDateLabel(nextDate)}</span>
+                <ChevronRight className="h-4 w-4" />
+              </button>
+            ) : (
+              <span className="px-2 text-xs text-slate-400 dark:text-slate-600">
+                Latest
+              </span>
+            )}
+          </div>
+        </nav>
       )}
 
-      {/* Next Day Arrow */}
-      {nextDate && (
-        <button
-          onClick={() => router.push(`/?date=${nextDate}`)}
-          className="fixed right-4 top-1/2 -translate-y-1/2 z-50
-                     group flex items-center gap-2 px-4 py-3
-                     card-surface hover:scale-105
-                     transition-all duration-300 ease-out
-                     hover:shadow-xl
-                     focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
-                     animate-fade-in"
-          aria-label="Next day's newsletter"
-        >
-          <span className="hidden md:block text-sm font-semibold text-muted">
-            {formatDateLabel(nextDate)}
-          </span>
-          <ChevronRight className="h-6 w-6 text-blue-600 dark:text-cyan-300
-                                   group-hover:translate-x-1 transition-transform duration-300" />
-        </button>
+      {position === 'bottom' && hasControls && (
+        <p className="mt-3 text-center text-xs text-muted">
+          Tip: Use ← → arrow keys to navigate the archive
+        </p>
       )}
-
-      {/* Mobile: Show "Today" button if viewing past newsletter */}
-      {todayLocal !== null && currentDate !== todayLocal && (
-        <button
-          onClick={() => router.push('/')}
-          className="fixed bottom-24 right-4 z-50
-                     px-4 py-2 text-sm font-semibold
-                     card-surface hover:scale-105
-                     transition-all duration-300
-                     focus:outline-none focus:ring-2 focus:ring-blue-500
-                     md:hidden"
-        >
-          Today
-        </button>
-      )}
-
-      {/* Keyboard hint (desktop only) */}
-      <div className="hidden lg:block fixed bottom-8 left-1/2 -translate-x-1/2 z-40
-                      px-4 py-2 text-xs text-muted
-                      card-surface opacity-60 hover:opacity-100 transition-opacity">
-        Use ← → arrow keys to navigate
-      </div>
-    </>
+    </div>
   );
 }

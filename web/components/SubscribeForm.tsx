@@ -3,6 +3,7 @@
 import { useMemo, useState, type FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
 import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { Button, Input, cardClasses } from "./ui";
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -96,7 +97,7 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
         </label>
         <div className="flex flex-col sm:flex-row gap-3">
           <div className={`relative flex-1 ${status === "error" ? "animate-shake" : ""}`}>
-            <input
+            <Input
               id="subscribe-email"
               name="email"
               type="email"
@@ -112,17 +113,6 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
                   setMessage("");
                 }
               }}
-              className="w-full rounded-lg px-4 py-3.5 text-base
-                         bg-white dark:bg-slate-800
-                         border-2 border-slate-300 dark:border-slate-600
-                         text-slate-900 dark:text-slate-100
-                         placeholder:text-slate-500 dark:placeholder:text-slate-400
-                         outline-none
-                         focus:border-blue-500 dark:focus:border-blue-400
-                         focus:ring-4 focus:ring-blue-500/10
-                         transition-all duration-200
-                         hover:border-slate-400 dark:hover:border-slate-500
-                         disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={status === "loading"}
               aria-invalid={status === "error"}
               aria-describedby={hasFeedbackMessage ? "subscribe-feedback" : undefined}
@@ -132,20 +122,14 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
             )}
           </div>
 
-          <button
+          <Button
             type="submit"
             disabled={status === "loading"}
-            className="group relative overflow-hidden rounded-lg px-8 py-3.5 text-base font-semibold
-                       bg-gradient-to-r from-slate-900 to-slate-800 text-white
-                       hover:from-slate-800 hover:to-slate-700
-                       dark:from-slate-100 dark:to-slate-50 dark:text-slate-900
-                       dark:hover:from-white dark:hover:to-slate-100
-                       transition-all duration-300
+            size="lg"
+            className="group relative min-w-[140px] overflow-hidden sm:min-w-[120px]
                        hover:shadow-lg hover:shadow-slate-900/20 dark:hover:shadow-slate-100/10
                        hover:scale-105 active:scale-95
-                       disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
-                       flex items-center justify-center gap-2
-                       min-w-[140px] sm:min-w-[120px]"
+                       disabled:hover:scale-100"
           >
             {status === "loading" ? (
               <>
@@ -158,7 +142,7 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
             {/* Hover glow effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/10 to-blue-500/0
                             opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </button>
+          </Button>
         </div>
       </form>
 
@@ -168,10 +152,10 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
           id="subscribe-feedback"
           role={status === "error" ? "alert" : "status"}
           aria-live={status === "error" ? "assertive" : "polite"}
-          className={`mt-5 rounded-lg px-4 py-3 text-sm font-medium flex items-center justify-center gap-2 ${
+          className={`${cardClasses()} mt-5 px-4 py-3 text-sm font-medium flex items-center justify-center gap-2 ${
             status === "error"
-              ? "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800 animate-shake"
-              : "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800 animate-scale-in"
+              ? "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border-red-200 dark:border-red-800 animate-shake"
+              : "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 border-green-200 dark:border-green-800 animate-scale-in"
           }`}
         >
           {status === "error" ? (

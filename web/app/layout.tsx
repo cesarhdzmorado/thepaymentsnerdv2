@@ -73,8 +73,7 @@ export default function RootLayout({
         <div className="min-h-screen">
           <NavigationBar />
 
-          {/* Give the page a consistent padded container */}
-          <main className="mx-auto w-full max-w-5xl px-4 pb-16 pt-6 sm:px-6">
+          <main className="relative min-h-screen pt-16">
             {children}
           </main>
         </div>

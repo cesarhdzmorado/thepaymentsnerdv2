@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter } from "next/navigation";
 import { type ReactNode, useState, Suspense } from "react";
 import Link from "next/link";
+import { Button, Card, buttonClasses } from "@/components/ui";
 
 function UnsubscribeShell({ children }: { children: ReactNode }) {
   return (
@@ -75,7 +76,7 @@ function UnsubscribeContent() {
   if (!token && !isSuccess) {
     return (
       <UnsubscribeShell>
-        <div className="w-full card-surface-strong p-8 sm:p-10 text-center">
+        <Card strong className="w-full p-8 text-center sm:p-10">
           <h1 className="mb-4 text-2xl font-bold text-slate-900 dark:text-slate-100">
             Invalid Link
           </h1>
@@ -84,16 +85,11 @@ function UnsubscribeContent() {
           </p>
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold
-                       bg-gradient-to-r from-slate-900 to-slate-800 text-white
-                       hover:from-slate-800 hover:to-slate-700
-                       dark:from-slate-100 dark:to-slate-50 dark:text-slate-900
-                       dark:hover:from-white dark:hover:to-slate-100
-                       transition-colors"
+            className={buttonClasses({ variant: "primary" })}
           >
             Go to Homepage
           </Link>
-        </div>
+        </Card>
       </UnsubscribeShell>
     );
   }
@@ -101,7 +97,7 @@ function UnsubscribeContent() {
   if (isSuccess) {
     return (
       <UnsubscribeShell>
-        <div className="w-full card-surface-strong p-8 sm:p-10 text-center">
+        <Card strong className="w-full p-8 text-center sm:p-10">
           <div className="mb-4 text-green-600 dark:text-green-400">
             <svg
               className="w-16 h-16 mx-auto"
@@ -128,16 +124,11 @@ function UnsubscribeContent() {
           </p>
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold
-                       bg-gradient-to-r from-slate-900 to-slate-800 text-white
-                       hover:from-slate-800 hover:to-slate-700
-                       dark:from-slate-100 dark:to-slate-50 dark:text-slate-900
-                       dark:hover:from-white dark:hover:to-slate-100
-                       transition-colors"
+            className={buttonClasses({ variant: "primary" })}
           >
             Go to Homepage
           </Link>
-        </div>
+        </Card>
       </UnsubscribeShell>
     );
   }
@@ -152,7 +143,7 @@ function UnsubscribeContent() {
 
   return (
     <UnsubscribeShell>
-      <div className="w-full card-surface-strong p-8 sm:p-10">
+      <Card strong className="w-full p-8 sm:p-10">
         <h1 className="mb-4 text-center text-2xl font-bold text-slate-900 dark:text-slate-100">
           Unsubscribe from The Payments Nerd?
         </h1>
@@ -206,20 +197,16 @@ function UnsubscribeContent() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <button
+          <Button
             onClick={handleUnsubscribe}
             disabled={loading}
-            className="rounded-lg bg-red-600 px-6 py-3 text-sm font-semibold text-white
-                       hover:bg-red-700 transition-colors
-                       disabled:cursor-not-allowed disabled:opacity-50"
+            variant="danger"
           >
             {loading ? "Processing..." : "Confirm Unsubscribe"}
-          </button>
+          </Button>
           <Link
             href="/"
-            className="rounded-lg border border-slate-300 bg-slate-100 px-6 py-3 text-center text-sm font-semibold
-                       text-slate-900 hover:bg-slate-200 transition-colors
-                       dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700"
+            className={buttonClasses({ variant: "secondary" })}
           >
             Keep Subscription
           </Link>
@@ -231,7 +218,7 @@ function UnsubscribeContent() {
             cesar@thepaymentsnerd.co
           </a>
         </p>
-      </div>
+      </Card>
     </UnsubscribeShell>
   );
 }
@@ -240,9 +227,9 @@ export default function UnsubscribePage() {
   return (
     <Suspense fallback={
       <UnsubscribeShell>
-        <div className="w-full card-surface p-8 text-center text-slate-600 dark:text-slate-300">
+        <Card className="w-full p-8 text-center text-slate-600 dark:text-slate-300">
           Loading...
-        </div>
+        </Card>
       </UnsubscribeShell>
     }>
       <UnsubscribeContent />
