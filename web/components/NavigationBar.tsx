@@ -66,7 +66,7 @@ export function NavigationBar() {
             </Link>
             <Link
               href="/#subscribe"
-              className={buttonClasses({ variant: "primary", size: "sm" })}
+              className={buttonClasses({ variant: "secondary", size: "sm" })}
             >
               Subscribe
             </Link>
