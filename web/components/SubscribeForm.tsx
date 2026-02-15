@@ -26,6 +26,7 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState<string>("");
+  const hasFeedbackMessage = message.length > 0;
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -72,28 +73,44 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
   return (
     <div className="text-center">
       {bannerMessage && (
-        <div className="mb-6 rounded-lg px-4 py-3 text-sm font-medium
+        <div
+          className="mb-6 rounded-lg px-4 py-3 text-sm font-medium
                         bg-blue-50 dark:bg-blue-900/20
                         text-blue-800 dark:text-blue-200
                         border border-blue-200 dark:border-blue-800
-                        animate-fade-in">
+                        animate-fade-in"
+          role="status"
+          aria-live="polite"
+        >
           {bannerMessage}
         </div>
       )}
 
       {/* Form */}
       <form onSubmit={onSubmit} className="w-full max-w-xl mx-auto px-4">
+        <label
+          htmlFor="subscribe-email"
+          className="mb-2 block text-left text-sm font-medium text-slate-700 dark:text-slate-300"
+        >
+          Email address
+        </label>
         <div className="flex flex-col sm:flex-row gap-3">
           <div className={`relative flex-1 ${status === "error" ? "animate-shake" : ""}`}>
             <input
+              id="subscribe-email"
+              name="email"
               type="email"
               inputMode="email"
               autoComplete="email"
+              required
               placeholder="you@company.com"
               value={email}
               onChange={(ev) => {
                 setEmail(ev.target.value);
-                if (status === "error") setStatus("idle");
+                if (status === "error") {
+                  setStatus("idle");
+                  setMessage("");
+                }
               }}
               className="w-full rounded-lg px-4 py-3.5 text-base
                          bg-white dark:bg-slate-800
@@ -107,6 +124,8 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
                          hover:border-slate-400 dark:hover:border-slate-500
                          disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={status === "loading"}
+              aria-invalid={status === "error"}
+              aria-describedby={hasFeedbackMessage ? "subscribe-feedback" : undefined}
             />
             {status === "success" && (
               <CheckCircle2 className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-green-600 dark:text-green-400 animate-scale-in" />
@@ -146,6 +165,9 @@ export function SubscribeForm({ source = "homepage" }: { source?: string }) {
       {/* Message */}
       {message && (
         <div
+          id="subscribe-feedback"
+          role={status === "error" ? "alert" : "status"}
+          aria-live={status === "error" ? "assertive" : "polite"}
           className={`mt-5 rounded-lg px-4 py-3 text-sm font-medium flex items-center justify-center gap-2 ${
             status === "error"
               ? "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800 animate-shake"

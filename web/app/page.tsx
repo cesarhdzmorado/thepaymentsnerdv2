@@ -225,8 +225,9 @@ export default async function HomePage({
   });
 
   // Split news into hero story and quick hits (matching newsletter structure)
-  const heroStory = newsletter.content.news[0];
-  const quickHits = newsletter.content.news.slice(1);
+  const stories = newsletter.content.news ?? [];
+  const heroStory = stories.length > 0 ? stories[0] : null;
+  const quickHits = stories.length > 1 ? stories.slice(1) : [];
 
   return (
     <div className="relative mx-auto max-w-4xl px-4 sm:px-8 lg:px-16 py-8 sm:py-12 lg:py-16 pt-24 sm:pt-28">
@@ -275,7 +276,7 @@ export default async function HomePage({
         </div>
 
         {/* Date pill */}
-        <div className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 card-surface animate-fade-in-up delay-200 hover:scale-105 transition-transform duration-200">
+        <div className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 card-surface animate-fade-in-up delay-200">
           <Calendar className="h-4 w-4 text-blue-600 dark:text-cyan-300" />
           <span className="text-sm font-semibold">{formattedDate}</span>
         </div>
@@ -294,169 +295,170 @@ export default async function HomePage({
       </header>
 
       {/* TODAY'S LEAD STORY */}
-      <section id="lead-story" className="mb-16 animate-fade-in-up" style={{ animationDelay: "400ms" }}>
-        <div className="mb-6 flex items-center gap-3">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-500/30 to-transparent dark:via-cyan-500/30" />
-          <h2 className="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">
-            Today&rsquo;s Lead Story
-          </h2>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-500/30 to-transparent dark:via-cyan-500/30" />
-        </div>
-
-        <article
-          className="group relative overflow-hidden card-surface
-                     transition-all duration-300 ease-out
-                     hover:-translate-y-2 hover:shadow-2xl
-                     hover:scale-[1.01]"
-        >
-          {/* Dramatic gradient glow on hover */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true" />
-
-          {/* Accent bar */}
-          <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-blue-600 via-indigo-600 to-purple-600 dark:from-cyan-500 dark:via-indigo-500 dark:to-purple-500" aria-hidden="true" />
-
-          <div className="relative p-6 sm:p-12 pl-8 sm:pl-14">
-            <div className="flex items-start gap-4 sm:gap-8">
-              {/* Enhanced icon for hero story */}
-              <div
-                className="flex-shrink-0 rounded-2xl p-4 text-white shadow-xl
-                           bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600
-                           dark:from-cyan-500 dark:via-indigo-500 dark:to-purple-500
-                           transition-all duration-300
-                           group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-2xl"
-              >
-                <BookOpen className="h-8 w-8 transition-transform duration-300 group-hover:scale-110" />
-              </div>
-
-              <div className="min-w-0 flex-1">
-                <h3
-                  className="mb-4 text-2xl sm:text-4xl lg:text-5xl font-display font-bold leading-tight
-                             bg-clip-text text-transparent bg-gradient-to-r
-                             from-slate-900 via-blue-900 to-indigo-900
-                             dark:from-slate-100 dark:via-cyan-300 dark:to-indigo-300
-                             transition-all duration-300"
-                >
-                  {heroStory.title}
-                </h3>
-
-                <p className="mb-5 text-base sm:text-xl leading-relaxed text-slate-700 dark:text-slate-300
-                              transition-colors duration-300
-                              group-hover:text-slate-900 dark:group-hover:text-slate-200">
-                  {heroStory.body}
-                </p>
-
-                <div className="flex items-center gap-2 text-sm font-medium text-muted">
-                  <ExternalLink className="h-4 w-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110" />
-                  <span>Source:</span>
-
-                  <a
-                    href={ensureHttps(heroStory.source.url)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 font-semibold
-                               text-blue-700 hover:underline hover:text-indigo-700
-                               dark:text-cyan-300 dark:hover:text-cyan-200
-                               transition-all duration-300 group/link
-                               hover:gap-2"
-                  >
-                    {heroStory.source.name}
-                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
+      {heroStory && (
+        <section id="lead-story" className="mb-16 animate-fade-in-up" style={{ animationDelay: "400ms" }}>
+          <div className="mb-6 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-500/30 to-transparent dark:via-cyan-500/30" />
+            <h2 className="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">
+              Today&rsquo;s Lead Story
+            </h2>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-500/30 to-transparent dark:via-cyan-500/30" />
           </div>
 
-          {/* Enhanced bottom sheen with gradient */}
-          <div
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-1
-                       bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500
-                       dark:from-cyan-500 dark:via-indigo-500 dark:to-purple-500
-                       opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"
-            aria-hidden="true"
-          />
-        </article>
-      </section>
+          <article
+            className="group relative overflow-hidden card-surface
+                       transition-all duration-300 ease-out
+                       hover:-translate-y-1 hover:shadow-xl"
+          >
+            {/* Dramatic gradient glow on hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true" />
 
-      {/* ALSO WORTH KNOWING */}
-      <section id="quick-hits" className="mb-24 animate-fade-in-up" style={{ animationDelay: "500ms" }}>
-        <div className="mb-8 flex items-center gap-3">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent dark:via-slate-700" />
-          <h2 className="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">
-            Also Worth Knowing
-          </h2>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent dark:via-slate-700" />
-        </div>
+            {/* Accent bar */}
+            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-blue-600 via-indigo-600 to-purple-600 dark:from-cyan-500 dark:via-indigo-500 dark:to-purple-500" aria-hidden="true" />
 
-        <div className="grid gap-6 sm:grid-cols-2">
-          {quickHits.map((item, index) => {
-            const delay = `${600 + index * 100}ms`;
-            return (
-              <article
-                key={index}
-                className="group relative overflow-hidden card-surface
-                           transition-all duration-300 ease-out
-                           hover:-translate-y-1 hover:shadow-xl
-                           animate-fade-in-up"
-                style={{ animationDelay: delay }}
-              >
-                {/* Subtle gradient glow on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-500/5 via-transparent to-slate-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true" />
+            <div className="relative p-6 sm:p-12 pl-8 sm:pl-14">
+              <div className="flex items-start gap-4 sm:gap-8">
+                {/* Enhanced icon for hero story */}
+                <div
+                  className="flex-shrink-0 rounded-2xl p-4 text-white shadow-xl
+                             bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600
+                             dark:from-cyan-500 dark:via-indigo-500 dark:to-purple-500
+                             transition-all duration-300
+                             group-hover:scale-105 group-hover:shadow-2xl"
+                >
+                  <BookOpen className="h-8 w-8" />
+                </div>
 
-                <div className="relative p-6">
-                  <div className="mb-3 inline-block rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider
-                                  bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300
-                                  transition-all duration-300
-                                  group-hover:bg-slate-200 dark:group-hover:bg-slate-700">
-                    #{index + 2}
-                  </div>
-
+                <div className="min-w-0 flex-1">
                   <h3
-                    className="mb-3 text-lg sm:text-xl font-display font-semibold leading-tight
-                               text-slate-900 dark:text-slate-100
-                               transition-all duration-300
-                               group-hover:text-blue-700
-                               dark:group-hover:text-cyan-300"
+                    className="mb-4 text-2xl sm:text-4xl lg:text-5xl font-display font-bold leading-tight
+                               bg-clip-text text-transparent bg-gradient-to-r
+                               from-slate-900 via-blue-900 to-indigo-900
+                               dark:from-slate-100 dark:via-cyan-300 dark:to-indigo-300
+                               transition-all duration-300"
                   >
-                    {item.title}
+                    {heroStory.title}
                   </h3>
 
-                  <p className="mb-4 text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-400
+                  <p className="mb-5 text-base sm:text-xl leading-relaxed text-slate-700 dark:text-slate-300
                                 transition-colors duration-300
-                                group-hover:text-slate-800 dark:group-hover:text-slate-300">
-                    {item.body}
+                                group-hover:text-slate-900 dark:group-hover:text-slate-200">
+                    {heroStory.body}
                   </p>
 
-                  <div className="flex items-center gap-2 text-xs font-medium text-muted">
-                    <ExternalLink className="h-3.5 w-3.5 flex-shrink-0 transition-transform duration-300 group-hover:scale-110" />
+                  <div className="flex items-center gap-2 text-sm font-medium text-muted">
+                    <ExternalLink className="h-4 w-4 flex-shrink-0" />
+                    <span>Source:</span>
+
                     <a
-                      href={ensureHttps(item.source.url)}
+                      href={ensureHttps(heroStory.source.url)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 font-semibold
-                                 text-blue-600 hover:underline hover:text-indigo-600
-                                 dark:text-cyan-400 dark:hover:text-cyan-300
-                                 transition-all duration-300 group/link
-                                 hover:gap-1.5"
+                      className="inline-flex items-center gap-1.5 font-semibold
+                                 text-blue-700 hover:underline hover:text-indigo-700
+                                 dark:text-cyan-300 dark:hover:text-cyan-200
+                                 transition-all duration-300 group/link"
                     >
-                      {item.source.name}
-                      <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/link:translate-x-0.5" />
+                      {heroStory.source.name}
+                      <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1" />
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                {/* Bottom accent line */}
-                <div
-                  className="pointer-events-none absolute inset-x-0 bottom-0 h-0.5
-                             bg-gradient-to-r from-transparent via-slate-400/50 to-transparent
-                             dark:via-slate-600/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  aria-hidden="true"
-                />
-              </article>
-            );
-          })}
-        </div>
-      </section>
+            {/* Enhanced bottom sheen with gradient */}
+            <div
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-1
+                         bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500
+                         dark:from-cyan-500 dark:via-indigo-500 dark:to-purple-500
+                         opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"
+              aria-hidden="true"
+            />
+          </article>
+        </section>
+      )}
+
+      {/* ALSO WORTH KNOWING */}
+      {quickHits.length > 0 && (
+        <section id="quick-hits" className="mb-24 animate-fade-in-up" style={{ animationDelay: "500ms" }}>
+          <div className="mb-8 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent dark:via-slate-700" />
+            <h2 className="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">
+              Also Worth Knowing
+            </h2>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent dark:via-slate-700" />
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2">
+            {quickHits.map((item, index) => {
+              const delay = `${600 + index * 100}ms`;
+              return (
+                <article
+                  key={index}
+                  className="group relative overflow-hidden card-surface
+                             transition-all duration-300 ease-out
+                             hover:shadow-lg
+                             animate-fade-in-up"
+                  style={{ animationDelay: delay }}
+                >
+                  {/* Subtle gradient glow on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-slate-500/5 via-transparent to-slate-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true" />
+
+                  <div className="relative p-6">
+                    <div className="mb-3 inline-block rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider
+                                    bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300
+                                    transition-all duration-300
+                                    group-hover:bg-slate-200 dark:group-hover:bg-slate-700">
+                      #{index + 2}
+                    </div>
+
+                    <h3
+                      className="mb-3 text-lg sm:text-xl font-display font-semibold leading-tight
+                                 text-slate-900 dark:text-slate-100
+                                 transition-all duration-300
+                                 group-hover:text-blue-700
+                                 dark:group-hover:text-cyan-300"
+                    >
+                      {item.title}
+                    </h3>
+
+                    <p className="mb-4 text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-400
+                                  transition-colors duration-300
+                                  group-hover:text-slate-800 dark:group-hover:text-slate-300">
+                      {item.body}
+                    </p>
+
+                    <div className="flex items-center gap-2 text-xs font-medium text-muted">
+                      <ExternalLink className="h-3.5 w-3.5 flex-shrink-0" />
+                      <a
+                        href={ensureHttps(item.source.url)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 font-semibold
+                                   text-blue-600 hover:underline hover:text-indigo-600
+                                   dark:text-cyan-400 dark:hover:text-cyan-300
+                                   transition-all duration-300 group/link"
+                      >
+                        {item.source.name}
+                        <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/link:translate-x-0.5" />
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Bottom accent line */}
+                  <div
+                    className="pointer-events-none absolute inset-x-0 bottom-0 h-0.5
+                               bg-gradient-to-r from-transparent via-slate-400/50 to-transparent
+                               dark:via-slate-600/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                    aria-hidden="true"
+                  />
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* DID YOU KNOW? */}
       <section
@@ -472,13 +474,12 @@ export default async function HomePage({
           aria-hidden="true"
         />
 
-        <div className="relative p-8 sm:p-12 text-center card-surface-strong group hover:scale-[1.02] transition-transform duration-500">
+        <div className="relative p-8 sm:p-12 text-center card-surface-strong">
           <div className="mb-8 flex items-center justify-center gap-4">
             <div
               className="rounded-full p-4 text-white shadow-lg
                          bg-gradient-to-br from-amber-500 to-orange-600
-                         dark:from-amber-400 dark:to-orange-500
-                         transition-transform duration-300 group-hover:rotate-12"
+                         dark:from-amber-400 dark:to-orange-500"
             >
               <Lightbulb className="h-7 w-7" />
             </div>
@@ -616,4 +617,3 @@ export default async function HomePage({
     </div>
   );
 }
-

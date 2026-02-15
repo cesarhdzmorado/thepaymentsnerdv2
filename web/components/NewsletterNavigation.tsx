@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -16,6 +16,15 @@ export function NewsletterNavigation({
   currentDate,
 }: NewsletterNavigationProps) {
   const router = useRouter();
+  const [todayLocal, setTodayLocal] = useState<string | null>(null);
+
+  useEffect(() => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    setTodayLocal(`${year}-${month}-${day}`);
+  }, []);
 
   // Keyboard navigation
   useEffect(() => {
@@ -86,7 +95,7 @@ export function NewsletterNavigation({
       )}
 
       {/* Mobile: Show "Today" button if viewing past newsletter */}
-      {currentDate !== new Date().toISOString().split('T')[0] && (
+      {todayLocal !== null && currentDate !== todayLocal && (
         <button
           onClick={() => router.push('/')}
           className="fixed bottom-24 right-4 z-50

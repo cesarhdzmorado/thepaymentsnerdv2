@@ -1,7 +1,7 @@
 "use client";
 
 import { Share2, Check } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 interface ShareButtonsProps {
@@ -10,13 +10,23 @@ interface ShareButtonsProps {
 
 export function ShareButtons({ url }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState(url || "https://www.thepaymentsnerd.co");
+
+  useEffect(() => {
+    if (url) {
+      setCurrentUrl(url);
+      return;
+    }
+
+    setCurrentUrl(window.location.href);
+  }, [url]);
 
   // Default values
-  const shareUrl = url || (typeof window !== "undefined" ? window.location.href : "");
+  const shareUrl = currentUrl;
 
   // Simple, clean X share text
   const xText = "www.thepaymentsnerd.co 👀";
-  const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(xText)}`;
+  const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(xText)}&url=${encodeURIComponent(shareUrl)}`;
 
   // LinkedIn share URL (LinkedIn doesn't support pre-populated text anymore)
   // The OG tags will provide rich preview automatically
